@@ -1,15 +1,16 @@
 from argparse import ArgumentParser
 from contextlib import chdir
 from pathlib import Path
+from re import match
 from shutil import rmtree, move
-from subprocess import call
+from subprocess import call, run
 from tempfile import TemporaryDirectory
 
 VERSION = '3.12'
 
 
 def update_pots() -> None:
-    """updates translation sources"""
+    """updates translation sources and commits them"""
     _call('git diff --exit-code')
     with TemporaryDirectory() as directory:
         with chdir(directory):
@@ -17,9 +18,12 @@ def update_pots() -> None:
             _build_gettext()
         rmtree('.pot')
         move(Path(directory) / 'cpython/Doc/locales/pot', '.pot')
-    if (call("git diff -I'^\"POT-Creation-Date: ' --exit-code", shell=True)) != 0:
-        _call('git add .')
+    changed = _get_changed_pots()
+    added = _get_new_pots()
+    if all_ := changed + added:
+        _call(f'git add {" ".join(all_)}')
         _call('git commit -m "Update sources"')
+    _call('git restore .')
 
 
 def _clone_cpython_repo(version: str):
@@ -32,9 +36,25 @@ def _build_gettext():
     )
 
 
+def _get_changed_pots() -> list[str]:
+    diff = _run("git diff -I'^\"POT-Creation-Date: ' --numstat")
+    return [match(r'\d+\t\d+\t(.*)', line).group(1) for line in diff.splitlines()]
+
+
+def _get_new_pots() -> list[str]:
+    ls_files = _run('git ls-files -o -d --exclude-standard')
+    return ls_files.splitlines()
+
+
 def _call(command: str):
     if (return_code := call(command, shell=True)) != 0:
         exit(return_code)
+
+
+def _run(command: str) -> str:
+    if (process := run(command, shell=True, capture_output=True)).returncode != 0:
+        exit(process.returncode)
+    return process.stdout.decode()
 
 
 if __name__ == "__main__":
