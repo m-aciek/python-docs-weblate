@@ -1,5 +1,6 @@
 from argparse import ArgumentParser
 from contextlib import chdir
+from os import PathLike
 from pathlib import Path
 from re import match
 from shutil import move, rmtree
@@ -36,7 +37,7 @@ def _build_gettext():
     )
 
 
-def _replace_tree(source: Path, target: str):
+def _replace_tree(source: PathLike, target: PathLike):
     rmtree(target)
     move(source, target)
 
