@@ -2,7 +2,7 @@ from argparse import ArgumentParser
 from contextlib import chdir
 from pathlib import Path
 from re import match
-from shutil import rmtree, move
+from shutil import move, rmtree
 from subprocess import call, run
 from tempfile import TemporaryDirectory
 
@@ -17,8 +17,7 @@ def update_pots() -> None:
             _clone_cpython_repo(VERSION)
             _call('make -C cpython/Doc/ venv')
             _build_gettext()
-        rmtree('.pot')
-        move(Path(directory) / 'cpython/Doc/locales/pot', '.pot')
+        _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
     changed = _get_changed_pots()
     added = _get_new_pots()
     if all_ := changed + added:
@@ -35,6 +34,11 @@ def _build_gettext():
     _call(
         "make -C cpython/Doc/ ALLSPHINXOPTS='-E -b gettext -D gettext_compact=0 -d build/.doctrees . locales/pot' build"
     )
+
+
+def _replace_tree(source: Path, target: str):
+    rmtree(target)
+    move(source, target)
 
 
 def _get_changed_pots() -> list[str]:
