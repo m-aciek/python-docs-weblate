@@ -15,6 +15,7 @@ def update_pots() -> None:
     with TemporaryDirectory() as directory:
         with chdir(directory):
             _clone_cpython_repo(VERSION)
+            _call('make -C cpython/Doc/ venv')
             _build_gettext()
         rmtree('.pot')
         move(Path(directory) / 'cpython/Doc/locales/pot', '.pot')
