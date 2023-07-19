@@ -23,7 +23,7 @@ def update_pots() -> None:
     if all_ := changed + added:
         _call(f'git add {" ".join(all_)}')
         _call('git commit -m "Update sources"')
-    _call('git restore .')
+    _call('git restore .')  # discard ignored files
 
 
 def _clone_cpython_repo(version: str):
