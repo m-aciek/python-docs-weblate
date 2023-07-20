@@ -14,7 +14,7 @@ jobs:
           python-version: 3
       - run: git config --local user.email github-actions@github.com
       - run: git config --local user.name "GitHub Action's update-pots job"
-      - run: ./update-pots.py 3.12
+      - run: ./.update-pots.py 3.12
       - uses: ad-m/github-push-action@master
         if: github.ref == 'ref/head/main'
         with:
