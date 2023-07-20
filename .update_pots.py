@@ -7,15 +7,13 @@ from shutil import move, rmtree
 from subprocess import call, run
 from tempfile import TemporaryDirectory
 
-VERSION = '3.12'
 
-
-def update_pots() -> None:
+def _update_pots(version: str) -> None:
     """updates translation sources and commits them"""
     _call('git diff --exit-code')
     with TemporaryDirectory() as directory:
         with chdir(directory):
-            _clone_cpython_repo(VERSION)
+            _clone_cpython_repo(version)
             _call('make -C cpython/Doc/ venv')
             _build_gettext()
         _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
@@ -64,10 +62,8 @@ def _run(command: str) -> str:
 
 
 if __name__ == "__main__":
-    RUNNABLE_SCRIPTS = ('update_pots', )
-
     parser = ArgumentParser()
-    parser.add_argument('cmd', choices=RUNNABLE_SCRIPTS)
+    parser.add_argument('version')
     options = parser.parse_args()
 
-    eval(options.cmd)()
+    _update_pots(options.version)
