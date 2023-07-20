@@ -1,3 +1,5 @@
+"""updates translation sources and commits them"""
+
 from argparse import ArgumentParser
 from contextlib import chdir
 from os import PathLike
@@ -9,7 +11,6 @@ from tempfile import TemporaryDirectory
 
 
 def _update_pots(version: str) -> None:
-    """updates translation sources and commits them"""
     _call('git diff --exit-code')
     with TemporaryDirectory() as directory:
         with chdir(directory):
@@ -62,7 +63,7 @@ def _run(command: str) -> str:
 
 
 if __name__ == "__main__":
-    parser = ArgumentParser()
+    parser = ArgumentParser(description=__doc__)
     parser.add_argument('version')
     options = parser.parse_args()
 
