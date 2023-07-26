@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-26 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -376,7 +376,6 @@ msgstr ""
 #: ../../library/os.rst:1317
 #: ../../library/os.rst:1588
 #: ../../library/os.rst:1756
-#: ../../library/os.rst:2153
 #: ../../library/os.rst:2489
 #: ../../library/os.rst:3332
 #: ../../library/os.rst:3369
@@ -1728,6 +1727,10 @@ msgstr ""
 msgid "Raises an :ref:`auditing event <auditing>` ``os.link`` with arguments ``src``, ``dst``, ``src_dir_fd``, ``dst_dir_fd``."
 msgstr ""
 
+#: ../../library/os.rst:2153
+msgid ":ref:`Availability <availability>`: Unix, Windows, not Emscripten."
+msgstr ""
+
 #: ../../library/os.rst:2155
 msgid "Added Windows support."
 msgstr ""
@@ -1935,11 +1938,11 @@ msgid "Create a filesystem node (file, device special file or named pipe) named 
 msgstr ""
 
 #: ../../library/os.rst:2422
-msgid "Extract the device major number from a raw device number (usually the :attr:`st_dev` or :attr:`st_rdev` field from :c:type:`stat`)."
+msgid "Extract the device major number from a raw device number (usually the :attr:`st_dev` or :attr:`st_rdev` field from :c:struct:`stat`)."
 msgstr ""
 
 #: ../../library/os.rst:2428
-msgid "Extract the device minor number from a raw device number (usually the :attr:`st_dev` or :attr:`st_rdev` field from :c:type:`stat`)."
+msgid "Extract the device minor number from a raw device number (usually the :attr:`st_dev` or :attr:`st_rdev` field from :c:struct:`stat`)."
 msgstr ""
 
 #: ../../library/os.rst:2434
@@ -2291,7 +2294,7 @@ msgid "On Windows, all reparse points that can be resolved by the operating syst
 msgstr ""
 
 #: ../../library/os.rst:2939
-msgid "Object whose attributes correspond roughly to the members of the :c:type:`stat` structure. It is used for the result of :func:`os.stat`, :func:`os.fstat` and :func:`os.lstat`."
+msgid "Object whose attributes correspond roughly to the members of the :c:struct:`stat` structure. It is used for the result of :func:`os.stat`, :func:`os.fstat` and :func:`os.lstat`."
 msgstr ""
 
 #: ../../library/os.rst:2943
@@ -2455,11 +2458,11 @@ msgid "When :attr:`st_file_attributes` has the ``FILE_ATTRIBUTE_REPARSE_POINT`` 
 msgstr ""
 
 #: ../../library/os.rst:3119
-msgid "The standard module :mod:`stat` defines functions and constants that are useful for extracting information from a :c:type:`stat` structure. (On Windows, some items are filled with dummy values.)"
+msgid "The standard module :mod:`stat` defines functions and constants that are useful for extracting information from a :c:struct:`stat` structure. (On Windows, some items are filled with dummy values.)"
 msgstr ""
 
 #: ../../library/os.rst:3123
-msgid "For backward compatibility, a :class:`stat_result` instance is also accessible as a tuple of at least 10 integers giving the most important (and portable) members of the :c:type:`stat` structure, in the order :attr:`st_mode`, :attr:`st_ino`, :attr:`st_dev`, :attr:`st_nlink`, :attr:`st_uid`, :attr:`st_gid`, :attr:`st_size`, :attr:`st_atime`, :attr:`st_mtime`, :attr:`st_ctime`. More items may be added at the end by some implementations. For compatibility with older Python versions, accessing :class:`stat_result` as a tuple always returns integers."
+msgid "For backward compatibility, a :class:`stat_result` instance is also accessible as a tuple of at least 10 integers giving the most important (and portable) members of the :c:struct:`stat` structure, in the order :attr:`st_mode`, :attr:`st_ino`, :attr:`st_dev`, :attr:`st_nlink`, :attr:`st_uid`, :attr:`st_gid`, :attr:`st_size`, :attr:`st_atime`, :attr:`st_mtime`, :attr:`st_ctime`. More items may be added at the end by some implementations. For compatibility with older Python versions, accessing :class:`stat_result` as a tuple always returns integers."
 msgstr ""
 
 #: ../../library/os.rst:3132
@@ -2503,7 +2506,7 @@ msgid "Added the :attr:`st_birthtime` member on Windows."
 msgstr ""
 
 #: ../../library/os.rst:3175
-msgid "Perform a :c:func:`statvfs` system call on the given path.  The return value is an object whose attributes describe the filesystem on the given path, and correspond to the members of the :c:type:`statvfs` structure, namely: :attr:`f_bsize`, :attr:`f_frsize`, :attr:`f_blocks`, :attr:`f_bfree`, :attr:`f_bavail`, :attr:`f_files`, :attr:`f_ffree`, :attr:`f_favail`, :attr:`f_flag`, :attr:`f_namemax`, :attr:`f_fsid`."
+msgid "Perform a :c:func:`statvfs` system call on the given path.  The return value is an object whose attributes describe the filesystem on the given path, and correspond to the members of the :c:struct:`statvfs` structure, namely: :attr:`f_bsize`, :attr:`f_frsize`, :attr:`f_blocks`, :attr:`f_bfree`, :attr:`f_bavail`, :attr:`f_files`, :attr:`f_ffree`, :attr:`f_favail`, :attr:`f_flag`, :attr:`f_namemax`, :attr:`f_fsid`."
 msgstr ""
 
 #: ../../library/os.rst:3182

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 19:36+0000\n"
+"POT-Creation-Date: 2023-07-26 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -725,11 +725,11 @@ msgid "Columns:"
 msgstr ""
 
 #: ../../c-api/typeobj.rst:166
-msgid "**\"O\"**:  set on :c:type:`PyBaseObject_Type`"
+msgid "**\"O\"**:  set on :c:data:`PyBaseObject_Type`"
 msgstr ""
 
 #: ../../c-api/typeobj.rst:168
-msgid "**\"T\"**:  set on :c:type:`PyType_Type`"
+msgid "**\"T\"**:  set on :c:data:`PyType_Type`"
 msgstr ""
 
 #: ../../c-api/typeobj.rst:170
@@ -1446,7 +1446,7 @@ msgid "PyTypeObject Slots"
 msgstr ""
 
 #: ../../c-api/typeobj.rst:570
-msgid "Each slot has a section describing inheritance.  If :c:func:`PyType_Ready` may set a value when the field is set to ``NULL`` then there will also be a \"Default\" section.  (Note that many fields set on :c:type:`PyBaseObject_Type` and :c:type:`PyType_Type` effectively act as defaults.)"
+msgid "Each slot has a section describing inheritance.  If :c:func:`PyType_Ready` may set a value when the field is set to ``NULL`` then there will also be a \"Default\" section.  (Note that many fields set on :c:data:`PyBaseObject_Type` and :c:data:`PyType_Type` effectively act as defaults.)"
 msgstr ""
 
 #: ../../c-api/typeobj.rst:577
@@ -1712,7 +1712,7 @@ msgid "This field is inherited by subtypes together with :c:member:`~PyTypeObjec
 msgstr ""
 
 #: ../../c-api/typeobj.rst:967
-msgid ":c:type:`PyBaseObject_Type` uses :c:func:`PyObject_GenericGetAttr`."
+msgid ":c:data:`PyBaseObject_Type` uses :c:func:`PyObject_GenericGetAttr`."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:974
@@ -1728,7 +1728,7 @@ msgid "This field is inherited by subtypes together with :c:member:`~PyTypeObjec
 msgstr ""
 
 #: ../../c-api/typeobj.rst:993
-msgid ":c:type:`PyBaseObject_Type` uses :c:func:`PyObject_GenericSetAttr`."
+msgid ":c:data:`PyBaseObject_Type` uses :c:func:`PyObject_GenericSetAttr`."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:998
@@ -1748,7 +1748,7 @@ msgid "Inheritance of this field is complicated.  Most flag bits are inherited i
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1034
-msgid ":c:type:`PyBaseObject_Type` uses ``Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE``."
+msgid ":c:data:`PyBaseObject_Type` uses ``Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE``."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1037
@@ -2125,7 +2125,7 @@ msgid "This field is inherited by subtypes together with :c:member:`~PyTypeObjec
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1559
-msgid ":c:type:`PyBaseObject_Type` provides a :attr:`tp_richcompare` implementation, which may be inherited.  However, if only :attr:`tp_hash` is defined, not even the inherited function is used and instances of the type will not be able to participate in any comparisons."
+msgid ":c:data:`PyBaseObject_Type` provides a :attr:`tp_richcompare` implementation, which may be inherited.  However, if only :attr:`tp_hash` is defined, not even the inherited function is used and instances of the type will not be able to participate in any comparisons."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1568
@@ -2357,7 +2357,7 @@ msgid "For dynamic subtypes, this field is always set to :c:func:`PyType_Generic
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1881
-msgid "For static subtypes, :c:type:`PyBaseObject_Type` uses :c:func:`PyType_GenericAlloc`.  That is the recommended value for all statically defined types."
+msgid "For static subtypes, :c:data:`PyBaseObject_Type` uses :c:func:`PyType_GenericAlloc`.  That is the recommended value for all statically defined types."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1888
@@ -2401,7 +2401,7 @@ msgid "In dynamic subtypes, this field is set to a deallocator suitable to match
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1944
-msgid "For static subtypes, :c:type:`PyBaseObject_Type` uses PyObject_Del."
+msgid "For static subtypes, :c:data:`PyBaseObject_Type` uses :c:func:`PyObject_Del`."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1949

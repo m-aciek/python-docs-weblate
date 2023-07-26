@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-26 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14149,7 +14149,7 @@ msgid ":issue:`43406`: Fix a possible race condition where ``PyErr_CheckSignals`
 msgstr ""
 
 #: ../../../build/NEWS:12312
-msgid ":issue:`42128`: Add ``__match_args__`` to :c:type:`structsequence` based classes. Patch by Pablo Galindo."
+msgid ":issue:`42128`: Add ``__match_args__`` to :ref:`struct sequence objects <struct-sequence-objects>`. Patch by Pablo Galindo."
 msgstr ""
 
 #: ../../../build/NEWS:12315

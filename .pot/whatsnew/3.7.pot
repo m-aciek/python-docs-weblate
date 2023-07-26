@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 19:36+0000\n"
+"POT-Creation-Date: 2023-07-26 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1562,7 +1562,7 @@ msgid "The new :c:func:`import__find__load__start` and :c:func:`import__find__lo
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:1677
-msgid "The fields :c:member:`!name` and :c:member:`!doc` of structures :c:type:`PyMemberDef`, :c:type:`PyGetSetDef`, :c:type:`PyStructSequence_Field`, :c:type:`PyStructSequence_Desc`, and :c:type:`wrapperbase` are now of type ``const char *`` rather of ``char *``.  (Contributed by Serhiy Storchaka in :issue:`28761`.)"
+msgid "The fields :c:member:`!name` and :c:member:`!doc` of structures :c:type:`PyMemberDef`, :c:type:`PyGetSetDef`, :c:type:`PyStructSequence_Field`, :c:type:`PyStructSequence_Desc`, and :c:struct:`wrapperbase` are now of type ``const char *`` rather of ``char *``.  (Contributed by Serhiy Storchaka in :issue:`28761`.)"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:1683

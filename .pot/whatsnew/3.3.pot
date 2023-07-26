@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-26 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2276,7 +2276,7 @@ msgid ":c:macro:`PyUnicode_DATA`, :c:macro:`PyUnicode_1BYTE_DATA`, :c:macro:`PyU
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:2198
-msgid ":c:macro:`PyUnicode_KIND` with :c:type:`PyUnicode_Kind` enum: :c:data:`PyUnicode_WCHAR_KIND`, :c:data:`PyUnicode_1BYTE_KIND`, :c:data:`PyUnicode_2BYTE_KIND`, :c:data:`PyUnicode_4BYTE_KIND`"
+msgid ":c:macro:`PyUnicode_KIND` with :c:enum:`PyUnicode_Kind` enum: :c:data:`PyUnicode_WCHAR_KIND`, :c:data:`PyUnicode_1BYTE_KIND`, :c:data:`PyUnicode_2BYTE_KIND`, :c:data:`PyUnicode_4BYTE_KIND`"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:2201
