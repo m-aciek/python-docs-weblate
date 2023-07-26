@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-26 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgid "Module state may be kept in a per-module memory area that can be retrieve
 msgstr ""
 
 #: ../../c-api/module.rst:165
-msgid "This memory area is allocated based on *m_size* on module creation, and freed when the module object is deallocated, after the :c:member:`m_free` function has been called, if present."
+msgid "This memory area is allocated based on *m_size* on module creation, and freed when the module object is deallocated, after the :c:member:`~PyModuleDef.m_free` function has been called, if present."
 msgstr ""
 
 #: ../../c-api/module.rst:169
@@ -147,7 +147,7 @@ msgstr ""
 #: ../../c-api/module.rst:202
 #: ../../c-api/module.rst:217
 #: ../../c-api/module.rst:238
-msgid "This function is not called if the module state was requested but is not allocated yet. This is the case immediately after the module is created and before the module is executed (:c:data:`Py_mod_exec` function). More precisely, this function is not called if :c:member:`m_size` is greater than 0 and the module state (as returned by :c:func:`PyModule_GetState`) is ``NULL``."
+msgid "This function is not called if the module state was requested but is not allocated yet. This is the case immediately after the module is created and before the module is executed (:c:data:`Py_mod_exec` function). More precisely, this function is not called if :c:member:`~PyModuleDef.m_size` is greater than 0 and the module state (as returned by :c:func:`PyModule_GetState`) is ``NULL``."
 msgstr ""
 
 #: ../../c-api/module.rst:209

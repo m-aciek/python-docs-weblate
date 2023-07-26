@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -548,7 +548,7 @@ msgid ":c:member:`PyConfig.use_environment`"
 msgstr ""
 
 #: ../../c-api/init_config.rst:522
-msgid "Moreover, if :c:func:`PyConfig_SetArgv` or :c:func:`PyConfig_SetBytesArgv` is used, this method must be called before other methods, since the preinitialization configuration depends on command line arguments (if :c:member:`parse_argv` is non-zero)."
+msgid "Moreover, if :c:func:`PyConfig_SetArgv` or :c:func:`PyConfig_SetBytesArgv` is used, this method must be called before other methods, since the preinitialization configuration depends on command line arguments (if :c:member:`~PyConfig.parse_argv` is non-zero)."
 msgstr ""
 
 #: ../../c-api/init_config.rst:527

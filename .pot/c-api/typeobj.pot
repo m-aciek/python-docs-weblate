@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-26 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1846,7 +1846,7 @@ msgid "This flag is inherited unless the :c:member:`~PyTypeObject.tp_weaklistoff
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1178
-msgid "Only usable with variable-size types, i.e. ones with non-zero :c:member:`~PyObject.tp_itemsize`."
+msgid "Only usable with variable-size types, i.e. ones with non-zero :c:member:`~PyTypeObject.tp_itemsize`."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1181
