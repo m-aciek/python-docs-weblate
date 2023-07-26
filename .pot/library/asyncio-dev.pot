@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid "In addition to enabling the debug mode, consider also:"
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:36
-msgid "setting the log level of the :ref:`asyncio logger <asyncio-logger>` to :py:data:`logging.DEBUG`, for example the following snippet of code can be run at startup of the application::"
+msgid "setting the log level of the :ref:`asyncio logger <asyncio-logger>` to :py:const:`logging.DEBUG`, for example the following snippet of code can be run at startup of the application::"
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:42
@@ -141,7 +141,7 @@ msgid "asyncio uses the :mod:`logging` module and all logging is performed via t
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:145
-msgid "The default log level is :py:data:`logging.INFO`, which can be easily adjusted::"
+msgid "The default log level is :py:const:`logging.INFO`, which can be easily adjusted::"
 msgstr ""
 
 #: ../../library/asyncio-dev.rst:151

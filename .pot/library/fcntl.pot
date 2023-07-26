@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgstr ""
 msgid "If the :c:func:`fcntl` fails, an :exc:`OSError` is raised."
 msgstr ""
 
-#: ../../library/fcntl.rst:96
+#: ../../library/fcntl.rst:94
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments ``fd``, ``cmd``, ``arg``."
 msgstr ""
 
@@ -112,7 +112,7 @@ msgstr ""
 msgid "An example::"
 msgstr ""
 
-#: ../../library/fcntl.rst:147
+#: ../../library/fcntl.rst:145
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments ``fd``, ``request``, ``arg``."
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "If the :c:func:`flock` fails, an :exc:`OSError` exception is raised."
 msgstr ""
 
-#: ../../library/fcntl.rst:159
+#: ../../library/fcntl.rst:157
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments ``fd``, ``operation``."
 msgstr ""
 
@@ -153,22 +153,22 @@ msgid "*len* is the number of bytes to lock, *start* is the byte offset at which
 msgstr ""
 
 #: ../../library/fcntl.rst:175
-msgid ":const:`0` -- relative to the start of the file (:data:`os.SEEK_SET`)"
+msgid ":const:`0` -- relative to the start of the file (:const:`os.SEEK_SET`)"
 msgstr ""
 
 #: ../../library/fcntl.rst:176
-msgid ":const:`1` -- relative to the current buffer position (:data:`os.SEEK_CUR`)"
+msgid ":const:`1` -- relative to the current buffer position (:const:`os.SEEK_CUR`)"
 msgstr ""
 
 #: ../../library/fcntl.rst:177
-msgid ":const:`2` -- relative to the end of the file (:data:`os.SEEK_END`)"
+msgid ":const:`2` -- relative to the end of the file (:const:`os.SEEK_END`)"
 msgstr ""
 
 #: ../../library/fcntl.rst:179
 msgid "The default for *start* is 0, which means to start at the beginning of the file. The default for *len* is 0 which means to lock to the end of the file.  The default for *whence* is also 0."
 msgstr ""
 
-#: ../../library/fcntl.rst:194
+#: ../../library/fcntl.rst:192
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments ``fd``, ``cmd``, ``len``, ``start``, ``whence``."
 msgstr ""
 
@@ -185,9 +185,10 @@ msgid "Module :mod:`os`"
 msgstr ""
 
 #: ../../library/fcntl.rst:204
-msgid "If the locking flags :data:`~os.O_SHLOCK` and :data:`~os.O_EXLOCK` are present in the :mod:`os` module (on BSD only), the :func:`os.open` function provides an alternative to the :func:`lockf` and :func:`flock` functions."
+msgid "If the locking flags :const:`~os.O_SHLOCK` and :const:`~os.O_EXLOCK` are present in the :mod:`os` module (on BSD only), the :func:`os.open` function provides an alternative to the :func:`lockf` and :func:`flock` functions."
 msgstr ""
 
+#: ../../library/fcntl.rst:10
 #: ../../library/fcntl.rst:10
 msgid "UNIX"
 msgstr ""

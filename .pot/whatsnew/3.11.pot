@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -474,7 +474,7 @@ msgid "datetime"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:643
-msgid "Add :attr:`datetime.UTC`, a convenience alias for :attr:`datetime.timezone.utc`. (Contributed by Kabir Kwatra in :gh:`91973`.)"
+msgid "Add :const:`datetime.UTC`, a convenience alias for :attr:`datetime.timezone.utc`. (Contributed by Kabir Kwatra in :gh:`91973`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:646
@@ -518,7 +518,7 @@ msgid "Added the :func:`~enum.property` decorator, which works like :func:`prope
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:690
-msgid "Added the :func:`~enum.global_enum` enum decorator, which adjusts :meth:`~object.__repr__` and :meth:`~object.__str__` to show values as members of their module rather than the enum class. For example, ``'re.ASCII'`` for the :data:`~re.ASCII` member of :class:`re.RegexFlag` rather than ``'RegexFlag.ASCII'``."
+msgid "Added the :func:`~enum.global_enum` enum decorator, which adjusts :meth:`~object.__repr__` and :meth:`~object.__str__` to show values as members of their module rather than the enum class. For example, ``'re.ASCII'`` for the :const:`~re.ASCII` member of :class:`re.RegexFlag` rather than ``'RegexFlag.ASCII'``."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:696
@@ -814,7 +814,7 @@ msgid "threading"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1064
-msgid "On Unix, if the ``sem_clockwait()`` function is available in the C library (glibc 2.30 and newer), the :meth:`threading.Lock.acquire` method now uses the monotonic clock (:data:`time.CLOCK_MONOTONIC`) for the timeout, rather than using the system clock (:data:`time.CLOCK_REALTIME`), to not be affected by system clock changes. (Contributed by Victor Stinner in :issue:`41710`.)"
+msgid "On Unix, if the ``sem_clockwait()`` function is available in the C library (glibc 2.30 and newer), the :meth:`threading.Lock.acquire` method now uses the monotonic clock (:const:`time.CLOCK_MONOTONIC`) for the timeout, rather than using the system clock (:const:`time.CLOCK_REALTIME`), to not be affected by system clock changes. (Contributed by Victor Stinner in :issue:`41710`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1075
@@ -1830,7 +1830,7 @@ msgid "Stricter rules will now be applied for numerical group references and gro
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1814
-msgid "In the :mod:`re` module, the :func:`!re.template` function and the corresponding :data:`!re.TEMPLATE` and :data:`!re.T` flags are deprecated, as they were undocumented and lacked an obvious purpose. They will be removed in Python 3.13. (Contributed by Serhiy Storchaka and Miro Hrončok in :gh:`92728`.)"
+msgid "In the :mod:`re` module, the :func:`!re.template` function and the corresponding :const:`!re.TEMPLATE` and :const:`!re.T` flags are deprecated, as they were undocumented and lacked an obvious purpose. They will be removed in Python 3.13. (Contributed by Serhiy Storchaka and Miro Hrončok in :gh:`92728`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1820
@@ -2470,7 +2470,7 @@ msgid "(Contributed by Christian Heimes in :issue:`45459`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2230
-msgid "Added the :c:data:`PyType_GetModuleByDef` function, used to get the module in which a method was defined, in cases where this information is not available directly (via :c:type:`PyCMethod`). (Contributed by Petr Viktorin in :issue:`46613`.)"
+msgid "Added the :c:func:`PyType_GetModuleByDef` function, used to get the module in which a method was defined, in cases where this information is not available directly (via :c:type:`PyCMethod`). (Contributed by Petr Viktorin in :issue:`46613`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2235
@@ -2538,11 +2538,11 @@ msgid "To support older Python versions in the same codebase, you can define the
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2349
-msgid "The :c:func:`PyType_Ready` function now raises an error if a type is defined with the :const:`Py_TPFLAGS_HAVE_GC` flag set but has no traverse function (:c:member:`PyTypeObject.tp_traverse`). (Contributed by Victor Stinner in :issue:`44263`.)"
+msgid "The :c:func:`PyType_Ready` function now raises an error if a type is defined with the :c:macro:`Py_TPFLAGS_HAVE_GC` flag set but has no traverse function (:c:member:`PyTypeObject.tp_traverse`). (Contributed by Victor Stinner in :issue:`44263`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2354
-msgid "Heap types with the :const:`Py_TPFLAGS_IMMUTABLETYPE` flag can now inherit the :pep:`590` vectorcall protocol.  Previously, this was only possible for :ref:`static types <static-types>`. (Contributed by Erlend E. Aasland in :issue:`43908`)"
+msgid "Heap types with the :c:macro:`Py_TPFLAGS_IMMUTABLETYPE` flag can now inherit the :pep:`590` vectorcall protocol.  Previously, this was only possible for :ref:`static types <static-types>`. (Contributed by Erlend E. Aasland in :issue:`43908`)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2359

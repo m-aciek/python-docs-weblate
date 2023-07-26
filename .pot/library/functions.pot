@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -426,7 +426,7 @@ msgid "As :func:`repr`, return a string containing a printable representation of
 msgstr ""
 
 #: ../../library/functions.rst:123
-msgid "Convert an integer number to a binary string prefixed with \"0b\". The result is a valid Python expression. If *x* is not a Python :class:`int` object, it has to define an :meth:`__index__` method that returns an integer. Some examples:"
+msgid "Convert an integer number to a binary string prefixed with \"0b\". The result is a valid Python expression. If *x* is not a Python :class:`int` object, it has to define an :meth:`~object.__index__` method that returns an integer. Some examples:"
 msgstr ""
 
 #: ../../library/functions.rst:133
@@ -626,7 +626,7 @@ msgid "Return a complex number with the value *real* + *imag*\\*1j or convert a 
 msgstr ""
 
 #: ../../library/functions.rst:385
-msgid "For a general Python object ``x``, ``complex(x)`` delegates to ``x.__complex__()``.  If ``__complex__()`` is not defined then it falls back to :meth:`__float__`.  If ``__float__()`` is not defined then it falls back to :meth:`__index__`."
+msgid "For a general Python object ``x``, ``complex(x)`` delegates to ``x.__complex__()``.  If :meth:`~object.__complex__` is not defined then it falls back to :meth:`~object.__float__`.  If :meth:`!__float__` is not defined then it falls back to :meth:`~object.__index__`."
 msgstr ""
 
 #: ../../library/functions.rst:392
@@ -644,7 +644,7 @@ msgid "Grouping digits with underscores as in code literals is allowed."
 msgstr ""
 
 #: ../../library/functions.rst:402
-msgid "Falls back to :meth:`__index__` if :meth:`__complex__` and :meth:`__float__` are not defined."
+msgid "Falls back to :meth:`~object.__index__` if :meth:`~object.__complex__` and :meth:`~object.__float__` are not defined."
 msgstr ""
 
 #: ../../library/functions.rst:409
@@ -802,7 +802,7 @@ msgid "Otherwise, if the argument is an integer or a floating point number, a fl
 msgstr ""
 
 #: ../../library/functions.rst:683
-msgid "For a general Python object ``x``, ``float(x)`` delegates to ``x.__float__()``.  If ``__float__()`` is not defined then it falls back to :meth:`__index__`."
+msgid "For a general Python object ``x``, ``float(x)`` delegates to ``x.__float__()``.  If :meth:`~object.__float__` is not defined then it falls back to :meth:`~object.__index__`."
 msgstr ""
 
 #: ../../library/functions.rst:687
@@ -818,7 +818,7 @@ msgid "The float type is described in :ref:`typesnumeric`."
 msgstr ""
 
 #: ../../library/functions.rst:710
-msgid "Falls back to :meth:`__index__` if :meth:`__float__` is not defined."
+msgid "Falls back to :meth:`~object.__index__` if :meth:`~object.__float__` is not defined."
 msgstr ""
 
 #: ../../library/functions.rst:720
@@ -866,7 +866,7 @@ msgid "Return the hash value of the object (if it has one).  Hash values are int
 msgstr ""
 
 #: ../../library/functions.rst:795
-msgid "For objects with custom :meth:`__hash__` methods, note that :func:`hash` truncates the return value based on the bit width of the host machine. See :meth:`__hash__` for details."
+msgid "For objects with custom :meth:`__hash__` methods, note that :func:`hash` truncates the return value based on the bit width of the host machine. See :meth:`__hash__ <object.__hash__>` for details."
 msgstr ""
 
 #: ../../library/functions.rst:802
@@ -886,7 +886,7 @@ msgid "Changes to :mod:`pydoc` and :mod:`inspect` mean that the reported signatu
 msgstr ""
 
 #: ../../library/functions.rst:823
-msgid "Convert an integer number to a lowercase hexadecimal string prefixed with \"0x\". If *x* is not a Python :class:`int` object, it has to define an :meth:`__index__` method that returns an integer. Some examples:"
+msgid "Convert an integer number to a lowercase hexadecimal string prefixed with \"0x\". If *x* is not a Python :class:`int` object, it has to define an :meth:`~object.__index__` method that returns an integer. Some examples:"
 msgstr ""
 
 #: ../../library/functions.rst:832
@@ -938,7 +938,7 @@ msgid "Raises an :ref:`auditing event <auditing>` ``builtins.input/result`` with
 msgstr ""
 
 #: ../../library/functions.rst:895
-msgid "Return an integer object constructed from a number or string *x*, or return ``0`` if no arguments are given.  If *x* defines :meth:`__int__`, ``int(x)`` returns ``x.__int__()``.  If *x* defines :meth:`__index__`, it returns ``x.__index__()``.  If *x* defines :meth:`__trunc__`, it returns ``x.__trunc__()``. For floating point numbers, this truncates towards zero."
+msgid "Return an integer object constructed from a number or string *x*, or return ``0`` if no arguments are given.  If *x* defines :meth:`~object.__int__`, ``int(x)`` returns ``x.__int__()``.  If *x* defines :meth:`~object.__index__`, it returns ``x.__index__()``.  If *x* defines :meth:`~object.__trunc__`, it returns ``x.__trunc__()``. For floating point numbers, this truncates towards zero."
 msgstr ""
 
 #: ../../library/functions.rst:902
@@ -958,11 +958,11 @@ msgid "If *base* is not an instance of :class:`int` and the *base* object has a 
 msgstr ""
 
 #: ../../library/functions.rst:934
-msgid "Falls back to :meth:`__index__` if :meth:`__int__` is not defined."
+msgid "Falls back to :meth:`~object.__index__` if :meth:`~object.__int__` is not defined."
 msgstr ""
 
 #: ../../library/functions.rst:937
-msgid "The delegation to :meth:`__trunc__` is deprecated."
+msgid "The delegation to :meth:`~object.__trunc__` is deprecated."
 msgstr ""
 
 #: ../../library/functions.rst:940
@@ -1074,7 +1074,7 @@ msgid ":class:`object` does *not* have a :attr:`~object.__dict__`, so you can't 
 msgstr ""
 
 #: ../../library/functions.rst:1139
-msgid "Convert an integer number to an octal string prefixed with \"0o\".  The result is a valid Python expression. If *x* is not a Python :class:`int` object, it has to define an :meth:`__index__` method that returns an integer. For example:"
+msgid "Convert an integer number to an octal string prefixed with \"0o\".  The result is a valid Python expression. If *x* is not a Python :class:`int` object, it has to define an :meth:`~object.__index__` method that returns an integer. For example:"
 msgstr ""
 
 #: ../../library/functions.rst:1149
@@ -1175,7 +1175,7 @@ msgid "*buffering* is an optional integer used to set the buffering policy.  Pas
 msgstr ""
 
 #: ../../library/functions.rst:1232
-msgid "Binary files are buffered in fixed-size chunks; the size of the buffer is chosen using a heuristic trying to determine the underlying device's \"block size\" and falling back on :attr:`io.DEFAULT_BUFFER_SIZE`.  On many systems, the buffer will typically be 4096 or 8192 bytes long."
+msgid "Binary files are buffered in fixed-size chunks; the size of the buffer is chosen using a heuristic trying to determine the underlying device's \"block size\" and falling back on :const:`io.DEFAULT_BUFFER_SIZE`.  On many systems, the buffer will typically be 4096 or 8192 bytes long."
 msgstr ""
 
 #: ../../library/functions.rst:1237

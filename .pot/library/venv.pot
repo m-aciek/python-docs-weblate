@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,8 +80,8 @@ msgstr ""
 msgid "The command, if run with ``-h``, will show the available options::"
 msgstr ""
 
-#: ../../library/venv.rst:294
 #: ../../using/venv-create.inc:72
+#: ../../library/venv.rst:294
 msgid "``setuptools`` is no longer a core venv dependency."
 msgstr ""
 
@@ -134,7 +134,7 @@ msgid "When a Python interpreter is running from a virtual environment, :data:`s
 msgstr ""
 
 #: ../../library/venv.rst:61
-msgid "A virtual environment may be \"activated\" using a script in its binary directory (``bin`` on POSIX; ``Scripts`` on Windows). This will prepend that directory to your :envvar:`!PATH`, so that running :program:`python` will invoke the environment's Python interpreter and you can run installed scripts without having to use their full path. The invocation of the activation script is platform-specific (:samp:`{<venv>}` must be replaced by the path to the directory containing the virtual environment):"
+msgid "A virtual environment may be \"activated\" using a script in its binary directory (``bin`` on POSIX; ``Scripts`` on Windows). This will prepend that directory to your :envvar:`PATH`, so that running :program:`python` will invoke the environment's Python interpreter and you can run installed scripts without having to use their full path. The invocation of the activation script is platform-specific (:samp:`{<venv>}` must be replaced by the path to the directory containing the virtual environment):"
 msgstr ""
 
 #: ../../library/venv.rst:71
@@ -215,7 +215,7 @@ msgid "You don't specifically *need* to activate a virtual environment, as you c
 msgstr ""
 
 #: ../../library/venv.rst:99
-msgid "In order to achieve this, scripts installed into virtual environments have a \"shebang\" line which points to the environment's Python interpreter, i.e. :samp:`#!/{<path-to-venv>}/bin/python`. This means that the script will run with that interpreter regardless of the value of :envvar:`!PATH`. On Windows, \"shebang\" line processing is supported if you have the :ref:`launcher` installed. Thus, double-clicking an installed script in a Windows Explorer window should run it with the correct interpreter without the environment needing to be activated or on the :envvar:`!PATH`."
+msgid "In order to achieve this, scripts installed into virtual environments have a \"shebang\" line which points to the environment's Python interpreter, i.e. :samp:`#!/{<path-to-venv>}/bin/python`. This means that the script will run with that interpreter regardless of the value of :envvar:`PATH`. On Windows, \"shebang\" line processing is supported if you have the :ref:`launcher` installed. Thus, double-clicking an installed script in a Windows Explorer window should run it with the correct interpreter without the environment needing to be activated or on the :envvar:`PATH`."
 msgstr ""
 
 #: ../../library/venv.rst:108

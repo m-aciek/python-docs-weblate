@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,11 @@ msgid "The functions in this chapter will let you execute Python source code giv
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:14
-msgid "Several of these functions accept a start symbol from the grammar as a parameter.  The available start symbols are :const:`Py_eval_input`, :const:`Py_file_input`, and :const:`Py_single_input`.  These are described following the functions which accept them as parameters."
+msgid "Several of these functions accept a start symbol from the grammar as a parameter.  The available start symbols are :c:data:`Py_eval_input`, :c:data:`Py_file_input`, and :c:data:`Py_single_input`.  These are described following the functions which accept them as parameters."
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:19
-msgid "Note also that several of these functions take :c:expr:`FILE*` parameters.  One particular issue which needs to be handled carefully is that the :c:expr:`FILE` structure for different C libraries can be different and incompatible.  Under Windows (at least), it is possible for dynamically linked extensions to actually use different libraries, so care should be taken that :c:expr:`FILE*` parameters are only passed to these functions if it is certain that they were created by the same library that the Python runtime is using."
+msgid "Note also that several of these functions take :c:expr:`FILE*` parameters.  One particular issue which needs to be handled carefully is that the :c:type:`FILE` structure for different C libraries can be different and incompatible.  Under Windows (at least), it is possible for dynamically linked extensions to actually use different libraries, so care should be taken that :c:expr:`FILE*` parameters are only passed to these functions if it is certain that they were created by the same library that the Python runtime is using."
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:30
@@ -166,7 +166,7 @@ msgid "This is a simplified interface to :c:func:`Py_CompileStringExFlags` below
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:257
-msgid "Parse and compile the Python source code in *str*, returning the resulting code object.  The start token is given by *start*; this can be used to constrain the code which can be compiled and should be :const:`Py_eval_input`, :const:`Py_file_input`, or :const:`Py_single_input`.  The filename specified by *filename* is used to construct the code object and may appear in tracebacks or :exc:`SyntaxError` exception messages.  This returns ``NULL`` if the code cannot be parsed or compiled."
+msgid "Parse and compile the Python source code in *str*, returning the resulting code object.  The start token is given by *start*; this can be used to constrain the code which can be compiled and should be :c:data:`Py_eval_input`, :c:data:`Py_file_input`, or :c:data:`Py_single_input`.  The filename specified by *filename* is used to construct the code object and may appear in tracebacks or :exc:`SyntaxError` exception messages.  This returns ``NULL`` if the code cannot be parsed or compiled."
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:265

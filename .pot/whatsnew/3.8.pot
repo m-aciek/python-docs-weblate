@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1092,7 +1092,7 @@ msgid "time"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1308
-msgid "Added new clock :data:`~time.CLOCK_UPTIME_RAW` for macOS 10.12. (Contributed by Joannah Nanjekye in :issue:`35702`.)"
+msgid "Added new clock :const:`~time.CLOCK_UPTIME_RAW` for macOS 10.12. (Contributed by Joannah Nanjekye in :issue:`35702`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1313
@@ -1565,7 +1565,7 @@ msgid "Removed ``__str__`` implementations from builtin types :class:`bool`, :cl
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1842
-msgid "On AIX, :attr:`sys.platform` doesn't contain the major version anymore. It is always ``'aix'``, instead of ``'aix3'`` .. ``'aix7'``.  Since older Python versions include the version number, so it is recommended to always use ``sys.platform.startswith('aix')``. (Contributed by M. Felt in :issue:`36588`.)"
+msgid "On AIX, :data:`sys.platform` doesn't contain the major version anymore. It is always ``'aix'``, instead of ``'aix3'`` .. ``'aix7'``.  Since older Python versions include the version number, so it is recommended to always use ``sys.platform.startswith('aix')``. (Contributed by M. Felt in :issue:`36588`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1848
@@ -1743,7 +1743,7 @@ msgid "(Contributed by Zackery Spytz in :issue:`33407`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:2115
-msgid "The interpreter does not pretend to support binary compatibility of extension types across feature releases, anymore.  A :c:type:`PyTypeObject` exported by a third-party extension module is supposed to have all the slots expected in the current Python version, including :c:member:`~PyTypeObject.tp_finalize` (:const:`Py_TPFLAGS_HAVE_FINALIZE` is not checked anymore before reading :c:member:`~PyTypeObject.tp_finalize`)."
+msgid "The interpreter does not pretend to support binary compatibility of extension types across feature releases, anymore.  A :c:type:`PyTypeObject` exported by a third-party extension module is supposed to have all the slots expected in the current Python version, including :c:member:`~PyTypeObject.tp_finalize` (:c:macro:`Py_TPFLAGS_HAVE_FINALIZE` is not checked anymore before reading :c:member:`~PyTypeObject.tp_finalize`)."
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:2122

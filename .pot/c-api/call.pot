@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid "A class supporting vectorcall **must** also implement :c:member:`~PyTypeO
 msgstr ""
 
 #: ../../c-api/call.rst:62
-msgid "The :const:`Py_TPFLAGS_HAVE_VECTORCALL` flag is now removed from a class when the class's :py:meth:`~object.__call__` method is reassigned. (This internally sets :c:member:`~PyTypeObject.tp_call` only, and thus may make it behave differently than the vectorcall function.) In earlier Python versions, vectorcall should only be used with :const:`immutable <Py_TPFLAGS_IMMUTABLETYPE>` or static types."
+msgid "The :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` flag is now removed from a class when the class's :py:meth:`~object.__call__` method is reassigned. (This internally sets :c:member:`~PyTypeObject.tp_call` only, and thus may make it behave differently than the vectorcall function.) In earlier Python versions, vectorcall should only be used with :c:macro:`immutable <Py_TPFLAGS_IMMUTABLETYPE>` or static types."
 msgstr ""
 
 #: ../../c-api/call.rst:69
@@ -69,7 +69,7 @@ msgid "A class should not implement vectorcall if that would be slower than *tp_
 msgstr ""
 
 #: ../../c-api/call.rst:74
-msgid "Classes can implement the vectorcall protocol by enabling the :const:`Py_TPFLAGS_HAVE_VECTORCALL` flag and setting :c:member:`~PyTypeObject.tp_vectorcall_offset` to the offset inside the object structure where a *vectorcallfunc* appears. This is a pointer to a function with the following signature:"
+msgid "Classes can implement the vectorcall protocol by enabling the :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` flag and setting :c:member:`~PyTypeObject.tp_vectorcall_offset` to the offset inside the object structure where a *vectorcallfunc* appears. This is a pointer to a function with the following signature:"
 msgstr ""
 
 #: ../../c-api/call.rst:82
@@ -89,7 +89,7 @@ msgid "*nargsf* is the number of positional arguments plus possibly the"
 msgstr ""
 
 #: ../../c-api/call.rst:87
-msgid ":const:`PY_VECTORCALL_ARGUMENTS_OFFSET` flag. To get the actual number of positional arguments from *nargsf*, use :c:func:`PyVectorcall_NARGS`."
+msgid ":c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET` flag. To get the actual number of positional arguments from *nargsf*, use :c:func:`PyVectorcall_NARGS`."
 msgstr ""
 
 #: ../../c-api/call.rst:94
@@ -109,7 +109,7 @@ msgid "For :c:func:`PyObject_VectorcallMethod`, this flag means instead that ``a
 msgstr ""
 
 #: ../../c-api/call.rst:106
-msgid "Whenever they can do so cheaply (without additional allocation), callers are encouraged to use :const:`PY_VECTORCALL_ARGUMENTS_OFFSET`. Doing so will allow callables such as bound methods to make their onward calls (which include a prepended *self* argument) very efficiently."
+msgid "Whenever they can do so cheaply (without additional allocation), callers are encouraged to use :c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET`. Doing so will allow callables such as bound methods to make their onward calls (which include a prepended *self* argument) very efficiently."
 msgstr ""
 
 #: ../../c-api/call.rst:111
@@ -157,7 +157,7 @@ msgid "Call *callable*'s :c:type:`vectorcallfunc` with positional and keyword ar
 msgstr ""
 
 #: ../../c-api/call.rst:175
-msgid "This is a specialized function, intended to be put in the :c:member:`~PyTypeObject.tp_call` slot or be used in an implementation of ``tp_call``. It does not check the :const:`Py_TPFLAGS_HAVE_VECTORCALL` flag and it does not fall back to ``tp_call``."
+msgid "This is a specialized function, intended to be put in the :c:member:`~PyTypeObject.tp_call` slot or be used in an implementation of ``tp_call``. It does not check the :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` flag and it does not fall back to ``tp_call``."
 msgstr ""
 
 #: ../../c-api/call.rst:186
@@ -217,12 +217,14 @@ msgid ":c:func:`PyObject_CallNoArgs`"
 msgstr ""
 
 #: ../../c-api/call.rst:202
+#: ../../c-api/call.rst:202
 #: ../../c-api/call.rst:204
 #: ../../c-api/call.rst:206
 #: ../../c-api/call.rst:208
 #: ../../c-api/call.rst:210
 #: ../../c-api/call.rst:212
 #: ../../c-api/call.rst:214
+#: ../../c-api/call.rst:216
 #: ../../c-api/call.rst:216
 #: ../../c-api/call.rst:218
 msgid "---"
@@ -294,7 +296,9 @@ msgid ":c:func:`PyObject_Vectorcall`"
 msgstr ""
 
 #: ../../c-api/call.rst:220
+#: ../../c-api/call.rst:220
 #: ../../c-api/call.rst:222
+#: ../../c-api/call.rst:224
 #: ../../c-api/call.rst:224
 msgid "vectorcall"
 msgstr ""
@@ -420,11 +424,11 @@ msgid "Regardless of which protocol is used internally, a conversion of argument
 msgstr ""
 
 #: ../../c-api/call.rst:390
-msgid "Call a method using the vectorcall calling convention. The name of the method is given as a Python string *name*. The object whose method is called is *args[0]*, and the *args* array starting at *args[1]* represents the arguments of the call. There must be at least one positional argument. *nargsf* is the number of positional arguments including *args[0]*, plus :const:`PY_VECTORCALL_ARGUMENTS_OFFSET` if the value of ``args[0]`` may temporarily be changed. Keyword arguments can be passed just like in :c:func:`PyObject_Vectorcall`."
+msgid "Call a method using the vectorcall calling convention. The name of the method is given as a Python string *name*. The object whose method is called is *args[0]*, and the *args* array starting at *args[1]* represents the arguments of the call. There must be at least one positional argument. *nargsf* is the number of positional arguments including *args[0]*, plus :c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET` if the value of ``args[0]`` may temporarily be changed. Keyword arguments can be passed just like in :c:func:`PyObject_Vectorcall`."
 msgstr ""
 
 #: ../../c-api/call.rst:399
-msgid "If the object has the :const:`Py_TPFLAGS_METHOD_DESCRIPTOR` feature, this will call the unbound method object with the full *args* vector as arguments."
+msgid "If the object has the :c:macro:`Py_TPFLAGS_METHOD_DESCRIPTOR` feature, this will call the unbound method object with the full *args* vector as arguments."
 msgstr ""
 
 #: ../../c-api/call.rst:410

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -684,7 +684,7 @@ msgid "doctest"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:778
-msgid "A new :ref:`option flag <doctest-options>`, :data:`~doctest.FAIL_FAST`, halts test running as soon as the first failure is detected.  (Contributed by R. David Murray and Daniel Urban in :issue:`16522`.)"
+msgid "A new :ref:`option flag <doctest-options>`, :const:`~doctest.FAIL_FAST`, halts test running as soon as the first failure is detected.  (Contributed by R. David Murray and Daniel Urban in :issue:`16522`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:782
@@ -724,7 +724,7 @@ msgid "A new :func:`~filecmp.clear_cache` function provides the ability to clear
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:844
-msgid "New module attribute :data:`~filecmp.DEFAULT_IGNORES` provides the list of directories that are used as the default value for the *ignore* parameter of the :func:`~filecmp.dircmp` function.  (Contributed by Eli Bendersky in :issue:`15442`.)"
+msgid "New module attribute :const:`~filecmp.DEFAULT_IGNORES` provides the list of directories that are used as the default value for the *ignore* parameter of the :func:`~filecmp.dircmp` function.  (Contributed by Eli Bendersky in :issue:`15442`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:851
@@ -996,7 +996,7 @@ msgid ":func:`os.path.ismount` now recognizes volumes mounted below a drive root
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1191
-msgid ":func:`os.open` supports two new flags on platforms that provide them, :data:`~os.O_PATH` (un-opened file descriptor), and :data:`~os.O_TMPFILE` (unnamed temporary file; as of 3.4.0 release available only on Linux systems with a kernel version of 3.11 or newer that have uapi headers).  (Contributed by Christian Heimes in :issue:`18673` and Benjamin Peterson, respectively.)"
+msgid ":func:`os.open` supports two new flags on platforms that provide them, :const:`~os.O_PATH` (un-opened file descriptor), and :const:`~os.O_TMPFILE` (unnamed temporary file; as of 3.4.0 release available only on Linux systems with a kernel version of 3.11 or newer that have uapi headers).  (Contributed by Christian Heimes in :issue:`18673` and Benjamin Peterson, respectively.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1199
@@ -1032,7 +1032,7 @@ msgid "plistlib"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1237
-msgid ":mod:`plistlib` now has an API that is similar to the standard pattern for stdlib serialization protocols, with new :func:`~plistlib.load`, :func:`~plistlib.dump`, :func:`~plistlib.loads`, and :func:`~plistlib.dumps` functions.  (The older API is now deprecated.)  In addition to the already supported XML plist format (:data:`~plistlib.FMT_XML`), it also now supports the binary plist format (:data:`~plistlib.FMT_BINARY`).  (Contributed by Ronald Oussoren and others in :issue:`14455`.)"
+msgid ":mod:`plistlib` now has an API that is similar to the standard pattern for stdlib serialization protocols, with new :func:`~plistlib.load`, :func:`~plistlib.dump`, :func:`~plistlib.loads`, and :func:`~plistlib.dumps` functions.  (The older API is now deprecated.)  In addition to the already supported XML plist format (:const:`~plistlib.FMT_XML`), it also now supports the binary plist format (:const:`~plistlib.FMT_BINARY`).  (Contributed by Ronald Oussoren and others in :issue:`14455`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1247
@@ -1104,11 +1104,11 @@ msgid "New :func:`~resource.prlimit` function, available on Linux platforms with
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1325
-msgid "On Linux kernel version 2.6.36 or later, there are also some new Linux specific constants: :attr:`~resource.RLIMIT_MSGQUEUE`, :attr:`~resource.RLIMIT_NICE`, :attr:`~resource.RLIMIT_RTPRIO`, :attr:`~resource.RLIMIT_RTTIME`, and :attr:`~resource.RLIMIT_SIGPENDING`. (Contributed by Christian Heimes in :issue:`19324`.)"
+msgid "On Linux kernel version 2.6.36 or later, there are also some new Linux specific constants: :const:`~resource.RLIMIT_MSGQUEUE`, :const:`~resource.RLIMIT_NICE`, :const:`~resource.RLIMIT_RTPRIO`, :const:`~resource.RLIMIT_RTTIME`, and :const:`~resource.RLIMIT_SIGPENDING`. (Contributed by Christian Heimes in :issue:`19324`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1331
-msgid "On FreeBSD version 9 and later, there some new FreeBSD specific constants: :attr:`~resource.RLIMIT_SBSIZE`, :attr:`~resource.RLIMIT_SWAP`, and :attr:`~resource.RLIMIT_NPTS`.  (Contributed by Claudiu Popa in :issue:`19343`.)"
+msgid "On FreeBSD version 9 and later, there some new FreeBSD specific constants: :const:`~resource.RLIMIT_SBSIZE`, :const:`~resource.RLIMIT_SWAP`, and :const:`~resource.RLIMIT_NPTS`.  (Contributed by Claudiu Popa in :issue:`19343`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1338
@@ -1160,7 +1160,7 @@ msgid "socket"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1391
-msgid "The socket module now supports the :data:`~socket.CAN_BCM` protocol on platforms that support it.  (Contributed by Brian Thorne in :issue:`15359`.)"
+msgid "The socket module now supports the :const:`~socket.CAN_BCM` protocol on platforms that support it.  (Contributed by Brian Thorne in :issue:`15359`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1394
@@ -1172,7 +1172,7 @@ msgid "The ``socket.AF_*`` and ``socket.SOCK_*`` constants are now enumeration v
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1402
-msgid "The :data:`~socket.AF_LINK` constant is now available on BSD and OSX."
+msgid "The :const:`~socket.AF_LINK` constant is now available on BSD and OSX."
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1404
@@ -1212,7 +1212,7 @@ msgid ":class:`~ssl.SSLContext` has a new method, :meth:`~ssl.SSLContext.cert_st
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1460
-msgid "If OpenSSL 0.9.8 or later is available, :class:`~ssl.SSLContext` has a new attribute :attr:`~ssl.SSLContext.verify_flags` that can be used to control the certificate verification process by setting it to some combination of the new constants :data:`~ssl.VERIFY_DEFAULT`, :data:`~ssl.VERIFY_CRL_CHECK_LEAF`, :data:`~ssl.VERIFY_CRL_CHECK_CHAIN`, or :data:`~ssl.VERIFY_X509_STRICT`. OpenSSL does not do any CRL verification by default.  (Contributed by Christien Heimes in :issue:`8813`.)"
+msgid "If OpenSSL 0.9.8 or later is available, :class:`~ssl.SSLContext` has a new attribute :attr:`~ssl.SSLContext.verify_flags` that can be used to control the certificate verification process by setting it to some combination of the new constants :const:`~ssl.VERIFY_DEFAULT`, :const:`~ssl.VERIFY_CRL_CHECK_LEAF`, :const:`~ssl.VERIFY_CRL_CHECK_CHAIN`, or :const:`~ssl.VERIFY_X509_STRICT`. OpenSSL does not do any CRL verification by default.  (Contributed by Christien Heimes in :issue:`8813`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1468
@@ -1240,7 +1240,7 @@ msgid "The :mod:`stat` module is now backed by a C implementation in :mod:`_stat
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1502
-msgid "The module supports new :mod:`~stat.ST_MODE` flags, :mod:`~stat.S_IFDOOR`, :attr:`~stat.S_IFPORT`, and :attr:`~stat.S_IFWHT`.  (Contributed by Christian Hiemes in :issue:`11016`.)"
+msgid "The module supports new :mod:`~stat.ST_MODE` flags, :mod:`~stat.S_IFDOOR`, :const:`~stat.S_IFPORT`, and :const:`~stat.S_IFWHT`.  (Contributed by Christian Hiemes in :issue:`11016`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1508
@@ -1512,7 +1512,7 @@ msgid ":pep:`456` follows up on earlier security fix work done on Python's hash 
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1852
-msgid "The PEP adds additional fields to the :attr:`sys.hash_info` named tuple to describe the hash algorithm in use by the currently executing binary.  Otherwise, the PEP does not alter any existing CPython APIs."
+msgid "The PEP adds additional fields to the :data:`sys.hash_info` named tuple to describe the hash algorithm in use by the currently executing binary.  Otherwise, the PEP does not alter any existing CPython APIs."
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1860

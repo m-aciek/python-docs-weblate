@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -466,7 +466,7 @@ msgid "The object must be a Python sequence whose length is the number of format
 msgstr ""
 
 #: ../../c-api/arg.rst:345
-msgid "It is possible to pass \"long\" integers (integers whose value exceeds the platform's :const:`LONG_MAX`) however no proper range checking is done --- the most significant bits are silently truncated when the receiving field is too small to receive the value (actually, the semantics are inherited from downcasts in C --- your mileage may vary)."
+msgid "It is possible to pass \"long\" integers (integers whose value exceeds the platform's :c:macro:`LONG_MAX`) however no proper range checking is done --- the most significant bits are silently truncated when the receiving field is too small to receive the value (actually, the semantics are inherited from downcasts in C --- your mileage may vary)."
 msgstr ""
 
 #: ../../c-api/arg.rst:351
@@ -550,7 +550,7 @@ msgid "Function used to deconstruct the argument lists of \"old-style\" function
 msgstr ""
 
 #: ../../c-api/arg.rst:456
-msgid "A simpler form of parameter retrieval which does not use a format string to specify the types of the arguments.  Functions which use this method to retrieve their parameters should be declared as :const:`METH_VARARGS` in function or method tables.  The tuple containing the actual parameters should be passed as *args*; it must actually be a tuple.  The length of the tuple must be at least *min* and no more than *max*; *min* and *max* may be equal.  Additional arguments must be passed to the function, each of which should be a pointer to a :c:expr:`PyObject*` variable; these will be filled in with the values from *args*; they will contain :term:`borrowed references <borrowed reference>`. The variables which correspond to optional parameters not given by *args* will not be filled in; these should be initialized by the caller. This function returns true on success and false if *args* is not a tuple or contains the wrong number of elements; an exception will be set if there was a failure."
+msgid "A simpler form of parameter retrieval which does not use a format string to specify the types of the arguments.  Functions which use this method to retrieve their parameters should be declared as :c:macro:`METH_VARARGS` in function or method tables.  The tuple containing the actual parameters should be passed as *args*; it must actually be a tuple.  The length of the tuple must be at least *min* and no more than *max*; *min* and *max* may be equal.  Additional arguments must be passed to the function, each of which should be a pointer to a :c:expr:`PyObject*` variable; these will be filled in with the values from *args*; they will contain :term:`borrowed references <borrowed reference>`. The variables which correspond to optional parameters not given by *args* will not be filled in; these should be initialized by the caller. This function returns true on success and false if *args* is not a tuple or contains the wrong number of elements; an exception will be set if there was a failure."
 msgstr ""
 
 #: ../../c-api/arg.rst:471
@@ -636,7 +636,7 @@ msgid "``u`` (:class:`str`) [const wchar_t \\*]"
 msgstr ""
 
 #: ../../c-api/arg.rst:550
-msgid "Convert a null-terminated :c:expr:`wchar_t` buffer of Unicode (UTF-16 or UCS-4) data to a Python Unicode object.  If the Unicode buffer pointer is ``NULL``, ``None`` is returned."
+msgid "Convert a null-terminated :c:type:`wchar_t` buffer of Unicode (UTF-16 or UCS-4) data to a Python Unicode object.  If the Unicode buffer pointer is ``NULL``, ``None`` is returned."
 msgstr ""
 
 #: ../../c-api/arg.rst:557

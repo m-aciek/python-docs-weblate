@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgid "*cafile*, *capath*, *cadata* represent optional CA certificates to trust 
 msgstr ""
 
 #: ../../library/ssl.rst:139
-msgid "The settings are: :data:`PROTOCOL_TLS_CLIENT` or :data:`PROTOCOL_TLS_SERVER`, :data:`OP_NO_SSLv2`, and :data:`OP_NO_SSLv3` with high encryption cipher suites without RC4 and without unauthenticated cipher suites. Passing :data:`~Purpose.SERVER_AUTH` as *purpose* sets :data:`~SSLContext.verify_mode` to :data:`CERT_REQUIRED` and either loads CA certificates (when at least one of *cafile*, *capath* or *cadata* is given) or uses :meth:`SSLContext.load_default_certs` to load default CA certificates."
+msgid "The settings are: :data:`PROTOCOL_TLS_CLIENT` or :data:`PROTOCOL_TLS_SERVER`, :data:`OP_NO_SSLv2`, and :data:`OP_NO_SSLv3` with high encryption cipher suites without RC4 and without unauthenticated cipher suites. Passing :const:`~Purpose.SERVER_AUTH` as *purpose* sets :data:`~SSLContext.verify_mode` to :data:`CERT_REQUIRED` and either loads CA certificates (when at least one of *cafile*, *capath* or *cadata* is given) or uses :meth:`SSLContext.load_default_certs` to load default CA certificates."
 msgstr ""
 
 #: ../../library/ssl.rst:148
@@ -1025,16 +1025,37 @@ msgstr ""
 #: ../../library/ssl.rst:1388
 #: ../../library/ssl.rst:1389
 #: ../../library/ssl.rst:1390
+#: ../../library/ssl.rst:1390
+#: ../../library/ssl.rst:1390
+#: ../../library/ssl.rst:1390
+#: ../../library/ssl.rst:1391
 #: ../../library/ssl.rst:1391
 #: ../../library/ssl.rst:1392
+#: ../../library/ssl.rst:1392
+#: ../../library/ssl.rst:1393
 #: ../../library/ssl.rst:1393
 msgid "yes"
 msgstr ""
 
 #: ../../library/ssl.rst:1388
+#: ../../library/ssl.rst:1388
+#: ../../library/ssl.rst:1388
+#: ../../library/ssl.rst:1388
+#: ../../library/ssl.rst:1389
+#: ../../library/ssl.rst:1389
+#: ../../library/ssl.rst:1389
 #: ../../library/ssl.rst:1389
 #: ../../library/ssl.rst:1391
+#: ../../library/ssl.rst:1391
+#: ../../library/ssl.rst:1391
+#: ../../library/ssl.rst:1391
 #: ../../library/ssl.rst:1392
+#: ../../library/ssl.rst:1392
+#: ../../library/ssl.rst:1392
+#: ../../library/ssl.rst:1392
+#: ../../library/ssl.rst:1393
+#: ../../library/ssl.rst:1393
+#: ../../library/ssl.rst:1393
 #: ../../library/ssl.rst:1393
 msgid "no"
 msgstr ""
@@ -1138,7 +1159,7 @@ msgid "Load a set of default \"certification authority\" (CA) certificates from 
 msgstr ""
 
 #: ../../library/ssl.rst:1486
-msgid "The *purpose* flag specifies what kind of CA certificates are loaded. The default settings :data:`Purpose.SERVER_AUTH` loads certificates, that are flagged and trusted for TLS web server authentication (client side sockets). :data:`Purpose.CLIENT_AUTH` loads CA certificates for client certificate verification on the server side."
+msgid "The *purpose* flag specifies what kind of CA certificates are loaded. The default settings :const:`Purpose.SERVER_AUTH` loads certificates, that are flagged and trusted for TLS web server authentication (client side sockets). :const:`Purpose.CLIENT_AUTH` loads CA certificates for client certificate verification on the server side."
 msgstr ""
 
 #: ../../library/ssl.rst:1496
@@ -1278,7 +1299,7 @@ msgid "Vincent Bernat."
 msgstr ""
 
 #: ../../library/ssl.rst:1729
-msgid "Wrap an existing Python socket *sock* and return an instance of :attr:`SSLContext.sslsocket_class` (default :class:`SSLSocket`). The returned SSL socket is tied to the context, its settings and certificates. *sock* must be a :data:`~socket.SOCK_STREAM` socket; other socket types are unsupported."
+msgid "Wrap an existing Python socket *sock* and return an instance of :attr:`SSLContext.sslsocket_class` (default :class:`SSLSocket`). The returned SSL socket is tied to the context, its settings and certificates. *sock* must be a :const:`~socket.SOCK_STREAM` socket; other socket types are unsupported."
 msgstr ""
 
 #: ../../library/ssl.rst:1735
@@ -1835,7 +1856,7 @@ msgid "SSL versions 2 and 3 are considered insecure and are therefore dangerous 
 msgstr ""
 
 #: ../../library/ssl.rst:2595
-msgid "The SSL context created above will only allow TLSv1.2 and later (if supported by your system) connections to a server. :const:`PROTOCOL_TLS_CLIENT` implies certificate validation and hostname checks by default. You have to load certificates into the context."
+msgid "The SSL context created above will only allow TLSv1.3 and later (if supported by your system) connections to a server. :const:`PROTOCOL_TLS_CLIENT` implies certificate validation and hostname checks by default. You have to load certificates into the context."
 msgstr ""
 
 #: ../../library/ssl.rst:2602

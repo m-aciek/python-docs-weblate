@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1006,7 +1006,7 @@ msgid "Return a dictionary in which extensions can store thread-specific state i
 msgstr ""
 
 #: ../../c-api/init.rst:1394
-msgid "Asynchronously raise an exception in a thread. The *id* argument is the thread id of the target thread; *exc* is the exception object to be raised. This function does not steal any references to *exc*. To prevent naive misuse, you must write your own C extension to call this.  Must be called with the GIL held. Returns the number of thread states modified; this is normally one, but will be zero if the thread id isn't found.  If *exc* is :const:`NULL`, the pending exception (if any) for the thread is cleared. This raises no exceptions."
+msgid "Asynchronously raise an exception in a thread. The *id* argument is the thread id of the target thread; *exc* is the exception object to be raised. This function does not steal any references to *exc*. To prevent naive misuse, you must write your own C extension to call this.  Must be called with the GIL held. Returns the number of thread states modified; this is normally one, but will be zero if the thread id isn't found.  If *exc* is ``NULL``, the pending exception (if any) for the thread is cleared. This raises no exceptions."
 msgstr ""
 
 #: ../../c-api/init.rst:1402
@@ -1167,7 +1167,7 @@ msgid "This C interface allows the profiling or tracing code to avoid the overhe
 msgstr ""
 
 #: ../../c-api/init.rst:1675
-msgid "The type of the trace function registered using :c:func:`PyEval_SetProfile` and :c:func:`PyEval_SetTrace`. The first parameter is the object passed to the registration function as *obj*, *frame* is the frame object to which the event pertains, *what* is one of the constants :const:`PyTrace_CALL`, :const:`PyTrace_EXCEPTION`, :const:`PyTrace_LINE`, :const:`PyTrace_RETURN`, :const:`PyTrace_C_CALL`, :const:`PyTrace_C_EXCEPTION`, :const:`PyTrace_C_RETURN`, or :const:`PyTrace_OPCODE`, and *arg* depends on the value of *what*:"
+msgid "The type of the trace function registered using :c:func:`PyEval_SetProfile` and :c:func:`PyEval_SetTrace`. The first parameter is the object passed to the registration function as *obj*, *frame* is the frame object to which the event pertains, *what* is one of the constants :c:data:`PyTrace_CALL`, :c:data:`PyTrace_EXCEPTION`, :c:data:`PyTrace_LINE`, :c:data:`PyTrace_RETURN`, :c:data:`PyTrace_C_CALL`, :c:data:`PyTrace_C_EXCEPTION`, :c:data:`PyTrace_C_RETURN`, or :c:data:`PyTrace_OPCODE`, and *arg* depends on the value of *what*:"
 msgstr ""
 
 #: ../../c-api/init.rst:1684
@@ -1179,7 +1179,7 @@ msgid "Meaning of *arg*"
 msgstr ""
 
 #: ../../c-api/init.rst:1686
-msgid ":const:`PyTrace_CALL`"
+msgid ":c:data:`PyTrace_CALL`"
 msgstr ""
 
 #: ../../c-api/init.rst:1686
@@ -1189,7 +1189,7 @@ msgid "Always :c:data:`Py_None`."
 msgstr ""
 
 #: ../../c-api/init.rst:1688
-msgid ":const:`PyTrace_EXCEPTION`"
+msgid ":c:data:`PyTrace_EXCEPTION`"
 msgstr ""
 
 #: ../../c-api/init.rst:1688
@@ -1197,11 +1197,11 @@ msgid "Exception information as returned by :func:`sys.exc_info`."
 msgstr ""
 
 #: ../../c-api/init.rst:1691
-msgid ":const:`PyTrace_LINE`"
+msgid ":c:data:`PyTrace_LINE`"
 msgstr ""
 
 #: ../../c-api/init.rst:1693
-msgid ":const:`PyTrace_RETURN`"
+msgid ":c:data:`PyTrace_RETURN`"
 msgstr ""
 
 #: ../../c-api/init.rst:1693
@@ -1209,7 +1209,7 @@ msgid "Value being returned to the caller, or ``NULL`` if caused by an exception
 msgstr ""
 
 #: ../../c-api/init.rst:1696
-msgid ":const:`PyTrace_C_CALL`"
+msgid ":c:data:`PyTrace_C_CALL`"
 msgstr ""
 
 #: ../../c-api/init.rst:1696
@@ -1219,15 +1219,15 @@ msgid "Function object being called."
 msgstr ""
 
 #: ../../c-api/init.rst:1698
-msgid ":const:`PyTrace_C_EXCEPTION`"
+msgid ":c:data:`PyTrace_C_EXCEPTION`"
 msgstr ""
 
 #: ../../c-api/init.rst:1700
-msgid ":const:`PyTrace_C_RETURN`"
+msgid ":c:data:`PyTrace_C_RETURN`"
 msgstr ""
 
 #: ../../c-api/init.rst:1702
-msgid ":const:`PyTrace_OPCODE`"
+msgid ":c:data:`PyTrace_OPCODE`"
 msgstr ""
 
 #: ../../c-api/init.rst:1707
@@ -1263,7 +1263,7 @@ msgid "The value for the *what* parameter to :c:type:`Py_tracefunc` functions (b
 msgstr ""
 
 #: ../../c-api/init.rst:1766
-msgid "Set the profiler function to *func*.  The *obj* parameter is passed to the function as its first parameter, and may be any Python object, or ``NULL``.  If the profile function needs to maintain state, using a different value for *obj* for each thread provides a convenient and thread-safe place to store it.  The profile function is called for all monitored events except :const:`PyTrace_LINE` :const:`PyTrace_OPCODE` and :const:`PyTrace_EXCEPTION`."
+msgid "Set the profiler function to *func*.  The *obj* parameter is passed to the function as its first parameter, and may be any Python object, or ``NULL``.  If the profile function needs to maintain state, using a different value for *obj* for each thread provides a convenient and thread-safe place to store it.  The profile function is called for all monitored events except :c:data:`PyTrace_LINE` :c:data:`PyTrace_OPCODE` and :c:data:`PyTrace_EXCEPTION`."
 msgstr ""
 
 #: ../../c-api/init.rst:1773
@@ -1286,7 +1286,7 @@ msgid "As :c:func:`PyEval_SetProfile`, this function ignores any exceptions rais
 msgstr ""
 
 #: ../../c-api/init.rst:1792
-msgid "Set the tracing function to *func*.  This is similar to :c:func:`PyEval_SetProfile`, except the tracing function does receive line-number events and per-opcode events, but does not receive any event related to C function objects being called.  Any trace function registered using :c:func:`PyEval_SetTrace` will not receive :const:`PyTrace_C_CALL`, :const:`PyTrace_C_EXCEPTION` or :const:`PyTrace_C_RETURN` as a value for the *what* parameter."
+msgid "Set the tracing function to *func*.  This is similar to :c:func:`PyEval_SetProfile`, except the tracing function does receive line-number events and per-opcode events, but does not receive any event related to C function objects being called.  Any trace function registered using :c:func:`PyEval_SetTrace` will not receive :c:data:`PyTrace_C_CALL`, :c:data:`PyTrace_C_EXCEPTION` or :c:data:`PyTrace_C_RETURN` as a value for the *what* parameter."
 msgstr ""
 
 #: ../../c-api/init.rst:1799
@@ -1458,9 +1458,14 @@ msgid "path (in module sys)"
 msgstr ""
 
 #: ../../c-api/init.rst:334
+#: ../../c-api/init.rst:334
+#: ../../c-api/init.rst:334
+#: ../../c-api/init.rst:334
 #: ../../c-api/init.rst:589
 #: ../../c-api/init.rst:615
 #: ../../c-api/init.rst:1054
+#: ../../c-api/init.rst:1496
+#: ../../c-api/init.rst:1496
 #: ../../c-api/init.rst:1496
 msgid "module"
 msgstr ""
@@ -1581,6 +1586,7 @@ msgstr ""
 msgid "setswitchinterval() (in module sys)"
 msgstr ""
 
+#: ../../c-api/init.rst:861
 #: ../../c-api/init.rst:861
 msgid "PyThreadState"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1345,7 +1345,7 @@ msgid "Many of the not-very-useful (private to :class:`Mock` rather than the thi
 msgstr ""
 
 #: ../../library/unittest.mock.rst:2439
-msgid "Alternatively you can just use ``vars(my_mock)`` (instance members) and ``dir(type(my_mock))`` (type members) to bypass the filtering irrespective of :data:`mock.FILTER_DIR`."
+msgid "Alternatively you can just use ``vars(my_mock)`` (instance members) and ``dir(type(my_mock))`` (type members) to bypass the filtering irrespective of :const:`mock.FILTER_DIR`."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:2445

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgid "A :class:`FTP` subclass which adds TLS support to FTP as described in :rf
 msgstr ""
 
 #: ../../library/ftplib.rst:105
-msgid "The class now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+msgid "The class now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: ../../library/ftplib.rst:116
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Connect to the given host and port.  The default port number is ``21``, as specified by the FTP protocol specification.  It is rarely needed to specify a different port number.  This function should be called only once for each instance; it should not be called at all if a host was given when the instance was created.  All other methods can only be used after a connection has been made. The optional *timeout* parameter specifies a timeout in seconds for the connection attempt. If no *timeout* is passed, the global default timeout setting will be used. *source_address* is a 2-tuple ``(host, port)`` for the socket to bind to as its source address before connecting."
 msgstr ""
 
-#: ../../library/ftplib.rst:216
+#: ../../library/ftplib.rst:214
 msgid "Raises an :ref:`auditing event <auditing>` ``ftplib.connect`` with arguments ``self``, ``host``, ``port``."
 msgstr ""
 
@@ -155,8 +155,8 @@ msgstr ""
 msgid "Send a simple command string to the server and return the response string."
 msgstr ""
 
-#: ../../library/ftplib.rst:251
-#: ../../library/ftplib.rst:260
+#: ../../library/ftplib.rst:249
+#: ../../library/ftplib.rst:258
 msgid "Raises an :ref:`auditing event <auditing>` ``ftplib.sendcmd`` with arguments ``self``, ``cmd``."
 msgstr ""
 
@@ -262,7 +262,7 @@ msgid ":class:`FTP_TLS` class inherits from :class:`FTP`, defining these additio
 msgstr ""
 
 #: ../../library/ftplib.rst:434
-msgid "The SSL version to use (defaults to :attr:`ssl.PROTOCOL_SSLv23`)."
+msgid "The SSL version to use (defaults to :data:`ssl.PROTOCOL_SSLv23`)."
 msgstr ""
 
 #: ../../library/ftplib.rst:438
@@ -270,7 +270,7 @@ msgid "Set up a secure control connection by using TLS or SSL, depending on what
 msgstr ""
 
 #: ../../library/ftplib.rst:441
-msgid "The method now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+msgid "The method now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: ../../library/ftplib.rst:448
@@ -285,6 +285,7 @@ msgstr ""
 msgid "Set up clear text data connection."
 msgstr ""
 
+#: ../../library/ftplib.rst:9
 #: ../../library/ftplib.rst:9
 msgid "FTP"
 msgstr ""

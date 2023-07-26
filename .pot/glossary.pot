@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "asynchronous context manager"
 msgstr ""
 
 #: ../../glossary.rst:94
-msgid "An object which controls the environment seen in an :keyword:`async with` statement by defining :meth:`__aenter__` and :meth:`__aexit__` methods.  Introduced by :pep:`492`."
+msgid "An object which controls the environment seen in an :keyword:`async with` statement by defining :meth:`~object.__aenter__` and :meth:`~object.__aexit__` methods.  Introduced by :pep:`492`."
 msgstr ""
 
 #: ../../glossary.rst:97
@@ -137,11 +137,11 @@ msgid "An object created by a :term:`asynchronous generator` function."
 msgstr ""
 
 #: ../../glossary.rst:115
-msgid "This is an :term:`asynchronous iterator` which when called using the :meth:`__anext__` method returns an awaitable object which will execute the body of the asynchronous generator function until the next :keyword:`yield` expression."
+msgid "This is an :term:`asynchronous iterator` which when called using the :meth:`~object.__anext__` method returns an awaitable object which will execute the body of the asynchronous generator function until the next :keyword:`yield` expression."
 msgstr ""
 
 #: ../../glossary.rst:120
-msgid "Each :keyword:`yield` temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements).  When the *asynchronous generator iterator* effectively resumes with another awaitable returned by :meth:`__anext__`, it picks up where it left off.  See :pep:`492` and :pep:`525`."
+msgid "Each :keyword:`yield` temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements).  When the *asynchronous generator iterator* effectively resumes with another awaitable returned by :meth:`~object.__anext__`, it picks up where it left off.  See :pep:`492` and :pep:`525`."
 msgstr ""
 
 #: ../../glossary.rst:125
@@ -149,7 +149,7 @@ msgid "asynchronous iterable"
 msgstr ""
 
 #: ../../glossary.rst:127
-msgid "An object, that can be used in an :keyword:`async for` statement. Must return an :term:`asynchronous iterator` from its :meth:`__aiter__` method.  Introduced by :pep:`492`."
+msgid "An object, that can be used in an :keyword:`async for` statement. Must return an :term:`asynchronous iterator` from its :meth:`~object.__aiter__` method.  Introduced by :pep:`492`."
 msgstr ""
 
 #: ../../glossary.rst:130
@@ -157,7 +157,7 @@ msgid "asynchronous iterator"
 msgstr ""
 
 #: ../../glossary.rst:132
-msgid "An object that implements the :meth:`__aiter__` and :meth:`__anext__` methods.  ``__anext__`` must return an :term:`awaitable` object. :keyword:`async for` resolves the awaitables returned by an asynchronous iterator's :meth:`__anext__` method until it raises a :exc:`StopAsyncIteration` exception.  Introduced by :pep:`492`."
+msgid "An object that implements the :meth:`~object.__aiter__` and :meth:`~object.__anext__` methods.  :meth:`~object.__anext__` must return an :term:`awaitable` object. :keyword:`async for` resolves the awaitables returned by an asynchronous iterator's :meth:`~object.__anext__` method until it raises a :exc:`StopAsyncIteration` exception.  Introduced by :pep:`492`."
 msgstr ""
 
 #: ../../glossary.rst:137
@@ -177,7 +177,7 @@ msgid "awaitable"
 msgstr ""
 
 #: ../../glossary.rst:151
-msgid "An object that can be used in an :keyword:`await` expression.  Can be a :term:`coroutine` or an object with an :meth:`__await__` method. See also :pep:`492`."
+msgid "An object that can be used in an :keyword:`await` expression.  Can be a :term:`coroutine` or an object with an :meth:`~object.__await__` method. See also :pep:`492`."
 msgstr ""
 
 #: ../../glossary.rst:154
@@ -540,8 +540,8 @@ msgstr ""
 msgid "The process of freeing memory when it is not used anymore.  Python performs garbage collection via reference counting and a cyclic garbage collector that is able to detect and break reference cycles.  The garbage collector can be controlled using the :mod:`gc` module."
 msgstr ""
 
-#: ../../glossary.rst:489
 #: ../../glossary.rst:490
+#: ../../glossary.rst:489
 msgid "generator"
 msgstr ""
 
@@ -565,8 +565,8 @@ msgstr ""
 msgid "Each :keyword:`yield` temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements).  When the *generator iterator* resumes, it picks up where it left off (in contrast to functions which start fresh on every invocation)."
 msgstr ""
 
-#: ../../glossary.rst:510
 #: ../../glossary.rst:511
+#: ../../glossary.rst:510
 msgid "generator expression"
 msgstr ""
 
@@ -875,8 +875,8 @@ msgstr ""
 msgid "More information can be found in :ref:`metaclasses`."
 msgstr ""
 
-#: ../../glossary.rst:756
 #: ../../glossary.rst:788
+#: ../../glossary.rst:756
 #: ../../glossary.rst:1120
 msgid "method"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1312,7 +1312,7 @@ msgid "a Python class that has been registered as :class:`collections.abc.Sequen
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1843
-msgid "a builtin class that has its (CPython) :data:`Py_TPFLAGS_SEQUENCE` bit set"
+msgid "a builtin class that has its (CPython) :c:macro:`Py_TPFLAGS_SEQUENCE` bit set"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1844
@@ -1357,7 +1357,7 @@ msgid "a Python class that has been registered as :class:`collections.abc.Mappin
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1862
-msgid "a builtin class that has its (CPython) :data:`Py_TPFLAGS_MAPPING` bit set"
+msgid "a builtin class that has its (CPython) :c:macro:`Py_TPFLAGS_MAPPING` bit set"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1865
@@ -1379,11 +1379,19 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:7
 #: ../../reference/compound_stmts.rst:86
 #: ../../reference/compound_stmts.rst:111
+#: ../../reference/compound_stmts.rst:111
+#: ../../reference/compound_stmts.rst:129
 #: ../../reference/compound_stmts.rst:129
 #: ../../reference/compound_stmts.rst:144
+#: ../../reference/compound_stmts.rst:144
+#: ../../reference/compound_stmts.rst:169
 #: ../../reference/compound_stmts.rst:169
 #: ../../reference/compound_stmts.rst:207
 #: ../../reference/compound_stmts.rst:389
+#: ../../reference/compound_stmts.rst:389
+#: ../../reference/compound_stmts.rst:389
+#: ../../reference/compound_stmts.rst:436
+#: ../../reference/compound_stmts.rst:436
 #: ../../reference/compound_stmts.rst:436
 #: ../../reference/compound_stmts.rst:470
 #: ../../reference/compound_stmts.rst:587
@@ -1434,14 +1442,22 @@ msgid "if"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:86
+#: ../../reference/compound_stmts.rst:86
 #: ../../reference/compound_stmts.rst:111
 #: ../../reference/compound_stmts.rst:144
+#: ../../reference/compound_stmts.rst:144
+#: ../../reference/compound_stmts.rst:207
+#: ../../reference/compound_stmts.rst:207
+#: ../../reference/compound_stmts.rst:207
 #: ../../reference/compound_stmts.rst:207
 #: ../../reference/compound_stmts.rst:328
 #: ../../reference/compound_stmts.rst:389
 #: ../../reference/compound_stmts.rst:407
 #: ../../reference/compound_stmts.rst:470
 #: ../../reference/compound_stmts.rst:587
+#: ../../reference/compound_stmts.rst:587
+#: ../../reference/compound_stmts.rst:587
+#: ../../reference/compound_stmts.rst:1494
 #: ../../reference/compound_stmts.rst:1494
 msgid "keyword"
 msgstr ""
@@ -1515,6 +1531,7 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:144
 #: ../../reference/compound_stmts.rst:299
 #: ../../reference/compound_stmts.rst:1192
+#: ../../reference/compound_stmts.rst:1192
 #: ../../reference/compound_stmts.rst:1374
 msgid "object"
 msgstr ""
@@ -1547,6 +1564,8 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:207
 #: ../../reference/compound_stmts.rst:266
 #: ../../reference/compound_stmts.rst:470
+#: ../../reference/compound_stmts.rst:470
+#: ../../reference/compound_stmts.rst:587
 #: ../../reference/compound_stmts.rst:587
 msgid "as"
 msgstr ""
@@ -1581,6 +1600,7 @@ msgid "with"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:470
+#: ../../reference/compound_stmts.rst:470
 msgid "with statement"
 msgstr ""
 
@@ -1591,9 +1611,11 @@ msgid ", (comma)"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:587
+#: ../../reference/compound_stmts.rst:587
 msgid "match"
 msgstr ""
 
+#: ../../reference/compound_stmts.rst:587
 #: ../../reference/compound_stmts.rst:587
 msgid "case"
 msgstr ""
@@ -1635,6 +1657,9 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1192
 #: ../../reference/compound_stmts.rst:1233
 #: ../../reference/compound_stmts.rst:1268
+#: ../../reference/compound_stmts.rst:1268
+#: ../../reference/compound_stmts.rst:1297
+#: ../../reference/compound_stmts.rst:1297
 #: ../../reference/compound_stmts.rst:1297
 msgid "function definition"
 msgstr ""
@@ -1643,6 +1668,9 @@ msgstr ""
 msgid "def"
 msgstr ""
 
+#: ../../reference/compound_stmts.rst:1192
+#: ../../reference/compound_stmts.rst:1192
+#: ../../reference/compound_stmts.rst:1192
 #: ../../reference/compound_stmts.rst:1192
 #: ../../reference/compound_stmts.rst:1318
 msgid "function"
@@ -1654,10 +1682,15 @@ msgid "definition"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1192
+#: ../../reference/compound_stmts.rst:1192
+#: ../../reference/compound_stmts.rst:1192
+#: ../../reference/compound_stmts.rst:1192
+#: ../../reference/compound_stmts.rst:1374
 #: ../../reference/compound_stmts.rst:1374
 msgid "name"
 msgstr ""
 
+#: ../../reference/compound_stmts.rst:1192
 #: ../../reference/compound_stmts.rst:1192
 #: ../../reference/compound_stmts.rst:1374
 msgid "binding"
@@ -1718,6 +1751,7 @@ msgid "->"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1318
+#: ../../reference/compound_stmts.rst:1318
 msgid "function annotations"
 msgstr ""
 
@@ -1729,6 +1763,9 @@ msgstr ""
 msgid "expression"
 msgstr ""
 
+#: ../../reference/compound_stmts.rst:1374
+#: ../../reference/compound_stmts.rst:1374
+#: ../../reference/compound_stmts.rst:1374
 #: ../../reference/compound_stmts.rst:1374
 msgid "class"
 msgstr ""

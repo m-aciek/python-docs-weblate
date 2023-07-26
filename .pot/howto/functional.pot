@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -637,7 +637,7 @@ msgid "For many uses of :func:`functools.reduce`, though, it can be clearer to j
 msgstr ""
 
 #: ../../howto/functional.rst:1073
-msgid "A related function is :func:`itertools.accumulate(iterable, func=operator.add) <itertools.accumulate>`.  It performs the same calculation, but instead of returning only the final result, :func:`accumulate` returns an iterator that also yields each partial result::"
+msgid "A related function is :func:`itertools.accumulate(iterable, func=operator.add) <itertools.accumulate>`.  It performs the same calculation, but instead of returning only the final result, :func:`~itertools.accumulate` returns an iterator that also yields each partial result::"
 msgstr ""
 
 #: ../../howto/functional.rst:1086

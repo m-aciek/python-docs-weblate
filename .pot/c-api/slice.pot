@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Retrieve the start, stop and step indices from the slice object *slice*, 
 msgstr ""
 
 #: ../../c-api/slice.rst:36
-msgid "Returns ``0`` on success and ``-1`` on error with no exception set (unless one of the indices was not :const:`None` and failed to be converted to an integer, in which case ``-1`` is returned with an exception set)."
+msgid "Returns ``0`` on success and ``-1`` on error with no exception set (unless one of the indices was not ``None`` and failed to be converted to an integer, in which case ``-1`` is returned with an exception set)."
 msgstr ""
 
 #: ../../c-api/slice.rst:40
@@ -94,5 +94,9 @@ msgid "Ellipsis Object"
 msgstr ""
 
 #: ../../c-api/slice.rst:121
-msgid "The Python ``Ellipsis`` object.  This object has no methods.  It needs to be treated just like any other object with respect to reference counts.  Like :c:data:`Py_None` it is a singleton object."
+msgid "The Python ``Ellipsis`` object.  This object has no methods.  Like :c:data:`Py_None`, it is an `immortal <https://peps.python.org/pep-0683/>`_. singleton object."
+msgstr ""
+
+#: ../../c-api/slice.rst:125
+msgid ":c:data:`Py_Ellipsis` is immortal."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -466,7 +466,7 @@ msgid "it would generate code similar to::"
 msgstr ""
 
 #: ../../library/dataclasses.rst:735
-msgid "This has the same issue as the original example using class ``C``. That is, two instances of class ``D`` that do not specify a value for ``x`` when creating a class instance will share the same copy of ``x``.  Because dataclasses just use normal Python class creation they also share this behavior.  There is no general way for Data Classes to detect this condition.  Instead, the :func:`dataclass` decorator will raise a :exc:`TypeError` if it detects an unhashable default parameter.  The assumption is that if a value is unhashable, it is mutable.  This is a partial solution, but it does protect against many common errors."
+msgid "This has the same issue as the original example using class ``C``. That is, two instances of class ``D`` that do not specify a value for ``x`` when creating a class instance will share the same copy of ``x``.  Because dataclasses just use normal Python class creation they also share this behavior.  There is no general way for Data Classes to detect this condition.  Instead, the :func:`dataclass` decorator will raise a :exc:`ValueError` if it detects an unhashable default parameter.  The assumption is that if a value is unhashable, it is mutable.  This is a partial solution, but it does protect against many common errors."
 msgstr ""
 
 #: ../../library/dataclasses.rst:746

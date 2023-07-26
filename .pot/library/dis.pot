@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -575,11 +575,11 @@ msgid "Perform ``STACK.append(len(STACK[-1]))``."
 msgstr ""
 
 #: ../../library/dis.rst:820
-msgid "If ``STACK[-1]`` is an instance of :class:`collections.abc.Mapping` (or, more technically: if it has the :const:`Py_TPFLAGS_MAPPING` flag set in its :c:member:`~PyTypeObject.tp_flags`), push ``True`` onto the stack.  Otherwise, push ``False``."
+msgid "If ``STACK[-1]`` is an instance of :class:`collections.abc.Mapping` (or, more technically: if it has the :c:macro:`Py_TPFLAGS_MAPPING` flag set in its :c:member:`~PyTypeObject.tp_flags`), push ``True`` onto the stack.  Otherwise, push ``False``."
 msgstr ""
 
 #: ../../library/dis.rst:830
-msgid "If ``STACK[-1]`` is an instance of :class:`collections.abc.Sequence` and is *not* an instance of :class:`str`/:class:`bytes`/:class:`bytearray` (or, more technically: if it has the :const:`Py_TPFLAGS_SEQUENCE` flag set in its :c:member:`~PyTypeObject.tp_flags`), push ``True`` onto the stack.  Otherwise, push ``False``."
+msgid "If ``STACK[-1]`` is an instance of :class:`collections.abc.Sequence` and is *not* an instance of :class:`str`/:class:`bytes`/:class:`bytearray` (or, more technically: if it has the :c:macro:`Py_TPFLAGS_SEQUENCE` flag set in its :c:member:`~PyTypeObject.tp_flags`), push ``True`` onto the stack.  Otherwise, push ``False``."
 msgstr ""
 
 #: ../../library/dis.rst:840

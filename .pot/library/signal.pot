@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -474,7 +474,7 @@ msgid "See the man page :manpage:`siginterrupt(3)` for further information."
 msgstr ""
 
 #: ../../library/signal.rst:563
-msgid "Note that installing a signal handler with :func:`signal` will reset the restart behaviour to interruptible by implicitly calling :c:func:`siginterrupt` with a true *flag* value for the given signal."
+msgid "Note that installing a signal handler with :func:`signal` will reset the restart behaviour to interruptible by implicitly calling :c:func:`!siginterrupt` with a true *flag* value for the given signal."
 msgstr ""
 
 #: ../../library/signal.rst:570

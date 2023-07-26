@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -620,7 +620,7 @@ msgstr ""
 msgid "The newly created socket is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
-#: ../../library/socket.rst:736
+#: ../../library/socket.rst:734
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.__new__`` with arguments ``self``, ``family``, ``type``, ``protocol``."
 msgstr ""
 
@@ -765,7 +765,7 @@ msgstr ""
 msgid "In these tuples, *family*, *type*, *proto* are all integers and are meant to be passed to the :func:`.socket` function.  *canonname* will be a string representing the canonical name of the *host* if :const:`AI_CANONNAME` is part of the *flags* argument; else *canonname* will be empty.  *sockaddr* is a tuple describing a socket address, whose format depends on the returned *family* (a ``(address, port)`` 2-tuple for :const:`AF_INET`, a ``(address, port, flowinfo, scope_id)`` 4-tuple for :const:`AF_INET6`), and is meant to be passed to the :meth:`socket.connect` method."
 msgstr ""
 
-#: ../../library/socket.rst:947
+#: ../../library/socket.rst:945
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.getaddrinfo`` with arguments ``host``, ``port``, ``family``, ``type``, ``protocol``."
 msgstr ""
 
@@ -789,8 +789,8 @@ msgstr ""
 msgid "Translate a host name to IPv4 address format.  The IPv4 address is returned as a string, such as  ``'100.50.200.5'``.  If the host name is an IPv4 address itself it is returned unchanged.  See :func:`gethostbyname_ex` for a more complete interface. :func:`gethostbyname` does not support IPv6 name resolution, and :func:`getaddrinfo` should be used instead for IPv4/v6 dual stack support."
 msgstr ""
 
-#: ../../library/socket.rst:985
-#: ../../library/socket.rst:1001
+#: ../../library/socket.rst:983
+#: ../../library/socket.rst:999
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.gethostbyname`` with argument ``hostname``."
 msgstr ""
 
@@ -821,7 +821,7 @@ msgstr ""
 msgid "Return a string containing the hostname of the machine where  the Python interpreter is currently executing."
 msgstr ""
 
-#: ../../library/socket.rst:1011
+#: ../../library/socket.rst:1009
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.gethostname`` with no arguments."
 msgstr ""
 
@@ -833,7 +833,7 @@ msgstr ""
 msgid "Return a triple ``(hostname, aliaslist, ipaddrlist)`` where *hostname* is the primary host name responding to the given *ip_address*, *aliaslist* is a (possibly empty) list of alternative host names for the same address, and *ipaddrlist* is a list of IPv4/v6 addresses for the same interface on the same host (most likely containing only a single address). To find the fully qualified domain name, use the function :func:`getfqdn`. :func:`gethostbyaddr` supports both IPv4 and IPv6."
 msgstr ""
 
-#: ../../library/socket.rst:1029
+#: ../../library/socket.rst:1027
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.gethostbyaddr`` with argument ``ip_address``."
 msgstr ""
 
@@ -849,7 +849,7 @@ msgstr ""
 msgid "For more information about *flags* you can consult :manpage:`getnameinfo(3)`."
 msgstr ""
 
-#: ../../library/socket.rst:1046
+#: ../../library/socket.rst:1044
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.getnameinfo`` with argument ``sockaddr``."
 msgstr ""
 
@@ -861,7 +861,7 @@ msgstr ""
 msgid "Translate an internet service name and protocol name to a port number for that service.  The optional protocol name, if given, should be ``'tcp'`` or ``'udp'``, otherwise any protocol will match."
 msgstr ""
 
-#: ../../library/socket.rst:1068
+#: ../../library/socket.rst:1066
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.getservbyname`` with arguments ``servicename``, ``protocolname``."
 msgstr ""
 
@@ -869,7 +869,7 @@ msgstr ""
 msgid "Translate an internet port number and protocol name to a service name for that service.  The optional protocol name, if given, should be ``'tcp'`` or ``'udp'``, otherwise any protocol will match."
 msgstr ""
 
-#: ../../library/socket.rst:1079
+#: ../../library/socket.rst:1077
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.getservbyport`` with arguments ``port``, ``protocolname``."
 msgstr ""
 
@@ -984,7 +984,7 @@ msgstr ""
 msgid "Set the machine's hostname to *name*.  This will raise an :exc:`OSError` if you don't have enough rights."
 msgstr ""
 
-#: ../../library/socket.rst:1266
+#: ../../library/socket.rst:1264
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.sethostname`` with argument ``name``."
 msgstr ""
 
@@ -1102,7 +1102,7 @@ msgstr ""
 msgid "Bind the socket to *address*.  The socket must not already be bound. (The format of *address* depends on the address family --- see above.)"
 msgstr ""
 
-#: ../../library/socket.rst:1403
+#: ../../library/socket.rst:1401
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.bind`` with arguments ``self``, ``address``."
 msgstr ""
 
@@ -1130,8 +1130,8 @@ msgstr ""
 msgid "If the connection is interrupted by a signal, the method waits until the connection completes, or raise a :exc:`TimeoutError` on timeout, if the signal handler doesn't raise an exception and the socket is blocking or has a timeout. For non-blocking sockets, the method raises an :exc:`InterruptedError` exception if the connection is interrupted by a signal (or the exception raised by the signal handler)."
 msgstr ""
 
-#: ../../library/socket.rst:1444
-#: ../../library/socket.rst:1464
+#: ../../library/socket.rst:1442
+#: ../../library/socket.rst:1462
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.connect`` with arguments ``self``, ``address``."
 msgstr ""
 
@@ -1303,7 +1303,7 @@ msgstr ""
 msgid "Send data to the socket.  The socket should not be connected to a remote socket, since the destination socket is specified by *address*.  The optional *flags* argument has the same meaning as for :meth:`recv` above.  Return the number of bytes sent. (The format of *address* depends on the address family --- see above.)"
 msgstr ""
 
-#: ../../library/socket.rst:1819
+#: ../../library/socket.rst:1817
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.sendto`` with arguments ``self``, ``address``."
 msgstr ""
 
@@ -1319,7 +1319,7 @@ msgstr ""
 msgid ":ref:`Availability <availability>`: Unix, not WASI."
 msgstr ""
 
-#: ../../library/socket.rst:1862
+#: ../../library/socket.rst:1860
 msgid "Raises an :ref:`auditing event <auditing>` ``socket.sendmsg`` with arguments ``self``, ``address``."
 msgstr ""
 
@@ -1492,7 +1492,7 @@ msgid "This is because the previous execution has left the socket in a ``TIME_WA
 msgstr ""
 
 #: ../../library/socket.rst:2254
-msgid "There is a :mod:`socket` flag to set, in order to prevent this, :data:`socket.SO_REUSEADDR`::"
+msgid "There is a :mod:`socket` flag to set, in order to prevent this, :const:`socket.SO_REUSEADDR`::"
 msgstr ""
 
 #: ../../library/socket.rst:2261

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,11 +213,11 @@ msgid "The *reverse* parameter still maintains sort stability (so that records w
 msgstr ""
 
 #: ../../howto/sorting.rst:274
-msgid "The sort routines use ``<`` when making comparisons between two objects. So, it is easy to add a standard sort order to a class by defining an :meth:`__lt__` method:"
+msgid "The sort routines use ``<`` when making comparisons between two objects. So, it is easy to add a standard sort order to a class by defining an :meth:`~object.__lt__` method:"
 msgstr ""
 
 #: ../../howto/sorting.rst:284
-msgid "However, note that ``<`` can fall back to using :meth:`__gt__` if :meth:`__lt__` is not implemented (see :func:`object.__lt__`)."
+msgid "However, note that ``<`` can fall back to using :meth:`~object.__gt__` if :meth:`~object.__lt__` is not implemented (see :func:`object.__lt__`)."
 msgstr ""
 
 #: ../../howto/sorting.rst:287

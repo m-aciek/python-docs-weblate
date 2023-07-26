@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "Define this macro before including ``Python.h`` to opt in to only use the
 msgstr ""
 
 #: ../../c-api/stable.rst:77
-msgid "Define ``Py_LIMITED_API`` to the value of :c:data:`PY_VERSION_HEX` corresponding to the lowest Python version your extension supports. The extension will work without recompilation with all Python 3 releases from the specified one onward, and can use Limited API introduced up to that version."
+msgid "Define ``Py_LIMITED_API`` to the value of :c:macro:`PY_VERSION_HEX` corresponding to the lowest Python version your extension supports. The extension will work without recompilation with all Python 3 releases from the specified one onward, and can use Limited API introduced up to that version."
 msgstr ""
 
 #: ../../c-api/stable.rst:83

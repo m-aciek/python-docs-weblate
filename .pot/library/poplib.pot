@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,13 +52,13 @@ msgstr ""
 msgid "This class implements the actual POP3 protocol.  The connection is created when the instance is initialized. If *port* is omitted, the standard POP3 port (110) is used. The optional *timeout* parameter specifies a timeout in seconds for the connection attempt (if not specified, the global default timeout setting will be used)."
 msgstr ""
 
-#: ../../library/poplib.rst:55
-#: ../../library/poplib.rst:77
+#: ../../library/poplib.rst:53
+#: ../../library/poplib.rst:75
 msgid "Raises an :ref:`auditing event <auditing>` ``poplib.connect`` with arguments ``self``, ``host``, ``port``."
 msgstr ""
 
-#: ../../library/poplib.rst:57
-#: ../../library/poplib.rst:79
+#: ../../library/poplib.rst:55
+#: ../../library/poplib.rst:77
 msgid "Raises an :ref:`auditing event <auditing>` ``poplib.putline`` with arguments ``self``, ``line``."
 msgstr ""
 
@@ -81,7 +81,7 @@ msgid "*context* parameter added."
 msgstr ""
 
 #: ../../library/poplib.rst:77
-msgid "The class now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+msgid "The class now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: ../../library/poplib.rst:86
@@ -205,7 +205,7 @@ msgid "*context* parameter is a :class:`ssl.SSLContext` object which allows bund
 msgstr ""
 
 #: ../../library/poplib.rst:241
-msgid "This method supports hostname checking via :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
+msgid "This method supports hostname checking via :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
 #: ../../library/poplib.rst:248

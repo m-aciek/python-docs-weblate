@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -276,18 +276,18 @@ msgstr ""
 msgid "By using ``except*`` instead of ``except``, we can selectively handle only the exceptions in the group that match a certain type. In the following example, which shows a nested exception group, each ``except*`` clause extracts from the group exceptions of a certain type while letting all other exceptions propagate to other clauses and eventually to be reraised. ::"
 msgstr ""
 
-#: ../../tutorial/errors.rst:564
+#: ../../tutorial/errors.rst:573
 msgid "Note that the exceptions nested in an exception group must be instances, not types. This is because in practice the exceptions would typically be ones that have already been raised and caught by the program, along the following pattern::"
 msgstr ""
 
-#: ../../tutorial/errors.rst:582
+#: ../../tutorial/errors.rst:593
 msgid "Enriching Exceptions with Notes"
 msgstr ""
 
-#: ../../tutorial/errors.rst:584
+#: ../../tutorial/errors.rst:595
 msgid "When an exception is created in order to be raised, it is usually initialized with information that describes the error that has occurred. There are cases where it is useful to add information after the exception was caught. For this purpose, exceptions have a method ``add_note(note)`` that accepts a string and adds it to the exception's notes list. The standard traceback rendering includes all notes, in the order they were added, after the exception. ::"
 msgstr ""
 
-#: ../../tutorial/errors.rst:605
+#: ../../tutorial/errors.rst:616
 msgid "For example, when collecting exceptions into an exception group, we may want to add context information for the individual errors. In the following each exception in the group has a note indicating when this error has occurred. ::"
 msgstr ""

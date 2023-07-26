@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "The returned object is a true file object on POSIX platforms.  On other p
 msgstr ""
 
 #: ../../library/tempfile.rst:62
-msgid "The :py:data:`os.O_TMPFILE` flag is used if it is available and works (Linux-specific, requires Linux kernel 3.11 or later)."
+msgid "The :py:const:`os.O_TMPFILE` flag is used if it is available and works (Linux-specific, requires Linux kernel 3.11 or later)."
 msgstr ""
 
 #: ../../library/tempfile.rst:65
@@ -71,7 +71,7 @@ msgid "Raises an :ref:`auditing event <auditing>` ``tempfile.mkstemp`` with argu
 msgstr ""
 
 #: ../../library/tempfile.rst:72
-msgid "The :py:data:`os.O_TMPFILE` flag is now used if available."
+msgid "The :py:const:`os.O_TMPFILE` flag is now used if available."
 msgstr ""
 
 #: ../../library/tempfile.rst:74
@@ -351,6 +351,7 @@ msgstr ""
 msgid "Use of this function may introduce a security hole in your program.  By the time you get around to doing anything with the file name it returns, someone else may have beaten you to the punch.  :func:`mktemp` usage can be replaced easily with :func:`NamedTemporaryFile`, passing it the ``delete=False`` parameter::"
 msgstr ""
 
+#: ../../library/tempfile.rst:11
 #: ../../library/tempfile.rst:11
 msgid "temporary"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,7 +129,7 @@ msgid "The default suffix on WASM platform is one of ``.js``, ``.html`` or ``.wa
 msgstr ""
 
 #: ../../using/configure.rst:100
-msgid "Select the default time zone search path for :data:`zoneinfo.TZPATH`. See the :ref:`Compile-time configuration <zoneinfo_data_compile_time_config>` of the :mod:`zoneinfo` module."
+msgid "Select the default time zone search path for :const:`zoneinfo.TZPATH`. See the :ref:`Compile-time configuration <zoneinfo_data_compile_time_config>` of the :mod:`zoneinfo` module."
 msgstr ""
 
 #: ../../using/configure.rst:104
@@ -145,7 +145,7 @@ msgid "Build the ``_decimal`` extension module using a thread-local context rath
 msgstr ""
 
 #: ../../using/configure.rst:115
-msgid "See :data:`decimal.HAVE_CONTEXTVAR` and the :mod:`contextvars` module."
+msgid "See :const:`decimal.HAVE_CONTEXTVAR` and the :mod:`contextvars` module."
 msgstr ""
 
 #: ../../using/configure.rst:121

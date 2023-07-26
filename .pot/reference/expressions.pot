@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,7 +202,7 @@ msgid "Dictionary displays"
 msgstr ""
 
 #: ../../reference/expressions.rst:307
-msgid "A dictionary display is a possibly empty series of key/datum pairs enclosed in curly braces:"
+msgid "A dictionary display is a possibly empty series of dict items (key/value pairs) enclosed in curly braces:"
 msgstr ""
 
 #: ../../reference/expressions.rst:316
@@ -210,11 +210,11 @@ msgid "A dictionary display yields a new dictionary object."
 msgstr ""
 
 #: ../../reference/expressions.rst:318
-msgid "If a comma-separated sequence of key/datum pairs is given, they are evaluated from left to right to define the entries of the dictionary: each key object is used as a key into the dictionary to store the corresponding datum.  This means that you can specify the same key multiple times in the key/datum list, and the final dictionary's value for that key will be the last one given."
+msgid "If a comma-separated sequence of dict items is given, they are evaluated from left to right to define the entries of the dictionary: each key object is used as a key into the dictionary to store the corresponding value.  This means that you can specify the same key multiple times in the dict item list, and the final dictionary's value for that key will be the last one given."
 msgstr ""
 
 #: ../../reference/expressions.rst:328
-msgid "A double asterisk ``**`` denotes :dfn:`dictionary unpacking`. Its operand must be a :term:`mapping`.  Each mapping item is added to the new dictionary.  Later values replace values already set by earlier key/datum pairs and earlier dictionary unpackings."
+msgid "A double asterisk ``**`` denotes :dfn:`dictionary unpacking`. Its operand must be a :term:`mapping`.  Each mapping item is added to the new dictionary.  Later values replace values already set by earlier dict items and earlier dictionary unpackings."
 msgstr ""
 
 #: ../../reference/expressions.rst:333
@@ -226,7 +226,7 @@ msgid "A dict comprehension, in contrast to list and set comprehensions, needs t
 msgstr ""
 
 #: ../../reference/expressions.rst:344
-msgid "Restrictions on the types of the key values are listed earlier in section :ref:`types`.  (To summarize, the key type should be :term:`hashable`, which excludes all mutable objects.)  Clashes between duplicate keys are not detected; the last datum (textually rightmost in the display) stored for a given key value prevails."
+msgid "Restrictions on the types of the key values are listed earlier in section :ref:`types`.  (To summarize, the key type should be :term:`hashable`, which excludes all mutable objects.)  Clashes between duplicate keys are not detected; the last value (textually rightmost in the display) stored for a given key value prevails."
 msgstr ""
 
 #: ../../reference/expressions.rst:350
@@ -1425,6 +1425,7 @@ msgid "literal"
 msgstr ""
 
 #: ../../reference/expressions.rst:117
+#: ../../reference/expressions.rst:117
 #: ../../reference/expressions.rst:341
 msgid "immutable"
 msgstr ""
@@ -1446,12 +1447,26 @@ msgstr ""
 #: ../../reference/expressions.rst:525
 #: ../../reference/expressions.rst:704
 #: ../../reference/expressions.rst:812
+#: ../../reference/expressions.rst:812
 #: ../../reference/expressions.rst:835
+#: ../../reference/expressions.rst:835
+#: ../../reference/expressions.rst:835
+#: ../../reference/expressions.rst:835
+#: ../../reference/expressions.rst:835
+#: ../../reference/expressions.rst:835
+#: ../../reference/expressions.rst:908
+#: ../../reference/expressions.rst:908
+#: ../../reference/expressions.rst:908
 #: ../../reference/expressions.rst:908
 #: ../../reference/expressions.rst:952
 #: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1113
+#: ../../reference/expressions.rst:1113
+#: ../../reference/expressions.rst:1113
 #: ../../reference/expressions.rst:1113
 #: ../../reference/expressions.rst:1127
+#: ../../reference/expressions.rst:1134
 #: ../../reference/expressions.rst:1134
 #: ../../reference/expressions.rst:1671
 #: ../../reference/expressions.rst:1857
@@ -1511,6 +1526,8 @@ msgid "for"
 msgstr ""
 
 #: ../../reference/expressions.rst:177
+#: ../../reference/expressions.rst:177
+#: ../../reference/expressions.rst:177
 #: ../../reference/expressions.rst:212
 msgid "in comprehensions"
 msgstr ""
@@ -1529,6 +1546,9 @@ msgstr ""
 msgid "await"
 msgstr ""
 
+#: ../../reference/expressions.rst:244
+#: ../../reference/expressions.rst:244
+#: ../../reference/expressions.rst:244
 #: ../../reference/expressions.rst:244
 #: ../../reference/expressions.rst:812
 #: ../../reference/expressions.rst:835
@@ -1559,6 +1579,8 @@ msgid "expression list"
 msgstr ""
 
 #: ../../reference/expressions.rst:270
+#: ../../reference/expressions.rst:270
+#: ../../reference/expressions.rst:270
 msgid "set"
 msgstr ""
 
@@ -1572,6 +1594,8 @@ msgid "set expression"
 msgstr ""
 
 #: ../../reference/expressions.rst:298
+#: ../../reference/expressions.rst:298
+#: ../../reference/expressions.rst:298
 #: ../../reference/expressions.rst:324
 #: ../../reference/expressions.rst:835
 msgid "dictionary"
@@ -1582,11 +1606,11 @@ msgid "key"
 msgstr ""
 
 #: ../../reference/expressions.rst:298
-msgid "datum"
+msgid "value"
 msgstr ""
 
 #: ../../reference/expressions.rst:298
-msgid "key/datum pair"
+msgid "key/value pair"
 msgstr ""
 
 #: ../../reference/expressions.rst:298
@@ -1625,6 +1649,7 @@ msgid "hashable"
 msgstr ""
 
 #: ../../reference/expressions.rst:362
+#: ../../reference/expressions.rst:362
 #: ../../reference/expressions.rst:417
 #: ../../reference/expressions.rst:525
 msgid "generator"
@@ -1635,10 +1660,12 @@ msgid "generator expression"
 msgstr ""
 
 #: ../../reference/expressions.rst:417
+#: ../../reference/expressions.rst:417
 #: ../../reference/expressions.rst:1152
 msgid "keyword"
 msgstr ""
 
+#: ../../reference/expressions.rst:417
 #: ../../reference/expressions.rst:417
 #: ../../reference/expressions.rst:605
 msgid "yield"
@@ -1651,6 +1678,9 @@ msgstr ""
 
 #: ../../reference/expressions.rst:417
 #: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1113
 #: ../../reference/expressions.rst:1113
 #: ../../reference/expressions.rst:1819
 msgid "function"
@@ -1714,9 +1744,11 @@ msgid "module"
 msgstr ""
 
 #: ../../reference/expressions.rst:831
+#: ../../reference/expressions.rst:831
 msgid "subscription"
 msgstr ""
 
+#: ../../reference/expressions.rst:835
 #: ../../reference/expressions.rst:835
 #: ../../reference/expressions.rst:908
 #: ../../reference/expressions.rst:1671
@@ -1743,6 +1775,8 @@ msgid "character"
 msgstr ""
 
 #: ../../reference/expressions.rst:902
+#: ../../reference/expressions.rst:902
+#: ../../reference/expressions.rst:902
 msgid "slicing"
 msgstr ""
 
@@ -1767,7 +1801,12 @@ msgid "callable"
 msgstr ""
 
 #: ../../reference/expressions.rst:952
+#: ../../reference/expressions.rst:952
 #: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1113
+#: ../../reference/expressions.rst:1113
+#: ../../reference/expressions.rst:1113
 #: ../../reference/expressions.rst:1113
 #: ../../reference/expressions.rst:1127
 #: ../../reference/expressions.rst:1134
@@ -1794,6 +1833,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:952
 #: ../../reference/expressions.rst:1035
+#: ../../reference/expressions.rst:1035
 #: ../../reference/expressions.rst:1065
 msgid "in function calls"
 msgstr ""
@@ -1817,13 +1857,16 @@ msgid "user-defined function"
 msgstr ""
 
 #: ../../reference/expressions.rst:1113
+#: ../../reference/expressions.rst:1113
 msgid "built-in function"
 msgstr ""
 
 #: ../../reference/expressions.rst:1113
+#: ../../reference/expressions.rst:1113
 msgid "method"
 msgstr ""
 
+#: ../../reference/expressions.rst:1113
 #: ../../reference/expressions.rst:1113
 msgid "built-in method"
 msgstr ""
@@ -1836,6 +1879,7 @@ msgstr ""
 msgid "class object"
 msgstr ""
 
+#: ../../reference/expressions.rst:1134
 #: ../../reference/expressions.rst:1134
 msgid "class instance"
 msgstr ""
@@ -1855,6 +1899,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1172
 #: ../../reference/expressions.rst:1207
+#: ../../reference/expressions.rst:1207
 #: ../../reference/expressions.rst:1255
 #: ../../reference/expressions.rst:1364
 #: ../../reference/expressions.rst:1391
@@ -1869,15 +1914,24 @@ msgstr ""
 #: ../../reference/expressions.rst:1268
 #: ../../reference/expressions.rst:1281
 #: ../../reference/expressions.rst:1290
+#: ../../reference/expressions.rst:1290
 #: ../../reference/expressions.rst:1306
 #: ../../reference/expressions.rst:1335
 #: ../../reference/expressions.rst:1348
+#: ../../reference/expressions.rst:1364
 #: ../../reference/expressions.rst:1364
 #: ../../reference/expressions.rst:1400
 #: ../../reference/expressions.rst:1408
 #: ../../reference/expressions.rst:1417
 #: ../../reference/expressions.rst:1432
+#: ../../reference/expressions.rst:1432
+#: ../../reference/expressions.rst:1432
+#: ../../reference/expressions.rst:1432
+#: ../../reference/expressions.rst:1432
+#: ../../reference/expressions.rst:1432
 #: ../../reference/expressions.rst:1671
+#: ../../reference/expressions.rst:1671
+#: ../../reference/expressions.rst:1680
 #: ../../reference/expressions.rst:1680
 #: ../../reference/expressions.rst:1722
 #: ../../reference/expressions.rst:1727
@@ -1887,6 +1941,7 @@ msgstr ""
 msgid "operator"
 msgstr ""
 
+#: ../../reference/expressions.rst:1207
 #: ../../reference/expressions.rst:1207
 msgid "unary"
 msgstr ""
@@ -1908,6 +1963,8 @@ msgid "minus"
 msgstr ""
 
 #: ../../reference/expressions.rst:1216
+#: ../../reference/expressions.rst:1216
+#: ../../reference/expressions.rst:1348
 #: ../../reference/expressions.rst:1348
 msgid "- (minus)"
 msgstr ""
@@ -1922,6 +1979,8 @@ msgid "plus"
 msgstr ""
 
 #: ../../reference/expressions.rst:1225
+#: ../../reference/expressions.rst:1225
+#: ../../reference/expressions.rst:1335
 #: ../../reference/expressions.rst:1335
 msgid "+ (plus)"
 msgstr ""
@@ -2026,6 +2085,7 @@ msgid "exclusive"
 msgstr ""
 
 #: ../../reference/expressions.rst:1408
+#: ../../reference/expressions.rst:1417
 #: ../../reference/expressions.rst:1417
 #: ../../reference/expressions.rst:1732
 msgid "or"
@@ -2153,6 +2213,7 @@ msgid "ternary"
 msgstr ""
 
 #: ../../reference/expressions.rst:1793
+#: ../../reference/expressions.rst:1793
 msgid "conditional expression"
 msgstr ""
 
@@ -2160,6 +2221,7 @@ msgstr ""
 msgid "else"
 msgstr ""
 
+#: ../../reference/expressions.rst:1819
 #: ../../reference/expressions.rst:1819
 msgid "lambda"
 msgstr ""

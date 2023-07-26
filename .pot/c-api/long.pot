@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../c-api/long.rst:123
 #: ../../c-api/long.rst:141
-msgid "Return a C :c:expr:`long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
+msgid "Return a C :c:expr:`long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`~object.__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
 msgstr ""
 
 #: ../../c-api/long.rst:127
@@ -115,7 +115,7 @@ msgstr ""
 #: ../../c-api/long.rst:195
 #: ../../c-api/long.rst:279
 #: ../../c-api/long.rst:299
-msgid "Use :meth:`__index__` if available."
+msgid "Use :meth:`~object.__index__` if available."
 msgstr ""
 
 #: ../../c-api/long.rst:135
@@ -124,16 +124,16 @@ msgstr ""
 #: ../../c-api/long.rst:198
 #: ../../c-api/long.rst:282
 #: ../../c-api/long.rst:302
-msgid "This function will no longer use :meth:`__int__`."
+msgid "This function will no longer use :meth:`~object.__int__`."
 msgstr ""
 
 #: ../../c-api/long.rst:145
-msgid "If the value of *obj* is greater than :const:`LONG_MAX` or less than :const:`LONG_MIN`, set *\\*overflow* to ``1`` or ``-1``, respectively, and return ``-1``; otherwise, set *\\*overflow* to ``0``.  If any other exception occurs set *\\*overflow* to ``0`` and return ``-1`` as usual."
+msgid "If the value of *obj* is greater than :c:macro:`LONG_MAX` or less than :c:macro:`LONG_MIN`, set *\\*overflow* to ``1`` or ``-1``, respectively, and return ``-1``; otherwise, set *\\*overflow* to ``0``.  If any other exception occurs set *\\*overflow* to ``0`` and return ``-1`` as usual."
 msgstr ""
 
 #: ../../c-api/long.rst:164
 #: ../../c-api/long.rst:182
-msgid "Return a C :c:expr:`long long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
+msgid "Return a C :c:expr:`long long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`~object.__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
 msgstr ""
 
 #: ../../c-api/long.rst:168
@@ -141,7 +141,7 @@ msgid "Raise :exc:`OverflowError` if the value of *obj* is out of range for a :c
 msgstr ""
 
 #: ../../c-api/long.rst:186
-msgid "If the value of *obj* is greater than :const:`LLONG_MAX` or less than :const:`LLONG_MIN`, set *\\*overflow* to ``1`` or ``-1``, respectively, and return ``-1``; otherwise, set *\\*overflow* to ``0``.  If any other exception occurs set *\\*overflow* to ``0`` and return ``-1`` as usual."
+msgid "If the value of *obj* is greater than :c:macro:`LLONG_MAX` or less than :c:macro:`LLONG_MIN`, set *\\*overflow* to ``1`` or ``-1``, respectively, and return ``-1``; otherwise, set *\\*overflow* to ``0``.  If any other exception occurs set *\\*overflow* to ``0`` and return ``-1`` as usual."
 msgstr ""
 
 #: ../../c-api/long.rst:208
@@ -193,7 +193,7 @@ msgid "A negative *pylong* now raises :exc:`OverflowError`, not :exc:`TypeError`
 msgstr ""
 
 #: ../../c-api/long.rst:269
-msgid "Return a C :c:expr:`unsigned long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
+msgid "Return a C :c:expr:`unsigned long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`~object.__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
 msgstr ""
 
 #: ../../c-api/long.rst:273
@@ -205,7 +205,7 @@ msgid "Returns ``(unsigned long)-1`` on error.  Use :c:func:`PyErr_Occurred` to 
 msgstr ""
 
 #: ../../c-api/long.rst:288
-msgid "Return a C :c:expr:`unsigned long long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
+msgid "Return a C :c:expr:`unsigned long long` representation of *obj*.  If *obj* is not an instance of :c:type:`PyLongObject`, first call its :meth:`~object.__index__` method (if present) to convert it to a :c:type:`PyLongObject`."
 msgstr ""
 
 #: ../../c-api/long.rst:293
@@ -260,6 +260,7 @@ msgstr ""
 msgid "Otherwise, the return value is undefined."
 msgstr ""
 
+#: ../../c-api/long.rst:8
 #: ../../c-api/long.rst:8
 msgid "object"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -907,7 +907,7 @@ msgid "Implements the ``'tar'`` filter."
 msgstr ""
 
 #: ../../library/tarfile.rst:936
-msgid "Strip leading slashes (``/`` and :attr:`os.sep`) from filenames."
+msgid "Strip leading slashes (``/`` and :data:`os.sep`) from filenames."
 msgstr ""
 
 #: ../../library/tarfile.rst:937
@@ -919,7 +919,7 @@ msgid ":ref:`Refuse <tarfile-extraction-refuse>` to extract files whose absolute
 msgstr ""
 
 #: ../../library/tarfile.rst:944
-msgid "Clear high mode bits (setuid, setgid, sticky) and group/other write bits (:attr:`~stat.S_IWGRP`|:attr:`~stat.S_IWOTH`)."
+msgid "Clear high mode bits (setuid, setgid, sticky) and group/other write bits (:const:`~stat.S_IWGRP`|:const:`~stat.S_IWOTH`)."
 msgstr ""
 
 #: ../../library/tarfile.rst:947
@@ -952,11 +952,11 @@ msgid "For regular files, including hard links:"
 msgstr ""
 
 #: ../../library/tarfile.rst:969
-msgid "Set the owner read and write permissions (:attr:`~stat.S_IRUSR`|:attr:`~stat.S_IWUSR`)."
+msgid "Set the owner read and write permissions (:const:`~stat.S_IRUSR`|:const:`~stat.S_IWUSR`)."
 msgstr ""
 
 #: ../../library/tarfile.rst:971
-msgid "Remove the group & other executable permission (:attr:`~stat.S_IXGRP`|:attr:`~stat.S_IXOTH`) if the owner doesn’t have it (:attr:`~stat.S_IXUSR`)."
+msgid "Remove the group & other executable permission (:const:`~stat.S_IXGRP`|:const:`~stat.S_IXOTH`) if the owner doesn’t have it (:const:`~stat.S_IXUSR`)."
 msgstr ""
 
 #: ../../library/tarfile.rst:975

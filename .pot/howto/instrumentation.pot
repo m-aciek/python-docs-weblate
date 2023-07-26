@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,7 @@ msgstr ""
 msgid "Instrumenting CPython with DTrace and SystemTap"
 msgstr ""
 
+#: ../../howto/instrumentation.rst:0
 #: ../../howto/instrumentation.rst:0
 msgid "author"
 msgstr ""
@@ -183,11 +184,11 @@ msgid "``$arg3`` : ``int`` line number"
 msgstr ""
 
 #: ../../howto/instrumentation.rst:295
-msgid "This marker is the converse of :c:func:`function__entry`, and indicates that execution of a Python function has ended (either via ``return``, or via an exception).  It is only triggered for pure-Python (bytecode) functions."
+msgid "This marker is the converse of :c:func:`!function__entry`, and indicates that execution of a Python function has ended (either via ``return``, or via an exception).  It is only triggered for pure-Python (bytecode) functions."
 msgstr ""
 
 #: ../../howto/instrumentation.rst:299
-msgid "The arguments are the same as for :c:func:`function__entry`"
+msgid "The arguments are the same as for :c:func:`!function__entry`"
 msgstr ""
 
 #: ../../howto/instrumentation.rst:303
@@ -195,7 +196,7 @@ msgid "This marker indicates a Python line is about to be executed.  It is the e
 msgstr ""
 
 #: ../../howto/instrumentation.rst:307
-msgid "The arguments are the same as for :c:func:`function__entry`."
+msgid "The arguments are the same as for :c:func:`!function__entry`."
 msgstr ""
 
 #: ../../howto/instrumentation.rst:311

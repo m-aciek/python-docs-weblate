@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -317,7 +317,7 @@ msgstr ""
 #: ../../library/mailbox.rst:479
 #: ../../library/mailbox.rst:688
 #: ../../library/mailbox.rst:739
-msgid "Three locking mechanisms are used---dot locking and, if available, the :c:func:`flock` and :c:func:`lockf` system calls."
+msgid "Three locking mechanisms are used---dot locking and, if available, the :c:func:`!flock` and :c:func:`!lockf` system calls."
 msgstr ""
 
 #: ../../library/mailbox.rst:486
@@ -397,7 +397,7 @@ msgid "These methods immediately delete the message. The MH convention of markin
 msgstr ""
 
 #: ../../library/mailbox.rst:590
-msgid "Three locking mechanisms are used---dot locking and, if available, the :c:func:`flock` and :c:func:`lockf` system calls. For MH mailboxes, locking the mailbox means locking the :file:`.mh_sequences` file and, only for the duration of any operations that affect them, locking individual message files."
+msgid "Three locking mechanisms are used---dot locking and, if available, the :c:func:`!flock` and :c:func:`!lockf` system calls. For MH mailboxes, locking the mailbox means locking the :file:`.mh_sequences` file and, only for the duration of any operations that affect them, locking individual message files."
 msgstr ""
 
 #: ../../library/mailbox.rst:599
@@ -641,6 +641,8 @@ msgstr ""
 
 #: ../../library/mailbox.rst:824
 #: ../../library/mailbox.rst:983
+#: ../../library/mailbox.rst:983
+#: ../../library/mailbox.rst:1353
 #: ../../library/mailbox.rst:1353
 msgid "Read"
 msgstr ""
@@ -751,22 +753,29 @@ msgstr ""
 #: ../../library/mailbox.rst:1073
 #: ../../library/mailbox.rst:1088
 #: ../../library/mailbox.rst:1103
+#: ../../library/mailbox.rst:1103
 #: ../../library/mailbox.rst:1427
 #: ../../library/mailbox.rst:1444
 #: ../../library/mailbox.rst:1459
+#: ../../library/mailbox.rst:1475
 #: ../../library/mailbox.rst:1475
 msgid "O flag"
 msgstr ""
 
 #: ../../library/mailbox.rst:917
+#: ../../library/mailbox.rst:917
 #: ../../library/mailbox.rst:936
 #: ../../library/mailbox.rst:1060
+#: ../../library/mailbox.rst:1060
 #: ../../library/mailbox.rst:1075
+#: ../../library/mailbox.rst:1107
 #: ../../library/mailbox.rst:1107
 #: ../../library/mailbox.rst:1172
 #: ../../library/mailbox.rst:1188
 #: ../../library/mailbox.rst:1431
+#: ../../library/mailbox.rst:1431
 #: ../../library/mailbox.rst:1446
+#: ../../library/mailbox.rst:1479
 #: ../../library/mailbox.rst:1479
 msgid "F flag"
 msgstr ""
@@ -778,10 +787,12 @@ msgstr ""
 #: ../../library/mailbox.rst:1054
 #: ../../library/mailbox.rst:1062
 #: ../../library/mailbox.rst:1101
+#: ../../library/mailbox.rst:1101
 #: ../../library/mailbox.rst:1170
 #: ../../library/mailbox.rst:1298
 #: ../../library/mailbox.rst:1425
 #: ../../library/mailbox.rst:1433
+#: ../../library/mailbox.rst:1473
 #: ../../library/mailbox.rst:1473
 msgid "R flag"
 msgstr ""
@@ -791,11 +802,13 @@ msgstr ""
 #: ../../library/mailbox.rst:1077
 #: ../../library/mailbox.rst:1092
 #: ../../library/mailbox.rst:1109
+#: ../../library/mailbox.rst:1109
 #: ../../library/mailbox.rst:1186
 #: ../../library/mailbox.rst:1316
 #: ../../library/mailbox.rst:1433
 #: ../../library/mailbox.rst:1448
 #: ../../library/mailbox.rst:1463
+#: ../../library/mailbox.rst:1481
 #: ../../library/mailbox.rst:1481
 msgid "A flag"
 msgstr ""
@@ -818,9 +831,11 @@ msgstr ""
 #: ../../library/mailbox.rst:1058
 #: ../../library/mailbox.rst:1090
 #: ../../library/mailbox.rst:1105
+#: ../../library/mailbox.rst:1105
 #: ../../library/mailbox.rst:1314
 #: ../../library/mailbox.rst:1429
 #: ../../library/mailbox.rst:1461
+#: ../../library/mailbox.rst:1477
 #: ../../library/mailbox.rst:1477
 msgid "D flag"
 msgstr ""

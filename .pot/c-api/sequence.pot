@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Sequence Protocol"
 msgstr ""
 
 #: ../../c-api/sequence.rst:11
-msgid "Return ``1`` if the object provides the sequence protocol, and ``0`` otherwise. Note that it returns ``1`` for Python classes with a :meth:`__getitem__` method, unless they are :class:`dict` subclasses, since in general it is impossible to determine what type of keys the class supports.  This function always succeeds."
+msgid "Return ``1`` if the object provides the sequence protocol, and ``0`` otherwise. Note that it returns ``1`` for Python classes with a :meth:`~object.__getitem__` method, unless they are :class:`dict` subclasses, since in general it is impossible to determine what type of keys the class supports.  This function always succeeds."
 msgstr ""
 
 #: ../../c-api/sequence.rst:23

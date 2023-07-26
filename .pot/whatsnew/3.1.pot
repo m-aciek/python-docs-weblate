@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -293,7 +293,7 @@ msgid "The :mod:`io` module has three new constants for the :meth:`seek` method 
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:373
-msgid "The :attr:`sys.version_info` tuple is now a named tuple::"
+msgid "The :data:`sys.version_info` tuple is now a named tuple::"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:378
@@ -409,7 +409,7 @@ msgid "Integers are now stored internally either in base ``2**15`` or in base ``
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:487
-msgid "Apart from the performance improvements this change should be invisible to end users, with one exception: for testing and debugging purposes there's a new :attr:`sys.int_info` that provides information about the internal format, giving the number of bits per digit and the size in bytes of the C type used to store each digit::"
+msgid "Apart from the performance improvements this change should be invisible to end users, with one exception: for testing and debugging purposes there's a new :data:`sys.int_info` that provides information about the internal format, giving the number of bits per digit and the size in bytes of the C type used to store each digit::"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:497

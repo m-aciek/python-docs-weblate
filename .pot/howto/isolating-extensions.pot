@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Isolating Extension Modules"
 msgstr ""
 
-#: ../../howto/isolating-extensions.rst:-1
+#: ../../howto/isolating-extensions.rst:None
 msgid "Abstract"
 msgstr ""
 
@@ -233,11 +233,11 @@ msgid "Watch out for the following two points in particular (but note that this 
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:300
-msgid "Unlike static types, heap type objects are mutable by default. Use the :c:data:`Py_TPFLAGS_IMMUTABLETYPE` flag to prevent mutability."
+msgid "Unlike static types, heap type objects are mutable by default. Use the :c:macro:`Py_TPFLAGS_IMMUTABLETYPE` flag to prevent mutability."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:302
-msgid "Heap types inherit :c:member:`~PyTypeObject.tp_new` by default, so it may become possible to instantiate them from Python code. You can prevent this with the :c:data:`Py_TPFLAGS_DISALLOW_INSTANTIATION` flag."
+msgid "Heap types inherit :c:member:`~PyTypeObject.tp_new` by default, so it may become possible to instantiate them from Python code. You can prevent this with the :c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` flag."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:308
@@ -269,7 +269,7 @@ msgid "To avoid memory leaks, instances of heap types must implement the garbage
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:336
-msgid "Have the :c:data:`Py_TPFLAGS_HAVE_GC` flag."
+msgid "Have the :c:macro:`Py_TPFLAGS_HAVE_GC` flag."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:337
@@ -277,7 +277,7 @@ msgid "Define a traverse function using ``Py_tp_traverse``, which visits the typ
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:340
-msgid "Please refer to the :ref:`the documentation <type-structs>` of :c:data:`Py_TPFLAGS_HAVE_GC` and :c:member:`~PyTypeObject.tp_traverse` for additional considerations."
+msgid "Please refer to the :ref:`the documentation <type-structs>` of :c:macro:`Py_TPFLAGS_HAVE_GC` and :c:member:`~PyTypeObject.tp_traverse` for additional considerations."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:344
@@ -329,7 +329,7 @@ msgid "The following Python code can illustrate the concept. ``Base.get_defining
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:413
-msgid "For a method to get its \"defining class\", it must use the :data:`METH_METHOD | METH_FASTCALL | METH_KEYWORDS` :c:type:`calling convention <PyMethodDef>` and the corresponding :c:type:`PyCMethod` signature::"
+msgid "For a method to get its \"defining class\", it must use the :ref:`METH_METHOD | METH_FASTCALL | METH_KEYWORDS <METH_METHOD-METH_FASTCALL-METH_KEYWORDS>` :c:type:`calling convention <PyMethodDef>` and the corresponding :c:type:`PyCMethod` signature::"
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:425
@@ -357,11 +357,11 @@ msgid "To access the module state in these cases, use the :c:func:`PyType_GetMod
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:486
-msgid "``PyType_GetModuleByDef`` works by searching the :term:`method resolution order` (i.e. all superclasses) for the first superclass that has a corresponding module."
+msgid ":c:func:`!PyType_GetModuleByDef` works by searching the :term:`method resolution order` (i.e. all superclasses) for the first superclass that has a corresponding module."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:492
-msgid "In very exotic cases (inheritance chains spanning multiple modules created from the same definition), ``PyType_GetModuleByDef`` might not return the module of the true defining class. However, it will always return a module with the same definition, ensuring a compatible C memory layout."
+msgid "In very exotic cases (inheritance chains spanning multiple modules created from the same definition), :c:func:`!PyType_GetModuleByDef` might not return the module of the true defining class. However, it will always return a module with the same definition, ensuring a compatible C memory layout."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:500

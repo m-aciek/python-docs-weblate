@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -312,9 +312,12 @@ msgstr ""
 
 #: ../../c-api/memory.rst:382
 #: ../../c-api/memory.rst:384
+#: ../../c-api/memory.rst:384
+#: ../../c-api/memory.rst:384
 msgid "``malloc``"
 msgstr ""
 
+#: ../../c-api/memory.rst:382
 #: ../../c-api/memory.rst:382
 msgid "``pymalloc``"
 msgstr ""
@@ -329,9 +332,12 @@ msgstr ""
 
 #: ../../c-api/memory.rst:383
 #: ../../c-api/memory.rst:385
+#: ../../c-api/memory.rst:385
+#: ../../c-api/memory.rst:385
 msgid "``malloc`` + debug"
 msgstr ""
 
+#: ../../c-api/memory.rst:383
 #: ../../c-api/memory.rst:383
 msgid "``pymalloc`` + debug"
 msgstr ""
@@ -511,7 +517,7 @@ msgid "The new allocator must return a distinct non-``NULL`` pointer when reques
 msgstr ""
 
 #: ../../c-api/memory.rst:473
-msgid "For the :c:data:`PYMEM_DOMAIN_RAW` domain, the allocator must be thread-safe: the :term:`GIL <global interpreter lock>` is not held when the allocator is called."
+msgid "For the :c:macro:`PYMEM_DOMAIN_RAW` domain, the allocator must be thread-safe: the :term:`GIL <global interpreter lock>` is not held when the allocator is called."
 msgstr ""
 
 #: ../../c-api/memory.rst:477
@@ -575,7 +581,7 @@ msgid "Detect write after the end of the buffer (buffer overflow)."
 msgstr ""
 
 #: ../../c-api/memory.rst:538
-msgid "Check that the :term:`GIL <global interpreter lock>` is held when allocator functions of :c:data:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) and :c:data:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are called."
+msgid "Check that the :term:`GIL <global interpreter lock>` is held when allocator functions of :c:macro:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) and :c:macro:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are called."
 msgstr ""
 
 #: ../../c-api/memory.rst:543
@@ -603,15 +609,15 @@ msgid "API identifier (ASCII character):"
 msgstr ""
 
 #: ../../c-api/memory.rst:560
-msgid "``'r'`` for :c:data:`PYMEM_DOMAIN_RAW`."
+msgid "``'r'`` for :c:macro:`PYMEM_DOMAIN_RAW`."
 msgstr ""
 
 #: ../../c-api/memory.rst:561
-msgid "``'m'`` for :c:data:`PYMEM_DOMAIN_MEM`."
+msgid "``'m'`` for :c:macro:`PYMEM_DOMAIN_MEM`."
 msgstr ""
 
 #: ../../c-api/memory.rst:562
-msgid "``'o'`` for :c:data:`PYMEM_DOMAIN_OBJ`."
+msgid "``'o'`` for :c:macro:`PYMEM_DOMAIN_OBJ`."
 msgstr ""
 
 #: ../../c-api/memory.rst:565
@@ -647,7 +653,7 @@ msgid "Only used if the ``PYMEM_DEBUG_SERIALNO`` macro is defined (not defined b
 msgstr ""
 
 #: ../../c-api/memory.rst:583
-msgid "A serial number, incremented by 1 on each call to a malloc-like or realloc-like function.  Big-endian ``size_t``.  If \"bad memory\" is detected later, the serial number gives an excellent way to set a breakpoint on the next run, to capture the instant at which this block was passed out.  The static function bumpserialno() in obmalloc.c is the only place the serial number is incremented, and exists so you can set such a breakpoint easily."
+msgid "A serial number, incremented by 1 on each call to a malloc-like or realloc-like function.  Big-endian :c:type:`size_t`.  If \"bad memory\" is detected later, the serial number gives an excellent way to set a breakpoint on the next run, to capture the instant at which this block was passed out.  The static function bumpserialno() in obmalloc.c is the only place the serial number is incremented, and exists so you can set such a breakpoint easily."
 msgstr ""
 
 #: ../../c-api/memory.rst:590
@@ -655,7 +661,7 @@ msgid "A realloc-like or free-like function first checks that the PYMEM_FORBIDDE
 msgstr ""
 
 #: ../../c-api/memory.rst:599
-msgid "The :c:func:`PyMem_SetupDebugHooks` function now also works on Python compiled in release mode.  On error, the debug hooks now use :mod:`tracemalloc` to get the traceback where a memory block was allocated. The debug hooks now also check if the GIL is held when functions of :c:data:`PYMEM_DOMAIN_OBJ` and :c:data:`PYMEM_DOMAIN_MEM` domains are called."
+msgid "The :c:func:`PyMem_SetupDebugHooks` function now also works on Python compiled in release mode.  On error, the debug hooks now use :mod:`tracemalloc` to get the traceback where a memory block was allocated. The debug hooks now also check if the GIL is held when functions of :c:macro:`PYMEM_DOMAIN_OBJ` and :c:macro:`PYMEM_DOMAIN_MEM` domains are called."
 msgstr ""
 
 #: ../../c-api/memory.rst:607
@@ -671,7 +677,7 @@ msgid "Python has a *pymalloc* allocator optimized for small objects (smaller or
 msgstr ""
 
 #: ../../c-api/memory.rst:624
-msgid "*pymalloc* is the :ref:`default allocator <default-memory-allocators>` of the :c:data:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) and :c:data:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) domains."
+msgid "*pymalloc* is the :ref:`default allocator <default-memory-allocators>` of the :c:macro:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) and :c:macro:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) domains."
 msgstr ""
 
 #: ../../c-api/memory.rst:628

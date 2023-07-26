@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "The name of the operating system dependent module imported.  The followin
 msgstr ""
 
 #: ../../library/os.rst:63
-msgid ":attr:`sys.platform` has a finer granularity.  :func:`os.uname` gives system-dependent version information."
+msgid ":data:`sys.platform` has a finer granularity.  :func:`os.uname` gives system-dependent version information."
 msgstr ""
 
 #: ../../library/os.rst:66
@@ -313,7 +313,7 @@ msgid "Bytes version of :data:`environ`: a :term:`mapping` object where both key
 msgstr ""
 
 #: ../../library/os.rst:236
-msgid ":data:`environb` is only available if :data:`supports_bytes_environ` is ``True``."
+msgid ":data:`environb` is only available if :const:`supports_bytes_environ` is ``True``."
 msgstr ""
 
 #: ../../library/os.rst:250
@@ -392,7 +392,7 @@ msgid "Return the value of the environment variable *key* as bytes if it exists,
 msgstr ""
 
 #: ../../library/os.rst:334
-msgid ":func:`getenvb` is only available if :data:`supports_bytes_environ` is ``True``."
+msgid ":func:`getenvb` is only available if :const:`supports_bytes_environ` is ``True``."
 msgstr ""
 
 #: ../../library/os.rst:337
@@ -626,11 +626,11 @@ msgid "Set the current process's real and effective user ids."
 msgstr ""
 
 #: ../../library/os.rst:717
-msgid "Call the system call :c:func:`getsid`.  See the Unix manual for the semantics."
+msgid "Call the system call :c:func:`!getsid`.  See the Unix manual for the semantics."
 msgstr ""
 
 #: ../../library/os.rst:724
-msgid "Call the system call :c:func:`setsid`.  See the Unix manual for the semantics."
+msgid "Call the system call :c:func:`!setsid`.  See the Unix manual for the semantics."
 msgstr ""
 
 #: ../../library/os.rst:733
@@ -638,7 +638,7 @@ msgid "Set the current process's user id."
 msgstr ""
 
 #: ../../library/os.rst:741
-msgid "Return the error message corresponding to the error code in *code*. On platforms where :c:func:`strerror` returns ``NULL`` when given an unknown error number, :exc:`ValueError` is raised."
+msgid "Return the error message corresponding to the error code in *code*. On platforms where :c:func:`!strerror` returns ``NULL`` when given an unknown error number, :exc:`ValueError` is raised."
 msgstr ""
 
 #: ../../library/os.rst:748
@@ -763,7 +763,7 @@ msgid "Copy *count* bytes from file descriptor *src*, starting from offset *offs
 msgstr ""
 
 #: ../../library/os.rst:924
-msgid "In Linux kernel older than 5.3, the files pointed by *src* and *dst* must reside in the same filesystem, otherwise an :exc:`OSError` is raised with :attr:`~OSError.errno` set to :data:`errno.EXDEV`."
+msgid "In Linux kernel older than 5.3, the files pointed by *src* and *dst* must reside in the same filesystem, otherwise an :exc:`OSError` is raised with :attr:`~OSError.errno` set to :const:`errno.EXDEV`."
 msgstr ""
 
 #: ../../library/os.rst:928
@@ -964,7 +964,7 @@ msgid "Parameters to the :func:`lseek` function. Their values are 0, 1, and 2, r
 msgstr ""
 
 #: ../../library/os.rst:1182
-msgid "Some operating systems could support additional values, like :data:`os.SEEK_HOLE` or :data:`os.SEEK_DATA`."
+msgid "Some operating systems could support additional values, like :const:`os.SEEK_HOLE` or :const:`os.SEEK_DATA`."
 msgstr ""
 
 #: ../../library/os.rst:1189
@@ -1161,7 +1161,7 @@ msgid "Do not wait for data which is not immediately available. If this flag is 
 msgstr ""
 
 #: ../../library/os.rst:1423
-msgid "If some data was successfully read, it will return the number of bytes read. If no bytes were read, it will return ``-1`` and set errno to :data:`errno.EAGAIN`."
+msgid "If some data was successfully read, it will return the number of bytes read. If no bytes were read, it will return ``-1`` and set errno to :const:`errno.EAGAIN`."
 msgstr ""
 
 #: ../../library/os.rst:1427
@@ -1295,7 +1295,7 @@ msgid "Parameter to the :func:`sendfile` function, if the implementation support
 msgstr ""
 
 #: ../../library/os.rst:1623
-msgid "Transfer *count* bytes from file descriptor *src*, starting from offset *offset_src*, to file descriptor *dst*, starting from offset *offset_dst*. At least one of the file descriptors must refer to a pipe. If *offset_src* is None, then *src* is read from the current position; respectively for *offset_dst*. The offset associated to the file descriptor that refers to a pipe must be ``None``. The files pointed by *src* and *dst* must reside in the same filesystem, otherwise an :exc:`OSError` is raised with :attr:`~OSError.errno` set to :data:`errno.EXDEV`."
+msgid "Transfer *count* bytes from file descriptor *src*, starting from offset *offset_src*, to file descriptor *dst*, starting from offset *offset_dst*. At least one of the file descriptors must refer to a pipe. If *offset_src* is None, then *src* is read from the current position; respectively for *offset_dst*. The offset associated to the file descriptor that refers to a pipe must be ``None``. The files pointed by *src* and *dst* must reside in the same filesystem, otherwise an :exc:`OSError` is raised with :attr:`~OSError.errno` set to :const:`errno.EXDEV`."
 msgstr ""
 
 #: ../../library/os.rst:1632
@@ -1517,51 +1517,51 @@ msgid "Set the flags of *path* to the numeric *flags*. *flags* may take a combin
 msgstr ""
 
 #: ../../library/os.rst:1963
-msgid ":data:`stat.UF_NODUMP`"
+msgid ":const:`stat.UF_NODUMP`"
 msgstr ""
 
 #: ../../library/os.rst:1964
-msgid ":data:`stat.UF_IMMUTABLE`"
+msgid ":const:`stat.UF_IMMUTABLE`"
 msgstr ""
 
 #: ../../library/os.rst:1965
-msgid ":data:`stat.UF_APPEND`"
+msgid ":const:`stat.UF_APPEND`"
 msgstr ""
 
 #: ../../library/os.rst:1966
-msgid ":data:`stat.UF_OPAQUE`"
+msgid ":const:`stat.UF_OPAQUE`"
 msgstr ""
 
 #: ../../library/os.rst:1967
-msgid ":data:`stat.UF_NOUNLINK`"
+msgid ":const:`stat.UF_NOUNLINK`"
 msgstr ""
 
 #: ../../library/os.rst:1968
-msgid ":data:`stat.UF_COMPRESSED`"
+msgid ":const:`stat.UF_COMPRESSED`"
 msgstr ""
 
 #: ../../library/os.rst:1969
-msgid ":data:`stat.UF_HIDDEN`"
+msgid ":const:`stat.UF_HIDDEN`"
 msgstr ""
 
 #: ../../library/os.rst:1970
-msgid ":data:`stat.SF_ARCHIVED`"
+msgid ":const:`stat.SF_ARCHIVED`"
 msgstr ""
 
 #: ../../library/os.rst:1971
-msgid ":data:`stat.SF_IMMUTABLE`"
+msgid ":const:`stat.SF_IMMUTABLE`"
 msgstr ""
 
 #: ../../library/os.rst:1972
-msgid ":data:`stat.SF_APPEND`"
+msgid ":const:`stat.SF_APPEND`"
 msgstr ""
 
 #: ../../library/os.rst:1973
-msgid ":data:`stat.SF_NOUNLINK`"
+msgid ":const:`stat.SF_NOUNLINK`"
 msgstr ""
 
 #: ../../library/os.rst:1974
-msgid ":data:`stat.SF_SNAPSHOT`"
+msgid ":const:`stat.SF_SNAPSHOT`"
 msgstr ""
 
 #: ../../library/os.rst:1976
@@ -1582,79 +1582,79 @@ msgid "Change the mode of *path* to the numeric *mode*. *mode* may take one of t
 msgstr ""
 
 #: ../../library/os.rst:1995
-msgid ":data:`stat.S_ISUID`"
+msgid ":const:`stat.S_ISUID`"
 msgstr ""
 
 #: ../../library/os.rst:1996
-msgid ":data:`stat.S_ISGID`"
+msgid ":const:`stat.S_ISGID`"
 msgstr ""
 
 #: ../../library/os.rst:1997
-msgid ":data:`stat.S_ENFMT`"
+msgid ":const:`stat.S_ENFMT`"
 msgstr ""
 
 #: ../../library/os.rst:1998
-msgid ":data:`stat.S_ISVTX`"
+msgid ":const:`stat.S_ISVTX`"
 msgstr ""
 
 #: ../../library/os.rst:1999
-msgid ":data:`stat.S_IREAD`"
+msgid ":const:`stat.S_IREAD`"
 msgstr ""
 
 #: ../../library/os.rst:2000
-msgid ":data:`stat.S_IWRITE`"
+msgid ":const:`stat.S_IWRITE`"
 msgstr ""
 
 #: ../../library/os.rst:2001
-msgid ":data:`stat.S_IEXEC`"
+msgid ":const:`stat.S_IEXEC`"
 msgstr ""
 
 #: ../../library/os.rst:2002
-msgid ":data:`stat.S_IRWXU`"
+msgid ":const:`stat.S_IRWXU`"
 msgstr ""
 
 #: ../../library/os.rst:2003
-msgid ":data:`stat.S_IRUSR`"
+msgid ":const:`stat.S_IRUSR`"
 msgstr ""
 
 #: ../../library/os.rst:2004
-msgid ":data:`stat.S_IWUSR`"
+msgid ":const:`stat.S_IWUSR`"
 msgstr ""
 
 #: ../../library/os.rst:2005
-msgid ":data:`stat.S_IXUSR`"
+msgid ":const:`stat.S_IXUSR`"
 msgstr ""
 
 #: ../../library/os.rst:2006
-msgid ":data:`stat.S_IRWXG`"
+msgid ":const:`stat.S_IRWXG`"
 msgstr ""
 
 #: ../../library/os.rst:2007
-msgid ":data:`stat.S_IRGRP`"
+msgid ":const:`stat.S_IRGRP`"
 msgstr ""
 
 #: ../../library/os.rst:2008
-msgid ":data:`stat.S_IWGRP`"
+msgid ":const:`stat.S_IWGRP`"
 msgstr ""
 
 #: ../../library/os.rst:2009
-msgid ":data:`stat.S_IXGRP`"
+msgid ":const:`stat.S_IXGRP`"
 msgstr ""
 
 #: ../../library/os.rst:2010
-msgid ":data:`stat.S_IRWXO`"
+msgid ":const:`stat.S_IRWXO`"
 msgstr ""
 
 #: ../../library/os.rst:2011
-msgid ":data:`stat.S_IROTH`"
+msgid ":const:`stat.S_IROTH`"
 msgstr ""
 
 #: ../../library/os.rst:2012
-msgid ":data:`stat.S_IWOTH`"
+msgid ":const:`stat.S_IWOTH`"
 msgstr ""
 
 #: ../../library/os.rst:2013
-msgid ":data:`stat.S_IXOTH`"
+msgid ":const:`stat.S_IXOTH`"
 msgstr ""
 
 #: ../../library/os.rst:2015
@@ -3069,7 +3069,7 @@ msgid "Send signal *sig* to the process *pid*.  Constants for the specific signa
 msgstr ""
 
 #: ../../library/os.rst:4154
-msgid "Windows: The :data:`signal.CTRL_C_EVENT` and :data:`signal.CTRL_BREAK_EVENT` signals are special signals which can only be sent to console processes which share a common console window, e.g., some subprocesses. Any other value for *sig* will cause the process to be unconditionally killed by the TerminateProcess API, and the exit code will be set to *sig*. The Windows version of :func:`kill` additionally takes process handles to be killed."
+msgid "Windows: The :const:`signal.CTRL_C_EVENT` and :const:`signal.CTRL_BREAK_EVENT` signals are special signals which can only be sent to console processes which share a common console window, e.g., some subprocesses. Any other value for *sig* will cause the process to be unconditionally killed by the TerminateProcess API, and the exit code will be set to *sig*. The Windows version of :func:`kill` additionally takes process handles to be killed."
 msgstr ""
 
 #: ../../library/os.rst:4162
@@ -3109,7 +3109,7 @@ msgid ":ref:`Availability <availability>`: Linux >= 5.3"
 msgstr ""
 
 #: ../../library/os.rst:4205
-msgid "This flag indicates that the file descriptor will be non-blocking. If the process referred to by the file descriptor has not yet terminated, then an attempt to wait on the file descriptor using :manpage:`waitid(2)` will immediately return the error :data:`~errno.EAGAIN` rather than blocking."
+msgid "This flag indicates that the file descriptor will be non-blocking. If the process referred to by the file descriptor has not yet terminated, then an attempt to wait on the file descriptor using :manpage:`waitid(2)` will immediately return the error :const:`~errno.EAGAIN` rather than blocking."
 msgstr ""
 
 #: ../../library/os.rst:4210
@@ -3197,27 +3197,27 @@ msgid "These tuples correspond to the C library :c:func:`posix_spawn_file_action
 msgstr ""
 
 #: ../../library/os.rst:4307
-msgid "The *setpgroup* argument will set the process group of the child to the value specified. If the value specified is 0, the child's process group ID will be made the same as its process ID. If the value of *setpgroup* is not set, the child will inherit the parent's process group ID. This argument corresponds to the C library :c:data:`POSIX_SPAWN_SETPGROUP` flag."
+msgid "The *setpgroup* argument will set the process group of the child to the value specified. If the value specified is 0, the child's process group ID will be made the same as its process ID. If the value of *setpgroup* is not set, the child will inherit the parent's process group ID. This argument corresponds to the C library :c:macro:`POSIX_SPAWN_SETPGROUP` flag."
 msgstr ""
 
 #: ../../library/os.rst:4313
-msgid "If the *resetids* argument is ``True`` it will reset the effective UID and GID of the child to the real UID and GID of the parent process. If the argument is ``False``, then the child retains the effective UID and GID of the parent. In either case, if the set-user-ID and set-group-ID permission bits are enabled on the executable file, their effect will override the setting of the effective UID and GID. This argument corresponds to the C library :c:data:`POSIX_SPAWN_RESETIDS` flag."
+msgid "If the *resetids* argument is ``True`` it will reset the effective UID and GID of the child to the real UID and GID of the parent process. If the argument is ``False``, then the child retains the effective UID and GID of the parent. In either case, if the set-user-ID and set-group-ID permission bits are enabled on the executable file, their effect will override the setting of the effective UID and GID. This argument corresponds to the C library :c:macro:`POSIX_SPAWN_RESETIDS` flag."
 msgstr ""
 
 #: ../../library/os.rst:4321
-msgid "If the *setsid* argument is ``True``, it will create a new session ID for ``posix_spawn``. *setsid* requires :c:data:`POSIX_SPAWN_SETSID` or :c:data:`POSIX_SPAWN_SETSID_NP` flag. Otherwise, :exc:`NotImplementedError` is raised."
+msgid "If the *setsid* argument is ``True``, it will create a new session ID for ``posix_spawn``. *setsid* requires :c:macro:`POSIX_SPAWN_SETSID` or :c:macro:`POSIX_SPAWN_SETSID_NP` flag. Otherwise, :exc:`NotImplementedError` is raised."
 msgstr ""
 
 #: ../../library/os.rst:4326
-msgid "The *setsigmask* argument will set the signal mask to the signal set specified. If the parameter is not used, then the child inherits the parent's signal mask. This argument corresponds to the C library :c:data:`POSIX_SPAWN_SETSIGMASK` flag."
+msgid "The *setsigmask* argument will set the signal mask to the signal set specified. If the parameter is not used, then the child inherits the parent's signal mask. This argument corresponds to the C library :c:macro:`POSIX_SPAWN_SETSIGMASK` flag."
 msgstr ""
 
 #: ../../library/os.rst:4331
-msgid "The *sigdef* argument will reset the disposition of all signals in the set specified. This argument corresponds to the C library :c:data:`POSIX_SPAWN_SETSIGDEF` flag."
+msgid "The *sigdef* argument will reset the disposition of all signals in the set specified. This argument corresponds to the C library :c:macro:`POSIX_SPAWN_SETSIGDEF` flag."
 msgstr ""
 
 #: ../../library/os.rst:4335
-msgid "The *scheduler* argument must be a tuple containing the (optional) scheduler policy and an instance of :class:`sched_param` with the scheduler parameters. A value of ``None`` in the place of the scheduler policy indicates that is not being provided. This argument is a combination of the C library :c:data:`POSIX_SPAWN_SETSCHEDPARAM` and :c:data:`POSIX_SPAWN_SETSCHEDULER` flags."
+msgid "The *scheduler* argument must be a tuple containing the (optional) scheduler policy and an instance of :class:`sched_param` with the scheduler parameters. A value of ``None`` in the place of the scheduler policy indicates that is not being provided. This argument is a combination of the C library :c:macro:`POSIX_SPAWN_SETSCHEDPARAM` and :c:macro:`POSIX_SPAWN_SETSCHEDULER` flags."
 msgstr ""
 
 #: ../../library/os.rst:4342
@@ -3455,7 +3455,7 @@ msgid "*options* is an OR combination of flags.  At least one of :data:`WEXITED`
 msgstr ""
 
 #: ../../library/os.rst:4652
-msgid "The return value is an object representing the data contained in the :c:type:`!siginfo_t` structure with the following attributes:"
+msgid "The return value is an object representing the data contained in the :c:type:`siginfo_t` structure with the following attributes:"
 msgstr ""
 
 #: ../../library/os.rst:4655
@@ -3467,7 +3467,7 @@ msgid ":attr:`!si_uid` (real user ID of the child)"
 msgstr ""
 
 #: ../../library/os.rst:4657
-msgid ":attr:`!si_signo` (always :data:`~signal.SIGCHLD`)"
+msgid ":attr:`!si_signo` (always :const:`~signal.SIGCHLD`)"
 msgstr ""
 
 #: ../../library/os.rst:4658
@@ -3634,7 +3634,7 @@ msgid "This function should be employed only if :func:`WIFSIGNALED` is true."
 msgstr ""
 
 #: ../../library/os.rst:4894
-msgid "Return ``True`` if a stopped child has been resumed by delivery of :data:`~signal.SIGCONT` (if the process has been continued from a job control stop), otherwise return ``False``."
+msgid "Return ``True`` if a stopped child has been resumed by delivery of :const:`~signal.SIGCONT` (if the process has been continued from a job control stop), otherwise return ``False``."
 msgstr ""
 
 #: ../../library/os.rst:4898
@@ -3878,7 +3878,7 @@ msgid "``getrandom()`` relies on entropy gathered from device drivers and other 
 msgstr ""
 
 #: ../../library/os.rst:5266
-msgid "The flags argument is a bit mask that can contain zero or more of the following values ORed together: :py:data:`os.GRND_RANDOM` and :py:data:`GRND_NONBLOCK`."
+msgid "The flags argument is a bit mask that can contain zero or more of the following values ORed together: :py:const:`os.GRND_RANDOM` and :py:data:`GRND_NONBLOCK`."
 msgstr ""
 
 #: ../../library/os.rst:5270
@@ -3958,6 +3958,8 @@ msgstr ""
 #: ../../library/os.rst:470
 #: ../../library/os.rst:666
 #: ../../library/os.rst:4147
+#: ../../library/os.rst:4147
+#: ../../library/os.rst:4174
 #: ../../library/os.rst:4174
 msgid "process"
 msgstr ""
@@ -4020,6 +4022,8 @@ msgstr ""
 #: ../../library/os.rst:2332
 #: ../../library/os.rst:2534
 #: ../../library/os.rst:3438
+#: ../../library/os.rst:3438
+#: ../../library/os.rst:3537
 #: ../../library/os.rst:3537
 msgid "directory"
 msgstr ""

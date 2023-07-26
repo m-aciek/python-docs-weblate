@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Boolean Objects"
 msgstr ""
 
 #: ../../c-api/bool.rst:8
-msgid "Booleans in Python are implemented as a subclass of integers.  There are only two booleans, :const:`Py_False` and :const:`Py_True`.  As such, the normal creation and deletion functions don't apply to booleans.  The following macros are available, however."
+msgid "Booleans in Python are implemented as a subclass of integers.  There are only two booleans, :c:data:`Py_False` and :c:data:`Py_True`.  As such, the normal creation and deletion functions don't apply to booleans.  The following macros are available, however."
 msgstr ""
 
 #: ../../c-api/bool.rst:16
@@ -29,21 +29,29 @@ msgid "Return true if *o* is of type :c:data:`PyBool_Type`.  This function alway
 msgstr ""
 
 #: ../../c-api/bool.rst:22
-msgid "The Python ``False`` object.  This object has no methods.  It needs to be treated just like any other object with respect to reference counts."
+msgid "The Python ``False`` object.  This object has no methods and is `immortal <https://peps.python.org/pep-0683/>`_."
 msgstr ""
 
-#: ../../c-api/bool.rst:28
-msgid "The Python ``True`` object.  This object has no methods.  It needs to be treated just like any other object with respect to reference counts."
+#: ../../c-api/bool.rst:25
+msgid ":c:data:`Py_False` is immortal."
+msgstr ""
+
+#: ../../c-api/bool.rst:31
+msgid "The Python ``True`` object.  This object has no methods and is `immortal <https://peps.python.org/pep-0683/>`_."
 msgstr ""
 
 #: ../../c-api/bool.rst:34
-msgid "Return :const:`Py_False` from a function, properly incrementing its reference count."
+msgid ":c:data:`Py_True` is immortal."
 msgstr ""
 
 #: ../../c-api/bool.rst:40
-msgid "Return :const:`Py_True` from a function, properly incrementing its reference count."
+msgid "Return :c:data:`Py_False` from a function."
 msgstr ""
 
-#: ../../c-api/bool.rst:46
-msgid "Return a new reference to :const:`Py_True` or :const:`Py_False` depending on the truth value of *v*."
+#: ../../c-api/bool.rst:45
+msgid "Return :c:data:`Py_True` from a function."
+msgstr ""
+
+#: ../../c-api/bool.rst:50
+msgid "Return :c:data:`Py_True` or :c:data:`Py_False`, depending on the truth value of *v*."
 msgstr ""

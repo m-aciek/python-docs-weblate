@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,8 +80,8 @@ msgstr ""
 msgid "Some of the type descriptions below contain a paragraph listing 'special attributes.'  These are attributes that provide access to the implementation and are not intended for general use.  Their definition may change in the future."
 msgstr ""
 
-#: ../../reference/datamodel.rst:145
 #: ../../reference/datamodel.rst:150
+#: ../../reference/datamodel.rst:145
 msgid "None"
 msgstr ""
 
@@ -89,8 +89,8 @@ msgstr ""
 msgid "This type has a single value.  There is a single object with this value. This object is accessed through the built-in name ``None``. It is used to signify the absence of a value in many situations, e.g., it is returned from functions that don't explicitly return anything. Its truth value is false."
 msgstr ""
 
-#: ../../reference/datamodel.rst:153
 #: ../../reference/datamodel.rst:170
+#: ../../reference/datamodel.rst:153
 msgid "NotImplemented"
 msgstr ""
 
@@ -106,8 +106,8 @@ msgstr ""
 msgid "Evaluating ``NotImplemented`` in a boolean context is deprecated. While it currently evaluates as true, it will emit a :exc:`DeprecationWarning`. It will raise a :exc:`TypeError` in a future version of Python."
 msgstr ""
 
-#: ../../reference/datamodel.rst:173
 #: ../../reference/datamodel.rst:179
+#: ../../reference/datamodel.rst:173
 msgid "Ellipsis"
 msgstr ""
 
@@ -1774,7 +1774,7 @@ msgid "Called to implement the built-in function :func:`len`.  Should return the
 msgstr ""
 
 #: ../../reference/datamodel.rst:2502
-msgid "In CPython, the length is required to be at most :attr:`sys.maxsize`. If the length is larger than :attr:`!sys.maxsize` some features (such as :func:`len`) may raise :exc:`OverflowError`.  To prevent raising :exc:`!OverflowError` by truth value testing, an object must define a :meth:`__bool__` method."
+msgid "In CPython, the length is required to be at most :data:`sys.maxsize`. If the length is larger than :data:`!sys.maxsize` some features (such as :func:`len`) may raise :exc:`OverflowError`.  To prevent raising :exc:`!OverflowError` by truth value testing, an object must define a :meth:`__bool__` method."
 msgstr ""
 
 #: ../../reference/datamodel.rst:2511
@@ -2176,7 +2176,9 @@ msgstr ""
 #: ../../reference/datamodel.rst:259
 #: ../../reference/datamodel.rst:269
 #: ../../reference/datamodel.rst:295
+#: ../../reference/datamodel.rst:295
 #: ../../reference/datamodel.rst:330
+#: ../../reference/datamodel.rst:352
 #: ../../reference/datamodel.rst:352
 #: ../../reference/datamodel.rst:366
 #: ../../reference/datamodel.rst:386
@@ -2186,12 +2188,22 @@ msgstr ""
 #: ../../reference/datamodel.rst:434
 #: ../../reference/datamodel.rst:467
 #: ../../reference/datamodel.rst:477
+#: ../../reference/datamodel.rst:477
+#: ../../reference/datamodel.rst:589
 #: ../../reference/datamodel.rst:589
 #: ../../reference/datamodel.rst:697
+#: ../../reference/datamodel.rst:697
+#: ../../reference/datamodel.rst:712
 #: ../../reference/datamodel.rst:712
 #: ../../reference/datamodel.rst:736
 #: ../../reference/datamodel.rst:814
+#: ../../reference/datamodel.rst:814
+#: ../../reference/datamodel.rst:814
+#: ../../reference/datamodel.rst:814
 #: ../../reference/datamodel.rst:879
+#: ../../reference/datamodel.rst:879
+#: ../../reference/datamodel.rst:906
+#: ../../reference/datamodel.rst:906
 #: ../../reference/datamodel.rst:906
 #: ../../reference/datamodel.rst:956
 #: ../../reference/datamodel.rst:1011
@@ -2208,7 +2220,9 @@ msgid "data"
 msgstr ""
 
 #: ../../reference/datamodel.rst:23
+#: ../../reference/datamodel.rst:23
 #: ../../reference/datamodel.rst:269
+#: ../../reference/datamodel.rst:310
 #: ../../reference/datamodel.rst:310
 #: ../../reference/datamodel.rst:386
 #: ../../reference/datamodel.rst:420
@@ -2221,9 +2235,14 @@ msgstr ""
 #: ../../reference/datamodel.rst:2063
 #: ../../reference/datamodel.rst:2491
 #: ../../reference/datamodel.rst:2649
+#: ../../reference/datamodel.rst:2649
+#: ../../reference/datamodel.rst:2649
+#: ../../reference/datamodel.rst:2684
 #: ../../reference/datamodel.rst:2684
 #: ../../reference/datamodel.rst:2698
 #: ../../reference/datamodel.rst:2745
+#: ../../reference/datamodel.rst:2755
+#: ../../reference/datamodel.rst:2755
 #: ../../reference/datamodel.rst:2755
 #: ../../reference/datamodel.rst:2783
 msgid "built-in function"
@@ -2234,6 +2253,8 @@ msgid "id"
 msgstr ""
 
 #: ../../reference/datamodel.rst:23
+#: ../../reference/datamodel.rst:122
+#: ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:2063
 msgid "type"
@@ -2287,6 +2308,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:380
 #: ../../reference/datamodel.rst:453
+#: ../../reference/datamodel.rst:453
 #: ../../reference/datamodel.rst:736
 #: ../../reference/datamodel.rst:755
 #: ../../reference/datamodel.rst:922
@@ -2301,10 +2323,13 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:244
+#: ../../reference/datamodel.rst:244
 #: ../../reference/datamodel.rst:697
 msgid "language"
 msgstr ""
 
+#: ../../reference/datamodel.rst:135
+#: ../../reference/datamodel.rst:135
 #: ../../reference/datamodel.rst:135
 #: ../../reference/datamodel.rst:814
 #: ../../reference/datamodel.rst:831
@@ -2313,6 +2338,7 @@ msgstr ""
 msgid "attribute"
 msgstr ""
 
+#: ../../reference/datamodel.rst:135
 #: ../../reference/datamodel.rst:135
 msgid "special"
 msgstr ""
@@ -2357,6 +2383,7 @@ msgid "representation"
 msgstr ""
 
 #: ../../reference/datamodel.rst:244
+#: ../../reference/datamodel.rst:244
 msgid "floating point"
 msgstr ""
 
@@ -2369,6 +2396,7 @@ msgstr ""
 msgid "Java"
 msgstr ""
 
+#: ../../reference/datamodel.rst:259
 #: ../../reference/datamodel.rst:259
 #: ../../reference/datamodel.rst:2755
 msgid "complex"
@@ -2416,6 +2444,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:306
 #: ../../reference/datamodel.rst:1401
 #: ../../reference/datamodel.rst:1431
+#: ../../reference/datamodel.rst:1431
 msgid "string"
 msgstr ""
 
@@ -2439,6 +2468,8 @@ msgstr ""
 msgid "Unicode"
 msgstr ""
 
+#: ../../reference/datamodel.rst:330
+#: ../../reference/datamodel.rst:330
 #: ../../reference/datamodel.rst:330
 msgid "tuple"
 msgstr ""
@@ -2530,6 +2561,8 @@ msgid "callable"
 msgstr ""
 
 #: ../../reference/datamodel.rst:467
+#: ../../reference/datamodel.rst:467
+#: ../../reference/datamodel.rst:477
 #: ../../reference/datamodel.rst:477
 #: ../../reference/datamodel.rst:652
 #: ../../reference/datamodel.rst:667
@@ -2616,6 +2649,8 @@ msgid "namespace"
 msgstr ""
 
 #: ../../reference/datamodel.rst:589
+#: ../../reference/datamodel.rst:589
+#: ../../reference/datamodel.rst:712
 #: ../../reference/datamodel.rst:712
 msgid "method"
 msgstr ""
@@ -2645,6 +2680,7 @@ msgid "__module__ (method attribute)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:652
+#: ../../reference/datamodel.rst:652
 #: ../../reference/datamodel.rst:1011
 msgid "generator"
 msgstr ""
@@ -2658,6 +2694,7 @@ msgstr ""
 msgid "coroutine"
 msgstr ""
 
+#: ../../reference/datamodel.rst:677
 #: ../../reference/datamodel.rst:677
 msgid "asynchronous generator"
 msgstr ""
@@ -2699,6 +2736,7 @@ msgid "__dict__ (module attribute)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:814
+#: ../../reference/datamodel.rst:814
 #: ../../reference/datamodel.rst:831
 #: ../../reference/datamodel.rst:879
 #: ../../reference/datamodel.rst:1305
@@ -2708,11 +2746,13 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:814
 #: ../../reference/datamodel.rst:879
+#: ../../reference/datamodel.rst:879
 #: ../../reference/datamodel.rst:899
 msgid "class instance"
 msgstr ""
 
 #: ../../reference/datamodel.rst:814
+#: ../../reference/datamodel.rst:879
 #: ../../reference/datamodel.rst:879
 #: ../../reference/datamodel.rst:2444
 msgid "instance"
@@ -2944,6 +2984,7 @@ msgid "traceback"
 msgstr ""
 
 #: ../../reference/datamodel.rst:1130
+#: ../../reference/datamodel.rst:1130
 msgid "stack"
 msgstr ""
 
@@ -3065,6 +3106,8 @@ msgid "__repr__() (object method)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:1401
+#: ../../reference/datamodel.rst:1401
+#: ../../reference/datamodel.rst:1401
 msgid "__str__() (object method)"
 msgstr ""
 
@@ -3153,6 +3196,7 @@ msgstr ""
 msgid "divmod"
 msgstr ""
 
+#: ../../reference/datamodel.rst:2649
 #: ../../reference/datamodel.rst:2649
 #: ../../reference/datamodel.rst:2684
 #: ../../reference/datamodel.rst:2698

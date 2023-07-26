@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1902,7 +1902,7 @@ msgid "Returns the logger used by :mod:`multiprocessing`.  If necessary, a new o
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2710
-msgid "When first created the logger has level :data:`logging.NOTSET` and no default handler. Messages sent to this logger will not by default propagate to the root logger."
+msgid "When first created the logger has level :const:`logging.NOTSET` and no default handler. Messages sent to this logger will not by default propagate to the root logger."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2714

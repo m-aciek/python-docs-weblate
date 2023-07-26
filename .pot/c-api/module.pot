@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid "The module definition struct, which holds all information needed to creat
 msgstr ""
 
 #: ../../c-api/module.rst:148
-msgid "Always initialize this member to :const:`PyModuleDef_HEAD_INIT`."
+msgid "Always initialize this member to :c:macro:`PyModuleDef_HEAD_INIT`."
 msgstr ""
 
 #: ../../c-api/module.rst:152
@@ -177,7 +177,7 @@ msgid "The module initialization function may create and return the module objec
 msgstr ""
 
 #: ../../c-api/module.rst:257
-msgid "Create a new module object, given the definition in *def*.  This behaves like :c:func:`PyModule_Create2` with *module_api_version* set to :const:`PYTHON_API_VERSION`."
+msgid "Create a new module object, given the definition in *def*.  This behaves like :c:func:`PyModule_Create2` with *module_api_version* set to :c:macro:`PYTHON_API_VERSION`."
 msgstr ""
 
 #: ../../c-api/module.rst:264
@@ -285,7 +285,7 @@ msgid "The following functions are called under the hood when using multi-phase 
 msgstr ""
 
 #: ../../c-api/module.rst:391
-msgid "Create a new module object, given the definition in *def* and the ModuleSpec *spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` with *module_api_version* set to :const:`PYTHON_API_VERSION`."
+msgid "Create a new module object, given the definition in *def* and the ModuleSpec *spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` with *module_api_version* set to :c:macro:`PYTHON_API_VERSION`."
 msgstr ""
 
 #: ../../c-api/module.rst:399

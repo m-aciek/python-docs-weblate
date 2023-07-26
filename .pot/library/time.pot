@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,11 +96,11 @@ msgstr ""
 msgid "Use"
 msgstr ""
 
-#: ../../library/time.rst:29
 #: ../../library/time.rst:100
 #: ../../library/time.rst:103
 #: ../../library/time.rst:106
 #: ../../library/time.rst:109
+#: ../../library/time.rst:29
 msgid "seconds since the epoch"
 msgstr ""
 

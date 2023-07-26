@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1244,6 +1244,7 @@ msgid ">>>"
 msgstr ""
 
 #: ../../library/doctest.rst:318
+#: ../../library/doctest.rst:318
 msgid "interpreter prompt"
 msgstr ""
 
@@ -1265,6 +1266,8 @@ msgid "<BLANKLINE>"
 msgstr ""
 
 #: ../../library/doctest.rst:556
+#: ../../library/doctest.rst:686
+#: ../../library/doctest.rst:686
 #: ../../library/doctest.rst:686
 msgid "in doctests"
 msgstr ""

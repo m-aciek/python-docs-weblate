@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgid "If the primary is a mutable sequence object (such as a list), the subscri
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:211
-msgid "If the primary is a mapping object (such as a dictionary), the subscript must have a type compatible with the mapping's key type, and the mapping is then asked to create a key/datum pair which maps the subscript to the assigned object.  This can either replace an existing key/value pair with the same key value, or insert a new key/value pair (if no key with the same value existed)."
+msgid "If the primary is a mapping object (such as a dictionary), the subscript must have a type compatible with the mapping's key type, and the mapping is then asked to create a key/value pair which maps the subscript to the assigned object.  This can either replace an existing key/value pair with the same key value, or insert a new key/value pair (if no key with the same value existed)."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:217
@@ -693,6 +693,12 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:520
 #: ../../reference/simple_stmts.rst:556
 #: ../../reference/simple_stmts.rst:670
+#: ../../reference/simple_stmts.rst:670
+#: ../../reference/simple_stmts.rst:670
+#: ../../reference/simple_stmts.rst:670
+#: ../../reference/simple_stmts.rst:704
+#: ../../reference/simple_stmts.rst:704
+#: ../../reference/simple_stmts.rst:704
 #: ../../reference/simple_stmts.rst:704
 #: ../../reference/simple_stmts.rst:729
 #: ../../reference/simple_stmts.rst:859
@@ -702,6 +708,7 @@ msgstr ""
 msgid "statement"
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:39
 #: ../../reference/simple_stmts.rst:39
 #: ../../reference/simple_stmts.rst:42
 msgid "expression"
@@ -718,6 +725,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:56
 #: ../../reference/simple_stmts.rst:973
+#: ../../reference/simple_stmts.rst:973
+#: ../../reference/simple_stmts.rst:973
 msgid "built-in function"
 msgstr ""
 
@@ -729,6 +738,8 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:187
 #: ../../reference/simple_stmts.rst:196
+#: ../../reference/simple_stmts.rst:196
+#: ../../reference/simple_stmts.rst:207
 #: ../../reference/simple_stmts.rst:207
 #: ../../reference/simple_stmts.rst:578
 msgid "object"
@@ -746,6 +757,7 @@ msgstr ""
 msgid "conversion"
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:56
 #: ../../reference/simple_stmts.rst:56
 msgid "output"
 msgstr ""
@@ -779,6 +791,7 @@ msgid "assignment statement"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:75
+#: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:159
 #: ../../reference/simple_stmts.rst:187
@@ -795,6 +808,7 @@ msgstr ""
 msgid "binding"
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:457
 #: ../../reference/simple_stmts.rst:729
@@ -819,7 +833,9 @@ msgid "attribute"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:105
+#: ../../reference/simple_stmts.rst:105
 #: ../../reference/simple_stmts.rst:116
+#: ../../reference/simple_stmts.rst:444
 #: ../../reference/simple_stmts.rst:444
 #: ../../reference/simple_stmts.rst:683
 msgid "target"
@@ -842,6 +858,8 @@ msgstr ""
 msgid "* (asterisk)"
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:116
+#: ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:116
 msgid "in assignment target list"
 msgstr ""
@@ -890,6 +908,17 @@ msgstr ""
 msgid "+="
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
 #: ../../reference/simple_stmts.rst:263
 msgid "augmented assignment"
 msgstr ""
@@ -977,6 +1006,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:400
 #: ../../reference/simple_stmts.rst:520
 #: ../../reference/simple_stmts.rst:556
+#: ../../reference/simple_stmts.rst:556
 #: ../../reference/simple_stmts.rst:588
 #: ../../reference/simple_stmts.rst:729
 msgid "exception"
@@ -991,9 +1021,11 @@ msgid "pass"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:422
+#: ../../reference/simple_stmts.rst:422
 msgid "null"
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:422
 #: ../../reference/simple_stmts.rst:422
 msgid "operation"
 msgstr ""
@@ -1003,11 +1035,13 @@ msgid "del"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:444
+#: ../../reference/simple_stmts.rst:444
 #: ../../reference/simple_stmts.rst:466
 msgid "deletion"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:457
+#: ../../reference/simple_stmts.rst:945
 #: ../../reference/simple_stmts.rst:945
 msgid "global"
 msgstr ""
@@ -1022,9 +1056,11 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:483
 #: ../../reference/simple_stmts.rst:520
+#: ../../reference/simple_stmts.rst:520
 msgid "function"
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:483
 #: ../../reference/simple_stmts.rst:483
 msgid "definition"
 msgstr ""
@@ -1037,6 +1073,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:683
 #: ../../reference/simple_stmts.rst:692
 #: ../../reference/simple_stmts.rst:704
+#: ../../reference/simple_stmts.rst:729
 #: ../../reference/simple_stmts.rst:729
 msgid "keyword"
 msgstr ""
@@ -1051,6 +1088,8 @@ msgstr ""
 msgid "yield"
 msgstr ""
 
+#: ../../reference/simple_stmts.rst:520
+#: ../../reference/simple_stmts.rst:520
 #: ../../reference/simple_stmts.rst:520
 msgid "generator"
 msgstr ""

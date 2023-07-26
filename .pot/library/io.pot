@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -436,7 +436,7 @@ msgid "The ``SEEK_*`` constants."
 msgstr ""
 
 #: ../../library/io.rst:424
-msgid "Some operating systems could support additional values, like :data:`os.SEEK_HOLE` or :data:`os.SEEK_DATA`. The valid values for a file could depend on it being open in text or binary mode."
+msgid "Some operating systems could support additional values, like :const:`os.SEEK_HOLE` or :const:`os.SEEK_DATA`. The valid values for a file could depend on it being open in text or binary mode."
 msgstr ""
 
 #: ../../library/io.rst:431

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -817,15 +817,15 @@ msgid "The *flags* argument to :c:func:`PyObject_GetBuffer` specifies constraint
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1141
-msgid ":const:`PyBUF_WRITABLE` indicates that the memory must be writable."
+msgid ":c:macro:`PyBUF_WRITABLE` indicates that the memory must be writable."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1143
-msgid ":const:`PyBUF_LOCK` requests a read-only or exclusive lock on the memory."
+msgid ":c:macro:`PyBUF_LOCK` requests a read-only or exclusive lock on the memory."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1145
-msgid ":const:`PyBUF_C_CONTIGUOUS` and :const:`PyBUF_F_CONTIGUOUS` requests a C-contiguous (last dimension varies the fastest) or Fortran-contiguous (first dimension varies the fastest) array layout."
+msgid ":c:macro:`PyBUF_C_CONTIGUOUS` and :c:macro:`PyBUF_F_CONTIGUOUS` requests a C-contiguous (last dimension varies the fastest) or Fortran-contiguous (first dimension varies the fastest) array layout."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1149
@@ -1543,7 +1543,7 @@ msgid "The :mod:`sched` module's :class:`scheduler` instances now have a read-on
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2291
-msgid "The :mod:`select` module now has wrapper functions for the Linux :c:func:`epoll` and BSD :c:func:`kqueue` system calls. :meth:`modify` method was added to the existing :class:`poll` objects; ``pollobj.modify(fd, eventmask)`` takes a file descriptor or file object and an event mask, modifying the recorded event mask for that file. (Contributed by Christian Heimes; :issue:`1657`.)"
+msgid "The :mod:`select` module now has wrapper functions for the Linux :c:func:`!epoll` and BSD :c:func:`!kqueue` system calls. :meth:`modify` method was added to the existing :class:`poll` objects; ``pollobj.modify(fd, eventmask)`` takes a file descriptor or file object and an event mask, modifying the recorded event mask for that file. (Contributed by Christian Heimes; :issue:`1657`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2299
@@ -1563,7 +1563,7 @@ msgid "Integrating signal handling with GUI handling event loops like those used
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2327
-msgid "Event loops will use this by opening a pipe to create two descriptors, one for reading and one for writing.  The writable descriptor will be passed to :func:`set_wakeup_fd`, and the readable descriptor will be added to the list of descriptors monitored by the event loop via :c:func:`select` or :c:func:`poll`. On receiving a signal, a byte will be written and the main event loop will be woken up, avoiding the need to poll."
+msgid "Event loops will use this by opening a pipe to create two descriptors, one for reading and one for writing.  The writable descriptor will be passed to :func:`set_wakeup_fd`, and the readable descriptor will be added to the list of descriptors monitored by the event loop via :c:func:`!select` or :c:func:`!poll`. On receiving a signal, a byte will be written and the main event loop will be woken up, avoiding the need to poll."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2335
@@ -1988,7 +1988,7 @@ msgid "Changes to Python's build process and to the C API include:"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2983
-msgid "Python now must be compiled with C89 compilers (after 19 years!).  This means that the Python source tree has dropped its own implementations of :c:func:`memmove` and :c:func:`strerror`, which are in the C89 standard library."
+msgid "Python now must be compiled with C89 compilers (after 19 years!).  This means that the Python source tree has dropped its own implementations of :c:func:`!memmove` and :c:func:`!strerror`, which are in the C89 standard library."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2988

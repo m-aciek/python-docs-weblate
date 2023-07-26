@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -425,15 +425,15 @@ msgid "In either case, the context manager can be rescheduled after creation usi
 msgstr ""
 
 #: ../../library/asyncio-task.rst:651
-msgid "If ``long_running_task`` takes more than 10 seconds to complete, the context manager will cancel the current task and handle the resulting :exc:`asyncio.CancelledError` internally, transforming it into an :exc:`asyncio.TimeoutError` which can be caught and handled."
+msgid "If ``long_running_task`` takes more than 10 seconds to complete, the context manager will cancel the current task and handle the resulting :exc:`asyncio.CancelledError` internally, transforming it into a :exc:`TimeoutError` which can be caught and handled."
 msgstr ""
 
 #: ../../library/asyncio-task.rst:658
-msgid "The :func:`asyncio.timeout` context manager is what transforms the :exc:`asyncio.CancelledError` into an :exc:`asyncio.TimeoutError`, which means the :exc:`asyncio.TimeoutError` can only be caught *outside* of the context manager."
+msgid "The :func:`asyncio.timeout` context manager is what transforms the :exc:`asyncio.CancelledError` into a :exc:`TimeoutError`, which means the :exc:`TimeoutError` can only be caught *outside* of the context manager."
 msgstr ""
 
 #: ../../library/asyncio-task.rst:663
-msgid "Example of catching :exc:`asyncio.TimeoutError`::"
+msgid "Example of catching :exc:`TimeoutError`::"
 msgstr ""
 
 #: ../../library/asyncio-task.rst:674

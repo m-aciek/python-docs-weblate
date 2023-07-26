@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,6 +134,7 @@ msgstr ""
 
 #: ../../library/tkinter.rst:97
 #: ../../library/tkinter.rst:908
+#: ../../library/tkinter.rst:908
 msgid "Tk"
 msgstr ""
 
@@ -226,7 +227,7 @@ msgid "Note that on some platforms this will only work correctly if *id* refers 
 msgstr ""
 
 #: ../../library/tkinter.rst:161
-msgid ":class:`Tk` reads and interprets profile files, named :file:`.{className}.tcl` and :file:`.{baseName}.tcl`, into the Tcl interpreter and calls :func:`exec` on the contents of :file:`.{className}.py` and :file:`.{baseName}.py`.  The path for the profile files is the :envvar:`HOME` environment variable or, if that isn't defined, then :attr:`os.curdir`."
+msgid ":class:`Tk` reads and interprets profile files, named :file:`.{className}.tcl` and :file:`.{baseName}.tcl`, into the Tcl interpreter and calls :func:`exec` on the contents of :file:`.{className}.py` and :file:`.{baseName}.py`.  The path for the profile files is the :envvar:`HOME` environment variable or, if that isn't defined, then :data:`os.curdir`."
 msgstr ""
 
 #: ../../library/tkinter.rst:170
@@ -993,6 +994,7 @@ msgstr ""
 msgid "Notice how the widget field of the event is being accessed in the ``turn_red()`` callback.  This field contains the widget that caught the X event.  The following table lists the other event fields you can access, and how they are denoted in Tk, which can be useful when referring to the Tk man pages."
 msgstr ""
 
+#: ../../library/tkinter.rst:908
 #: ../../library/tkinter.rst:908
 msgid "Tkinter Event Field"
 msgstr ""

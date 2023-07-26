@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -370,7 +370,7 @@ msgid "Return ``True`` if Python was not built with ``-O0`` or ``-Og``."
 msgstr ""
 
 #: ../../library/test.rst:475
-msgid "Return :data:`_testcapi.WITH_PYMALLOC`."
+msgid "Return :const:`_testcapi.WITH_PYMALLOC`."
 msgstr ""
 
 #: ../../library/test.rst:480
@@ -731,7 +731,7 @@ msgid "On Windows, it disables Windows Error Reporting dialogs using `SetErrorMo
 msgstr ""
 
 #: ../../library/test.rst:1042
-msgid "On UNIX, :func:`resource.setrlimit` is used to set :attr:`resource.RLIMIT_CORE`'s soft limit to 0 to prevent coredump file creation."
+msgid "On UNIX, :func:`resource.setrlimit` is used to set :const:`resource.RLIMIT_CORE`'s soft limit to 0 to prevent coredump file creation."
 msgstr ""
 
 #: ../../library/test.rst:1046

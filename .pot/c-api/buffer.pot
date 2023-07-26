@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,7 +193,7 @@ msgid "Buffers are usually obtained by sending a buffer request to an exporting 
 msgstr ""
 
 #: ../../c-api/buffer.rst:228
-msgid "All :c:data:`Py_buffer` fields are unambiguously defined by the request type."
+msgid "All :c:type:`Py_buffer` fields are unambiguously defined by the request type."
 msgstr ""
 
 #: ../../c-api/buffer.rst:232
@@ -257,17 +257,32 @@ msgid "suboffsets"
 msgstr ""
 
 #: ../../c-api/buffer.rst:274
+#: ../../c-api/buffer.rst:274
+#: ../../c-api/buffer.rst:276
 #: ../../c-api/buffer.rst:276
 #: ../../c-api/buffer.rst:278
 #: ../../c-api/buffer.rst:298
+#: ../../c-api/buffer.rst:298
 #: ../../c-api/buffer.rst:300
+#: ../../c-api/buffer.rst:300
+#: ../../c-api/buffer.rst:302
 #: ../../c-api/buffer.rst:302
 #: ../../c-api/buffer.rst:304
 #: ../../c-api/buffer.rst:323
+#: ../../c-api/buffer.rst:323
+#: ../../c-api/buffer.rst:323
+#: ../../c-api/buffer.rst:325
+#: ../../c-api/buffer.rst:325
 #: ../../c-api/buffer.rst:325
 #: ../../c-api/buffer.rst:327
+#: ../../c-api/buffer.rst:327
+#: ../../c-api/buffer.rst:327
+#: ../../c-api/buffer.rst:329
+#: ../../c-api/buffer.rst:329
 #: ../../c-api/buffer.rst:329
 #: ../../c-api/buffer.rst:331
+#: ../../c-api/buffer.rst:331
+#: ../../c-api/buffer.rst:333
 #: ../../c-api/buffer.rst:333
 #: ../../c-api/buffer.rst:335
 #: ../../c-api/buffer.rst:337
@@ -282,16 +297,26 @@ msgstr ""
 
 #: ../../c-api/buffer.rst:276
 #: ../../c-api/buffer.rst:278
+#: ../../c-api/buffer.rst:278
+#: ../../c-api/buffer.rst:280
+#: ../../c-api/buffer.rst:280
 #: ../../c-api/buffer.rst:280
 #: ../../c-api/buffer.rst:298
 #: ../../c-api/buffer.rst:300
 #: ../../c-api/buffer.rst:302
 #: ../../c-api/buffer.rst:304
+#: ../../c-api/buffer.rst:304
 #: ../../c-api/buffer.rst:327
 #: ../../c-api/buffer.rst:329
 #: ../../c-api/buffer.rst:331
+#: ../../c-api/buffer.rst:331
+#: ../../c-api/buffer.rst:333
 #: ../../c-api/buffer.rst:333
 #: ../../c-api/buffer.rst:335
+#: ../../c-api/buffer.rst:335
+#: ../../c-api/buffer.rst:335
+#: ../../c-api/buffer.rst:337
+#: ../../c-api/buffer.rst:337
 #: ../../c-api/buffer.rst:337
 msgid "NULL"
 msgstr ""
@@ -436,7 +461,7 @@ msgid "It is an error to call this function on a buffer that was not obtained vi
 msgstr ""
 
 #: ../../c-api/buffer.rst:467
-msgid "Return the implied :c:data:`~Py_buffer.itemsize` from :c:data:`~Py_buffer.format`. On error, raise an exception and return -1."
+msgid "Return the implied :c:member:`~Py_buffer.itemsize` from :c:member:`~Py_buffer.format`. On error, raise an exception and return -1."
 msgstr ""
 
 #: ../../c-api/buffer.rst:475
@@ -495,6 +520,7 @@ msgstr ""
 msgid "buffer interface"
 msgstr ""
 
+#: ../../c-api/buffer.rst:3
 #: ../../c-api/buffer.rst:3
 msgid "(see buffer protocol)"
 msgstr ""

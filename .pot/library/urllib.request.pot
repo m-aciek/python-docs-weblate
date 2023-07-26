@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,7 +100,7 @@ msgstr ""
 msgid "The legacy ``urllib.urlopen`` function from Python 2.6 and earlier has been discontinued; :func:`urllib.request.urlopen` corresponds to the old ``urllib2.urlopen``.  Proxy handling, which was done by passing a dictionary parameter to ``urllib.urlopen``, can be obtained by using :class:`ProxyHandler` objects."
 msgstr ""
 
-#: ../../library/urllib.request.rst:102
+#: ../../library/urllib.request.rst:100
 msgid "Raises an :ref:`auditing event <auditing>` ``urllib.Request`` with arguments ``fullurl``, ``data``, ``headers``, ``method``."
 msgstr ""
 
@@ -113,7 +113,7 @@ msgid "*cafile* and *capath* were added."
 msgstr ""
 
 #: ../../library/urllib.request.rst:100
-msgid "HTTPS virtual hosts are now supported if possible (that is, if :data:`ssl.HAS_SNI` is true)."
+msgid "HTTPS virtual hosts are now supported if possible (that is, if :const:`ssl.HAS_SNI` is true)."
 msgstr ""
 
 #: ../../library/urllib.request.rst:104
@@ -1139,6 +1139,7 @@ msgstr ""
 msgid "HTTP"
 msgstr ""
 
+#: ../../library/urllib.request.rst:1539
 #: ../../library/urllib.request.rst:1539
 #: ../../library/urllib.request.rst:1562
 msgid "protocol"

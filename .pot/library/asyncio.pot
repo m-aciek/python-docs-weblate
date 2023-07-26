@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/asyncio.rst:78
+#: ../../library/asyncio.rst:78
 msgid "High-level APIs"
 msgstr ""
 
 #: ../../library/asyncio.rst:90
+#: ../../library/asyncio.rst:90
 msgid "Low-level APIs"
 msgstr ""
 
+#: ../../library/asyncio.rst:101
 #: ../../library/asyncio.rst:101
 msgid "Guides and Tutorials"
 msgstr ""
@@ -32,7 +35,7 @@ msgstr ""
 msgid ":mod:`asyncio` --- Asynchronous I/O"
 msgstr ""
 
-#: ../../library/asyncio.rst:-1
+#: ../../library/asyncio.rst:None
 msgid "Hello World!"
 msgstr ""
 

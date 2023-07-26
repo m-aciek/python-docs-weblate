@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-26 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid "All event loops on Windows do not support the following methods:"
 msgstr ""
 
 #: ../../library/asyncio-platforms.rst:38
-msgid ":meth:`loop.create_unix_connection` and :meth:`loop.create_unix_server` are not supported. The :data:`socket.AF_UNIX` socket family is specific to Unix."
+msgid ":meth:`loop.create_unix_connection` and :meth:`loop.create_unix_server` are not supported. The :const:`socket.AF_UNIX` socket family is specific to Unix."
 msgstr ""
 
 #: ../../library/asyncio-platforms.rst:42
