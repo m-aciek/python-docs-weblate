@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 06:36+0000\n"
+"POT-Creation-Date: 2023-07-27 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,112 +108,64 @@ msgstr ""
 msgid "Contains the meta information of a struct sequence type to create."
 msgstr ""
 
-#: ../../c-api/tuple.rst:148
-#: ../../c-api/tuple.rst:172
-msgid "Field"
+#: ../../c-api/tuple.rst:149
+msgid "Name of the struct sequence type."
 msgstr ""
 
-#: ../../c-api/tuple.rst:148
-#: ../../c-api/tuple.rst:172
-msgid "C Type"
+#: ../../c-api/tuple.rst:153
+msgid "Pointer to docstring for the type or ``NULL`` to omit."
 msgstr ""
 
-#: ../../c-api/tuple.rst:148
-#: ../../c-api/tuple.rst:172
-msgid "Meaning"
+#: ../../c-api/tuple.rst:157
+msgid "Pointer to ``NULL``-terminated array with field names of the new type."
 msgstr ""
 
-#: ../../c-api/tuple.rst:150
-#: ../../c-api/tuple.rst:174
-msgid "``name``"
+#: ../../c-api/tuple.rst:161
+msgid "Number of fields visible to the Python side (if used as tuple)."
 msgstr ""
 
-#: ../../c-api/tuple.rst:150
-#: ../../c-api/tuple.rst:152
-#: ../../c-api/tuple.rst:174
-#: ../../c-api/tuple.rst:179
-msgid "``const char *``"
-msgstr ""
-
-#: ../../c-api/tuple.rst:150
-msgid "name of the struct sequence type"
-msgstr ""
-
-#: ../../c-api/tuple.rst:152
-#: ../../c-api/tuple.rst:179
-msgid "``doc``"
-msgstr ""
-
-#: ../../c-api/tuple.rst:152
-msgid "pointer to docstring for the type or ``NULL`` to omit"
-msgstr ""
-
-#: ../../c-api/tuple.rst:155
-msgid "``fields``"
-msgstr ""
-
-#: ../../c-api/tuple.rst:155
-msgid "``PyStructSequence_Field *``"
-msgstr ""
-
-#: ../../c-api/tuple.rst:155
-msgid "pointer to ``NULL``-terminated array with field names of the new type"
-msgstr ""
-
-#: ../../c-api/tuple.rst:158
-msgid "``n_in_sequence``"
-msgstr ""
-
-#: ../../c-api/tuple.rst:158
-msgid "``int``"
-msgstr ""
-
-#: ../../c-api/tuple.rst:158
-msgid "number of fields visible to the Python side (if used as tuple)"
-msgstr ""
-
-#: ../../c-api/tuple.rst:165
+#: ../../c-api/tuple.rst:166
 msgid "Describes a field of a struct sequence. As a struct sequence is modeled as a tuple, all fields are typed as :c:expr:`PyObject*`.  The index in the :c:member:`~PyStructSequence_Desc.fields` array of the :c:type:`PyStructSequence_Desc` determines which field of the struct sequence is described."
 msgstr ""
 
 #: ../../c-api/tuple.rst:174
-msgid "name for the field or ``NULL`` to end the list of named fields, set to :c:data:`PyStructSequence_UnnamedField` to leave unnamed"
+msgid "Name for the field or ``NULL`` to end the list of named fields, set to :c:data:`PyStructSequence_UnnamedField` to leave unnamed."
 msgstr ""
 
 #: ../../c-api/tuple.rst:179
-msgid "field docstring or ``NULL`` to omit"
+msgid "Field docstring or ``NULL`` to omit."
 msgstr ""
 
-#: ../../c-api/tuple.rst:185
+#: ../../c-api/tuple.rst:184
 msgid "Special value for a field name to leave it unnamed."
 msgstr ""
 
-#: ../../c-api/tuple.rst:187
+#: ../../c-api/tuple.rst:186
 msgid "The type was changed from ``char *``."
 msgstr ""
 
-#: ../../c-api/tuple.rst:193
+#: ../../c-api/tuple.rst:192
 msgid "Creates an instance of *type*, which must have been created with :c:func:`PyStructSequence_NewType`."
 msgstr ""
 
-#: ../../c-api/tuple.rst:199
+#: ../../c-api/tuple.rst:198
 msgid "Return the object at position *pos* in the struct sequence pointed to by *p*. No bounds checking is performed."
 msgstr ""
 
-#: ../../c-api/tuple.rst:205
+#: ../../c-api/tuple.rst:204
 msgid "Macro equivalent of :c:func:`PyStructSequence_GetItem`."
 msgstr ""
 
-#: ../../c-api/tuple.rst:210
+#: ../../c-api/tuple.rst:209
 msgid "Sets the field at index *pos* of the struct sequence *p* to value *o*.  Like :c:func:`PyTuple_SET_ITEM`, this should only be used to fill in brand new instances."
 msgstr ""
 
-#: ../../c-api/tuple.rst:216
-#: ../../c-api/tuple.rst:226
+#: ../../c-api/tuple.rst:215
+#: ../../c-api/tuple.rst:225
 msgid "This function \"steals\" a reference to *o*."
 msgstr ""
 
-#: ../../c-api/tuple.rst:221
+#: ../../c-api/tuple.rst:220
 msgid "Similar to :c:func:`PyStructSequence_SetItem`, but implemented as a static inlined function."
 msgstr ""
 
