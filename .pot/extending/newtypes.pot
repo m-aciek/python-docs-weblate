@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-27 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,7 +153,7 @@ msgid "If :c:member:`~PyTypeObject.tp_methods` is not ``NULL``, it must refer to
 msgstr ""
 
 #: ../../extending/newtypes.rst:270
-msgid "One entry should be defined for each method provided by the type; no entries are needed for methods inherited from a base type.  One additional entry is needed at the end; it is a sentinel that marks the end of the array.  The :attr:`ml_name` field of the sentinel must be ``NULL``."
+msgid "One entry should be defined for each method provided by the type; no entries are needed for methods inherited from a base type.  One additional entry is needed at the end; it is a sentinel that marks the end of the array.  The :c:member:`~PyMethodDef.ml_name` field of the sentinel must be ``NULL``."
 msgstr ""
 
 #: ../../extending/newtypes.rst:275

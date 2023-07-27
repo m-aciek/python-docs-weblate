@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-27 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,7 +218,7 @@ msgid "This is the structure used to hold compiler flags.  In cases where code i
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:356
-msgid "Whenever ``PyCompilerFlags *flags`` is ``NULL``, :attr:`cf_flags` is treated as equal to ``0``, and any modification due to ``from __future__ import`` is discarded."
+msgid "Whenever ``PyCompilerFlags *flags`` is ``NULL``, :c:member:`~PyCompilerFlags.cf_flags` is treated as equal to ``0``, and any modification due to ``from __future__ import`` is discarded."
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:362
@@ -230,7 +230,7 @@ msgid "*cf_feature_version* is the minor Python version. It should be initialize
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:369
-msgid "The field is ignored by default, it is used if and only if ``PyCF_ONLY_AST`` flag is set in *cf_flags*."
+msgid "The field is ignored by default, it is used if and only if ``PyCF_ONLY_AST`` flag is set in :c:member:`~PyCompilerFlags.cf_flags`."
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:372
