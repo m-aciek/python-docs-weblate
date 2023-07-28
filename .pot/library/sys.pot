@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 10:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -874,7 +874,7 @@ msgid "Return a named tuple describing the Windows version currently running.  T
 msgstr ""
 
 #: ../../library/sys.rst:880
-msgid "*platform* will be :const:`2 (VER_PLATFORM_WIN32_NT)`."
+msgid "*platform* will be ``2`` (VER_PLATFORM_WIN32_NT)."
 msgstr ""
 
 #: ../../library/sys.rst:882
@@ -890,7 +890,7 @@ msgid "Meaning"
 msgstr ""
 
 #: ../../library/sys.rst:887
-msgid ":const:`1 (VER_NT_WORKSTATION)`"
+msgid "``1`` (VER_NT_WORKSTATION)"
 msgstr ""
 
 #: ../../library/sys.rst:887
@@ -898,7 +898,7 @@ msgid "The system is a workstation."
 msgstr ""
 
 #: ../../library/sys.rst:889
-msgid ":const:`2 (VER_NT_DOMAIN_CONTROLLER)`"
+msgid "``2`` (VER_NT_DOMAIN_CONTROLLER)"
 msgstr ""
 
 #: ../../library/sys.rst:889
@@ -906,7 +906,7 @@ msgid "The system is a domain controller."
 msgstr ""
 
 #: ../../library/sys.rst:892
-msgid ":const:`3 (VER_NT_SERVER)`"
+msgid "``3`` (VER_NT_SERVER)"
 msgstr ""
 
 #: ../../library/sys.rst:892

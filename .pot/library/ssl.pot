@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 10:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,7 +233,7 @@ msgid "Return ``True`` if the SSL pseudo-random number generator has been seeded
 msgstr ""
 
 #: ../../library/ssl.rst:321
-msgid "Mix the given *bytes* into the SSL pseudo-random number generator.  The parameter *entropy* (a float) is a lower bound on the entropy contained in string (so you can always use :const:`0.0`).  See :rfc:`1750` for more information on sources of entropy."
+msgid "Mix the given *bytes* into the SSL pseudo-random number generator.  The parameter *entropy* (a float) is a lower bound on the entropy contained in string (so you can always use ``0.0``).  See :rfc:`1750` for more information on sources of entropy."
 msgstr ""
 
 #: ../../library/ssl.rst:326

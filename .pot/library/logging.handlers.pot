@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 10:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,7 +107,7 @@ msgid "The :class:`FileHandler` class, located in the core :mod:`logging` packag
 msgstr ""
 
 #: ../../library/logging.handlers.rst:98
-msgid "Returns a new instance of the :class:`FileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, :const:`'a'` is used.  If *encoding* is not ``None``, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`. By default, the file grows indefinitely. If *errors* is specified, it's used to determine how encoding errors are handled."
+msgid "Returns a new instance of the :class:`FileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, ``'a'`` is used.  If *encoding* is not ``None``, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`. By default, the file grows indefinitely. If *errors* is specified, it's used to determine how encoding errors are handled."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:105
@@ -178,7 +178,7 @@ msgid "This handler is not appropriate for use under Windows, because under Wind
 msgstr ""
 
 #: ../../library/logging.handlers.rst:183
-msgid "Returns a new instance of the :class:`WatchedFileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, :const:`'a'` is used.  If *encoding* is not ``None``, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`.  By default, the file grows indefinitely. If *errors* is provided, it determines how encoding errors are handled."
+msgid "Returns a new instance of the :class:`WatchedFileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, ``'a'`` is used.  If *encoding* is not ``None``, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`.  By default, the file grows indefinitely. If *errors* is provided, it determines how encoding errors are handled."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:199
