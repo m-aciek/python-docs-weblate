@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 06:36+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1462,7 +1462,7 @@ msgid "Note that this change means extension modules must be more careful when a
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2152
-msgid "Previously these different families all reduced to the platform's :c:func:`malloc` and :c:func:`free` functions.  This meant  it didn't matter if you got things wrong and allocated memory with the :c:func:`PyMem` function but freed it with the :c:func:`PyObject` function.  With 2.5's changes to obmalloc, these families now do different things and mismatches will probably result in a segfault.  You should carefully test your C extension modules with Python 2.5."
+msgid "Previously these different families all reduced to the platform's :c:func:`malloc` and :c:func:`free` functions.  This meant  it didn't matter if you got things wrong and allocated memory with the ``PyMem`` function but freed it with the ``PyObject`` function.  With 2.5's changes to obmalloc, these families now do different things and mismatches will probably result in a segfault.  You should carefully test your C extension modules with Python 2.5."
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2159

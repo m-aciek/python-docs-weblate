@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -319,7 +319,7 @@ msgid "As a general principle, a function that calls another function to  perfor
 msgstr ""
 
 #: ../../c-api/intro.rst:618
-msgid "A simple example of detecting exceptions and passing them on is shown in the :c:func:`sum_sequence` example above.  It so happens that this example doesn't need to clean up any owned references when it detects an error.  The following example function shows some error cleanup.  First, to remind you why you like Python, we show the equivalent Python code::"
+msgid "A simple example of detecting exceptions and passing them on is shown in the :c:func:`!sum_sequence` example above.  It so happens that this example doesn't need to clean up any owned references when it detects an error.  The following example function shows some error cleanup.  First, to remind you why you like Python, we show the equivalent Python code::"
 msgstr ""
 
 #: ../../c-api/intro.rst:633

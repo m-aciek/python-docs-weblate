@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 07:12+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "An extension should never call ``PyType_ClearWatcher`` with a *watcher_id
 msgstr ""
 
 #: ../../c-api/type.rst:102
-msgid "Mark *type* as watched. The callback granted *watcher_id* by :c:func:`PyType_AddWatcher` will be called whenever :c:func:`PyType_Modified` reports a change to *type*. (The callback may be called only once for a series of consecutive modifications to *type*, if :c:func:`PyType_Lookup` is not called on *type* between the modifications; this is an implementation detail and subject to change.)"
+msgid "Mark *type* as watched. The callback granted *watcher_id* by :c:func:`PyType_AddWatcher` will be called whenever :c:func:`PyType_Modified` reports a change to *type*. (The callback may be called only once for a series of consecutive modifications to *type*, if :c:func:`!_PyType_Lookup` is not called on *type* between the modifications; this is an implementation detail and subject to change.)"
 msgstr ""
 
 #: ../../c-api/type.rst:109

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 07:12+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "Similar to :c:func:`PyModule_GetFilenameObject` but return the filename e
 msgstr ""
 
 #: ../../c-api/module.rst:121
-msgid ":c:func:`PyModule_GetFilename` raises :c:type:`UnicodeEncodeError` on unencodable filenames, use :c:func:`PyModule_GetFilenameObject` instead."
+msgid ":c:func:`PyModule_GetFilename` raises :exc:`UnicodeEncodeError` on unencodable filenames, use :c:func:`PyModule_GetFilenameObject` instead."
 msgstr ""
 
 #: ../../c-api/module.rst:129

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 07:12+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,7 +124,7 @@ msgid "The function now uses the UTF-8 encoding in the :ref:`Python UTF-8 Mode <
 msgstr ""
 
 #: ../../c-api/sys.rst:168
-msgid "The function now uses the UTF-8 encoding on Windows if :c:member:`PyConfig.legacy_windows_fs_encoding` is zero;"
+msgid "The function now uses the UTF-8 encoding on Windows if :c:member:`PyPreConfig.legacy_windows_fs_encoding` is zero;"
 msgstr ""
 
 #: ../../c-api/sys.rst:175
@@ -148,7 +148,7 @@ msgid "The :c:func:`PyUnicode_EncodeFSDefault` and :c:func:`PyUnicode_EncodeLoca
 msgstr ""
 
 #: ../../c-api/sys.rst:210
-msgid "The function now uses the UTF-8 encoding on Windows if :c:member:`PyConfig.legacy_windows_fs_encoding` is zero."
+msgid "The function now uses the UTF-8 encoding on Windows if :c:member:`PyPreConfig.legacy_windows_fs_encoding` is zero."
 msgstr ""
 
 #: ../../c-api/sys.rst:218

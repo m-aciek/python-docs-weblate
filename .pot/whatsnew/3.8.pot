@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 07:12+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1569,7 +1569,7 @@ msgid "On AIX, :data:`sys.platform` doesn't contain the major version anymore. I
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1848
-msgid ":c:func:`PyEval_AcquireLock` and :c:func:`PyEval_AcquireThread` now terminate the current thread if called while the interpreter is finalizing, making them consistent with :c:func:`PyEval_RestoreThread`, :c:func:`Py_END_ALLOW_THREADS`, and :c:func:`PyGILState_Ensure`. If this behavior is not desired, guard the call by checking :c:func:`_Py_IsFinalizing` or :c:func:`sys.is_finalizing`. (Contributed by Joannah Nanjekye in :issue:`36475`.)"
+msgid ":c:func:`PyEval_AcquireLock` and :c:func:`PyEval_AcquireThread` now terminate the current thread if called while the interpreter is finalizing, making them consistent with :c:func:`PyEval_RestoreThread`, :c:func:`Py_END_ALLOW_THREADS`, and :c:func:`PyGILState_Ensure`. If this behavior is not desired, guard the call by checking :c:func:`_Py_IsFinalizing` or :func:`sys.is_finalizing`. (Contributed by Joannah Nanjekye in :issue:`36475`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1858

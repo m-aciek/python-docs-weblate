@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 07:12+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,7 @@ msgid "Finally, be careful to clean up garbage (by making :c:func:`Py_XDECREF` o
 msgstr ""
 
 #: ../../extending/extending.rst:194
-msgid "The choice of which exception to raise is entirely yours.  There are predeclared C objects corresponding to all built-in Python exceptions, such as :c:data:`PyExc_ZeroDivisionError`, which you can use directly. Of course, you should choose exceptions wisely --- don't use :c:data:`PyExc_TypeError` to mean that a file couldn't be opened (that should probably be :c:data:`PyExc_IOError`). If something's wrong with the argument list, the :c:func:`PyArg_ParseTuple` function usually raises :c:data:`PyExc_TypeError`.  If you have an argument whose value must be in a particular range or must satisfy other conditions, :c:data:`PyExc_ValueError` is appropriate."
+msgid "The choice of which exception to raise is entirely yours.  There are predeclared C objects corresponding to all built-in Python exceptions, such as :c:data:`PyExc_ZeroDivisionError`, which you can use directly. Of course, you should choose exceptions wisely --- don't use :c:data:`PyExc_TypeError` to mean that a file couldn't be opened (that should probably be :c:data:`PyExc_OSError`). If something's wrong with the argument list, the :c:func:`PyArg_ParseTuple` function usually raises :c:data:`PyExc_TypeError`.  If you have an argument whose value must be in a particular range or must satisfy other conditions, :c:data:`PyExc_ValueError` is appropriate."
 msgstr ""
 
 #: ../../extending/extending.rst:204
@@ -145,7 +145,7 @@ msgid "You can also define a new exception that is unique to your module. For th
 msgstr ""
 
 #: ../../extending/extending.rst:209
-msgid "and initialize it in your module's initialization function (:c:func:`PyInit_spam`) with an exception object::"
+msgid "and initialize it in your module's initialization function (:c:func:`!PyInit_spam`) with an exception object::"
 msgstr ""
 
 #: ../../extending/extending.rst:233
@@ -221,7 +221,7 @@ msgid "The method table must be referenced in the module definition structure::"
 msgstr ""
 
 #: ../../extending/extending.rst:355
-msgid "This structure, in turn, must be passed to the interpreter in the module's initialization function.  The initialization function must be named :c:func:`PyInit_name`, where *name* is the name of the module, and should be the only non-\\ ``static`` item defined in the module file::"
+msgid "This structure, in turn, must be passed to the interpreter in the module's initialization function.  The initialization function must be named :c:func:`!PyInit_name`, where *name* is the name of the module, and should be the only non-\\ ``static`` item defined in the module file::"
 msgstr ""
 
 #: ../../extending/extending.rst:366
@@ -229,11 +229,11 @@ msgid "Note that PyMODINIT_FUNC declares the function as ``PyObject *`` return t
 msgstr ""
 
 #: ../../extending/extending.rst:370
-msgid "When the Python program imports module :mod:`!spam` for the first time, :c:func:`PyInit_spam` is called. (See below for comments about embedding Python.) It calls :c:func:`PyModule_Create`, which returns a module object, and inserts built-in function objects into the newly created module based upon the table (an array of :c:type:`PyMethodDef` structures) found in the module definition. :c:func:`PyModule_Create` returns a pointer to the module object that it creates.  It may abort with a fatal error for certain errors, or return ``NULL`` if the module could not be initialized satisfactorily. The init function must return the module object to its caller, so that it then gets inserted into ``sys.modules``."
+msgid "When the Python program imports module :mod:`!spam` for the first time, :c:func:`!PyInit_spam` is called. (See below for comments about embedding Python.) It calls :c:func:`PyModule_Create`, which returns a module object, and inserts built-in function objects into the newly created module based upon the table (an array of :c:type:`PyMethodDef` structures) found in the module definition. :c:func:`PyModule_Create` returns a pointer to the module object that it creates.  It may abort with a fatal error for certain errors, or return ``NULL`` if the module could not be initialized satisfactorily. The init function must return the module object to its caller, so that it then gets inserted into ``sys.modules``."
 msgstr ""
 
 #: ../../extending/extending.rst:381
-msgid "When embedding Python, the :c:func:`PyInit_spam` function is not called automatically unless there's an entry in the :c:data:`PyImport_Inittab` table. To add the module to the initialization table, use :c:func:`PyImport_AppendInittab`, optionally followed by an import of the module::"
+msgid "When embedding Python, the :c:func:`!PyInit_spam` function is not called automatically unless there's an entry in the :c:data:`PyImport_Inittab` table. To add the module to the initialization table, use :c:func:`PyImport_AppendInittab`, optionally followed by an import of the module::"
 msgstr ""
 
 #: ../../extending/extending.rst:425
@@ -585,11 +585,11 @@ msgid "The following example demonstrates an approach that puts most of the burd
 msgstr ""
 
 #: ../../extending/extending.rst:1211
-msgid "The exporting module is a modification of the :mod:`!spam` module from section :ref:`extending-simpleexample`. The function :func:`spam.system` does not call the C library function :c:func:`system` directly, but a function :c:func:`PySpam_System`, which would of course do something more complicated in reality (such as adding \"spam\" to every command). This function :c:func:`PySpam_System` is also exported to other extension modules."
+msgid "The exporting module is a modification of the :mod:`!spam` module from section :ref:`extending-simpleexample`. The function :func:`!spam.system` does not call the C library function :c:func:`system` directly, but a function :c:func:`!PySpam_System`, which would of course do something more complicated in reality (such as adding \"spam\" to every command). This function :c:func:`!PySpam_System` is also exported to other extension modules."
 msgstr ""
 
 #: ../../extending/extending.rst:1218
-msgid "The function :c:func:`PySpam_System` is a plain C function, declared ``static`` like everything else::"
+msgid "The function :c:func:`!PySpam_System` is a plain C function, declared ``static`` like everything else::"
 msgstr ""
 
 #: ../../extending/extending.rst:1227
@@ -609,7 +609,7 @@ msgid "The ``#define`` is used to tell the header file that it is being included
 msgstr ""
 
 #: ../../extending/extending.rst:1280
-msgid "Note that ``PySpam_API`` is declared ``static``; otherwise the pointer array would disappear when :func:`PyInit_spam` terminates!"
+msgid "Note that ``PySpam_API`` is declared ``static``; otherwise the pointer array would disappear when :c:func:`!PyInit_spam` terminates!"
 msgstr ""
 
 #: ../../extending/extending.rst:1283
@@ -617,7 +617,7 @@ msgid "The bulk of the work is in the header file :file:`spammodule.h`, which lo
 msgstr ""
 
 #: ../../extending/extending.rst:1334
-msgid "All that a client module must do in order to have access to the function :c:func:`PySpam_System` is to call the function (or rather macro) :c:func:`import_spam` in its initialization function::"
+msgid "All that a client module must do in order to have access to the function :c:func:`!PySpam_System` is to call the function (or rather macro) :c:func:`!import_spam` in its initialization function::"
 msgstr ""
 
 #: ../../extending/extending.rst:1352

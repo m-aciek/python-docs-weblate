@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 07:12+0000\n"
+"POT-Creation-Date: 2023-07-28 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "Determines whether or not *capsule* is a valid capsule.  A valid capsule 
 msgstr ""
 
 #: ../../c-api/capsule.rst:123
-msgid "In other words, if :c:func:`PyCapsule_IsValid` returns a true value, calls to any of the accessors (any function starting with :c:func:`PyCapsule_Get`) are guaranteed to succeed."
+msgid "In other words, if :c:func:`PyCapsule_IsValid` returns a true value, calls to any of the accessors (any function starting with ``PyCapsule_Get``) are guaranteed to succeed."
 msgstr ""
 
 #: ../../c-api/capsule.rst:127
