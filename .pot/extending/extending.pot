@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,7 +229,7 @@ msgid "Note that PyMODINIT_FUNC declares the function as ``PyObject *`` return t
 msgstr ""
 
 #: ../../extending/extending.rst:370
-msgid "When the Python program imports module :mod:`spam` for the first time, :c:func:`PyInit_spam` is called. (See below for comments about embedding Python.) It calls :c:func:`PyModule_Create`, which returns a module object, and inserts built-in function objects into the newly created module based upon the table (an array of :c:type:`PyMethodDef` structures) found in the module definition. :c:func:`PyModule_Create` returns a pointer to the module object that it creates.  It may abort with a fatal error for certain errors, or return ``NULL`` if the module could not be initialized satisfactorily. The init function must return the module object to its caller, so that it then gets inserted into ``sys.modules``."
+msgid "When the Python program imports module :mod:`!spam` for the first time, :c:func:`PyInit_spam` is called. (See below for comments about embedding Python.) It calls :c:func:`PyModule_Create`, which returns a module object, and inserts built-in function objects into the newly created module based upon the table (an array of :c:type:`PyMethodDef` structures) found in the module definition. :c:func:`PyModule_Create` returns a pointer to the module object that it creates.  It may abort with a fatal error for certain errors, or return ``NULL`` if the module could not be initialized satisfactorily. The init function must return the module object to its caller, so that it then gets inserted into ``sys.modules``."
 msgstr ""
 
 #: ../../extending/extending.rst:381
@@ -585,7 +585,7 @@ msgid "The following example demonstrates an approach that puts most of the burd
 msgstr ""
 
 #: ../../extending/extending.rst:1211
-msgid "The exporting module is a modification of the :mod:`spam` module from section :ref:`extending-simpleexample`. The function :func:`spam.system` does not call the C library function :c:func:`system` directly, but a function :c:func:`PySpam_System`, which would of course do something more complicated in reality (such as adding \"spam\" to every command). This function :c:func:`PySpam_System` is also exported to other extension modules."
+msgid "The exporting module is a modification of the :mod:`!spam` module from section :ref:`extending-simpleexample`. The function :func:`spam.system` does not call the C library function :c:func:`system` directly, but a function :c:func:`PySpam_System`, which would of course do something more complicated in reality (such as adding \"spam\" to every command). This function :c:func:`PySpam_System` is also exported to other extension modules."
 msgstr ""
 
 #: ../../extending/extending.rst:1218

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 07:12+0000\n"
+"POT-Creation-Date: 2023-07-28 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1450,7 +1450,7 @@ msgid "Each slot has a section describing inheritance.  If :c:func:`PyType_Ready
 msgstr ""
 
 #: ../../c-api/typeobj.rst:577
-msgid "Pointer to a NUL-terminated string containing the name of the type. For types that are accessible as module globals, the string should be the full module name, followed by a dot, followed by the type name; for built-in types, it should be just the type name.  If the module is a submodule of a package, the full package name is part of the full module name.  For example, a type named :class:`T` defined in module :mod:`M` in subpackage :mod:`Q` in package :mod:`P` should have the :c:member:`~PyTypeObject.tp_name` initializer ``\"P.Q.M.T\"``."
+msgid "Pointer to a NUL-terminated string containing the name of the type. For types that are accessible as module globals, the string should be the full module name, followed by a dot, followed by the type name; for built-in types, it should be just the type name.  If the module is a submodule of a package, the full package name is part of the full module name.  For example, a type named :class:`T` defined in module :mod:`!M` in subpackage :mod:`!Q` in package :mod:`!P` should have the :c:member:`~PyTypeObject.tp_name` initializer ``\"P.Q.M.T\"``."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:585

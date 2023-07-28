@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -389,7 +389,7 @@ msgid "where you can supply any directory you like for the :option:`!--home` opt
 msgstr ""
 
 #: ../../install/index.rst:375
-msgid "To make Python find the distributions installed with this scheme, you may have to :ref:`modify Python's search path <inst-search-path>` or edit :mod:`sitecustomize` (see :mod:`site`) to call :func:`site.addsitedir` or edit :data:`sys.path`."
+msgid "To make Python find the distributions installed with this scheme, you may have to :ref:`modify Python's search path <inst-search-path>` or edit :mod:`!sitecustomize` (see :mod:`site`) to call :func:`site.addsitedir` or edit :data:`sys.path`."
 msgstr ""
 
 #: ../../install/index.rst:380

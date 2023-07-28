@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 06:36+0000\n"
+"POT-Creation-Date: 2023-07-28 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "So, if you want to define a new extension type, you need to create a new 
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:38
-msgid "This sort of thing can only be explained by example, so here's a minimal, but complete, module that defines a new type named :class:`Custom` inside a C extension module :mod:`custom`:"
+msgid "This sort of thing can only be explained by example, so here's a minimal, but complete, module that defines a new type named :class:`Custom` inside a C extension module :mod:`!custom`:"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:43
@@ -57,7 +57,7 @@ msgid "How the :class:`Custom` **type** behaves: this is the ``CustomType`` stru
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:58
-msgid "How to initialize the :mod:`custom` module: this is the ``PyInit_custom`` function and the associated ``custommodule`` struct."
+msgid "How to initialize the :mod:`!custom` module: this is the ``PyInit_custom`` function and the associated ``custommodule`` struct."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:61
@@ -101,7 +101,7 @@ msgid "The name of our type.  This will appear in the default textual representa
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:129
-msgid "Note that the name is a dotted name that includes both the module name and the name of the type within the module. The module in this case is :mod:`custom` and the type is :class:`Custom`, so we set the type name to :class:`custom.Custom`. Using the real dotted import path is important to make your type compatible with the :mod:`pydoc` and :mod:`pickle` modules. ::"
+msgid "Note that the name is a dotted name that includes both the module name and the name of the type within the module. The module in this case is :mod:`!custom` and the type is :class:`Custom`, so we set the type name to :class:`custom.Custom`. Using the real dotted import path is important to make your type compatible with the :mod:`pydoc` and :mod:`pickle` modules. ::"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:138
@@ -169,7 +169,7 @@ msgid "Adding data and methods to the Basic example"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:233
-msgid "Let's extend the basic example to add some data and methods.  Let's also make the type usable as a base class. We'll create a new module, :mod:`custom2` that adds these capabilities:"
+msgid "Let's extend the basic example to add some data and methods.  Let's also make the type usable as a base class. We'll create a new module, :mod:`!custom2` that adds these capabilities:"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:240
