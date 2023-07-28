@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 19:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,11 +197,11 @@ msgid "Multi-phase initialization"
 msgstr ""
 
 #: ../../c-api/module.rst:281
-msgid "An alternate way to specify extensions is to request \"multi-phase initialization\". Extension modules created this way behave more like Python modules: the initialization is split between the *creation phase*, when the module object is created, and the *execution phase*, when it is populated. The distinction is similar to the :py:meth:`__new__` and :py:meth:`__init__` methods of classes."
+msgid "An alternate way to specify extensions is to request \"multi-phase initialization\". Extension modules created this way behave more like Python modules: the initialization is split between the *creation phase*, when the module object is created, and the *execution phase*, when it is populated. The distinction is similar to the :py:meth:`!__new__` and :py:meth:`!__init__` methods of classes."
 msgstr ""
 
 #: ../../c-api/module.rst:288
-msgid "Unlike modules created using single-phase initialization, these modules are not singletons: if the *sys.modules* entry is removed and the module is re-imported, a new module object is created, and the old module is subject to normal garbage collection -- as with Python modules. By default, multiple modules created from the same definition should be independent: changes to one should not affect the others. This means that all state should be specific to the module object (using e.g. using :c:func:`PyModule_GetState`), or its contents (such as the module's :attr:`__dict__` or individual classes created with :c:func:`PyType_FromSpec`)."
+msgid "Unlike modules created using single-phase initialization, these modules are not singletons: if the *sys.modules* entry is removed and the module is re-imported, a new module object is created, and the old module is subject to normal garbage collection -- as with Python modules. By default, multiple modules created from the same definition should be independent: changes to one should not affect the others. This means that all state should be specific to the module object (using e.g. using :c:func:`PyModule_GetState`), or its contents (such as the module's :attr:`~object.__dict__` or individual classes created with :c:func:`PyType_FromSpec`)."
 msgstr ""
 
 #: ../../c-api/module.rst:298

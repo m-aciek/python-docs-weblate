@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 06:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "So, if you want to define a new extension type, you need to create a new 
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:38
-msgid "This sort of thing can only be explained by example, so here's a minimal, but complete, module that defines a new type named :class:`Custom` inside a C extension module :mod:`!custom`:"
+msgid "This sort of thing can only be explained by example, so here's a minimal, but complete, module that defines a new type named :class:`!Custom` inside a C extension module :mod:`!custom`:"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:43
@@ -49,11 +49,11 @@ msgid "Now that's quite a bit to take in at once, but hopefully bits will seem f
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:53
-msgid "What a :class:`Custom` **object** contains: this is the ``CustomObject`` struct, which is allocated once for each :class:`Custom` instance."
+msgid "What a :class:`!Custom` **object** contains: this is the ``CustomObject`` struct, which is allocated once for each :class:`!Custom` instance."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:55
-msgid "How the :class:`Custom` **type** behaves: this is the ``CustomType`` struct, which defines a set of flags and function pointers that the interpreter inspects when specific operations are requested."
+msgid "How the :class:`!Custom` **type** behaves: this is the ``CustomType`` struct, which defines a set of flags and function pointers that the interpreter inspects when specific operations are requested."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:58
@@ -101,11 +101,11 @@ msgid "The name of our type.  This will appear in the default textual representa
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:129
-msgid "Note that the name is a dotted name that includes both the module name and the name of the type within the module. The module in this case is :mod:`!custom` and the type is :class:`Custom`, so we set the type name to :class:`custom.Custom`. Using the real dotted import path is important to make your type compatible with the :mod:`pydoc` and :mod:`pickle` modules. ::"
+msgid "Note that the name is a dotted name that includes both the module name and the name of the type within the module. The module in this case is :mod:`!custom` and the type is :class:`!Custom`, so we set the type name to :class:`!custom.Custom`. Using the real dotted import path is important to make your type compatible with the :mod:`pydoc` and :mod:`pickle` modules. ::"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:138
-msgid "This is so that Python knows how much memory to allocate when creating new :class:`Custom` instances.  :c:member:`~PyTypeObject.tp_itemsize` is only used for variable-sized objects and should otherwise be zero."
+msgid "This is so that Python knows how much memory to allocate when creating new :class:`!Custom` instances.  :c:member:`~PyTypeObject.tp_itemsize` is only used for variable-sized objects and should otherwise be zero."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:144
@@ -137,7 +137,7 @@ msgid "This initializes the :class:`!Custom` type, filling in a number of member
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:190
-msgid "This adds the type to the module dictionary.  This allows us to create :class:`Custom` instances by calling the :class:`Custom` class:"
+msgid "This adds the type to the module dictionary.  This allows us to create :class:`!Custom` instances by calling the :class:`!Custom` class:"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:198
@@ -177,7 +177,7 @@ msgid "This version of the module has a number of changes."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:242
-msgid "The  :class:`Custom` type now has three data attributes in its C struct, *first*, *last*, and *number*.  The *first* and *last* variables are Python strings containing first and last names.  The *number* attribute is a C integer."
+msgid "The  :class:`!Custom` type now has three data attributes in its C struct, *first*, *last*, and *number*.  The *first* and *last* variables are Python strings containing first and last names.  The *number* attribute is a C integer."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:246
@@ -209,7 +209,7 @@ msgid "and install it in the :c:member:`~PyTypeObject.tp_new` member::"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:313
-msgid "The ``tp_new`` handler is responsible for creating (as opposed to initializing) objects of the type.  It is exposed in Python as the :meth:`__new__` method. It is not required to define a ``tp_new`` member, and indeed many extension types will simply reuse :c:func:`PyType_GenericNew` as done in the first version of the ``Custom`` type above.  In this case, we use the ``tp_new`` handler to initialize the ``first`` and ``last`` attributes to non-``NULL`` default values."
+msgid "The ``tp_new`` handler is responsible for creating (as opposed to initializing) objects of the type.  It is exposed in Python as the :meth:`__new__` method. It is not required to define a ``tp_new`` member, and indeed many extension types will simply reuse :c:func:`PyType_GenericNew` as done in the first version of the :class:`!Custom` type above.  In this case, we use the ``tp_new`` handler to initialize the ``first`` and ``last`` attributes to non-``NULL`` default values."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:321
@@ -289,15 +289,15 @@ msgid "A disadvantage of this approach is that it doesn't provide a way to restr
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:456
-msgid "We define a single method, :meth:`Custom.name()`, that outputs the objects name as the concatenation of the first and last names. ::"
+msgid "We define a single method, :meth:`!Custom.name()`, that outputs the objects name as the concatenation of the first and last names. ::"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:473
-msgid "The method is implemented as a C function that takes a :class:`Custom` (or :class:`Custom` subclass) instance as the first argument.  Methods always take an instance as the first argument. Methods often take positional and keyword arguments as well, but in this case we don't take any and don't need to accept a positional argument tuple or keyword argument dictionary. This method is equivalent to the Python method:"
+msgid "The method is implemented as a C function that takes a :class:`!Custom` (or :class:`!Custom` subclass) instance as the first argument.  Methods always take an instance as the first argument. Methods often take positional and keyword arguments as well, but in this case we don't take any and don't need to accept a positional argument tuple or keyword argument dictionary. This method is equivalent to the Python method:"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:485
-msgid "Note that we have to check for the possibility that our :attr:`first` and :attr:`last` members are ``NULL``.  This is because they can be deleted, in which case they are set to ``NULL``.  It would be better to prevent deletion of these attributes and to restrict the attribute values to be strings.  We'll see how to do that in the next section."
+msgid "Note that we have to check for the possibility that our :attr:`!first` and :attr:`!last` members are ``NULL``.  This is because they can be deleted, in which case they are set to ``NULL``.  It would be better to prevent deletion of these attributes and to restrict the attribute values to be strings.  We'll see how to do that in the next section."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:491
@@ -317,7 +317,7 @@ msgid "Finally, we'll make our type usable as a base class for subclassing.  We'
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:515
-msgid "We rename :c:func:`PyInit_custom` to :c:func:`PyInit_custom2`, update the module name in the :c:type:`PyModuleDef` struct, and update the full class name in the :c:type:`PyTypeObject` struct."
+msgid "We rename :c:func:`!PyInit_custom` to :c:func:`!PyInit_custom2`, update the module name in the :c:type:`PyModuleDef` struct, and update the full class name in the :c:type:`PyTypeObject` struct."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:519
@@ -329,19 +329,19 @@ msgid "Providing finer control over data attributes"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:534
-msgid "In this section, we'll provide finer control over how the :attr:`first` and :attr:`last` attributes are set in the :class:`Custom` example. In the previous version of our module, the instance variables :attr:`first` and :attr:`last` could be set to non-string values or even deleted. We want to make sure that these attributes always contain strings."
+msgid "In this section, we'll provide finer control over how the :attr:`!first` and :attr:`!last` attributes are set in the :class:`!Custom` example. In the previous version of our module, the instance variables :attr:`!first` and :attr:`!last` could be set to non-string values or even deleted. We want to make sure that these attributes always contain strings."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:543
-msgid "To provide greater control, over the :attr:`first` and :attr:`last` attributes, we'll use custom getter and setter functions.  Here are the functions for getting and setting the :attr:`first` attribute::"
+msgid "To provide greater control, over the :attr:`!first` and :attr:`!last` attributes, we'll use custom getter and setter functions.  Here are the functions for getting and setting the :attr:`!first` attribute::"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:574
-msgid "The getter function is passed a :class:`Custom` object and a \"closure\", which is a void pointer.  In this case, the closure is ignored.  (The closure supports an advanced usage in which definition data is passed to the getter and setter. This could, for example, be used to allow a single set of getter and setter functions that decide the attribute to get or set based on data in the closure.)"
+msgid "The getter function is passed a :class:`!Custom` object and a \"closure\", which is a void pointer.  In this case, the closure is ignored.  (The closure supports an advanced usage in which definition data is passed to the getter and setter. This could, for example, be used to allow a single set of getter and setter functions that decide the attribute to get or set based on data in the closure.)"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:580
-msgid "The setter function is passed the :class:`Custom` object, the new value, and the closure.  The new value may be ``NULL``, in which case the attribute is being deleted.  In our setter, we raise an error if the attribute is deleted or if its new value is not a string."
+msgid "The setter function is passed the :class:`!Custom` object, the new value, and the closure.  The new value may be ``NULL``, in which case the attribute is being deleted.  In our setter, we raise an error if the attribute is deleted or if its new value is not a string."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:585
@@ -385,11 +385,11 @@ msgid "In this example, we create a list that contains itself. When we delete it
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:669
-msgid "In the second version of the :class:`Custom` example, we allowed any kind of object to be stored in the :attr:`first` or :attr:`last` attributes [#]_. Besides, in the second and third versions, we allowed subclassing :class:`Custom`, and subclasses may add arbitrary attributes.  For any of those two reasons, :class:`Custom` objects can participate in cycles:"
+msgid "In the second version of the :class:`!Custom` example, we allowed any kind of object to be stored in the :attr:`!first` or :attr:`!last` attributes [#]_. Besides, in the second and third versions, we allowed subclassing :class:`!Custom`, and subclasses may add arbitrary attributes.  For any of those two reasons, :class:`!Custom` objects can participate in cycles:"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:683
-msgid "To allow a :class:`Custom` instance participating in a reference cycle to be properly detected and collected by the cyclic GC, our :class:`Custom` type needs to fill two additional slots and to enable a flag that enables these slots:"
+msgid "To allow a :class:`!Custom` instance participating in a reference cycle to be properly detected and collected by the cyclic GC, our :class:`!Custom` type needs to fill two additional slots and to enable a flag that enables these slots:"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:690
@@ -449,7 +449,7 @@ msgid "In this example we will create a :class:`SubList` type that inherits from
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:814
-msgid "As you can see, the source code closely resembles the :class:`Custom` examples in previous sections. We will break down the main differences between them. ::"
+msgid "As you can see, the source code closely resembles the :class:`!Custom` examples in previous sections. We will break down the main differences between them. ::"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:822
@@ -477,7 +477,7 @@ msgid "Before calling :c:func:`PyType_Ready`, the type structure must have the :
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:881
-msgid "After that, calling :c:func:`PyType_Ready` and adding the type object to the module is the same as with the basic :class:`Custom` examples."
+msgid "After that, calling :c:func:`PyType_Ready` and adding the type object to the module is the same as with the basic :class:`!Custom` examples."
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:886

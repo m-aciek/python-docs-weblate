@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 06:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid ":c:func:`PyImport_ExtendInittab`"
 msgstr ""
 
 #: ../../c-api/init.rst:28
-msgid ":c:func:`PyInitFrozenExtensions`"
+msgid ":c:func:`!PyInitFrozenExtensions`"
 msgstr ""
 
 #: ../../c-api/init.rst:29
@@ -237,7 +237,7 @@ msgid "This API is kept for backward compatibility: setting :c:member:`PyConfig.
 msgstr ""
 
 #: ../../c-api/init.rst:160
-msgid "Ignore all :envvar:`PYTHON*` environment variables, e.g. :envvar:`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
+msgid "Ignore all :envvar:`!PYTHON*` environment variables, e.g. :envvar:`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
 msgstr ""
 
 #: ../../c-api/init.rst:163
@@ -302,7 +302,7 @@ msgid "This API is kept for backward compatibility: setting :c:member:`PyConfig.
 msgstr ""
 
 #: ../../c-api/init.rst:232
-msgid "If the flag is non-zero, use :class:`io.FileIO` instead of :class:`WindowsConsoleIO` for :mod:`sys` standard streams."
+msgid "If the flag is non-zero, use :class:`io.FileIO` instead of :class:`!io._WindowsConsoleIO` for :mod:`sys` standard streams."
 msgstr ""
 
 #: ../../c-api/init.rst:235
@@ -419,7 +419,7 @@ msgid "This function is provided for a number of reasons.  An embedding applicat
 msgstr ""
 
 #: ../../c-api/init.rst:403
-msgid "**Bugs and caveats:** The destruction of modules and objects in modules is done in random order; this may cause destructors (:meth:`__del__` methods) to fail when they depend on other objects (even functions) or modules.  Dynamically loaded extension modules loaded by Python are not unloaded.  Small amounts of memory allocated by the Python interpreter may not be freed (if you find a leak, please report it).  Memory tied up in circular references between objects is not freed.  Some memory allocated by extension modules may not be freed.  Some extensions may not work properly if their initialization routine is called more than once; this can happen if an application calls :c:func:`Py_Initialize` and :c:func:`Py_FinalizeEx` more than once."
+msgid "**Bugs and caveats:** The destruction of modules and objects in modules is done in random order; this may cause destructors (:meth:`~object.__del__` methods) to fail when they depend on other objects (even functions) or modules.  Dynamically loaded extension modules loaded by Python are not unloaded.  Small amounts of memory allocated by the Python interpreter may not be freed (if you find a leak, please report it).  Memory tied up in circular references between objects is not freed.  Some memory allocated by extension modules may not be freed.  Some extensions may not work properly if their initialization routine is called more than once; this can happen if an application calls :c:func:`Py_Initialize` and :c:func:`Py_FinalizeEx` more than once."
 msgstr ""
 
 #: ../../c-api/init.rst:414
@@ -471,11 +471,7 @@ msgid "This function should be called before :c:func:`Py_Initialize` is called f
 msgstr ""
 
 #: ../../c-api/init.rst:487
-#: ../../c-api/init.rst:638
-#: ../../c-api/init.rst:753
-#: ../../c-api/init.rst:789
-#: ../../c-api/init.rst:815
-msgid "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:`wchar_*` string."
+msgid "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:`wchar_t *` string."
 msgstr ""
 
 #: ../../c-api/init.rst:497
@@ -538,6 +534,13 @@ msgstr ""
 
 #: ../../c-api/init.rst:633
 msgid "This also causes :data:`sys.executable` to be set to the program full path (see :c:func:`Py_GetProgramFullPath`) and for :data:`sys.prefix` and :data:`sys.exec_prefix` to be empty.  It is up to the caller to modify these if required after calling :c:func:`Py_Initialize`."
+msgstr ""
+
+#: ../../c-api/init.rst:638
+#: ../../c-api/init.rst:753
+#: ../../c-api/init.rst:789
+#: ../../c-api/init.rst:815
+msgid "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:`wchar_*` string."
 msgstr ""
 
 #: ../../c-api/init.rst:641
@@ -723,7 +726,7 @@ msgid "Another important thing to note about threads is their behaviour in the f
 msgstr ""
 
 #: ../../c-api/init.rst:977
-msgid "The fact that only the \"current\" thread remains means any locks held by other threads will never be released. Python solves this for :func:`os.fork` by acquiring the locks it uses internally before the fork, and releasing them afterwards. In addition, it resets any :ref:`lock-objects` in the child. When extending or embedding Python, there is no way to inform Python of additional (non-Python) locks that need to be acquired before or reset after a fork. OS facilities such as :c:func:`pthread_atfork` would need to be used to accomplish the same thing. Additionally, when extending or embedding Python, calling :c:func:`fork` directly rather than through :func:`os.fork` (and returning to or calling into Python) may result in a deadlock by one of Python's internal locks being held by a thread that is defunct after the fork. :c:func:`PyOS_AfterFork_Child` tries to reset the necessary locks, but is not always able to."
+msgid "The fact that only the \"current\" thread remains means any locks held by other threads will never be released. Python solves this for :func:`os.fork` by acquiring the locks it uses internally before the fork, and releasing them afterwards. In addition, it resets any :ref:`lock-objects` in the child. When extending or embedding Python, there is no way to inform Python of additional (non-Python) locks that need to be acquired before or reset after a fork. OS facilities such as :c:func:`!pthread_atfork` would need to be used to accomplish the same thing. Additionally, when extending or embedding Python, calling :c:func:`fork` directly rather than through :func:`os.fork` (and returning to or calling into Python) may result in a deadlock by one of Python's internal locks being held by a thread that is defunct after the fork. :c:func:`PyOS_AfterFork_Child` tries to reset the necessary locks, but is not always able to."
 msgstr ""
 
 #: ../../c-api/init.rst:992
@@ -793,8 +796,7 @@ msgstr ""
 #: ../../c-api/init.rst:1088
 #: ../../c-api/init.rst:1134
 #: ../../c-api/init.rst:1416
-#: ../../c-api/init.rst:1454
-msgid "Calling this function from a thread when the runtime is finalizing will terminate the thread, even if the thread was not created by Python. You can use :c:func:`_Py_IsFinalizing` or :func:`sys.is_finalizing` to check if the interpreter is in process of being finalized before calling this function to avoid unwanted termination."
+msgid "Calling this function from a thread when the runtime is finalizing will terminate the thread, even if the thread was not created by Python. You can use :c:func:`!_Py_IsFinalizing` or :func:`sys.is_finalizing` to check if the interpreter is in process of being finalized before calling this function to avoid unwanted termination."
 msgstr ""
 
 #: ../../c-api/init.rst:1096
@@ -1044,6 +1046,10 @@ msgstr ""
 
 #: ../../c-api/init.rst:1448
 msgid "This function does not update the current thread state.  Please use :c:func:`PyEval_RestoreThread` or :c:func:`PyEval_AcquireThread` instead."
+msgstr ""
+
+#: ../../c-api/init.rst:1454
+msgid "Calling this function from a thread when the runtime is finalizing will terminate the thread, even if the thread was not created by Python. You can use :c:func:`_Py_IsFinalizing` or :func:`sys.is_finalizing` to check if the interpreter is in process of being finalized before calling this function to avoid unwanted termination."
 msgstr ""
 
 #: ../../c-api/init.rst:1468

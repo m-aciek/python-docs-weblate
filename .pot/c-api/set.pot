@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "Macro form of :c:func:`PySet_Size` without error checking."
 msgstr ""
 
 #: ../../c-api/set.rst:124
-msgid "Return ``1`` if found, ``0`` if not found, and ``-1`` if an error is encountered.  Unlike the Python :meth:`__contains__` method, this function does not automatically convert unhashable sets into temporary frozensets.  Raise a :exc:`TypeError` if the *key* is unhashable. Raise :exc:`PyExc_SystemError` if *anyset* is not a :class:`set`, :class:`frozenset`, or an instance of a subtype."
+msgid "Return ``1`` if found, ``0`` if not found, and ``-1`` if an error is encountered.  Unlike the Python :meth:`~object.__contains__` method, this function does not automatically convert unhashable sets into temporary frozensets.  Raise a :exc:`TypeError` if the *key* is unhashable. Raise :exc:`PyExc_SystemError` if *anyset* is not a :class:`set`, :class:`frozenset`, or an instance of a subtype."
 msgstr ""
 
 #: ../../c-api/set.rst:133

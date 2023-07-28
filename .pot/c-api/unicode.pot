@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 06:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -626,7 +626,7 @@ msgid "Return the length of the Unicode object, in code points."
 msgstr ""
 
 #: ../../c-api/unicode.rst:610
-msgid "Copy characters from one Unicode object into another.  This function performs character conversion when necessary and falls back to :c:func:`memcpy` if possible.  Returns ``-1`` and sets an exception on error, otherwise returns the number of copied characters."
+msgid "Copy characters from one Unicode object into another.  This function performs character conversion when necessary and falls back to :c:func:`!memcpy` if possible.  Returns ``-1`` and sets an exception on error, otherwise returns the number of copied characters."
 msgstr ""
 
 #: ../../c-api/unicode.rst:621
@@ -696,7 +696,7 @@ msgid "The function now also uses the current locale encoding for the ``surrogat
 msgstr ""
 
 #: ../../c-api/unicode.rst:723
-msgid "Similar to :c:func:`PyUnicode_DecodeLocaleAndSize`, but compute the string length using :c:func:`strlen`."
+msgid "Similar to :c:func:`PyUnicode_DecodeLocaleAndSize`, but compute the string length using :c:func:`!strlen`."
 msgstr ""
 
 #: ../../c-api/unicode.rst:731
@@ -796,7 +796,7 @@ msgid "Convert the Unicode object to a wide character string. The output string 
 msgstr ""
 
 #: ../../c-api/unicode.rst:882
-msgid "Returns a buffer allocated by :c:func:`PyMem_New` (use :c:func:`PyMem_Free` to free it) on success. On error, returns ``NULL`` and *\\*size* is undefined. Raises a :exc:`MemoryError` if memory allocation is failed."
+msgid "Returns a buffer allocated by :c:macro:`PyMem_New` (use :c:func:`PyMem_Free` to free it) on success. On error, returns ``NULL`` and *\\*size* is undefined. Raises a :exc:`MemoryError` if memory allocation is failed."
 msgstr ""
 
 #: ../../c-api/unicode.rst:889
@@ -1044,7 +1044,7 @@ msgid "Character Map Codecs"
 msgstr ""
 
 #: ../../c-api/unicode.rst:1213
-msgid "This codec is special in that it can be used to implement many different codecs (and this is in fact what was done to obtain most of the standard codecs included in the :mod:`!encodings` package). The codec uses mappings to encode and decode characters.  The mapping objects provided must support the :meth:`__getitem__` mapping interface; dictionaries and sequences work well."
+msgid "This codec is special in that it can be used to implement many different codecs (and this is in fact what was done to obtain most of the standard codecs included in the :mod:`!encodings` package). The codec uses mappings to encode and decode characters.  The mapping objects provided must support the :meth:`~object.__getitem__` mapping interface; dictionaries and sequences work well."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1219
@@ -1080,7 +1080,7 @@ msgid "The mapping table must map Unicode ordinal integers to Unicode ordinal in
 msgstr ""
 
 #: ../../c-api/unicode.rst:1260
-msgid "Mapping tables need only provide the :meth:`__getitem__` interface; dictionaries and sequences work well.  Unmapped character ordinals (ones which cause a :exc:`LookupError`) are left untouched and are copied as-is."
+msgid "Mapping tables need only provide the :meth:`~object.__getitem__` interface; dictionaries and sequences work well.  Unmapped character ordinals (ones which cause a :exc:`LookupError`) are left untouched and are copied as-is."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1264

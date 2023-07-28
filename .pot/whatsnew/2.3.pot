@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1122,7 +1122,7 @@ msgid "The \"object memory\" family is the interface to the pymalloc facility de
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1849
-msgid "To allocate and free Python objects, use the \"object\" family :c:func:`PyObject_New`, :c:func:`PyObject_NewVar`, and :c:func:`PyObject_Del`."
+msgid "To allocate and free Python objects, use the \"object\" family :c:macro:`PyObject_New`, :c:macro:`PyObject_NewVar`, and :c:func:`PyObject_Del`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1852

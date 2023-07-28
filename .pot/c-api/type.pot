@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -397,7 +397,7 @@ msgid ":c:member:`~PyTypeObject.tp_vectorcall_offset` (see :ref:`PyMemberDef <py
 msgstr ""
 
 #: ../../c-api/type.rst:480
-msgid "Setting :c:data:`Py_tp_bases` or :c:data:`Py_tp_base` may be problematic on some platforms. To avoid issues, use the *bases* argument of :py:func:`PyType_FromSpecWithBases` instead."
+msgid "Setting :c:data:`Py_tp_bases` or :c:data:`Py_tp_base` may be problematic on some platforms. To avoid issues, use the *bases* argument of :c:func:`PyType_FromSpecWithBases` instead."
 msgstr ""
 
 #: ../../c-api/type.rst:487

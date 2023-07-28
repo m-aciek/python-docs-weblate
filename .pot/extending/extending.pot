@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 06:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,7 +149,7 @@ msgid "and initialize it in your module's initialization function (:c:func:`PyIn
 msgstr ""
 
 #: ../../extending/extending.rst:233
-msgid "Note that the Python name for the exception object is :exc:`spam.error`.  The :c:func:`PyErr_NewException` function may create a class with the base class being :exc:`Exception` (unless another class is passed in instead of ``NULL``), described in :ref:`bltin-exceptions`."
+msgid "Note that the Python name for the exception object is :exc:`!spam.error`.  The :c:func:`PyErr_NewException` function may create a class with the base class being :exc:`Exception` (unless another class is passed in instead of ``NULL``), described in :ref:`bltin-exceptions`."
 msgstr ""
 
 #: ../../extending/extending.rst:238
@@ -161,7 +161,7 @@ msgid "We discuss the use of ``PyMODINIT_FUNC`` as a function return type later 
 msgstr ""
 
 #: ../../extending/extending.rst:248
-msgid "The :exc:`spam.error` exception can be raised in your extension module using a call to :c:func:`PyErr_SetString` as shown below::"
+msgid "The :exc:`!spam.error` exception can be raised in your extension module using a call to :c:func:`PyErr_SetString` as shown below::"
 msgstr ""
 
 #: ../../extending/extending.rst:271
@@ -201,7 +201,7 @@ msgid "The Module's Method Table and Initialization Function"
 msgstr ""
 
 #: ../../extending/extending.rst:318
-msgid "I promised to show how :c:func:`spam_system` is called from Python programs. First, we need to list its name and address in a \"method table\"::"
+msgid "I promised to show how :c:func:`!spam_system` is called from Python programs. First, we need to list its name and address in a \"method table\"::"
 msgstr ""
 
 #: ../../extending/extending.rst:329
@@ -489,11 +489,11 @@ msgid "This function first borrows a reference to ``list[0]``, then replaces ``l
 msgstr ""
 
 #: ../../extending/extending.rst:1029
-msgid "Let's follow the control flow into :c:func:`PyList_SetItem`.  The list owns references to all its items, so when item 1 is replaced, it has to dispose of the original item 1.  Now let's suppose the original item 1 was an instance of a user-defined class, and let's further suppose that the class defined a :meth:`__del__` method.  If this class instance has a reference count of 1, disposing of it will call its :meth:`__del__` method."
+msgid "Let's follow the control flow into :c:func:`PyList_SetItem`.  The list owns references to all its items, so when item 1 is replaced, it has to dispose of the original item 1.  Now let's suppose the original item 1 was an instance of a user-defined class, and let's further suppose that the class defined a :meth:`!__del__` method.  If this class instance has a reference count of 1, disposing of it will call its :meth:`!__del__` method."
 msgstr ""
 
 #: ../../extending/extending.rst:1036
-msgid "Since it is written in Python, the :meth:`__del__` method can execute arbitrary Python code.  Could it perhaps do something to invalidate the reference to ``item`` in :c:func:`bug`?  You bet!  Assuming that the list passed into :c:func:`bug` is accessible to the :meth:`__del__` method, it could execute a statement to the effect of ``del list[0]``, and assuming this was the last reference to that object, it would free the memory associated with it, thereby invalidating ``item``."
+msgid "Since it is written in Python, the :meth:`!__del__` method can execute arbitrary Python code.  Could it perhaps do something to invalidate the reference to ``item`` in :c:func:`!bug`?  You bet!  Assuming that the list passed into :c:func:`!bug` is accessible to the :meth:`!__del__` method, it could execute a statement to the effect of ``del list[0]``, and assuming this was the last reference to that object, it would free the memory associated with it, thereby invalidating ``item``."
 msgstr ""
 
 #: ../../extending/extending.rst:1044
@@ -501,7 +501,7 @@ msgid "The solution, once you know the source of the problem, is easy: temporari
 msgstr ""
 
 #: ../../extending/extending.rst:1058
-msgid "This is a true story.  An older version of Python contained variants of this bug and someone spent a considerable amount of time in a C debugger to figure out why his :meth:`__del__` methods would fail..."
+msgid "This is a true story.  An older version of Python contained variants of this bug and someone spent a considerable amount of time in a C debugger to figure out why his :meth:`!__del__` methods would fail..."
 msgstr ""
 
 #: ../../extending/extending.rst:1062
@@ -593,7 +593,7 @@ msgid "The function :c:func:`PySpam_System` is a plain C function, declared ``st
 msgstr ""
 
 #: ../../extending/extending.rst:1227
-msgid "The function :c:func:`spam_system` is modified in a trivial way::"
+msgid "The function :c:func:`!spam_system` is modified in a trivial way::"
 msgstr ""
 
 #: ../../extending/extending.rst:1241

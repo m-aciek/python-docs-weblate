@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 19:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -961,7 +961,7 @@ msgid "See also the :ref:`Isolated Configuration <init-isolated-conf>` and :c:me
 msgstr ""
 
 #: ../../c-api/init_config.rst:873
-msgid "If non-zero, use :class:`io.FileIO` instead of :class:`io.WindowsConsoleIO` for :data:`sys.stdin`, :data:`sys.stdout` and :data:`sys.stderr`."
+msgid "If non-zero, use :class:`io.FileIO` instead of :class:`!io._WindowsConsoleIO` for :data:`sys.stdin`, :data:`sys.stdout` and :data:`sys.stderr`."
 msgstr ""
 
 #: ../../c-api/init_config.rst:877
@@ -1192,7 +1192,7 @@ msgid "Set to ``0`` by the :option:`-S` command line option."
 msgstr ""
 
 #: ../../c-api/init_config.rst:1123
-msgid ":data:`sys.flags.no_site` is set to the inverted value of :c:member:`~PyConfig.site_import`."
+msgid ":data:`sys.flags.no_site <sys.flags>` is set to the inverted value of :c:member:`~PyConfig.site_import`."
 msgstr ""
 
 #: ../../c-api/init_config.rst:1130

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-28 07:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,7 @@ msgid "The following function sets are wrappers to the system allocator. These f
 msgstr ""
 
 #: ../../c-api/memory.rst:137
-msgid "The :ref:`default raw memory allocator <default-memory-allocators>` uses the following functions: :c:func:`malloc`, :c:func:`calloc`, :c:func:`realloc` and :c:func:`free`; call ``malloc(1)`` (or ``calloc(1, 1)``) when requesting zero bytes."
+msgid "The :ref:`default raw memory allocator <default-memory-allocators>` uses the following functions: :c:func:`malloc`, :c:func:`calloc`, :c:func:`realloc` and :c:func:`!free`; call ``malloc(1)`` (or ``calloc(1, 1)``) when requesting zero bytes."
 msgstr ""
 
 #: ../../c-api/memory.rst:146
@@ -443,7 +443,7 @@ msgid "free a memory block"
 msgstr ""
 
 #: ../../c-api/memory.rst:425
-msgid "The :c:type:`PyMemAllocator` structure was renamed to :c:type:`PyMemAllocatorEx` and a new ``calloc`` field was added."
+msgid "The :c:type:`!PyMemAllocator` structure was renamed to :c:type:`PyMemAllocatorEx` and a new ``calloc`` field was added."
 msgstr ""
 
 #: ../../c-api/memory.rst:432
@@ -685,11 +685,11 @@ msgid "The arena allocator uses the following functions:"
 msgstr ""
 
 #: ../../c-api/memory.rst:630
-msgid ":c:func:`VirtualAlloc` and :c:func:`VirtualFree` on Windows,"
+msgid ":c:func:`!VirtualAlloc` and :c:func:`!VirtualFree` on Windows,"
 msgstr ""
 
 #: ../../c-api/memory.rst:631
-msgid ":c:func:`mmap` and :c:func:`munmap` if available,"
+msgid ":c:func:`!mmap` and :c:func:`!munmap` if available,"
 msgstr ""
 
 #: ../../c-api/memory.rst:632
@@ -773,7 +773,7 @@ msgid "Note that in the two examples above, the buffer is always manipulated via
 msgstr ""
 
 #: ../../c-api/memory.rst:734
-msgid "In addition to the functions aimed at handling raw memory blocks from the Python heap, objects in Python are allocated and released with :c:func:`PyObject_New`, :c:func:`PyObject_NewVar` and :c:func:`PyObject_Del`."
+msgid "In addition to the functions aimed at handling raw memory blocks from the Python heap, objects in Python are allocated and released with :c:macro:`PyObject_New`, :c:macro:`PyObject_NewVar` and :c:func:`PyObject_Del`."
 msgstr ""
 
 #: ../../c-api/memory.rst:738
