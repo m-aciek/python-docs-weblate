@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 23:36+0000\n"
+"POT-Creation-Date: 2023-07-29 06:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1892,7 +1892,7 @@ msgid ":gh:`103584`: Updated ``importlib.metadata`` with changes from ``importli
 msgstr ""
 
 #: ../../../build/NEWS:1192
-msgid ":gh:`103578`: Fixed a bug where :mod:`pdb` crashes when reading source file with different encoding by replacing :func:`io.open` with :func:`io.open_code`. The new method would also call into the hook set by :func:`PyFile_SetOpenCodeHook`."
+msgid ":gh:`103578`: Fixed a bug where :mod:`pdb` crashes when reading source file with different encoding by replacing :func:`io.open` with :func:`io.open_code`. The new method would also call into the hook set by :c:func:`PyFile_SetOpenCodeHook`."
 msgstr ""
 
 #: ../../../build/NEWS:1197
@@ -4604,7 +4604,7 @@ msgid ":gh:`97002`: Fix an issue where several frame objects could be backed by 
 msgstr ""
 
 #: ../../../build/NEWS:3832
-msgid ":gh:`97943`: Bugfix: :func:`PyFunction_GetAnnotations` should return a borrowed reference. It was returning a new reference."
+msgid ":gh:`97943`: Bugfix: :c:func:`PyFunction_GetAnnotations` should return a borrowed reference. It was returning a new reference."
 msgstr ""
 
 #: ../../../build/NEWS:3835
@@ -7766,7 +7766,7 @@ msgid ":issue:`47115`: The documentation now lists which members of C structs ar
 msgstr ""
 
 #: ../../../build/NEWS:6645
-msgid ":issue:`46962`: All docstrings in code snippets are now wrapped into :func:`PyDoc_STR` to follow the guideline of `PEP 7's Documentation Strings paragraph <https://www.python.org/dev/peps/pep-0007/#documentation-strings>`_. Patch by Oleg Iarygin."
+msgid ":issue:`46962`: All docstrings in code snippets are now wrapped into :c:macro:`PyDoc_STR` to follow the guideline of `PEP 7's Documentation Strings paragraph <https://www.python.org/dev/peps/pep-0007/#documentation-strings>`_. Patch by Oleg Iarygin."
 msgstr ""
 
 #: ../../../build/NEWS:6651
@@ -22831,7 +22831,7 @@ msgid ":issue:`37483`: Add new function ``_PyObject_CallOneArg`` for calling an 
 msgstr ""
 
 #: ../../../build/NEWS:19951
-msgid ":issue:`36763`: Add :func:`PyConfig_SetWideStringList` function."
+msgid ":issue:`36763`: Add :c:func:`PyConfig_SetWideStringList` function."
 msgstr ""
 
 #: ../../../build/NEWS:19953
