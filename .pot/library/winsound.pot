@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgid "Beep the PC's speaker. The *frequency* parameter specifies frequency, in 
 msgstr ""
 
 #: ../../library/winsound.rst:27
-msgid "Call the underlying :c:func:`PlaySound` function from the Platform API.  The *sound* parameter may be a filename, a system sound alias, audio data as a :term:`bytes-like object`, or ``None``.  Its interpretation depends on the value of *flags*, which can be a bitwise ORed combination of the constants described below. If the *sound* parameter is ``None``, any currently playing waveform sound is stopped. If the system indicates an error, :exc:`RuntimeError` is raised."
+msgid "Call the underlying :c:func:`!PlaySound` function from the Platform API.  The *sound* parameter may be a filename, a system sound alias, audio data as a :term:`bytes-like object`, or ``None``.  Its interpretation depends on the value of *flags*, which can be a bitwise ORed combination of the constants described below. If the *sound* parameter is ``None``, any currently playing waveform sound is stopped. If the system indicates an error, :exc:`RuntimeError` is raised."
 msgstr ""
 
 #: ../../library/winsound.rst:38
-msgid "Call the underlying :c:func:`MessageBeep` function from the Platform API.  This plays a sound as specified in the registry.  The *type* argument specifies which sound to play; possible values are ``-1``, ``MB_ICONASTERISK``, ``MB_ICONEXCLAMATION``, ``MB_ICONHAND``, ``MB_ICONQUESTION``, and ``MB_OK``, all described below.  The value ``-1`` produces a \"simple beep\"; this is the final fallback if a sound cannot be played otherwise.  If the system indicates an error, :exc:`RuntimeError` is raised."
+msgid "Call the underlying :c:func:`!MessageBeep` function from the Platform API.  This plays a sound as specified in the registry.  The *type* argument specifies which sound to play; possible values are ``-1``, ``MB_ICONASTERISK``, ``MB_ICONEXCLAMATION``, ``MB_ICONHAND``, ``MB_ICONQUESTION``, and ``MB_OK``, all described below.  The value ``-1`` produces a \"simple beep\"; this is the final fallback if a sound cannot be played otherwise.  If the system indicates an error, :exc:`RuntimeError` is raised."
 msgstr ""
 
 #: ../../library/winsound.rst:49

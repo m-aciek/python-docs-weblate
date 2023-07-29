@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,7 +410,7 @@ msgid "This HOWTO doesn't cover some advanced topics, such as reading the conten
 msgstr ""
 
 #: ../../howto/curses.rst:526
-msgid "If you're in doubt about the detailed behavior of the curses functions, consult the manual pages for your curses implementation, whether it's ncurses or a proprietary Unix vendor's.  The manual pages will document any quirks, and provide complete lists of all the functions, attributes, and :const:`ACS_\\*` characters available to you."
+msgid "If you're in doubt about the detailed behavior of the curses functions, consult the manual pages for your curses implementation, whether it's ncurses or a proprietary Unix vendor's.  The manual pages will document any quirks, and provide complete lists of all the functions, attributes, and :ref:`ACS_\\* <curses-acs-codes>` characters available to you."
 msgstr ""
 
 #: ../../howto/curses.rst:533

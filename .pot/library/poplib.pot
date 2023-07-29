@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgid "Send user command, response should indicate that a password is required."
 msgstr ""
 
 #: ../../library/poplib.rst:150
-msgid "Send password, response includes message count and mailbox size. Note: the mailbox on the server is locked until :meth:`~poplib.quit` is called."
+msgid "Send password, response includes message count and mailbox size. Note: the mailbox on the server is locked until :meth:`~POP3.quit` is called."
 msgstr ""
 
 #: ../../library/poplib.rst:156

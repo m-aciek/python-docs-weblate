@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,5 +69,5 @@ msgid "This class is designed to sit between an :class:`~xml.sax.xmlreader.XMLRe
 msgstr ""
 
 #: ../../library/xml.sax.utils.rst:90
-msgid "This function takes an input source and an optional base URL and returns a fully resolved :class:`~xml.sax.xmlreader.InputSource` object ready for reading.  The input source can be given as a string, a file-like object, or an :class:`~xml.sax.xmlreader.InputSource` object; parsers will use this function to implement the polymorphic *source* argument to their :meth:`parse` method."
+msgid "This function takes an input source and an optional base URL and returns a fully resolved :class:`~xml.sax.xmlreader.InputSource` object ready for reading.  The input source can be given as a string, a file-like object, or an :class:`~xml.sax.xmlreader.InputSource` object; parsers will use this function to implement the polymorphic *source* argument to their :meth:`~xml.sax.xmlreader.XMLReader.parse` method."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,7 +301,7 @@ msgid "*file_name* is the name of the file to load registry data from. This file
 msgstr ""
 
 #: ../../library/winreg.rst:290
-msgid "A call to :func:`LoadKey` fails if the calling process does not have the :const:`SE_RESTORE_PRIVILEGE` privilege.  Note that privileges are different from permissions -- see the `RegLoadKey documentation <https://msdn.microsoft.com/en-us/library/ms724889%28v=VS.85%29.aspx>`__ for more details."
+msgid "A call to :func:`LoadKey` fails if the calling process does not have the :c:data:`!SE_RESTORE_PRIVILEGE` privilege.  Note that privileges are different from permissions -- see the `RegLoadKey documentation <https://msdn.microsoft.com/en-us/library/ms724889%28v=VS.85%29.aspx>`__ for more details."
 msgstr ""
 
 #: ../../library/winreg.rst:296
@@ -410,7 +410,7 @@ msgid "*file_name* is the name of the file to save registry data to.  This file 
 msgstr ""
 
 #: ../../library/winreg.rst:415
-msgid "If *key* represents a key on a remote computer, the path described by *file_name* is relative to the remote computer. The caller of this method must possess the :const:`SeBackupPrivilege` security privilege.  Note that privileges are different than permissions -- see the `Conflicts Between User Rights and Permissions documentation <https://msdn.microsoft.com/en-us/library/ms724878%28v=VS.85%29.aspx>`__ for more details."
+msgid "If *key* represents a key on a remote computer, the path described by *file_name* is relative to the remote computer. The caller of this method must possess the **SeBackupPrivilege** security privilege.  Note that privileges are different than permissions -- see the `Conflicts Between User Rights and Permissions documentation <https://msdn.microsoft.com/en-us/library/ms724878%28v=VS.85%29.aspx>`__ for more details."
 msgstr ""
 
 #: ../../library/winreg.rst:423
@@ -527,7 +527,7 @@ msgid "Constants"
 msgstr ""
 
 #: ../../library/winreg.rst:539
-msgid "The following constants are defined for use in many :mod:`_winreg` functions."
+msgid "The following constants are defined for use in many :mod:`winreg` functions."
 msgstr ""
 
 #: ../../library/winreg.rst:544
@@ -707,7 +707,7 @@ msgid "All registry functions in this module which accept a handle object also a
 msgstr ""
 
 #: ../../library/winreg.rst:748
-msgid "Handle objects provide semantics for :meth:`__bool__` -- thus ::"
+msgid "Handle objects provide semantics for :meth:`~object.__bool__` -- thus ::"
 msgstr ""
 
 #: ../../library/winreg.rst:753

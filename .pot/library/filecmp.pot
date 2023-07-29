@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgid "The :class:`dircmp` class offers a number of interesting attributes that 
 msgstr ""
 
 #: ../../library/filecmp.rst:103
-msgid "Note that via :meth:`__getattr__` hooks, all attributes are computed lazily, so there is no speed penalty if only those attributes which are lightweight to compute are used."
+msgid "Note that via :meth:`~object.__getattr__` hooks, all attributes are computed lazily, so there is no speed penalty if only those attributes which are lightweight to compute are used."
 msgstr ""
 
 #: ../../library/filecmp.rst:110

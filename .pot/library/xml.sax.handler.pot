@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -380,7 +380,7 @@ msgid "ErrorHandler Objects"
 msgstr ""
 
 #: ../../library/xml.sax.handler.rst:390
-msgid "Objects with this interface are used to receive error and warning information from the :class:`~xml.sax.xmlreader.XMLReader`.  If you create an object that implements this interface, then register the object with your :class:`~xml.sax.xmlreader.XMLReader`, the parser will call the methods in your object to report all warnings and errors. There are three levels of errors available: warnings, (possibly) recoverable errors, and unrecoverable errors.  All methods take a :exc:`SAXParseException` as the only parameter.  Errors and warnings may be converted to an exception by raising the passed-in exception object."
+msgid "Objects with this interface are used to receive error and warning information from the :class:`~xml.sax.xmlreader.XMLReader`.  If you create an object that implements this interface, then register the object with your :class:`~xml.sax.xmlreader.XMLReader`, the parser will call the methods in your object to report all warnings and errors. There are three levels of errors available: warnings, (possibly) recoverable errors, and unrecoverable errors.  All methods take a :exc:`~xml.sax.SAXParseException` as the only parameter.  Errors and warnings may be converted to an exception by raising the passed-in exception object."
 msgstr ""
 
 #: ../../library/xml.sax.handler.rst:403

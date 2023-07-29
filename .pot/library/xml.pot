@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,7 +178,7 @@ msgid "Expat 2.4.1 and newer is not vulnerable to the \"billion laughs\" and \"q
 msgstr ""
 
 #: ../../library/xml.rst:77
-msgid ":mod:`xml.etree.ElementTree` doesn't expand external entities and raises a :exc:`ParserError` when an entity occurs."
+msgid ":mod:`xml.etree.ElementTree` doesn't expand external entities and raises a :exc:`~xml.etree.ElementTree.ParseError` when an entity occurs."
 msgstr ""
 
 #: ../../library/xml.rst:79
@@ -186,7 +186,7 @@ msgid ":mod:`xml.dom.minidom` doesn't expand external entities and simply return
 msgstr ""
 
 #: ../../library/xml.rst:81
-msgid ":mod:`xmlrpclib` doesn't expand external entities and omits them."
+msgid ":mod:`xmlrpc.client` doesn't expand external entities and omits them."
 msgstr ""
 
 #: ../../library/xml.rst:82
@@ -226,7 +226,7 @@ msgid "The documentation for `defusedxml`_ on PyPI has further information about
 msgstr ""
 
 #: ../../library/xml.rst:123
-msgid "The :mod:`defusedxml` Package"
+msgid "The :mod:`!defusedxml` Package"
 msgstr ""
 
 #: ../../library/xml.rst:125

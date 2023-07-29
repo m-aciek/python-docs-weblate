@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,7 +135,7 @@ msgid "If *sort_keys* is true (default: ``False``), then the output of dictionar
 msgstr ""
 
 #: ../../library/json.rst:194
-msgid "To use a custom :class:`JSONEncoder` subclass (e.g. one that overrides the :meth:`default` method to serialize additional types), specify it with the *cls* kwarg; otherwise :class:`JSONEncoder` is used."
+msgid "To use a custom :class:`JSONEncoder` subclass (e.g. one that overrides the :meth:`~JSONEncoder.default` method to serialize additional types), specify it with the *cls* kwarg; otherwise :class:`JSONEncoder` is used."
 msgstr ""
 
 #: ../../library/json.rst:198
@@ -384,7 +384,7 @@ msgid "Added support for int- and float-derived Enum classes."
 msgstr ""
 
 #: ../../library/json.rst:424
-msgid "To extend this to recognize other objects, subclass and implement a :meth:`default` method with another method that returns a serializable object for ``o`` if possible, otherwise it should call the superclass implementation (to raise :exc:`TypeError`)."
+msgid "To extend this to recognize other objects, subclass and implement a :meth:`~JSONEncoder.default` method with another method that returns a serializable object for ``o`` if possible, otherwise it should call the superclass implementation (to raise :exc:`TypeError`)."
 msgstr ""
 
 #: ../../library/json.rst:429
@@ -408,7 +408,7 @@ msgid "Implement this method in a subclass such that it returns a serializable o
 msgstr ""
 
 #: ../../library/json.rst:485
-msgid "For example, to support arbitrary iterators, you could implement :meth:`default` like this::"
+msgid "For example, to support arbitrary iterators, you could implement :meth:`~JSONEncoder.default` like this::"
 msgstr ""
 
 #: ../../library/json.rst:501

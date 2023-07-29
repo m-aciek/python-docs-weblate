@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,7 @@ msgid "The :class:`Charset` class also provides a number of methods to support s
 msgstr ""
 
 #: ../../library/email.charset.rst:152
-msgid "Returns *input_charset* as a string coerced to lower case. :meth:`__repr__` is an alias for :meth:`__str__`."
+msgid "Returns *input_charset* as a string coerced to lower case. :meth:`!__repr__` is an alias for :meth:`!__str__`."
 msgstr ""
 
 #: ../../library/email.charset.rst:158

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgid "Collapse and truncate the given *text* to fit in the given *width*."
 msgstr ""
 
 #: ../../library/textwrap.rst:60
-msgid "First the whitespace in *text* is collapsed (all whitespace is replaced by single spaces).  If the result fits in the *width*, it is returned. Otherwise, enough words are dropped from the end so that the remaining words plus the :attr:`placeholder` fit within :attr:`width`::"
+msgid "First the whitespace in *text* is collapsed (all whitespace is replaced by single spaces).  If the result fits in the *width*, it is returned. Otherwise, enough words are dropped from the end so that the remaining words plus the :attr:`.placeholder` fit within :attr:`.width`::"
 msgstr ""
 
 #: ../../library/textwrap.rst:72
@@ -126,7 +126,7 @@ msgid "(default: ``70``) The maximum length of wrapped lines.  As long as there 
 msgstr ""
 
 #: ../../library/textwrap.rst:175
-msgid "(default: ``True``) If true, then all tab characters in *text* will be expanded to spaces using the :meth:`expandtabs` method of *text*."
+msgid "(default: ``True``) If true, then all tab characters in *text* will be expanded to spaces using the :meth:`~str.expandtabs` method of *text*."
 msgstr ""
 
 #: ../../library/textwrap.rst:181

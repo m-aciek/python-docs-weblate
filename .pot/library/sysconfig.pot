@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "Python uses an installation scheme that differs depending on the platform
 msgstr ""
 
 #: ../../library/sysconfig.rst:72
-msgid "Every new component that is installed using :mod:`distutils` or a Distutils-based system will follow the same scheme to copy its file in the right places."
+msgid "Every new component that is installed using :mod:`!distutils` or a Distutils-based system will follow the same scheme to copy its file in the right places."
 msgstr ""
 
 #: ../../library/sysconfig.rst:76

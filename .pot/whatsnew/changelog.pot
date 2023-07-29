@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 06:16+0000\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -8747,7 +8747,7 @@ msgid ":issue:`46724`: Make sure that all backwards jumps use the ``JUMP_ABSOLUT
 msgstr ""
 
 #: ../../../build/NEWS:7506
-msgid ":issue:`46732`: Correct the docstring for the :meth:`__bool__` method. Patch by Jelle Zijlstra."
+msgid ":issue:`46732`: Correct the docstring for the :meth:`~object.__bool__` method. Patch by Jelle Zijlstra."
 msgstr ""
 
 #: ../../../build/NEWS:7509

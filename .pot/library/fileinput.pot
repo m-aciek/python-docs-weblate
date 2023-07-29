@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgid "The keyword parameter *mode* and *openhook* are now keyword-only."
 msgstr ""
 
 #: ../../library/fileinput.rst:179
-msgid "The ``'rU'`` and ``'U'`` modes and the :meth:`__getitem__` method have been removed."
+msgid "The ``'rU'`` and ``'U'`` modes and the :meth:`!__getitem__` method have been removed."
 msgstr ""
 
 #: ../../library/fileinput.rst:184

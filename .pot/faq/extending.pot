@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,11 +81,11 @@ msgid "How do I extract C values from a Python object?"
 msgstr ""
 
 #: ../../faq/extending.rst:82
-msgid "That depends on the object's type.  If it's a tuple, :c:func:`PyTuple_Size` returns its length and :c:func:`PyTuple_GetItem` returns the item at a specified index.  Lists have similar functions, :c:func:`PyListSize` and :c:func:`PyList_GetItem`."
+msgid "That depends on the object's type.  If it's a tuple, :c:func:`PyTuple_Size` returns its length and :c:func:`PyTuple_GetItem` returns the item at a specified index.  Lists have similar functions, :c:func:`PyList_Size` and :c:func:`PyList_GetItem`."
 msgstr ""
 
 #: ../../faq/extending.rst:87
-msgid "For bytes, :c:func:`PyBytes_Size` returns its length and :c:func:`PyBytes_AsStringAndSize` provides a pointer to its value and its length.  Note that Python bytes objects may contain null bytes so C's :c:func:`strlen` should not be used."
+msgid "For bytes, :c:func:`PyBytes_Size` returns its length and :c:func:`PyBytes_AsStringAndSize` provides a pointer to its value and its length.  Note that Python bytes objects may contain null bytes so C's :c:func:`!strlen` should not be used."
 msgstr ""
 
 #: ../../faq/extending.rst:92

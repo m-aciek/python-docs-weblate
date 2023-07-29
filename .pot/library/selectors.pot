@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,15 +81,7 @@ msgid "Meaning"
 msgstr ""
 
 #: ../../library/selectors.rst:63
-msgid ":const:`EVENT_READ`"
-msgstr ""
-
-#: ../../library/selectors.rst:63
 msgid "Available for read"
-msgstr ""
-
-#: ../../library/selectors.rst:65
-msgid ":const:`EVENT_WRITE`"
 msgstr ""
 
 #: ../../library/selectors.rst:65
@@ -149,7 +141,7 @@ msgid "Change a registered file object's monitored events or attached data."
 msgstr ""
 
 #: ../../library/selectors.rst:135
-msgid "This is equivalent to :meth:`BaseSelector.unregister(fileobj)` followed by :meth:`BaseSelector.register(fileobj, events, data)`, except that it can be implemented more efficiently."
+msgid "This is equivalent to ``BaseSelector.unregister(fileobj)`` followed by ``BaseSelector.register(fileobj, events, data)``, except that it can be implemented more efficiently."
 msgstr ""
 
 #: ../../library/selectors.rst:139

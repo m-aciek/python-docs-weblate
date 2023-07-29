@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "Any object can be tested for truth value, for use in an :keyword:`if` or 
 msgstr ""
 
 #: ../../library/stdtypes.rst:46
-msgid "By default, an object is considered true unless its class defines either a :meth:`__bool__` method that returns ``False`` or a :meth:`__len__` method that returns zero, when called with the object. [1]_  Here are most of the built-in objects considered false:"
+msgid "By default, an object is considered true unless its class defines either a :meth:`~object.__bool__` method that returns ``False`` or a :meth:`__len__` method that returns zero, when called with the object. [1]_  Here are most of the built-in objects considered false:"
 msgstr ""
 
 #: ../../library/stdtypes.rst:55

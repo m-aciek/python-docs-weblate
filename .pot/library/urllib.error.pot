@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-07-29 06:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,5 +69,9 @@ msgid "A file-like object where the HTTP error body can be read from."
 msgstr ""
 
 #: ../../library/urllib.error.rst:72
-msgid "This exception is raised when the :func:`~urllib.request.urlretrieve` function detects that the amount of the downloaded data is less than the expected amount (given by the *Content-Length* header).  The :attr:`content` attribute stores the downloaded (and supposedly truncated) data."
+msgid "This exception is raised when the :func:`~urllib.request.urlretrieve` function detects that the amount of the downloaded data is less than the expected amount (given by the *Content-Length* header)."
+msgstr ""
+
+#: ../../library/urllib.error.rst:79
+msgid "The downloaded (and supposedly truncated) data."
 msgstr ""
