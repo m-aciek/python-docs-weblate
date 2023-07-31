@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 07:13+0000\n"
+"POT-Creation-Date: 2023-07-31 17:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -795,7 +795,7 @@ msgid "Remove outdated example scripts of the ``Tools/scripts/`` directory. A co
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:970
-#: ../../whatsnew/3.12.rst:1871
+#: ../../whatsnew/3.12.rst:1882
 msgid "Deprecated"
 msgstr ""
 
@@ -1124,7 +1124,7 @@ msgid "Currently Python accepts numeric literals immediately followed by keyword
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1195
-#: ../../whatsnew/3.12.rst:1953
+#: ../../whatsnew/3.12.rst:1964
 msgid "Removed"
 msgstr ""
 
@@ -2026,222 +2026,234 @@ msgstr ""
 msgid "This also avoids situations where extensions may find themselves running in a subinterpreter that they don't support (or haven't yet been loaded in). See :gh:`104668` for more info."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1873
-msgid "Deprecate global configuration variable:"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1875
-msgid ":c:var:`Py_DebugFlag`: use :c:member:`PyConfig.parser_debug`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1876
-msgid ":c:var:`Py_VerboseFlag`: use :c:member:`PyConfig.verbose`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1877
-msgid ":c:var:`Py_QuietFlag`: use :c:member:`PyConfig.quiet`"
+#: ../../whatsnew/3.12.rst:1870
+msgid ":c:struct:`PyLongObject` has had its internals changed for better performance. Although the internals of :c:struct:`PyLongObject` are private, they are used by some extension modules. The internal fields should no longer be accessed directly, instead the API functions beginning ``PyLong_...`` should be used instead. Two new *unstable* API functions are provided for efficient access to the value of :c:struct:`PyLongObject`\\s which fit into a single machine word:"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1878
-msgid ":c:var:`Py_InteractiveFlag`: use :c:member:`PyConfig.interactive`"
+msgid ":c:func:`PyUnstable_Long_IsCompact`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1879
-msgid ":c:var:`Py_InspectFlag`: use :c:member:`PyConfig.inspect`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1880
-msgid ":c:var:`Py_OptimizeFlag`: use :c:member:`PyConfig.optimization_level`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1881
-msgid ":c:var:`Py_NoSiteFlag`: use :c:member:`PyConfig.site_import`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1882
-msgid ":c:var:`Py_BytesWarningFlag`: use :c:member:`PyConfig.bytes_warning`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1883
-msgid ":c:var:`Py_FrozenFlag`: use :c:member:`PyConfig.pathconfig_warnings`"
+msgid ":c:func:`PyUnstable_Long_CompactValue`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1884
-msgid ":c:var:`Py_IgnoreEnvironmentFlag`: use :c:member:`PyConfig.use_environment`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1885
-msgid ":c:var:`Py_DontWriteBytecodeFlag`: use :c:member:`PyConfig.write_bytecode`"
+msgid "Deprecate global configuration variable:"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1886
-msgid ":c:var:`Py_NoUserSiteDirectory`: use :c:member:`PyConfig.user_site_directory`"
+msgid ":c:var:`Py_DebugFlag`: use :c:member:`PyConfig.parser_debug`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1887
-msgid ":c:var:`Py_UnbufferedStdioFlag`: use :c:member:`PyConfig.buffered_stdio`"
+msgid ":c:var:`Py_VerboseFlag`: use :c:member:`PyConfig.verbose`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1888
-msgid ":c:var:`Py_HashRandomizationFlag`: use :c:member:`PyConfig.use_hash_seed` and :c:member:`PyConfig.hash_seed`"
+msgid ":c:var:`Py_QuietFlag`: use :c:member:`PyConfig.quiet`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1889
+msgid ":c:var:`Py_InteractiveFlag`: use :c:member:`PyConfig.interactive`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1890
-msgid ":c:var:`Py_IsolatedFlag`: use :c:member:`PyConfig.isolated`"
+msgid ":c:var:`Py_InspectFlag`: use :c:member:`PyConfig.inspect`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1891
-msgid ":c:var:`Py_LegacyWindowsFSEncodingFlag`: use :c:member:`PyPreConfig.legacy_windows_fs_encoding`"
+msgid ":c:var:`Py_OptimizeFlag`: use :c:member:`PyConfig.optimization_level`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1892
-msgid ":c:var:`Py_LegacyWindowsStdioFlag`: use :c:member:`PyConfig.legacy_windows_stdio`"
+msgid ":c:var:`Py_NoSiteFlag`: use :c:member:`PyConfig.site_import`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1893
-msgid ":c:var:`!Py_FileSystemDefaultEncoding`: use :c:member:`PyConfig.filesystem_encoding`"
+msgid ":c:var:`Py_BytesWarningFlag`: use :c:member:`PyConfig.bytes_warning`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1894
-msgid ":c:var:`!Py_HasFileSystemDefaultEncoding`: use :c:member:`PyConfig.filesystem_encoding`"
+msgid ":c:var:`Py_FrozenFlag`: use :c:member:`PyConfig.pathconfig_warnings`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1895
-msgid ":c:var:`!Py_FileSystemDefaultEncodeErrors`: use :c:member:`PyConfig.filesystem_errors`"
+msgid ":c:var:`Py_IgnoreEnvironmentFlag`: use :c:member:`PyConfig.use_environment`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1896
-msgid ":c:var:`!Py_UTF8Mode`: use :c:member:`PyPreConfig.utf8_mode` (see :c:func:`Py_PreInitialize`)"
+msgid ":c:var:`Py_DontWriteBytecodeFlag`: use :c:member:`PyConfig.write_bytecode`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1897
+msgid ":c:var:`Py_NoUserSiteDirectory`: use :c:member:`PyConfig.user_site_directory`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1898
-msgid "The :c:func:`Py_InitializeFromConfig` API should be used with :c:type:`PyConfig` instead. (Contributed by Victor Stinner in :gh:`77782`.)"
+msgid ":c:var:`Py_UnbufferedStdioFlag`: use :c:member:`PyConfig.buffered_stdio`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1899
+msgid ":c:var:`Py_HashRandomizationFlag`: use :c:member:`PyConfig.use_hash_seed` and :c:member:`PyConfig.hash_seed`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1901
+msgid ":c:var:`Py_IsolatedFlag`: use :c:member:`PyConfig.isolated`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1902
-msgid "Creating immutable types (:c:macro:`Py_TPFLAGS_IMMUTABLETYPE`) with mutable bases is deprecated and will be disabled in Python 3.14."
+msgid ":c:var:`Py_LegacyWindowsFSEncodingFlag`: use :c:member:`PyPreConfig.legacy_windows_fs_encoding`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1903
+msgid ":c:var:`Py_LegacyWindowsStdioFlag`: use :c:member:`PyConfig.legacy_windows_stdio`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1904
+msgid ":c:var:`!Py_FileSystemDefaultEncoding`: use :c:member:`PyConfig.filesystem_encoding`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1905
-msgid "The ``structmember.h`` header is deprecated, though it continues to be available and there are no plans to remove it."
+msgid ":c:var:`!Py_HasFileSystemDefaultEncoding`: use :c:member:`PyConfig.filesystem_encoding`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1908
-msgid "Its contents are now available just by including ``Python.h``, with a ``Py`` prefix added if it was missing:"
+#: ../../whatsnew/3.12.rst:1906
+msgid ":c:var:`!Py_FileSystemDefaultEncodeErrors`: use :c:member:`PyConfig.filesystem_errors`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1911
-msgid ":c:struct:`PyMemberDef`, :c:func:`PyMember_GetOne` and :c:func:`PyMember_SetOne`"
+#: ../../whatsnew/3.12.rst:1907
+msgid ":c:var:`!Py_UTF8Mode`: use :c:member:`PyPreConfig.utf8_mode` (see :c:func:`Py_PreInitialize`)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1909
+msgid "The :c:func:`Py_InitializeFromConfig` API should be used with :c:type:`PyConfig` instead. (Contributed by Victor Stinner in :gh:`77782`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1913
-msgid "Type macros like :c:macro:`Py_T_INT`, :c:macro:`Py_T_DOUBLE`, etc. (previously ``T_INT``, ``T_DOUBLE``, etc.)"
+msgid "Creating immutable types (:c:macro:`Py_TPFLAGS_IMMUTABLETYPE`) with mutable bases is deprecated and will be disabled in Python 3.14."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1915
-msgid "The flags :c:macro:`Py_READONLY` (previously ``READONLY``) and :c:macro:`Py_AUDIT_READ` (previously all uppercase)"
+#: ../../whatsnew/3.12.rst:1916
+msgid "The ``structmember.h`` header is deprecated, though it continues to be available and there are no plans to remove it."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1918
-msgid "Several items are not exposed from ``Python.h``:"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1920
-msgid ":c:macro:`T_OBJECT` (use :c:macro:`Py_T_OBJECT_EX`)"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1921
-msgid ":c:macro:`T_NONE` (previously undocumented, and pretty quirky)"
+#: ../../whatsnew/3.12.rst:1919
+msgid "Its contents are now available just by including ``Python.h``, with a ``Py`` prefix added if it was missing:"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1922
-msgid "The macro ``WRITE_RESTRICTED`` which does nothing."
+msgid ":c:struct:`PyMemberDef`, :c:func:`PyMember_GetOne` and :c:func:`PyMember_SetOne`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1923
-msgid "The macros ``RESTRICTED`` and ``READ_RESTRICTED``, equivalents of :c:macro:`Py_AUDIT_READ`."
+#: ../../whatsnew/3.12.rst:1924
+msgid "Type macros like :c:macro:`Py_T_INT`, :c:macro:`Py_T_DOUBLE`, etc. (previously ``T_INT``, ``T_DOUBLE``, etc.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1925
-msgid "In some configurations, ``<stddef.h>`` is not included from ``Python.h``. It should be included manually when using ``offsetof()``."
+#: ../../whatsnew/3.12.rst:1926
+msgid "The flags :c:macro:`Py_READONLY` (previously ``READONLY``) and :c:macro:`Py_AUDIT_READ` (previously all uppercase)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1928
-msgid "The deprecated header continues to provide its original contents under the original names. Your old code can stay unchanged, unless the extra include and non-namespaced macros bother you greatly."
+#: ../../whatsnew/3.12.rst:1929
+msgid "Several items are not exposed from ``Python.h``:"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1931
+msgid ":c:macro:`T_OBJECT` (use :c:macro:`Py_T_OBJECT_EX`)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1932
+msgid ":c:macro:`T_NONE` (previously undocumented, and pretty quirky)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1933
-msgid "(Contributed in :gh:`47146` by Petr Viktorin, based on earlier work by Alexander Belopolsky and Matthias Braun.)"
+msgid "The macro ``WRITE_RESTRICTED`` which does nothing."
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1934
+msgid "The macros ``RESTRICTED`` and ``READ_RESTRICTED``, equivalents of :c:macro:`Py_AUDIT_READ`."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1936
-msgid ":c:func:`PyErr_Fetch` and :c:func:`PyErr_Restore` are deprecated. Use :c:func:`PyErr_GetRaisedException` and :c:func:`PyErr_SetRaisedException` instead. (Contributed by Mark Shannon in :gh:`101578`.)"
+msgid "In some configurations, ``<stddef.h>`` is not included from ``Python.h``. It should be included manually when using ``offsetof()``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1941
-msgid ":c:func:`!PyErr_Display` is deprecated. Use :c:func:`PyErr_DisplayException` instead. (Contributed by Irit Katriel in :gh:`102755`)."
+#: ../../whatsnew/3.12.rst:1939
+msgid "The deprecated header continues to provide its original contents under the original names. Your old code can stay unchanged, unless the extra include and non-namespaced macros bother you greatly."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1944
-msgid "``_PyErr_ChainExceptions`` is deprecated. Use ``_PyErr_ChainExceptions1`` instead. (Contributed by Irit Katriel in :gh:`102192`.)"
+msgid "(Contributed in :gh:`47146` by Petr Viktorin, based on earlier work by Alexander Belopolsky and Matthias Braun.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1947
-msgid "Using :c:func:`PyType_FromSpec`, :c:func:`PyType_FromSpecWithBases` or :c:func:`PyType_FromModuleAndSpec` to create a class whose metaclass overrides :c:member:`~PyTypeObject.tp_new` is deprecated. Call the metaclass instead."
+msgid ":c:func:`PyErr_Fetch` and :c:func:`PyErr_Restore` are deprecated. Use :c:func:`PyErr_GetRaisedException` and :c:func:`PyErr_SetRaisedException` instead. (Contributed by Mark Shannon in :gh:`101578`.)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1952
+msgid ":c:func:`!PyErr_Display` is deprecated. Use :c:func:`PyErr_DisplayException` instead. (Contributed by Irit Katriel in :gh:`102755`)."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1955
-msgid "Remove the ``token.h`` header file. There was never any public tokenizer C API. The ``token.h`` header file was only designed to be used by Python internals. (Contributed by Victor Stinner in :gh:`92651`.)"
+msgid "``_PyErr_ChainExceptions`` is deprecated. Use ``_PyErr_ChainExceptions1`` instead. (Contributed by Irit Katriel in :gh:`102192`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1960
-msgid "Legacy Unicode APIs have been removed. See :pep:`623` for detail."
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1962
-msgid ":c:macro:`!PyUnicode_WCHAR_KIND`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1963
-msgid ":c:func:`!PyUnicode_AS_UNICODE`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1964
-msgid ":c:func:`!PyUnicode_AsUnicode`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1965
-msgid ":c:func:`!PyUnicode_AsUnicodeAndSize`"
+#: ../../whatsnew/3.12.rst:1958
+msgid "Using :c:func:`PyType_FromSpec`, :c:func:`PyType_FromSpecWithBases` or :c:func:`PyType_FromModuleAndSpec` to create a class whose metaclass overrides :c:member:`~PyTypeObject.tp_new` is deprecated. Call the metaclass instead."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1966
-msgid ":c:func:`!PyUnicode_AS_DATA`"
+msgid "Remove the ``token.h`` header file. There was never any public tokenizer C API. The ``token.h`` header file was only designed to be used by Python internals. (Contributed by Victor Stinner in :gh:`92651`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1967
-msgid ":c:func:`!PyUnicode_FromUnicode`"
+#: ../../whatsnew/3.12.rst:1971
+msgid "Legacy Unicode APIs have been removed. See :pep:`623` for detail."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1968
-msgid ":c:func:`!PyUnicode_GET_SIZE`"
+#: ../../whatsnew/3.12.rst:1973
+msgid ":c:macro:`!PyUnicode_WCHAR_KIND`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1969
-msgid ":c:func:`!PyUnicode_GetSize`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1970
-msgid ":c:func:`!PyUnicode_GET_DATA_SIZE`"
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:1972
-msgid "Remove the ``PyUnicode_InternImmortal()`` function macro. (Contributed by Victor Stinner in :gh:`85858`.)"
+#: ../../whatsnew/3.12.rst:1974
+msgid ":c:func:`!PyUnicode_AS_UNICODE`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1975
-msgid "Remove ``Jython`` compatibility hacks from several stdlib modules and tests. (Contributed by Nikita Sobolev in :gh:`99482`.)"
+msgid ":c:func:`!PyUnicode_AsUnicode`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1976
+msgid ":c:func:`!PyUnicode_AsUnicodeAndSize`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1977
+msgid ":c:func:`!PyUnicode_AS_DATA`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1978
+msgid ":c:func:`!PyUnicode_FromUnicode`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1979
+msgid ":c:func:`!PyUnicode_GET_SIZE`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1980
+msgid ":c:func:`!PyUnicode_GetSize`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1981
+msgid ":c:func:`!PyUnicode_GET_DATA_SIZE`"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1983
+msgid "Remove the ``PyUnicode_InternImmortal()`` function macro. (Contributed by Victor Stinner in :gh:`85858`.)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1986
+msgid "Remove ``Jython`` compatibility hacks from several stdlib modules and tests. (Contributed by Nikita Sobolev in :gh:`99482`.)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1989
 msgid "Remove ``_use_broken_old_ctypes_structure_semantics_`` flag from :mod:`ctypes` module. (Contributed by Nikita Sobolev in :gh:`99285`.)"
 msgstr ""
