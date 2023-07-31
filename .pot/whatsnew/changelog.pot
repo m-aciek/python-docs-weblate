@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 13:18+0000\n"
+"POT-Creation-Date: 2023-07-31 18:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5661,7 +5661,7 @@ msgid ":gh:`91212`: Fixed flickering of the turtle window when the tracer is tur
 msgstr ""
 
 #: ../../../build/NEWS:4765
-msgid ":gh:`95077`: Add deprecation warning for enum ``member.member`` access (e.g. ``Color.RED.BLUE``)."
+msgid ":gh:`95077`: Add deprecation warning for enum ``member.member`` access (e.g. ``Color.RED.BLUE``). Remove ``EnumMeta.__getattr__``."
 msgstr ""
 
 #: ../../../build/NEWS:4768
