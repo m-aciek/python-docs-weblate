@@ -43,6 +43,7 @@ def _download_translations(language: str, weblate_key: str) -> None:
         except WeblateException as exc:
             if str(exc) == 'Object not found on the server (maybe operation is not supported on the server)':
                 info(f"{component.slug} doesn't have a {language} translation")
+                continue
             raise
         else:
             path = Path(f"{component.name}.po")
