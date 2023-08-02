@@ -19,6 +19,16 @@ def _update_translation(language: str, weblate_key: str) -> None:
     _call('git commit -m "Update translation from Weblate"')
 
 
+def _clear_files():
+    for path in Path().iterdir():
+        if path.name.startswith('.'):
+            continue
+        if path.is_dir() and not path.is_symlink():
+            rmtree(path)
+        if path.suffix == '.po':
+            path.unlink()
+
+
 def _download_translations(language: str, weblate_key: str) -> None:
     weblate = Weblate(weblate_key, 'https://hosted.weblate.org/api/')
     project = Project(weblate, 'https://hosted.weblate.org/api/projects/python-docs/')
@@ -38,16 +48,6 @@ def _download_translations(language: str, weblate_key: str) -> None:
             path = Path(component.filemask.removeprefix('*/'))
             path.parent.mkdir(exist_ok=True)
             path.write_bytes(content)
-
-
-def _clear_files():
-    for path in Path().iterdir():
-        if path.name.startswith('.'):
-            continue
-        if path.is_dir() and not path.is_symlink():
-            rmtree(path)
-        if path.suffix == '.po':
-            path.unlink()
 
 
 def _call(command: str):
