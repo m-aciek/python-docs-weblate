@@ -45,7 +45,7 @@ def _download_translations(language: str, weblate_key: str) -> None:
                 info(f"{component.slug} doesn't have a {language} translation")
             raise
         else:
-            path = Path(component.name)
+            path = Path(f"{component.name}.po")
             path.parent.mkdir(exist_ok=True)
             path.write_bytes(content)
 
