@@ -46,7 +46,7 @@ def _download_translations(language: str, weblate_key: str) -> None:
                 continue
             raise
         else:
-            path = Path(component.filemask.removeprefix("*/"))
+            path = Path(component.filemask.removeprefix('*/'))
             path.parent.mkdir(exist_ok=True)
             path.write_bytes(content)
 
