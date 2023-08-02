@@ -62,4 +62,4 @@ if __name__ == "__main__":
 
     basicConfig(level='INFO')
 
-    _update_translation(weblate_key=getenv('KEY'), language=options.language)
+    _update_translation(options.language, weblate_key=getenv('KEY'))
