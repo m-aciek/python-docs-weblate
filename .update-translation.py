@@ -4,8 +4,9 @@ from argparse import ArgumentParser
 from logging import info, basicConfig, warning
 from os import getenv
 from pathlib import Path
+from re import match
 from shutil import rmtree
-from subprocess import call
+from subprocess import call, run
 
 from tqdm import tqdm
 from wlc import Translation, Weblate, Project, WeblateException, WeblateThrottlingError
@@ -15,8 +16,12 @@ def _update_translation(language: str, weblate_key: str) -> None:
     _call('git diff --exit-code')
     _clear_files()
     _download_translations(language, weblate_key)
-    _call(f'git add .')
-    _call('git commit -m "Update translation from Weblate"')
+    changed = _get_changed_files()
+    added = _get_new_files()
+    if all_ := changed + added:
+        _call(f'git add {" ".join(all_)}')
+        _call('git commit -m "Update translation from Weblate"')
+    _call('git restore .')  # discard ignored files
 
 
 def _clear_files():
@@ -51,9 +56,25 @@ def _download_translations(language: str, weblate_key: str) -> None:
             path.write_bytes(content)
 
 
+def _get_changed_files() -> list[str]:
+    diff = _run("git diff -I'^\"POT-Creation-Date: ' --numstat")
+    return [match(r'\d+\t\d+\t(.*)', line).group(1) for line in diff.splitlines()]
+
+
+def _get_new_files() -> list[str]:
+    ls_files = _run('git ls-files -o -d --exclude-standard')
+    return ls_files.splitlines()
+
+
 def _call(command: str):
     if (return_code := call(command, shell=True)) != 0:
         exit(return_code)
+
+
+def _run(command: str) -> str:
+    if (process := run(command, shell=True, capture_output=True)).returncode != 0:
+        exit(process.returncode)
+    return process.stdout.decode()
 
 
 if __name__ == "__main__":
