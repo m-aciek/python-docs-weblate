@@ -1,7 +1,7 @@
 """updates translation files for a language from the Weblate project and commits them"""
 
 from argparse import ArgumentParser
-from logging import info, basicConfig
+from logging import info, basicConfig, warning
 from os import getenv
 from pathlib import Path
 from shutil import rmtree
@@ -63,4 +63,7 @@ if __name__ == "__main__":
 
     basicConfig(level='INFO')
 
-    _update_translation(options.language, weblate_key=getenv('KEY'))
+    if not (weblate_key := getenv('KEY')):
+        warning('Not authenticated, you will be heavy throttled')
+
+    _update_translation(options.language, weblate_key=weblate_key)
