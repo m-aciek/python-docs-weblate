@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-04 10:36+0000\n"
+"POT-Creation-Date: 2023-08-14 12:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1671,7 +1671,7 @@ msgid "while the new version emits::"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1579
-msgid "Additionally, there may be some minor behavioral changes as a consecuence of the changes required to support :pep:`701`. Some of these changes include:"
+msgid "Additionally, there may be some minor behavioral changes as a consequence of the changes required to support :pep:`701`. Some of these changes include:"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1582
