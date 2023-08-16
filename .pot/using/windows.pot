@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-08-16 23:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1416,7 +1416,7 @@ msgid "cx_Freeze"
 msgstr ""
 
 #: ../../using/windows.rst:1249
-msgid "`cx_Freeze <https://cx-freeze.readthedocs.io/en/latest/>`_ is a ``distutils`` extension which wraps Python scripts into executable Windows programs (:file:`{*}.exe` files).  When you have done this, you can distribute your application without requiring your users to install Python."
+msgid "`cx_Freeze <https://cx-freeze.readthedocs.io/en/latest/>`_ wraps Python scripts into executable Windows programs (:file:`{*}.exe` files).  When you have done this, you can distribute your application without requiring your users to install Python."
 msgstr ""
 
 #: ../../using/windows.rst:1256

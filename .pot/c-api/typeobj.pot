@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 10:14+0000\n"
+"POT-Creation-Date: 2023-08-16 23:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2648,7 +2648,7 @@ msgid "Handle a request to *exporter* to fill in *view* as specified by *flags*.
 msgstr ""
 
 #: ../../c-api/typeobj.rst:2446
-msgid "Check if the request can be met. If not, raise :c:data:`PyExc_BufferError`, set :c:expr:`view->obj` to ``NULL`` and return ``-1``."
+msgid "Check if the request can be met. If not, raise :exc:`BufferError`, set :c:expr:`view->obj` to ``NULL`` and return ``-1``."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:2449
