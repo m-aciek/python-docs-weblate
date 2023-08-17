@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-08-17 11:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -681,7 +681,7 @@ msgid "A different argument parsing function, :c:func:`PyArg_UnpackTuple`, has b
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1108
-msgid "Two new flags :c:macro:`METH_NOARGS` and :c:macro:`METH_O` are available in method definition tables to simplify implementation of methods with no arguments or a single untyped argument. Calling such methods is more efficient than calling a corresponding method that uses :c:macro:`METH_VARARGS`.  Also, the old :c:macro:`METH_OLDARGS` style of writing C methods is  now officially deprecated."
+msgid "Two new flags :c:macro:`METH_NOARGS` and :c:macro:`METH_O` are available in method definition tables to simplify implementation of methods with no arguments or a single untyped argument. Calling such methods is more efficient than calling a corresponding method that uses :c:macro:`METH_VARARGS`.  Also, the old :c:macro:`!METH_OLDARGS` style of writing C methods is  now officially deprecated."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1114

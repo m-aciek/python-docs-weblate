@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 23:36+0000\n"
+"POT-Creation-Date: 2023-08-17 11:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2197,7 +2197,7 @@ msgid "Slot initialization is subject to the rules of initializing globals. C99 
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1699
-msgid "However, the unary '&' operator applied to a non-static variable like :c:func:`PyBaseObject_Type` is not required to produce an address constant.  Compilers may support this (gcc does), MSVC does not. Both compilers are strictly standard conforming in this particular behavior."
+msgid "However, the unary '&' operator applied to a non-static variable like :c:data:`PyBaseObject_Type` is not required to produce an address constant.  Compilers may support this (gcc does), MSVC does not. Both compilers are strictly standard conforming in this particular behavior."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1705

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-08-17 11:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,10 +44,10 @@ msgstr ""
 msgid "It is possible to export multiple modules from a single shared library by defining multiple initialization functions. However, importing them requires using symbolic links or a custom importer, because by default only the function corresponding to the filename is found. See the *\"Multiple modules in one library\"* section in :pep:`489` for details."
 msgstr ""
 
-#: ../../extending/building.rst:51
+#: ../../extending/building.rst:52
 msgid "Building C and C++ Extensions with setuptools"
 msgstr ""
 
-#: ../../extending/building.rst:53
+#: ../../extending/building.rst:54
 msgid "Python 3.12 and newer no longer come with distutils. Please refer to the ``setuptools`` documentation at https://setuptools.readthedocs.io/en/latest/setuptools.html to learn more about how build and distribute C/C++ extensions with setuptools."
 msgstr ""

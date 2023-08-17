@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-08-17 11:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,5 +133,5 @@ msgid "The ``requirements.txt`` can then be committed to version control and shi
 msgstr ""
 
 #: ../../tutorial/venv.rst:207
-msgid "``pip`` has many more options.  Consult the :ref:`installing-index` guide for complete documentation for ``pip``.  When you've written a package and want to make it available on the Python Package Index, consult the :ref:`distributing-index` guide."
+msgid "``pip`` has many more options.  Consult the :ref:`installing-index` guide for complete documentation for ``pip``.  When you've written a package and want to make it available on the Python Package Index, consult the `Python packaging user guide`_."
 msgstr ""

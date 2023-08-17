@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 23:36+0000\n"
+"POT-Creation-Date: 2023-08-17 11:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgid "Path to the user site-packages for the running Python.  Can be ``None`` i
 msgstr ""
 
 #: ../../library/site.rst:188
-msgid "Path to the base directory for the user site-packages.  Can be ``None`` if :func:`getuserbase` hasn't been called yet.  Default value is :file:`~/.local` for UNIX and macOS non-framework builds, :file:`~/Library/Python/{X.Y}` for macOS framework builds, and :file:`{%APPDATA%}\\\\Python` for Windows.  This value is used to compute the installation directories for scripts, data files, Python modules, etc. for the :ref:`user installation scheme <inst-alt-install-user>`. See also :envvar:`PYTHONUSERBASE`."
+msgid "Path to the base directory for the user site-packages.  Can be ``None`` if :func:`getuserbase` hasn't been called yet.  Default value is :file:`~/.local` for UNIX and macOS non-framework builds, :file:`~/Library/Python/{X.Y}` for macOS framework builds, and :file:`{%APPDATA%}\\\\Python` for Windows.  This value is used to compute the installation directories for scripts, data files, Python modules, etc. for the user installation scheme. See also :envvar:`PYTHONUSERBASE`."
 msgstr ""
 
 #: ../../library/site.rst:200

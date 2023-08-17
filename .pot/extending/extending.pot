@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 08:36+0000\n"
+"POT-Creation-Date: 2023-08-17 11:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,7 +157,7 @@ msgid "Note also that the :c:data:`!SpamError` variable retains a reference to t
 msgstr ""
 
 #: ../../extending/extending.rst:245
-msgid "We discuss the use of ``PyMODINIT_FUNC`` as a function return type later in this sample."
+msgid "We discuss the use of :c:macro:`PyMODINIT_FUNC` as a function return type later in this sample."
 msgstr ""
 
 #: ../../extending/extending.rst:248
@@ -225,7 +225,7 @@ msgid "This structure, in turn, must be passed to the interpreter in the module'
 msgstr ""
 
 #: ../../extending/extending.rst:366
-msgid "Note that PyMODINIT_FUNC declares the function as ``PyObject *`` return type, declares any special linkage declarations required by the platform, and for C++ declares the function as ``extern \"C\"``."
+msgid "Note that :c:macro:`PyMODINIT_FUNC` declares the function as ``PyObject *`` return type, declares any special linkage declarations required by the platform, and for C++ declares the function as ``extern \"C\"``."
 msgstr ""
 
 #: ../../extending/extending.rst:370
