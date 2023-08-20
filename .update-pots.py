@@ -19,8 +19,8 @@ def _update_pots(version: str) -> None:
             _clone_cpython_repo(version)
             _call('make -C cpython/Doc/ venv')
             _build_gettext()
+            heads_hash = _run('git rev-parse HEAD')
         _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
-        heads_hash = _run('git rev-parse HEAD')
     changed = _get_changed_pots()
     added = _get_new_pots()
     if all_ := changed + added:
