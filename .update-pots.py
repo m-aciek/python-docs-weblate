@@ -18,7 +18,7 @@ def _update_pots(version: str) -> None:
             with TemporaryDirectory() as directory:
                 with chdir(directory):
                     _clone_cpython_repo(version)
-                    _call(f'git reset {cpython_commit}')
+                    _call(f'git -C cpython/ reset {cpython_commit}')
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
                 _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
