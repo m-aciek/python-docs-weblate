@@ -6,7 +6,7 @@ from os import PathLike
 from pathlib import Path
 from re import match
 from shutil import move, rmtree
-from subprocess import check_call, check_output
+from subprocess import check_call, check_output, CalledProcessError
 from tempfile import TemporaryDirectory
 
 
@@ -21,8 +21,8 @@ def _update_pots(version: str) -> None:
         while True:
             with TemporaryDirectory() as directory:
                 with chdir(directory):
-                    _clone_cpython_repo(version, shallow=False)
-                    _call(f'git -C cpython/ reset {cpython_commit}')
+                    _clone_cpython_repo(version)
+                    _call(f'git -C cpython/ reset --hard {cpython_commit}')
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
                 _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
@@ -32,13 +32,16 @@ def _update_pots(version: str) -> None:
                 _call(f'git add {" ".join(all_)}')
                 _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
             _call('git restore .')  # discard ignored files
-            _call('git reset HEAD@{1}')  # move one commit forward
+            try:
+                _call('git reset --hard HEAD@{1}')  # move one commit forward
+            except CalledProcessError:
+                break
 
     else:
         # if latest sync commit not found, checkout the HEAD
         with TemporaryDirectory() as directory:
             with chdir(directory):
-                _clone_cpython_repo(version, shallow=True)
+                _clone_cpython_repo(version)
                 _call('make -C cpython/Doc/ venv')
                 _build_gettext()
                 cpython_commit = _output('git -C cpython/ rev-parse HEAD')
@@ -51,11 +54,8 @@ def _update_pots(version: str) -> None:
         _call('git restore .')  # discard ignored files
 
 
-def _clone_cpython_repo(version: str, shallow: bool):
-    _call(
-        f'git clone -b {version} --single-branch https://github.com/python/cpython.git'
-        + (' --depth 1' if shallow else '')
-    )
+def _clone_cpython_repo(version: str):
+    _call(f'git clone -b {version} --single-branch https://github.com/python/cpython.git --depth 1')
 
 
 def _build_gettext():
