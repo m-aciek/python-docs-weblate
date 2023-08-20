@@ -51,9 +51,8 @@ def _get_new_pots() -> list[str]:
     return ls_files.splitlines()
 
 
-def _call(command: str):
-    if (return_code := check_call(command, shell=True)) != 0:
-        exit(return_code)
+def _call(command: str) -> None:
+    check_call(command, shell=True)
 
 
 def _output(command: str) -> str:
