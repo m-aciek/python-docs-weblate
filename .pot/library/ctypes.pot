@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 12:49+0000\n"
+"POT-Creation-Date: 2023-08-20 14:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1394,11 +1394,11 @@ msgid "Same as the standard C memset library function: fills the memory block at
 msgstr ""
 
 #: ../../library/ctypes.rst:2034
-msgid "This factory function creates and returns a new ctypes pointer type. Pointer types are cached and reused internally, so calling this function repeatedly is cheap. *type* must be a ctypes type."
+msgid "Create and return a new ctypes pointer type. Pointer types are cached and reused internally, so calling this function repeatedly is cheap. *type* must be a ctypes type."
 msgstr ""
 
 #: ../../library/ctypes.rst:2041
-msgid "This function creates a new pointer instance, pointing to *obj*. The returned object is of the type ``POINTER(type(obj))``."
+msgid "Create a new pointer instance, pointing to *obj*. The returned object is of the type ``POINTER(type(obj))``."
 msgstr ""
 
 #: ../../library/ctypes.rst:2044
