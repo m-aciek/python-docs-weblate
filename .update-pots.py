@@ -18,7 +18,6 @@ def _update_pots(version: str) -> None:
             with TemporaryDirectory() as directory:
                 with chdir(directory):
                     _clone_cpython_repo(version, shallow=False)
-                    breakpoint()
                     _call(f'git -C cpython/ reset {cpython_commit}')
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
@@ -51,7 +50,7 @@ def _update_pots(version: str) -> None:
 def _clone_cpython_repo(version: str, shallow: bool):
     _call(
         f'git clone -b {version} --single-branch https://github.com/python/cpython.git'
-        + ' --depth 1' if shallow else ''
+        + (' --depth 1' if shallow else '')
     )
 
 
