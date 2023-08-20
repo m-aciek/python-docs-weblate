@@ -12,19 +12,39 @@ from tempfile import TemporaryDirectory
 
 def _update_pots(version: str) -> None:
     _call('git diff --exit-code')  # ensure working tree clean
-    with TemporaryDirectory() as directory:
-        with chdir(directory):
-            _clone_cpython_repo(version)
-            _call('make -C cpython/Doc/ venv')
-            _build_gettext()
-            cpython_commit = _output('git -C cpython/ rev-parse HEAD')
-        _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
-    changed = _get_changed_pots()
-    added = _get_new_pots()
-    if all_ := changed + added:
-        _call(f'git add {" ".join(all_)}')
-        _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
-    _call('git restore .')  # discard ignored files
+    cpython_commit = _output('git log --grep CPython-sync-commit: --pretty=format:"%H" --max-count=1')
+    if cpython_commit:
+        while True:
+            with TemporaryDirectory() as directory:
+                with chdir(directory):
+                    _clone_cpython_repo(version)
+                    _call(f'git reset {cpython_commit}')
+                    _call('make -C cpython/Doc/ venv')
+                    _build_gettext()
+                _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
+            changed = _get_changed_pots()
+            added = _get_new_pots()
+            if all_ := changed + added:
+                _call(f'git add {" ".join(all_)}')
+                _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
+            _call('git restore .')  # discard ignored files
+            _call('git reset HEAD@{1}')  # move one commit forward
+
+    else:
+        # if latest sync commit not found, checkout the HEAD
+        with TemporaryDirectory() as directory:
+            with chdir(directory):
+                _clone_cpython_repo(version)
+                _call('make -C cpython/Doc/ venv')
+                _build_gettext()
+                cpython_commit = _output('git -C cpython/ rev-parse HEAD')
+            _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
+        changed = _get_changed_pots()
+        added = _get_new_pots()
+        if all_ := changed + added:
+            _call(f'git add {" ".join(all_)}')
+            _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
+        _call('git restore .')  # discard ignored files
 
 
 def _clone_cpython_repo(version: str):
