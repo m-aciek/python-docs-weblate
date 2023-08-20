@@ -17,13 +17,13 @@ def _update_pots(version: str) -> None:
             _clone_cpython_repo(version)
             _call('make -C cpython/Doc/ venv')
             _build_gettext()
-            heads_hash = _run('git -C cpython/ rev-parse HEAD')
+            cpython_commit = _run('git -C cpython/ rev-parse HEAD')
         _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
     changed = _get_changed_pots()
     added = _get_new_pots()
     if all_ := changed + added:
         _call(f'git add {" ".join(all_)}')
-        _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {heads_hash}"')
+        _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
     _call('git restore .')  # discard ignored files
 
 
