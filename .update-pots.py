@@ -17,7 +17,7 @@ def _update_pots(version: str) -> None:
         while True:
             with TemporaryDirectory() as directory:
                 with chdir(directory):
-                    _clone_cpython_repo(version)
+                    _clone_cpython_repo(version, shallow=False)
                     _call(f'git -C cpython/ reset {cpython_commit}')
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
@@ -34,7 +34,7 @@ def _update_pots(version: str) -> None:
         # if latest sync commit not found, checkout the HEAD
         with TemporaryDirectory() as directory:
             with chdir(directory):
-                _clone_cpython_repo(version)
+                _clone_cpython_repo(version, shallow=True)
                 _call('make -C cpython/Doc/ venv')
                 _build_gettext()
                 cpython_commit = _output('git -C cpython/ rev-parse HEAD')
@@ -47,8 +47,11 @@ def _update_pots(version: str) -> None:
         _call('git restore .')  # discard ignored files
 
 
-def _clone_cpython_repo(version: str):
-    _call(f'git clone -b {version} --single-branch https://github.com/python/cpython.git --depth 1')
+def _clone_cpython_repo(version: str, shallow: bool):
+    _call(
+        f'git clone -b {version} --single-branch https://github.com/python/cpython.git'
+        + ' --depth 1' if shallow else ''
+    )
 
 
 def _build_gettext():
