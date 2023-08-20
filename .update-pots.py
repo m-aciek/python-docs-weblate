@@ -6,7 +6,7 @@ from os import PathLike
 from pathlib import Path
 from re import match
 from shutil import move, rmtree
-from subprocess import call, check_output
+from subprocess import check_call, check_output
 from tempfile import TemporaryDirectory
 
 
@@ -42,21 +42,21 @@ def _replace_tree(source: PathLike, target: PathLike):
 
 
 def _get_changed_pots() -> list[str]:
-    diff = _check_output("git diff -I'^\"POT-Creation-Date: ' --numstat")
+    diff = _output("git diff -I'^\"POT-Creation-Date: ' --numstat")
     return [match(r'\d+\t\d+\t(.*)', line).group(1) for line in diff.splitlines()]
 
 
 def _get_new_pots() -> list[str]:
-    ls_files = _check_output('git ls-files -o -d --exclude-standard')
+    ls_files = _output('git ls-files -o -d --exclude-standard')
     return ls_files.splitlines()
 
 
 def _call(command: str):
-    if (return_code := call(command, shell=True)) != 0:
+    if (return_code := check_call(command, shell=True)) != 0:
         exit(return_code)
 
 
-def _check_output(command: str) -> str:
+def _output(command: str) -> str:
     return check_output(command, shell=True).decode()
 
 
