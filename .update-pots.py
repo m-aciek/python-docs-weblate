@@ -11,18 +11,21 @@ from tempfile import TemporaryDirectory
 
 
 def _update_pots(version: str) -> None:
-    _call('git diff --exit-code')
+    _call('git diff --exit-code')  # ensure clean git status
+    # TODO determine latest sync commit
+    # if latest sync commit not found, checkout the HEAD
     with TemporaryDirectory() as directory:
         with chdir(directory):
             _clone_cpython_repo(version)
             _call('make -C cpython/Doc/ venv')
             _build_gettext()
         _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
+        heads_hash = _run('git rev-parse HEAD')
     changed = _get_changed_pots()
     added = _get_new_pots()
     if all_ := changed + added:
         _call(f'git add {" ".join(all_)}')
-        _call('git commit -m "Update sources"')
+        _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {heads_hash}"')
     _call('git restore .')  # discard ignored files
 
 
