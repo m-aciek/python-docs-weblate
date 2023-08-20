@@ -11,9 +11,7 @@ from tempfile import TemporaryDirectory
 
 
 def _update_pots(version: str) -> None:
-    _call('git diff --exit-code')  # ensure clean git status
-    # TODO determine latest sync commit
-    # if latest sync commit not found, checkout the HEAD
+    _call('git diff --exit-code')  # ensure working tree clean
     with TemporaryDirectory() as directory:
         with chdir(directory):
             _clone_cpython_repo(version)
