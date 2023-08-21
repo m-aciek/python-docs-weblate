@@ -21,9 +21,9 @@ def _update_pots(version: str) -> None:
         with TemporaryDirectory() as directory:
             with chdir(directory):
                 _clone_cpython_repo(version, shallow=False)
+                _call(f'git -C cpython/ reset --hard {cpython_commit}')
             while True:
                 with chdir(directory):
-                    _call(f'git -C cpython/ reset --hard {cpython_commit}')
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
                 _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
@@ -34,7 +34,7 @@ def _update_pots(version: str) -> None:
                     _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
                 _call('git restore .')  # discard ignored files
                 try:
-                    _call('git reset --hard HEAD@{1}')  # move one commit forward
+                    _call(f'git -C {directory}/cpython/ reset --hard HEAD@{1}')  # move one commit forward
                 except CalledProcessError:
                     break
 
