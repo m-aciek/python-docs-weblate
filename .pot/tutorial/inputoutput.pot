@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-08-21 11:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "Fancier Output Formatting"
 msgstr ""
 
 #: ../../tutorial/inputoutput.rst:17
-msgid "So far we've encountered two ways of writing values: *expression statements* and the :func:`print` function.  (A third way is using the :meth:`write` method of file objects; the standard output file can be referenced as ``sys.stdout``. See the Library Reference for more information on this.)"
+msgid "So far we've encountered two ways of writing values: *expression statements* and the :func:`print` function.  (A third way is using the :meth:`~io.TextIOBase.write` method of file objects; the standard output file can be referenced as ``sys.stdout``. See the Library Reference for more information on this.)"
 msgstr ""
 
 #: ../../tutorial/inputoutput.rst:22
@@ -245,7 +245,7 @@ msgid "In text files (those opened without a ``b`` in the mode string), only see
 msgstr ""
 
 #: ../../tutorial/inputoutput.rst:459
-msgid "File objects have some additional methods, such as :meth:`~file.isatty` and :meth:`~file.truncate` which are less frequently used; consult the Library Reference for a complete guide to file objects."
+msgid "File objects have some additional methods, such as :meth:`~io.IOBase.isatty` and :meth:`~io.IOBase.truncate` which are less frequently used; consult the Library Reference for a complete guide to file objects."
 msgstr ""
 
 #: ../../tutorial/inputoutput.rst:467
@@ -253,7 +253,7 @@ msgid "Saving structured data with :mod:`json`"
 msgstr ""
 
 #: ../../tutorial/inputoutput.rst:471
-msgid "Strings can easily be written to and read from a file.  Numbers take a bit more effort, since the :meth:`read` method only returns strings, which will have to be passed to a function like :func:`int`, which takes a string like ``'123'`` and returns its numeric value 123.  When you want to save more complex data types like nested lists and dictionaries, parsing and serializing by hand becomes complicated."
+msgid "Strings can easily be written to and read from a file.  Numbers take a bit more effort, since the :meth:`~io.TextIOBase.read` method only returns strings, which will have to be passed to a function like :func:`int`, which takes a string like ``'123'`` and returns its numeric value 123.  When you want to save more complex data types like nested lists and dictionaries, parsing and serializing by hand becomes complicated."
 msgstr ""
 
 #: ../../tutorial/inputoutput.rst:478
