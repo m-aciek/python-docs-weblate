@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-08-21 20:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2823,35 +2823,35 @@ msgid "The following C APIs have been deprecated in earlier Python releases, and
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2594
-msgid ":c:func:`PyUnicode_AS_DATA`"
+msgid ":c:func:`!PyUnicode_AS_DATA`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2595
-msgid ":c:func:`PyUnicode_AS_UNICODE`"
+msgid ":c:func:`!PyUnicode_AS_UNICODE`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2596
-msgid ":c:func:`PyUnicode_AsUnicodeAndSize`"
+msgid ":c:func:`!PyUnicode_AsUnicodeAndSize`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2597
-msgid ":c:func:`PyUnicode_AsUnicode`"
+msgid ":c:func:`!PyUnicode_AsUnicode`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2598
-msgid ":c:func:`PyUnicode_FromUnicode`"
+msgid ":c:func:`!PyUnicode_FromUnicode`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2599
-msgid ":c:func:`PyUnicode_GET_DATA_SIZE`"
+msgid ":c:func:`!PyUnicode_GET_DATA_SIZE`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2600
-msgid ":c:func:`PyUnicode_GET_SIZE`"
+msgid ":c:func:`!PyUnicode_GET_SIZE`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2601
-msgid ":c:func:`PyUnicode_GetSize`"
+msgid ":c:func:`!PyUnicode_GetSize`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2602
@@ -2867,15 +2867,15 @@ msgid ":c:func:`PyUnicode_READY`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2605
-msgid ":c:func:`Py_UNICODE_WSTR_LENGTH`"
+msgid ":c:func:`!PyUnicode_WSTR_LENGTH`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2606
-msgid ":c:func:`_PyUnicode_AsUnicode`"
+msgid ":c:func:`!_PyUnicode_AsUnicode`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2607
-msgid ":c:macro:`PyUnicode_WCHAR_KIND`"
+msgid ":c:macro:`!PyUnicode_WCHAR_KIND`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2608
@@ -2883,11 +2883,11 @@ msgid ":c:type:`PyUnicodeObject`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2609
-msgid ":c:func:`PyUnicode_InternImmortal()`"
+msgid ":c:func:`!PyUnicode_InternImmortal`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2617
-msgid ":c:func:`PyFrame_BlockSetup` and :c:func:`PyFrame_BlockPop` have been removed. (Contributed by Mark Shannon in :issue:`40222`.)"
+msgid ":c:func:`!PyFrame_BlockSetup` and :c:func:`!PyFrame_BlockPop` have been removed. (Contributed by Mark Shannon in :issue:`40222`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2621

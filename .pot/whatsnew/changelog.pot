@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 13:36+0000\n"
+"POT-Creation-Date: 2023-08-21 20:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,7 +269,7 @@ msgid "Library"
 msgstr ""
 
 #: ../../../build/NEWS:35
-msgid ":gh:`105736`: Harmonized the pure Python version of OrderedDict with the C version. Now, both versions set up their internal state in `__new__`.  Formerly, the pure Python version did the set up in `__init__`."
+msgid ":gh:`105736`: Harmonized the pure Python version of :class:`~collections.OrderedDict` with the C version. Now, both versions set up their internal state in ``__new__``.  Formerly, the pure Python version did the set up in ``__init__``."
 msgstr ""
 
 #: ../../../build/NEWS:40
@@ -8024,7 +8024,7 @@ msgid ":gh:`91320`: Fix C++ compiler warnings about \"old-style cast\" (``g++ -W
 msgstr ""
 
 #: ../../../build/NEWS:6914
-msgid ":gh:`80527`: Mark functions as deprecated by :pep:`623`: :c:func:`PyUnicode_AS_DATA`, :c:func:`PyUnicode_AS_UNICODE`, :c:func:`PyUnicode_GET_DATA_SIZE`, :c:func:`PyUnicode_GET_SIZE`. Patch by Victor Stinner."
+msgid ":gh:`80527`: Mark functions as deprecated by :pep:`623`: :c:func:`!PyUnicode_AS_DATA`, :c:func:`!PyUnicode_AS_UNICODE`, :c:func:`!PyUnicode_GET_DATA_SIZE`, :c:func:`!PyUnicode_GET_SIZE`. Patch by Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:6919
