@@ -18,24 +18,25 @@ def _update_pots(version: str) -> None:
         if line.startswith('CPython-sync-commit: ')
     ][0].removeprefix('CPython-sync-commit: ')
     if cpython_commit:
-        while True:
-            with TemporaryDirectory() as directory:
+        with TemporaryDirectory() as directory:
+            with chdir(directory):
+                _clone_cpython_repo(version, shallow=False)
+            while True:
                 with chdir(directory):
-                    _clone_cpython_repo(version, shallow=False)
                     _call(f'git -C cpython/ reset --hard {cpython_commit}')
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
                 _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
-            changed = _get_changed_pots()
-            added = _get_new_pots()
-            if all_ := changed + added:
-                _call(f'git add {" ".join(all_)}')
-                _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
-            _call('git restore .')  # discard ignored files
-            try:
-                _call('git reset --hard HEAD@{1}')  # move one commit forward
-            except CalledProcessError:
-                break
+                changed = _get_changed_pots()
+                added = _get_new_pots()
+                if all_ := changed + added:
+                    _call(f'git add {" ".join(all_)}')
+                    _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
+                _call('git restore .')  # discard ignored files
+                try:
+                    _call('git reset --hard HEAD@{1}')  # move one commit forward
+                except CalledProcessError:
+                    break
 
     else:
         # if latest sync commit not found, checkout the HEAD
