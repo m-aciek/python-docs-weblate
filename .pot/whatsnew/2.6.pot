@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 11:10+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -721,7 +721,7 @@ msgid "There's also a ``__future__`` import that causes all string literals to b
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:979
-msgid "At the C level, Python 3.0 will rename the existing 8-bit string type, called :c:type:`PyStringObject` in Python 2.x, to :c:type:`PyBytesObject`.  Python 2.6 uses ``#define`` to support using the names :c:func:`PyBytesObject`, :c:func:`PyBytes_Check`, :c:func:`PyBytes_FromStringAndSize`, and all the other functions and macros used with strings."
+msgid "At the C level, Python 3.0 will rename the existing 8-bit string type, called :c:type:`!PyStringObject` in Python 2.x, to :c:type:`PyBytesObject`.  Python 2.6 uses ``#define`` to support using the names :c:func:`PyBytesObject`, :c:func:`PyBytes_Check`, :c:func:`PyBytes_FromStringAndSize`, and all the other functions and macros used with strings."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:986
@@ -2008,7 +2008,7 @@ msgid "The new buffer interface, previously described in `the PEP 3118 section <
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3010
-msgid "Python's use of the C stdio library is now thread-safe, or at least as thread-safe as the underlying library is.  A long-standing potential bug occurred if one thread closed a file object while another thread was reading from or writing to the object.  In 2.6 file objects have a reference count, manipulated by the :c:func:`PyFile_IncUseCount` and :c:func:`PyFile_DecUseCount` functions.  File objects can't be closed unless the reference count is zero.  :c:func:`PyFile_IncUseCount` should be called while the GIL is still held, before carrying out an I/O operation using the ``FILE *`` pointer, and :c:func:`PyFile_DecUseCount` should be called immediately after the GIL is re-acquired. (Contributed by Antoine Pitrou and Gregory P. Smith.)"
+msgid "Python's use of the C stdio library is now thread-safe, or at least as thread-safe as the underlying library is.  A long-standing potential bug occurred if one thread closed a file object while another thread was reading from or writing to the object.  In 2.6 file objects have a reference count, manipulated by the :c:func:`!PyFile_IncUseCount` and :c:func:`!PyFile_DecUseCount` functions.  File objects can't be closed unless the reference count is zero.  :c:func:`!PyFile_IncUseCount` should be called while the GIL is still held, before carrying out an I/O operation using the ``FILE *`` pointer, and :c:func:`!PyFile_DecUseCount` should be called immediately after the GIL is re-acquired. (Contributed by Antoine Pitrou and Gregory P. Smith.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3023

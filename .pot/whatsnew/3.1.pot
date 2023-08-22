@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 11:10+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -425,7 +425,7 @@ msgid "(Contributed by Mark Dickinson and Lisandro Dalcrin; :issue:`5175`.)"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:504
-msgid "Deprecated :c:func:`PyNumber_Int`.  Use :c:func:`PyNumber_Long` instead."
+msgid "Deprecated :c:func:`!PyNumber_Int`.  Use :c:func:`PyNumber_Long` instead."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:506
@@ -433,7 +433,7 @@ msgid "(Contributed by Mark Dickinson; :issue:`4910`.)"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:508
-msgid "Added a new :c:func:`PyOS_string_to_double` function to replace the deprecated functions :c:func:`PyOS_ascii_strtod` and :c:func:`PyOS_ascii_atof`."
+msgid "Added a new :c:func:`PyOS_string_to_double` function to replace the deprecated functions :c:func:`!PyOS_ascii_strtod` and :c:func:`!PyOS_ascii_atof`."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:511

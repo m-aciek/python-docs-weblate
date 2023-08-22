@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 08:36+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1446,7 +1446,7 @@ msgid "It's possible for Python code to obtain AST objects by using the :func:`c
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2117
-msgid "No official documentation has been written for the AST code yet, but :pep:`339` discusses the design.  To start learning about the code, read the definition of the various AST nodes in :file:`Parser/Python.asdl`.  A Python script reads this file and generates a set of C structure definitions in :file:`Include/Python-ast.h`.  The :c:func:`PyParser_ASTFromString` and :c:func:`PyParser_ASTFromFile`, defined in :file:`Include/pythonrun.h`, take Python source as input and return the root of an AST representing the contents. This AST can then be turned into a code object by :c:func:`PyAST_Compile`.  For more information, read the source code, and then ask questions on python-dev."
+msgid "No official documentation has been written for the AST code yet, but :pep:`339` discusses the design.  To start learning about the code, read the definition of the various AST nodes in :file:`Parser/Python.asdl`.  A Python script reads this file and generates a set of C structure definitions in :file:`Include/Python-ast.h`.  The :c:func:`PyParser_ASTFromString` and :c:func:`!PyParser_ASTFromFile`, defined in :file:`Include/pythonrun.h`, take Python source as input and return the root of an AST representing the contents. This AST can then be turned into a code object by :c:func:`!PyAST_Compile`.  For more information, read the source code, and then ask questions on python-dev."
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2127
@@ -1474,7 +1474,7 @@ msgid "C code can now obtain information about the exact revision of the Python 
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2170
-msgid "Two new macros can be used to indicate C functions that are local to the current file so that a faster calling convention can be used. ``Py_LOCAL(type)`` declares the function as returning a value of the specified *type* and uses a fast-calling qualifier. ``Py_LOCAL_INLINE(type)`` does the same thing and also requests the function be inlined.  If :c:func:`PY_LOCAL_AGGRESSIVE` is defined before :file:`python.h` is included, a set of more aggressive optimizations are enabled for the module; you should benchmark the results to find out if these optimizations actually make the code faster.  (Contributed by Fredrik Lundh at the NeedForSpeed sprint.)"
+msgid "Two new macros can be used to indicate C functions that are local to the current file so that a faster calling convention can be used. ``Py_LOCAL(type)`` declares the function as returning a value of the specified *type* and uses a fast-calling qualifier. ``Py_LOCAL_INLINE(type)`` does the same thing and also requests the function be inlined.  If macro :c:macro:`!PY_LOCAL_AGGRESSIVE` is defined before :file:`python.h` is included, a set of more aggressive optimizations are enabled for the module; you should benchmark the results to find out if these optimizations actually make the code faster.  (Contributed by Fredrik Lundh at the NeedForSpeed sprint.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2181
@@ -1482,7 +1482,7 @@ msgid "``PyErr_NewException(name, base, dict)`` can now accept a tuple of base c
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2184
-msgid "The :c:func:`PyErr_Warn` function for issuing warnings is now deprecated in favour of ``PyErr_WarnEx(category, message, stacklevel)`` which lets you specify the number of stack frames separating this function and the caller.  A *stacklevel* of 1 is the function calling :c:func:`PyErr_WarnEx`, 2 is the function above that, and so forth.  (Added by Neal Norwitz.)"
+msgid "The :c:func:`!PyErr_Warn` function for issuing warnings is now deprecated in favour of ``PyErr_WarnEx(category, message, stacklevel)`` which lets you specify the number of stack frames separating this function and the caller.  A *stacklevel* of 1 is the function calling :c:func:`PyErr_WarnEx`, 2 is the function above that, and so forth.  (Added by Neal Norwitz.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2190
@@ -1490,7 +1490,7 @@ msgid "The CPython interpreter is still written in C, but  the code can now be c
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2194
-msgid "The :c:func:`PyRange_New` function was removed.  It was never documented, never used in the core code, and had dangerously lax error checking.  In the unlikely case that your extensions were using it, you can replace it by something like the following::"
+msgid "The :c:func:`!PyRange_New` function was removed.  It was never documented, never used in the core code, and had dangerously lax error checking.  In the unlikely case that your extensions were using it, you can replace it by something like the following::"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2208

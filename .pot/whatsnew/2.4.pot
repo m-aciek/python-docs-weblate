@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 11:10+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1000,7 +1000,7 @@ msgid "The :c:expr:`Py_IS_NAN(X)` macro returns 1 if  its float or double argume
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1470
-msgid "C code can avoid unnecessary locking by using the new :c:func:`PyEval_ThreadsInitialized` function to tell  if any thread operations have been performed.  If this function  returns false, no lock operations are needed. (Contributed by Nick Coghlan.)"
+msgid "C code can avoid unnecessary locking by using the new :c:func:`!PyEval_ThreadsInitialized` function to tell  if any thread operations have been performed.  If this function  returns false, no lock operations are needed. (Contributed by Nick Coghlan.)"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1475

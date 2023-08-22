@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 11:10+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -645,7 +645,7 @@ msgid "To upgrade an extension module to the new API, perform the following step
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1081
-msgid "Rename :c:func:`Py_TPFLAGS_GC` to :c:func:`PyTPFLAGS_HAVE_GC`."
+msgid "Rename :c:macro:`!Py_TPFLAGS_GC` to :c:macro:`Py_TPFLAGS_HAVE_GC`."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1084
@@ -656,20 +656,16 @@ msgstr ""
 msgid "objects, and :c:func:`PyObject_GC_Del` to deallocate them."
 msgstr ""
 
-#: ../../whatsnew/2.2.rst:1087
-msgid "Rename :c:func:`PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and"
-msgstr ""
-
-#: ../../whatsnew/2.2.rst:1087
-msgid ":c:func:`PyObject_GC_Fini` to :c:func:`PyObject_GC_UnTrack`."
+#: ../../whatsnew/2.2.rst:1086
+msgid "Rename :c:func:`!PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and :c:func:`!PyObject_GC_Fini` to :c:func:`PyObject_GC_UnTrack`."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1089
-msgid "Remove :c:func:`PyGC_HEAD_SIZE` from object size calculations."
+msgid "Remove :c:macro:`!PyGC_HEAD_SIZE` from object size calculations."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1091
-msgid "Remove calls to :c:func:`PyObject_AS_GC` and :c:func:`PyObject_FROM_GC`."
+msgid "Remove calls to :c:func:`!PyObject_AS_GC` and :c:func:`!PyObject_FROM_GC`."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1093
@@ -749,7 +745,7 @@ msgid "The :file:`Tools/scripts/ftpmirror.py` script now parses a :file:`.netrc`
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1215
-msgid "Some features of the object returned by the :func:`xrange` function are now deprecated, and trigger warnings when they're accessed; they'll disappear in Python 2.3. :class:`xrange` objects tried to pretend they were full sequence types by supporting slicing, sequence multiplication, and the :keyword:`in` operator, but these features were rarely used and therefore buggy.  The :meth:`tolist` method and the :attr:`start`, :attr:`stop`, and :attr:`step` attributes are also being deprecated.  At the C level, the fourth argument to the :c:func:`PyRange_New` function, ``repeat``, has also been deprecated."
+msgid "Some features of the object returned by the :func:`xrange` function are now deprecated, and trigger warnings when they're accessed; they'll disappear in Python 2.3. :class:`xrange` objects tried to pretend they were full sequence types by supporting slicing, sequence multiplication, and the :keyword:`in` operator, but these features were rarely used and therefore buggy.  The :meth:`tolist` method and the :attr:`start`, :attr:`stop`, and :attr:`step` attributes are also being deprecated.  At the C level, the fourth argument to the :c:func:`!PyRange_New` function, ``repeat``, has also been deprecated."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1224

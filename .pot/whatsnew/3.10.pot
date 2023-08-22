@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1520,7 +1520,7 @@ msgid "Removed the ``formatter`` module, which was deprecated in Python 3.4. It 
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1822
-msgid "Removed the :c:func:`PyModule_GetWarningsModule` function that was useless now due to the _warnings module was converted to a builtin module in 2.6. (Contributed by Hai Shi in :issue:`42599`.)"
+msgid "Removed the :c:func:`!PyModule_GetWarningsModule` function that was useless now due to the :mod:`!_warnings` module was converted to a builtin module in 2.6. (Contributed by Hai Shi in :issue:`42599`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1826

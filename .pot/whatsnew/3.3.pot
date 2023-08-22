@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 20:14+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2440,7 +2440,7 @@ msgid "Encoders:"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:2307
-msgid ":c:func:`!PyUnicode_Encode`: use :c:func:`PyUnicode_AsEncodedObject`"
+msgid ":c:func:`!PyUnicode_Encode`: use :c:func:`!PyUnicode_AsEncodedObject`"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:2308
@@ -2608,7 +2608,7 @@ msgid "Porting C code"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:2464
-msgid "In the course of changes to the buffer API the undocumented :c:member:`~Py_buffer.smalltable` member of the :c:type:`Py_buffer` structure has been removed and the layout of the :c:type:`PyMemoryViewObject` has changed."
+msgid "In the course of changes to the buffer API the undocumented :c:member:`!smalltable` member of the :c:type:`Py_buffer` structure has been removed and the layout of the :c:type:`PyMemoryViewObject` has changed."
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:2469

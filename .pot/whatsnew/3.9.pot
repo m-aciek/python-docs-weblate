@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 20:14+0000\n"
+"POT-Creation-Date: 2023-08-22 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -825,7 +825,7 @@ msgid "The :mod:`parser` and :mod:`symbol` modules are deprecated and will be re
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:873
-msgid "The Public C API functions :c:func:`PyParser_SimpleParseStringFlags`, :c:func:`PyParser_SimpleParseStringFlagsFilename`, :c:func:`PyParser_SimpleParseFileFlags` and :c:func:`PyNode_Compile` are deprecated and will be removed in Python 3.10 together with the old parser."
+msgid "The Public C API functions :c:func:`!PyParser_SimpleParseStringFlags`, :c:func:`!PyParser_SimpleParseStringFlagsFilename`, :c:func:`!PyParser_SimpleParseFileFlags` and :c:func:`!PyNode_Compile` are deprecated and will be removed in Python 3.10 together with the old parser."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:878
@@ -873,7 +873,7 @@ msgid ":mod:`ast` classes ``Suite``, ``Param``, ``AugLoad`` and ``AugStore`` are
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:926
-msgid "The :c:func:`PyEval_InitThreads` and :c:func:`PyEval_ThreadsInitialized` functions are now deprecated and will be removed in Python 3.11. Calling :c:func:`PyEval_InitThreads` now does nothing. The :term:`GIL` is initialized by :c:func:`Py_Initialize()` since Python 3.7. (Contributed by Victor Stinner in :issue:`39877`.)"
+msgid "The :c:func:`!PyEval_InitThreads` and :c:func:`!PyEval_ThreadsInitialized` functions are now deprecated and will be removed in Python 3.11. Calling :c:func:`!PyEval_InitThreads` now does nothing. The :term:`GIL` is initialized by :c:func:`Py_Initialize` since Python 3.7. (Contributed by Victor Stinner in :issue:`39877`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:932
