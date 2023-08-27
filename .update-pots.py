@@ -40,6 +40,7 @@ def _update_pots(version: str) -> None:
                 try:
                     _call(f'git -C {directory}/cpython/ reset --hard HEAD@{1}')  # move one commit forward
                 except CalledProcessError:
+                    info("Already on repository's HEAD, breaking out of the loop")
                     break
 
     else:
