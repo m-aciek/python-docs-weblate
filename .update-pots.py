@@ -2,6 +2,7 @@
 
 from argparse import ArgumentParser
 from contextlib import chdir
+from logging import info, basicConfig
 from os import PathLike
 from pathlib import Path
 from re import match
@@ -20,6 +21,7 @@ def _update_pots(version: str) -> None:
     if git_log:
         cpython_commit_line, *_ = git_log
         cpython_commit = cpython_commit_line.removeprefix('CPython-sync-commit: ')
+        info(f"Latest CPython sync commit found: {cpython_commit}")
         with TemporaryDirectory() as directory:
             with chdir(directory):
                 _clone_cpython_repo(version, shallow=False)
@@ -41,6 +43,7 @@ def _update_pots(version: str) -> None:
                     break
 
     else:
+        info("Latest CPython sync commit not found")
         # if latest sync commit not found, checkout the HEAD
         with TemporaryDirectory() as directory:
             with chdir(directory):
@@ -97,5 +100,7 @@ if __name__ == "__main__":
     parser = ArgumentParser(description=__doc__)
     parser.add_argument('version')
     options = parser.parse_args()
+
+    basicConfig(level='INFO')
 
     _update_pots(options.version)
