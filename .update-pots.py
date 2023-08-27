@@ -12,12 +12,14 @@ from tempfile import TemporaryDirectory
 
 def _update_pots(version: str) -> None:
     _call('git diff --exit-code')  # ensure working tree clean
-    cpython_commit = [
+    git_log = [
         line for line
         in _output('git log --grep CPython-sync-commit: --pretty=format:"%B" --max-count=1').splitlines()
         if line.startswith('CPython-sync-commit: ')
-    ][0].removeprefix('CPython-sync-commit: ')
-    if cpython_commit:
+    ]
+    if git_log:
+        cpython_commit_line, *_ = git_log
+        cpython_commit = cpython_commit_line.removeprefix('CPython-sync-commit: ')
         with TemporaryDirectory() as directory:
             with chdir(directory):
                 _clone_cpython_repo(version, shallow=False)
