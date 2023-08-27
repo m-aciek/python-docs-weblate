@@ -30,7 +30,7 @@ def _update_pots(version: str) -> None:
                 with chdir(directory):
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
-                    commit_message = _output('git -C cpython log --pretty=format:"%B" --max-count=1')
+                    commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
                 _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
                 changed = _get_changed_pots()
                 added = _get_new_pots()
@@ -39,7 +39,7 @@ def _update_pots(version: str) -> None:
                     _call(f'git commit -m "{commit_message}\nCPython-sync-commit: {cpython_commit}"')
                 _call('git restore .')  # discard ignored files
                 try:
-                    _call(f'git -C {directory}/cpython/ reset --hard HEAD@{1}')  # move one commit forward
+                    _call(f'git -C {directory}/cpython/ reset --hard HEAD@{{1}}')  # move one commit forward
                 except CalledProcessError:
                     info("Already on repository's HEAD, breaking out of the loop")
                     break
