@@ -10,17 +10,19 @@ from shutil import move, rmtree
 from subprocess import check_call, check_output
 from tempfile import TemporaryDirectory
 
+SYNC_COMMIT_FIELD = 'CPython-sync-commit:'
+
 
 def _update_pots(version: str) -> None:
     _call('git diff --exit-code')  # ensure working tree clean
     sync_commit_lines = [
         line for line
-        in _output('git log --grep CPython-sync-commit: --pretty=format:"%B" --max-count=1').splitlines()
-        if line.startswith('CPython-sync-commit: ')
+        in _output(f'git log --grep {SYNC_COMMIT_FIELD} --pretty=format:"%B" --max-count=1').splitlines()
+        if line.startswith(SYNC_COMMIT_FIELD)
     ]
     if sync_commit_lines:
         cpython_commit_line, *_ = sync_commit_lines
-        cpython_commit = cpython_commit_line.removeprefix('CPython-sync-commit: ')
+        cpython_commit = cpython_commit_line.removeprefix(f'{SYNC_COMMIT_FIELD} ')
         info(f"Latest CPython sync commit found: {cpython_commit}")
         with TemporaryDirectory() as directory:
             with chdir(directory):
@@ -71,7 +73,7 @@ def _commit_changed(commit_message: str, commit: str) -> None:
     added = _get_new_pots()
     if all_ := changed + added:
         _call(f'git add {" ".join(all_)}')
-        _call(f'git commit -m "{commit_message}\n\nCPython-sync-commit: {commit}"')
+        _call(f'git commit -m "{commit_message}\n\n{SYNC_COMMIT_FIELD} {commit}"')
     _call('git restore .')  # discard ignored files
 
 
