@@ -7,19 +7,19 @@ from os import PathLike
 from pathlib import Path
 from re import match
 from shutil import move, rmtree
-from subprocess import check_call, check_output, CalledProcessError
+from subprocess import check_call, check_output
 from tempfile import TemporaryDirectory
 
 
 def _update_pots(version: str) -> None:
     _call('git diff --exit-code')  # ensure working tree clean
-    git_log = [
+    sync_commit_lines = [
         line for line
         in _output('git log --grep CPython-sync-commit: --pretty=format:"%B" --max-count=1').splitlines()
         if line.startswith('CPython-sync-commit: ')
     ]
-    if git_log:
-        cpython_commit_line, *_ = git_log
+    if sync_commit_lines:
+        cpython_commit_line, *_ = sync_commit_lines
         cpython_commit = cpython_commit_line.removeprefix('CPython-sync-commit: ')
         info(f"Latest CPython sync commit found: {cpython_commit}")
         with TemporaryDirectory() as directory:
@@ -33,12 +33,7 @@ def _update_pots(version: str) -> None:
                     _build_gettext()
                     commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
                 _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
-                changed = _get_changed_pots()
-                added = _get_new_pots()
-                if all_ := changed + added:
-                    _call(f'git add {" ".join(all_)}')
-                    _call(f'git commit -m "{commit_message}\nCPython-sync-commit: {commit}"')
-                _call('git restore .')  # discard ignored files
+                _commit_changed(commit, commit_message)
 
     else:
         info("Latest CPython sync commit not found")
@@ -50,12 +45,7 @@ def _update_pots(version: str) -> None:
                 _build_gettext()
                 cpython_commit = _output('git -C cpython/ rev-parse HEAD')
             _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
-        changed = _get_changed_pots()
-        added = _get_new_pots()
-        if all_ := changed + added:
-            _call(f'git add {" ".join(all_)}')
-            _call(f'git commit -m "Update sources\n\nCPython-sync-commit: {cpython_commit}"')
-        _call('git restore .')  # discard ignored files
+        _commit_changed("Update sources", cpython_commit)
 
 
 def _clone_cpython_repo(version: str, shallow: bool):
@@ -74,6 +64,15 @@ def _build_gettext():
 def _replace_tree(source: PathLike, target: PathLike):
     rmtree(target)
     move(source, target)
+
+
+def _commit_changed(commit_message: str, commit: str) -> None:
+    changed = _get_changed_pots()
+    added = _get_new_pots()
+    if all_ := changed + added:
+        _call(f'git add {" ".join(all_)}')
+        _call(f'git commit -m "{commit_message}\n\nCPython-sync-commit: {commit}"')
+    _call('git restore .')  # discard ignored files
 
 
 def _get_changed_pots() -> list[str]:
