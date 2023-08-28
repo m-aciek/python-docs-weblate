@@ -25,6 +25,7 @@ def _update_pots(version: str) -> None:
         with TemporaryDirectory() as directory:
             with chdir(directory):
                 _clone_cpython_repo(version, shallow=False)
+                cpython_head = _output('git -C cpython/ rev-parse HEAD')
                 _call(f'git -C cpython/ checkout {cpython_commit}')
             while True:
                 with chdir(directory):
@@ -39,11 +40,10 @@ def _update_pots(version: str) -> None:
                     _call(f'git add {" ".join(all_)}')
                     _call(f'git commit -m "{commit_message}\nCPython-sync-commit: {cpython_commit}"')
                 _call('git restore .')  # discard ignored files
-                try:
-                    _call(f'git -C {directory}/cpython/ checkout HEAD@{{1}}')  # move one commit forward
-                except CalledProcessError:
+                if cpython_commit == cpython_head:
                     info("Already on repository's HEAD, breaking out of the loop")
                     break
+                _call(f'git -C {directory}/cpython/ checkout HEAD@{{1}}')  # move one commit forward
 
     else:
         info("Latest CPython sync commit not found")
