@@ -25,25 +25,20 @@ def _update_pots(version: str) -> None:
         with TemporaryDirectory() as directory:
             with chdir(directory):
                 _clone_cpython_repo(version, shallow=False)
-                cpython_head = _output('git -C cpython/ rev-parse HEAD')
-                _call(f'git -C cpython/ checkout {cpython_commit}')
-            while True:
+                commits = _output(f'git -C cpython/ log --pretty=format:"%H" --reverse {cpython_commit}..')
+            for commit in commits.splitlines():
                 with chdir(directory):
+                    _call(f'git -C cpython/ checkout {commit}')
                     _call('make -C cpython/Doc/ venv')
                     _build_gettext()
                     commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
-                    cpython_commit = _output('git -C cpython/ log --pretty=format:"%H" --max-count=1')
                 _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
                 changed = _get_changed_pots()
                 added = _get_new_pots()
                 if all_ := changed + added:
                     _call(f'git add {" ".join(all_)}')
-                    _call(f'git commit -m "{commit_message}\nCPython-sync-commit: {cpython_commit}"')
+                    _call(f'git commit -m "{commit_message}\nCPython-sync-commit: {commit}"')
                 _call('git restore .')  # discard ignored files
-                if cpython_commit == cpython_head:
-                    info("Already on repository's HEAD, breaking out of the loop")
-                    break
-                _call(f'git -C {directory}/cpython/ checkout HEAD@{{1}}')  # move one commit forward
 
     else:
         info("Latest CPython sync commit not found")
