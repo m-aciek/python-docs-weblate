@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 22:12+0000\n"
+"POT-Creation-Date: 2023-08-29 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1038,7 +1038,7 @@ msgid "Note that this function is meant to accommodate an unusual case; one whic
 msgstr ""
 
 #: ../../library/importlib.rst:1271
-msgid "You can get the same effect as this function by implementing the basic interface of multi-phase init (:pep:`489`) and lying about support for mulitple interpreters (or per-interpreter GIL)."
+msgid "You can get the same effect as this function by implementing the basic interface of multi-phase init (:pep:`489`) and lying about support for multiple interpreters (or per-interpreter GIL)."
 msgstr ""
 
 #: ../../library/importlib.rst:1276

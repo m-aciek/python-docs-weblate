@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 11:10+0000\n"
+"POT-Creation-Date: 2023-08-29 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,7 +269,7 @@ msgid "Install architecture-independent files in PREFIX. On Unix, it defaults to
 msgstr ""
 
 #: ../../using/configure.rst:224
-msgid "This value can be retrived at runtime using :data:`sys.prefix`."
+msgid "This value can be retrieved at runtime using :data:`sys.prefix`."
 msgstr ""
 
 #: ../../using/configure.rst:226
@@ -281,7 +281,7 @@ msgid "Install architecture-dependent files in EPREFIX, defaults to :option:`--p
 msgstr ""
 
 #: ../../using/configure.rst:233
-msgid "This value can be retrived at runtime using :data:`sys.exec_prefix`."
+msgid "This value can be retrieved at runtime using :data:`sys.exec_prefix`."
 msgstr ""
 
 #: ../../using/configure.rst:237

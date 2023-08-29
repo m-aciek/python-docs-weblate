@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-08-29 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1074,7 +1074,7 @@ msgid "An :term:`!iterable` of parameters to bind with the placeholders in *sql*
 msgstr ""
 
 #: ../../library/sqlite3.rst:1548
-msgid "If *sql* contains more than one SQL statement, or is not a DML statment."
+msgid "If *sql* contains more than one SQL statement, or is not a DML statement."
 msgstr ""
 
 #: ../../library/sqlite3.rst:1565

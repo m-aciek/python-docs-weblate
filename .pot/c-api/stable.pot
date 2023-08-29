@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-08-29 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "CPython's Application Binary Interface (ABI) is forward- and backwards-co
 msgstr ""
 
 #: ../../c-api/stable.rst:21
-msgid "There are two tiers of C API with different stability exepectations:"
+msgid "There are two tiers of C API with different stability expectations:"
 msgstr ""
 
 #: ../../c-api/stable.rst:23
