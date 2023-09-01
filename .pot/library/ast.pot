@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-09-01 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -289,7 +289,7 @@ msgid "``args`` holds a list of the arguments passed by position."
 msgstr ""
 
 #: ../../library/ast.rst:588
-msgid "``keywords`` holds a list of :class:`keyword` objects representing arguments passed by keyword."
+msgid "``keywords`` holds a list of :class:`.keyword` objects representing arguments passed by keyword."
 msgstr ""
 
 #: ../../library/ast.rst:591
@@ -641,7 +641,7 @@ msgid "``bases`` is a list of nodes for explicitly specified base classes."
 msgstr ""
 
 #: ../../library/ast.rst:2027
-msgid "``keywords`` is a list of :class:`keyword` nodes, principally for 'metaclass'. Other keywords will be passed to the metaclass, as per `PEP-3115 <https://peps.python.org/pep-3115/>`_."
+msgid "``keywords`` is a list of :class:`.keyword` nodes, principally for 'metaclass'. Other keywords will be passed to the metaclass, as per `PEP-3115 <https://peps.python.org/pep-3115/>`_."
 msgstr ""
 
 #: ../../library/ast.rst:2030

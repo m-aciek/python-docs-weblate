@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 11:36+0000\n"
+"POT-Creation-Date: 2023-09-01 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,7 @@ msgid "*Attribute references* use the standard syntax used for all attribute ref
 msgstr ""
 
 #: ../../tutorial/classes.rst:276
-msgid "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of ``MyClass.i`` by assignment. :attr:`__doc__` is also a valid attribute, returning the docstring belonging to the class: ``\"A simple example class\"``."
+msgid "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of ``MyClass.i`` by assignment. :attr:`!__doc__` is also a valid attribute, returning the docstring belonging to the class: ``\"A simple example class\"``."
 msgstr ""
 
 #: ../../tutorial/classes.rst:282
