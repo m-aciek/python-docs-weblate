@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 21:10+0000\n"
+"POT-Creation-Date: 2023-09-05 13:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1646,19 +1646,23 @@ msgstr ""
 msgid "The version number used to form registry keys on Windows platforms. This is stored as string resource 1000 in the Python DLL.  The value is normally the major and minor versions of the running Python interpreter.  It is provided in the :mod:`sys` module for informational purposes; modifying this value has no effect on the registry keys used by Python."
 msgstr ""
 
-#: ../../library/sys.rst:1958
+#: ../../library/sys.rst:1959
+msgid "Namespace containing functions and constants for register callbacks and controlling monitoring events. See  :mod:`sys.monitoring` for details."
+msgstr ""
+
+#: ../../library/sys.rst:1965
 msgid "A dictionary of the various implementation-specific flags passed through the :option:`-X` command-line option.  Option names are either mapped to their values, if given explicitly, or to :const:`True`.  Example:"
 msgstr ""
 
-#: ../../library/sys.rst:1974
+#: ../../library/sys.rst:1981
 msgid "This is a CPython-specific way of accessing options passed through :option:`-X`.  Other implementations may export them through other means, or not at all."
 msgstr ""
 
-#: ../../library/sys.rst:1982
+#: ../../library/sys.rst:1989
 msgid "Citations"
 msgstr ""
 
-#: ../../library/sys.rst:1983
+#: ../../library/sys.rst:1990
 msgid "ISO/IEC 9899:1999.  \"Programming languages -- C.\"  A public draft of this standard is available at https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf\\ ."
 msgstr ""
 
