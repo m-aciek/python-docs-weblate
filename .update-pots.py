@@ -7,14 +7,14 @@ from os import PathLike
 from pathlib import Path
 from re import match
 from shutil import move, rmtree
-from subprocess import check_call, check_output
+from subprocess import check_call, check_output, CalledProcessError
 from tempfile import TemporaryDirectory
 
 SYNC_COMMIT_FIELD = 'CPython-sync-commit:'
 
 
 def _update_pots(version: str) -> None:
-    _call('git diff --exit-code')  # ensure working tree clean
+    _ensure_working_tree_clean()
     sync_commit_lines = [
         line for line
         in _output(f'git log --grep {SYNC_COMMIT_FIELD} --pretty=format:"%B" --max-count=1').splitlines()
@@ -48,6 +48,13 @@ def _update_pots(version: str) -> None:
                 cpython_commit = _output('git -C cpython/ rev-parse HEAD')
             _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
         _commit_changed("Update sources", cpython_commit)
+
+
+def _ensure_working_tree_clean():
+    try:
+        _call('git diff --exit-code')
+    except CalledProcessError as error:
+        raise EnvironmentError('Working tree is not clean. Please commit or stash your changes.') from error
 
 
 def _clone_cpython_repo(version: str, shallow: bool):
