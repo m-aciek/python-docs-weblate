@@ -15,46 +15,61 @@ SYNC_COMMIT_FIELD = 'CPython-sync-commit:'
 
 def _update_pots(version: str) -> None:
     _ensure_working_tree_clean()
-    sync_commit_lines = [
-        line for line
-        in _output(f'git log --grep {SYNC_COMMIT_FIELD} --pretty=format:"%B" --max-count=1').splitlines()
-        if line.startswith(SYNC_COMMIT_FIELD)
-    ]
-    if sync_commit_lines:
-        cpython_commit_line, *_ = sync_commit_lines
-        cpython_commit = cpython_commit_line.removeprefix(f'{SYNC_COMMIT_FIELD} ')
+    if cpython_commit := _get_latest_sync_commit():
         info(f"Latest CPython sync commit found: {cpython_commit}")
-        with TemporaryDirectory() as directory:
-            with chdir(directory):
-                _clone_cpython_repo(version, shallow=False)
-                commits = _output(f'git -C cpython/ log --pretty=format:"%H" --reverse {cpython_commit}..')
-            for commit in commits.splitlines():
-                with chdir(directory):
-                    _call(f'git -C cpython/ checkout {commit}')
-                    _call('make -C cpython/Doc/ venv')
-                    _build_gettext()
-                    commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
-                _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
-                _commit_changed(commit, commit_message)
-
+        _clone_and_iterate_committing(cpython_commit, version)
     else:
         info("Latest CPython sync commit not found")
-        # if latest sync commit not found, checkout the HEAD
-        with TemporaryDirectory() as directory:
-            with chdir(directory):
-                _clone_cpython_repo(version, shallow=True)
-                _call('make -C cpython/Doc/ venv')
-                _build_gettext()
-                cpython_commit = _output('git -C cpython/ rev-parse HEAD')
-            _replace_tree(Path(directory, 'cpython/Doc/locales/pot'), '.pot')
-        _commit_changed("Update sources", cpython_commit)
+        _clone_and_commit(version)
 
 
-def _ensure_working_tree_clean():
+def _ensure_working_tree_clean() -> None:
     try:
         _call('git diff --exit-code')
     except CalledProcessError as error:
         raise EnvironmentError('Working tree is not clean. Please commit or stash your changes.') from error
+
+
+def _get_latest_sync_commit() -> str | None:
+    sync_commit_lines = [
+        line for line in _get_latest_commit_message_containing(SYNC_COMMIT_FIELD) if line.startswith(SYNC_COMMIT_FIELD)
+    ]
+    if not sync_commit_lines:
+        return
+    return sync_commit_lines[0].removeprefix(f'{SYNC_COMMIT_FIELD} ')
+
+
+def _get_latest_commit_message_containing(phrase: str) -> list[str]:
+    return _output(f'git log --grep {phrase} --pretty=format:"%B" --max-count=1').splitlines()
+
+
+def _clone_and_iterate_committing(cpython_commit, version) -> None:
+    with TemporaryDirectory() as directory:
+        with chdir(directory):
+            _clone_cpython_repo(version, shallow=False)
+            commits = _output(f'git -C cpython/ log --pretty=format:"%H" --reverse {cpython_commit}..')
+        for commit in commits.splitlines():
+            with chdir(directory):
+                _call(f'git -C cpython/ checkout {commit}')
+                _call('make -C cpython/Doc/ venv')
+                _build_gettext()
+                commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
+            pot_directory = Path(directory, 'cpython/Doc/locales/pot')
+            _replace_tree(pot_directory, '.pot')
+            _commit_changed(commit, commit_message)
+
+
+def _clone_and_commit(version):
+    # if latest sync commit not found, checkout the HEAD
+    with TemporaryDirectory() as directory:
+        with chdir(directory):
+            _clone_cpython_repo(version, shallow=True)
+            _call('make -C cpython/Doc/ venv')
+            _build_gettext()
+            cpython_commit = _output('git -C cpython/ rev-parse HEAD')
+        pot_directory = Path(directory, 'cpython/Doc/locales/pot')
+        _replace_tree(pot_directory, '.pot')
+    _commit_changed("Update sources", cpython_commit)
 
 
 def _clone_cpython_repo(version: str, shallow: bool):
