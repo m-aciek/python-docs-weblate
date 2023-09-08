@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-05 13:17+0000\n"
+"POT-Creation-Date: 2023-09-08 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,7 +274,7 @@ msgid "This function prints out a given traceback and exception to ``sys.stderr`
 msgstr ""
 
 #: ../../library/sys.rst:381
-msgid "When an exception is raised and uncaught, the interpreter calls ``sys.excepthook`` with three arguments, the exception class, exception instance, and a traceback object.  In an interactive session this happens just before control is returned to the prompt; in a Python program this happens just before the program exits.  The handling of such top-level exceptions can be customized by assigning another three-argument function to ``sys.excepthook``."
+msgid "When an exception other than :exc:`SystemExit` is raised and uncaught, the interpreter calls ``sys.excepthook`` with three arguments, the exception class, exception instance, and a traceback object.  In an interactive session this happens just before control is returned to the prompt; in a Python program this happens just before the program exits.  The handling of such top-level exceptions can be customized by assigning another three-argument function to ``sys.excepthook``."
 msgstr ""
 
 #: ../../library/sys.rst:388
