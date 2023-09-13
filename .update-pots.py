@@ -1,4 +1,4 @@
-"""updates translation sources and commits them"""
+"""updates translation sources and commits them commit by commit from CPython repository"""
 
 from argparse import ArgumentParser
 from contextlib import chdir
