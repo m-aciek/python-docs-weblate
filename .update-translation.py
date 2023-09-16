@@ -1,7 +1,7 @@
 """updates translation files for a language from the Weblate project and commits them"""
 
 from argparse import ArgumentParser
-from logging import info, basicConfig, warning
+from logging import basicConfig, error, info, warning
 from os import getenv
 from pathlib import Path
 from re import match
@@ -40,20 +40,20 @@ def _download_translations(language: str, weblate_key: str) -> None:
     for component in tqdm(project.list()):
         if component.is_glossary:
             continue
-        url = f'https://hosted.weblate.org/api/translations/python-docs/{component.slug}/{language}/'
+        translations = component.list()
+        while (translation := next(translations, None)) and translation.language.code != 'pl':
+            pass
+        if not translation:
+            info(f"{component.slug} doesn't have a {language} translation")
+            continue
         try:
-            content = Translation(weblate, url).download()
+            content = translation.download()
         except WeblateThrottlingError:
-            info(f'Skipped {component.slug} due to throttling')
-        except WeblateException as exc:
-            if str(exc) == 'Object not found on the server (maybe operation is not supported on the server)':
-                info(f"{component.slug} doesn't have a {language} translation")
-                continue
-            raise
-        else:
-            path = Path(component.filemask.removeprefix('*/'))
-            path.parent.mkdir(exist_ok=True)
-            path.write_bytes(content)
+            error(f'Throttled on {component.slug}', exc_info=True)
+            break
+        path = Path(component.filemask.removeprefix('*/'))
+        path.parent.mkdir(exist_ok=True)
+        path.write_bytes(content)
 
 
 def _get_changed_files() -> list[str]:
