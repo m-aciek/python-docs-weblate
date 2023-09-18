@@ -56,7 +56,7 @@ def _clone_and_iterate_committing(cpython_commit, version) -> None:
                 commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
             pot_directory = Path(directory, 'cpython/Doc/locales/pot')
             _replace_tree(pot_directory, '.pot')
-            _commit_changed(commit, commit_message)
+            _commit_changed(commit_message, commit)
 
 
 def _clone_and_commit(version):
