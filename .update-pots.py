@@ -31,12 +31,18 @@ def _ensure_working_tree_clean() -> None:
 
 
 def _get_latest_sync_commit() -> str | None:
+    _ensure_not_shallow()
     sync_commit_lines = [
         line for line in _get_latest_commit_message_containing(SYNC_COMMIT_FIELD) if line.startswith(SYNC_COMMIT_FIELD)
     ]
     if not sync_commit_lines:
         return
     return sync_commit_lines[0].removeprefix(f'{SYNC_COMMIT_FIELD} ')
+
+
+def _ensure_not_shallow() -> None:
+    if _output('git rev-parse --is-shallow-repository') == 'true\n':
+        raise EnvironmentError('Repository is shallow, you could miss a sync commit in the log. Aborting.')
 
 
 def _get_latest_commit_message_containing(phrase: str) -> list[str]:
