@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-22 13:34+0000\n"
+"POT-Creation-Date: 2023-09-24 21:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -442,11 +442,11 @@ msgid "Added :func:`asyncio.eager_task_factory` and :func:`asyncio.create_eager_
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:573
-msgid "On Linux, :mod:`asyncio` uses :class:`~asyncio.PidfdChildWatcher` by default if :func:`os.pidfd_open` is available and functional instead of :class:`~asyncio.ThreadedChildWatcher`. (Contributed by Kumar Aditya in :gh:`98024`.)"
+msgid "On Linux, :mod:`asyncio` uses :class:`asyncio.PidfdChildWatcher` by default if :func:`os.pidfd_open` is available and functional instead of :class:`asyncio.ThreadedChildWatcher`. (Contributed by Kumar Aditya in :gh:`98024`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:578
-msgid "The child watcher classes :class:`~asyncio.MultiLoopChildWatcher`, :class:`~asyncio.FastChildWatcher`, :class:`~asyncio.AbstractChildWatcher` and :class:`~asyncio.SafeChildWatcher` are deprecated and will be removed in Python 3.14. It is recommended to not manually configure a child watcher as the event loop now uses the best available child watcher for each platform (:class:`~asyncio.PidfdChildWatcher` if supported and :class:`~asyncio.ThreadedChildWatcher` otherwise). (Contributed by Kumar Aditya in :gh:`94597`.)"
+msgid "The child watcher classes :class:`asyncio.MultiLoopChildWatcher`, :class:`asyncio.FastChildWatcher`, :class:`asyncio.AbstractChildWatcher` and :class:`asyncio.SafeChildWatcher` are deprecated and will be removed in Python 3.14. It is recommended to not manually configure a child watcher as the event loop now uses the best available child watcher for each platform (:class:`asyncio.PidfdChildWatcher` if supported and :class:`asyncio.ThreadedChildWatcher` otherwise). (Contributed by Kumar Aditya in :gh:`94597`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:587
@@ -482,7 +482,7 @@ msgid "csv"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:618
-msgid "Add :const:`~csv.QUOTE_NOTNULL` and :const:`~csv.QUOTE_STRINGS` flags to provide finer grained control of ``None`` and empty strings by :class:`~csv.writer` objects."
+msgid "Add :const:`csv.QUOTE_NOTNULL` and :const:`csv.QUOTE_STRINGS` flags to provide finer grained control of ``None`` and empty strings by :class:`csv.writer` objects."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:623
@@ -490,7 +490,7 @@ msgid "dis"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:625
-msgid "Pseudo instruction opcodes (which are used by the compiler but do not appear in executable bytecode) are now exposed in the :mod:`dis` module. :opcode:`HAVE_ARGUMENT` is still relevant to real opcodes, but it is not useful for pseudo instructions. Use the new :data:`~dis.hasarg` collection instead. (Contributed by Irit Katriel in :gh:`94216`.)"
+msgid "Pseudo instruction opcodes (which are used by the compiler but do not appear in executable bytecode) are now exposed in the :mod:`dis` module. :opcode:`HAVE_ARGUMENT` is still relevant to real opcodes, but it is not useful for pseudo instructions. Use the new :data:`dis.hasarg` collection instead. (Contributed by Irit Katriel in :gh:`94216`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:634
@@ -582,11 +582,11 @@ msgid "pathlib"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:715
-msgid "Add support for subclassing :class:`pathlib.PurePath` and :class:`~pathlib.Path`, plus their Posix- and Windows-specific variants. Subclasses may override the :meth:`~pathlib.PurePath.with_segments` method to pass information between path instances."
+msgid "Add support for subclassing :class:`pathlib.PurePath` and :class:`pathlib.Path`, plus their Posix- and Windows-specific variants. Subclasses may override the :meth:`pathlib.PurePath.with_segments` method to pass information between path instances."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:720
-msgid "Add :meth:`~pathlib.Path.walk` for walking the directory trees and generating all file or directory names within them, similar to :func:`os.walk`. (Contributed by Stanislav Zmiev in :gh:`90385`.)"
+msgid "Add :meth:`pathlib.Path.walk` for walking the directory trees and generating all file or directory names within them, similar to :func:`os.walk`. (Contributed by Stanislav Zmiev in :gh:`90385`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:724
@@ -655,15 +655,15 @@ msgid "Add a :ref:`command-line interface <sqlite3-cli>`. (Contributed by Erlend
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:789
-msgid "Add the :attr:`~sqlite3.Connection.autocommit` attribute to :class:`~sqlite3.Connection` and the *autocommit* parameter to :func:`~sqlite3.connect` to control :pep:`249`-compliant :ref:`transaction handling <sqlite3-transaction-control-autocommit>`. (Contributed by Erlend E. Aasland in :gh:`83638`.)"
+msgid "Add the :attr:`sqlite3.Connection.autocommit` attribute to :class:`sqlite3.Connection` and the *autocommit* parameter to :func:`sqlite3.connect` to control :pep:`249`-compliant :ref:`transaction handling <sqlite3-transaction-control-autocommit>`. (Contributed by Erlend E. Aasland in :gh:`83638`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:796
-msgid "Add *entrypoint* keyword-only parameter to :meth:`~sqlite3.Connection.load_extension`, for overriding the SQLite extension entry point. (Contributed by Erlend E. Aasland in :gh:`103015`.)"
+msgid "Add *entrypoint* keyword-only parameter to :meth:`sqlite3.Connection.load_extension`, for overriding the SQLite extension entry point. (Contributed by Erlend E. Aasland in :gh:`103015`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:801
-msgid "Add :meth:`~sqlite3.Connection.getconfig` and :meth:`~sqlite3.Connection.setconfig` to :class:`~sqlite3.Connection` to make configuration changes to a database connection. (Contributed by Erlend E. Aasland in :gh:`103489`.)"
+msgid "Add :meth:`sqlite3.Connection.getconfig` and :meth:`sqlite3.Connection.setconfig` to :class:`sqlite3.Connection` to make configuration changes to a database connection. (Contributed by Erlend E. Aasland in :gh:`103489`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:807
