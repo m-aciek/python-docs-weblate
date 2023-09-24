@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:27+0000\n"
+"POT-Creation-Date: 2023-09-24 21:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,19 +214,15 @@ msgid "PEP 684: A Per-Interpreter GIL"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:294
-msgid "Sub-interpreters may now be created with a unique GIL per interpreter. This allows Python programs to take full advantage of multiple CPU cores."
+msgid ":pep:`684` introduces a per-interpreter :term:`GIL <global interpreter lock>`, so that sub-interpreters may now be created with a unique GIL per interpreter. This allows Python programs to take full advantage of multiple CPU cores. This is currently only available through the C-API, though a Python API is :pep:`anticipated for 3.13 <554>`."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:298
+#: ../../whatsnew/3.12.rst:300
 msgid "Use the new :c:func:`Py_NewInterpreterFromConfig` function to create an interpreter with its own GIL::"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:312
+#: ../../whatsnew/3.12.rst:314
 msgid "For further examples how to use the C-API for sub-interpreters with a per-interpreter GIL, see :source:`Modules/_xxsubinterpretersmodule.c`."
-msgstr ""
-
-#: ../../whatsnew/3.12.rst:315
-msgid "A Python API is anticipated for 3.13.  (See :pep:`554`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:317
