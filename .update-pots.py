@@ -101,7 +101,7 @@ def _commit_changed(commit_message: str, commit: str) -> None:
     added = _get_new_pots()
     if all_ := changed + added:
         _call(f'git add {" ".join(all_)}')
-        _call(f'git commit -m "{commit_message}\n\n{SYNC_COMMIT_FIELD} {commit}"')
+        check_call(('git', 'commit', '-m', f'{commit_message}\n\n{SYNC_COMMIT_FIELD} {commit}'))
     _call('git restore .')  # discard ignored files
 
 
