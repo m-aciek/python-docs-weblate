@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:48+0000\n"
+"POT-Creation-Date: 2023-09-24 21:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,7 @@ msgid "Pablo Galindo Salgado"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:47
-msgid "This article explains the new features in Python 3.11, compared to 3.10."
-msgstr ""
-
-#: ../../whatsnew/3.11.rst:49
-msgid "For full details, see the :ref:`changelog <changelog>`."
+msgid "This article explains the new features in Python 3.11, compared to 3.10. Python 3.11 was released on October 24, 2022. For full details, see the :ref:`changelog <changelog>`."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:55
