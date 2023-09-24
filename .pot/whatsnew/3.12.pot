@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:36+0000\n"
+"POT-Creation-Date: 2023-09-24 21:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -426,7 +426,7 @@ msgid "The performance of writing to sockets in :mod:`asyncio` has been signific
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:569
-msgid "Added :func:`asyncio.eager_task_factory` and :func:`asyncio.create_eager_task_factory` functions to allow opting an event loop in to eager task execution, making some use-cases 2x to 5x faster. (Contributed by Jacob Bower & Itamar O in :gh:`102853`, :gh:`104140`, and :gh:`104138`)"
+msgid "Added :func:`asyncio.eager_task_factory` and :func:`asyncio.create_eager_task_factory` functions to allow opting an event loop in to eager task execution, making some use-cases 2x to 5x faster. (Contributed by Jacob Bower & Itamar Oren in :gh:`102853`, :gh:`104140`, and :gh:`104138`)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:574
@@ -446,7 +446,7 @@ msgid "Add *loop_factory* parameter to :func:`asyncio.run` to allow specifying a
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:598
-msgid "Add C implementation of :func:`asyncio.current_task` for 4x-6x speedup. (Contributed by Itamar Ostricher and Pranav Thulasiram Bhat in :gh:`100344`.)"
+msgid "Add C implementation of :func:`asyncio.current_task` for 4x-6x speedup. (Contributed by Itamar Oren and Pranav Thulasiram Bhat in :gh:`100344`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:601
@@ -801,7 +801,7 @@ msgid "Speed up the regular expression substitution (functions :func:`re.sub` an
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:989
-msgid "Speed up :class:`asyncio.Task` creation by deferring expensive string formatting. (Contributed by Itamar O in :gh:`103793`.)"
+msgid "Speed up :class:`asyncio.Task` creation by deferring expensive string formatting. (Contributed by Itamar Oren in :gh:`103793`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:992
@@ -1979,7 +1979,7 @@ msgid "Added :c:func:`PyType_AddWatcher` and :c:func:`PyType_Watch` API to regis
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1841
-msgid "Added :c:func:`PyCode_AddWatcher` and :c:func:`PyCode_ClearWatcher` APIs to register callbacks to receive notification on creation and destruction of code objects. (Contributed by Itamar Ostricher in :gh:`91054`.)"
+msgid "Added :c:func:`PyCode_AddWatcher` and :c:func:`PyCode_ClearWatcher` APIs to register callbacks to receive notification on creation and destruction of code objects. (Contributed by Itamar Oren in :gh:`91054`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1846
