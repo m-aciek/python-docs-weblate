@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:39+0000\n"
+"POT-Creation-Date: 2023-09-24 21:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -350,7 +350,7 @@ msgid ":class:`types.MappingProxyType` instances are now hashable if the underly
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:486
-msgid ":class:`memoryview` now supports the half-float type (the \"e\" format code). (Contributed by Dong-hee Na and Antoine Pitrou in :gh:`90751`.)"
+msgid ":class:`memoryview` now supports the half-float type (the \"e\" format code). (Contributed by Donghee Na and Antoine Pitrou in :gh:`90751`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:489
@@ -793,7 +793,7 @@ msgid "Removed ``wstr`` and ``wstr_length`` members from Unicode objects. It red
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:980
-msgid "Added experimental support for using the BOLT binary optimizer in the build process, which improves performance by 1-5%. (Contributed by Kevin Modzelewski in :gh:`90536` and tuned by Dong-hee Na in :gh:`101525`)"
+msgid "Added experimental support for using the BOLT binary optimizer in the build process, which improves performance by 1-5%. (Contributed by Kevin Modzelewski in :gh:`90536` and tuned by Donghee Na in :gh:`101525`)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:984
@@ -1751,7 +1751,7 @@ msgid "The :mod:`os` module no longer accepts bytes-like paths, like :class:`byt
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1632
-msgid ":func:`syslog.openlog` and :func:`syslog.closelog` now fail if used in subinterpreters. :func:`syslog.syslog` may still be used in subinterpreters, but now only if :func:`syslog.openlog` has already been called in the main interpreter. These new restrictions do not apply to the main interpreter, so only a very small set of users might be affected. This change helps with interpreter isolation.  Furthermore, :mod:`syslog` is a wrapper around process-global resources, which are best managed from the main interpreter. (Contributed by Dong-hee Na in :gh:`99127`.)"
+msgid ":func:`syslog.openlog` and :func:`syslog.closelog` now fail if used in subinterpreters. :func:`syslog.syslog` may still be used in subinterpreters, but now only if :func:`syslog.openlog` has already been called in the main interpreter. These new restrictions do not apply to the main interpreter, so only a very small set of users might be affected. This change helps with interpreter isolation.  Furthermore, :mod:`syslog` is a wrapper around process-global resources, which are best managed from the main interpreter. (Contributed by Donghee Na in :gh:`99127`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1641
@@ -1803,7 +1803,7 @@ msgid "``va_start()`` with two parameters, like ``va_start(args, format),`` is n
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1711
-msgid "CPython now uses the ThinLTO option as the default link time optimization policy if the Clang compiler accepts the flag. (Contributed by Dong-hee Na in :gh:`89536`.)"
+msgid "CPython now uses the ThinLTO option as the default link time optimization policy if the Clang compiler accepts the flag. (Contributed by Donghee Na in :gh:`89536`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1715

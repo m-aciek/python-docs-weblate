@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:45+0000\n"
+"POT-Creation-Date: 2023-09-24 21:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -717,7 +717,7 @@ msgid ":gh:`108083`: Fix bugs in the constructor of :mod:`sqlite3.Connection` an
 msgstr ""
 
 #: ../../../build/NEWS:278
-msgid ":gh:`107963`: Fix :func:`multiprocessing.set_forkserver_preload` to check the given list of modules names. Patch by Dong-hee Na."
+msgid ":gh:`107963`: Fix :func:`multiprocessing.set_forkserver_preload` to check the given list of modules names. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:281
@@ -1904,7 +1904,7 @@ msgid ":gh:`104066`: Improve the performance of :func:`hasattr` for module objec
 msgstr ""
 
 #: ../../../build/NEWS:1253
-msgid ":gh:`104028`: Reduce object creation while calling callback function from gc. Patch by Dong-hee Na."
+msgid ":gh:`104028`: Reduce object creation while calling callback function from gc. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:1256
@@ -2013,7 +2013,7 @@ msgid ":gh:`103333`: :exc:`AttributeError` now retains the ``name`` attribute wh
 msgstr ""
 
 #: ../../../build/NEWS:1358
-msgid ":gh:`103242`: Migrate :meth:`~ssl.SSLContext.set_ecdh_curve` method not to use deprecated OpenSSL APIs. Patch by Dong-hee Na."
+msgid ":gh:`103242`: Migrate :meth:`~ssl.SSLContext.set_ecdh_curve` method not to use deprecated OpenSSL APIs. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:1361
@@ -2633,7 +2633,7 @@ msgid ":gh:`104490`: Define ``.PHONY`` / virtual make targets consistently and p
 msgstr ""
 
 #: ../../../build/NEWS:1937
-msgid ":gh:`104106`: Add gcc fallback of mkfifoat/mknodat for macOS. Patch by Dong-hee Na."
+msgid ":gh:`104106`: Add gcc fallback of mkfifoat/mknodat for macOS. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:1940
@@ -2761,7 +2761,7 @@ msgid ":gh:`103091`: Add a new C-API function to eagerly assign a version tag to
 msgstr ""
 
 #: ../../../build/NEWS:2060
-msgid ":gh:`101408`: :c:func:`PyObject_GC_Resize` should calculate preheader size if needed. Patch by Dong-hee Na."
+msgid ":gh:`101408`: :c:func:`PyObject_GC_Resize` should calculate preheader size if needed. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:2063
@@ -3181,7 +3181,7 @@ msgid ":gh:`101765`: Fix SystemError / segmentation fault in iter ``__reduce__``
 msgstr ""
 
 #: ../../../build/NEWS:2459
-msgid ":gh:`101430`: Update :mod:`tracemalloc` to handle presize of object properly. Patch by Dong-hee Na."
+msgid ":gh:`101430`: Update :mod:`tracemalloc` to handle presize of object properly. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:2462
@@ -3441,11 +3441,11 @@ msgid ":gh:`59956`: The GILState API is now partially compatible with subinterpr
 msgstr ""
 
 #: ../../../build/NEWS:2722
-msgid ":gh:`101400`: Fix wrong lineno in exception message on :keyword:`continue` or :keyword:`break` which are not in a loop. Patch by Dong-hee Na."
+msgid ":gh:`101400`: Fix wrong lineno in exception message on :keyword:`continue` or :keyword:`break` which are not in a loop. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:2726
-msgid ":gh:`101372`: Fix :func:`~unicodedata.is_normalized` to properly handle the UCD 3.2.0 cases. Patch by Dong-hee Na."
+msgid ":gh:`101372`: Fix :func:`~unicodedata.is_normalized` to properly handle the UCD 3.2.0 cases. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:2729
@@ -3621,7 +3621,7 @@ msgid ":gh:`101334`: ``test_tarfile`` has been updated to pass when run as a hig
 msgstr ""
 
 #: ../../../build/NEWS:2899
-msgid ":gh:`101282`: Update BOLT configration not to use depreacted usage of ``--split functions``. Patch by Dong-hee Na."
+msgid ":gh:`101282`: Update BOLT configration not to use depreacted usage of ``--split functions``. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:2902
@@ -3961,7 +3961,7 @@ msgid ":gh:`85432`: Rename the *fmt* parameter of the pure-Python implementation
 msgstr ""
 
 #: ../../../build/NEWS:3201
-msgid ":gh:`98778`: Update :exc:`~urllib.error.HTTPError` to be initialized properly, even if the ``fp`` is ``None``. Patch by Dong-hee Na."
+msgid ":gh:`98778`: Update :exc:`~urllib.error.HTTPError` to be initialized properly, even if the ``fp`` is ``None``. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:3204
@@ -4205,7 +4205,7 @@ msgid ":gh:`99298`: Remove the remaining error paths for attribute specializatio
 msgstr ""
 
 #: ../../../build/NEWS:3459
-msgid ":gh:`99127`: Allow some features of :mod:`syslog` to the main interpreter only. Patch by Dong-hee Na."
+msgid ":gh:`99127`: Allow some features of :mod:`syslog` to the main interpreter only. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:3462
@@ -4537,7 +4537,7 @@ msgid ":gh:`99204`: Fix calculation of :data:`sys._base_executable` when inside 
 msgstr ""
 
 #: ../../../build/NEWS:3791
-msgid ":gh:`96055`: Update :mod:`faulthandler` to emit an error message with the proper unexpected signal number. Patch by Dong-hee Na."
+msgid ":gh:`96055`: Update :mod:`faulthandler` to emit an error message with the proper unexpected signal number. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:3794
@@ -4961,7 +4961,7 @@ msgid ":gh:`68966`: The deprecated mailcap module now refuses to inject unsafe t
 msgstr ""
 
 #: ../../../build/NEWS:4227
-msgid ":gh:`98374`: Suppress ImportError for invalid query for help() command. Patch by Dong-hee Na."
+msgid ":gh:`98374`: Suppress ImportError for invalid query for help() command. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:4230
@@ -4993,7 +4993,7 @@ msgid ":gh:`97973`: Modify the tokenizer to return all necessary information the
 msgstr ""
 
 #: ../../../build/NEWS:4252
-msgid ":gh:`96078`: :func:`os.sched_yield` now release the GIL while calling sched_yield(2). Patch by Dong-hee Na."
+msgid ":gh:`96078`: :func:`os.sched_yield` now release the GIL while calling sched_yield(2). Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:4255
@@ -5113,7 +5113,7 @@ msgid ":gh:`96751`: Remove dead code from ``CALL_FUNCTION_EX`` opcode."
 msgstr ""
 
 #: ../../../build/NEWS:4360
-msgid ":gh:`90751`: :class:`memoryview` now supports half-floats. Patch by Dong-hee Na and Antoine Pitrou."
+msgid ":gh:`90751`: :class:`memoryview` now supports half-floats. Patch by Donghee Na and Antoine Pitrou."
 msgstr ""
 
 #: ../../../build/NEWS:4363
@@ -5273,7 +5273,7 @@ msgid ":gh:`95150`: Update code object hashing and equality to consider all debu
 msgstr ""
 
 #: ../../../build/NEWS:4509
-msgid ":gh:`91146`: Reduce allocation size of :class:`list` from :meth:`str.split` and :meth:`str.rsplit`. Patch by Dong-hee Na and Inada Naoki."
+msgid ":gh:`91146`: Reduce allocation size of :class:`list` from :meth:`str.split` and :meth:`str.rsplit`. Patch by Donghee Na and Inada Naoki."
 msgstr ""
 
 #: ../../../build/NEWS:4513
@@ -6437,7 +6437,7 @@ msgid ":gh:`92986`: Fix :func:`ast.unparse` when ``ImportFrom.level`` is None"
 msgstr ""
 
 #: ../../../build/NEWS:5544
-msgid ":gh:`92932`: Now :func:`~dis.dis` and :func:`~dis.get_instructions` handle operand values for instructions prefixed by ``EXTENDED_ARG_QUICK``. Patch by Sam Gross and Dong-hee Na."
+msgid ":gh:`92932`: Now :func:`~dis.dis` and :func:`~dis.get_instructions` handle operand values for instructions prefixed by ``EXTENDED_ARG_QUICK``. Patch by Sam Gross and Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:5548
@@ -6940,7 +6940,7 @@ msgid ":issue:`47016`: Create a GitHub Actions workflow for verifying bundled pi
 msgstr ""
 
 #: ../../../build/NEWS:6000
-msgid ":gh:`96761`: Fix the build process of clang compiler for :program:`_bootstrap_python` if LTO optimization is applied. Patch by Matthias Görgens and Dong-hee Na."
+msgid ":gh:`96761`: Fix the build process of clang compiler for :program:`_bootstrap_python` if LTO optimization is applied. Patch by Matthias Görgens and Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:6004
@@ -6948,7 +6948,7 @@ msgid ":gh:`96883`: ``wasm32-emscripten`` builds for browsers now include :mod:`
 msgstr ""
 
 #: ../../../build/NEWS:6007
-msgid ":gh:`85936`: CPython now uses the ThinLTO option as the default policy if the Clang compiler accepts the flag. Patch by Dong-hee Na."
+msgid ":gh:`85936`: CPython now uses the ThinLTO option as the default policy if the Clang compiler accepts the flag. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:6010
@@ -7518,7 +7518,7 @@ msgid ":gh:`89373`: If Python is built in debug mode, Python now ensures that de
 msgstr ""
 
 #: ../../../build/NEWS:6530
-msgid ":gh:`91632`: Fix a minor memory leak at exit: release the memory of the :class:`generic_alias_iterator` type. Patch by Dong-hee Na."
+msgid ":gh:`91632`: Fix a minor memory leak at exit: release the memory of the :class:`generic_alias_iterator` type. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:6533
@@ -8355,7 +8355,7 @@ msgid ":issue:`47162`: WebAssembly cannot deal with bad function pointer casts (
 msgstr ""
 
 #: ../../../build/NEWS:7259
-msgid ":issue:`46775`: Some Windows system error codes(>= 10000) are now mapped into the correct errno and may now raise a subclass of :exc:`OSError`. Patch by Dong-hee Na."
+msgid ":issue:`46775`: Some Windows system error codes(>= 10000) are now mapped into the correct errno and may now raise a subclass of :exc:`OSError`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:7263
@@ -8991,7 +8991,7 @@ msgid "Call the public :func:`sys.get_asyncgen_hooks` and :func:`sys.set_asyncge
 msgstr ""
 
 #: ../../../build/NEWS:7810
-msgid ":issue:`46987`: Remove private functions ``_PySys_GetObjectId()`` and ``_PySys_SetObjectId()``. Patch by Dong-hee Na."
+msgid ":issue:`46987`: Remove private functions ``_PySys_GetObjectId()`` and ``_PySys_SetObjectId()``. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:7813
@@ -9164,7 +9164,7 @@ msgid ":issue:`46707`: Avoid potential exponential backtracking when producing s
 msgstr ""
 
 #: ../../../build/NEWS:7947
-msgid ":issue:`46323`: :mod:`ctypes` now allocates memory on the stack instead of on the heap to pass arguments while calling a Python callback function. Patch by Dong-hee Na."
+msgid ":issue:`46323`: :mod:`ctypes` now allocates memory on the stack instead of on the heap to pass arguments while calling a Python callback function. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:7951
@@ -9188,7 +9188,7 @@ msgid ":issue:`40479`: Add a missing call to ``va_end()`` in ``Modules/_hashopen
 msgstr ""
 
 #: ../../../build/NEWS:7967
-msgid ":issue:`46323`: Use :c:func:`PyObject_Vectorcall` while calling ctypes callback function. Patch by Dong-hee Na."
+msgid ":issue:`46323`: Use :c:func:`PyObject_Vectorcall` while calling ctypes callback function. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:7970
@@ -9216,7 +9216,7 @@ msgid ":issue:`46848`: For performance, use the optimized string-searching imple
 msgstr ""
 
 #: ../../../build/NEWS:7995
-msgid ":issue:`46736`: :class:`~http.server.SimpleHTTPRequestHandler` now uses HTML5 grammar. Patch by Dong-hee Na."
+msgid ":issue:`46736`: :class:`~http.server.SimpleHTTPRequestHandler` now uses HTML5 grammar. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:7998
@@ -9548,7 +9548,7 @@ msgid ":issue:`46476`: Fix memory leak in code objects generated by deepfreeze. 
 msgstr ""
 
 #: ../../../build/NEWS:8318
-msgid ":issue:`46481`: Speed up calls to :meth:`weakref.ref.__call__` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`46481`: Speed up calls to :meth:`weakref.ref.__call__` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:8321
@@ -10626,7 +10626,7 @@ msgid ":issue:`43137`: Launch GNOME web browsers via gio tool instead of obsolet
 msgstr ""
 
 #: ../../../build/NEWS:9309
-msgid ":issue:`45429`: On Windows, :func:`time.sleep` now uses a waitable timer which supports high-resolution timers. Patch by Dong-hee Na and Eryk Sun."
+msgid ":issue:`45429`: On Windows, :func:`time.sleep` now uses a waitable timer which supports high-resolution timers. Patch by Donghee Na and Eryk Sun."
 msgstr ""
 
 #: ../../../build/NEWS:9312
@@ -10970,7 +10970,7 @@ msgid ":issue:`29410`: Add SipHash13 for string hash algorithm and use it by def
 msgstr ""
 
 #: ../../../build/NEWS:9617
-msgid ":issue:`45385`: Fix reference leak from descr_check. Patch by Dong-hee Na."
+msgid ":issue:`45385`: Fix reference leak from descr_check. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:9619
@@ -11026,7 +11026,7 @@ msgid ":issue:`44511`: Improve the generated bytecode for class and mapping patt
 msgstr ""
 
 #: ../../../build/NEWS:9670
-msgid ":issue:`43706`: Speed up calls to ``enumerate()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`43706`: Speed up calls to ``enumerate()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:9676
@@ -11078,7 +11078,7 @@ msgid ":issue:`45475`: Reverted optimization of iterating :class:`gzip.GzipFile`
 msgstr ""
 
 #: ../../../build/NEWS:9718
-msgid ":issue:`45489`: Update :class:`~typing.ForwardRef` to support ``|`` operator. Patch by Dong-hee Na."
+msgid ":issue:`45489`: Update :class:`~typing.ForwardRef` to support ``|`` operator. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:9721
@@ -11114,7 +11114,7 @@ msgid ":issue:`45416`: Fix use of :class:`asyncio.Condition` with explicit :clas
 msgstr ""
 
 #: ../../../build/NEWS:9750
-msgid ":issue:`20028`: Empty escapechar/quotechar is not allowed when initializing :class:`csv.Dialect`. Patch by Vajrasky Kok and Dong-hee Na."
+msgid ":issue:`20028`: Empty escapechar/quotechar is not allowed when initializing :class:`csv.Dialect`. Patch by Vajrasky Kok and Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:9753
@@ -11146,7 +11146,7 @@ msgid ":issue:`45386`: Make :mod:`xmlrpc.client` more robust to C runtimes where
 msgstr ""
 
 #: ../../../build/NEWS:9778
-msgid ":issue:`20028`: Improve error message of :class:`csv.Dialect` when initializing. Patch by Vajrasky Kok and Dong-hee Na."
+msgid ":issue:`20028`: Improve error message of :class:`csv.Dialect` when initializing. Patch by Vajrasky Kok and Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:9781
@@ -11610,7 +11610,7 @@ msgid ":issue:`45018`: Fixed pickling of range iterators that iterated for over 
 msgstr ""
 
 #: ../../../build/NEWS:10210
-msgid ":issue:`45000`: A :exc:`SyntaxError` is now raised when trying to delete :const:`__debug__`. Patch by Dong-hee Na."
+msgid ":issue:`45000`: A :exc:`SyntaxError` is now raised when trying to delete :const:`__debug__`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:10213
@@ -11678,7 +11678,7 @@ msgid ":issue:`44698`: Restore behaviour of complex exponentiation with integer-
 msgstr ""
 
 #: ../../../build/NEWS:10256
-msgid ":issue:`44895`: A debug variable :envvar:`PYTHONDUMPREFSFILE` is added for creating a dump file which is generated by :option:`--with-trace-refs`. Patch by Dong-hee Na."
+msgid ":issue:`44895`: A debug variable :envvar:`PYTHONDUMPREFSFILE` is added for creating a dump file which is generated by :option:`--with-trace-refs`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:10260
@@ -11822,7 +11822,7 @@ msgid ":issue:`44633`: Parameter substitution of the union type with wrong types
 msgstr ""
 
 #: ../../../build/NEWS:10346
-msgid ":issue:`44661`: Update ``property_descr_set`` to use vectorcall if possible. Patch by Dong-hee Na."
+msgid ":issue:`44661`: Update ``property_descr_set`` to use vectorcall if possible. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:10349
@@ -11846,7 +11846,7 @@ msgid ":issue:`44636`: Collapse union of equal types. E.g. the result of ``int |
 msgstr ""
 
 #: ../../../build/NEWS:10367
-msgid ":issue:`44611`: On Windows, :func:`os.urandom`: uses BCryptGenRandom API instead of CryptGenRandom API which is deprecated from Microsoft Windows API. Patch by Dong-hee Na."
+msgid ":issue:`44611`: On Windows, :func:`os.urandom`: uses BCryptGenRandom API instead of CryptGenRandom API which is deprecated from Microsoft Windows API. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:10371
@@ -12254,7 +12254,7 @@ msgid ":issue:`45173`: Remove from the :mod:`configparser` module: the :class:`S
 msgstr ""
 
 #: ../../../build/NEWS:10722
-msgid ":issue:`44987`: Pure ASCII strings are now normalized in constant time by :func:`unicodedata.normalize`. Patch by Dong-hee Na."
+msgid ":issue:`44987`: Pure ASCII strings are now normalized in constant time by :func:`unicodedata.normalize`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:10725
@@ -12422,7 +12422,7 @@ msgid ":issue:`44019`: A new function ``operator.call`` has been added, such tha
 msgstr ""
 
 #: ../../../build/NEWS:10849
-msgid ":issue:`42255`: :class:`webbrowser.MacOSX` is deprecated and will be removed in Python 3.13. It is untested and undocumented and also not used by webbrowser itself. Patch by Dong-hee Na."
+msgid ":issue:`42255`: :class:`webbrowser.MacOSX` is deprecated and will be removed in Python 3.13. It is untested and undocumented and also not used by webbrowser itself. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:10853
@@ -12634,7 +12634,7 @@ msgid ":issue:`44566`: handle StopIteration subclass raised from @contextlib.con
 msgstr ""
 
 #: ../../../build/NEWS:11030
-msgid ":issue:`44558`: Make the implementation consistency of :func:`~operator.indexOf` between C and Python versions. Patch by Dong-hee Na."
+msgid ":issue:`44558`: Make the implementation consistency of :func:`~operator.indexOf` between C and Python versions. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:11034
@@ -12746,7 +12746,7 @@ msgid ":issue:`27827`: :meth:`pathlib.PureWindowsPath.is_reserved` now identifie
 msgstr ""
 
 #: ../../../build/NEWS:11128
-msgid ":issue:`44395`: Fix :meth:`~email.message.MIMEPart.as_string` to pass unixfrom properly. Patch by Dong-hee Na."
+msgid ":issue:`44395`: Fix :meth:`~email.message.MIMEPart.as_string` to pass unixfrom properly. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:11131
@@ -12770,7 +12770,7 @@ msgid ":issue:`44351`: Restore back :func:`parse_makefile` in ``distutils.syscon
 msgstr ""
 
 #: ../../../build/NEWS:11146
-msgid ":issue:`35800`: :class:`smtpd.MailmanProxy` is now removed as it is unusable without an external module, ``mailman``. Patch by Dong-hee Na."
+msgid ":issue:`35800`: :class:`smtpd.MailmanProxy` is now removed as it is unusable without an external module, ``mailman``. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:11149
@@ -12810,7 +12810,7 @@ msgid ":issue:`44258`: Support PEP 515 for Fraction's initialization from string
 msgstr ""
 
 #: ../../../build/NEWS:11185
-msgid ":issue:`44235`: Remove deprecated functions in the :mod:`gettext`. Patch by Dong-hee Na."
+msgid ":issue:`44235`: Remove deprecated functions in the :mod:`gettext`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:11188
@@ -13462,7 +13462,7 @@ msgid ":issue:`45019`: Generate lines in relevant files for frozen modules.  Up 
 msgstr ""
 
 #: ../../../build/NEWS:11737
-msgid ":issue:`44340`: Add support for building with clang thin lto via --with-lto=thin/full. Patch by Dong-hee Na and Brett Holman."
+msgid ":issue:`44340`: Add support for building with clang thin lto via --with-lto=thin/full. Patch by Donghee Na and Brett Holman."
 msgstr ""
 
 #: ../../../build/NEWS:11740
@@ -13594,7 +13594,7 @@ msgid ":issue:`44978`: Allow the Argument Clinic tool to handle ``__complex__`` 
 msgstr ""
 
 #: ../../../build/NEWS:11851
-msgid ":issue:`43425`: Removed the 'test2to3' demo project that demonstrated using lib2to3 to support Python 2.x and Python 3.x from a single source in a distutils package. Patch by Dong-hee Na"
+msgid ":issue:`43425`: Removed the 'test2to3' demo project that demonstrated using lib2to3 to support Python 2.x and Python 3.x from a single source in a distutils package. Patch by Donghee Na"
 msgstr ""
 
 #: ../../../build/NEWS:11855
@@ -13974,7 +13974,7 @@ msgid ":issue:`43733`: Change :class:`netrc.netrc` to use UTF-8 encoding before 
 msgstr ""
 
 #: ../../../build/NEWS:12192
-msgid ":issue:`43979`: Removed an unnecessary list comprehension before looping from :func:`urllib.parse.parse_qsl`.  Patch by Christoph Zwerschke and Dong-hee Na."
+msgid ":issue:`43979`: Removed an unnecessary list comprehension before looping from :func:`urllib.parse.parse_qsl`.  Patch by Christoph Zwerschke and Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:12196
@@ -14550,7 +14550,7 @@ msgid ":issue:`41064`: Improve the syntax error for invalid usage of double star
 msgstr ""
 
 #: ../../../build/NEWS:12743
-msgid ":issue:`43575`: Speed up calls to ``map()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`43575`: Speed up calls to ``map()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:12746
@@ -14598,7 +14598,7 @@ msgid ":issue:`43390`: CPython now sets the ``SA_ONSTACK`` flag in ``PyOS_setsig
 msgstr ""
 
 #: ../../../build/NEWS:12787
-msgid ":issue:`43287`: Speed up calls to ``filter()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`43287`: Speed up calls to ``filter()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:12790
@@ -15110,7 +15110,7 @@ msgid ":issue:`43102`: The namedtuple __new__ method had its __builtins__ set to
 msgstr ""
 
 #: ../../../build/NEWS:13243
-msgid ":issue:`43106`: Added :const:`~os.O_EVTONLY`, :const:`~os.O_FSYNC`, :const:`~os.O_SYMLINK` and :const:`~os.O_NOFOLLOW_ANY` for macOS. Patch by Dong-hee Na."
+msgid ":issue:`43106`: Added :const:`~os.O_EVTONLY`, :const:`~os.O_FSYNC`, :const:`~os.O_SYMLINK` and :const:`~os.O_NOFOLLOW_ANY` for macOS. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:13247
@@ -15546,7 +15546,7 @@ msgid ":issue:`42615`: Remove jump commands made redundant by the deletion of un
 msgstr ""
 
 #: ../../../build/NEWS:13654
-msgid ":issue:`42639`: Make the :mod:`atexit` module state per-interpreter. It is now safe have more than one :mod:`atexit` module instance. Patch by Dong-hee Na and Victor Stinner."
+msgid ":issue:`42639`: Make the :mod:`atexit` module state per-interpreter. It is now safe have more than one :mod:`atexit` module instance. Patch by Donghee Na and Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:13658
@@ -15822,7 +15822,7 @@ msgid ":issue:`34398`: Prominently feature listings from the glossary in documen
 msgstr ""
 
 #: ../../../build/NEWS:13893
-msgid ":issue:`42794`: Update test_nntplib to use official group name of news.aioe.org for testing. Patch by Dong-hee Na."
+msgid ":issue:`42794`: Update test_nntplib to use official group name of news.aioe.org for testing. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:13896
@@ -16114,7 +16114,7 @@ msgid ":issue:`28468`: Add :func:`platform.freedesktop_os_release` function to p
 msgstr ""
 
 #: ../../../build/NEWS:14136
-msgid ":issue:`42299`: Removed the ``formatter`` module, which was deprecated in Python 3.4. It is somewhat obsolete, little used, and not tested. It was originally scheduled to be removed in Python 3.6, but such removals were delayed until after Python 2.7 EOL. Existing users should copy whatever classes they use into their code. Patch by Dong-hee Na and and Terry J. Reedy."
+msgid ":issue:`42299`: Removed the ``formatter`` module, which was deprecated in Python 3.4. It is somewhat obsolete, little used, and not tested. It was originally scheduled to be removed in Python 3.6, but such removals were delayed until after Python 2.7 EOL. Existing users should copy whatever classes they use into their code. Patch by Donghee Na and and Terry J. Reedy."
 msgstr ""
 
 #: ../../../build/NEWS:14143
@@ -16642,7 +16642,7 @@ msgid ":issue:`41974`: Removed special methods ``__int__``, ``__float__``, ``__f
 msgstr ""
 
 #: ../../../build/NEWS:14625
-msgid ":issue:`41902`: Micro optimization when compute :c:member:`~PySequenceMethods.sq_item` and :c:member:`~PyMappingMethods.mp_subscript` of :class:`range`. Patch by Dong-hee Na."
+msgid ":issue:`41902`: Micro optimization when compute :c:member:`~PySequenceMethods.sq_item` and :c:member:`~PyMappingMethods.mp_subscript` of :class:`range`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:14630
@@ -16650,7 +16650,7 @@ msgid ":issue:`41894`: When loading a native module and a load failure occurs, p
 msgstr ""
 
 #: ../../../build/NEWS:14634
-msgid ":issue:`41902`: Micro optimization for range.index if step is 1. Patch by Dong-hee Na."
+msgid ":issue:`41902`: Micro optimization for range.index if step is 1. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:14637
@@ -16966,7 +16966,7 @@ msgid ":issue:`41909`: Fixed stack overflow in :func:`issubclass` and :func:`isi
 msgstr ""
 
 #: ../../../build/NEWS:14932
-msgid ":issue:`41922`: Speed up calls to ``reversed()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`41922`: Speed up calls to ``reversed()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:14935
@@ -16974,7 +16974,7 @@ msgid ":issue:`41873`: Calls to ``float()`` are now faster due to the ``vectorca
 msgstr ""
 
 #: ../../../build/NEWS:14938
-msgid ":issue:`41870`: Speed up calls to ``bool()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`41870`: Speed up calls to ``bool()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:14941
@@ -17226,7 +17226,7 @@ msgid ":issue:`40957`: Fix refleak in _Py_fopen_obj() when PySys_Audit() fails"
 msgstr ""
 
 #: ../../../build/NEWS:15134
-msgid ":issue:`40950`: Add a state to the :mod:`nis` module (:pep:`3121`) and apply the multiphase initialization. Patch by Dong-hee Na."
+msgid ":issue:`40950`: Add a state to the :mod:`nis` module (:pep:`3121`) and apply the multiphase initialization. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:15137
@@ -17310,7 +17310,7 @@ msgid ":issue:`40217`: Instances of types created with :c:func:`PyType_FromSpecW
 msgstr ""
 
 #: ../../../build/NEWS:15213
-msgid ":issue:`39573`: :c:func:`Py_TYPE()` is changed to the inline static function. Patch by Dong-hee Na."
+msgid ":issue:`39573`: :c:func:`Py_TYPE()` is changed to the inline static function. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:15216
@@ -17986,7 +17986,7 @@ msgid ":issue:`41774`: In Programming FAQ \"Sequences (Tuples/Lists)\" section, 
 msgstr ""
 
 #: ../../../build/NEWS:15759
-msgid ":issue:`35293`: Fix RemovedInSphinx40Warning when building the documentation. Patch by Dong-hee Na."
+msgid ":issue:`35293`: Fix RemovedInSphinx40Warning when building the documentation. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:15762
@@ -18094,7 +18094,7 @@ msgid ":issue:`34401`: Make test_gdb properly run on HP-UX. Patch by Michael Osi
 msgstr ""
 
 #: ../../../build/NEWS:15846
-msgid ":issue:`38249`: Update :c:macro:`Py_UNREACHABLE` to use __builtin_unreachable() if only the compiler is able to use it. Patch by Dong-hee Na."
+msgid ":issue:`38249`: Update :c:macro:`Py_UNREACHABLE` to use __builtin_unreachable() if only the compiler is able to use it. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:15849
@@ -18558,11 +18558,11 @@ msgid ":issue:`39435`: The first argument of :func:`pickle.loads` is now positio
 msgstr ""
 
 #: ../../../build/NEWS:16234
-msgid ":issue:`39305`: Update :mod:`nntplib` to merge :class:`nntplib.NNTP` and :class:`nntplib._NNTPBase`. Patch by Dong-hee Na."
+msgid ":issue:`39305`: Update :mod:`nntplib` to merge :class:`nntplib.NNTP` and :class:`nntplib._NNTPBase`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:16237
-msgid ":issue:`32494`: Update :mod:`dbm.gnu` to use gdbm_count if possible when calling :func:`len`. Patch by Dong-hee Na."
+msgid ":issue:`32494`: Update :mod:`dbm.gnu` to use gdbm_count if possible when calling :func:`len`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:16240
@@ -18598,7 +18598,7 @@ msgid ":issue:`39791`: Added ``files()`` function to importlib.resources with su
 msgstr ""
 
 #: ../../../build/NEWS:16268
-msgid ":issue:`40375`: :meth:`imaplib.IMAP4.unselect` is added. Patch by Dong-hee Na."
+msgid ":issue:`40375`: :meth:`imaplib.IMAP4.unselect` is added. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:16270
@@ -19308,7 +19308,7 @@ msgid ":issue:`1635741`: Port itertools module to multiphase initialization (:pe
 msgstr ""
 
 #: ../../../build/NEWS:16921
-msgid ":issue:`37207`: Speed up calls to ``frozenset()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`37207`: Speed up calls to ``frozenset()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:16924
@@ -19316,7 +19316,7 @@ msgid ":issue:`39984`: subinterpreters: Move ``_PyRuntimeState.ceval.tracing_pos
 msgstr ""
 
 #: ../../../build/NEWS:16929
-msgid ":issue:`37207`: Speed up calls to ``set()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`37207`: Speed up calls to ``set()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:16932
@@ -19336,7 +19336,7 @@ msgid ":issue:`39562`: Allow executing asynchronous comprehensions on the top le
 msgstr ""
 
 #: ../../../build/NEWS:16946
-msgid ":issue:`37207`: Speed up calls to ``tuple()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Dong-hee Na."
+msgid ":issue:`37207`: Speed up calls to ``tuple()`` by using the :pep:`590` ``vectorcall`` calling convention. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:16949
@@ -19492,7 +19492,7 @@ msgid ":issue:`39889`: Fixed :func:`ast.unparse` for extended slices containing 
 msgstr ""
 
 #: ../../../build/NEWS:17094
-msgid ":issue:`39828`: Fix :mod:`json.tool` to catch :exc:`BrokenPipeError`. Patch by Dong-hee Na."
+msgid ":issue:`39828`: Fix :mod:`json.tool` to catch :exc:`BrokenPipeError`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17097
@@ -19576,7 +19576,7 @@ msgid ":issue:`39548`: Fix handling of header in :class:`urllib.request.Abstract
 msgstr ""
 
 #: ../../../build/NEWS:17165
-msgid ":issue:`39509`: HTTP status codes ``103 EARLY_HINTS`` and ``425 TOO_EARLY`` are added to :class:`http.HTTPStatus`. Patch by Dong-hee Na."
+msgid ":issue:`39509`: HTTP status codes ``103 EARLY_HINTS`` and ``425 TOO_EARLY`` are added to :class:`http.HTTPStatus`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17168
@@ -19712,7 +19712,7 @@ msgid ":issue:`38080`: Added support to fix ``getproxies`` in the :mod:`lib2to3.
 msgstr ""
 
 #: ../../../build/NEWS:17308
-msgid ":issue:`40024`: Add :c:func:`PyModule_AddType` helper function: add a type to a module. Patch by Dong-hee Na."
+msgid ":issue:`40024`: Add :c:func:`PyModule_AddType` helper function: add a type to a module. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17311
@@ -19724,7 +19724,7 @@ msgid ":issue:`39947`: Add :c:func:`PyThreadState_GetFrame` function: get the cu
 msgstr ""
 
 #: ../../../build/NEWS:17319
-msgid ":issue:`37207`: Add _PyArg_NoKwnames helper function. Patch by Dong-hee Na."
+msgid ":issue:`37207`: Add _PyArg_NoKwnames helper function. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17321
@@ -19808,7 +19808,7 @@ msgid ":issue:`39382`: Fix a use-after-free in the single inheritance path of ``
 msgstr ""
 
 #: ../../../build/NEWS:17401
-msgid ":issue:`39573`: Update clinic tool to use :c:func:`Py_IS_TYPE`. Patch by Dong-hee Na."
+msgid ":issue:`39573`: Update clinic tool to use :c:func:`Py_IS_TYPE`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17404
@@ -19848,11 +19848,11 @@ msgid ":issue:`39492`: Fix a reference cycle in the C Pickler that was preventin
 msgstr ""
 
 #: ../../../build/NEWS:17431
-msgid ":issue:`39453`: Fixed a possible crash in :meth:`list.__contains__` when a list is changed during comparing items. Patch by Dong-hee Na."
+msgid ":issue:`39453`: Fixed a possible crash in :meth:`list.__contains__` when a list is changed during comparing items. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17434
-msgid ":issue:`39434`: :term:`floor division` of float operation now has a better performance. Also the message of :exc:`ZeroDivisionError` for this operation is updated. Patch by Dong-hee Na."
+msgid ":issue:`39434`: :term:`floor division` of float operation now has a better performance. Also the message of :exc:`ZeroDivisionError` for this operation is updated. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17438
@@ -20264,7 +20264,7 @@ msgid ":issue:`39215`: Fix ``SystemError`` when nested function has annotation o
 msgstr ""
 
 #: ../../../build/NEWS:17794
-msgid ":issue:`39200`: Correct the error message when calling the :func:`min` or :func:`max` with no arguments. Patch by Dong-hee Na."
+msgid ":issue:`39200`: Correct the error message when calling the :func:`min` or :func:`max` with no arguments. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17797
@@ -20380,7 +20380,7 @@ msgid ":issue:`39350`: Remove ``fractions.gcd()`` function, deprecated since Pyt
 msgstr ""
 
 #: ../../../build/NEWS:17886
-msgid ":issue:`39329`: :class:`~smtplib.LMTP` constructor now has an optional *timeout* parameter. Patch by Dong-hee Na."
+msgid ":issue:`39329`: :class:`~smtplib.LMTP` constructor now has an optional *timeout* parameter. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17889
@@ -20388,11 +20388,11 @@ msgid ":issue:`39313`: Add a new ``exec_function`` option (*--exec-function* in 
 msgstr ""
 
 #: ../../../build/NEWS:17893
-msgid ":issue:`39259`: :class:`~ftplib.FTP_TLS` and :class:`~ftplib.FTP_TLS` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Dong-hee Na."
+msgid ":issue:`39259`: :class:`~ftplib.FTP_TLS` and :class:`~ftplib.FTP_TLS` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17897
-msgid ":issue:`39259`: :class:`~smtplib.SMTP` and :class:`~smtplib.SMTP_SSL` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Dong-hee Na."
+msgid ":issue:`39259`: :class:`~smtplib.SMTP` and :class:`~smtplib.SMTP_SSL` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17901
@@ -20404,7 +20404,7 @@ msgid ":issue:`39297`: Improved performance of importlib.metadata distribution d
 msgstr ""
 
 #: ../../../build/NEWS:17908
-msgid ":issue:`39259`: :class:`~nntplib.NNTP` and :class:`~nntplib.NNTP_SSL` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Dong-hee Na."
+msgid ":issue:`39259`: :class:`~nntplib.NNTP` and :class:`~nntplib.NNTP_SSL` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17912
@@ -20416,7 +20416,7 @@ msgid ":issue:`39288`: Add :func:`math.nextafter`: return the next floating-poin
 msgstr ""
 
 #: ../../../build/NEWS:17919
-msgid ":issue:`39259`: :class:`~poplib.POP3` and :class:`~poplib.POP3_SSL` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Dong-hee Na."
+msgid ":issue:`39259`: :class:`~poplib.POP3` and :class:`~poplib.POP3_SSL` now raise a :class:`ValueError` if the given timeout for their constructor is zero to prevent the creation of a non-blocking socket. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17923
@@ -20448,7 +20448,7 @@ msgid ":issue:`39191`: Perform a check for running loop before starting a new ta
 msgstr ""
 
 #: ../../../build/NEWS:17948
-msgid ":issue:`38871`: Correctly parenthesize filter-based statements that contain lambda expressions in mod:`lib2to3`. Patch by Dong-hee Na."
+msgid ":issue:`38871`: Correctly parenthesize filter-based statements that contain lambda expressions in mod:`lib2to3`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17951
@@ -20496,7 +20496,7 @@ msgid ":issue:`38878`: Fixed __subclasshook__ of :class:`os.PathLike` to return 
 msgstr ""
 
 #: ../../../build/NEWS:17988
-msgid ":issue:`38615`: :class:`~imaplib.IMAP4` and :class:`~imaplib.IMAP4_SSL` now have an optional *timeout* parameter for their constructors. Also, the :meth:`~imaplib.IMAP4.open` method now has an optional *timeout* parameter with this change. The overridden methods of :class:`~imaplib.IMAP4_SSL` and :class:`~imaplib.IMAP4_stream` were applied to this change. Patch by Dong-hee Na."
+msgid ":issue:`38615`: :class:`~imaplib.IMAP4` and :class:`~imaplib.IMAP4_SSL` now have an optional *timeout* parameter for their constructors. Also, the :meth:`~imaplib.IMAP4.open` method now has an optional *timeout* parameter with this change. The overridden methods of :class:`~imaplib.IMAP4_SSL` and :class:`~imaplib.IMAP4_stream` were applied to this change. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:17995
@@ -20976,7 +20976,7 @@ msgid ":issue:`38418`: Fixes audit event for :func:`os.system` to be named ``os.
 msgstr ""
 
 #: ../../../build/NEWS:18481
-msgid ":issue:`38243`: Escape the server title of :class:`xmlrpc.server.DocXMLRPCServer` when rendering the document page as HTML. (Contributed by Dong-hee Na in :issue:`38243`.)"
+msgid ":issue:`38243`: Escape the server title of :class:`xmlrpc.server.DocXMLRPCServer` when rendering the document page as HTML. (Contributed by Donghee Na in :issue:`38243`.)"
 msgstr ""
 
 #: ../../../build/NEWS:18485
@@ -21040,7 +21040,7 @@ msgid ":issue:`38535`: Fixed line numbers and column offsets for AST nodes for c
 msgstr ""
 
 #: ../../../build/NEWS:18543
-msgid ":issue:`38525`: Fix a segmentation fault when using reverse iterators of empty ``dict`` objects. Patch by Dong-hee Na and Inada Naoki."
+msgid ":issue:`38525`: Fix a segmentation fault when using reverse iterators of empty ``dict`` objects. Patch by Donghee Na and Inada Naoki."
 msgstr ""
 
 #: ../../../build/NEWS:18546
@@ -21068,7 +21068,7 @@ msgid ":issue:`38392`: In debug mode, :c:func:`PyObject_GC_Track` now calls ``tp
 msgstr ""
 
 #: ../../../build/NEWS:18574
-msgid ":issue:`38210`: Remove unnecessary intersection and update set operation in dictview with empty set. (Contributed by Dong-hee Na in :issue:`38210`.)"
+msgid ":issue:`38210`: Remove unnecessary intersection and update set operation in dictview with empty set. (Contributed by Donghee Na in :issue:`38210`.)"
 msgstr ""
 
 #: ../../../build/NEWS:18577
@@ -21436,7 +21436,7 @@ msgid ":issue:`38692`: Expose the Linux ``pidfd_open`` syscall as :func:`os.pidf
 msgstr ""
 
 #: ../../../build/NEWS:18876
-msgid ":issue:`38602`: Added constants :const:`~fcntl.F_OFD_GETLK`, :const:`~fcntl.F_OFD_SETLK` and :const:`~fcntl.F_OFD_SETLKW` to the :mod:`fcntl` module. Patch by Dong-hee Na."
+msgid ":issue:`38602`: Added constants :const:`~fcntl.F_OFD_GETLK`, :const:`~fcntl.F_OFD_SETLK` and :const:`~fcntl.F_OFD_SETLKW` to the :mod:`fcntl` module. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:18880
@@ -21472,7 +21472,7 @@ msgid ":issue:`38521`: Fixed erroneous equality comparison in statistics.NormalD
 msgstr ""
 
 #: ../../../build/NEWS:18904
-msgid ":issue:`38493`: Added :const:`~os.CLD_KILLED` and :const:`~os.CLD_STOPPED` for :attr:`si_code`. Patch by Dong-hee Na."
+msgid ":issue:`38493`: Added :const:`~os.CLD_KILLED` and :const:`~os.CLD_STOPPED` for :attr:`si_code`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:18907
@@ -21708,7 +21708,7 @@ msgid ":issue:`38026`: Fixed :func:`inspect.getattr_static` used ``isinstance`` 
 msgstr ""
 
 #: ../../../build/NEWS:19103
-msgid ":issue:`35923`: Update :class:`importlib.machinery.BuiltinImporter` to use ``loader._ORIGIN`` instead of a hardcoded value. Patch by Dong-hee Na."
+msgid ":issue:`35923`: Update :class:`importlib.machinery.BuiltinImporter` to use ``loader._ORIGIN`` instead of a hardcoded value. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:19106
@@ -21792,7 +21792,7 @@ msgid ":issue:`36917`: Add default implementation of the :meth:`ast.NodeVisitor.
 msgstr ""
 
 #: ../../../build/NEWS:19172
-msgid ":issue:`37798`: Update test_statistics.py to verify that the statistics module works well for both C and Python implementations. Patch by Dong-hee Na"
+msgid ":issue:`37798`: Update test_statistics.py to verify that the statistics module works well for both C and Python implementations. Patch by Donghee Na"
 msgstr ""
 
 #: ../../../build/NEWS:19175
@@ -21840,11 +21840,11 @@ msgid ":issue:`21131`: Fix ``faulthandler.register(chain=True)`` stack. faulthan
 msgstr ""
 
 #: ../../../build/NEWS:19213
-msgid ":issue:`37798`: Add C fastpath for statistics.NormalDist.inv_cdf() Patch by Dong-hee Na"
+msgid ":issue:`37798`: Add C fastpath for statistics.NormalDist.inv_cdf() Patch by Donghee Na"
 msgstr ""
 
 #: ../../../build/NEWS:19216
-msgid ":issue:`37804`: Remove the deprecated method `threading.Thread.isAlive()`. Patch by Dong-hee Na."
+msgid ":issue:`37804`: Remove the deprecated method `threading.Thread.isAlive()`. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:19219
@@ -22592,7 +22592,7 @@ msgid ":issue:`38018`: Increase code coverage for multiprocessing.shared_memory.
 msgstr ""
 
 #: ../../../build/NEWS:19851
-msgid ":issue:`37805`: Add tests for json.dump(..., skipkeys=True). Patch by Dong-hee Na."
+msgid ":issue:`37805`: Add tests for json.dump(..., skipkeys=True). Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:19854
@@ -26066,7 +26066,7 @@ msgid ":issue:`35682`: Fix ``asyncio.ProactorEventLoop.sendfile()``: don't attem
 msgstr ""
 
 #: ../../../build/NEWS:22925
-msgid ":issue:`35283`: Add a deprecated warning for the :meth:`threading.Thread.isAlive` method. Patch by Dong-hee Na."
+msgid ":issue:`35283`: Add a deprecated warning for the :meth:`threading.Thread.isAlive` method. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:22928
@@ -27300,7 +27300,7 @@ msgstr ""
 #: ../../../build/NEWS:23952
 #: ../../../build/NEWS:25529
 #: ../../../build/NEWS:29943
-msgid ":issue:`33197`: Update error message when constructing invalid inspect.Parameters Patch by Dong-hee Na."
+msgid ":issue:`33197`: Update error message when constructing invalid inspect.Parameters Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:23955
@@ -30233,11 +30233,11 @@ msgid ":issue:`32066`: asyncio: Support pathlib.Path in create_unix_connection; 
 msgstr ""
 
 #: ../../../build/NEWS:27082
-msgid ":issue:`32046`: Updates 2to3 to convert from operator.isCallable(obj) to callable(obj). Patch by Dong-hee Na."
+msgid ":issue:`32046`: Updates 2to3 to convert from operator.isCallable(obj) to callable(obj). Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:27085
-msgid ":issue:`32018`: inspect.signature should follow :pep:`8`, if the parameter has an annotation and a default value. Patch by Dong-hee Na."
+msgid ":issue:`32018`: inspect.signature should follow :pep:`8`, if the parameter has an annotation and a default value. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:27088
@@ -31277,7 +31277,7 @@ msgstr ""
 
 #: ../../../build/NEWS:27907
 #: ../../../build/NEWS:31462
-msgid ":issue:`12414`: sys.getsizeof() on a code object now returns the sizes which includes the code struct and sizes of objects which it references. Patch by Dong-hee Na."
+msgid ":issue:`12414`: sys.getsizeof() on a code object now returns the sizes which includes the code struct and sizes of objects which it references. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:27911
@@ -32118,7 +32118,7 @@ msgstr ""
 #: ../../../build/NEWS:28468
 #: ../../../build/NEWS:31113
 #: ../../../build/NEWS:35326
-msgid ":issue:`30119`: ftplib.FTP.putline() now throws ValueError on commands that contains CR or LF. Patch by Dong-hee Na."
+msgid ":issue:`30119`: ftplib.FTP.putline() now throws ValueError on commands that contains CR or LF. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:28471
@@ -32154,7 +32154,7 @@ msgstr ""
 
 #: ../../../build/NEWS:28491
 #: ../../../build/NEWS:31491
-msgid ":issue:`30616`: Functional API of enum allows to create empty enums. Patched by Dong-hee Na"
+msgid ":issue:`30616`: Functional API of enum allows to create empty enums. Patched by Donghee Na"
 msgstr ""
 
 #: ../../../build/NEWS:28494
@@ -32298,7 +32298,7 @@ msgstr ""
 #: ../../../build/NEWS:28580
 #: ../../../build/NEWS:31502
 #: ../../../build/NEWS:35456
-msgid ":issue:`30149`: inspect.signature() now supports callables with variable-argument parameters wrapped with partialmethod. Patch by Dong-hee Na."
+msgid ":issue:`30149`: inspect.signature() now supports callables with variable-argument parameters wrapped with partialmethod. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:28584

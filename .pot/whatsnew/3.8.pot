@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-22 14:36+0000\n"
+"POT-Creation-Date: 2023-09-24 21:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -806,7 +806,7 @@ msgid "This solves a long-standing problem.  Once a logger or *basicConfig()* ha
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:950
-msgid "(Suggested by Raymond Hettinger, implemented by Dong-hee Na, and reviewed by Vinay Sajip in :issue:`33897`.)"
+msgid "(Suggested by Raymond Hettinger, implemented by Donghee Na, and reviewed by Vinay Sajip in :issue:`33897`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:955
@@ -1436,7 +1436,7 @@ msgid "Function :func:`~gettext.bind_textdomain_codeset`, methods :meth:`~gettex
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1715
-msgid "The :meth:`~threading.Thread.isAlive()` method of :class:`threading.Thread` has been deprecated. (Contributed by Dong-hee Na in :issue:`35283`.)"
+msgid "The :meth:`~threading.Thread.isAlive()` method of :class:`threading.Thread` has been deprecated. (Contributed by Donghee Na in :issue:`35283`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1719

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-22 14:36+0000\n"
+"POT-Creation-Date: 2023-09-24 21:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -659,7 +659,7 @@ msgid "Hashes of NaN values of both :class:`float` type and :class:`decimal.Deci
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:880
-msgid "A :exc:`SyntaxError` (instead of a :exc:`NameError`) will be raised when deleting the :const:`__debug__` constant.  (Contributed by Dong-hee Na in :issue:`45000`.)"
+msgid "A :exc:`SyntaxError` (instead of a :exc:`NameError`) will be raised when deleting the :const:`__debug__` constant.  (Contributed by Donghee Na in :issue:`45000`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:883
@@ -1018,7 +1018,7 @@ msgid "Add :func:`os.splice()` that allows to move data between two file descrip
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1256
-msgid "Add :const:`~os.O_EVTONLY`, :const:`~os.O_FSYNC`, :const:`~os.O_SYMLINK` and :const:`~os.O_NOFOLLOW_ANY` for macOS. (Contributed by Dong-hee Na in :issue:`43106`.)"
+msgid "Add :const:`~os.O_EVTONLY`, :const:`~os.O_FSYNC`, :const:`~os.O_SYMLINK` and :const:`~os.O_NOFOLLOW_ANY` for macOS. (Contributed by Donghee Na in :issue:`43106`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1261
@@ -1330,7 +1330,7 @@ msgid "Add micro-optimizations to ``_PyType_Lookup()`` to improve type attribute
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1583
-msgid "The following built-in functions now support the faster :pep:`590` vectorcall calling convention: :func:`map`, :func:`filter`, :func:`reversed`, :func:`bool` and :func:`float`. (Contributed by Dong-hee Na and Jeroen Demeyer in :issue:`43575`, :issue:`43287`, :issue:`41922`, :issue:`41873` and :issue:`41870`.)"
+msgid "The following built-in functions now support the faster :pep:`590` vectorcall calling convention: :func:`map`, :func:`filter`, :func:`reversed`, :func:`bool` and :func:`float`. (Contributed by Donghee Na and Jeroen Demeyer in :issue:`43575`, :issue:`43287`, :issue:`41922`, :issue:`41873` and :issue:`41870`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1587
@@ -1516,7 +1516,7 @@ msgid "Removed the Public C API functions ``PyParser_SimpleParseStringFlags``, `
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1815
-msgid "Removed the ``formatter`` module, which was deprecated in Python 3.4. It is somewhat obsolete, little used, and not tested. It was originally scheduled to be removed in Python 3.6, but such removals were delayed until after Python 2.7 EOL. Existing users should copy whatever classes they use into their code. (Contributed by Dong-hee Na and Terry J. Reedy in :issue:`42299`.)"
+msgid "Removed the ``formatter`` module, which was deprecated in Python 3.4. It is somewhat obsolete, little used, and not tested. It was originally scheduled to be removed in Python 3.6, but such removals were delayed until after Python 2.7 EOL. Existing users should copy whatever classes they use into their code. (Contributed by Donghee Na and Terry J. Reedy in :issue:`42299`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1822
