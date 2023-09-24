@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:51+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,7 +194,7 @@ msgid "Windows ``py.exe`` launcher improvements"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:219
-msgid "The copy of the :ref:`launcher` included with Python 3.11 has been significantly updated. It now supports company/tag syntax as defined in :pep:`514` using the ``-V:<company>/<tag>`` argument instead of the limited ``-<major>.<minor>``. This allows launching distributions other than ``PythonCore``, the one hosted on `python.org <https://www.python.org>`_."
+msgid "The copy of the :ref:`launcher` included with Python 3.11 has been significantly updated. It now supports company/tag syntax as defined in :pep:`514` using the :samp:`-V:{<company>}/{<tag>}` argument instead of the limited :samp:`-{<major>}.{<minor>}`. This allows launching distributions other than ``PythonCore``, the one hosted on `python.org <https://www.python.org>`_."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:225
@@ -202,7 +202,7 @@ msgid "When using ``-V:`` selectors, either company or tag can be omitted, but a
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:230
-msgid "When using the legacy ``-<major>``, ``-<major>.<minor>``, ``-<major>-<bitness>`` or ``-<major>.<minor>-<bitness>`` arguments, all existing behaviour should be preserved from past versions, and only releases from ``PythonCore`` will be selected. However, the ``-64`` suffix now implies \"not 32-bit\" (not necessarily x86-64), as there are multiple supported 64-bit platforms. 32-bit runtimes are detected by checking the runtime's tag for a ``-32`` suffix. All releases of Python since 3.5 have included this in their 32-bit builds."
+msgid "When using the legacy :samp:`-{<major>}`, :samp:`-{<major>}.{<minor>}`, :samp:`-{<major>}-{<bitness>}` or :samp:`-{<major>}.{<minor>}-{<bitness>}` arguments, all existing behaviour should be preserved from past versions, and only releases from ``PythonCore`` will be selected. However, the ``-64`` suffix now implies \"not 32-bit\" (not necessarily x86-64), as there are multiple supported 64-bit platforms. 32-bit runtimes are detected by checking the runtime's tag for a ``-32`` suffix. All releases of Python since 3.5 have included this in their 32-bit builds."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:244

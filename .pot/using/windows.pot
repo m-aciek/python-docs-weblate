@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 23:36+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1024,7 +1024,7 @@ msgid "Beginning with python launcher 3.7 it is possible to request 64-bit versi
 msgstr ""
 
 #: ../../using/windows.rst:890
-msgid "The \"-64\" suffix is deprecated, and now implies \"any architecture that is not provably i386/32-bit\". To request a specific environment, use the new ``-V:<TAG>`` argument with the complete tag."
+msgid "The \"-64\" suffix is deprecated, and now implies \"any architecture that is not provably i386/32-bit\". To request a specific environment, use the new :samp:`-V:{TAG}` argument with the complete tag."
 msgstr ""
 
 #: ../../using/windows.rst:894
@@ -1344,7 +1344,7 @@ msgid "Adds ``._pth`` file support and removes ``applocal`` option from ``pyvenv
 msgstr ""
 
 #: ../../using/windows.rst:1195
-msgid "Adds ``pythonXX.zip`` as a potential landmark when directly adjacent to the executable."
+msgid "Adds :file:`python{XX}.zip` as a potential landmark when directly adjacent to the executable."
 msgstr ""
 
 #: ../../using/windows.rst:1201

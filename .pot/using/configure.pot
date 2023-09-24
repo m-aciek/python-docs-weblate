@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-08 13:36+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -913,7 +913,7 @@ msgid "Use ``Py_IMPORTED_SYMBOL`` otherwise."
 msgstr ""
 
 #: ../../using/configure.rst:779
-msgid "If the ``Py_BUILD_CORE_BUILTIN`` macro is used by mistake on a C extension built as a shared library, its ``PyInit_xxx()`` function is not exported, causing an :exc:`ImportError` on import."
+msgid "If the ``Py_BUILD_CORE_BUILTIN`` macro is used by mistake on a C extension built as a shared library, its :samp:`PyInit_{xxx}()` function is not exported, causing an :exc:`ImportError` on import."
 msgstr ""
 
 #: ../../using/configure.rst:785
@@ -933,7 +933,7 @@ msgid "Value of :envvar:`CPPFLAGS` variable passed to the ``./configure`` script
 msgstr ""
 
 #: ../../using/configure.rst:801
-msgid "(Objective) C/C++ preprocessor flags, e.g. ``-I<include dir>`` if you have headers in a nonstandard directory ``<include dir>``."
+msgid "(Objective) C/C++ preprocessor flags, e.g. :samp:`-I{include_dir}` if you have headers in a nonstandard directory *include_dir*."
 msgstr ""
 
 #: ../../using/configure.rst:804
@@ -1106,7 +1106,7 @@ msgid "Value of :envvar:`LDFLAGS_NODIST` variable passed to the ``./configure`` 
 msgstr ""
 
 #: ../../using/configure.rst:991
-msgid "Linker flags, e.g. ``-L<lib dir>`` if you have libraries in a nonstandard directory ``<lib dir>``."
+msgid "Linker flags, e.g. :samp:`-L{lib_dir}` if you have libraries in a nonstandard directory *lib_dir*."
 msgstr ""
 
 #: ../../using/configure.rst:1000

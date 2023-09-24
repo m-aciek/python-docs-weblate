@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:48+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -413,7 +413,7 @@ msgid "Constructors of :class:`int`, :class:`float` and :class:`complex` will no
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:407
-msgid "Added support of ``\\N{name}`` escapes in :mod:`regular expressions <re>`::"
+msgid "Added support of :samp:`\\\\N\\\\{{name}\\\\}` escapes in :mod:`regular expressions <re>`::"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:414

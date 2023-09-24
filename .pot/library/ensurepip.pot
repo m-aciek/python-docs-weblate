@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid "By default, ``pip`` is installed into the current virtual environment (if
 msgstr ""
 
 #: ../../library/ensurepip.rst:64
-msgid "``--root <dir>``: Installs ``pip`` relative to the given root directory rather than the root of the currently active virtual environment (if any) or the default root for the current Python installation."
+msgid ":samp:`--root {dir}`: Installs ``pip`` relative to the given root directory rather than the root of the currently active virtual environment (if any) or the default root for the current Python installation."
 msgstr ""
 
 #: ../../library/ensurepip.rst:67

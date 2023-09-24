@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-08 13:36+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -631,7 +631,7 @@ msgid "Return the name of the current default string encoding used by the Unicod
 msgstr ""
 
 #: ../../library/sys.rst:754
-msgid "Return the current value of the flags that are used for :c:func:`dlopen` calls.  Symbolic names for the flag values can be found in the :mod:`os` module (``RTLD_xxx`` constants, e.g. :const:`os.RTLD_LAZY`)."
+msgid "Return the current value of the flags that are used for :c:func:`dlopen` calls.  Symbolic names for the flag values can be found in the :mod:`os` module (:samp:`RTLD_{xxx}` constants, e.g. :const:`os.RTLD_LAZY`)."
 msgstr ""
 
 #: ../../library/sys.rst:759
@@ -1194,7 +1194,7 @@ msgid "Strings specifying the primary and secondary prompt of the interpreter.  
 msgstr ""
 
 #: ../../library/sys.rst:1439
-msgid "Set the flags used by the interpreter for :c:func:`dlopen` calls, such as when the interpreter loads extension modules.  Among other things, this will enable a lazy resolving of symbols when importing a module, if called as ``sys.setdlopenflags(0)``.  To share symbols across extension modules, call as ``sys.setdlopenflags(os.RTLD_GLOBAL)``.  Symbolic names for the flag values can be found in the :mod:`os` module (``RTLD_xxx`` constants, e.g. :const:`os.RTLD_LAZY`)."
+msgid "Set the flags used by the interpreter for :c:func:`dlopen` calls, such as when the interpreter loads extension modules.  Among other things, this will enable a lazy resolving of symbols when importing a module, if called as ``sys.setdlopenflags(0)``.  To share symbols across extension modules, call as ``sys.setdlopenflags(os.RTLD_GLOBAL)``.  Symbolic names for the flag values can be found in the :mod:`os` module (:samp:`RTLD_{xxx}` constants, e.g. :const:`os.RTLD_LAZY`)."
 msgstr ""
 
 #: ../../library/sys.rst:1451

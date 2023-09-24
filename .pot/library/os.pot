@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:54+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "The :term:`filesystem encoding and error handler` are configured at Pytho
 msgstr ""
 
 #: ../../library/os.rst:87
-msgid "On some systems, conversion using the file system encoding may fail. In this case, Python uses the :ref:`surrogateescape encoding error handler <surrogateescape>`, which means that undecodable bytes are replaced by a Unicode character U+DCxx on decoding, and these are again translated to the original byte on encoding."
+msgid "On some systems, conversion using the file system encoding may fail. In this case, Python uses the :ref:`surrogateescape encoding error handler <surrogateescape>`, which means that undecodable bytes are replaced by a Unicode character U+DC\\ *xx* on decoding, and these are again translated to the original byte on encoding."
 msgstr ""
 
 #: ../../library/os.rst:95

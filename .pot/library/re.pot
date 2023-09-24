@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-26 23:37+0000\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -571,7 +571,7 @@ msgid "Unknown escapes consisting of ``'\\'`` and an ASCII letter now are errors
 msgstr ""
 
 #: ../../library/re.rst:662
-msgid "The ``'\\N{name}'`` escape sequence has been added. As in string literals, it expands to the named Unicode character (e.g. ``'\\N{EM DASH}'``)."
+msgid "The :samp:`'\\\\N\\\\{{name}\\\\}'` escape sequence has been added. As in string literals, it expands to the named Unicode character (e.g. ``'\\N{EM DASH}'``)."
 msgstr ""
 
 #: ../../library/re.rst:670

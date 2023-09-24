@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-09-24 21:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,7 +133,7 @@ msgid "This method is called to process a named character reference of the form 
 msgstr ""
 
 #: ../../library/html.parser.rst:175
-msgid "This method is called to process decimal and hexadecimal numeric character references of the form ``&#NNN;`` and ``&#xNNN;``.  For example, the decimal equivalent for ``&gt;`` is ``&#62;``, whereas the hexadecimal is ``&#x3E;``; in this case the method will receive ``'62'`` or ``'x3E'``.  This method is never called if *convert_charrefs* is ``True``."
+msgid "This method is called to process decimal and hexadecimal numeric character references of the form :samp:`&#{NNN};` and :samp:`&#x{NNN};`.  For example, the decimal equivalent for ``&gt;`` is ``&#62;``, whereas the hexadecimal is ``&#x3E;``; in this case the method will receive ``'62'`` or ``'x3E'``.  This method is never called if *convert_charrefs* is ``True``."
 msgstr ""
 
 #: ../../library/html.parser.rst:184
