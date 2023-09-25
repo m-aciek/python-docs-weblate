@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-25 10:42+0000\n"
+"POT-Creation-Date: 2023-09-25 12:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -510,7 +510,7 @@ msgid "Add :func:`inspect.markcoroutinefunction` to mark sync functions that ret
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:660
-msgid "Add :func:`inspect.getasyncgenstate` and :func:`inspect.getasyncgenlocals` for determining the current state of asynchronous generators. (Contributed by Thomas Krennwallner in :issue:`35759`.)"
+msgid "Add :func:`inspect.getasyncgenstate` and :func:`inspect.getasyncgenlocals` for determining the current state of asynchronous generators. (Contributed by Thomas Krennwallner in :gh:`79940`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:664
@@ -582,7 +582,7 @@ msgid "Add :meth:`pathlib.Path.walk` for walking the directory trees and generat
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:732
-msgid "Add *walk_up* optional parameter to :meth:`pathlib.PurePath.relative_to` to allow the insertion of ``..`` entries in the result; this behavior is more consistent with :func:`os.path.relpath`. (Contributed by Domenico Ragusa in :issue:`40358`.)"
+msgid "Add *walk_up* optional parameter to :meth:`pathlib.PurePath.relative_to` to allow the insertion of ``..`` entries in the result; this behavior is more consistent with :func:`os.path.relpath`. (Contributed by Domenico Ragusa in :gh:`84538`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:737
@@ -777,7 +777,7 @@ msgid "Added ``--durations`` command line option, showing the N slowest test cas
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:971
-msgid "(Contributed by Giampaolo Rodola in :issue:`4080`)"
+msgid "(Contributed by Giampaolo Rodola in :gh:`48330`)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:974
@@ -1694,7 +1694,7 @@ msgid "An alias of the :class:`~unittest.TextTestResult` class: ``_TextTestResul
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1566
-msgid "(Contributed by Serhiy Storchaka in :issue:`45162`.)"
+msgid "(Contributed by Serhiy Storchaka in :gh:`89325`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1569
