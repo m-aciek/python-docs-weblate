@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-25 10:40+0000\n"
+"POT-Creation-Date: 2023-09-25 10:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgid ":exc:`ImportError` exceptions raised from failed ``from <module> import <
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:156
-#: ../../whatsnew/3.12.rst:1763
+#: ../../whatsnew/3.12.rst:1764
 msgid "New Features"
 msgstr ""
 
@@ -638,7 +638,7 @@ msgid ":func:`shutil.which` will return a path matching the *cmd* with a compone
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:792
-#: ../../whatsnew/3.12.rst:1485
+#: ../../whatsnew/3.12.rst:1486
 msgid "sqlite3"
 msgstr ""
 
@@ -679,7 +679,7 @@ msgid "Add :data:`sys.last_exc` which holds the last unhandled exception that wa
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:839
-#: ../../whatsnew/3.12.rst:1671
+#: ../../whatsnew/3.12.rst:1672
 msgid ":func:`sys._current_exceptions` now returns a mapping from thread-id to an exception instance, rather than to a ``(typ, exc, tb)`` tuple. (Contributed by Irit Katriel in :gh:`103176`.)"
 msgstr ""
 
@@ -768,7 +768,7 @@ msgid "The Unicode database has been updated to version 15.0.0. (Contributed by 
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:953
-#: ../../whatsnew/3.12.rst:1526
+#: ../../whatsnew/3.12.rst:1527
 msgid "unittest"
 msgstr ""
 
@@ -857,7 +857,7 @@ msgid "Remove outdated example scripts of the ``Tools/scripts/`` directory. A co
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1050
-#: ../../whatsnew/3.12.rst:2062
+#: ../../whatsnew/3.12.rst:2063
 msgid "Deprecated"
 msgstr ""
 
@@ -1214,7 +1214,7 @@ msgid "Currently Python accepts numeric literals immediately followed by keyword
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1302
-#: ../../whatsnew/3.12.rst:2144
+#: ../../whatsnew/3.12.rst:2145
 msgid "Removed"
 msgstr ""
 
@@ -1341,7 +1341,7 @@ msgid "The :mod:`!imp` module has been removed.  (Contributed by Barry Warsaw in
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1413
-msgid "Replace removed :mod:`!imp` functions with :mod:`importlib` functions:"
+msgid "To migrate, consult the following correspondence table:"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1418
@@ -1424,996 +1424,1004 @@ msgstr ""
 msgid ":func:`importlib.util.source_from_cache`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1430
+#: ../../whatsnew/3.12.rst:1428
+msgid "``imp.load_source()``"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1428
+msgid "*See below*"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:1431
 msgid "Replace ``imp.load_source()`` with::"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1445
+#: ../../whatsnew/3.12.rst:1446
 msgid "Removed :mod:`!imp` functions and attributes with no replacements:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1447
+#: ../../whatsnew/3.12.rst:1448
 msgid "undocumented functions:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1449
+#: ../../whatsnew/3.12.rst:1450
 msgid "``imp.init_builtin()``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1450
+#: ../../whatsnew/3.12.rst:1451
 msgid "``imp.load_compiled()``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1451
+#: ../../whatsnew/3.12.rst:1452
 msgid "``imp.load_dynamic()``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1452
+#: ../../whatsnew/3.12.rst:1453
 msgid "``imp.load_package()``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1454
+#: ../../whatsnew/3.12.rst:1455
 msgid "``imp.lock_held()``, ``imp.acquire_lock()``, ``imp.release_lock()``: the locking scheme has changed in Python 3.3 to per-module locks."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1456
+#: ../../whatsnew/3.12.rst:1457
 msgid "``imp.find_module()`` constants: ``SEARCH_ERROR``, ``PY_SOURCE``, ``PY_COMPILED``, ``C_EXTENSION``, ``PY_RESOURCE``, ``PKG_DIRECTORY``, ``C_BUILTIN``, ``PY_FROZEN``, ``PY_CODERESOURCE``, ``IMP_HOOK``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1461
+#: ../../whatsnew/3.12.rst:1462
 msgid "io"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1463
+#: ../../whatsnew/3.12.rst:1464
 msgid "Remove :mod:`io`'s ``io.OpenWrapper`` and ``_pyio.OpenWrapper``, deprecated in Python 3.10: just use :func:`open` instead. The :func:`open` (:func:`io.open`) function is a built-in function. Since Python 3.10, :func:`!_pyio.open` is also a static method. (Contributed by Victor Stinner in :gh:`94169`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1470
+#: ../../whatsnew/3.12.rst:1471
 msgid "locale"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1472
+#: ../../whatsnew/3.12.rst:1473
 msgid "Remove :mod:`locale`'s :func:`!locale.format` function, deprecated in Python 3.7: use :func:`locale.format_string` instead. (Contributed by Victor Stinner in :gh:`94226`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1476
+#: ../../whatsnew/3.12.rst:1477
 msgid "``smtpd``: The module has been removed according to the schedule in :pep:`594`, having been deprecated in Python 3.4.7 and 3.5.4. Use aiosmtpd_ PyPI module or any other :mod:`asyncio`-based server instead. (Contributed by Oleg Iarygin in :gh:`93243`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1487
+#: ../../whatsnew/3.12.rst:1488
 msgid "The following undocumented :mod:`sqlite3` features, deprecated in Python 3.10, are now removed:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1490
+#: ../../whatsnew/3.12.rst:1491
 msgid "``sqlite3.enable_shared_cache()``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1491
+#: ../../whatsnew/3.12.rst:1492
 msgid "``sqlite3.OptimizedUnicode``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1493
+#: ../../whatsnew/3.12.rst:1494
 msgid "If a shared cache must be used, open the database in URI mode using the ``cache=shared`` query parameter."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1496
+#: ../../whatsnew/3.12.rst:1497
 msgid "The ``sqlite3.OptimizedUnicode`` text factory has been an alias for :class:`str` since Python 3.3. Code that previously set the text factory to ``OptimizedUnicode`` can either use ``str`` explicitly, or rely on the default value which is also ``str``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1501
+#: ../../whatsnew/3.12.rst:1502
 msgid "(Contributed by Erlend E. Aasland in :gh:`92548`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1504
+#: ../../whatsnew/3.12.rst:1505
 msgid "ssl"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1506
+#: ../../whatsnew/3.12.rst:1507
 msgid "Remove :mod:`ssl`'s :func:`!ssl.RAND_pseudo_bytes` function, deprecated in Python 3.6: use :func:`os.urandom` or :func:`ssl.RAND_bytes` instead. (Contributed by Victor Stinner in :gh:`94199`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1510
+#: ../../whatsnew/3.12.rst:1511
 msgid "Remove the :func:`!ssl.match_hostname` function. It was deprecated in Python 3.7. OpenSSL performs hostname matching since Python 3.7, Python no longer uses the :func:`!ssl.match_hostname` function. (Contributed by Victor Stinner in :gh:`94199`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1516
+#: ../../whatsnew/3.12.rst:1517
 msgid "Remove the :func:`!ssl.wrap_socket` function, deprecated in Python 3.7: instead, create a :class:`ssl.SSLContext` object and call its :class:`ssl.SSLContext.wrap_socket` method. Any package that still uses :func:`!ssl.wrap_socket` is broken and insecure. The function neither sends a SNI TLS extension nor validates server hostname. Code is subject to `CWE-295 <https://cwe.mitre.org/data/definitions/295.html>`_: Improper Certificate Validation. (Contributed by Victor Stinner in :gh:`94199`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1528
+#: ../../whatsnew/3.12.rst:1529
 msgid "Removed many old deprecated :mod:`unittest` features:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1530
+#: ../../whatsnew/3.12.rst:1531
 msgid "A number of :class:`~unittest.TestCase` method aliases:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1533
+#: ../../whatsnew/3.12.rst:1534
 msgid "Deprecated alias"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1533
+#: ../../whatsnew/3.12.rst:1534
 msgid "Method Name"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1533
+#: ../../whatsnew/3.12.rst:1534
 msgid "Deprecated in"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1535
+#: ../../whatsnew/3.12.rst:1536
 msgid "``failUnless``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1535
-#: ../../whatsnew/3.12.rst:1542
+#: ../../whatsnew/3.12.rst:1536
+#: ../../whatsnew/3.12.rst:1543
 msgid ":meth:`.assertTrue`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1535
 #: ../../whatsnew/3.12.rst:1536
 #: ../../whatsnew/3.12.rst:1537
 #: ../../whatsnew/3.12.rst:1538
 #: ../../whatsnew/3.12.rst:1539
 #: ../../whatsnew/3.12.rst:1540
 #: ../../whatsnew/3.12.rst:1541
+#: ../../whatsnew/3.12.rst:1542
 msgid "3.1"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1536
+#: ../../whatsnew/3.12.rst:1537
 msgid "``failIf``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1536
+#: ../../whatsnew/3.12.rst:1537
 msgid ":meth:`.assertFalse`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1537
+#: ../../whatsnew/3.12.rst:1538
 msgid "``failUnlessEqual``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1537
-#: ../../whatsnew/3.12.rst:1543
+#: ../../whatsnew/3.12.rst:1538
+#: ../../whatsnew/3.12.rst:1544
 msgid ":meth:`.assertEqual`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1538
+#: ../../whatsnew/3.12.rst:1539
 msgid "``failIfEqual``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1538
-#: ../../whatsnew/3.12.rst:1544
+#: ../../whatsnew/3.12.rst:1539
+#: ../../whatsnew/3.12.rst:1545
 msgid ":meth:`.assertNotEqual`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1539
+#: ../../whatsnew/3.12.rst:1540
 msgid "``failUnlessAlmostEqual``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1539
-#: ../../whatsnew/3.12.rst:1545
+#: ../../whatsnew/3.12.rst:1540
+#: ../../whatsnew/3.12.rst:1546
 msgid ":meth:`.assertAlmostEqual`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1540
+#: ../../whatsnew/3.12.rst:1541
 msgid "``failIfAlmostEqual``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1540
-#: ../../whatsnew/3.12.rst:1546
+#: ../../whatsnew/3.12.rst:1541
+#: ../../whatsnew/3.12.rst:1547
 msgid ":meth:`.assertNotAlmostEqual`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1541
+#: ../../whatsnew/3.12.rst:1542
 msgid "``failUnlessRaises``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1541
+#: ../../whatsnew/3.12.rst:1542
 msgid ":meth:`.assertRaises`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1542
+#: ../../whatsnew/3.12.rst:1543
 msgid "``assert_``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1542
 #: ../../whatsnew/3.12.rst:1543
 #: ../../whatsnew/3.12.rst:1544
 #: ../../whatsnew/3.12.rst:1545
 #: ../../whatsnew/3.12.rst:1546
 #: ../../whatsnew/3.12.rst:1547
 #: ../../whatsnew/3.12.rst:1548
+#: ../../whatsnew/3.12.rst:1549
 msgid "3.2"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1543
+#: ../../whatsnew/3.12.rst:1544
 msgid "``assertEquals``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1544
+#: ../../whatsnew/3.12.rst:1545
 msgid "``assertNotEquals``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1545
+#: ../../whatsnew/3.12.rst:1546
 msgid "``assertAlmostEquals``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1546
+#: ../../whatsnew/3.12.rst:1547
 msgid "``assertNotAlmostEquals``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1547
+#: ../../whatsnew/3.12.rst:1548
 msgid "``assertRegexpMatches``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1547
+#: ../../whatsnew/3.12.rst:1548
 msgid ":meth:`.assertRegex`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1548
+#: ../../whatsnew/3.12.rst:1549
 msgid "``assertRaisesRegexp``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1548
+#: ../../whatsnew/3.12.rst:1549
 msgid ":meth:`.assertRaisesRegex`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1549
+#: ../../whatsnew/3.12.rst:1550
 msgid "``assertNotRegexpMatches``"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1549
+#: ../../whatsnew/3.12.rst:1550
 msgid ":meth:`.assertNotRegex`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1549
+#: ../../whatsnew/3.12.rst:1550
 msgid "3.5"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1552
+#: ../../whatsnew/3.12.rst:1553
 msgid "You can use https://github.com/isidentical/teyit to automatically modernise your unit tests."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1555
+#: ../../whatsnew/3.12.rst:1556
 msgid "Undocumented and broken :class:`~unittest.TestCase` method ``assertDictContainsSubset`` (deprecated in Python 3.2)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1558
+#: ../../whatsnew/3.12.rst:1559
 msgid "Undocumented :meth:`TestLoader.loadTestsFromModule <unittest.TestLoader.loadTestsFromModule>` parameter *use_load_tests* (deprecated and ignored since Python 3.2)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1562
+#: ../../whatsnew/3.12.rst:1563
 msgid "An alias of the :class:`~unittest.TextTestResult` class: ``_TextTestResult`` (deprecated in Python 3.2)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1565
+#: ../../whatsnew/3.12.rst:1566
 msgid "(Contributed by Serhiy Storchaka in :issue:`45162`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1568
+#: ../../whatsnew/3.12.rst:1569
 msgid "webbrowser"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1570
+#: ../../whatsnew/3.12.rst:1571
 msgid "Remove support for obsolete browsers from :mod:`webbrowser`. Removed browsers include: Grail, Mosaic, Netscape, Galeon, Skipstone, Iceape, Firebird, and Firefox versions 35 and below (:gh:`102871`)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1575
+#: ../../whatsnew/3.12.rst:1576
 msgid "xml.etree.ElementTree"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1577
+#: ../../whatsnew/3.12.rst:1578
 msgid "Remove the ``ElementTree.Element.copy()`` method of the pure Python implementation, deprecated in Python 3.10, use the :func:`copy.copy` function instead.  The C implementation of :mod:`xml.etree.ElementTree` has no ``copy()`` method, only a ``__copy__()`` method. (Contributed by Victor Stinner in :gh:`94383`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1584
+#: ../../whatsnew/3.12.rst:1585
 msgid "zipimport"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1586
+#: ../../whatsnew/3.12.rst:1587
 msgid "Remove :mod:`zipimport`'s ``find_loader()`` and ``find_module()`` methods, deprecated in Python 3.10: use the ``find_spec()`` method instead.  See :pep:`451` for the rationale. (Contributed by Victor Stinner in :gh:`94379`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1592
+#: ../../whatsnew/3.12.rst:1593
 msgid "Others"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1594
+#: ../../whatsnew/3.12.rst:1595
 msgid "Removed the ``suspicious`` rule from the documentation :file:`Makefile`, and removed ``Doc/tools/rstlint.py``, both in favor of `sphinx-lint <https://github.com/sphinx-contrib/sphinx-lint>`_. (Contributed by Julien Palard in :gh:`98179`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1599
+#: ../../whatsnew/3.12.rst:1600
 msgid "Remove the *keyfile* and *certfile* parameters from the :mod:`ftplib`, :mod:`imaplib`, :mod:`poplib` and :mod:`smtplib` modules, and the *key_file*, *cert_file* and *check_hostname* parameters from the :mod:`http.client` module, all deprecated since Python 3.6. Use the *context* parameter (*ssl_context* in :mod:`imaplib`) instead. (Contributed by Victor Stinner in :gh:`94172`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1610
-#: ../../whatsnew/3.12.rst:1922
+#: ../../whatsnew/3.12.rst:1611
+#: ../../whatsnew/3.12.rst:1923
 msgid "Porting to Python 3.12"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1612
+#: ../../whatsnew/3.12.rst:1613
 msgid "This section lists previously described changes and other bugfixes that may require changes to your code."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1616
+#: ../../whatsnew/3.12.rst:1617
 msgid "Changes in the Python API"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1618
+#: ../../whatsnew/3.12.rst:1619
 msgid "More strict rules are now applied for numerical group references and group names in regular expressions. Only sequence of ASCII digits is now accepted as a numerical reference. The group name in bytes patterns and replacement strings can now only contain ASCII letters and digits and underscore. (Contributed by Serhiy Storchaka in :gh:`91760`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1625
+#: ../../whatsnew/3.12.rst:1626
 msgid "Removed ``randrange()`` functionality deprecated since Python 3.10.  Formerly, ``randrange(10.0)`` losslessly converted to ``randrange(10)``. Now, it raises a :exc:`TypeError`. Also, the exception raised for non-integer values such as ``randrange(10.5)`` or ``randrange('10')`` has been changed from :exc:`ValueError` to :exc:`TypeError`.  This also prevents bugs where ``randrange(1e25)`` would silently select from a larger range than ``randrange(10**25)``. (Originally suggested by Serhiy Storchaka :gh:`86388`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1633
+#: ../../whatsnew/3.12.rst:1634
 msgid ":class:`argparse.ArgumentParser` changed encoding and error handler for reading arguments from file (e.g. ``fromfile_prefix_chars`` option) from default text encoding (e.g. :func:`locale.getpreferredencoding(False) <locale.getpreferredencoding>`) to :term:`filesystem encoding and error handler`. Argument files should be encoded in UTF-8 instead of ANSI Codepage on Windows."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1639
+#: ../../whatsnew/3.12.rst:1640
 msgid "Removed the ``asyncore``-based ``smtpd`` module deprecated in Python 3.4.7 and 3.5.4.  A recommended replacement is the :mod:`asyncio`-based aiosmtpd_ PyPI module."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1643
+#: ../../whatsnew/3.12.rst:1644
 msgid ":func:`shlex.split`: Passing ``None`` for *s* argument now raises an exception, rather than reading :data:`sys.stdin`. The feature was deprecated in Python 3.9. (Contributed by Victor Stinner in :gh:`94352`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1648
+#: ../../whatsnew/3.12.rst:1649
 msgid "The :mod:`os` module no longer accepts bytes-like paths, like :class:`bytearray` and :class:`memoryview` types: only the exact :class:`bytes` type is accepted for bytes strings. (Contributed by Victor Stinner in :gh:`98393`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1653
+#: ../../whatsnew/3.12.rst:1654
 msgid ":func:`syslog.openlog` and :func:`syslog.closelog` now fail if used in subinterpreters. :func:`syslog.syslog` may still be used in subinterpreters, but now only if :func:`syslog.openlog` has already been called in the main interpreter. These new restrictions do not apply to the main interpreter, so only a very small set of users might be affected. This change helps with interpreter isolation.  Furthermore, :mod:`syslog` is a wrapper around process-global resources, which are best managed from the main interpreter. (Contributed by Donghee Na in :gh:`99127`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1662
+#: ../../whatsnew/3.12.rst:1663
 msgid "The undocumented locking behavior of :func:`~functools.cached_property` is removed, because it locked across all instances of the class, leading to high lock contention. This means that a cached property getter function could now run more than once for a single instance, if two threads race. For most simple cached properties (e.g. those that are idempotent and simply calculate a value based on other attributes of the instance) this will be fine.  If synchronization is needed, implement locking within the cached property getter function or around multi-threaded access points."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1675
+#: ../../whatsnew/3.12.rst:1676
 msgid "When extracting tar files using :mod:`tarfile` or :func:`shutil.unpack_archive`, pass the *filter* argument to limit features that may be surprising or dangerous. See :ref:`tarfile-extraction-filter` for details."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1680
+#: ../../whatsnew/3.12.rst:1681
 msgid "The output of the :func:`tokenize.tokenize` and :func:`tokenize.generate_tokens` functions is now changed due to the changes introduced in :pep:`701`. This means that ``STRING`` tokens are not emitted any more for f-strings and the tokens described in :pep:`701` are now produced instead: ``FSTRING_START``, ``FSTRING_MIDDLE`` and ``FSTRING_END`` are now emitted for f-string \"string\" parts in addition to the appropriate tokens for the tokenization in the expression components. For example for the f-string ``f\"start {1+1} end\"`` the old version of the tokenizer emitted::"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1691
+#: ../../whatsnew/3.12.rst:1692
 msgid "while the new version emits::"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1703
+#: ../../whatsnew/3.12.rst:1704
 msgid "Additionally, there may be some minor behavioral changes as a consequence of the changes required to support :pep:`701`. Some of these changes include:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1706
+#: ../../whatsnew/3.12.rst:1707
 msgid "The ``type`` attribute of the tokens emitted when tokenizing some invalid Python characters such as ``!`` has changed from ``ERRORTOKEN`` to ``OP``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1709
+#: ../../whatsnew/3.12.rst:1710
 msgid "Incomplete single-line strings now also raise :exc:`tokenize.TokenError` as incomplete multiline strings do."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1712
+#: ../../whatsnew/3.12.rst:1713
 msgid "Some incomplete or invalid Python code now raises :exc:`tokenize.TokenError` instead of returning arbitrary ``ERRORTOKEN`` tokens when tokenizing it."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1715
+#: ../../whatsnew/3.12.rst:1716
 msgid "Mixing tabs and spaces as indentation in the same file is not supported anymore and will raise a :exc:`TabError`."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1719
+#: ../../whatsnew/3.12.rst:1720
 msgid "Build Changes"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1721
+#: ../../whatsnew/3.12.rst:1722
 msgid "Python no longer uses :file:`setup.py` to build shared C extension modules. Build parameters like headers and libraries are detected in ``configure`` script. Extensions are built by :file:`Makefile`. Most extensions use ``pkg-config`` and fall back to manual detection. (Contributed by Christian Heimes in :gh:`93939`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1727
+#: ../../whatsnew/3.12.rst:1728
 msgid "``va_start()`` with two parameters, like ``va_start(args, format),`` is now required to build Python. ``va_start()`` is no longer called with a single parameter. (Contributed by Kumar Aditya in :gh:`93207`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1732
+#: ../../whatsnew/3.12.rst:1733
 msgid "CPython now uses the ThinLTO option as the default link time optimization policy if the Clang compiler accepts the flag. (Contributed by Donghee Na in :gh:`89536`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1736
+#: ../../whatsnew/3.12.rst:1737
 msgid "Add ``COMPILEALL_OPTS`` variable in :file:`Makefile` to override :mod:`compileall` options (default: ``-j0``) in ``make install``. Also merged the 3 ``compileall`` commands into a single command to build .pyc files for all optimization levels (0, 1, 2) at once. (Contributed by Victor Stinner in :gh:`99289`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1742
+#: ../../whatsnew/3.12.rst:1743
 msgid "Add platform triplets for 64-bit LoongArch:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1744
+#: ../../whatsnew/3.12.rst:1745
 msgid "loongarch64-linux-gnusf"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1745
+#: ../../whatsnew/3.12.rst:1746
 msgid "loongarch64-linux-gnuf32"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1746
+#: ../../whatsnew/3.12.rst:1747
 msgid "loongarch64-linux-gnu"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1748
+#: ../../whatsnew/3.12.rst:1749
 msgid "(Contributed by Zhang Na in :gh:`90656`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1750
+#: ../../whatsnew/3.12.rst:1751
 msgid "``PYTHON_FOR_REGEN`` now require Python 3.10 or newer."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1752
+#: ../../whatsnew/3.12.rst:1753
 msgid "Autoconf 2.71 and aclocal 1.16.4 is now required to regenerate :file:`!configure`. (Contributed by Christian Heimes in :gh:`89886`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1756
+#: ../../whatsnew/3.12.rst:1757
 msgid "Windows builds and macOS installers from python.org now use OpenSSL 3.0."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1760
+#: ../../whatsnew/3.12.rst:1761
 msgid "C API Changes"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1766
+#: ../../whatsnew/3.12.rst:1767
 msgid ":pep:`697`: Introduced the :ref:`Unstable C API tier <unstable-c-api>`, intended for low-level tools like debuggers and JIT compilers. This API may change in each minor release of CPython without deprecation warnings. Its contents are marked by the ``PyUnstable_`` prefix in names."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1772
+#: ../../whatsnew/3.12.rst:1773
 msgid "Code object constructors:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1774
+#: ../../whatsnew/3.12.rst:1775
 msgid "``PyUnstable_Code_New()`` (renamed from ``PyCode_New``)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1775
+#: ../../whatsnew/3.12.rst:1776
 msgid "``PyUnstable_Code_NewWithPosOnlyArgs()`` (renamed from ``PyCode_NewWithPosOnlyArgs``)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1777
+#: ../../whatsnew/3.12.rst:1778
 msgid "Extra storage for code objects (:pep:`523`):"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1779
+#: ../../whatsnew/3.12.rst:1780
 msgid "``PyUnstable_Eval_RequestCodeExtraIndex()`` (renamed from ``_PyEval_RequestCodeExtraIndex``)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1780
+#: ../../whatsnew/3.12.rst:1781
 msgid "``PyUnstable_Code_GetExtra()`` (renamed from ``_PyCode_GetExtra``)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1781
+#: ../../whatsnew/3.12.rst:1782
 msgid "``PyUnstable_Code_SetExtra()`` (renamed from ``_PyCode_SetExtra``)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1783
+#: ../../whatsnew/3.12.rst:1784
 msgid "The original names will continue to be available until the respective API changes."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1786
+#: ../../whatsnew/3.12.rst:1787
 msgid "(Contributed by Petr Viktorin in :gh:`101101`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1788
+#: ../../whatsnew/3.12.rst:1789
 msgid ":pep:`697`: Added API for extending types whose instance memory layout is opaque:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1791
+#: ../../whatsnew/3.12.rst:1792
 msgid ":c:member:`PyType_Spec.basicsize` can be zero or negative to specify inheriting or extending the base class size."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1793
+#: ../../whatsnew/3.12.rst:1794
 msgid ":c:func:`PyObject_GetTypeData` and :c:func:`PyType_GetTypeDataSize` added to allow access to subclass-specific instance data."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1795
+#: ../../whatsnew/3.12.rst:1796
 msgid ":c:macro:`Py_TPFLAGS_ITEMS_AT_END` and :c:func:`PyObject_GetItemData` added to allow safely extending certain variable-sized types, including :c:var:`PyType_Type`."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1798
+#: ../../whatsnew/3.12.rst:1799
 msgid ":c:macro:`Py_RELATIVE_OFFSET` added to allow defining :c:type:`members <PyMemberDef>` in terms of a subclass-specific struct."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1801
+#: ../../whatsnew/3.12.rst:1802
 msgid "(Contributed by Petr Viktorin in :gh:`103509`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1803
+#: ../../whatsnew/3.12.rst:1804
 msgid "Added the new :ref:`limited C API <limited-c-api>` function :c:func:`PyType_FromMetaclass`, which generalizes the existing :c:func:`PyType_FromModuleAndSpec` using an additional metaclass argument. (Contributed by Wenzel Jakob in :gh:`93012`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1808
+#: ../../whatsnew/3.12.rst:1809
 msgid "API for creating objects that can be called using :ref:`the vectorcall protocol <vectorcall>` was added to the :ref:`Limited API <stable>`:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1812
+#: ../../whatsnew/3.12.rst:1813
 msgid ":c:macro:`Py_TPFLAGS_HAVE_VECTORCALL`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1813
+#: ../../whatsnew/3.12.rst:1814
 msgid ":c:func:`PyVectorcall_NARGS`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1814
+#: ../../whatsnew/3.12.rst:1815
 msgid ":c:func:`PyVectorcall_Call`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1815
+#: ../../whatsnew/3.12.rst:1816
 msgid ":c:type:`vectorcallfunc`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1817
+#: ../../whatsnew/3.12.rst:1818
 msgid "The :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` flag is now removed from a class when the class's :py:meth:`~object.__call__` method is reassigned. This makes vectorcall safe to use with mutable types (i.e. heap types without the immutable flag, :c:macro:`Py_TPFLAGS_IMMUTABLETYPE`). Mutable types that do not override :c:member:`~PyTypeObject.tp_call` now inherit the ``Py_TPFLAGS_HAVE_VECTORCALL`` flag. (Contributed by Petr Viktorin in :gh:`93274`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1825
+#: ../../whatsnew/3.12.rst:1826
 msgid "The :c:macro:`Py_TPFLAGS_MANAGED_DICT` and :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` flags have been added. This allows extensions classes to support object ``__dict__`` and weakrefs with less bookkeeping, using less memory and with faster access."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1830
+#: ../../whatsnew/3.12.rst:1831
 msgid "API for performing calls using :ref:`the vectorcall protocol <vectorcall>` was added to the :ref:`Limited API <stable>`:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1834
+#: ../../whatsnew/3.12.rst:1835
 msgid ":c:func:`PyObject_Vectorcall`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1835
+#: ../../whatsnew/3.12.rst:1836
 msgid ":c:func:`PyObject_VectorcallMethod`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1836
+#: ../../whatsnew/3.12.rst:1837
 msgid ":c:macro:`PY_VECTORCALL_ARGUMENTS_OFFSET`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1838
+#: ../../whatsnew/3.12.rst:1839
 msgid "This means that both the incoming and outgoing ends of the vector call protocol are now available in the :ref:`Limited API <stable>`. (Contributed by Wenzel Jakob in :gh:`98586`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1842
+#: ../../whatsnew/3.12.rst:1843
 msgid "Added two new public functions, :c:func:`PyEval_SetProfileAllThreads` and :c:func:`PyEval_SetTraceAllThreads`, that allow to set tracing and profiling functions in all running threads in addition to the calling one. (Contributed by Pablo Galindo in :gh:`93503`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1848
+#: ../../whatsnew/3.12.rst:1849
 msgid "Added new function :c:func:`PyFunction_SetVectorcall` to the C API which sets the vectorcall field of a given :c:type:`PyFunctionObject`. (Contributed by Andrew Frost in :gh:`92257`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1852
+#: ../../whatsnew/3.12.rst:1853
 msgid "The C API now permits registering callbacks via :c:func:`PyDict_AddWatcher`, :c:func:`PyDict_Watch` and related APIs to be called whenever a dictionary is modified. This is intended for use by optimizing interpreters, JIT compilers, or debuggers. (Contributed by Carl Meyer in :gh:`91052`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1858
+#: ../../whatsnew/3.12.rst:1859
 msgid "Added :c:func:`PyType_AddWatcher` and :c:func:`PyType_Watch` API to register callbacks to receive notification on changes to a type. (Contributed by Carl Meyer in :gh:`91051`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1862
+#: ../../whatsnew/3.12.rst:1863
 msgid "Added :c:func:`PyCode_AddWatcher` and :c:func:`PyCode_ClearWatcher` APIs to register callbacks to receive notification on creation and destruction of code objects. (Contributed by Itamar Oren in :gh:`91054`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1867
+#: ../../whatsnew/3.12.rst:1868
 msgid "Add :c:func:`PyFrame_GetVar` and :c:func:`PyFrame_GetVarString` functions to get a frame variable by its name. (Contributed by Victor Stinner in :gh:`91248`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1871
+#: ../../whatsnew/3.12.rst:1872
 msgid "Add :c:func:`PyErr_GetRaisedException` and :c:func:`PyErr_SetRaisedException` for saving and restoring the current exception. These functions return and accept a single exception object, rather than the triple arguments of the now-deprecated :c:func:`PyErr_Fetch` and :c:func:`PyErr_Restore`. This is less error prone and a bit more efficient. (Contributed by Mark Shannon in :gh:`101578`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1879
+#: ../../whatsnew/3.12.rst:1880
 msgid "Add ``_PyErr_ChainExceptions1``, which takes an exception instance, to replace the legacy-API ``_PyErr_ChainExceptions``, which is now deprecated. (Contributed by Mark Shannon in :gh:`101578`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1883
+#: ../../whatsnew/3.12.rst:1884
 msgid "Add :c:func:`PyException_GetArgs` and :c:func:`PyException_SetArgs` as convenience functions for retrieving and modifying the :attr:`~BaseException.args` passed to the exception's constructor. (Contributed by Mark Shannon in :gh:`101578`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1888
+#: ../../whatsnew/3.12.rst:1889
 msgid "Add :c:func:`PyErr_DisplayException`, which takes an exception instance, to replace the legacy-api :c:func:`!PyErr_Display`. (Contributed by Irit Katriel in :gh:`102755`)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1892
+#: ../../whatsnew/3.12.rst:1893
 msgid ":pep:`683`: Introduced Immortal Objects to Python which allows objects to bypass reference counts and introduced changes to the C-API:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1895
+#: ../../whatsnew/3.12.rst:1896
 msgid "``_Py_IMMORTAL_REFCNT``: The reference count that defines an object"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1896
+#: ../../whatsnew/3.12.rst:1897
 msgid "as immortal."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1897
+#: ../../whatsnew/3.12.rst:1898
 msgid "``_Py_IsImmortal`` Checks if an object has the immortal reference count."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1898
+#: ../../whatsnew/3.12.rst:1899
 msgid "``PyObject_HEAD_INIT`` This will now initialize reference count to"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1899
+#: ../../whatsnew/3.12.rst:1900
 msgid "``_Py_IMMORTAL_REFCNT`` when used with ``Py_BUILD_CORE``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1900
+#: ../../whatsnew/3.12.rst:1901
 msgid "``SSTATE_INTERNED_IMMORTAL`` An identifier for interned unicode objects"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1901
+#: ../../whatsnew/3.12.rst:1902
 msgid "that are immortal."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1902
+#: ../../whatsnew/3.12.rst:1903
 msgid "``SSTATE_INTERNED_IMMORTAL_STATIC`` An identifier for interned unicode"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1903
+#: ../../whatsnew/3.12.rst:1904
 msgid "objects that are immortal and static"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1906
+#: ../../whatsnew/3.12.rst:1907
 msgid "``sys.getunicodeinternedsize`` This returns the total number of unicode"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1905
+#: ../../whatsnew/3.12.rst:1906
 msgid "objects that have been interned. This is now needed for :file:`refleak.py` to correctly track reference counts and allocated blocks"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1908
+#: ../../whatsnew/3.12.rst:1909
 msgid "(Contributed by Eddie Elizondo in :gh:`84436`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1910
+#: ../../whatsnew/3.12.rst:1911
 msgid ":pep:`684`: Added the new :c:func:`Py_NewInterpreterFromConfig` function and :c:type:`PyInterpreterConfig`, which may be used to create sub-interpreters with their own GILs. (See :ref:`whatsnew312-pep684` for more info.) (Contributed by Eric Snow in :gh:`104110`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1916
+#: ../../whatsnew/3.12.rst:1917
 msgid "In the limited C API version 3.12, :c:func:`Py_INCREF` and :c:func:`Py_DECREF` functions are now implemented as opaque function calls to hide implementation details. (Contributed by Victor Stinner in :gh:`105387`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1924
+#: ../../whatsnew/3.12.rst:1925
 msgid "Legacy Unicode APIs based on ``Py_UNICODE*`` representation has been removed. Please migrate to APIs based on UTF-8 or ``wchar_t*``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1927
+#: ../../whatsnew/3.12.rst:1928
 msgid "Argument parsing functions like :c:func:`PyArg_ParseTuple` doesn't support ``Py_UNICODE*`` based format (e.g. ``u``, ``Z``) anymore. Please migrate to other formats for Unicode like ``s``, ``z``, ``es``, and ``U``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1931
+#: ../../whatsnew/3.12.rst:1932
 msgid "``tp_weaklist`` for all static builtin types is always ``NULL``. This is an internal-only field on ``PyTypeObject`` but we're pointing out the change in case someone happens to be accessing the field directly anyway.  To avoid breakage, consider using the existing public C-API instead, or, if necessary, the (internal-only) ``_PyObject_GET_WEAKREFS_LISTPTR()`` macro."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1938
+#: ../../whatsnew/3.12.rst:1939
 msgid "This internal-only :c:member:`PyTypeObject.tp_subclasses` may now not be a valid object pointer.  Its type was changed to :c:expr:`void *` to reflect this.  We mention this in case someone happens to be accessing the internal-only field directly."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1943
+#: ../../whatsnew/3.12.rst:1944
 msgid "To get a list of subclasses, call the Python method :py:meth:`~class.__subclasses__` (using :c:func:`PyObject_CallMethod`, for example)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1947
+#: ../../whatsnew/3.12.rst:1948
 msgid "Add support of more formatting options (left aligning, octals, uppercase hexadecimals, :c:type:`intmax_t`, :c:type:`ptrdiff_t`, :c:type:`wchar_t` C strings, variable width and precision) in :c:func:`PyUnicode_FromFormat` and :c:func:`PyUnicode_FromFormatV`. (Contributed by Serhiy Storchaka in :gh:`98836`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1953
+#: ../../whatsnew/3.12.rst:1954
 msgid "An unrecognized format character in :c:func:`PyUnicode_FromFormat` and :c:func:`PyUnicode_FromFormatV` now sets a :exc:`SystemError`. In previous versions it caused all the rest of the format string to be copied as-is to the result string, and any extra arguments discarded. (Contributed by Serhiy Storchaka in :gh:`95781`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1959
+#: ../../whatsnew/3.12.rst:1960
 msgid "Fixed wrong sign placement in :c:func:`PyUnicode_FromFormat` and :c:func:`PyUnicode_FromFormatV`. (Contributed by Philip Georgi in :gh:`95504`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1963
+#: ../../whatsnew/3.12.rst:1964
 msgid "Extension classes wanting to add a ``__dict__`` or weak reference slot should use :c:macro:`Py_TPFLAGS_MANAGED_DICT` and :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` instead of ``tp_dictoffset`` and ``tp_weaklistoffset``, respectively. The use of ``tp_dictoffset`` and ``tp_weaklistoffset`` is still supported, but does not fully support multiple inheritance (:gh:`95589`), and performance may be worse. Classes declaring :c:macro:`Py_TPFLAGS_MANAGED_DICT` should call :c:func:`!_PyObject_VisitManagedDict` and :c:func:`!_PyObject_ClearManagedDict` to traverse and clear their instance's dictionaries. To clear weakrefs, call :c:func:`PyObject_ClearWeakRefs`, as before."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1975
+#: ../../whatsnew/3.12.rst:1976
 msgid "The :c:func:`PyUnicode_FSDecoder` function no longer accepts bytes-like paths, like :class:`bytearray` and :class:`memoryview` types: only the exact :class:`bytes` type is accepted for bytes strings. (Contributed by Victor Stinner in :gh:`98393`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1980
+#: ../../whatsnew/3.12.rst:1981
 msgid "The :c:macro:`Py_CLEAR`, :c:macro:`Py_SETREF` and :c:macro:`Py_XSETREF` macros now only evaluate their arguments once. If an argument has side effects, these side effects are no longer duplicated. (Contributed by Victor Stinner in :gh:`98724`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1985
+#: ../../whatsnew/3.12.rst:1986
 msgid "The interpreter's error indicator is now always normalized. This means that :c:func:`PyErr_SetObject`, :c:func:`PyErr_SetString` and the other functions that set the error indicator now normalize the exception before storing it. (Contributed by Mark Shannon in :gh:`101578`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1990
+#: ../../whatsnew/3.12.rst:1991
 msgid "``_Py_RefTotal`` is no longer authoritative and only kept around for ABI compatibility.  Note that it is an internal global and only available on debug builds.  If you happen to be using it then you'll need to start using ``_Py_GetGlobalRefTotal()``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1995
+#: ../../whatsnew/3.12.rst:1996
 msgid "The following functions now select an appropriate metaclass for the newly created type:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1998
+#: ../../whatsnew/3.12.rst:1999
 msgid ":c:func:`PyType_FromSpec`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1999
+#: ../../whatsnew/3.12.rst:2000
 msgid ":c:func:`PyType_FromSpecWithBases`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2000
+#: ../../whatsnew/3.12.rst:2001
 msgid ":c:func:`PyType_FromModuleAndSpec`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2002
+#: ../../whatsnew/3.12.rst:2003
 msgid "Creating classes whose metaclass overrides :c:member:`~PyTypeObject.tp_new` is deprecated, and in Python 3.14+ it will be disallowed. Note that these functions ignore ``tp_new`` of the metaclass, possibly allowing incomplete initialization."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2007
+#: ../../whatsnew/3.12.rst:2008
 msgid "Note that :c:func:`PyType_FromMetaclass` (added in Python 3.12) already disallows creating classes whose metaclass overrides ``tp_new`` (:meth:`~object.__new__` in Python)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2011
+#: ../../whatsnew/3.12.rst:2012
 msgid "Since ``tp_new`` overrides almost everything ``PyType_From*`` functions do, the two are incompatible with each other. The existing behavior -- ignoring the metaclass for several steps of type creation -- is unsafe in general, since (meta)classes assume that ``tp_new`` was called. There is no simple general workaround. One of the following may work for you:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2018
+#: ../../whatsnew/3.12.rst:2019
 msgid "If you control the metaclass, avoid using ``tp_new`` in it:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2020
+#: ../../whatsnew/3.12.rst:2021
 msgid "If initialization can be skipped, it can be done in :c:member:`~PyTypeObject.tp_init` instead."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2022
+#: ../../whatsnew/3.12.rst:2023
 msgid "If the metaclass doesn't need to be instantiated from Python, set its ``tp_new`` to ``NULL`` using the :c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` flag. This makes it acceptable for ``PyType_From*`` functions."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2027
+#: ../../whatsnew/3.12.rst:2028
 msgid "Avoid ``PyType_From*`` functions: if you don't need C-specific features (slots or setting the instance size), create types by :ref:`calling <call>` the metaclass."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2031
+#: ../../whatsnew/3.12.rst:2032
 msgid "If you *know* the ``tp_new`` can be skipped safely, filter the deprecation warning out using :func:`warnings.catch_warnings` from Python."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2034
+#: ../../whatsnew/3.12.rst:2035
 msgid ":c:var:`PyOS_InputHook` and :c:var:`PyOS_ReadlineFunctionPointer` are no longer called in :ref:`subinterpreters <sub-interpreter-support>`. This is because clients generally rely on process-wide global state (since these callbacks have no way of recovering extension module state)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2039
+#: ../../whatsnew/3.12.rst:2040
 msgid "This also avoids situations where extensions may find themselves running in a subinterpreter that they don't support (or haven't yet been loaded in). See :gh:`104668` for more info."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2043
+#: ../../whatsnew/3.12.rst:2044
 msgid ":c:struct:`PyLongObject` has had its internals changed for better performance. Although the internals of :c:struct:`PyLongObject` are private, they are used by some extension modules. The internal fields should no longer be accessed directly, instead the API functions beginning ``PyLong_...`` should be used instead. Two new *unstable* API functions are provided for efficient access to the value of :c:struct:`PyLongObject`\\s which fit into a single machine word:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2051
+#: ../../whatsnew/3.12.rst:2052
 msgid ":c:func:`PyUnstable_Long_IsCompact`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2052
+#: ../../whatsnew/3.12.rst:2053
 msgid ":c:func:`PyUnstable_Long_CompactValue`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2054
+#: ../../whatsnew/3.12.rst:2055
 msgid "Custom allocators, set via :c:func:`PyMem_SetAllocator`, are now required to be thread-safe, regardless of memory domain.  Allocators that don't have their own state, including \"hooks\", are not affected. If your custom allocator is not already thread-safe and you need guidance then please create a new GitHub issue and CC ``@ericsnowcurrently``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2064
+#: ../../whatsnew/3.12.rst:2065
 msgid "Deprecate global configuration variable:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2066
+#: ../../whatsnew/3.12.rst:2067
 msgid ":c:var:`Py_DebugFlag`: use :c:member:`PyConfig.parser_debug`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2067
+#: ../../whatsnew/3.12.rst:2068
 msgid ":c:var:`Py_VerboseFlag`: use :c:member:`PyConfig.verbose`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2068
+#: ../../whatsnew/3.12.rst:2069
 msgid ":c:var:`Py_QuietFlag`: use :c:member:`PyConfig.quiet`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2069
+#: ../../whatsnew/3.12.rst:2070
 msgid ":c:var:`Py_InteractiveFlag`: use :c:member:`PyConfig.interactive`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2070
+#: ../../whatsnew/3.12.rst:2071
 msgid ":c:var:`Py_InspectFlag`: use :c:member:`PyConfig.inspect`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2071
+#: ../../whatsnew/3.12.rst:2072
 msgid ":c:var:`Py_OptimizeFlag`: use :c:member:`PyConfig.optimization_level`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2072
+#: ../../whatsnew/3.12.rst:2073
 msgid ":c:var:`Py_NoSiteFlag`: use :c:member:`PyConfig.site_import`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2073
+#: ../../whatsnew/3.12.rst:2074
 msgid ":c:var:`Py_BytesWarningFlag`: use :c:member:`PyConfig.bytes_warning`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2074
+#: ../../whatsnew/3.12.rst:2075
 msgid ":c:var:`Py_FrozenFlag`: use :c:member:`PyConfig.pathconfig_warnings`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2075
+#: ../../whatsnew/3.12.rst:2076
 msgid ":c:var:`Py_IgnoreEnvironmentFlag`: use :c:member:`PyConfig.use_environment`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2076
+#: ../../whatsnew/3.12.rst:2077
 msgid ":c:var:`Py_DontWriteBytecodeFlag`: use :c:member:`PyConfig.write_bytecode`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2077
+#: ../../whatsnew/3.12.rst:2078
 msgid ":c:var:`Py_NoUserSiteDirectory`: use :c:member:`PyConfig.user_site_directory`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2078
+#: ../../whatsnew/3.12.rst:2079
 msgid ":c:var:`Py_UnbufferedStdioFlag`: use :c:member:`PyConfig.buffered_stdio`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2079
+#: ../../whatsnew/3.12.rst:2080
 msgid ":c:var:`Py_HashRandomizationFlag`: use :c:member:`PyConfig.use_hash_seed` and :c:member:`PyConfig.hash_seed`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2081
+#: ../../whatsnew/3.12.rst:2082
 msgid ":c:var:`Py_IsolatedFlag`: use :c:member:`PyConfig.isolated`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2082
+#: ../../whatsnew/3.12.rst:2083
 msgid ":c:var:`Py_LegacyWindowsFSEncodingFlag`: use :c:member:`PyPreConfig.legacy_windows_fs_encoding`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2083
+#: ../../whatsnew/3.12.rst:2084
 msgid ":c:var:`Py_LegacyWindowsStdioFlag`: use :c:member:`PyConfig.legacy_windows_stdio`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2084
+#: ../../whatsnew/3.12.rst:2085
 msgid ":c:var:`!Py_FileSystemDefaultEncoding`: use :c:member:`PyConfig.filesystem_encoding`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2085
+#: ../../whatsnew/3.12.rst:2086
 msgid ":c:var:`!Py_HasFileSystemDefaultEncoding`: use :c:member:`PyConfig.filesystem_encoding`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2086
+#: ../../whatsnew/3.12.rst:2087
 msgid ":c:var:`!Py_FileSystemDefaultEncodeErrors`: use :c:member:`PyConfig.filesystem_errors`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2087
+#: ../../whatsnew/3.12.rst:2088
 msgid ":c:var:`!Py_UTF8Mode`: use :c:member:`PyPreConfig.utf8_mode` (see :c:func:`Py_PreInitialize`)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2089
+#: ../../whatsnew/3.12.rst:2090
 msgid "The :c:func:`Py_InitializeFromConfig` API should be used with :c:type:`PyConfig` instead. (Contributed by Victor Stinner in :gh:`77782`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2093
+#: ../../whatsnew/3.12.rst:2094
 msgid "Creating immutable types (:c:macro:`Py_TPFLAGS_IMMUTABLETYPE`) with mutable bases is deprecated and will be disabled in Python 3.14."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2096
+#: ../../whatsnew/3.12.rst:2097
 msgid "The :file:`structmember.h` header is deprecated, though it continues to be available and there are no plans to remove it."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2099
+#: ../../whatsnew/3.12.rst:2100
 msgid "Its contents are now available just by including :file:`Python.h`, with a ``Py`` prefix added if it was missing:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2102
+#: ../../whatsnew/3.12.rst:2103
 msgid ":c:struct:`PyMemberDef`, :c:func:`PyMember_GetOne` and :c:func:`PyMember_SetOne`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2104
+#: ../../whatsnew/3.12.rst:2105
 msgid "Type macros like :c:macro:`Py_T_INT`, :c:macro:`Py_T_DOUBLE`, etc. (previously ``T_INT``, ``T_DOUBLE``, etc.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2106
+#: ../../whatsnew/3.12.rst:2107
 msgid "The flags :c:macro:`Py_READONLY` (previously ``READONLY``) and :c:macro:`Py_AUDIT_READ` (previously all uppercase)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2109
+#: ../../whatsnew/3.12.rst:2110
 msgid "Several items are not exposed from :file:`Python.h`:"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2111
+#: ../../whatsnew/3.12.rst:2112
 msgid ":c:macro:`T_OBJECT` (use :c:macro:`Py_T_OBJECT_EX`)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2112
+#: ../../whatsnew/3.12.rst:2113
 msgid ":c:macro:`T_NONE` (previously undocumented, and pretty quirky)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2113
+#: ../../whatsnew/3.12.rst:2114
 msgid "The macro ``WRITE_RESTRICTED`` which does nothing."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2114
+#: ../../whatsnew/3.12.rst:2115
 msgid "The macros ``RESTRICTED`` and ``READ_RESTRICTED``, equivalents of :c:macro:`Py_AUDIT_READ`."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2116
+#: ../../whatsnew/3.12.rst:2117
 msgid "In some configurations, ``<stddef.h>`` is not included from :file:`Python.h`. It should be included manually when using ``offsetof()``."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2119
+#: ../../whatsnew/3.12.rst:2120
 msgid "The deprecated header continues to provide its original contents under the original names. Your old code can stay unchanged, unless the extra include and non-namespaced macros bother you greatly."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2124
+#: ../../whatsnew/3.12.rst:2125
 msgid "(Contributed in :gh:`47146` by Petr Viktorin, based on earlier work by Alexander Belopolsky and Matthias Braun.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2127
+#: ../../whatsnew/3.12.rst:2128
 msgid ":c:func:`PyErr_Fetch` and :c:func:`PyErr_Restore` are deprecated. Use :c:func:`PyErr_GetRaisedException` and :c:func:`PyErr_SetRaisedException` instead. (Contributed by Mark Shannon in :gh:`101578`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2132
+#: ../../whatsnew/3.12.rst:2133
 msgid ":c:func:`!PyErr_Display` is deprecated. Use :c:func:`PyErr_DisplayException` instead. (Contributed by Irit Katriel in :gh:`102755`)."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2135
+#: ../../whatsnew/3.12.rst:2136
 msgid "``_PyErr_ChainExceptions`` is deprecated. Use ``_PyErr_ChainExceptions1`` instead. (Contributed by Irit Katriel in :gh:`102192`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2138
+#: ../../whatsnew/3.12.rst:2139
 msgid "Using :c:func:`PyType_FromSpec`, :c:func:`PyType_FromSpecWithBases` or :c:func:`PyType_FromModuleAndSpec` to create a class whose metaclass overrides :c:member:`~PyTypeObject.tp_new` is deprecated. Call the metaclass instead."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2146
+#: ../../whatsnew/3.12.rst:2147
 msgid "Remove the :file:`token.h` header file. There was never any public tokenizer C API. The :file:`token.h` header file was only designed to be used by Python internals. (Contributed by Victor Stinner in :gh:`92651`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2151
+#: ../../whatsnew/3.12.rst:2152
 msgid "Legacy Unicode APIs have been removed. See :pep:`623` for detail."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2153
+#: ../../whatsnew/3.12.rst:2154
 msgid ":c:macro:`!PyUnicode_WCHAR_KIND`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2154
+#: ../../whatsnew/3.12.rst:2155
 msgid ":c:func:`!PyUnicode_AS_UNICODE`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2155
+#: ../../whatsnew/3.12.rst:2156
 msgid ":c:func:`!PyUnicode_AsUnicode`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2156
+#: ../../whatsnew/3.12.rst:2157
 msgid ":c:func:`!PyUnicode_AsUnicodeAndSize`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2157
+#: ../../whatsnew/3.12.rst:2158
 msgid ":c:func:`!PyUnicode_AS_DATA`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2158
+#: ../../whatsnew/3.12.rst:2159
 msgid ":c:func:`!PyUnicode_FromUnicode`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2159
+#: ../../whatsnew/3.12.rst:2160
 msgid ":c:func:`!PyUnicode_GET_SIZE`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2160
+#: ../../whatsnew/3.12.rst:2161
 msgid ":c:func:`!PyUnicode_GetSize`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2161
+#: ../../whatsnew/3.12.rst:2162
 msgid ":c:func:`!PyUnicode_GET_DATA_SIZE`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2163
+#: ../../whatsnew/3.12.rst:2164
 msgid "Remove the ``PyUnicode_InternImmortal()`` function macro. (Contributed by Victor Stinner in :gh:`85858`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2166
+#: ../../whatsnew/3.12.rst:2167
 msgid "Remove ``Jython`` compatibility hacks from several stdlib modules and tests. (Contributed by Nikita Sobolev in :gh:`99482`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2169
+#: ../../whatsnew/3.12.rst:2170
 msgid "Remove ``_use_broken_old_ctypes_structure_semantics_`` flag from :mod:`ctypes` module. (Contributed by Nikita Sobolev in :gh:`99285`.)"
 msgstr ""
