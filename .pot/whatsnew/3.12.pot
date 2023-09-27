@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-27 16:24+0000\n"
+"POT-Creation-Date: 2023-09-27 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -698,7 +698,7 @@ msgid "Add :func:`random.binomialvariate`. (Contributed by Raymond Hettinger in 
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:821
-msgid "Add a default of ``lamb=1.0`` to :func:`random.expovariate`. (Contributed by Raymond Hettinger in :gh:`100234`.)"
+msgid "Add a default of ``lambd=1.0`` to :func:`random.expovariate`. (Contributed by Raymond Hettinger in :gh:`100234`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:825
