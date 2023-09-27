@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:57+0000\n"
+"POT-Creation-Date: 2023-09-27 16:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -901,7 +901,7 @@ msgid ":file:`Modules/Setup` is used to generate Makefile targets to build C ext
 msgstr ""
 
 #: ../../using/configure.rst:772
-msgid "The :c:macro:`PyAPI_FUNC()`, :c:macro:`PyAPI_DATA()` and :c:macro:`PyMODINIT_FUNC` macros of :file:`Include/pyport.h` are defined differently depending if the ``Py_BUILD_CORE_MODULE`` macro is defined:"
+msgid "The :c:macro:`!PyAPI_FUNC()`, :c:macro:`!PyAPI_DATA()` and :c:macro:`PyMODINIT_FUNC` macros of :file:`Include/exports.h` are defined differently depending if the ``Py_BUILD_CORE_MODULE`` macro is defined:"
 msgstr ""
 
 #: ../../using/configure.rst:776
