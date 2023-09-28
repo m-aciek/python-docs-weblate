@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-28 15:42+0000\n"
+"POT-Creation-Date: 2023-09-28 22:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3715,7 +3715,7 @@ msgid ":gh:`99005`: Remove :opcode:`UNARY_POSITIVE`, :opcode:`ASYNC_GEN_WRAP` an
 msgstr ""
 
 #: ../../../build/NEWS:2986
-msgid ":gh:`99005`: Add new :opcode:`CALL_INSTRINSIC_1` instruction. Remove :opcode:`IMPORT_STAR`, :opcode:`PRINT_EXPR` and :opcode:`STOPITERATION_ERROR`, replacing them with the :opcode:`CALL_INSTRINSIC_1` instruction."
+msgid ":gh:`99005`: Add new :opcode:`CALL_INTRINSIC_1` instruction. Remove :opcode:`IMPORT_STAR`, :opcode:`PRINT_EXPR` and :opcode:`STOPITERATION_ERROR`, replacing them with the :opcode:`CALL_INTRINSIC_1` instruction."
 msgstr ""
 
 #: ../../../build/NEWS:2991
