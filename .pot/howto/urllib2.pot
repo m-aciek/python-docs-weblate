@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-09-29 13:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,11 +129,11 @@ msgid "Handling Exceptions"
 msgstr ""
 
 #: ../../howto/urllib2.rst:197
-msgid "*urlopen* raises :exc:`URLError` when it cannot handle a response (though as usual with Python APIs, built-in exceptions such as :exc:`ValueError`, :exc:`TypeError` etc. may also be raised)."
+msgid "*urlopen* raises :exc:`~urllib.error.URLError` when it cannot handle a response (though as usual with Python APIs, built-in exceptions such as :exc:`ValueError`, :exc:`TypeError` etc. may also be raised)."
 msgstr ""
 
 #: ../../howto/urllib2.rst:201
-msgid ":exc:`HTTPError` is the subclass of :exc:`URLError` raised in the specific case of HTTP URLs."
+msgid ":exc:`~urllib.error.HTTPError` is the subclass of :exc:`~urllib.error.URLError` raised in the specific case of HTTP URLs."
 msgstr ""
 
 #: ../../howto/urllib2.rst:204
@@ -157,7 +157,7 @@ msgid "HTTPError"
 msgstr ""
 
 #: ../../howto/urllib2.rst:227
-msgid "Every HTTP response from the server contains a numeric \"status code\". Sometimes the status code indicates that the server is unable to fulfil the request. The default handlers will handle some of these responses for you (for example, if the response is a \"redirection\" that requests the client fetch the document from a different URL, urllib will handle that for you). For those it can't handle, urlopen will raise an :exc:`HTTPError`. Typical errors include '404' (page not found), '403' (request forbidden), and '401' (authentication required)."
+msgid "Every HTTP response from the server contains a numeric \"status code\". Sometimes the status code indicates that the server is unable to fulfil the request. The default handlers will handle some of these responses for you (for example, if the response is a \"redirection\" that requests the client fetch the document from a different URL, urllib will handle that for you). For those it can't handle, urlopen will raise an :exc:`~urllib.error.HTTPError`. Typical errors include '404' (page not found), '403' (request forbidden), and '401' (authentication required)."
 msgstr ""
 
 #: ../../howto/urllib2.rst:235
@@ -165,7 +165,7 @@ msgid "See section 10 of :rfc:`2616` for a reference on all the HTTP error codes
 msgstr ""
 
 #: ../../howto/urllib2.rst:237
-msgid "The :exc:`HTTPError` instance raised will have an integer 'code' attribute, which corresponds to the error sent by the server."
+msgid "The :exc:`~urllib.error.HTTPError` instance raised will have an integer 'code' attribute, which corresponds to the error sent by the server."
 msgstr ""
 
 #: ../../howto/urllib2.rst:241
@@ -181,7 +181,7 @@ msgid ":attr:`http.server.BaseHTTPRequestHandler.responses` is a useful dictiona
 msgstr ""
 
 #: ../../howto/urllib2.rst:319
-msgid "When an error is raised the server responds by returning an HTTP error code *and* an error page. You can use the :exc:`HTTPError` instance as a response on the page returned. This means that as well as the code attribute, it also has read, geturl, and info, methods as returned by the ``urllib.response`` module::"
+msgid "When an error is raised the server responds by returning an HTTP error code *and* an error page. You can use the :exc:`~urllib.error.HTTPError` instance as a response on the page returned. This means that as well as the code attribute, it also has read, geturl, and info, methods as returned by the ``urllib.response`` module::"
 msgstr ""
 
 #: ../../howto/urllib2.rst:339
@@ -189,7 +189,7 @@ msgid "Wrapping it Up"
 msgstr ""
 
 #: ../../howto/urllib2.rst:341
-msgid "So if you want to be prepared for :exc:`HTTPError` *or* :exc:`URLError` there are two basic approaches. I prefer the second approach."
+msgid "So if you want to be prepared for :exc:`~urllib.error.HTTPError` *or* :exc:`~urllib.error.URLError` there are two basic approaches. I prefer the second approach."
 msgstr ""
 
 #: ../../howto/urllib2.rst:345
@@ -197,7 +197,7 @@ msgid "Number 1"
 msgstr ""
 
 #: ../../howto/urllib2.rst:367
-msgid "The ``except HTTPError`` *must* come first, otherwise ``except URLError`` will *also* catch an :exc:`HTTPError`."
+msgid "The ``except HTTPError`` *must* come first, otherwise ``except URLError`` will *also* catch an :exc:`~urllib.error.HTTPError`."
 msgstr ""
 
 #: ../../howto/urllib2.rst:371
@@ -209,7 +209,7 @@ msgid "info and geturl"
 msgstr ""
 
 #: ../../howto/urllib2.rst:394
-msgid "The response returned by urlopen (or the :exc:`HTTPError` instance) has two useful methods :meth:`info` and :meth:`geturl` and is defined in the module :mod:`urllib.response`.."
+msgid "The response returned by urlopen (or the :exc:`~urllib.error.HTTPError` instance) has two useful methods :meth:`info` and :meth:`geturl` and is defined in the module :mod:`urllib.response`.."
 msgstr ""
 
 #: ../../howto/urllib2.rst:398
