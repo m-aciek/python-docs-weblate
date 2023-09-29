@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:57+0000\n"
+"POT-Creation-Date: 2023-09-29 13:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1907,7 +1907,7 @@ msgid "raw_unicode_escape"
 msgstr ""
 
 #: ../../library/codecs.rst:1351
-msgid "Latin-1 encoding with :samp:`\\\\u{XXXX}` and :samp:`\\\\U{XXXXXXXX}`` for other code points. Existing backslashes are not escaped in any way. It is used in the Python pickle protocol."
+msgid "Latin-1 encoding with :samp:`\\\\u{XXXX}` and :samp:`\\\\U{XXXXXXXX}` for other code points. Existing backslashes are not escaped in any way. It is used in the Python pickle protocol."
 msgstr ""
 
 #: ../../library/codecs.rst:1361
