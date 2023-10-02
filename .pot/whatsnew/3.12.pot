@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-02 11:39+0000\n"
+"POT-Creation-Date: 2023-10-02 18:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgid "A :ref:`command-line interface <uuid-cli>` has been added to the :mod:`uu
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:123
-msgid "Due to the changes in :ref:`PEP 701 <whatsnew312-pep701>`, producing tokens via the :mod:`tokenize` module is up to up to 64% faster."
+msgid "Due to the changes in :ref:`PEP 701 <whatsnew312-pep701>`, producing tokens via the :mod:`tokenize` module is up to 64% faster."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:126
