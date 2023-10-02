@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-02 10:16+0000\n"
+"POT-Creation-Date: 2023-10-02 10:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25414,7 +25414,7 @@ msgid ":issue:`35224`: Implement :pep:`572` (assignment expressions). Patch by E
 msgstr ""
 
 #: ../../../build/NEWS:22413
-msgid ":issue:`32492`: Speed up :class:`namedtuple` attribute access by 1.6x using a C fast-path for the name descriptors. Patch by Pablo Galindo."
+msgid ":issue:`32492`: Speed up :func:`namedtuple` attribute access by 1.6x using a C fast-path for the name descriptors. Patch by Pablo Galindo."
 msgstr ""
 
 #: ../../../build/NEWS:22416
