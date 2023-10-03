@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-02 18:17+0000\n"
+"POT-Creation-Date: 2023-10-03 06:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,7 +274,7 @@ msgid "See :pep:`701` for more details."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:305
-msgid "As a positive side-effect of how this feature has been implemented (by parsing f-strings with :pep:`the PEG parser <617>`, now error messages for f-strings are more precise and include the exact location of the error. For example, in Python 3.11, the following f-string raises a :exc:`SyntaxError`:"
+msgid "As a positive side-effect of how this feature has been implemented (by parsing f-strings with :pep:`the PEG parser <617>`), now error messages for f-strings are more precise and include the exact location of the error. For example, in Python 3.11, the following f-string raises a :exc:`SyntaxError`:"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:318
