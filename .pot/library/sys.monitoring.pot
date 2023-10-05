@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-05 13:17+0000\n"
+"POT-Creation-Date: 2023-10-05 04:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,7 +267,7 @@ msgid "Ancillary events can be monitored like other events, but are controlled b
 msgstr ""
 
 #: ../../library/sys.monitoring.rst:150
-msgid "The ``C_RETURN`` and ``C_RAISE`` events are are controlled by the ``CALL`` event. ``C_RETURN`` and ``C_RAISE`` events will only be seen if the corresponding ``CALL`` event is being monitored."
+msgid "The ``C_RETURN`` and ``C_RAISE`` events are controlled by the ``CALL`` event. ``C_RETURN`` and ``C_RAISE`` events will only be seen if the corresponding ``CALL`` event is being monitored."
 msgstr ""
 
 #: ../../library/sys.monitoring.rst:155
