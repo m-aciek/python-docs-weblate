@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-10-08 01:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgid "Though the numbers cannot be made closer to their intended exact values, 
 msgstr ""
 
 #: ../../tutorial/floatingpoint.rst:139
-msgid "Alternatively, the :func:`round` function can be used to compare rough approximations::"
+msgid "Alternatively, the :func:`round` function can be used to compare rough approximations:"
 msgstr ""
 
 #: ../../tutorial/floatingpoint.rst:147
