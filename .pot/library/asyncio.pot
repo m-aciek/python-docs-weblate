@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-10-11 21:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,18 +16,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../library/asyncio.rst:78
-#: ../../library/asyncio.rst:78
+#: ../../library/asyncio.rst:80
+#: ../../library/asyncio.rst:80
 msgid "High-level APIs"
 msgstr ""
 
-#: ../../library/asyncio.rst:90
-#: ../../library/asyncio.rst:90
+#: ../../library/asyncio.rst:92
+#: ../../library/asyncio.rst:92
 msgid "Low-level APIs"
 msgstr ""
 
-#: ../../library/asyncio.rst:101
-#: ../../library/asyncio.rst:101
+#: ../../library/asyncio.rst:103
+#: ../../library/asyncio.rst:103
 msgid "Guides and Tutorials"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid ":ref:`bridge <asyncio-futures>` callback-based libraries and code with async/await syntax."
 msgstr ""
 
-#: ../../library/asyncio.rst:59
+#: ../../library/asyncio.rst:61
 msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
 msgstr ""
 
@@ -103,10 +103,10 @@ msgstr ""
 msgid "This module does not work or is not available on WebAssembly platforms ``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for more information."
 msgstr ""
 
-#: ../../library/asyncio.rst:77
+#: ../../library/asyncio.rst:79
 msgid "Reference"
 msgstr ""
 
-#: ../../library/asyncio.rst:110
+#: ../../library/asyncio.rst:112
 msgid "The source code for asyncio can be found in :source:`Lib/asyncio/`."
 msgstr ""
