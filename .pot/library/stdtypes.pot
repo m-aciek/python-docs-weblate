@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-19 15:37+0000\n"
+"POT-Creation-Date: 2023-10-19 15:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3582,7 +3582,7 @@ msgid "Returning a true value from this method will cause the :keyword:`with` st
 msgstr ""
 
 #: ../../library/stdtypes.rst:4854
-msgid "The exception passed in should never be reraised explicitly - instead, this method should return a false value to indicate that the method completed successfully and does not want to suppress the raised exception. This allows context management code to easily detect whether or not an :meth:`__exit__` method has actually failed."
+msgid "The exception passed in should never be reraised explicitly - instead, this method should return a false value to indicate that the method completed successfully and does not want to suppress the raised exception. This allows context management code to easily detect whether or not an :meth:`~object.__exit__` method has actually failed."
 msgstr ""
 
 #: ../../library/stdtypes.rst:4860

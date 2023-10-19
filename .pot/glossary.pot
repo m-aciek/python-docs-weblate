@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-19 15:37+0000\n"
+"POT-Creation-Date: 2023-10-19 15:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,7 +285,7 @@ msgid "context manager"
 msgstr ""
 
 #: ../../glossary.rst:250
-msgid "An object which controls the environment seen in a :keyword:`with` statement by defining :meth:`__enter__` and :meth:`__exit__` methods. See :pep:`343`."
+msgid "An object which controls the environment seen in a :keyword:`with` statement by defining :meth:`~object.__enter__` and :meth:`~object.__exit__` methods. See :pep:`343`."
 msgstr ""
 
 #: ../../glossary.rst:253

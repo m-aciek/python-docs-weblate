@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-28 01:01+0000\n"
+"POT-Creation-Date: 2023-10-19 15:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1930,7 +1930,7 @@ msgid "If an exception is supplied, and the method wishes to suppress the except
 msgstr ""
 
 #: ../../reference/datamodel.rst:2942
-msgid "Note that :meth:`__exit__` methods should not reraise the passed-in exception; this is the caller's responsibility."
+msgid "Note that :meth:`~object.__exit__` methods should not reraise the passed-in exception; this is the caller's responsibility."
 msgstr ""
 
 #: ../../reference/datamodel.rst:2949
@@ -2134,11 +2134,11 @@ msgid "Asynchronous context managers can be used in an :keyword:`async with` sta
 msgstr ""
 
 #: ../../reference/datamodel.rst:3260
-msgid "Semantically similar to :meth:`__enter__`, the only difference being that it must return an *awaitable*."
+msgid "Semantically similar to :meth:`~object.__enter__`, the only difference being that it must return an *awaitable*."
 msgstr ""
 
 #: ../../reference/datamodel.rst:3265
-msgid "Semantically similar to :meth:`__exit__`, the only difference being that it must return an *awaitable*."
+msgid "Semantically similar to :meth:`~object.__exit__`, the only difference being that it must return an *awaitable*."
 msgstr ""
 
 #: ../../reference/datamodel.rst:3268

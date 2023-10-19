@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-19 15:37+0000\n"
+"POT-Creation-Date: 2023-10-19 15:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1381,7 +1381,7 @@ msgid "Using :func:`open` as a context manager is a great way to ensure your fil
 msgstr ""
 
 #: ../../library/unittest.mock.rst:2484
-msgid "The issue is that even if you mock out the call to :func:`open` it is the *returned object* that is used as a context manager (and has :meth:`__enter__` and :meth:`__exit__` called)."
+msgid "The issue is that even if you mock out the call to :func:`open` it is the *returned object* that is used as a context manager (and has :meth:`~object.__enter__` and :meth:`~object.__exit__` called)."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:2488

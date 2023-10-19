@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-10-19 15:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "An :term:`abstract base class` for classes that implement :meth:`object._
 msgstr ""
 
 #: ../../library/contextlib.rst:46
-msgid "This function is a :term:`decorator` that can be used to define a factory function for :keyword:`with` statement context managers, without needing to create a class or separate :meth:`__enter__` and :meth:`__exit__` methods."
+msgid "This function is a :term:`decorator` that can be used to define a factory function for :keyword:`with` statement context managers, without needing to create a class or separate :meth:`~object.__enter__` and :meth:`~object.__exit__` methods."
 msgstr ""
 
 #: ../../library/contextlib.rst:50
@@ -265,7 +265,7 @@ msgid "For example, a set of files may easily be handled in a single with statem
 msgstr ""
 
 #: ../../library/contextlib.rst:518
-msgid "The :meth:`__enter__` method returns the :class:`ExitStack` instance, and performs no additional operations."
+msgid "The :meth:`~object.__enter__` method returns the :class:`ExitStack` instance, and performs no additional operations."
 msgstr ""
 
 #: ../../library/contextlib.rst:521
@@ -285,7 +285,7 @@ msgid "This is a relatively low level API that takes care of the details of corr
 msgstr ""
 
 #: ../../library/contextlib.rst:546
-msgid "Enters a new context manager and adds its :meth:`__exit__` method to the callback stack. The return value is the result of the context manager's own :meth:`__enter__` method."
+msgid "Enters a new context manager and adds its :meth:`~object.__exit__` method to the callback stack. The return value is the result of the context manager's own :meth:`~object.__enter__` method."
 msgstr ""
 
 #: ../../library/contextlib.rst:550
@@ -297,19 +297,19 @@ msgid "Raises :exc:`TypeError` instead of :exc:`AttributeError` if *cm* is not a
 msgstr ""
 
 #: ../../library/contextlib.rst:559
-msgid "Adds a context manager's :meth:`__exit__` method to the callback stack."
+msgid "Adds a context manager's :meth:`~object.__exit__` method to the callback stack."
 msgstr ""
 
 #: ../../library/contextlib.rst:561
-msgid "As ``__enter__`` is *not* invoked, this method can be used to cover part of an :meth:`__enter__` implementation with a context manager's own :meth:`__exit__` method."
+msgid "As ``__enter__`` is *not* invoked, this method can be used to cover part of an :meth:`~object.__enter__` implementation with a context manager's own :meth:`~object.__exit__` method."
 msgstr ""
 
 #: ../../library/contextlib.rst:565
-msgid "If passed an object that is not a context manager, this method assumes it is a callback with the same signature as a context manager's :meth:`__exit__` method and adds it directly to the callback stack."
+msgid "If passed an object that is not a context manager, this method assumes it is a callback with the same signature as a context manager's :meth:`~object.__exit__` method and adds it directly to the callback stack."
 msgstr ""
 
 #: ../../library/contextlib.rst:569
-msgid "By returning true values, these callbacks can suppress exceptions the same way context manager :meth:`__exit__` methods can."
+msgid "By returning true values, these callbacks can suppress exceptions the same way context manager :meth:`~object.__exit__` methods can."
 msgstr ""
 
 #: ../../library/contextlib.rst:572
@@ -409,7 +409,7 @@ msgid "Cleaning up in an ``__enter__`` implementation"
 msgstr ""
 
 #: ../../library/contextlib.rst:715
-msgid "As noted in the documentation of :meth:`ExitStack.push`, this method can be useful in cleaning up an already allocated resource if later steps in the :meth:`__enter__` implementation fail."
+msgid "As noted in the documentation of :meth:`ExitStack.push`, this method can be useful in cleaning up an already allocated resource if later steps in the :meth:`~object.__enter__` implementation fail."
 msgstr ""
 
 #: ../../library/contextlib.rst:719
@@ -469,7 +469,7 @@ msgid "And also as a function decorator::"
 msgstr ""
 
 #: ../../library/contextlib.rst:872
-msgid "Note that there is one additional limitation when using context managers as function decorators: there's no way to access the return value of :meth:`__enter__`. If that value is needed, then it is still necessary to use an explicit ``with`` statement."
+msgid "Note that there is one additional limitation when using context managers as function decorators: there's no way to access the return value of :meth:`~object.__enter__`. If that value is needed, then it is still necessary to use an explicit ``with`` statement."
 msgstr ""
 
 #: ../../library/contextlib.rst:880
