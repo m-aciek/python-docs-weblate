@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-10-19 16:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "Return the \"login name\" of the user."
 msgstr ""
 
 #: ../../library/getpass.rst:45
-msgid "This function checks the environment variables :envvar:`LOGNAME`, :envvar:`USER`, :envvar:`LNAME` and :envvar:`USERNAME`, in order, and returns the value of the first one which is set to a non-empty string.  If none are set, the login name from the password database is returned on systems which support the :mod:`pwd` module, otherwise, an exception is raised."
+msgid "This function checks the environment variables :envvar:`LOGNAME`, :envvar:`USER`, :envvar:`!LNAME` and :envvar:`USERNAME`, in order, and returns the value of the first one which is set to a non-empty string.  If none are set, the login name from the password database is returned on systems which support the :mod:`pwd` module, otherwise, an exception is raised."
 msgstr ""
 
 #: ../../library/getpass.rst:52
