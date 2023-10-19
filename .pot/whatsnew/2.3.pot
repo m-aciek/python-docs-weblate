@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-27 16:19+0000\n"
+"POT-Creation-Date: 2023-10-19 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -562,7 +562,7 @@ msgid "Deletion is more straightforward::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:928
-msgid "One can also now pass slice objects to the :meth:`__getitem__` methods of the built-in sequences::"
+msgid "One can also now pass slice objects to the :meth:`~object.__getitem__` methods of the built-in sequences::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:934
@@ -990,7 +990,7 @@ msgid "The :mod:`UserDict` module has a new :class:`DictMixin` class which defin
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1598
-msgid "Adding the mix-in as a superclass provides the full dictionary interface whenever the class defines :meth:`__getitem__`, :meth:`__setitem__`, :meth:`__delitem__`, and :meth:`keys`. For example::"
+msgid "Adding the mix-in as a superclass provides the full dictionary interface whenever the class defines :meth:`~object.__getitem__`, :meth:`__setitem__`, :meth:`__delitem__`, and :meth:`keys`. For example::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1639

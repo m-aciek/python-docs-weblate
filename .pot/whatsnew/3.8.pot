@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 10:18+0000\n"
+"POT-Creation-Date: 2023-10-19 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1396,7 +1396,7 @@ msgid "Passing an object that is not an instance of :class:`concurrent.futures.T
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1656
-msgid "The :meth:`__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput` have been deprecated."
+msgid "The :meth:`~object.__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput` have been deprecated."
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1660

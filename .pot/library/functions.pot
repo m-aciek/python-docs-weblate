@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:57+0000\n"
+"POT-Creation-Date: 2023-10-19 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -983,7 +983,7 @@ msgid "Return ``True`` if *class* is a subclass (direct, indirect, or :term:`vir
 msgstr ""
 
 #: ../../library/functions.rst:982
-msgid "Return an :term:`iterator` object.  The first argument is interpreted very differently depending on the presence of the second argument. Without a second argument, *object* must be a collection object which supports the :term:`iterable` protocol (the :meth:`__iter__` method), or it must support the sequence protocol (the :meth:`__getitem__` method with integer arguments starting at ``0``).  If it does not support either of those protocols, :exc:`TypeError` is raised. If the second argument, *sentinel*, is given, then *object* must be a callable object.  The iterator created in this case will call *object* with no arguments for each call to its :meth:`~iterator.__next__` method; if the value returned is equal to *sentinel*, :exc:`StopIteration` will be raised, otherwise the value will be returned."
+msgid "Return an :term:`iterator` object.  The first argument is interpreted very differently depending on the presence of the second argument. Without a second argument, *object* must be a collection object which supports the :term:`iterable` protocol (the :meth:`__iter__` method), or it must support the sequence protocol (the :meth:`~object.__getitem__` method with integer arguments starting at ``0``).  If it does not support either of those protocols, :exc:`TypeError` is raised. If the second argument, *sentinel*, is given, then *object* must be a callable object.  The iterator created in this case will call *object* with no arguments for each call to its :meth:`~iterator.__next__` method; if the value returned is equal to *sentinel*, :exc:`StopIteration` will be raised, otherwise the value will be returned."
 msgstr ""
 
 #: ../../library/functions.rst:995
@@ -1399,7 +1399,7 @@ msgid "Return a string containing a printable representation of an object.  For 
 msgstr ""
 
 #: ../../library/functions.rst:1564
-msgid "Return a reverse :term:`iterator`.  *seq* must be an object which has a :meth:`__reversed__` method or supports the sequence protocol (the :meth:`__len__` method and the :meth:`__getitem__` method with integer arguments starting at ``0``)."
+msgid "Return a reverse :term:`iterator`.  *seq* must be an object which has a :meth:`__reversed__` method or supports the sequence protocol (the :meth:`__len__` method and the :meth:`~object.__getitem__` method with integer arguments starting at ``0``)."
 msgstr ""
 
 #: ../../library/functions.rst:1572

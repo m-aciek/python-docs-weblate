@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 06:36+0000\n"
+"POT-Creation-Date: 2023-10-19 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,7 +162,7 @@ msgid "Return a list of 2-tuples containing all the message's field headers and 
 msgstr ""
 
 #: ../../library/email.message.rst:249
-msgid "Return the value of the named header field.  This is identical to :meth:`__getitem__` except that optional *failobj* is returned if the named header is missing (*failobj* defaults to ``None``)."
+msgid "Return the value of the named header field.  This is identical to :meth:`~object.__getitem__` except that optional *failobj* is returned if the named header is missing (*failobj* defaults to ``None``)."
 msgstr ""
 
 #: ../../library/email.message.rst:254

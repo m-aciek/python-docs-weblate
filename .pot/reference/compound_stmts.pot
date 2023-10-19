@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-11 21:39+0000\n"
+"POT-Creation-Date: 2023-10-19 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -727,7 +727,7 @@ msgid "If duplicate keys are detected in the mapping pattern, the pattern is con
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1058
-msgid "Key-value pairs are matched using the two-argument form of the mapping subject's ``get()`` method.  Matched key-value pairs must already be present in the mapping, and not created on-the-fly via :meth:`__missing__` or :meth:`__getitem__`."
+msgid "Key-value pairs are matched using the two-argument form of the mapping subject's ``get()`` method.  Matched key-value pairs must already be present in the mapping, and not created on-the-fly via :meth:`__missing__` or :meth:`~object.__getitem__`."
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1063

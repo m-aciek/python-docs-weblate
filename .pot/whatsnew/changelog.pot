@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-19 13:42+0000\n"
+"POT-Creation-Date: 2023-10-19 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12591,7 +12591,7 @@ msgid ":issue:`20499`: Improve the speed and accuracy of statistics.pvariance().
 msgstr ""
 
 #: ../../../build/NEWS:11053
-msgid ":issue:`45132`: Remove :meth:`__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput`, deprecated since Python 3.9."
+msgid ":issue:`45132`: Remove :meth:`~object.__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput`, deprecated since Python 3.9."
 msgstr ""
 
 #: ../../../build/NEWS:11059
@@ -26995,7 +26995,7 @@ msgid ":issue:`34318`: :func:`~unittest.TestCase.assertRaises`, :func:`~unittest
 msgstr ""
 
 #: ../../../build/NEWS:23791
-msgid ":issue:`9372`: Deprecate :meth:`__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput`."
+msgid ":issue:`9372`: Deprecate :meth:`~object.__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput`."
 msgstr ""
 
 #: ../../../build/NEWS:23795
