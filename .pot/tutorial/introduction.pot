@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-09 05:14+0000\n"
+"POT-Creation-Date: 2023-10-22 12:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,7 +261,7 @@ msgid "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` 
 msgstr ""
 
 #: ../../tutorial/introduction.rst:430
-msgid "You can also add new items at the end of the list, by using the :meth:`~list.append` *method* (we will see more about methods later)::"
+msgid "You can also add new items at the end of the list, by using the :meth:`!list.append` *method* (we will see more about methods later)::"
 msgstr ""
 
 #: ../../tutorial/introduction.rst:438
