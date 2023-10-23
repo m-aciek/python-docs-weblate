@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-19 15:39+0000\n"
+"POT-Creation-Date: 2023-10-23 19:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -877,7 +877,7 @@ msgid "The :mod:`email` package has been updated to version 4.0. (Contributed by
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1345
-msgid "The :mod:`fileinput` module was made more flexible. Unicode filenames are now supported, and a *mode* parameter that defaults to ``\"r\"`` was added to the :func:`input` function to allow opening files in binary or :term:`universal newlines` mode.  Another new parameter, *openhook*, lets you use a function other than :func:`open`  to open the input files.  Once you're iterating over the set of files, the :class:`FileInput` object's new :meth:`fileno` returns the file descriptor for the currently opened file. (Contributed by Georg Brandl.)"
+msgid "The :mod:`fileinput` module was made more flexible. Unicode filenames are now supported, and a *mode* parameter that defaults to ``\"r\"`` was added to the :func:`input` function to allow opening files in binary or :term:`universal newlines` mode.  Another new parameter, *openhook*, lets you use a function other than :func:`open`  to open the input files.  Once you're iterating over the set of files, the :class:`FileInput` object's new :meth:`~fileinput.fileno` returns the file descriptor for the currently opened file. (Contributed by Georg Brandl.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1354

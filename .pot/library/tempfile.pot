@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-10-23 19:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgid "Added *delete_on_close* parameter."
 msgstr ""
 
 #: ../../library/tempfile.rst:148
-msgid "This class operates exactly as :func:`TemporaryFile` does, except that data is spooled in memory until the file size exceeds *max_size*, or until the file's :func:`fileno` method is called, at which point the contents are written to disk and operation proceeds as with :func:`TemporaryFile`."
+msgid "This class operates exactly as :func:`TemporaryFile` does, except that data is spooled in memory until the file size exceeds *max_size*, or until the file's :func:`~io.IOBase.fileno` method is called, at which point the contents are written to disk and operation proceeds as with :func:`TemporaryFile`."
 msgstr ""
 
 #: ../../library/tempfile.rst:154

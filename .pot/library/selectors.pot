@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 06:36+0000\n"
+"POT-Creation-Date: 2023-10-23 19:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "This module allows high-level and efficient I/O multiplexing, built upon 
 msgstr ""
 
 #: ../../library/selectors.rst:20
-msgid "It defines a :class:`BaseSelector` abstract base class, along with several concrete implementations (:class:`KqueueSelector`, :class:`EpollSelector`...), that can be used to wait for I/O readiness notification on multiple file objects. In the following, \"file object\" refers to any object with a :meth:`fileno()` method, or a raw file descriptor. See :term:`file object`."
+msgid "It defines a :class:`BaseSelector` abstract base class, along with several concrete implementations (:class:`KqueueSelector`, :class:`EpollSelector`...), that can be used to wait for I/O readiness notification on multiple file objects. In the following, \"file object\" refers to any object with a :meth:`~io.IOBase.fileno` method, or a raw file descriptor. See :term:`file object`."
 msgstr ""
 
 #: ../../library/selectors.rst:26
