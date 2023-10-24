@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-18 23:37+0000\n"
+"POT-Creation-Date: 2023-10-24 08:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1483,7 +1483,7 @@ msgid "To write or read binary data from/to the standard streams, use the underl
 msgstr ""
 
 #: ../../library/sys.rst:1778
-msgid "However, if you are writing a library (and do not control in which context its code will be executed), be aware that the standard streams may be replaced with file-like objects like :class:`io.StringIO` which do not support the :attr:!buffer` attribute."
+msgid "However, if you are writing a library (and do not control in which context its code will be executed), be aware that the standard streams may be replaced with file-like objects like :class:`io.StringIO` which do not support the :attr:`!buffer` attribute."
 msgstr ""
 
 #: ../../library/sys.rst:1788
