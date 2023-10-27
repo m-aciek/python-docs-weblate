@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-10-27 13:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -390,7 +390,7 @@ msgstr ""
 
 #: ../../reference/import.rst:561
 #: ../../reference/import.rst:582
-msgid "It is **strongly** recommended that you rely on :attr:`__spec__` instead instead of this attribute."
+msgid "It is **strongly** recommended that you rely on :attr:`__spec__` instead of this attribute."
 msgstr ""
 
 #: ../../reference/import.rst:564
@@ -450,7 +450,7 @@ msgid "Note that ``__cached__`` may be set even if ``__file__`` is not set.  How
 msgstr ""
 
 #: ../../reference/import.rst:652
-msgid "It is **strongly** recommended that you rely on :attr:`__spec__` instead instead of ``__cached__``."
+msgid "It is **strongly** recommended that you rely on :attr:`__spec__` instead of ``__cached__``."
 msgstr ""
 
 #: ../../reference/import.rst:658
