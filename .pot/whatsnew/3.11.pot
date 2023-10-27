@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-24 21:57+0000\n"
+"POT-Creation-Date: 2023-10-27 13:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1814,7 +1814,7 @@ msgid ":func:`importlib.resources.path`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1800
-msgid "The :func:`locale.getdefaultlocale` function is deprecated and will be removed in Python 3.13. Use :func:`locale.setlocale`, :func:`locale.getpreferredencoding(False) <locale.getpreferredencoding>` and :func:`locale.getlocale` functions instead. (Contributed by Victor Stinner in :gh:`90817`.)"
+msgid "The :func:`locale.getdefaultlocale` function is deprecated and will be removed in Python 3.15. Use :func:`locale.setlocale`, :func:`locale.getpreferredencoding(False) <locale.getpreferredencoding>` and :func:`locale.getlocale` functions instead. (Contributed by Victor Stinner in :gh:`90817`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1806
