@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 10:36+0000\n"
+"POT-Creation-Date: 2023-10-31 16:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,12 +24,8 @@ msgstr ""
 msgid "This module performs file control and I/O control on file descriptors. It is an interface to the :c:func:`fcntl` and :c:func:`ioctl` Unix routines.  For a complete description of these calls, see :manpage:`fcntl(2)` and :manpage:`ioctl(2)` Unix manual pages."
 msgstr ""
 
-#: ../../includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-
-#: ../../includes/wasm-notavail.rst:5
-msgid "This module does not work or is not available on WebAssembly platforms ``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for more information."
+#: ../../library/fcntl.rst:21
+msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
 msgstr ""
 
 #: ../../library/fcntl.rst:23
@@ -72,7 +68,7 @@ msgstr ""
 msgid "If the :c:func:`fcntl` fails, an :exc:`OSError` is raised."
 msgstr ""
 
-#: ../../library/fcntl.rst:94
+#: ../../library/fcntl.rst:85
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments ``fd``, ``cmd``, ``arg``."
 msgstr ""
 
@@ -112,7 +108,7 @@ msgstr ""
 msgid "An example::"
 msgstr ""
 
-#: ../../library/fcntl.rst:145
+#: ../../library/fcntl.rst:136
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments ``fd``, ``request``, ``arg``."
 msgstr ""
 
@@ -124,7 +120,7 @@ msgstr ""
 msgid "If the :c:func:`flock` fails, an :exc:`OSError` exception is raised."
 msgstr ""
 
-#: ../../library/fcntl.rst:157
+#: ../../library/fcntl.rst:148
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments ``fd``, ``operation``."
 msgstr ""
 
@@ -168,7 +164,7 @@ msgstr ""
 msgid "The default for *start* is 0, which means to start at the beginning of the file. The default for *len* is 0 which means to lock to the end of the file.  The default for *whence* is also 0."
 msgstr ""
 
-#: ../../library/fcntl.rst:192
+#: ../../library/fcntl.rst:183
 msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments ``fd``, ``cmd``, ``len``, ``start``, ``whence``."
 msgstr ""
 

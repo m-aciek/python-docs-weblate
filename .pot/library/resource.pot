@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-10-31 16:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,12 +24,8 @@ msgstr ""
 msgid "This module provides basic mechanisms for measuring and controlling system resources utilized by a program."
 msgstr ""
 
-#: ../../includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-
-#: ../../includes/wasm-notavail.rst:5
-msgid "This module does not work or is not available on WebAssembly platforms ``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for more information."
+#: ../../library/resource.rst:16
+msgid ":ref:`Availability <availability>`: Unix, not Emscripten, not WASI."
 msgstr ""
 
 #: ../../library/resource.rst:18
@@ -84,7 +80,7 @@ msgstr ""
 msgid "VxWorks only supports setting :data:`RLIMIT_NOFILE`."
 msgstr ""
 
-#: ../../library/resource.rst:92
+#: ../../library/resource.rst:83
 msgid "Raises an :ref:`auditing event <auditing>` ``resource.setrlimit`` with arguments ``resource``, ``limits``."
 msgstr ""
 
@@ -100,7 +96,7 @@ msgstr ""
 msgid "Raises :exc:`ProcessLookupError` when *pid* can't be found and :exc:`PermissionError` when the user doesn't have ``CAP_SYS_RESOURCE`` for the process."
 msgstr ""
 
-#: ../../library/resource.rst:111
+#: ../../library/resource.rst:102
 msgid "Raises an :ref:`auditing event <auditing>` ``resource.prlimit`` with arguments ``pid``, ``resource``, ``limits``."
 msgstr ""
 
