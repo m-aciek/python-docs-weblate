@@ -2,6 +2,7 @@
 
 from argparse import ArgumentParser
 from contextlib import chdir
+from dataclasses import dataclass
 from logging import info, basicConfig
 from os import PathLike
 from pathlib import Path
@@ -49,7 +50,22 @@ def _get_latest_commit_message_containing(phrase: str) -> list[str]:
     return _output(f'git log --grep {phrase} --pretty=format:"%B" --max-count=1').splitlines()
 
 
+@dataclass
+class Version:
+    number: str
+
+    def is_latest(self):
+        return self.number == "3.12"
+
+    def weblate_category_name(self):
+        return self.number
+
+    def directory_name(self):
+        return self.is_latest() and "latest" or self.number
+
+
 def _clone_and_iterate_committing(cpython_commit, version) -> None:
+    version_directory = Version(version).directory_name()
     with TemporaryDirectory() as directory:
         with chdir(directory):
             _clone_cpython_repo(version, shallow=False)
@@ -61,11 +77,12 @@ def _clone_and_iterate_committing(cpython_commit, version) -> None:
                 _build_gettext()
                 commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
             pot_directory = Path(directory, 'cpython/Doc/locales/pot')
-            _replace_tree(pot_directory, '.pot')
+            _replace_tree(pot_directory, f'.pot/{version_directory}')
             _commit_changed(commit_message, commit)
 
 
 def _clone_and_commit(version):
+    version_directory = Version(version).directory_name()
     # if latest sync commit not found, checkout the HEAD
     with TemporaryDirectory() as directory:
         with chdir(directory):
@@ -74,7 +91,7 @@ def _clone_and_commit(version):
             _build_gettext()
             cpython_commit = _output('git -C cpython/ rev-parse HEAD')
         pot_directory = Path(directory, 'cpython/Doc/locales/pot')
-        _replace_tree(pot_directory, '.pot')
+        _replace_tree(pot_directory, f'.pot/{version_directory}')
     _commit_changed("Update sources", cpython_commit)
 
 
