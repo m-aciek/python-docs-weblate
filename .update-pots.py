@@ -11,12 +11,12 @@ from shutil import move, rmtree
 from subprocess import check_call, check_output, CalledProcessError
 from tempfile import TemporaryDirectory
 
-SYNC_COMMIT_FIELD = 'CPython-sync-commit:'
+SYNC_COMMIT_FIELD = 'CPython-sync-commit-{}:'
 
 
 def _update_pots(version: str) -> None:
     _ensure_working_tree_clean()
-    if cpython_commit := _get_latest_sync_commit():
+    if cpython_commit := _get_latest_sync_commit(version):
         info(f"Latest CPython sync commit found: {cpython_commit}")
         _clone_and_iterate_committing(cpython_commit, version)
     else:
@@ -31,14 +31,16 @@ def _ensure_working_tree_clean() -> None:
         raise EnvironmentError('Working tree is not clean. Please commit or stash your changes.') from error
 
 
-def _get_latest_sync_commit() -> str | None:
+def _get_latest_sync_commit(version: str) -> str | None:
     _ensure_not_shallow()
+    version_directory = Version(version).directory_name()
+    sync_commit_field = SYNC_COMMIT_FIELD.format(version_directory)
     sync_commit_lines = [
-        line for line in _get_latest_commit_message_containing(SYNC_COMMIT_FIELD) if line.startswith(SYNC_COMMIT_FIELD)
+        line for line in _get_latest_commit_message_containing(sync_commit_field) if line.startswith(SYNC_COMMIT_FIELD)
     ]
     if not sync_commit_lines:
         return
-    return sync_commit_lines[0].removeprefix(f'{SYNC_COMMIT_FIELD} ')
+    return sync_commit_lines[0].removeprefix(f'{sync_commit_field} ')
 
 
 def _ensure_not_shallow() -> None:
@@ -78,10 +80,10 @@ def _clone_and_iterate_committing(cpython_commit, version) -> None:
                 commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
             pot_directory = Path(directory, 'cpython/Doc/locales/pot')
             _replace_tree(pot_directory, f'.pot/{version_directory}')
-            _commit_changed(commit_message, commit)
+            _commit_changed(commit_message, commit, version_directory)
 
 
-def _clone_and_commit(version):
+def _clone_and_commit(version: str):
     version_directory = Version(version).directory_name()
     # if latest sync commit not found, checkout the HEAD
     with TemporaryDirectory() as directory:
@@ -91,8 +93,8 @@ def _clone_and_commit(version):
             _build_gettext()
             cpython_commit = _output('git -C cpython/ rev-parse HEAD')
         pot_directory = Path(directory, 'cpython/Doc/locales/pot')
-        _replace_tree(pot_directory, f'.pot/{version_directory}')
-    _commit_changed("Update sources", cpython_commit)
+        _replace_tree(pot_directory, Path('.pot/', version_directory))
+    _commit_changed("Update sources", cpython_commit, version_directory)
 
 
 def _clone_cpython_repo(version: str, shallow: bool):
@@ -108,17 +110,18 @@ def _build_gettext():
     )
 
 
-def _replace_tree(source: PathLike, target: PathLike):
-    rmtree(target)
+def _replace_tree(source: PathLike, target: Path):
+    if target.exists():
+        rmtree(target)
     move(source, target)
 
 
-def _commit_changed(commit_message: str, commit: str) -> None:
+def _commit_changed(commit_message: str, commit: str, version: str) -> None:
     changed = _get_changed_pots()
     added = _get_new_pots()
     if all_ := changed + added:
         _call(f'git add {" ".join(all_)}')
-        check_call(('git', 'commit', '-m', f'{commit_message}\n\n{SYNC_COMMIT_FIELD} {commit}'))
+        check_call(('git', 'commit', '-m', f'{commit_message}\n\n{SYNC_COMMIT_FIELD.format(version)} {commit}'))
     _call('git restore .')  # discard ignored files
 
 
