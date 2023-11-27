@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-25 14:16+0000\n"
+"POT-Creation-Date: 2023-11-27 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1038,7 +1038,7 @@ msgid "A :class:`Cursor` instance has the following attributes and methods."
 msgstr ""
 
 #: ../../library/sqlite3.rst:1474
-msgid "Execute SQL a single SQL statement, optionally binding Python values using :ref:`placeholders <sqlite3-placeholders>`."
+msgid "Execute a single SQL statement, optionally binding Python values using :ref:`placeholders <sqlite3-placeholders>`."
 msgstr ""
 
 #: ../../library/sqlite3.rst:1478
