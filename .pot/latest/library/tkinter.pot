@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-25 08:17+0000\n"
+"POT-Creation-Date: 2023-11-29 16:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,11 +93,11 @@ msgid "By Mark Roseman. (ISBN 978-1999149567)"
 msgstr ""
 
 #: ../../library/tkinter.rst:62
-msgid "`Python and Tkinter Programming <https://www.packtpub.com/product/python-gui-programming-with-tkinter/9781788835886>`_"
+msgid "`Python GUI programming with Tkinter <https://www.packtpub.com/product/python-gui-programming-with-tkinter/9781788835886>`_"
 msgstr ""
 
 #: ../../library/tkinter.rst:62
-msgid "By Alan Moore. (ISBN 978-1788835886)"
+msgid "By Alan D. Moore. (ISBN 978-1788835886)"
 msgstr ""
 
 #: ../../library/tkinter.rst:65
