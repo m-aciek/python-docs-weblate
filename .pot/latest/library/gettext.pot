@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-09 10:17+0000\n"
+"POT-Creation-Date: 2023-12-03 20:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,7 +189,7 @@ msgid "If a fallback has been set, forward :meth:`npgettext` to the fallback. Ot
 msgstr ""
 
 #: ../../library/gettext.rst:260
-msgid "Return the \"protected\" :attr:`_info` variable, a dictionary containing the metadata found in the message catalog file."
+msgid "Return a dictionary containing the metadata found in the message catalog file."
 msgstr ""
 
 #: ../../library/gettext.rst:266
@@ -221,11 +221,11 @@ msgid "The :class:`GNUTranslations` class"
 msgstr ""
 
 #: ../../library/gettext.rst:299
-msgid "The :mod:`gettext` module provides one additional class derived from :class:`NullTranslations`: :class:`GNUTranslations`.  This class overrides :meth:`_parse` to enable reading GNU :program:`gettext` format :file:`.mo` files in both big-endian and little-endian format."
+msgid "The :mod:`!gettext` module provides one additional class derived from :class:`NullTranslations`: :class:`GNUTranslations`.  This class overrides :meth:`!_parse` to enable reading GNU :program:`gettext` format :file:`.mo` files in both big-endian and little-endian format."
 msgstr ""
 
 #: ../../library/gettext.rst:304
-msgid ":class:`GNUTranslations` parses optional metadata out of the translation catalog. It is convention with GNU :program:`gettext` to include metadata as the translation for the empty string. This metadata is in :rfc:`822`\\ -style ``key: value`` pairs, and should contain the ``Project-Id-Version`` key.  If the key ``Content-Type`` is found, then the ``charset`` property is used to initialize the \"protected\" :attr:`_charset` instance variable, defaulting to ``None`` if not found.  If the charset encoding is specified, then all message ids and message strings read from the catalog are converted to Unicode using this encoding, else ASCII is assumed."
+msgid ":class:`GNUTranslations` parses optional metadata out of the translation catalog. It is convention with GNU :program:`gettext` to include metadata as the translation for the empty string. This metadata is in :rfc:`822`\\ -style ``key: value`` pairs, and should contain the ``Project-Id-Version`` key.  If the key ``Content-Type`` is found, then the ``charset`` property is used to initialize the \"protected\" :attr:`!_charset` instance variable, defaulting to ``None`` if not found.  If the charset encoding is specified, then all message ids and message strings read from the catalog are converted to Unicode using this encoding, else ASCII is assumed."
 msgstr ""
 
 #: ../../library/gettext.rst:314
@@ -233,7 +233,7 @@ msgid "Since message ids are read as Unicode strings too, all ``*gettext()`` met
 msgstr ""
 
 #: ../../library/gettext.rst:317
-msgid "The entire set of key/value pairs are placed into a dictionary and set as the \"protected\" :attr:`_info` instance variable."
+msgid "The entire set of key/value pairs are placed into a dictionary and set as the \"protected\" :attr:`!_info` instance variable."
 msgstr ""
 
 #: ../../library/gettext.rst:320
@@ -461,7 +461,7 @@ msgid "Footnotes"
 msgstr ""
 
 #: ../../library/gettext.rst:639
-msgid "The default locale directory is system dependent; for example, on RedHat Linux it is :file:`/usr/share/locale`, but on Solaris it is :file:`/usr/lib/locale`. The :mod:`gettext` module does not try to support these system dependent defaults; instead its default is :file:`{sys.base_prefix}/share/locale` (see :data:`sys.base_prefix`). For this reason, it is always best to call :func:`bindtextdomain` with an explicit absolute path at the start of your application."
+msgid "The default locale directory is system dependent; for example, on Red Hat Linux it is :file:`/usr/share/locale`, but on Solaris it is :file:`/usr/lib/locale`. The :mod:`!gettext` module does not try to support these system dependent defaults; instead its default is :file:`{sys.base_prefix}/share/locale` (see :data:`sys.base_prefix`). For this reason, it is always best to call :func:`bindtextdomain` with an explicit absolute path at the start of your application."
 msgstr ""
 
 #: ../../library/gettext.rst:647
