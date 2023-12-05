@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-03 18:16+0000\n"
+"POT-Creation-Date: 2023-12-05 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1445,7 +1445,7 @@ msgid "The code object is optimized, using fast locals."
 msgstr ""
 
 #: ../../library/inspect.rst:1591
-msgid "If set, a new dict will be created for the frame's ``f_locals`` when the code object is executed."
+msgid "If set, a new dict will be created for the frame's :attr:`~frame.f_locals` when the code object is executed."
 msgstr ""
 
 #: ../../library/inspect.rst:1596

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 20:14+0000\n"
+"POT-Creation-Date: 2023-12-05 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1874,7 +1874,7 @@ msgid ":c:func:`PyErr_SetImportError` now sets :exc:`TypeError` when its **msg**
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:2163
-msgid "The format of the ``co_lnotab`` attribute of code objects changed to support a negative line number delta. By default, Python does not emit bytecode with a negative line number delta. Functions using ``frame.f_lineno``, ``PyFrame_GetLineNumber()`` or ``PyCode_Addr2Line()`` are not affected. Functions directly decoding ``co_lnotab`` should be updated to use a signed 8-bit integer type for the line number delta, but this is only required to support applications using a negative line number delta. See ``Objects/lnotab_notes.txt`` for the ``co_lnotab`` format and how to decode it, and see the :pep:`511` for the rationale."
+msgid "The format of the ``co_lnotab`` attribute of code objects changed to support a negative line number delta. By default, Python does not emit bytecode with a negative line number delta. Functions using :attr:`frame.f_lineno`, ``PyFrame_GetLineNumber()`` or ``PyCode_Addr2Line()`` are not affected. Functions directly decoding ``co_lnotab`` should be updated to use a signed 8-bit integer type for the line number delta, but this is only required to support applications using a negative line number delta. See ``Objects/lnotab_notes.txt`` for the ``co_lnotab`` format and how to decode it, and see the :pep:`511` for the rationale."
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:2173

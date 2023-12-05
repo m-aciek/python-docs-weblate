@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-17 23:14+0000\n"
+"POT-Creation-Date: 2023-12-05 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -563,7 +563,7 @@ msgid "Pops a value from the stack, which is used to restore the exception state
 msgstr ""
 
 #: ../../library/dis.rst:773
-msgid "Re-raises the exception currently on top of the stack. If oparg is non-zero, pops an additional value from the stack which is used to set ``f_lasti`` of the current frame."
+msgid "Re-raises the exception currently on top of the stack. If oparg is non-zero, pops an additional value from the stack which is used to set :attr:`~frame.f_lasti` of the current frame."
 msgstr ""
 
 #: ../../library/dis.rst:784
