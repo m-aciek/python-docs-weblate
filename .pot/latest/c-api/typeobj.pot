@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-29 11:11+0000\n"
+"POT-Creation-Date: 2023-12-06 10:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -481,6 +481,8 @@ msgstr ""
 #: ../../c-api/typeobj.rst:136
 #: ../../c-api/typeobj.rst:140
 #: ../../c-api/typeobj.rst:341
+#: ../../c-api/typeobj.rst:346
+#: ../../c-api/typeobj.rst:0
 #: ../../c-api/typeobj.rst:0
 #: ../../c-api/typeobj.rst:0
 #: ../../c-api/typeobj.rst:0
@@ -518,6 +520,7 @@ msgstr ""
 #: ../../c-api/typeobj.rst:416
 #: ../../c-api/typeobj.rst:0
 #: ../../c-api/typeobj.rst:0
+#: ../../c-api/typeobj.rst:429
 #: ../../c-api/typeobj.rst:0
 #: ../../c-api/typeobj.rst:431
 #: ../../c-api/typeobj.rst:0
@@ -652,11 +655,8 @@ msgstr ""
 
 #: ../../c-api/typeobj.rst:138
 #: ../../c-api/typeobj.rst:279
-#: ../../c-api/typeobj.rst:346
 #: ../../c-api/typeobj.rst:348
 #: ../../c-api/typeobj.rst:0
-#: ../../c-api/typeobj.rst:0
-#: ../../c-api/typeobj.rst:429
 msgid "void *"
 msgstr ""
 
