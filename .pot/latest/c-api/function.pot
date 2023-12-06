@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-12-06 22:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,11 +41,11 @@ msgid "Return a new function object associated with the code object *code*. *glo
 msgstr ""
 
 #: ../../c-api/function.rst:37
-msgid "The function's docstring and name are retrieved from the code object. *__module__* is retrieved from *globals*. The argument defaults, annotations and closure are set to ``NULL``. *__qualname__* is set to the same value as the code object's ``co_qualname`` field."
+msgid "The function's docstring and name are retrieved from the code object. *__module__* is retrieved from *globals*. The argument defaults, annotations and closure are set to ``NULL``. *__qualname__* is set to the same value as the code object's :attr:`~codeobject.co_qualname` field."
 msgstr ""
 
 #: ../../c-api/function.rst:45
-msgid "As :c:func:`PyFunction_New`, but also allows setting the function object's ``__qualname__`` attribute.  *qualname* should be a unicode object or ``NULL``; if ``NULL``, the ``__qualname__`` attribute is set to the same value as the code object's ``co_qualname`` field."
+msgid "As :c:func:`PyFunction_New`, but also allows setting the function object's ``__qualname__`` attribute.  *qualname* should be a unicode object or ``NULL``; if ``NULL``, the ``__qualname__`` attribute is set to the same value as the code object's :attr:`~codeobject.co_qualname` field."
 msgstr ""
 
 #: ../../c-api/function.rst:55
