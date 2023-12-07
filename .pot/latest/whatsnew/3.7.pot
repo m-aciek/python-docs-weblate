@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-05 19:36+0000\n"
+"POT-Creation-Date: 2023-12-07 21:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1938,7 +1938,7 @@ msgid "Removed support of the *exclude* argument in :meth:`tarfile.TarFile.add`.
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2147
-msgid "The ``splitunc()`` function in the :mod:`ntpath` module was deprecated in Python 3.1, and has now been removed.  Use the :func:`~os.path.splitdrive` function instead."
+msgid "The :func:`!ntpath.splitunc` function was deprecated in Python 3.1, and has now been removed.  Use :func:`~os.path.splitdrive` instead."
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2151
