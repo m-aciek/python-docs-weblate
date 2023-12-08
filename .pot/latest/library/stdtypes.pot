@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-06 09:14+0000\n"
+"POT-Creation-Date: 2023-12-08 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4062,311 +4062,314 @@ msgid "Methods"
 msgstr ""
 
 #: ../../library/stdtypes.rst:5327
-msgid "Methods are functions that are called using the attribute notation. There are two flavors: built-in methods (such as :meth:`append` on lists) and class instance methods.  Built-in methods are described with the types that support them."
+msgid "Methods are functions that are called using the attribute notation. There are two flavors: :ref:`built-in methods <builtin-methods>` (such as :meth:`append` on lists) and :ref:`class instance method <instance-methods>`. Built-in methods are described with the types that support them."
 msgstr ""
 
 #: ../../library/stdtypes.rst:5332
-msgid "If you access a method (a function defined in a class namespace) through an instance, you get a special object: a :dfn:`bound method` (also called :dfn:`instance method`) object. When called, it will add the ``self`` argument to the argument list.  Bound methods have two special read-only attributes: ``m.__self__`` is the object on which the method operates, and ``m.__func__`` is the function implementing the method.  Calling ``m(arg-1, arg-2, ..., arg-n)`` is completely equivalent to calling ``m.__func__(m.__self__, arg-1, arg-2, ..., arg-n)``."
+msgid "If you access a method (a function defined in a class namespace) through an instance, you get a special object: a :dfn:`bound method` (also called :ref:`instance method <instance-methods>`) object. When called, it will add the ``self`` argument to the argument list.  Bound methods have two special read-only attributes: :attr:`m.__self__ <method.__self__>` is the object on which the method operates, and :attr:`m.__func__ <method.__func__>` is the function implementing the method.  Calling ``m(arg-1, arg-2, ..., arg-n)`` is completely equivalent to calling ``m.__func__(m.__self__, arg-1, arg-2, ..., arg-n)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5341
-msgid "Like function objects, bound method objects support getting arbitrary attributes.  However, since method attributes are actually stored on the underlying function object (``meth.__func__``), setting method attributes on bound methods is disallowed.  Attempting to set an attribute on a method results in an :exc:`AttributeError` being raised.  In order to set a method attribute, you need to explicitly set it on the underlying function object::"
+#: ../../library/stdtypes.rst:5343
+msgid "Like :ref:`function objects <user-defined-funcs>`, bound method objects support getting arbitrary attributes.  However, since method attributes are actually stored on the underlying function object (:attr:`method.__func__`), setting method attributes on bound methods is disallowed.  Attempting to set an attribute on a method results in an :exc:`AttributeError` being raised.  In order to set a method attribute, you need to explicitly set it on the underlying function object:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5361
-#: ../../library/stdtypes.rst:5392
-msgid "See :ref:`types` for more information."
+#: ../../library/stdtypes.rst:5366
+msgid "See :ref:`instance-methods` for more information."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5369
+#: ../../library/stdtypes.rst:5374
 msgid "Code Objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5375
+#: ../../library/stdtypes.rst:5380
 msgid "Code objects are used by the implementation to represent \"pseudo-compiled\" executable Python code such as a function body. They differ from function objects because they don't contain a reference to their global execution environment.  Code objects are returned by the built-in :func:`compile` function and can be extracted from function objects through their :attr:`__code__` attribute. See also the :mod:`code` module."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5382
+#: ../../library/stdtypes.rst:5387
 msgid "Accessing ``__code__`` raises an :ref:`auditing event <auditing>` ``object.__getattr__`` with arguments ``obj`` and ``\"__code__\"``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5389
+#: ../../library/stdtypes.rst:5394
 msgid "A code object can be executed or evaluated by passing it (instead of a source string) to the :func:`exec` or :func:`eval`  built-in functions."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5398
+#: ../../library/stdtypes.rst:5397
+msgid "See :ref:`types` for more information."
+msgstr ""
+
+#: ../../library/stdtypes.rst:5403
 msgid "Type Objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5404
+#: ../../library/stdtypes.rst:5409
 msgid "Type objects represent the various object types.  An object's type is accessed by the built-in function :func:`type`.  There are no special operations on types.  The standard module :mod:`types` defines names for all standard built-in types."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5409
+#: ../../library/stdtypes.rst:5414
 msgid "Types are written like this: ``<class 'int'>``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5415
+#: ../../library/stdtypes.rst:5420
 msgid "The Null Object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5417
+#: ../../library/stdtypes.rst:5422
 msgid "This object is returned by functions that don't explicitly return a value.  It supports no special operations.  There is exactly one null object, named ``None`` (a built-in name).  ``type(None)()`` produces the same singleton."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5421
+#: ../../library/stdtypes.rst:5426
 msgid "It is written as ``None``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5428
+#: ../../library/stdtypes.rst:5433
 msgid "The Ellipsis Object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5430
+#: ../../library/stdtypes.rst:5435
 msgid "This object is commonly used by slicing (see :ref:`slicings`).  It supports no special operations.  There is exactly one ellipsis object, named :const:`Ellipsis` (a built-in name).  ``type(Ellipsis)()`` produces the :const:`Ellipsis` singleton."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5435
+#: ../../library/stdtypes.rst:5440
 msgid "It is written as ``Ellipsis`` or ``...``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5441
+#: ../../library/stdtypes.rst:5446
 msgid "The NotImplemented Object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5443
+#: ../../library/stdtypes.rst:5448
 msgid "This object is returned from comparisons and binary operations when they are asked to operate on types they don't support. See :ref:`comparisons` for more information.  There is exactly one ``NotImplemented`` object. ``type(NotImplemented)()`` produces the singleton instance."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5448
+#: ../../library/stdtypes.rst:5453
 msgid "It is written as ``NotImplemented``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5454
+#: ../../library/stdtypes.rst:5459
 msgid "Internal Objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5456
+#: ../../library/stdtypes.rst:5461
 msgid "See :ref:`types` for this information.  It describes stack frame objects, traceback objects, and slice objects."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5463
+#: ../../library/stdtypes.rst:5468
 msgid "Special Attributes"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5465
+#: ../../library/stdtypes.rst:5470
 msgid "The implementation adds a few special read-only attributes to several object types, where they are relevant.  Some of these are not reported by the :func:`dir` built-in function."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5472
+#: ../../library/stdtypes.rst:5477
 msgid "A dictionary or other mapping object used to store an object's (writable) attributes."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5478
+#: ../../library/stdtypes.rst:5483
 msgid "The class to which a class instance belongs."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5483
+#: ../../library/stdtypes.rst:5488
 msgid "The tuple of base classes of a class object."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5488
+#: ../../library/stdtypes.rst:5493
 msgid "The name of the class, function, method, descriptor, or generator instance."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5494
+#: ../../library/stdtypes.rst:5499
 msgid "The :term:`qualified name` of the class, function, method, descriptor, or generator instance."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5502
+#: ../../library/stdtypes.rst:5507
 msgid "The :ref:`type parameters <type-params>` of generic classes, functions, and :ref:`type aliases <type-aliases>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5510
+#: ../../library/stdtypes.rst:5515
 msgid "This attribute is a tuple of classes that are considered when looking for base classes during method resolution."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5516
+#: ../../library/stdtypes.rst:5521
 msgid "This method can be overridden by a metaclass to customize the method resolution order for its instances.  It is called at class instantiation, and its result is stored in :attr:`~class.__mro__`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5523
+#: ../../library/stdtypes.rst:5528
 msgid "Each class keeps a list of weak references to its immediate subclasses.  This method returns a list of all those references still alive.  The list is in definition order.  Example::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5534
+#: ../../library/stdtypes.rst:5539
 msgid "Integer string conversion length limitation"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5536
+#: ../../library/stdtypes.rst:5541
 msgid "CPython has a global limit for converting between :class:`int` and :class:`str` to mitigate denial of service attacks. This limit *only* applies to decimal or other non-power-of-two number bases. Hexadecimal, octal, and binary conversions are unlimited. The limit can be configured."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5541
+#: ../../library/stdtypes.rst:5546
 msgid "The :class:`int` type in CPython is an arbitrary length number stored in binary form (commonly known as a \"bignum\"). There exists no algorithm that can convert a string to a binary integer or a binary integer to a string in linear time, *unless* the base is a power of 2. Even the best known algorithms for base 10 have sub-quadratic complexity. Converting a large value such as ``int('1' * 500_000)`` can take over a second on a fast CPU."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5548
+#: ../../library/stdtypes.rst:5553
 msgid "Limiting conversion size offers a practical way to avoid `CVE-2020-10735 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735>`_."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5551
+#: ../../library/stdtypes.rst:5556
 msgid "The limit is applied to the number of digit characters in the input or output string when a non-linear conversion algorithm would be involved.  Underscores and the sign are not counted towards the limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5555
+#: ../../library/stdtypes.rst:5560
 msgid "When an operation would exceed the limit, a :exc:`ValueError` is raised:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5577
+#: ../../library/stdtypes.rst:5582
 msgid "The default limit is 4300 digits as provided in :data:`sys.int_info.default_max_str_digits <sys.int_info>`. The lowest limit that can be configured is 640 digits as provided in :data:`sys.int_info.str_digits_check_threshold <sys.int_info>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5582
+#: ../../library/stdtypes.rst:5587
 msgid "Verification:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5597
+#: ../../library/stdtypes.rst:5602
 msgid "Affected APIs"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5599
+#: ../../library/stdtypes.rst:5604
 msgid "The limitation only applies to potentially slow conversions between :class:`int` and :class:`str` or :class:`bytes`:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5602
+#: ../../library/stdtypes.rst:5607
 msgid "``int(string)`` with default base 10."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5603
+#: ../../library/stdtypes.rst:5608
 msgid "``int(string, base)`` for all bases that are not a power of 2."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5604
+#: ../../library/stdtypes.rst:5609
 msgid "``str(integer)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5605
+#: ../../library/stdtypes.rst:5610
 msgid "``repr(integer)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5606
+#: ../../library/stdtypes.rst:5611
 msgid "any other string conversion to base 10, for example ``f\"{integer}\"``, ``\"{}\".format(integer)``, or ``b\"%d\" % integer``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5609
+#: ../../library/stdtypes.rst:5614
 msgid "The limitations do not apply to functions with a linear algorithm:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5611
+#: ../../library/stdtypes.rst:5616
 msgid "``int(string, base)`` with base 2, 4, 8, 16, or 32."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5612
+#: ../../library/stdtypes.rst:5617
 msgid ":func:`int.from_bytes` and :func:`int.to_bytes`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5613
+#: ../../library/stdtypes.rst:5618
 msgid ":func:`hex`, :func:`oct`, :func:`bin`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5614
+#: ../../library/stdtypes.rst:5619
 msgid ":ref:`formatspec` for hex, octal, and binary numbers."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5615
+#: ../../library/stdtypes.rst:5620
 msgid ":class:`str` to :class:`float`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5616
+#: ../../library/stdtypes.rst:5621
 msgid ":class:`str` to :class:`decimal.Decimal`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5619
+#: ../../library/stdtypes.rst:5624
 msgid "Configuring the limit"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5621
+#: ../../library/stdtypes.rst:5626
 msgid "Before Python starts up you can use an environment variable or an interpreter command line flag to configure the limit:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5624
+#: ../../library/stdtypes.rst:5629
 msgid ":envvar:`PYTHONINTMAXSTRDIGITS`, e.g. ``PYTHONINTMAXSTRDIGITS=640 python3`` to set the limit to 640 or ``PYTHONINTMAXSTRDIGITS=0 python3`` to disable the limitation."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5627
+#: ../../library/stdtypes.rst:5632
 msgid ":option:`-X int_max_str_digits <-X>`, e.g. ``python3 -X int_max_str_digits=640``"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5629
+#: ../../library/stdtypes.rst:5634
 msgid ":data:`sys.flags.int_max_str_digits` contains the value of :envvar:`PYTHONINTMAXSTRDIGITS` or :option:`-X int_max_str_digits <-X>`. If both the env var and the ``-X`` option are set, the ``-X`` option takes precedence. A value of *-1* indicates that both were unset, thus a value of :data:`sys.int_info.default_max_str_digits` was used during initialization."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5635
+#: ../../library/stdtypes.rst:5640
 msgid "From code, you can inspect the current limit and set a new one using these :mod:`sys` APIs:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5638
+#: ../../library/stdtypes.rst:5643
 msgid ":func:`sys.get_int_max_str_digits` and :func:`sys.set_int_max_str_digits` are a getter and setter for the interpreter-wide limit. Subinterpreters have their own limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5642
+#: ../../library/stdtypes.rst:5647
 msgid "Information about the default and minimum can be found in :data:`sys.int_info`:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5644
+#: ../../library/stdtypes.rst:5649
 msgid ":data:`sys.int_info.default_max_str_digits <sys.int_info>` is the compiled-in default limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5646
+#: ../../library/stdtypes.rst:5651
 msgid ":data:`sys.int_info.str_digits_check_threshold <sys.int_info>` is the lowest accepted value for the limit (other than 0 which disables it)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5653
+#: ../../library/stdtypes.rst:5658
 msgid "Setting a low limit *can* lead to problems. While rare, code exists that contains integer constants in decimal in their source that exceed the minimum threshold. A consequence of setting the limit is that Python source code containing decimal integer literals longer than the limit will encounter an error during parsing, usually at startup time or import time or even at installation time - anytime an up to date ``.pyc`` does not already exist for the code. A workaround for source that contains such large constants is to convert them to ``0x`` hexadecimal form as it has no limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5662
+#: ../../library/stdtypes.rst:5667
 msgid "Test your application thoroughly if you use a low limit. Ensure your tests run with the limit set early via the environment or flag so that it applies during startup and even during any installation step that may invoke Python to precompile ``.py`` sources to ``.pyc`` files."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5668
+#: ../../library/stdtypes.rst:5673
 msgid "Recommended configuration"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5670
+#: ../../library/stdtypes.rst:5675
 msgid "The default :data:`sys.int_info.default_max_str_digits` is expected to be reasonable for most applications. If your application requires a different limit, set it from your main entry point using Python version agnostic code as these APIs were added in security patch releases in versions before 3.12."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5675
+#: ../../library/stdtypes.rst:5680
 msgid "Example::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5687
+#: ../../library/stdtypes.rst:5692
 msgid "If you need to disable it entirely, set it to ``0``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5691
+#: ../../library/stdtypes.rst:5696
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5692
+#: ../../library/stdtypes.rst:5697
 msgid "Additional information on these special methods may be found in the Python Reference Manual (:ref:`customization`)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5695
+#: ../../library/stdtypes.rst:5700
 msgid "As a consequence, the list ``[1, 2]`` is considered equal to ``[1.0, 2.0]``, and similarly for tuples."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5698
+#: ../../library/stdtypes.rst:5703
 msgid "They must have since the parser can't tell the type of the operands."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5700
+#: ../../library/stdtypes.rst:5705
 msgid "Cased characters are those with general category property being one of \"Lu\" (Letter, uppercase), \"Ll\" (Letter, lowercase), or \"Lt\" (Letter, titlecase)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5703
+#: ../../library/stdtypes.rst:5708
 msgid "To format only a tuple you should therefore provide a singleton tuple whose only element is the tuple to be formatted."
 msgstr ""
 
@@ -4382,7 +4385,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:1139
 #: ../../library/stdtypes.rst:1154
 #: ../../library/stdtypes.rst:4422
-#: ../../library/stdtypes.rst:5400
+#: ../../library/stdtypes.rst:5405
 msgid "types"
 msgstr ""
 
@@ -4568,7 +4571,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:4900
 #: ../../library/stdtypes.rst:5155
 #: ../../library/stdtypes.rst:5325
-#: ../../library/stdtypes.rst:5364
+#: ../../library/stdtypes.rst:5369
 msgid "object"
 msgstr ""
 
@@ -4680,10 +4683,10 @@ msgstr ""
 #: ../../library/stdtypes.rst:950
 #: ../../library/stdtypes.rst:1117
 #: ../../library/stdtypes.rst:4422
-#: ../../library/stdtypes.rst:5371
-#: ../../library/stdtypes.rst:5385
-#: ../../library/stdtypes.rst:5385
-#: ../../library/stdtypes.rst:5400
+#: ../../library/stdtypes.rst:5376
+#: ../../library/stdtypes.rst:5390
+#: ../../library/stdtypes.rst:5390
+#: ../../library/stdtypes.rst:5405
 msgid "built-in function"
 msgstr ""
 
@@ -4766,7 +4769,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:335
 #: ../../library/stdtypes.rst:1606
 #: ../../library/stdtypes.rst:2514
-#: ../../library/stdtypes.rst:5400
+#: ../../library/stdtypes.rst:5405
 msgid "module"
 msgstr ""
 
@@ -4961,7 +4964,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:1154
 #: ../../library/stdtypes.rst:4422
 #: ../../library/stdtypes.rst:5155
-#: ../../library/stdtypes.rst:5400
+#: ../../library/stdtypes.rst:5405
 msgid "type"
 msgstr ""
 
@@ -5244,34 +5247,34 @@ msgstr ""
 msgid "method"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5364
+#: ../../library/stdtypes.rst:5369
 msgid "code"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5364
+#: ../../library/stdtypes.rst:5369
 msgid "code object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5371
+#: ../../library/stdtypes.rst:5376
 msgid "compile"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5371
+#: ../../library/stdtypes.rst:5376
 msgid "__code__ (function object attribute)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5385
+#: ../../library/stdtypes.rst:5390
 msgid "exec"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5385
+#: ../../library/stdtypes.rst:5390
 msgid "eval"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5424
+#: ../../library/stdtypes.rst:5429
 msgid "..."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5424
+#: ../../library/stdtypes.rst:5429
 msgid "ellipsis literal"
 msgstr ""

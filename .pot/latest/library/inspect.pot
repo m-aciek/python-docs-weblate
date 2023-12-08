@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-06 22:13+0000\n"
+"POT-Creation-Date: 2023-12-08 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -684,7 +684,7 @@ msgid "This, for example, is true of ``int.__add__``.  An object passing this te
 msgstr ""
 
 #: ../../library/inspect.rst:492
-msgid "Methods implemented via descriptors that also pass one of the other tests return ``False`` from the :func:`ismethoddescriptor` test, simply because the other tests promise more -- you can, e.g., count on having the :ref:`__func__ <instance-methods>` attribute (etc) when an object passes :func:`ismethod`."
+msgid "Methods implemented via descriptors that also pass one of the other tests return ``False`` from the :func:`ismethoddescriptor` test, simply because the other tests promise more -- you can, e.g., count on having the :attr:`~method.__func__` attribute (etc) when an object passes :func:`ismethod`."
 msgstr ""
 
 #: ../../library/inspect.rst:501
