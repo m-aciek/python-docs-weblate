@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-09 23:13+0000\n"
+"POT-Creation-Date: 2023-12-12 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4082,11 +4082,11 @@ msgid "Code Objects"
 msgstr ""
 
 #: ../../library/stdtypes.rst:5380
-msgid "Code objects are used by the implementation to represent \"pseudo-compiled\" executable Python code such as a function body. They differ from function objects because they don't contain a reference to their global execution environment.  Code objects are returned by the built-in :func:`compile` function and can be extracted from function objects through their :attr:`__code__` attribute. See also the :mod:`code` module."
+msgid "Code objects are used by the implementation to represent \"pseudo-compiled\" executable Python code such as a function body. They differ from function objects because they don't contain a reference to their global execution environment.  Code objects are returned by the built-in :func:`compile` function and can be extracted from function objects through their :attr:`~function.__code__` attribute. See also the :mod:`code` module."
 msgstr ""
 
 #: ../../library/stdtypes.rst:5387
-msgid "Accessing ``__code__`` raises an :ref:`auditing event <auditing>` ``object.__getattr__`` with arguments ``obj`` and ``\"__code__\"``."
+msgid "Accessing :attr:`~function.__code__` raises an :ref:`auditing event <auditing>` ``object.__getattr__`` with arguments ``obj`` and ``\"__code__\"``."
 msgstr ""
 
 #: ../../library/stdtypes.rst:5394
