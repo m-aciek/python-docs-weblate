@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-12 10:16+0000\n"
+"POT-Creation-Date: 2023-12-12 20:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Return a new function object associated with the code object *code*. *glo
 msgstr ""
 
 #: ../../c-api/function.rst:37
-msgid "The function's docstring and name are retrieved from the code object. :func:`~function.__module__` is retrieved from *globals*. The argument defaults, annotations and closure are set to ``NULL``. :attr:`~function.__qualname__` is set to the same value as the code object's :attr:`~codeobject.co_qualname` field."
+msgid "The function's docstring and name are retrieved from the code object. :attr:`~function.__module__` is retrieved from *globals*. The argument defaults, annotations and closure are set to ``NULL``. :attr:`~function.__qualname__` is set to the same value as the code object's :attr:`~codeobject.co_qualname` field."
 msgstr ""
 
 #: ../../c-api/function.rst:46
