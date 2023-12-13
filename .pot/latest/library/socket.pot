@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-28 01:06+0000\n"
+"POT-Creation-Date: 2023-12-13 09:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,7 +359,7 @@ msgid "This class was made a subclass of :exc:`OSError`."
 msgstr ""
 
 #: ../../library/socket.rst:309
-msgid "A subclass of :exc:`OSError`, this exception is raised for address-related errors by :func:`getaddrinfo` and :func:`getnameinfo`. The accompanying value is a pair ``(error, string)`` representing an error returned by a library call.  *string* represents the description of *error*, as returned by the :c:func:`gai_strerror` C function.  The numeric *error* value will match one of the :const:`EAI_\\*` constants defined in this module."
+msgid "A subclass of :exc:`OSError`, this exception is raised for address-related errors by :func:`getaddrinfo` and :func:`getnameinfo`. The accompanying value is a pair ``(error, string)`` representing an error returned by a library call.  *string* represents the description of *error*, as returned by the :c:func:`gai_strerror` C function.  The numeric *error* value will match one of the :const:`!EAI_\\*` constants defined in this module."
 msgstr ""
 
 #: ../../library/socket.rst:322
@@ -1176,7 +1176,7 @@ msgid "Return the socket's own address.  This is useful to find out the port num
 msgstr ""
 
 #: ../../library/socket.rst:1519
-msgid "Return the value of the given socket option (see the Unix man page :manpage:`getsockopt(2)`).  The needed symbolic constants (:const:`SO_\\*` etc.) are defined in this module.  If *buflen* is absent, an integer option is assumed and its integer value is returned by the function.  If *buflen* is present, it specifies the maximum length of the buffer used to receive the option in, and this buffer is returned as a bytes object.  It is up to the caller to decode the contents of the buffer (see the optional built-in module :mod:`struct` for a way to decode C structures encoded as byte strings)."
+msgid "Return the value of the given socket option (see the Unix man page :manpage:`getsockopt(2)`).  The needed symbolic constants (:ref:`SO_\\* etc. <socket-unix-constants>`) are defined in this module.  If *buflen* is absent, an integer option is assumed and its integer value is returned by the function.  If *buflen* is present, it specifies the maximum length of the buffer used to receive the option in, and this buffer is returned as a bytes object.  It is up to the caller to decode the contents of the buffer (see the optional built-in module :mod:`struct` for a way to decode C structures encoded as byte strings)."
 msgstr ""
 
 #: ../../library/socket.rst:1533
@@ -1372,7 +1372,7 @@ msgid "The method no longer toggles :const:`SOCK_NONBLOCK` flag on :attr:`socket
 msgstr ""
 
 #: ../../library/socket.rst:1939
-msgid "Set the value of the given socket option (see the Unix manual page :manpage:`setsockopt(2)`).  The needed symbolic constants are defined in the :mod:`socket` module (:const:`SO_\\*` etc.).  The value can be an integer, ``None`` or a :term:`bytes-like object` representing a buffer. In the later case it is up to the caller to ensure that the bytestring contains the proper bits (see the optional built-in module :mod:`struct` for a way to encode C structures as bytestrings). When *value* is set to ``None``, *optlen* argument is required. It's equivalent to call :c:func:`setsockopt` C function with ``optval=NULL`` and ``optlen=optlen``."
+msgid "Set the value of the given socket option (see the Unix manual page :manpage:`setsockopt(2)`).  The needed symbolic constants are defined in this module (:ref:`!SO_\\* etc. <socket-unix-constants>`).  The value can be an integer, ``None`` or a :term:`bytes-like object` representing a buffer. In the later case it is up to the caller to ensure that the bytestring contains the proper bits (see the optional built-in module :mod:`struct` for a way to encode C structures as bytestrings). When *value* is set to ``None``, *optlen* argument is required. It's equivalent to call :c:func:`setsockopt` C function with ``optval=NULL`` and ``optlen=optlen``."
 msgstr ""
 
 #: ../../library/socket.rst:1952

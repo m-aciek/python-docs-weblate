@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 09:36+0000\n"
+"POT-Creation-Date: 2023-12-13 09:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -551,7 +551,7 @@ msgid "The following attribute and methods should only be used by classes derive
 msgstr ""
 
 #: ../../library/urllib.request.rst:725
-msgid "The convention has been adopted that subclasses defining :meth:`<protocol>_request` or :meth:`<protocol>_response` methods are named :class:`\\*Processor`; all others are named :class:`\\*Handler`."
+msgid "The convention has been adopted that subclasses defining :meth:`!<protocol>_request` or :meth:`!<protocol>_response` methods are named :class:`!\\*Processor`; all others are named :class:`!\\*Handler`."
 msgstr ""
 
 #: ../../library/urllib.request.rst:732
@@ -639,7 +639,7 @@ msgid "An :class:`HTTPError` exception raised as a security consideration if the
 msgstr ""
 
 #: ../../library/urllib.request.rst:846
-msgid "Return a :class:`Request` or ``None`` in response to a redirect. This is called by the default implementations of the :meth:`http_error_30\\*` methods when a redirection is received from the server.  If a redirection should take place, return a new :class:`Request` to allow :meth:`http_error_30\\*` to perform the redirect to *newurl*.  Otherwise, raise :exc:`~urllib.error.HTTPError` if no other handler should try to handle this URL, or return ``None`` if you can't but another handler might."
+msgid "Return a :class:`Request` or ``None`` in response to a redirect. This is called by the default implementations of the :meth:`!http_error_30\\*` methods when a redirection is received from the server.  If a redirection should take place, return a new :class:`Request` to allow :meth:`!http_error_30\\*` to perform the redirect to *newurl*.  Otherwise, raise :exc:`~urllib.error.HTTPError` if no other handler should try to handle this URL, or return ``None`` if you can't but another handler might."
 msgstr ""
 
 #: ../../library/urllib.request.rst:856

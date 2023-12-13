@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-12 10:16+0000\n"
+"POT-Creation-Date: 2023-12-13 09:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -804,7 +804,7 @@ msgid "Note that :func:`tee` has to keep copies of the values returned  by the i
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1165
-msgid "A number of functions were added to the :mod:`locale`  module, such as :func:`bind_textdomain_codeset` to specify a particular encoding and a family of :func:`l\\*gettext` functions that return messages in the chosen encoding. (Contributed by Gustavo Niemeyer.)"
+msgid "A number of functions were added to the :mod:`locale`  module, such as :func:`bind_textdomain_codeset` to specify a particular encoding and a family of :func:`!l\\*gettext` functions that return messages in the chosen encoding. (Contributed by Gustavo Niemeyer.)"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1170

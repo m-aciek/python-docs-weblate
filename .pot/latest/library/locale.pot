@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 15:37+0000\n"
+"POT-Creation-Date: 2023-12-13 09:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -390,7 +390,7 @@ msgid "Except for the code ``'C'``, the language code corresponds to :rfc:`1766`
 msgstr ""
 
 #: ../../library/locale.rst:311
-msgid "Returns the current setting for the given locale category as sequence containing *language code*, *encoding*. *category* may be one of the :const:`LC_\\*` values except :const:`LC_ALL`.  It defaults to :const:`LC_CTYPE`."
+msgid "Returns the current setting for the given locale category as sequence containing *language code*, *encoding*. *category* may be one of the :const:`!LC_\\*` values except :const:`LC_ALL`.  It defaults to :const:`LC_CTYPE`."
 msgstr ""
 
 #: ../../library/locale.rst:322

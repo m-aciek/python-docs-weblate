@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-12-13 09:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,7 +321,7 @@ msgid "Stop only at breakpoints or when finished.  If there are no breakpoints, 
 msgstr ""
 
 #: ../../library/bdb.rst:296
-msgid "Set the :attr:`quitting` attribute to ``True``.  This raises :exc:`BdbQuit` in the next call to one of the :meth:`dispatch_\\*` methods."
+msgid "Set the :attr:`quitting` attribute to ``True``.  This raises :exc:`BdbQuit` in the next call to one of the :meth:`!dispatch_\\*` methods."
 msgstr ""
 
 #: ../../library/bdb.rst:300
