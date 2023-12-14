@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 09:15+0000\n"
+"POT-Creation-Date: 2023-12-14 21:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid "PEP 218: A Standard Set Datatype"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:43
-msgid "The new :mod:`sets` module contains an implementation of a set datatype.  The :class:`Set` class is for mutable sets, sets that can have members added and removed.  The :class:`ImmutableSet` class is for sets that can't be modified, and instances of :class:`ImmutableSet` can therefore be used as dictionary keys. Sets are built on top of dictionaries, so the elements within a set must be hashable."
+msgid "The new :mod:`!sets` module contains an implementation of a set datatype.  The :class:`Set` class is for mutable sets, sets that can have members added and removed.  The :class:`!ImmutableSet` class is for sets that can't be modified, and instances of :class:`!ImmutableSet` can therefore be used as dictionary keys. Sets are built on top of dictionaries, so the elements within a set must be hashable."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:50
@@ -57,15 +57,15 @@ msgid "Here's a simple example::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:66
-msgid "The union and intersection of sets can be computed with the :meth:`union` and :meth:`intersection` methods; an alternative notation uses the bitwise operators ``&`` and ``|``. Mutable sets also have in-place versions of these methods, :meth:`union_update` and :meth:`intersection_update`. ::"
+msgid "The union and intersection of sets can be computed with the :meth:`~frozenset.union` and :meth:`~frozenset.intersection` methods; an alternative notation uses the bitwise operators ``&`` and ``|``. Mutable sets also have in-place versions of these methods, :meth:`!union_update` and :meth:`~frozenset.intersection_update`. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:86
-msgid "It's also possible to take the symmetric difference of two sets.  This is the set of all elements in the union that aren't in the intersection.  Another way of putting it is that the symmetric difference contains all elements that are in exactly one set.  Again, there's an alternative notation (``^``), and an in-place version with the ungainly name :meth:`symmetric_difference_update`. ::"
+msgid "It's also possible to take the symmetric difference of two sets.  This is the set of all elements in the union that aren't in the intersection.  Another way of putting it is that the symmetric difference contains all elements that are in exactly one set.  Again, there's an alternative notation (``^``), and an in-place version with the ungainly name :meth:`~frozenset.symmetric_difference_update`. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:100
-msgid "There are also :meth:`issubset` and :meth:`issuperset` methods for checking whether one set is a subset or superset of another::"
+msgid "There are also :meth:`!issubset` and :meth:`!issuperset` methods for checking whether one set is a subset or superset of another::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:117
@@ -101,7 +101,7 @@ msgid "When you call a generator function, it doesn't return a single value; ins
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:169
-msgid "Here's a sample usage of the :func:`generate_ints` generator::"
+msgid "Here's a sample usage of the :func:`!generate_ints` generator::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:186
@@ -125,7 +125,7 @@ msgid "The idea of generators comes from other programming languages, especially
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:230
-msgid "In Icon the :func:`find` function returns the indexes at which the substring \"or\" is found: 3, 23, 33.  In the :keyword:`if` statement, ``i`` is first assigned a value of 3, but 3 is less than 5, so the comparison fails, and Icon retries it with the second value of 23.  23 is greater than 5, so the comparison now succeeds, and the code prints the value 23 to the screen."
+msgid "In Icon the :func:`!find` function returns the indexes at which the substring \"or\" is found: 3, 23, 33.  In the :keyword:`if` statement, ``i`` is first assigned a value of 3, but 3 is less than 5, so the comparison fails, and Icon retries it with the second value of 23.  23 is greater than 5, so the comparison now succeeds, and the code prints the value 23 to the screen."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:236
@@ -197,7 +197,7 @@ msgid "On Windows NT, 2000, and XP, the system stores file names as Unicode stri
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:344
-msgid "Python now allows using arbitrary Unicode strings (within the limitations of the file system) for all functions that expect file names, most notably the :func:`open` built-in function. If a Unicode string is passed to :func:`os.listdir`, Python now returns a list of Unicode strings.  A new function, :func:`os.getcwdu`, returns the current directory as a Unicode string."
+msgid "Python now allows using arbitrary Unicode strings (within the limitations of the file system) for all functions that expect file names, most notably the :func:`open` built-in function. If a Unicode string is passed to :func:`os.listdir`, Python now returns a list of Unicode strings.  A new function, :func:`!os.getcwdu`, returns the current directory as a Unicode string."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:350
@@ -229,11 +229,11 @@ msgid "The three major operating systems used today are Microsoft Windows, Apple
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:384
-msgid "Python's file objects can now support end of line conventions other than the one followed by the platform on which Python is running. Opening a file with the mode ``'U'`` or ``'rU'`` will open a file for reading in :term:`universal newlines` mode.  All three line ending conventions will be translated to a ``'\\n'`` in the strings returned by the various file methods such as :meth:`read` and :meth:`readline`."
+msgid "Python's file objects can now support end of line conventions other than the one followed by the platform on which Python is running. Opening a file with the mode ``'U'`` or ``'rU'`` will open a file for reading in :term:`universal newlines` mode.  All three line ending conventions will be translated to a ``'\\n'`` in the strings returned by the various file methods such as :meth:`!read` and :meth:`!readline`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:391
-msgid "Universal newline support is also used when importing modules and when executing a file with the :func:`execfile` function.  This means that Python modules can be shared between all three operating systems without needing to convert the line-endings."
+msgid "Universal newline support is also used when importing modules and when executing a file with the :func:`!execfile` function.  This means that Python modules can be shared between all three operating systems without needing to convert the line-endings."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:396
@@ -281,7 +281,7 @@ msgid "A standard package for writing logs, :mod:`logging`, has been added to Py
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:453
-msgid "The :class:`Logger` class is the primary class. Most application code will deal with one or more :class:`Logger` objects, each one used by a particular subsystem of the application. Each :class:`Logger` is identified by a name, and names are organized into a hierarchy using ``.``  as the component separator. For example, you might have :class:`Logger` instances named ``server``, ``server.auth`` and ``server.network``.  The latter two instances are below ``server`` in the hierarchy.  This means that if you turn up the verbosity for ``server`` or direct ``server`` messages to a different handler, the changes will also apply to records logged to ``server.auth`` and ``server.network``. There's also a root :class:`Logger` that's the parent of all other loggers."
+msgid "The :class:`~logging.Logger` class is the primary class. Most application code will deal with one or more :class:`~logging.Logger` objects, each one used by a particular subsystem of the application. Each :class:`~logging.Logger` is identified by a name, and names are organized into a hierarchy using ``.``  as the component separator. For example, you might have :class:`~logging.Logger` instances named ``server``, ``server.auth`` and ``server.network``.  The latter two instances are below ``server`` in the hierarchy.  This means that if you turn up the verbosity for ``server`` or direct ``server`` messages to a different handler, the changes will also apply to records logged to ``server.auth`` and ``server.network``. There's also a root :class:`~logging.Logger` that's the parent of all other loggers."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:464
@@ -294,15 +294,15 @@ msgid "This produces the following output::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:481
-msgid "In the default configuration, informational and debugging messages are suppressed and the output is sent to standard error.  You can enable the display of informational and debugging messages by calling the :meth:`setLevel` method on the root logger."
+msgid "In the default configuration, informational and debugging messages are suppressed and the output is sent to standard error.  You can enable the display of informational and debugging messages by calling the :meth:`~logging.Logger.setLevel` method on the root logger."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:486
-msgid "Notice the :func:`warning` call's use of string formatting operators; all of the functions for logging messages take the arguments ``(msg, arg1, arg2, ...)`` and log the string resulting from ``msg % (arg1, arg2, ...)``."
+msgid "Notice the :func:`~logging.warning` call's use of string formatting operators; all of the functions for logging messages take the arguments ``(msg, arg1, arg2, ...)`` and log the string resulting from ``msg % (arg1, arg2, ...)``."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:490
-msgid "There's also an :func:`exception` function that records the most recent traceback.  Any of the other functions will also record the traceback if you specify a true value for the keyword argument *exc_info*. ::"
+msgid "There's also an :func:`~logging.exception` function that records the most recent traceback.  Any of the other functions will also record the traceback if you specify a true value for the keyword argument *exc_info*. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:508
@@ -310,11 +310,11 @@ msgid "Slightly more advanced programs will use a logger other than the root log
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:519
-msgid "Log records are usually propagated up the hierarchy, so a message logged to ``server.auth`` is also seen by ``server`` and ``root``, but a :class:`Logger` can prevent this by setting its :attr:`propagate` attribute to :const:`False`."
+msgid "Log records are usually propagated up the hierarchy, so a message logged to ``server.auth`` is also seen by ``server`` and ``root``, but a :class:`~logging.Logger` can prevent this by setting its :attr:`~logging.Logger.propagate` attribute to :const:`False`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:523
-msgid "There are more classes provided by the :mod:`logging` package that can be customized.  When a :class:`Logger` instance is told to log a message, it creates a :class:`LogRecord` instance that is sent to any number of different :class:`Handler` instances.  Loggers and handlers can also have an attached list of filters, and each filter can cause the :class:`LogRecord` to be ignored or can modify the record before passing it along.  When they're finally output, :class:`LogRecord` instances are converted to text by a :class:`Formatter` class.  All of these classes can be replaced by your own specially written classes."
+msgid "There are more classes provided by the :mod:`logging` package that can be customized.  When a :class:`~logging.Logger` instance is told to log a message, it creates a :class:`~logging.LogRecord` instance that is sent to any number of different :class:`~logging.Handler` instances.  Loggers and handlers can also have an attached list of filters, and each filter can cause the :class:`~logging.LogRecord` to be ignored or can modify the record before passing it along.  When they're finally output, :class:`~logging.LogRecord` instances are converted to text by a :class:`~logging.Formatter` class.  All of these classes can be replaced by your own specially written classes."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:533
@@ -334,7 +334,7 @@ msgid "PEP 285: A Boolean Type"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:552
-msgid "A Boolean type was added to Python 2.3.  Two new constants were added to the :mod:`__builtin__` module, :const:`True` and :const:`False`.  (:const:`True` and :const:`False` constants were added to the built-ins in Python 2.2.1, but the 2.2.1 versions are simply set to integer values of 1 and 0 and aren't a different type.)"
+msgid "A Boolean type was added to Python 2.3.  Two new constants were added to the :mod:`!__builtin__` module, :const:`True` and :const:`False`.  (:const:`True` and :const:`False` constants were added to the built-ins in Python 2.2.1, but the 2.2.1 versions are simply set to integer values of 1 and 0 and aren't a different type.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:558
@@ -402,7 +402,7 @@ msgid "The heart of the catalog is the new Distutils :command:`register` command
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:664
-msgid "To make the catalog a bit more useful, a new optional *classifiers* keyword argument has been added to the Distutils :func:`setup` function.  A list of `Trove <http://catb.org/~esr/trove/>`_-style strings can be supplied to help classify the software."
+msgid "To make the catalog a bit more useful, a new optional *classifiers* keyword argument has been added to the Distutils :func:`!setup` function.  A list of `Trove <http://catb.org/~esr/trove/>`_-style strings can be supplied to help classify the software."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:669
@@ -426,11 +426,11 @@ msgid "PEP 302: New Import Hooks"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:705
-msgid "While it's been possible to write custom import hooks ever since the :mod:`ihooks` module was introduced in Python 1.3, no one has ever been really happy with it because writing new import hooks is difficult and messy.  There have been various proposed alternatives such as the :mod:`imputil` and :mod:`iu` modules, but none of them has ever gained much acceptance, and none of them were easily usable from C code."
+msgid "While it's been possible to write custom import hooks ever since the :mod:`!ihooks` module was introduced in Python 1.3, no one has ever been really happy with it because writing new import hooks is difficult and messy.  There have been various proposed alternatives such as the :mod:`!imputil` and :mod:`!iu` modules, but none of them has ever gained much acceptance, and none of them were easily usable from C code."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:712
-msgid ":pep:`302` borrows ideas from its predecessors, especially from Gordon McMillan's :mod:`iu` module.  Three new items  are added to the :mod:`sys` module:"
+msgid ":pep:`302` borrows ideas from its predecessors, especially from Gordon McMillan's :mod:`!iu` module.  Three new items  are added to the :mod:`sys` module:"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:716
@@ -482,7 +482,7 @@ msgid "A big ugly regular expression can parse this, but using the new  :mod:`cs
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:793
-msgid "The :func:`reader` function takes a number of different options. The field separator isn't limited to the comma and can be changed to any character, and so can the quoting and line-ending characters."
+msgid "The :func:`~csv.reader` function takes a number of different options. The field separator isn't limited to the comma and can be changed to any character, and so can the quoting and line-ending characters."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:797
@@ -502,7 +502,7 @@ msgid "PEP 307: Pickle Enhancements"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:817
-msgid "The :mod:`pickle` and :mod:`cPickle` modules received some attention during the 2.3 development cycle.  In 2.2, new-style classes could be pickled without difficulty, but they weren't pickled very compactly; :pep:`307` quotes a trivial example where a new-style class results in a pickled string three times longer than that for a classic class."
+msgid "The :mod:`pickle` and :mod:`!cPickle` modules received some attention during the 2.3 development cycle.  In 2.2, new-style classes could be pickled without difficulty, but they weren't pickled very compactly; :pep:`307` quotes a trivial example where a new-style class results in a pickled string three times longer than that for a classic class."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:823
@@ -510,11 +510,11 @@ msgid "The solution was to invent a new pickle protocol.  The :func:`pickle.dump
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:830
-msgid "Unpickling is no longer considered a safe operation.  2.2's :mod:`pickle` provided hooks for trying to prevent unsafe classes from being unpickled (specifically, a :attr:`__safe_for_unpickling__` attribute), but none of this code was ever audited and therefore it's all been ripped out in 2.3.  You should not unpickle untrusted data in any version of Python."
+msgid "Unpickling is no longer considered a safe operation.  2.2's :mod:`pickle` provided hooks for trying to prevent unsafe classes from being unpickled (specifically, a :attr:`!__safe_for_unpickling__` attribute), but none of this code was ever audited and therefore it's all been ripped out in 2.3.  You should not unpickle untrusted data in any version of Python."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:836
-msgid "To reduce the pickling overhead for new-style classes, a new interface for customizing pickling was added using three special methods: :meth:`__getstate__`, :meth:`__setstate__`, and :meth:`__getnewargs__`.  Consult :pep:`307` for the full semantics  of these methods."
+msgid "To reduce the pickling overhead for new-style classes, a new interface for customizing pickling was added using three special methods: :meth:`~object.__getstate__`, :meth:`~object.__setstate__`, and :meth:`~object.__getnewargs__`.  Consult :pep:`307` for the full semantics  of these methods."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:841
@@ -570,7 +570,7 @@ msgid "Or use slice objects directly in subscripts::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:939
-msgid "To simplify implementing sequences that support extended slicing, slice objects now have a method ``indices(length)`` which, given the length of a sequence, returns a ``(start, stop, step)`` tuple that can be passed directly to :func:`range`. :meth:`indices` handles omitted and out-of-bounds indices in a manner consistent with regular slices (and this innocuous phrase hides a welter of confusing details!).  The method is intended to be used like this::"
+msgid "To simplify implementing sequences that support extended slicing, slice objects now have a method ``indices(length)`` which, given the length of a sequence, returns a ``(start, stop, step)`` tuple that can be passed directly to :func:`range`. :meth:`!indices` handles omitted and out-of-bounds indices in a manner consistent with regular slices (and this innocuous phrase hides a welter of confusing details!).  The method is intended to be used like this::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:957
@@ -642,7 +642,7 @@ msgid "The :keyword:`assert` statement no longer checks the ``__debug__`` flag, 
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1044
-msgid "Most type objects are now callable, so you can use them to create new objects such as functions, classes, and modules.  (This means that the :mod:`new` module can be deprecated in a future Python version, because you can now use the type objects available in the :mod:`types` module.) For example, you can create a new module object with the following code:"
+msgid "Most type objects are now callable, so you can use them to create new objects such as functions, classes, and modules.  (This means that the :mod:`!new` module can be deprecated in a future Python version, because you can now use the type objects available in the :mod:`types` module.) For example, you can create a new module object with the following code:"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1059
@@ -658,7 +658,7 @@ msgid "Using ``None`` as a variable name will now result in a :exc:`SyntaxWarnin
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1072
-msgid "The :meth:`xreadlines` method of file objects, introduced in Python 2.1, is no longer necessary because files now behave as their own iterator. :meth:`xreadlines` was originally introduced as a faster way to loop over all the lines in a file, but now you can simply write ``for line in file_obj``. File objects also have a new read-only :attr:`encoding` attribute that gives the encoding used by the file; Unicode strings written to the file will be automatically  converted to bytes using the given encoding."
+msgid "The :meth:`!xreadlines` method of file objects, introduced in Python 2.1, is no longer necessary because files now behave as their own iterator. :meth:`!xreadlines` was originally introduced as a faster way to loop over all the lines in a file, but now you can simply write ``for line in file_obj``. File objects also have a new read-only :attr:`!encoding` attribute that gives the encoding used by the file; Unicode strings written to the file will be automatically  converted to bytes using the given encoding."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1080
@@ -666,11 +666,11 @@ msgid "The method resolution order used by new-style classes has changed, though
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1093
-msgid "Python runs multithreaded programs by switching between threads after executing N bytecodes.  The default value for N has been increased from 10 to 100 bytecodes, speeding up single-threaded applications by reducing the switching overhead.  Some multithreaded applications may suffer slower response time, but that's easily fixed by setting the limit back to a lower number using ``sys.setcheckinterval(N)``. The limit can be retrieved with the new :func:`sys.getcheckinterval` function."
+msgid "Python runs multithreaded programs by switching between threads after executing N bytecodes.  The default value for N has been increased from 10 to 100 bytecodes, speeding up single-threaded applications by reducing the switching overhead.  Some multithreaded applications may suffer slower response time, but that's easily fixed by setting the limit back to a lower number using ``sys.setcheckinterval(N)``. The limit can be retrieved with the new :func:`!sys.getcheckinterval` function."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1101
-msgid "One minor but far-reaching change is that the names of extension types defined by the modules included with Python now contain the module and a ``'.'`` in front of the type name.  For example, in Python 2.2, if you created a socket and printed its :attr:`__class__`, you'd get this output::"
+msgid "One minor but far-reaching change is that the names of extension types defined by the modules included with Python now contain the module and a ``'.'`` in front of the type name.  For example, in Python 2.2, if you created a socket and printed its :attr:`!__class__`, you'd get this output::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1110
@@ -690,11 +690,11 @@ msgid "The :keyword:`in` operator now works differently for strings. Previously,
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1140
-msgid "Note that this doesn't tell you where the substring starts; if you need that information, use the :meth:`find` string method."
+msgid "Note that this doesn't tell you where the substring starts; if you need that information, use the :meth:`~str.find` string method."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1143
-msgid "The :meth:`strip`, :meth:`lstrip`, and :meth:`rstrip` string methods now have an optional argument for specifying the characters to strip.  The default is still to remove all whitespace characters::"
+msgid "The :meth:`~str.strip`, :meth:`~str.lstrip`, and :meth:`~str.rstrip` string methods now have an optional argument for specifying the characters to strip.  The default is still to remove all whitespace characters::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1157
@@ -702,11 +702,11 @@ msgid "(Suggested by Simon Brunning and implemented by Walter Dörwald.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1159
-msgid "The :meth:`startswith` and :meth:`endswith` string methods now accept negative numbers for the *start* and *end* parameters."
+msgid "The :meth:`~str.startswith` and :meth:`~str.endswith` string methods now accept negative numbers for the *start* and *end* parameters."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1162
-msgid "Another new string method is :meth:`zfill`, originally a function in the :mod:`string` module.  :meth:`zfill` pads a numeric string with zeros on the left until it's the specified width. Note that the ``%`` operator is still more flexible and powerful than :meth:`zfill`. ::"
+msgid "Another new string method is :meth:`~str.zfill`, originally a function in the :mod:`string` module.  :meth:`~str.zfill` pads a numeric string with zeros on the left until it's the specified width. Note that the ``%`` operator is still more flexible and powerful than :meth:`~str.zfill`. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1174
@@ -714,7 +714,7 @@ msgid "(Contributed by Walter Dörwald.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1176
-msgid "A new type object, :class:`basestring`, has been added. Both 8-bit strings and Unicode strings inherit from this type, so ``isinstance(obj, basestring)`` will return :const:`True` for either kind of string.  It's a completely abstract type, so you can't create :class:`basestring` instances."
+msgid "A new type object, :class:`!basestring`, has been added. Both 8-bit strings and Unicode strings inherit from this type, so ``isinstance(obj, basestring)`` will return :const:`True` for either kind of string.  It's a completely abstract type, so you can't create :class:`!basestring` instances."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1181
@@ -730,7 +730,7 @@ msgid "The creation of new-style class instances has been made much faster; they
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1194
-msgid "The :meth:`sort` method of list objects has been extensively rewritten by Tim Peters, and the implementation is significantly faster."
+msgid "The :meth:`~list.sort` method of list objects has been extensively rewritten by Tim Peters, and the implementation is significantly faster."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1197
@@ -742,7 +742,7 @@ msgid "The ``SET_LINENO`` opcode is now gone.  This may provide a small speed in
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1206
-msgid ":func:`xrange` objects now have their own iterator, making ``for i in xrange(n)`` slightly faster than ``for i in range(n)``.  (Patch by Raymond Hettinger.)"
+msgid ":func:`!xrange` objects now have their own iterator, making ``for i in xrange(n)`` slightly faster than ``for i in range(n)``.  (Patch by Raymond Hettinger.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1210
@@ -766,11 +766,11 @@ msgid "The :mod:`array` module now supports arrays of Unicode characters using t
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1233
-msgid "The :mod:`bsddb` module has been replaced by version 4.1.6 of the `PyBSDDB <https://pybsddb.sourceforge.net>`_ package, providing a more complete interface to the transactional features of the BerkeleyDB library."
+msgid "The :mod:`!bsddb` module has been replaced by version 4.1.6 of the `PyBSDDB <https://pybsddb.sourceforge.net>`_ package, providing a more complete interface to the transactional features of the BerkeleyDB library."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1237
-msgid "The old version of the module has been renamed to  :mod:`bsddb185` and is no longer built automatically; you'll  have to edit :file:`Modules/Setup` to enable it.  Note that the new :mod:`bsddb` package is intended to be compatible with the  old module, so be sure to file bugs if you discover any incompatibilities. When upgrading to Python 2.3, if the new interpreter is compiled with a new version of  the underlying BerkeleyDB library, you will almost certainly have to convert your database files to the new version.  You can do this fairly easily with the new scripts :file:`db2pickle.py` and :file:`pickle2db.py` which you will find in the distribution's :file:`Tools/scripts` directory.  If you've already been using the PyBSDDB package and importing it as :mod:`bsddb3`, you will have to change your ``import`` statements to import it as :mod:`bsddb`."
+msgid "The old version of the module has been renamed to  :mod:`!bsddb185` and is no longer built automatically; you'll  have to edit :file:`Modules/Setup` to enable it.  Note that the new :mod:`!bsddb` package is intended to be compatible with the  old module, so be sure to file bugs if you discover any incompatibilities. When upgrading to Python 2.3, if the new interpreter is compiled with a new version of  the underlying BerkeleyDB library, you will almost certainly have to convert your database files to the new version.  You can do this fairly easily with the new scripts :file:`db2pickle.py` and :file:`pickle2db.py` which you will find in the distribution's :file:`Tools/scripts` directory.  If you've already been using the PyBSDDB package and importing it as :mod:`!bsddb3`, you will have to change your ``import`` statements to import it as :mod:`!bsddb`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1249
@@ -782,7 +782,7 @@ msgid "A set of standard date/time types has been added in the new :mod:`datetim
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1256
-msgid "The Distutils :class:`Extension` class now supports an extra constructor argument named *depends* for listing additional source files that an extension depends on.  This lets Distutils recompile the module if any of the dependency files are modified.  For example, if :file:`sampmodule.c` includes the header file :file:`sample.h`, you would create the :class:`Extension` object like this::"
+msgid "The Distutils :class:`!Extension` class now supports an extra constructor argument named *depends* for listing additional source files that an extension depends on.  This lets Distutils recompile the module if any of the dependency files are modified.  For example, if :file:`sampmodule.c` includes the header file :file:`sample.h`, you would create the :class:`!Extension` object like this::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1267
@@ -790,11 +790,11 @@ msgid "Modifying :file:`sample.h` would then cause the module to be recompiled. 
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1270
-msgid "Other minor changes to Distutils: it now checks for the :envvar:`CC`, :envvar:`CFLAGS`, :envvar:`CPP`, :envvar:`LDFLAGS`, and :envvar:`CPPFLAGS` environment variables, using them to override the settings in Python's configuration (contributed by Robert Weber)."
+msgid "Other minor changes to Distutils: it now checks for the :envvar:`CC`, :envvar:`CFLAGS`, :envvar:`!CPP`, :envvar:`LDFLAGS`, and :envvar:`CPPFLAGS` environment variables, using them to override the settings in Python's configuration (contributed by Robert Weber)."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1275
-msgid "Previously the :mod:`doctest` module would only search the docstrings of public methods and functions for test cases, but it now also examines private ones as well.  The :func:`DocTestSuite` function creates a :class:`unittest.TestSuite` object from a set of :mod:`doctest` tests."
+msgid "Previously the :mod:`doctest` module would only search the docstrings of public methods and functions for test cases, but it now also examines private ones as well.  The :func:`~doctest.DocTestSuite` function creates a :class:`unittest.TestSuite` object from a set of :mod:`doctest` tests."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1280
@@ -802,7 +802,7 @@ msgid "The new ``gc.get_referents(object)`` function returns a list of all the o
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1283
-msgid "The :mod:`getopt` module gained a new function, :func:`gnu_getopt`, that supports the same arguments as the existing :func:`getopt` function but uses GNU-style scanning mode. The existing :func:`getopt` stops processing options as soon as a non-option argument is encountered, but in GNU-style mode processing continues, meaning that options and arguments can be mixed.  For example::"
+msgid "The :mod:`getopt` module gained a new function, :func:`~getopt.gnu_getopt`, that supports the same arguments as the existing :func:`~getopt.getopt` function but uses GNU-style scanning mode. The existing :func:`~getopt.getopt` stops processing options as soon as a non-option argument is encountered, but in GNU-style mode processing continues, meaning that options and arguments can be mixed.  For example::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1294
@@ -822,7 +822,7 @@ msgid "The new :mod:`heapq` module contains an implementation of a heap queue al
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1314
-msgid "The :mod:`heapq` module provides :func:`heappush` and :func:`heappop` functions for adding and removing items while maintaining the heap property on top of some other mutable Python sequence type.  Here's an example that uses a Python list::"
+msgid "The :mod:`heapq` module provides :func:`~heapq.heappush` and :func:`~heapq.heappop` functions for adding and removing items while maintaining the heap property on top of some other mutable Python sequence type.  Here's an example that uses a Python list::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1332
@@ -838,7 +838,7 @@ msgid "The :mod:`imaplib` module now supports IMAP over SSL. (Contributed by Pie
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1343
-msgid "The :mod:`itertools` contains a number of useful functions for use with iterators, inspired by various functions provided by the ML and Haskell languages.  For example, ``itertools.ifilter(predicate, iterator)`` returns all elements in the iterator for which the function :func:`predicate` returns :const:`True`, and ``itertools.repeat(obj, N)`` returns ``obj`` *N* times. There are a number of other functions in the module; see the package's reference documentation for details. (Contributed by Raymond Hettinger.)"
+msgid "The :mod:`itertools` contains a number of useful functions for use with iterators, inspired by various functions provided by the ML and Haskell languages.  For example, ``itertools.ifilter(predicate, iterator)`` returns all elements in the iterator for which the function :func:`!predicate` returns :const:`True`, and ``itertools.repeat(obj, N)`` returns ``obj`` *N* times. There are a number of other functions in the module; see the package's reference documentation for details. (Contributed by Raymond Hettinger.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1352
@@ -846,7 +846,7 @@ msgid "Two new functions in the :mod:`math` module, ``degrees(rads)`` and ``radi
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1359
-msgid "Several new POSIX functions (:func:`getpgid`, :func:`killpg`, :func:`lchown`, :func:`loadavg`, :func:`major`, :func:`makedev`, :func:`minor`, and :func:`mknod`) were added to the :mod:`posix` module that underlies the :mod:`os` module. (Contributed by Gustavo Niemeyer, Geert Jansen, and Denis S. Otkidach.)"
+msgid "Several new POSIX functions (:func:`!getpgid`, :func:`!killpg`, :func:`!lchown`, :func:`!loadavg`, :func:`!major`, :func:`!makedev`, :func:`!minor`, and :func:`!mknod`) were added to the :mod:`posix` module that underlies the :mod:`os` module. (Contributed by Gustavo Niemeyer, Geert Jansen, and Denis S. Otkidach.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1365
@@ -854,7 +854,7 @@ msgid "In the :mod:`os` module, the :func:`!\\*stat` family of functions can now
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1369
-msgid "During testing, it was found that some applications will break if time stamps are floats.  For compatibility, when using the tuple interface of the :class:`stat_result` time stamps will be represented as integers. When using named fields (a feature first introduced in Python 2.2), time stamps are still represented as integers, unless :func:`os.stat_float_times` is invoked to enable float return values::"
+msgid "During testing, it was found that some applications will break if time stamps are floats.  For compatibility, when using the tuple interface of the :class:`~os.stat_result` time stamps will be represented as integers. When using named fields (a feature first introduced in Python 2.2), time stamps are still represented as integers, unless :func:`!os.stat_float_times` is invoked to enable float return values::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1382
@@ -870,7 +870,7 @@ msgid "The :mod:`optparse` module contains a new parser for command-line argumen
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1394
-msgid "The old and never-documented :mod:`linuxaudiodev` module has been deprecated, and a new version named :mod:`ossaudiodev` has been added.  The module was renamed because the OSS sound drivers can be used on platforms other than Linux, and the interface has also been tidied and brought up to date in various ways. (Contributed by Greg Ward and Nicholas FitzRoy-Dale.)"
+msgid "The old and never-documented :mod:`!linuxaudiodev` module has been deprecated, and a new version named :mod:`ossaudiodev` has been added.  The module was renamed because the OSS sound drivers can be used on platforms other than Linux, and the interface has also been tidied and brought up to date in various ways. (Contributed by Greg Ward and Nicholas FitzRoy-Dale.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1400
@@ -878,11 +878,11 @@ msgid "The new :mod:`platform` module contains a number of functions that try to
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1405
-msgid "The parser objects provided by the :mod:`pyexpat` module can now optionally buffer character data, resulting in fewer calls to your character data handler and therefore faster performance.  Setting the parser object's :attr:`buffer_text` attribute to :const:`True` will enable buffering."
+msgid "The parser objects provided by the :mod:`pyexpat <xml.parsers.expat>` module can now optionally buffer character data, resulting in fewer calls to your character data handler and therefore faster performance.  Setting the parser object's :attr:`~xml.parsers.expat.xmlparser.buffer_text` attribute to :const:`True` will enable buffering."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1410
-msgid "The ``sample(population, k)`` function was added to the :mod:`random` module.  *population* is a sequence or :class:`xrange` object containing the elements of a population, and :func:`sample` chooses *k* elements from the population without replacing chosen elements.  *k* can be any value up to ``len(population)``. For example::"
+msgid "The ``sample(population, k)`` function was added to the :mod:`random` module.  *population* is a sequence or :class:`!xrange` object containing the elements of a population, and :func:`~random.sample` chooses *k* elements from the population without replacing chosen elements.  *k* can be any value up to ``len(population)``. For example::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1432
@@ -894,19 +894,19 @@ msgid "(All changes contributed by Raymond Hettinger.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1438
-msgid "The :mod:`readline` module also gained a number of new functions: :func:`get_history_item`, :func:`get_current_history_length`, and :func:`redisplay`."
+msgid "The :mod:`readline` module also gained a number of new functions: :func:`~readline.get_history_item`, :func:`~readline.get_current_history_length`, and :func:`~readline.redisplay`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1442
-msgid "The :mod:`rexec` and :mod:`Bastion` modules have been declared dead, and attempts to import them will fail with a :exc:`RuntimeError`.  New-style classes provide new ways to break out of the restricted execution environment provided by :mod:`rexec`, and no one has interest in fixing them or time to do so.  If you have applications using :mod:`rexec`, rewrite them to use something else."
+msgid "The :mod:`!rexec` and :mod:`!Bastion` modules have been declared dead, and attempts to import them will fail with a :exc:`RuntimeError`.  New-style classes provide new ways to break out of the restricted execution environment provided by :mod:`!rexec`, and no one has interest in fixing them or time to do so.  If you have applications using :mod:`!rexec`, rewrite them to use something else."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1448
-msgid "(Sticking with Python 2.2 or 2.1 will not make your applications any safer because there are known bugs in the :mod:`rexec` module in those versions.  To repeat: if you're using :mod:`rexec`, stop using it immediately.)"
+msgid "(Sticking with Python 2.2 or 2.1 will not make your applications any safer because there are known bugs in the :mod:`!rexec` module in those versions.  To repeat: if you're using :mod:`!rexec`, stop using it immediately.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1452
-msgid "The :mod:`rotor` module has been deprecated because the  algorithm it uses for encryption is not believed to be secure.  If you need encryption, use one of the several AES Python modules that are available separately."
+msgid "The :mod:`!rotor` module has been deprecated because the  algorithm it uses for encryption is not believed to be secure.  If you need encryption, use one of the several AES Python modules that are available separately."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1456
@@ -930,7 +930,7 @@ msgid "On Windows, the :mod:`socket` module now ships with Secure  Sockets Layer
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1477
-msgid "The value of the C :c:macro:`PYTHON_API_VERSION` macro is now exposed at the Python level as ``sys.api_version``.  The current exception can be cleared by calling the new :func:`sys.exc_clear` function."
+msgid "The value of the C :c:macro:`!PYTHON_API_VERSION` macro is now exposed at the Python level as ``sys.api_version``.  The current exception can be cleared by calling the new :func:`!sys.exc_clear` function."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1481
@@ -938,47 +938,47 @@ msgid "The new :mod:`tarfile` module  allows reading from and writing to :progra
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1484
-msgid "The new :mod:`textwrap` module contains functions for wrapping strings containing paragraphs of text.  The ``wrap(text, width)`` function takes a string and returns a list containing the text split into lines of no more than the chosen width.  The ``fill(text, width)`` function returns a single string, reformatted to fit into lines no longer than the chosen width. (As you can guess, :func:`fill` is built on top of :func:`wrap`.  For example::"
+msgid "The new :mod:`textwrap` module contains functions for wrapping strings containing paragraphs of text.  The ``wrap(text, width)`` function takes a string and returns a list containing the text split into lines of no more than the chosen width.  The ``fill(text, width)`` function returns a single string, reformatted to fit into lines no longer than the chosen width. (As you can guess, :func:`~textwrap.fill` is built on top of :func:`~textwrap.wrap`.  For example::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1506
-msgid "The module also contains a :class:`TextWrapper` class that actually implements the text wrapping strategy.   Both the :class:`TextWrapper` class and the :func:`wrap` and :func:`fill` functions support a number of additional keyword arguments for fine-tuning the formatting; consult the module's documentation for details. (Contributed by Greg Ward.)"
+msgid "The module also contains a :class:`~textwrap.TextWrapper` class that actually implements the text wrapping strategy.   Both the :class:`~textwrap.TextWrapper` class and the :func:`~textwrap.wrap` and :func:`~textwrap.fill` functions support a number of additional keyword arguments for fine-tuning the formatting; consult the module's documentation for details. (Contributed by Greg Ward.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1512
-msgid "The :mod:`thread` and :mod:`threading` modules now have companion modules, :mod:`dummy_thread` and :mod:`dummy_threading`, that provide a do-nothing implementation of the :mod:`thread` module's interface for platforms where threads are not supported.  The intention is to simplify thread-aware modules (ones that *don't* rely on threads to run) by putting the following code at the top::"
+msgid "The :mod:`!thread` and :mod:`threading` modules now have companion modules, :mod:`!dummy_thread` and :mod:`!dummy_threading`, that provide a do-nothing implementation of the :mod:`!thread` module's interface for platforms where threads are not supported.  The intention is to simplify thread-aware modules (ones that *don't* rely on threads to run) by putting the following code at the top::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1524
-msgid "In this example, :mod:`_threading` is used as the module name to make it clear that the module being used is not necessarily the actual :mod:`threading` module. Code can call functions and use classes in :mod:`_threading` whether or not threads are supported, avoiding an :keyword:`if` statement and making the code slightly clearer.  This module will not magically make multithreaded code run without threads; code that waits for another thread to return or to do something will simply hang forever."
+msgid "In this example, :mod:`!_threading` is used as the module name to make it clear that the module being used is not necessarily the actual :mod:`threading` module. Code can call functions and use classes in :mod:`!_threading` whether or not threads are supported, avoiding an :keyword:`if` statement and making the code slightly clearer.  This module will not magically make multithreaded code run without threads; code that waits for another thread to return or to do something will simply hang forever."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1532
-msgid "The :mod:`time` module's :func:`strptime` function has long been an annoyance because it uses the platform C library's :func:`strptime` implementation, and different platforms sometimes have odd bugs.  Brett Cannon contributed a portable implementation that's written in pure Python and should behave identically on all platforms."
+msgid "The :mod:`time` module's :func:`~time.strptime` function has long been an annoyance because it uses the platform C library's :func:`~time.strptime` implementation, and different platforms sometimes have odd bugs.  Brett Cannon contributed a portable implementation that's written in pure Python and should behave identically on all platforms."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1538
-msgid "The new :mod:`timeit` module helps measure how long snippets of Python code take to execute.  The :file:`timeit.py` file can be run directly from the command line, or the module's :class:`Timer` class can be imported and used directly.  Here's a short example that figures out whether it's faster to convert an 8-bit string to Unicode by appending an empty Unicode string to it or by using the :func:`unicode` function::"
+msgid "The new :mod:`timeit` module helps measure how long snippets of Python code take to execute.  The :file:`timeit.py` file can be run directly from the command line, or the module's :class:`~timeit.Timer` class can be imported and used directly.  Here's a short example that figures out whether it's faster to convert an 8-bit string to Unicode by appending an empty Unicode string to it or by using the :func:`!unicode` function::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1558
-msgid "The :mod:`Tix` module has received various bug fixes and updates for the current version of the Tix package."
+msgid "The :mod:`!Tix` module has received various bug fixes and updates for the current version of the Tix package."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1561
-msgid "The :mod:`Tkinter` module now works with a thread-enabled  version of Tcl. Tcl's threading model requires that widgets only be accessed from the thread in which they're created; accesses from another thread can cause Tcl to panic.  For certain Tcl interfaces, :mod:`Tkinter` will now automatically avoid this  when a widget is accessed from a different thread by marshalling a command, passing it to the correct thread, and waiting for the results.  Other interfaces can't be handled automatically but :mod:`Tkinter` will now raise an exception on such an access so that you can at least find out about the problem.  See https://mail.python.org/pipermail/python-dev/2002-December/031107.html for a more detailed explanation of this change.  (Implemented by Martin von Löwis.)"
+msgid "The :mod:`!Tkinter` module now works with a thread-enabled  version of Tcl. Tcl's threading model requires that widgets only be accessed from the thread in which they're created; accesses from another thread can cause Tcl to panic.  For certain Tcl interfaces, :mod:`!Tkinter` will now automatically avoid this  when a widget is accessed from a different thread by marshalling a command, passing it to the correct thread, and waiting for the results.  Other interfaces can't be handled automatically but :mod:`!Tkinter` will now raise an exception on such an access so that you can at least find out about the problem.  See https://mail.python.org/pipermail/python-dev/2002-December/031107.html for a more detailed explanation of this change.  (Implemented by Martin von Löwis.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1572
-msgid "Calling Tcl methods through :mod:`_tkinter` no longer  returns only strings. Instead, if Tcl returns other objects those objects are converted to their Python equivalent, if one exists, or wrapped with a :class:`_tkinter.Tcl_Obj` object if no Python equivalent exists. This behavior can be controlled through the :meth:`wantobjects` method of :class:`tkapp` objects."
+msgid "Calling Tcl methods through :mod:`!_tkinter` no longer  returns only strings. Instead, if Tcl returns other objects those objects are converted to their Python equivalent, if one exists, or wrapped with a :class:`!_tkinter.Tcl_Obj` object if no Python equivalent exists. This behavior can be controlled through the :meth:`!wantobjects` method of :class:`!tkapp` objects."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1578
-msgid "When using :mod:`_tkinter` through the :mod:`Tkinter` module (as most Tkinter applications will), this feature is always activated. It should not cause compatibility problems, since Tkinter would always convert string results to Python types where possible."
+msgid "When using :mod:`!_tkinter` through the :mod:`!Tkinter` module (as most Tkinter applications will), this feature is always activated. It should not cause compatibility problems, since Tkinter would always convert string results to Python types where possible."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1583
-msgid "If any incompatibilities are found, the old behavior can be restored by setting the :attr:`wantobjects` variable in the :mod:`Tkinter` module to false before creating the first :class:`tkapp` object. ::"
+msgid "If any incompatibilities are found, the old behavior can be restored by setting the :attr:`!wantobjects` variable in the :mod:`!Tkinter` module to false before creating the first :class:`!tkapp` object. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1590
@@ -986,11 +986,11 @@ msgid "Any breakage caused by this change should be reported as a bug."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1592
-msgid "The :mod:`UserDict` module has a new :class:`DictMixin` class which defines all dictionary methods for classes that already have a minimum mapping interface.  This greatly simplifies writing classes that need to be substitutable for dictionaries, such as the classes in  the :mod:`shelve` module."
+msgid "The :mod:`!UserDict` module has a new :class:`!DictMixin` class which defines all dictionary methods for classes that already have a minimum mapping interface.  This greatly simplifies writing classes that need to be substitutable for dictionaries, such as the classes in  the :mod:`shelve` module."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1598
-msgid "Adding the mix-in as a superclass provides the full dictionary interface whenever the class defines :meth:`~object.__getitem__`, :meth:`__setitem__`, :meth:`__delitem__`, and :meth:`keys`. For example::"
+msgid "Adding the mix-in as a superclass provides the full dictionary interface whenever the class defines :meth:`~object.__getitem__`, :meth:`~object.__setitem__`, :meth:`~object.__delitem__`, and :meth:`!keys`. For example::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1639
@@ -998,15 +998,15 @@ msgid "(Contributed by Raymond Hettinger.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1641
-msgid "The DOM implementation in :mod:`xml.dom.minidom` can now generate XML output in a particular encoding by providing an optional encoding argument to the :meth:`toxml` and :meth:`toprettyxml` methods of DOM nodes."
+msgid "The DOM implementation in :mod:`xml.dom.minidom` can now generate XML output in a particular encoding by providing an optional encoding argument to the :meth:`~xml.dom.minidom.Node.toxml` and :meth:`~xml.dom.minidom.Node.toprettyxml` methods of DOM nodes."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1645
-msgid "The :mod:`xmlrpclib` module now supports an XML-RPC extension for handling nil data values such as Python's ``None``.  Nil values are always supported on unmarshalling an XML-RPC response.  To generate requests containing ``None``, you must supply a true value for the *allow_none* parameter when creating a :class:`Marshaller` instance."
+msgid "The :mod:`!xmlrpclib` module now supports an XML-RPC extension for handling nil data values such as Python's ``None``.  Nil values are always supported on unmarshalling an XML-RPC response.  To generate requests containing ``None``, you must supply a true value for the *allow_none* parameter when creating a :class:`!Marshaller` instance."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1651
-msgid "The new :mod:`DocXMLRPCServer` module allows writing self-documenting XML-RPC servers. Run it in demo mode (as a program) to see it in action.   Pointing the web browser to the RPC server produces pydoc-style documentation; pointing xmlrpclib to the server allows invoking the actual methods. (Contributed by Brian Quinlan.)"
+msgid "The new :mod:`!DocXMLRPCServer` module allows writing self-documenting XML-RPC servers. Run it in demo mode (as a program) to see it in action.   Pointing the web browser to the RPC server produces pydoc-style documentation; pointing xmlrpclib to the server allows invoking the actual methods. (Contributed by Brian Quinlan.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1657
@@ -1014,7 +1014,7 @@ msgid "Support for internationalized domain names (RFCs 3454, 3490, 3491, and 34
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1664
-msgid "The :mod:`socket` module has also been extended to transparently convert Unicode hostnames to the ACE version before passing them to the C library. Modules that deal with hostnames such as :mod:`httplib` and :mod:`ftplib`) also support Unicode host names; :mod:`httplib` also sends HTTP ``Host`` headers using the ACE version of the domain name.  :mod:`urllib` supports Unicode URLs with non-ASCII host names as long as the ``path`` part of the URL is ASCII only."
+msgid "The :mod:`socket` module has also been extended to transparently convert Unicode hostnames to the ACE version before passing them to the C library. Modules that deal with hostnames such as :mod:`!httplib` and :mod:`ftplib`) also support Unicode host names; :mod:`!httplib` also sends HTTP ``Host`` headers using the ACE version of the domain name.  :mod:`urllib` supports Unicode URLs with non-ASCII host names as long as the ``path`` part of the URL is ASCII only."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1672
@@ -1030,11 +1030,11 @@ msgid "Date and time types suitable for expressing timestamps were added as the 
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1685
-msgid "The three primary types are: :class:`date`, representing a day, month, and year; :class:`~datetime.time`, consisting of hour, minute, and second; and :class:`~datetime.datetime`, which contains all the attributes of both :class:`date` and :class:`~datetime.time`. There's also a :class:`timedelta` class representing differences between two points in time, and time zone logic is implemented by classes inheriting from the abstract :class:`tzinfo` class."
+msgid "The three primary types are: :class:`~datetime.date`, representing a day, month, and year; :class:`~datetime.time`, consisting of hour, minute, and second; and :class:`~datetime.datetime`, which contains all the attributes of both :class:`~datetime.date` and :class:`~datetime.time`. There's also a :class:`~datetime.timedelta` class representing differences between two points in time, and time zone logic is implemented by classes inheriting from the abstract :class:`~datetime.tzinfo` class."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1692
-msgid "You can create instances of :class:`date` and :class:`~datetime.time` by either supplying keyword arguments to the appropriate constructor, e.g. ``datetime.date(year=1972, month=10, day=15)``, or by using one of a number of class methods.  For example, the :meth:`date.today` class method returns the current local date."
+msgid "You can create instances of :class:`~datetime.date` and :class:`~datetime.time` by either supplying keyword arguments to the appropriate constructor, e.g. ``datetime.date(year=1972, month=10, day=15)``, or by using one of a number of class methods.  For example, the :meth:`~datetime.date.today` class method returns the current local date."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1698
@@ -1042,11 +1042,11 @@ msgid "Once created, instances of the date/time classes are all immutable. There
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1710
-msgid "The :meth:`replace` method allows modifying one or more fields  of a :class:`date` or :class:`~datetime.datetime` instance, returning a new instance::"
+msgid "The :meth:`~datetime.datetime.replace` method allows modifying one or more fields  of a :class:`~datetime.date` or :class:`~datetime.datetime` instance, returning a new instance::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1720
-msgid "Instances can be compared, hashed, and converted to strings (the result is the same as that of :meth:`isoformat`).  :class:`date` and :class:`~datetime.datetime` instances can be subtracted from each other, and added to :class:`timedelta` instances.  The largest missing feature is that there's no standard library support for parsing strings and getting back a :class:`date` or :class:`~datetime.datetime`."
+msgid "Instances can be compared, hashed, and converted to strings (the result is the same as that of :meth:`~datetime.datetime.isoformat`).  :class:`~datetime.date` and :class:`~datetime.datetime` instances can be subtracted from each other, and added to :class:`~datetime.timedelta` instances.  The largest missing feature is that there's no standard library support for parsing strings and getting back a :class:`~datetime.date` or :class:`~datetime.datetime`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1727
@@ -1062,11 +1062,11 @@ msgid "The :mod:`getopt` module provides simple parsing of command-line argument
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1742
-msgid "You start by creating an instance of :class:`OptionParser` and telling it what your program's options are. ::"
+msgid "You start by creating an instance of :class:`~optparse.OptionParser` and telling it what your program's options are. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1756
-msgid "Parsing a command line is then done by calling the :meth:`parse_args` method. ::"
+msgid "Parsing a command line is then done by calling the :meth:`~optparse.OptionParser.parse_args` method. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1762
@@ -1190,7 +1190,7 @@ msgid "Python now includes a copy of the Expat XML parser's source code, removin
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1927
-msgid "If you dynamically allocate type objects in your extension, you should be aware of a change in the rules relating to the :attr:`__module__` and :attr:`~definition.__name__` attributes.  In summary, you will want to ensure the type's dictionary contains a ``'__module__'`` key; making the module name the part of the type name leading up to the final period will no longer have the desired effect.  For more detail, read the API reference documentation or the  source."
+msgid "If you dynamically allocate type objects in your extension, you should be aware of a change in the rules relating to the :attr:`!__module__` and :attr:`~definition.__name__` attributes.  In summary, you will want to ensure the type's dictionary contains a ``'__module__'`` key; making the module name the part of the type name leading up to the final period will no longer have the desired effect.  For more detail, read the API reference documentation or the  source."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1938
@@ -1198,7 +1198,7 @@ msgid "Port-Specific Changes"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1940
-msgid "Support for a port to IBM's OS/2 using the EMX runtime environment was merged into the main Python source tree.  EMX is a POSIX emulation layer over the OS/2 system APIs.  The Python port for EMX tries to support all the POSIX-like capability exposed by the EMX runtime, and mostly succeeds; :func:`fork` and :func:`fcntl` are restricted by the limitations of the underlying emulation layer.  The standard OS/2 port, which uses IBM's Visual Age compiler, also gained support for case-sensitive import semantics as part of the integration of the EMX port into CVS.  (Contributed by Andrew MacIntyre.)"
+msgid "Support for a port to IBM's OS/2 using the EMX runtime environment was merged into the main Python source tree.  EMX is a POSIX emulation layer over the OS/2 system APIs.  The Python port for EMX tries to support all the POSIX-like capability exposed by the EMX runtime, and mostly succeeds; :func:`!fork` and :func:`fcntl` are restricted by the limitations of the underlying emulation layer.  The standard OS/2 port, which uses IBM's Visual Age compiler, also gained support for case-sensitive import semantics as part of the integration of the EMX port into CVS.  (Contributed by Andrew MacIntyre.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1949
@@ -1278,7 +1278,7 @@ msgid "If you have Unicode strings that contain 8-bit characters, you must decla
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:2034
-msgid "Calling Tcl methods through :mod:`_tkinter` no longer  returns only strings. Instead, if Tcl returns other objects those objects are converted to their Python equivalent, if one exists, or wrapped with a :class:`_tkinter.Tcl_Obj` object if no Python equivalent exists."
+msgid "Calling Tcl methods through :mod:`!_tkinter` no longer  returns only strings. Instead, if Tcl returns other objects those objects are converted to their Python equivalent, if one exists, or wrapped with a :class:`!_tkinter.Tcl_Obj` object if no Python equivalent exists."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:2039
@@ -1294,7 +1294,7 @@ msgid "You can no longer disable assertions by assigning to ``__debug__``."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:2052
-msgid "The Distutils :func:`setup` function has gained various new keyword arguments such as *depends*.  Old versions of the Distutils will abort if passed unknown keywords.  A solution is to check for the presence of the new :func:`get_distutil_options` function in your :file:`setup.py` and only uses the new keywords with a version of the Distutils that supports them::"
+msgid "The Distutils :func:`!setup` function has gained various new keyword arguments such as *depends*.  Old versions of the Distutils will abort if passed unknown keywords.  A solution is to check for the presence of the new :func:`!get_distutil_options` function in your :file:`setup.py` and only uses the new keywords with a version of the Distutils that supports them::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:2065
