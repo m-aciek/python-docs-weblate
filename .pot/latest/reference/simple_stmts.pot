@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 19:12+0000\n"
+"POT-Creation-Date: 2023-12-14 14:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgid "If the primary is a mapping object (such as a dictionary), the subscript 
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:217
-msgid "For user-defined objects, the :meth:`__setitem__` method is called with appropriate arguments."
+msgid "For user-defined objects, the :meth:`~object.__setitem__` method is called with appropriate arguments."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:222
@@ -205,7 +205,7 @@ msgid "If a name is annotated in a function scope, then this name is local for t
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:350
-msgid "If the right hand side is present, an annotated assignment performs the actual assignment before evaluating annotations (where applicable). If the right hand side is not present for an expression target, then the interpreter evaluates the target except for the last :meth:`__setitem__` or :meth:`__setattr__` call."
+msgid "If the right hand side is present, an annotated assignment performs the actual assignment before evaluating annotations (where applicable). If the right hand side is not present for an expression target, then the interpreter evaluates the target except for the last :meth:`~object.__setitem__` or :meth:`~object.__setattr__` call."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:361
@@ -573,7 +573,7 @@ msgid "That is not a future statement; it's an ordinary import statement with no
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:934
-msgid "Code compiled by calls to the built-in functions :func:`exec` and :func:`compile` that occur in a module :mod:`M` containing a future statement will, by default, use the new syntax or semantics associated with the future statement.  This can be controlled by optional arguments to :func:`compile` --- see the documentation of that function for details."
+msgid "Code compiled by calls to the built-in functions :func:`exec` and :func:`compile` that occur in a module :mod:`!M` containing a future statement will, by default, use the new syntax or semantics associated with the future statement.  This can be controlled by optional arguments to :func:`compile` --- see the documentation of that function for details."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:940
