@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 19:12+0000\n"
+"POT-Creation-Date: 2023-12-14 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Exception context"
 msgstr ""
 
 #: ../../library/exceptions.rst:46
-msgid "Three attributes on exception objects provide information about the context in which an the exception was raised:"
+msgid "Three attributes on exception objects provide information about the context in which the exception was raised:"
 msgstr ""
 
 #: ../../library/exceptions.rst:53
