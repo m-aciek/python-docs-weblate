@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 09:15+0000\n"
+"POT-Creation-Date: 2023-12-15 17:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1393,11 +1393,11 @@ msgid "Return the number of tests represented by this test object, including all
 msgstr ""
 
 #: ../../library/unittest.rst:1727
-msgid "Tests grouped by a :class:`TestSuite` are always accessed by iteration. Subclasses can lazily provide tests by overriding :meth:`__iter__`. Note that this method may be called several times on a single suite (for example when counting tests or comparing for equality) so the tests returned by repeated iterations before :meth:`TestSuite.run` must be the same for each call iteration. After :meth:`TestSuite.run`, callers should not rely on the tests returned by this method unless the caller uses a subclass that overrides :meth:`TestSuite._removeTestAtIndex` to preserve test references."
+msgid "Tests grouped by a :class:`TestSuite` are always accessed by iteration. Subclasses can lazily provide tests by overriding :meth:`!__iter__`. Note that this method may be called several times on a single suite (for example when counting tests or comparing for equality) so the tests returned by repeated iterations before :meth:`TestSuite.run` must be the same for each call iteration. After :meth:`TestSuite.run`, callers should not rely on the tests returned by this method unless the caller uses a subclass that overrides :meth:`TestSuite._removeTestAtIndex` to preserve test references."
 msgstr ""
 
 #: ../../library/unittest.rst:1737
-msgid "In earlier versions the :class:`TestSuite` accessed tests directly rather than through iteration, so overriding :meth:`__iter__` wasn't sufficient for providing tests."
+msgid "In earlier versions the :class:`TestSuite` accessed tests directly rather than through iteration, so overriding :meth:`!__iter__` wasn't sufficient for providing tests."
 msgstr ""
 
 #: ../../library/unittest.rst:1742
