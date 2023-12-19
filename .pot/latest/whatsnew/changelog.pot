@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 06:19+0000\n"
+"POT-Creation-Date: 2023-12-19 16:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22522,7 +22522,7 @@ msgid ":issue:`34679`: Restores instantiation of Windows IOCP event loops from t
 msgstr ""
 
 #: ../../../build/NEWS:19886
-msgid ":issue:`36917`: Add default implementation of the :meth:`ast.NodeVisitor.visit_Constant` method which emits a deprecation warning and calls corresponding methody ``visit_Num()``, ``visit_Str()``, etc."
+msgid ":issue:`36917`: Add default implementation of the :meth:`ast.NodeVisitor.visit_Constant` method which emits a deprecation warning and calls corresponding methods ``visit_Num()``, ``visit_Str()``, etc."
 msgstr ""
 
 #: ../../../build/NEWS:19891
