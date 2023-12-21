@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 10:36+0000\n"
+"POT-Creation-Date: 2023-12-21 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "This module provides access to Transport Layer Security (often known as \
 msgstr ""
 
 #: ../../library/ssl.rst:26
-msgid "Some behavior may be platform dependent, since calls are made to the operating system socket APIs.  The installed version of OpenSSL may also cause variations in behavior. For example, TLSv1.3 with OpenSSL version 1.1.1."
+msgid "Some behavior may be platform dependent, since calls are made to the operating system socket APIs.  The installed version of OpenSSL may also cause variations in behavior. For example, TLSv1.3 comes with OpenSSL version 1.1.1."
 msgstr ""
 
 #: ../../library/ssl.rst:32
