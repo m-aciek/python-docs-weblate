@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-12-26 22:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "This module provides support for maintaining a list in sorted order witho
 msgstr ""
 
 #: ../../library/bisect.rst:19
-msgid "The module is called :mod:`bisect` because it uses a basic bisection algorithm to do its work.  Unlike other bisection tools that search for a specific value, the functions in this module are designed to locate an insertion point. Accordingly, the functions never call an :meth:`__eq__` method to determine whether a value has been found.  Instead, the functions only call the :meth:`__lt__` method and will return an insertion point between values in an array."
+msgid "The module is called :mod:`bisect` because it uses a basic bisection algorithm to do its work.  Unlike other bisection tools that search for a specific value, the functions in this module are designed to locate an insertion point. Accordingly, the functions never call an :meth:`~object.__eq__` method to determine whether a value has been found.  Instead, the functions only call the :meth:`~object.__lt__` method and will return an insertion point between values in an array."
 msgstr ""
 
 #: ../../library/bisect.rst:29
@@ -72,7 +72,7 @@ msgid "Insert *x* in *a* in sorted order."
 msgstr ""
 
 #: ../../library/bisect.rst:75
-msgid "This function first runs :py:func:`~bisect.bisect_left` to locate an insertion point. Next, it runs the :meth:`insert` method on *a* to insert *x* at the appropriate position to maintain sort order."
+msgid "This function first runs :py:func:`~bisect.bisect_left` to locate an insertion point. Next, it runs the :meth:`!insert` method on *a* to insert *x* at the appropriate position to maintain sort order."
 msgstr ""
 
 #: ../../library/bisect.rst:79
@@ -90,7 +90,7 @@ msgid "Similar to :py:func:`~bisect.insort_left`, but inserting *x* in *a* after
 msgstr ""
 
 #: ../../library/bisect.rst:95
-msgid "This function first runs :py:func:`~bisect.bisect_right` to locate an insertion point. Next, it runs the :meth:`insert` method on *a* to insert *x* at the appropriate position to maintain sort order."
+msgid "This function first runs :py:func:`~bisect.bisect_right` to locate an insertion point. Next, it runs the :meth:`!insert` method on *a* to insert *x* at the appropriate position to maintain sort order."
 msgstr ""
 
 #: ../../library/bisect.rst:110
