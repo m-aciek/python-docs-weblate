@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-16 12:54+0000\n"
+"POT-Creation-Date: 2023-12-26 20:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -273,7 +273,7 @@ msgid "Have the :c:macro:`Py_TPFLAGS_HAVE_GC` flag."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:339
-msgid "Define a traverse function using ``Py_tp_traverse``, which visits the type (e.g. using :c:expr:`Py_VISIT(Py_TYPE(self))`)."
+msgid "Define a traverse function using ``Py_tp_traverse``, which visits the type (e.g. using ``Py_VISIT(Py_TYPE(self))``)."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:342
@@ -405,7 +405,7 @@ msgid "The largest roadblock is getting *the class a method was defined in*, or 
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:485
-msgid "Do not confuse the defining class with :c:expr:`Py_TYPE(self)`. If the method is called on a *subclass* of your type, ``Py_TYPE(self)`` will refer to that subclass, which may be defined in different module than yours."
+msgid "Do not confuse the defining class with ``Py_TYPE(self)``. If the method is called on a *subclass* of your type, ``Py_TYPE(self)`` will refer to that subclass, which may be defined in different module than yours."
 msgstr ""
 
 #: ../../howto/isolating-extensions.rst:490
