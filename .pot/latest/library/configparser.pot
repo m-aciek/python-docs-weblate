@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 09:15+0000\n"
+"POT-Creation-Date: 2023-12-30 23:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,7 +133,7 @@ msgid "A configuration file consists of sections, each led by a ``[section]`` he
 msgstr ""
 
 #: ../../library/configparser.rst:274
-msgid "By default,  a valid section name can be any string that does not contain '\\\\n' or ']'. To change this, see :attr:`ConfigParser.SECTCRE`."
+msgid "By default, a valid section name can be any string that does not contain '\\\\n'. To change this, see :attr:`ConfigParser.SECTCRE`."
 msgstr ""
 
 #: ../../library/configparser.rst:277
