@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-12 10:16+0000\n"
+"POT-Creation-Date: 2023-12-31 18:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgid "PEP 391:  Dictionary Based Configuration for Logging"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:184
-msgid "The :mod:`logging` module provided two kinds of configuration, one style with function calls for each option or another style driven by an external file saved in a :mod:`ConfigParser` format.  Those options did not provide the flexibility to create configurations from JSON or YAML files, nor did they support incremental configuration, which is needed for specifying logger options from a command line."
+msgid "The :mod:`logging` module provided two kinds of configuration, one style with function calls for each option or another style driven by an external file saved in a :mod:`configparser` format.  Those options did not provide the flexibility to create configurations from JSON or YAML files, nor did they support incremental configuration, which is needed for specifying logger options from a command line."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:191
@@ -1551,7 +1551,7 @@ msgid "configparser"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2135
-msgid "The :mod:`configparser` module was modified to improve usability and predictability of the default parser and its supported INI syntax.  The old :class:`ConfigParser` class was removed in favor of :class:`SafeConfigParser` which has in turn been renamed to :class:`~configparser.ConfigParser`. Support for inline comments is now turned off by default and section or option duplicates are not allowed in a single configuration source."
+msgid "The :mod:`configparser` module was modified to improve usability and predictability of the default parser and its supported INI syntax.  The old :class:`!ConfigParser` class was removed in favor of :class:`!SafeConfigParser` which has in turn been renamed to :class:`~configparser.ConfigParser`. Support for inline comments is now turned off by default and section or option duplicates are not allowed in a single configuration source."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2142
@@ -1747,7 +1747,7 @@ msgid "(:issue:`6713` by Gawain Bolton, Mark Dickinson, and Victor Stinner.)"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2411
-msgid "There were several other minor optimizations. Set differencing now runs faster when one operand is much larger than the other (patch by Andress Bennetts in :issue:`8685`).  The :meth:`array.repeat` method has a faster implementation (:issue:`1569291` by Alexander Belopolsky). The :class:`BaseHTTPRequestHandler` has more efficient buffering (:issue:`3709` by Andrew Schaaf).  The :func:`operator.attrgetter` function has been sped-up (:issue:`10160` by Christos Georgiou).  And :class:`ConfigParser` loads multi-line arguments a bit faster (:issue:`7113` by Łukasz Langa)."
+msgid "There were several other minor optimizations. Set differencing now runs faster when one operand is much larger than the other (patch by Andress Bennetts in :issue:`8685`).  The :meth:`array.repeat` method has a faster implementation (:issue:`1569291` by Alexander Belopolsky). The :class:`BaseHTTPRequestHandler` has more efficient buffering (:issue:`3709` by Andrew Schaaf).  The :func:`operator.attrgetter` function has been sped-up (:issue:`10160` by Christos Georgiou).  And :class:`~configparser.ConfigParser` loads multi-line arguments a bit faster (:issue:`7113` by Łukasz Langa)."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2422
@@ -1963,7 +1963,7 @@ msgid "This section lists previously described changes and other bugfixes that m
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2616
-msgid "The :mod:`configparser` module has a number of clean-ups.  The major change is to replace the old :class:`ConfigParser` class with long-standing preferred alternative :class:`SafeConfigParser`.  In addition there are a number of smaller incompatibilities:"
+msgid "The :mod:`configparser` module has a number of clean-ups.  The major change is to replace the old :class:`!ConfigParser` class with long-standing preferred alternative :class:`!SafeConfigParser`.  In addition there are a number of smaller incompatibilities:"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2621

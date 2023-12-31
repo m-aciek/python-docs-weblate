@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 09:15+0000\n"
+"POT-Creation-Date: 2023-12-31 18:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -752,7 +752,7 @@ msgid "Several modules, such as the :mod:`Queue` and :mod:`threading` modules, n
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1055
-msgid "The :mod:`ConfigParser` classes have been enhanced slightly. The :meth:`read` method now returns a list of the files that were successfully parsed, and the :meth:`set` method raises :exc:`TypeError` if passed a *value* argument that isn't a string.   (Contributed by John Belmonte and David Goodger.)"
+msgid "The :mod:`ConfigParser <configparser>` classes have been enhanced slightly. The :meth:`~configparser.ConfigParser.read` method now returns a list of the files that were successfully parsed, and the :meth:`~configparser.ConfigParser.set` method raises :exc:`TypeError` if passed a *value* argument that isn't a string.   (Contributed by John Belmonte and David Goodger.)"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1060

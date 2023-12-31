@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 00:18+0200\n"
+"POT-Creation-Date: 2023-12-31 18:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,11 +109,11 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../library/logging.config.rst:94
-msgid "A filename, or a file-like object, or an instance derived from :class:`~configparser.RawConfigParser`. If a ``RawConfigParser``-derived instance is passed, it is used as is. Otherwise, a :class:`~configparser.Configparser` is instantiated, and the configuration read by it from the object passed in ``fname``. If that has a :meth:`readline` method, it is assumed to be a file-like object and read using :meth:`~configparser.ConfigParser.read_file`; otherwise, it is assumed to be a filename and passed to :meth:`~configparser.ConfigParser.read`."
+msgid "A filename, or a file-like object, or an instance derived from :class:`~configparser.RawConfigParser`. If a :class:`!RawConfigParser`-derived instance is passed, it is used as is. Otherwise, a :class:`~configparser.ConfigParser` is instantiated, and the configuration read by it from the object passed in ``fname``. If that has a :meth:`readline` method, it is assumed to be a file-like object and read using :meth:`~configparser.ConfigParser.read_file`; otherwise, it is assumed to be a filename and passed to :meth:`~configparser.ConfigParser.read`."
 msgstr ""
 
 #: ../../library/logging.config.rst:106
-msgid "Defaults to be passed to the ConfigParser can be specified in this argument."
+msgid "Defaults to be passed to the :class:`!ConfigParser` can be specified in this argument."
 msgstr ""
 
 #: ../../library/logging.config.rst:109

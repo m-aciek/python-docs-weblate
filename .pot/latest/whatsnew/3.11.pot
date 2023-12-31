@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-05 19:36+0000\n"
+"POT-Creation-Date: 2023-12-31 18:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1770,7 +1770,7 @@ msgid "the :attr:`!configparser.ParsingError.filename` property"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1776
-msgid "the :meth:`configparser.RawConfigParser.readfp` method"
+msgid "the :meth:`!configparser.RawConfigParser.readfp` method"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1778
