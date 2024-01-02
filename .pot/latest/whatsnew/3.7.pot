@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-02 13:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1818,7 +1818,7 @@ msgid "Using non-integer value for selecting a plural form in :mod:`gettext` is 
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2006
-msgid "Methods :meth:`MetaPathFinder.find_module() <!importlib.abc.MetaPathFinder.find_module>` (replaced by :meth:`MetaPathFinder.find_spec() <importlib.abc.MetaPathFinder.find_spec>`) and :meth:`PathEntryFinder.find_loader() <!importlib.abc.PathEntryFinder.find_loader>` (replaced by :meth:`PathEntryFinder.find_spec() <importlib.abc.PathEntryFinder.find_spec>`) both deprecated in Python 3.4 now emit :exc:`DeprecationWarning`. (Contributed by Matthias Bussonnier in :issue:`29576`)"
+msgid "Methods :meth:`!MetaPathFinder.find_module()` (replaced by :meth:`MetaPathFinder.find_spec() <importlib.abc.MetaPathFinder.find_spec>`) and :meth:`!PathEntryFinder.find_loader()` (replaced by :meth:`PathEntryFinder.find_spec() <importlib.abc.PathEntryFinder.find_spec>`) both deprecated in Python 3.4 now emit :exc:`DeprecationWarning`. (Contributed by Matthias Bussonnier in :issue:`29576`.)"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2017

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-02 13:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1886,7 +1886,7 @@ msgid "(Contributed by Erlend E. Aasland in :issue:`5846`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1863
-msgid ":meth:`~!unittest.TestProgram.usageExit` is marked deprecated, to be removed in 3.13. (Contributed by Carlos Damázio in :gh:`67048`.)"
+msgid ":meth:`!unittest.TestProgram.usageExit` is marked deprecated, to be removed in 3.13. (Contributed by Carlos Damázio in :gh:`67048`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1872
