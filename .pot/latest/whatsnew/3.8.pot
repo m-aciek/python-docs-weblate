@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -924,7 +924,7 @@ msgid ":mod:`pathlib.Path` methods that return a boolean result like :meth:`~pat
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1089
-msgid "Added :meth:`pathlib.Path.link_to()` which creates a hard link pointing to a path. (Contributed by Joannah Nanjekye in :issue:`26978`) Note that ``link_to`` was deprecated in 3.10 and removed in 3.12 in favor of a ``hardlink_to`` method added in 3.10 which matches the semantics of the existing ``symlink_to`` method."
+msgid "Added :meth:`!pathlib.Path.link_to()` which creates a hard link pointing to a path. (Contributed by Joannah Nanjekye in :issue:`26978`) Note that ``link_to`` was deprecated in 3.10 and removed in 3.12 in favor of a ``hardlink_to`` method added in 3.10 which matches the semantics of the existing ``symlink_to`` method."
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1098

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1844,7 +1844,7 @@ msgid "smtpd"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:1848
-msgid "The :mod:`smtpd` module now supports :rfc:`5321` (extended SMTP) and :rfc:`1870` (size extension).  Per the standard, these extensions are enabled if and only if the client initiates the session with an ``EHLO`` command."
+msgid "The :mod:`!smtpd` module now supports :rfc:`5321` (extended SMTP) and :rfc:`1870` (size extension).  Per the standard, these extensions are enabled if and only if the client initiates the session with an ``EHLO`` command."
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:1852

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1144,7 +1144,7 @@ msgid "smtpd"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1372
-msgid "The :class:`~smtpd.SMTPServer` and :class:`~smtpd.SMTPChannel` classes now accept a *map* keyword argument which, if specified, is passed in to :class:`asynchat.async_chat` as its *map* argument.  This allows an application to avoid affecting the global socket map.  (Contributed by Vinay Sajip in :issue:`11959`.)"
+msgid "The :class:`!SMTPServer` and :class:`!SMTPChannel` classes now accept a *map* keyword argument which, if specified, is passed in to :class:`!asynchat.async_chat` as its *map* argument.  This allows an application to avoid affecting the global socket map.  (Contributed by Vinay Sajip in :issue:`11959`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1380

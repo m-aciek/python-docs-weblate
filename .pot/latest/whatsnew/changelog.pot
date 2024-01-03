@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 13:36+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5595,7 +5595,7 @@ msgid ":gh:`98086`: Make sure ``patch.dict()`` can be applied on async functions
 msgstr ""
 
 #: ../../../build/NEWS:4828
-msgid ":gh:`72719`: Remove modules :mod:`asyncore` and :mod:`asynchat`, which were deprecated by :pep:`594`."
+msgid ":gh:`72719`: Remove modules :mod:`!asyncore` and :mod:`!asynchat`, which were deprecated by :pep:`594`."
 msgstr ""
 
 #: ../../../build/NEWS:4831
@@ -7219,7 +7219,7 @@ msgid ":gh:`93162`: Add the ability for :func:`logging.config.dictConfig` to use
 msgstr ""
 
 #: ../../../build/NEWS:6318
-msgid ":gh:`93243`: The :mod:`smtpd` module was removed per the schedule in :pep:`594`."
+msgid ":gh:`93243`: The :mod:`!smtpd` module was removed per the schedule in :pep:`594`."
 msgstr ""
 
 #: ../../../build/NEWS:6321
@@ -9445,7 +9445,7 @@ msgid ":issue:`45997`: Fix :class:`asyncio.Semaphore` re-aquiring FIFO order."
 msgstr ""
 
 #: ../../../build/NEWS:8292
-msgid ":issue:`47022`: The :mod:`asynchat`, :mod:`asyncore` and  :mod:`smtpd` modules have been deprecated since at least Python 3.6. Their documentation and deprecation warnings and have now been updated to note they will removed in Python 3.12 (:pep:`594`)."
+msgid ":issue:`47022`: The :mod:`!asynchat`, :mod:`!asyncore` and  :mod:`!smtpd` modules have been deprecated since at least Python 3.6. Their documentation and deprecation warnings and have now been updated to note they will removed in Python 3.12 (:pep:`594`)."
 msgstr ""
 
 #: ../../../build/NEWS:8297
@@ -9697,7 +9697,7 @@ msgid ":issue:`46587`: Skip tests if platform's ``strftime`` does not support no
 msgstr ""
 
 #: ../../../build/NEWS:8511
-msgid ":issue:`47015`: A test case for :func:`os.sendfile` is converted from deprecated :mod:`asyncore` (see :pep:`594`) to :mod:`asyncio`. Patch by Oleg Iarygin."
+msgid ":issue:`47015`: A test case for :func:`os.sendfile` is converted from deprecated :mod:`!asyncore` (see :pep:`594`) to :mod:`asyncio`. Patch by Oleg Iarygin."
 msgstr ""
 
 #: ../../../build/NEWS:8518
@@ -12724,7 +12724,7 @@ msgid ":issue:`44590`: All necessary data for executing a Python function (local
 msgstr ""
 
 #: ../../../build/NEWS:11219
-msgid ":issue:`44584`: The threading debug (:envvar:`PYTHONTHREADDEBUG` environment variable) is deprecated in Python 3.10 and will be removed in Python 3.12. This feature requires a debug build of Python. Patch by Victor Stinner."
+msgid ":issue:`44584`: The threading debug (:envvar:`!PYTHONTHREADDEBUG` environment variable) is deprecated in Python 3.10 and will be removed in Python 3.12. This feature requires a debug build of Python. Patch by Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:11223
@@ -13600,7 +13600,7 @@ msgid ":issue:`44351`: Restore back :func:`parse_makefile` in ``distutils.syscon
 msgstr ""
 
 #: ../../../build/NEWS:11964
-msgid ":issue:`35800`: :class:`smtpd.MailmanProxy` is now removed as it is unusable without an external module, ``mailman``. Patch by Donghee Na."
+msgid ":issue:`35800`: :class:`!smtpd.MailmanProxy` is now removed as it is unusable without an external module, ``mailman``. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:11967
@@ -18788,7 +18788,7 @@ msgid ":issue:`31844`: Remove ``ParserBase.error()`` method from the private and
 msgstr ""
 
 #: ../../../build/NEWS:16553
-msgid ":issue:`34226`: Fix `cgi.parse_multipart` without content_length. Patch by Roger Duran"
+msgid ":issue:`34226`: Fix ``cgi.parse_multipart`` without content_length. Patch by Roger Duran"
 msgstr ""
 
 #: ../../../build/NEWS:16556
@@ -25030,7 +25030,7 @@ msgid ":issue:`28238`: The ``.find*()`` methods of xml.etree.ElementTree can now
 msgstr ""
 
 #: ../../../build/NEWS:22093
-msgid ":issue:`26978`: `pathlib.path.link_to()` is now implemented. It creates a hard link pointing to a path."
+msgid ":issue:`26978`: ``pathlib.path.link_to()`` is now implemented. It creates a hard link pointing to a path."
 msgstr ""
 
 #: ../../../build/NEWS:22096
@@ -26912,7 +26912,7 @@ msgid ":issue:`35619`: Improved support of custom data descriptors in :func:`hel
 msgstr ""
 
 #: ../../../build/NEWS:23758
-msgid ":issue:`28503`: The `crypt` module now internally uses the `crypt_r()` library function instead of `crypt()` when available."
+msgid ":issue:`28503`: The ``crypt`` module now internally uses the ``crypt_r()`` library function instead of ``crypt()`` when available."
 msgstr ""
 
 #: ../../../build/NEWS:23761

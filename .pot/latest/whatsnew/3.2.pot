@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1351,7 +1351,7 @@ msgid "asyncore"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1861
-msgid ":class:`asyncore.dispatcher` now provides a :meth:`~asyncore.dispatcher.handle_accepted()` method returning a ``(sock, addr)`` pair which is called when a connection has actually been established with a new remote endpoint. This is supposed to be used as a replacement for old :meth:`~asyncore.dispatcher.handle_accept()` and avoids the user  to call :meth:`~asyncore.dispatcher.accept()` directly."
+msgid ":class:`!asyncore.dispatcher` now provides a :meth:`!handle_accepted()` method returning a ``(sock, addr)`` pair which is called when a connection has actually been established with a new remote endpoint. This is supposed to be used as a replacement for old :meth:`!handle_accept()` and avoids the user  to call :meth:`!accept()` directly."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1868
@@ -2087,7 +2087,7 @@ msgid "The misleading functions :c:func:`!PyEval_AcquireLock` and :c:func:`!PyEv
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2740
-msgid "Due to security risks, :func:`asyncore.handle_accept` has been deprecated, and a new function, :func:`asyncore.handle_accepted`, was added to replace it."
+msgid "Due to security risks, :func:`!asyncore.handle_accept` has been deprecated, and a new function, :func:`!asyncore.handle_accepted`, was added to replace it."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2743

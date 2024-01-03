@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1211,7 +1211,7 @@ msgid "As in every release, Python's standard library received a number of enhan
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1792
-msgid "The :mod:`asyncore` and :mod:`asynchat` modules are being actively maintained again, and a number of patches and bugfixes were applied.  (Maintained by Josiah Carlson; see :issue:`1736190` for one patch.)"
+msgid "The :mod:`!asyncore` and :mod:`!asynchat` modules are being actively maintained again, and a number of patches and bugfixes were applied.  (Maintained by Josiah Carlson; see :issue:`1736190` for one patch.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1797

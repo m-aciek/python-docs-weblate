@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1042,7 +1042,7 @@ msgid "Add negative indexing support to :attr:`PurePath.parents <pathlib.PurePat
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1280
-msgid "Add :meth:`Path.hardlink_to <pathlib.Path.hardlink_to>` method that supersedes :meth:`~pathlib.Path.link_to`. The new method has the same argument order as :meth:`~pathlib.Path.symlink_to`. (Contributed by Barney Gale in :issue:`39950`.)"
+msgid "Add :meth:`Path.hardlink_to <pathlib.Path.hardlink_to>` method that supersedes :meth:`!link_to`. The new method has the same argument order as :meth:`~pathlib.Path.symlink_to`. (Contributed by Barney Gale in :issue:`39950`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1285
@@ -1447,7 +1447,7 @@ msgid "(Contributed by Jelle Zijlstra in :gh:`87889`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1743
-msgid ":meth:`pathlib.Path.link_to` is deprecated and slated for removal in Python 3.12. Use :meth:`pathlib.Path.hardlink_to` instead. (Contributed by Barney Gale in :issue:`39950`.)"
+msgid ":meth:`!pathlib.Path.link_to` is deprecated and slated for removal in Python 3.12. Use :meth:`pathlib.Path.hardlink_to` instead. (Contributed by Barney Gale in :issue:`39950`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1747
@@ -1483,7 +1483,7 @@ msgid "NPN features like :meth:`ssl.SSLSocket.selected_npn_protocol` and :meth:`
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1774
-msgid "The threading debug (:envvar:`PYTHONTHREADDEBUG` environment variable) is deprecated in Python 3.10 and will be removed in Python 3.12. This feature requires a :ref:`debug build of Python <debug-build>`. (Contributed by Victor Stinner in :issue:`44584`.)"
+msgid "The threading debug (:envvar:`!PYTHONTHREADDEBUG` environment variable) is deprecated in Python 3.10 and will be removed in Python 3.12. This feature requires a :ref:`debug build of Python <debug-build>`. (Contributed by Victor Stinner in :issue:`44584`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1779

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 13:17+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2063,7 +2063,7 @@ msgid "The :attr:`struct.Struct.format` type is now :class:`str` instead of :cla
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2307
-msgid ":func:`~cgi.parse_multipart` now accepts the *encoding* and *errors* arguments and returns the same results as :class:`~FieldStorage`: for non-file fields, the value associated to a key is a list of strings, not bytes. (Contributed by Pierre Quentel in :issue:`29979`.)"
+msgid ":func:`~cgi.parse_multipart` now accepts the *encoding* and *errors* arguments and returns the same results as :class:`!FieldStorage`: for non-file fields, the value associated to a key is a list of strings, not bytes. (Contributed by Pierre Quentel in :issue:`29979`.)"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2313

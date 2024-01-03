@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-03 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -700,7 +700,7 @@ msgid "As usual, Python's standard library received a number of enhancements and
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:998
-msgid "The :mod:`asyncore` module's :func:`loop` function now has a *count* parameter that lets you perform a limited number of passes through the polling loop.  The default is still to loop forever."
+msgid "The :mod:`!asyncore` module's :func:`!loop` function now has a *count* parameter that lets you perform a limited number of passes through the polling loop.  The default is still to loop forever."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1002
