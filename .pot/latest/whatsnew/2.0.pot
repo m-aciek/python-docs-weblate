@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-05 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -641,7 +641,7 @@ msgid ":mod:`gettext`: This module provides internationalization (I18N) and loca
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:1098
-msgid ":mod:`linuxaudiodev`: Support for the :file:`/dev/audio` device on Linux, a twin to the existing :mod:`sunaudiodev` module. (Contributed by Peter Bosch, with fixes by Jeremy Hylton.)"
+msgid ":mod:`!linuxaudiodev`: Support for the :file:`/dev/audio` device on Linux, a twin to the existing :mod:`!sunaudiodev` module. (Contributed by Peter Bosch, with fixes by Jeremy Hylton.)"
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:1102
@@ -677,7 +677,7 @@ msgid ":mod:`zipfile`: A module for reading and writing ZIP-format archives.  Th
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:1142
-msgid ":mod:`imputil`: A module that provides a simpler way for writing customized import hooks, in comparison to the existing :mod:`ihooks` module.  (Implemented by Greg Stein, with much discussion on python-dev along the way.)"
+msgid ":mod:`!imputil`: A module that provides a simpler way for writing customized import hooks, in comparison to the existing :mod:`!ihooks` module.  (Implemented by Greg Stein, with much discussion on python-dev along the way.)"
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:1150

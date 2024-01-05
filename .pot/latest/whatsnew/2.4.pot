@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 14:13+0000\n"
+"POT-Creation-Date: 2024-01-05 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,11 +261,11 @@ msgid "PEP 324: New subprocess Module"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:386
-msgid "The standard library provides a number of ways to execute a subprocess, offering different features and different levels of complexity. ``os.system(command)`` is easy to use, but slow (it runs a shell process which executes the command) and dangerous (you have to be careful about escaping the shell's metacharacters).  The :mod:`popen2` module offers classes that can capture standard output and standard error from the subprocess, but the naming is confusing.  The :mod:`subprocess` module cleans  this up, providing a unified interface that offers all the features you might need."
+msgid "The standard library provides a number of ways to execute a subprocess, offering different features and different levels of complexity. ``os.system(command)`` is easy to use, but slow (it runs a shell process which executes the command) and dangerous (you have to be careful about escaping the shell's metacharacters).  The :mod:`!popen2` module offers classes that can capture standard output and standard error from the subprocess, but the naming is confusing.  The :mod:`subprocess` module cleans  this up, providing a unified interface that offers all the features you might need."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:395
-msgid "Instead of :mod:`popen2`'s collection of classes, :mod:`subprocess` contains a single class called :class:`Popen`  whose constructor supports a number of different keyword arguments. ::"
+msgid "Instead of :mod:`!popen2`'s collection of classes, :mod:`subprocess` contains a single class called :class:`subprocess.Popen`  whose constructor supports a number of different keyword arguments. ::"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:405
@@ -1048,7 +1048,7 @@ msgid "You can no longer compare the :class:`date` and :class:`~datetime.datetim
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1532
-msgid ":func:`dircache.listdir` now passes exceptions to the caller instead of returning empty lists."
+msgid ":func:`!dircache.listdir` now passes exceptions to the caller instead of returning empty lists."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1535
