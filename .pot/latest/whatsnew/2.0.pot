@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 14:13+0000\n"
+"POT-Creation-Date: 2024-01-09 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "We intend PEPs to be the primary mechanisms for proposing new features, f
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:130
-msgid "Read the rest of :pep:`1` for the details of the PEP editorial process, style, and format.  PEPs are kept in the Python CVS tree on SourceForge, though they're not part of the Python 2.0 distribution, and are also available in HTML form from https://peps.python.org/.  As of September 2000, there are 25 PEPS, ranging from :pep:`201`, \"Lockstep Iteration\", to PEP 225, \"Elementwise/Objectwise Operators\"."
+msgid "Read the rest of :pep:`1` for the details of the PEP editorial process, style, and format.  PEPs are kept in the Python CVS tree on SourceForge, though they're not part of the Python 2.0 distribution, and are also available in HTML form from https://peps.python.org/.  As of September 2000, there are 25 PEPs, ranging from :pep:`201`, \"Lockstep Iteration\", to PEP 225, \"Elementwise/Objectwise Operators\"."
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:141
