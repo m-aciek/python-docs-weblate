@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-10 13:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -816,7 +816,7 @@ msgid "list"
 msgstr ""
 
 #: ../../glossary.rst:742
-msgid "A built-in Python :term:`sequence`.  Despite its name it is more akin to an array in other languages than to a linked list since access to elements is O(1)."
+msgid "A built-in Python :term:`sequence`.  Despite its name it is more akin to an array in other languages than to a linked list since access to elements is *O*\\ (1)."
 msgstr ""
 
 #: ../../glossary.rst:745

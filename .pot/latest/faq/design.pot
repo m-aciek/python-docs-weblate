@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-10 13:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -353,7 +353,7 @@ msgid "CPython's dictionaries are implemented as resizable hash tables.  Compare
 msgstr ""
 
 #: ../../faq/design.rst:447
-msgid "Dictionaries work by computing a hash code for each key stored in the dictionary using the :func:`hash` built-in function.  The hash code varies widely depending on the key and a per-process seed; for example, ``'Python'`` could hash to ``-539294296`` while ``'python'``, a string that differs by a single bit, could hash to ``1142331976``.  The hash code is then used to calculate a location in an internal array where the value will be stored.  Assuming that you're storing keys that all have different hash values, this means that dictionaries take constant time -- O(1), in Big-O notation -- to retrieve a key."
+msgid "Dictionaries work by computing a hash code for each key stored in the dictionary using the :func:`hash` built-in function.  The hash code varies widely depending on the key and a per-process seed; for example, ``'Python'`` could hash to ``-539294296`` while ``'python'``, a string that differs by a single bit, could hash to ``1142331976``.  The hash code is then used to calculate a location in an internal array where the value will be stored.  Assuming that you're storing keys that all have different hash values, this means that dictionaries take constant time -- *O*\\ (1), in Big-O notation -- to retrieve a key."
 msgstr ""
 
 #: ../../faq/design.rst:458

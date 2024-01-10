@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-10 13:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgid "``/dev/poll`` Polling Objects"
 msgstr ""
 
 #: ../../library/select.rst:187
-msgid "Solaris and derivatives have ``/dev/poll``. While :c:func:`!select` is O(highest file descriptor) and :c:func:`!poll` is O(number of file descriptors), ``/dev/poll`` is O(active file descriptors)."
+msgid "Solaris and derivatives have ``/dev/poll``. While :c:func:`!select` is *O*\\ (*highest file descriptor*) and :c:func:`!poll` is *O*\\ (*number of file descriptors*), ``/dev/poll`` is *O*\\ (*active file descriptors*)."
 msgstr ""
 
 #: ../../library/select.rst:191
@@ -409,7 +409,7 @@ msgid "Polling Objects"
 msgstr ""
 
 #: ../../library/select.rst:379
-msgid "The :c:func:`!poll` system call, supported on most Unix systems, provides better scalability for network servers that service many, many clients at the same time. :c:func:`!poll` scales better because the system call only requires listing the file descriptors of interest, while :c:func:`!select` builds a bitmap, turns on bits for the fds of interest, and then afterward the whole bitmap has to be linearly scanned again. :c:func:`!select` is O(highest file descriptor), while :c:func:`!poll` is O(number of file descriptors)."
+msgid "The :c:func:`!poll` system call, supported on most Unix systems, provides better scalability for network servers that service many, many clients at the same time. :c:func:`!poll` scales better because the system call only requires listing the file descriptors of interest, while :c:func:`!select` builds a bitmap, turns on bits for the fds of interest, and then afterward the whole bitmap has to be linearly scanned again. :c:func:`!select` is *O*\\ (*highest file descriptor*), while :c:func:`!poll` is *O*\\ (*number of file descriptors*)."
 msgstr ""
 
 #: ../../library/select.rst:396
