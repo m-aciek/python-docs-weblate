@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 15:14+0000\n"
+"POT-Creation-Date: 2024-01-12 23:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1588,7 +1588,7 @@ msgid "This method is called whenever the containing class is subclassed. *cls* 
 msgstr ""
 
 #: ../../reference/datamodel.rst:2305
-msgid "Keyword arguments which are given to a new class are passed to the parent's class ``__init_subclass__``. For compatibility with other classes using ``__init_subclass__``, one should take out the needed keyword arguments and pass the others over to the base class, as in::"
+msgid "Keyword arguments which are given to a new class are passed to the parent class's ``__init_subclass__``. For compatibility with other classes using ``__init_subclass__``, one should take out the needed keyword arguments and pass the others over to the base class, as in::"
 msgstr ""
 
 #: ../../reference/datamodel.rst:2319
