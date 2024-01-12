@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:18+0000\n"
+"POT-Creation-Date: 2024-01-12 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -912,7 +912,7 @@ msgid "``start`` (an :class:`int`) represents the offset (inclusive) of the star
 msgstr ""
 
 #: ../../reference/datamodel.rst:1266
-msgid "``end`` (an :class:`int`) represents the offset (inclusive) of the end of the :term:`bytecode` range"
+msgid "``end`` (an :class:`int`) represents the offset (exclusive) of the end of the :term:`bytecode` range"
 msgstr ""
 
 #: ../../reference/datamodel.rst:1268
@@ -920,7 +920,7 @@ msgid "``lineno`` is an :class:`int` representing the line number of the :term:`
 msgstr ""
 
 #: ../../reference/datamodel.rst:1272
-msgid "The items yielded generated will have the following properties:"
+msgid "The items yielded will have the following properties:"
 msgstr ""
 
 #: ../../reference/datamodel.rst:1274
@@ -936,7 +936,7 @@ msgid "No range will be backwards: ``end >= start`` for all triples."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1279
-msgid "The :class:`tuple` yielded will have ``end`` equal to the size of the :term:`bytecode`."
+msgid "The last :class:`tuple` yielded will have ``end`` equal to the size of the :term:`bytecode`."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1282
