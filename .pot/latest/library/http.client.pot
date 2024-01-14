@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-14 21:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid "The *strict* parameter was removed. HTTP 0.9-style \"Simple Responses\" a
 msgstr ""
 
 #: ../../library/http.client.rst:92
-msgid "This class now performs all the necessary certificate and hostname checks by default. To revert to the previous, unverified, behavior :func:`ssl._create_unverified_context` can be passed to the *context* parameter."
+msgid "This class now performs all the necessary certificate and hostname checks by default. To revert to the previous, unverified, behavior :func:`!ssl._create_unverified_context` can be passed to the *context* parameter."
 msgstr ""
 
 #: ../../library/http.client.rst:98
@@ -97,7 +97,7 @@ msgid "This class now enables TLS 1.3 :attr:`ssl.SSLContext.post_handshake_auth`
 msgstr ""
 
 #: ../../library/http.client.rst:103
-msgid "This class now sends an ALPN extension with protocol indicator ``http/1.1`` when no *context* is given. Custom *context* should set ALPN protocols with :meth:`~ssl.SSLContext.set_alpn_protocol`."
+msgid "This class now sends an ALPN extension with protocol indicator ``http/1.1`` when no *context* is given. Custom *context* should set ALPN protocols with :meth:`~ssl.SSLContext.set_alpn_protocols`."
 msgstr ""
 
 #: ../../library/http.client.rst:108
@@ -117,7 +117,7 @@ msgid "This module provides the following function:"
 msgstr ""
 
 #: ../../library/http.client.rst:126
-msgid "Parse the headers from a file pointer *fp* representing a HTTP request/response. The file has to be a :class:`BufferedIOBase` reader (i.e. not text) and must provide a valid :rfc:`2822` style header."
+msgid "Parse the headers from a file pointer *fp* representing a HTTP request/response. The file has to be a :class:`~io.BufferedIOBase` reader (i.e. not text) and must provide a valid :rfc:`2822` style header."
 msgstr ""
 
 #: ../../library/http.client.rst:130
@@ -304,7 +304,7 @@ msgid "Buffer size in bytes for sending a file-like message body."
 msgstr ""
 
 #: ../../library/http.client.rst:419
-msgid "As an alternative to using the :meth:`request` method described above, you can also send your request step by step, by using the four functions below."
+msgid "As an alternative to using the :meth:`~HTTPConnection.request` method described above, you can also send your request step by step, by using the four functions below."
 msgstr ""
 
 #: ../../library/http.client.rst:426
@@ -439,7 +439,7 @@ msgstr ""
 msgid "HTTPMessage Objects"
 msgstr ""
 
-#: ../../library/http.client.rst:651
+#: ../../library/http.client.rst:653
 msgid "An :class:`http.client.HTTPMessage` instance holds the headers from an HTTP response.  It is implemented using the :class:`email.message.Message` class."
 msgstr ""
 

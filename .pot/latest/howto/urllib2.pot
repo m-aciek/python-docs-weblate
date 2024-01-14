@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-14 21:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,7 +209,7 @@ msgid "info and geturl"
 msgstr ""
 
 #: ../../howto/urllib2.rst:394
-msgid "The response returned by urlopen (or the :exc:`~urllib.error.HTTPError` instance) has two useful methods :meth:`info` and :meth:`geturl` and is defined in the module :mod:`urllib.response`.."
+msgid "The response returned by urlopen (or the :exc:`~urllib.error.HTTPError` instance) has two useful methods :meth:`!info` and :meth:`!geturl` and is defined in the module :mod:`urllib.response`."
 msgstr ""
 
 #: ../../howto/urllib2.rst:398
@@ -285,7 +285,7 @@ msgid "The top-level URL is the first URL that requires authentication. URLs \"d
 msgstr ""
 
 #: ../../howto/urllib2.rst:508
-msgid "In the above example we only supplied our ``HTTPBasicAuthHandler`` to ``build_opener``. By default openers have the handlers for normal situations -- ``ProxyHandler`` (if a proxy setting such as an :envvar:`http_proxy` environment variable is set), ``UnknownHandler``, ``HTTPHandler``, ``HTTPDefaultErrorHandler``, ``HTTPRedirectHandler``, ``FTPHandler``, ``FileHandler``, ``DataHandler``, ``HTTPErrorProcessor``."
+msgid "In the above example we only supplied our ``HTTPBasicAuthHandler`` to ``build_opener``. By default openers have the handlers for normal situations -- ``ProxyHandler`` (if a proxy setting such as an :envvar:`!http_proxy` environment variable is set), ``UnknownHandler``, ``HTTPHandler``, ``HTTPDefaultErrorHandler``, ``HTTPRedirectHandler``, ``FTPHandler``, ``FileHandler``, ``DataHandler``, ``HTTPErrorProcessor``."
 msgstr ""
 
 #: ../../howto/urllib2.rst:515
