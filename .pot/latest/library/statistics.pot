@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-09 19:36+0000\n"
+"POT-Creation-Date: 2024-01-16 05:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -772,14 +772,14 @@ msgid "It is possible to estimate a continuous probability density function from
 msgstr ""
 
 #: ../../library/statistics.rst:1094
-msgid "The basic idea is to smooth the data using `a kernel function such as a normal distribution, triangular distribution, or uniform distribution <https://en.wikipedia.org/wiki/Kernel_(statistics)#Kernel_functions_in_common_use>`_. The degree of smoothing is controlled by a single parameter, ``h``, representing the variance of the kernel function."
+msgid "The basic idea is to smooth the data using `a kernel function such as a normal distribution, triangular distribution, or uniform distribution <https://en.wikipedia.org/wiki/Kernel_(statistics)#Kernel_functions_in_common_use>`_. The degree of smoothing is controlled by a scaling parameter, ``h``, which is called the *bandwidth*."
 msgstr ""
 
-#: ../../library/statistics.rst:1113
+#: ../../library/statistics.rst:1111
 msgid "`Wikipedia has an example <https://en.wikipedia.org/wiki/Kernel_density_estimation#Example>`_ where we can use the ``kde_normal()`` recipe to generate and plot a probability density function estimated from a small sample:"
 msgstr ""
 
-#: ../../library/statistics.rst:1125
+#: ../../library/statistics.rst:1123
 msgid "The points in ``xarr`` and ``yarr`` can be used to make a PDF plot:"
 msgstr ""
 
