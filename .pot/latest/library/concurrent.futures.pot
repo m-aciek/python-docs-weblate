@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-17 02:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgid "Schedules the callable, *fn*, to be executed as ``fn(*args, **kwargs)`` a
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:44
-msgid "Similar to :func:`map(func, *iterables) <map>` except:"
+msgid "Similar to :func:`map(fn, *iterables) <map>` except:"
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:46
@@ -61,7 +61,7 @@ msgid "the *iterables* are collected immediately rather than lazily;"
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:48
-msgid "*func* is executed asynchronously and several calls to *func* may be made concurrently."
+msgid "*fn* is executed asynchronously and several calls to *fn* may be made concurrently."
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:51
@@ -69,7 +69,7 @@ msgid "The returned iterator raises a :exc:`TimeoutError` if :meth:`~iterator.__
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:57
-msgid "If a *func* call raises an exception, then that exception will be raised when its value is retrieved from the iterator."
+msgid "If a *fn* call raises an exception, then that exception will be raised when its value is retrieved from the iterator."
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:60
