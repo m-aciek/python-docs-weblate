@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-18 20:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -697,11 +697,7 @@ msgid "``FIRST = auto()`` will work (auto() is replaced with ``1``);"
 msgstr ""
 
 #: ../../library/enum.rst:822
-msgid "``SECOND = auto(), -2`` will work (auto is replaced with ``2``, so ``2, -2`` is"
-msgstr ""
-
-#: ../../library/enum.rst:823
-msgid "used to create the ``SECOND`` enum member;"
+msgid "``SECOND = auto(), -2`` will work (auto is replaced with ``2``, so ``2, -2`` is used to create the ``SECOND`` enum member;"
 msgstr ""
 
 #: ../../library/enum.rst:824
