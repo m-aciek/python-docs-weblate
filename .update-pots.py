@@ -79,7 +79,7 @@ def _clone_and_iterate_committing(cpython_commit, version) -> None:
                 _build_gettext()
                 commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
             pot_directory = Path(directory, 'cpython/Doc/locales/pot')
-            _replace_tree(pot_directory, f'.pot/{version_directory}')
+            _replace_tree(pot_directory, Path('.pot', version_directory))
             _commit_changed(commit_message, commit, version_directory)
 
 
@@ -93,7 +93,7 @@ def _clone_and_commit(version: str):
             _build_gettext()
             cpython_commit = _output('git -C cpython/ rev-parse HEAD')
         pot_directory = Path(directory, 'cpython/Doc/locales/pot')
-        _replace_tree(pot_directory, Path('.pot/', version_directory))
+        _replace_tree(pot_directory, Path('.pot', version_directory))
     _commit_changed("Update sources", cpython_commit, version_directory)
 
 
