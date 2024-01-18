@@ -36,7 +36,7 @@ def _get_latest_sync_commit(version: str) -> str | None:
     version_directory = Version(version).directory_name()
     sync_commit_field = SYNC_COMMIT_FIELD.format(version_directory)
     sync_commit_lines = [
-        line for line in _get_latest_commit_message_containing(sync_commit_field) if line.startswith(SYNC_COMMIT_FIELD)
+        line for line in _get_latest_commit_message_containing(sync_commit_field) if line.startswith(sync_commit_field)
     ]
     if not sync_commit_lines:
         return
