@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-18 20:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "The conceptual model provided by an :class:`EmailMessage` object is that 
 msgstr ""
 
 #: ../../library/email.message.rst:40
-msgid "The :class:`EmailMessage` dictionary-like interface is indexed by the header names, which must be ASCII values.  The values of the dictionary are strings with some extra methods.  Headers are stored and returned in case-preserving form, but field names are matched case-insensitively.  Unlike a real dict, there is an ordering to the keys, and there can be duplicate keys.  Additional methods are provided for working with headers that have duplicate keys."
+msgid "The :class:`EmailMessage` dictionary-like interface is indexed by the header names, which must be ASCII values.  The values of the dictionary are strings with some extra methods.  Headers are stored and returned in case-preserving form, but field names are matched case-insensitively.  The keys are ordered, but unlike a real dict, there can be duplicates.  Addtional methods are provided for working with headers that have duplicate keys."
 msgstr ""
 
 #: ../../library/email.message.rst:47
