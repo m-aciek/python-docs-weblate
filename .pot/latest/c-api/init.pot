@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1580,17 +1580,10 @@ msgid "path (in module sys)"
 msgstr ""
 
 #: ../../c-api/init.rst:334
-#: ../../c-api/init.rst:334
-#: ../../c-api/init.rst:334
-#: ../../c-api/init.rst:334
 #: ../../c-api/init.rst:589
 #: ../../c-api/init.rst:615
 #: ../../c-api/init.rst:1057
 #: ../../c-api/init.rst:1588
-#: ../../c-api/init.rst:1588
-#: ../../c-api/init.rst:1588
-#: ../../c-api/init.rst:1683
-#: ../../c-api/init.rst:1683
 #: ../../c-api/init.rst:1683
 msgid "module"
 msgstr ""
@@ -1714,7 +1707,6 @@ msgstr ""
 msgid "setswitchinterval() (in module sys)"
 msgstr ""
 
-#: ../../c-api/init.rst:861
 #: ../../c-api/init.rst:861
 msgid "PyThreadState"
 msgstr ""

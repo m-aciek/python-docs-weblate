@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -310,10 +310,8 @@ msgstr ""
 msgid "In addition, the following error handler is specific to the given codecs:"
 msgstr ""
 
+#: ../../library/codecs.rst:13
 #: ../../library/codecs.rst:393
-#: ../../library/codecs.rst:13
-#: ../../library/codecs.rst:13
-#: ../../library/codecs.rst:13
 msgid "Codecs"
 msgstr ""
 
@@ -2163,7 +2161,6 @@ msgid "decode"
 msgstr ""
 
 #: ../../library/codecs.rst:13
-#: ../../library/codecs.rst:13
 msgid "streams"
 msgstr ""
 
@@ -2176,11 +2173,6 @@ msgid "strict"
 msgstr ""
 
 #: ../../library/codecs.rst:312
-#: ../../library/codecs.rst:312
-#: ../../library/codecs.rst:312
-#: ../../library/codecs.rst:312
-#: ../../library/codecs.rst:312
-#: ../../library/codecs.rst:364
 #: ../../library/codecs.rst:364
 #: ../../library/codecs.rst:387
 msgid "error handler's name"
@@ -2214,9 +2206,6 @@ msgstr ""
 msgid "\\ (backslash)"
 msgstr ""
 
-#: ../../library/codecs.rst:312
-#: ../../library/codecs.rst:312
-#: ../../library/codecs.rst:312
 #: ../../library/codecs.rst:312
 #: ../../library/codecs.rst:364
 msgid "escape sequence"

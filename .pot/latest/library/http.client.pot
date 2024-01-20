@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 21:36+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,7 +291,7 @@ msgstr ""
 msgid "Connect to the server specified when the object was created.  By default, this is called automatically when making a request if the client does not already have a connection."
 msgstr ""
 
-#: ../../library/http.client.rst:413
+#: ../../library/http.client.rst:415
 msgid "Raises an :ref:`auditing event <auditing>` ``http.client.connect`` with arguments ``self``, ``host``, ``port``."
 msgstr ""
 
@@ -335,7 +335,7 @@ msgstr ""
 msgid "Send data to the server.  This should be used directly only after the :meth:`endheaders` method has been called and before :meth:`getresponse` is called."
 msgstr ""
 
-#: ../../library/http.client.rst:484
+#: ../../library/http.client.rst:486
 msgid "Raises an :ref:`auditing event <auditing>` ``http.client.send`` with arguments ``self``, ``data``."
 msgstr ""
 
@@ -443,7 +443,6 @@ msgstr ""
 msgid "An :class:`http.client.HTTPMessage` instance holds the headers from an HTTP response.  It is implemented using the :class:`email.message.Message` class."
 msgstr ""
 
-#: ../../library/http.client.rst:9
 #: ../../library/http.client.rst:9
 msgid "HTTP"
 msgstr ""

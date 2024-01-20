@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,8 +104,8 @@ msgstr ""
 msgid "The command, if run with ``-h``, will show the available options::"
 msgstr ""
 
-#: ../../using/venv-create.inc:72
 #: ../../library/venv.rst:313
+#: ../../using/venv-create.inc:72
 msgid "``setuptools`` is no longer a core venv dependency."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,14 +109,6 @@ msgid "billion laughs"
 msgstr ""
 
 #: ../../library/xml.rst:66
-#: ../../library/xml.rst:66
-#: ../../library/xml.rst:66
-#: ../../library/xml.rst:66
-#: ../../library/xml.rst:66
-#: ../../library/xml.rst:67
-#: ../../library/xml.rst:67
-#: ../../library/xml.rst:67
-#: ../../library/xml.rst:67
 #: ../../library/xml.rst:67
 msgid "**Vulnerable** (1)"
 msgstr ""
@@ -131,8 +123,6 @@ msgid "external entity expansion"
 msgstr ""
 
 #: ../../library/xml.rst:68
-#: ../../library/xml.rst:68
-#: ../../library/xml.rst:69
 #: ../../library/xml.rst:69
 msgid "Safe (5)"
 msgstr ""
@@ -155,11 +145,6 @@ msgid "`DTD`_ retrieval"
 msgstr ""
 
 #: ../../library/xml.rst:69
-#: ../../library/xml.rst:69
-#: ../../library/xml.rst:69
-#: ../../library/xml.rst:70
-#: ../../library/xml.rst:70
-#: ../../library/xml.rst:70
 #: ../../library/xml.rst:70
 msgid "Safe"
 msgstr ""

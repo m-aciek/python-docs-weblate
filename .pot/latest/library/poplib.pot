@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,13 +52,13 @@ msgstr ""
 msgid "This class implements the actual POP3 protocol.  The connection is created when the instance is initialized. If *port* is omitted, the standard POP3 port (110) is used. The optional *timeout* parameter specifies a timeout in seconds for the connection attempt (if not specified, the global default timeout setting will be used)."
 msgstr ""
 
-#: ../../library/poplib.rst:53
-#: ../../library/poplib.rst:75
+#: ../../library/poplib.rst:55
+#: ../../library/poplib.rst:77
 msgid "Raises an :ref:`auditing event <auditing>` ``poplib.connect`` with arguments ``self``, ``host``, ``port``."
 msgstr ""
 
-#: ../../library/poplib.rst:55
-#: ../../library/poplib.rst:77
+#: ../../library/poplib.rst:57
+#: ../../library/poplib.rst:79
 msgid "Raises an :ref:`auditing event <auditing>` ``poplib.putline`` with arguments ``self``, ``line``."
 msgstr ""
 

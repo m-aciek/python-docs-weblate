@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,32 +261,17 @@ msgid "suboffsets"
 msgstr ""
 
 #: ../../c-api/buffer.rst:284
-#: ../../c-api/buffer.rst:284
-#: ../../c-api/buffer.rst:286
 #: ../../c-api/buffer.rst:286
 #: ../../c-api/buffer.rst:288
 #: ../../c-api/buffer.rst:308
-#: ../../c-api/buffer.rst:308
 #: ../../c-api/buffer.rst:310
-#: ../../c-api/buffer.rst:310
-#: ../../c-api/buffer.rst:312
 #: ../../c-api/buffer.rst:312
 #: ../../c-api/buffer.rst:314
 #: ../../c-api/buffer.rst:333
-#: ../../c-api/buffer.rst:333
-#: ../../c-api/buffer.rst:333
-#: ../../c-api/buffer.rst:335
-#: ../../c-api/buffer.rst:335
 #: ../../c-api/buffer.rst:335
 #: ../../c-api/buffer.rst:337
-#: ../../c-api/buffer.rst:337
-#: ../../c-api/buffer.rst:337
-#: ../../c-api/buffer.rst:339
-#: ../../c-api/buffer.rst:339
 #: ../../c-api/buffer.rst:339
 #: ../../c-api/buffer.rst:341
-#: ../../c-api/buffer.rst:341
-#: ../../c-api/buffer.rst:343
 #: ../../c-api/buffer.rst:343
 #: ../../c-api/buffer.rst:345
 #: ../../c-api/buffer.rst:347
@@ -301,26 +286,16 @@ msgstr ""
 
 #: ../../c-api/buffer.rst:286
 #: ../../c-api/buffer.rst:288
-#: ../../c-api/buffer.rst:288
-#: ../../c-api/buffer.rst:290
-#: ../../c-api/buffer.rst:290
 #: ../../c-api/buffer.rst:290
 #: ../../c-api/buffer.rst:308
 #: ../../c-api/buffer.rst:310
 #: ../../c-api/buffer.rst:312
 #: ../../c-api/buffer.rst:314
-#: ../../c-api/buffer.rst:314
 #: ../../c-api/buffer.rst:337
 #: ../../c-api/buffer.rst:339
 #: ../../c-api/buffer.rst:341
-#: ../../c-api/buffer.rst:341
-#: ../../c-api/buffer.rst:343
 #: ../../c-api/buffer.rst:343
 #: ../../c-api/buffer.rst:345
-#: ../../c-api/buffer.rst:345
-#: ../../c-api/buffer.rst:345
-#: ../../c-api/buffer.rst:347
-#: ../../c-api/buffer.rst:347
 #: ../../c-api/buffer.rst:347
 msgid "NULL"
 msgstr ""
@@ -524,7 +499,6 @@ msgstr ""
 msgid "buffer interface"
 msgstr ""
 
-#: ../../c-api/buffer.rst:3
 #: ../../c-api/buffer.rst:3
 msgid "(see buffer protocol)"
 msgstr ""

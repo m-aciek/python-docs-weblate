@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -693,12 +693,6 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:520
 #: ../../reference/simple_stmts.rst:556
 #: ../../reference/simple_stmts.rst:682
-#: ../../reference/simple_stmts.rst:682
-#: ../../reference/simple_stmts.rst:682
-#: ../../reference/simple_stmts.rst:682
-#: ../../reference/simple_stmts.rst:716
-#: ../../reference/simple_stmts.rst:716
-#: ../../reference/simple_stmts.rst:716
 #: ../../reference/simple_stmts.rst:716
 #: ../../reference/simple_stmts.rst:741
 #: ../../reference/simple_stmts.rst:871
@@ -708,7 +702,6 @@ msgstr ""
 msgid "statement"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:39
 #: ../../reference/simple_stmts.rst:39
 #: ../../reference/simple_stmts.rst:42
 msgid "expression"
@@ -725,8 +718,6 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:56
 #: ../../reference/simple_stmts.rst:985
-#: ../../reference/simple_stmts.rst:985
-#: ../../reference/simple_stmts.rst:985
 msgid "built-in function"
 msgstr ""
 
@@ -738,8 +729,6 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:187
 #: ../../reference/simple_stmts.rst:196
-#: ../../reference/simple_stmts.rst:196
-#: ../../reference/simple_stmts.rst:207
 #: ../../reference/simple_stmts.rst:207
 #: ../../reference/simple_stmts.rst:578
 msgid "object"
@@ -757,7 +746,6 @@ msgstr ""
 msgid "conversion"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:56
 #: ../../reference/simple_stmts.rst:56
 msgid "output"
 msgstr ""
@@ -791,7 +779,6 @@ msgid "assignment statement"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:75
-#: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:159
 #: ../../reference/simple_stmts.rst:187
@@ -808,7 +795,6 @@ msgstr ""
 msgid "binding"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:457
 #: ../../reference/simple_stmts.rst:741
@@ -833,9 +819,7 @@ msgid "attribute"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:105
-#: ../../reference/simple_stmts.rst:105
 #: ../../reference/simple_stmts.rst:116
-#: ../../reference/simple_stmts.rst:444
 #: ../../reference/simple_stmts.rst:444
 #: ../../reference/simple_stmts.rst:695
 msgid "target"
@@ -858,8 +842,6 @@ msgstr ""
 msgid "* (asterisk)"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:116
-#: ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:116
 msgid "in assignment target list"
 msgstr ""
@@ -908,17 +890,6 @@ msgstr ""
 msgid "+="
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263
 #: ../../reference/simple_stmts.rst:263
 msgid "augmented assignment"
 msgstr ""
@@ -1006,7 +977,6 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:400
 #: ../../reference/simple_stmts.rst:520
 #: ../../reference/simple_stmts.rst:556
-#: ../../reference/simple_stmts.rst:556
 #: ../../reference/simple_stmts.rst:588
 #: ../../reference/simple_stmts.rst:741
 msgid "exception"
@@ -1021,11 +991,9 @@ msgid "pass"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:422
-#: ../../reference/simple_stmts.rst:422
 msgid "null"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:422
 #: ../../reference/simple_stmts.rst:422
 msgid "operation"
 msgstr ""
@@ -1035,13 +1003,11 @@ msgid "del"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:444
-#: ../../reference/simple_stmts.rst:444
 #: ../../reference/simple_stmts.rst:466
 msgid "deletion"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:457
-#: ../../reference/simple_stmts.rst:957
 #: ../../reference/simple_stmts.rst:957
 msgid "global"
 msgstr ""
@@ -1056,11 +1022,9 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:483
 #: ../../reference/simple_stmts.rst:520
-#: ../../reference/simple_stmts.rst:520
 msgid "function"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:483
 #: ../../reference/simple_stmts.rst:483
 msgid "definition"
 msgstr ""
@@ -1073,7 +1037,6 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:695
 #: ../../reference/simple_stmts.rst:704
 #: ../../reference/simple_stmts.rst:716
-#: ../../reference/simple_stmts.rst:741
 #: ../../reference/simple_stmts.rst:741
 msgid "keyword"
 msgstr ""
@@ -1088,8 +1051,6 @@ msgstr ""
 msgid "yield"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:520
-#: ../../reference/simple_stmts.rst:520
 #: ../../reference/simple_stmts.rst:520
 msgid "generator"
 msgstr ""

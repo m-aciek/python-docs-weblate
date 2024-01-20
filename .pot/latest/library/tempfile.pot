@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -351,7 +351,6 @@ msgstr ""
 msgid "Use of this function may introduce a security hole in your program.  By the time you get around to doing anything with the file name it returns, someone else may have beaten you to the punch.  :func:`mktemp` usage can be replaced easily with :func:`NamedTemporaryFile`, passing it the ``delete=False`` parameter::"
 msgstr ""
 
-#: ../../library/tempfile.rst:11
 #: ../../library/tempfile.rst:11
 msgid "temporary"
 msgstr ""

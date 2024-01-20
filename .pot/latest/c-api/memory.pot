@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -312,12 +312,9 @@ msgstr ""
 
 #: ../../c-api/memory.rst:382
 #: ../../c-api/memory.rst:384
-#: ../../c-api/memory.rst:384
-#: ../../c-api/memory.rst:384
 msgid "``malloc``"
 msgstr ""
 
-#: ../../c-api/memory.rst:382
 #: ../../c-api/memory.rst:382
 msgid "``pymalloc``"
 msgstr ""
@@ -332,12 +329,9 @@ msgstr ""
 
 #: ../../c-api/memory.rst:383
 #: ../../c-api/memory.rst:385
-#: ../../c-api/memory.rst:385
-#: ../../c-api/memory.rst:385
 msgid "``malloc`` + debug"
 msgstr ""
 
-#: ../../c-api/memory.rst:383
 #: ../../c-api/memory.rst:383
 msgid "``pymalloc`` + debug"
 msgstr ""

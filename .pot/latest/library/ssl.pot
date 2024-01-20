@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1025,37 +1025,16 @@ msgstr ""
 #: ../../library/ssl.rst:1388
 #: ../../library/ssl.rst:1389
 #: ../../library/ssl.rst:1390
-#: ../../library/ssl.rst:1390
-#: ../../library/ssl.rst:1390
-#: ../../library/ssl.rst:1390
-#: ../../library/ssl.rst:1391
 #: ../../library/ssl.rst:1391
 #: ../../library/ssl.rst:1392
-#: ../../library/ssl.rst:1392
-#: ../../library/ssl.rst:1393
 #: ../../library/ssl.rst:1393
 msgid "yes"
 msgstr ""
 
 #: ../../library/ssl.rst:1388
-#: ../../library/ssl.rst:1388
-#: ../../library/ssl.rst:1388
-#: ../../library/ssl.rst:1388
-#: ../../library/ssl.rst:1389
-#: ../../library/ssl.rst:1389
-#: ../../library/ssl.rst:1389
 #: ../../library/ssl.rst:1389
 #: ../../library/ssl.rst:1391
-#: ../../library/ssl.rst:1391
-#: ../../library/ssl.rst:1391
-#: ../../library/ssl.rst:1391
 #: ../../library/ssl.rst:1392
-#: ../../library/ssl.rst:1392
-#: ../../library/ssl.rst:1392
-#: ../../library/ssl.rst:1392
-#: ../../library/ssl.rst:1393
-#: ../../library/ssl.rst:1393
-#: ../../library/ssl.rst:1393
 #: ../../library/ssl.rst:1393
 msgid "no"
 msgstr ""

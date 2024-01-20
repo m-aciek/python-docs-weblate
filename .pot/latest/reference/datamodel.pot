@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 23:13+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2342,9 +2342,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:279
 #: ../../reference/datamodel.rst:292
 #: ../../reference/datamodel.rst:321
-#: ../../reference/datamodel.rst:321
 #: ../../reference/datamodel.rst:356
-#: ../../reference/datamodel.rst:381
 #: ../../reference/datamodel.rst:381
 #: ../../reference/datamodel.rst:402
 #: ../../reference/datamodel.rst:420
@@ -2354,22 +2352,12 @@ msgstr ""
 #: ../../reference/datamodel.rst:476
 #: ../../reference/datamodel.rst:512
 #: ../../reference/datamodel.rst:527
-#: ../../reference/datamodel.rst:527
-#: ../../reference/datamodel.rst:654
 #: ../../reference/datamodel.rst:654
 #: ../../reference/datamodel.rst:799
-#: ../../reference/datamodel.rst:799
-#: ../../reference/datamodel.rst:823
 #: ../../reference/datamodel.rst:823
 #: ../../reference/datamodel.rst:856
 #: ../../reference/datamodel.rst:938
-#: ../../reference/datamodel.rst:938
-#: ../../reference/datamodel.rst:938
-#: ../../reference/datamodel.rst:938
 #: ../../reference/datamodel.rst:1007
-#: ../../reference/datamodel.rst:1007
-#: ../../reference/datamodel.rst:1034
-#: ../../reference/datamodel.rst:1034
 #: ../../reference/datamodel.rst:1034
 #: ../../reference/datamodel.rst:1096
 #: ../../reference/datamodel.rst:1198
@@ -2386,9 +2374,7 @@ msgid "data"
 msgstr ""
 
 #: ../../reference/datamodel.rst:23
-#: ../../reference/datamodel.rst:23
 #: ../../reference/datamodel.rst:292
-#: ../../reference/datamodel.rst:336
 #: ../../reference/datamodel.rst:336
 #: ../../reference/datamodel.rst:420
 #: ../../reference/datamodel.rst:459
@@ -2401,14 +2387,9 @@ msgstr ""
 #: ../../reference/datamodel.rst:2364
 #: ../../reference/datamodel.rst:2793
 #: ../../reference/datamodel.rst:2951
-#: ../../reference/datamodel.rst:2951
-#: ../../reference/datamodel.rst:2951
-#: ../../reference/datamodel.rst:2986
 #: ../../reference/datamodel.rst:2986
 #: ../../reference/datamodel.rst:3000
 #: ../../reference/datamodel.rst:3047
-#: ../../reference/datamodel.rst:3057
-#: ../../reference/datamodel.rst:3057
 #: ../../reference/datamodel.rst:3057
 #: ../../reference/datamodel.rst:3085
 msgid "built-in function"
@@ -2419,8 +2400,6 @@ msgid "id"
 msgstr ""
 
 #: ../../reference/datamodel.rst:23
-#: ../../reference/datamodel.rst:122
-#: ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:2364
 msgid "type"
@@ -2475,7 +2454,6 @@ msgstr ""
 #: ../../reference/datamodel.rst:393
 #: ../../reference/datamodel.rst:394
 #: ../../reference/datamodel.rst:495
-#: ../../reference/datamodel.rst:495
 #: ../../reference/datamodel.rst:856
 #: ../../reference/datamodel.rst:876
 #: ../../reference/datamodel.rst:1053
@@ -2490,13 +2468,10 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:261
-#: ../../reference/datamodel.rst:261
 #: ../../reference/datamodel.rst:799
 msgid "language"
 msgstr ""
 
-#: ../../reference/datamodel.rst:135
-#: ../../reference/datamodel.rst:135
 #: ../../reference/datamodel.rst:135
 #: ../../reference/datamodel.rst:938
 #: ../../reference/datamodel.rst:956
@@ -2505,7 +2480,6 @@ msgstr ""
 msgid "attribute"
 msgstr ""
 
-#: ../../reference/datamodel.rst:135
 #: ../../reference/datamodel.rst:135
 msgid "special"
 msgstr ""
@@ -2550,7 +2524,6 @@ msgid "True"
 msgstr ""
 
 #: ../../reference/datamodel.rst:261
-#: ../../reference/datamodel.rst:261
 msgid "floating point"
 msgstr ""
 
@@ -2563,7 +2536,6 @@ msgstr ""
 msgid "Java"
 msgstr ""
 
-#: ../../reference/datamodel.rst:279
 #: ../../reference/datamodel.rst:279
 #: ../../reference/datamodel.rst:3057
 msgid "complex"
@@ -2611,7 +2583,6 @@ msgstr ""
 #: ../../reference/datamodel.rst:332
 #: ../../reference/datamodel.rst:1697
 #: ../../reference/datamodel.rst:1727
-#: ../../reference/datamodel.rst:1727
 msgid "string"
 msgstr ""
 
@@ -2635,8 +2606,6 @@ msgstr ""
 msgid "Unicode"
 msgstr ""
 
-#: ../../reference/datamodel.rst:356
-#: ../../reference/datamodel.rst:356
 #: ../../reference/datamodel.rst:356
 msgid "tuple"
 msgstr ""
@@ -2732,8 +2701,6 @@ msgid "callable"
 msgstr ""
 
 #: ../../reference/datamodel.rst:512
-#: ../../reference/datamodel.rst:512
-#: ../../reference/datamodel.rst:527
 #: ../../reference/datamodel.rst:527
 #: ../../reference/datamodel.rst:743
 #: ../../reference/datamodel.rst:761
@@ -2820,8 +2787,6 @@ msgid "__type_params__ (function attribute)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:654
-#: ../../reference/datamodel.rst:654
-#: ../../reference/datamodel.rst:823
 #: ../../reference/datamodel.rst:823
 msgid "method"
 msgstr ""
@@ -2851,7 +2816,6 @@ msgid "__module__ (method attribute)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:743
-#: ../../reference/datamodel.rst:743
 #: ../../reference/datamodel.rst:1198
 msgid "generator"
 msgstr ""
@@ -2865,7 +2829,6 @@ msgstr ""
 msgid "coroutine"
 msgstr ""
 
-#: ../../reference/datamodel.rst:774
 #: ../../reference/datamodel.rst:774
 msgid "asynchronous generator"
 msgstr ""
@@ -2907,7 +2870,6 @@ msgid "__dict__ (module attribute)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:938
-#: ../../reference/datamodel.rst:938
 #: ../../reference/datamodel.rst:956
 #: ../../reference/datamodel.rst:1007
 #: ../../reference/datamodel.rst:1601
@@ -2917,13 +2879,11 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:938
 #: ../../reference/datamodel.rst:1007
-#: ../../reference/datamodel.rst:1007
 #: ../../reference/datamodel.rst:1027
 msgid "class instance"
 msgstr ""
 
 #: ../../reference/datamodel.rst:938
-#: ../../reference/datamodel.rst:1007
 #: ../../reference/datamodel.rst:1007
 #: ../../reference/datamodel.rst:2745
 msgid "instance"
@@ -3155,7 +3115,6 @@ msgid "traceback"
 msgstr ""
 
 #: ../../reference/datamodel.rst:1399
-#: ../../reference/datamodel.rst:1399
 msgid "stack"
 msgstr ""
 
@@ -3277,8 +3236,6 @@ msgid "__repr__() (object method)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:1697
-#: ../../reference/datamodel.rst:1697
-#: ../../reference/datamodel.rst:1697
 msgid "__str__() (object method)"
 msgstr ""
 
@@ -3367,7 +3324,6 @@ msgstr ""
 msgid "divmod"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2951
 #: ../../reference/datamodel.rst:2951
 #: ../../reference/datamodel.rst:2986
 #: ../../reference/datamodel.rst:3000

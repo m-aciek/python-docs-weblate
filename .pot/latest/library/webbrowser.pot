@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgstr ""
 msgid "Note that on some platforms, trying to open a filename using this function, may work and start the operating system's associated program.  However, this is neither supported nor portable."
 msgstr ""
 
-#: ../../library/webbrowser.rst:78
+#: ../../library/webbrowser.rst:80
 msgid "Raises an :ref:`auditing event <auditing>` ``webbrowser.open`` with argument ``url``."
 msgstr ""
 

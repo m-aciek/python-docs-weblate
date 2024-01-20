@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 20:15+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,6 @@ msgid "to look up an existing member:"
 msgstr ""
 
 #: ../../library/enum.rst:0
-#: ../../library/enum.rst:0
 msgid "cls"
 msgstr ""
 
@@ -262,7 +261,6 @@ msgstr ""
 msgid "The enum class being called."
 msgstr ""
 
-#: ../../library/enum.rst:0
 #: ../../library/enum.rst:0
 msgid "value"
 msgstr ""
@@ -311,7 +309,6 @@ msgstr ""
 msgid "A mix-in type for the new Enum."
 msgstr ""
 
-#: ../../library/enum.rst:0
 #: ../../library/enum.rst:0
 msgid "start"
 msgstr ""

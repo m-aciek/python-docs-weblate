@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4390,7 +4390,6 @@ msgid "types"
 msgstr ""
 
 #: ../../library/stdtypes.rst:34
-#: ../../library/stdtypes.rst:34
 #: ../../library/stdtypes.rst:1154
 #: ../../library/stdtypes.rst:4422
 msgid "statement"
@@ -4422,8 +4421,6 @@ msgstr ""
 #: ../../library/stdtypes.rst:34
 #: ../../library/stdtypes.rst:81
 #: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:393
 msgid "operations"
 msgstr ""
 
@@ -4444,35 +4441,11 @@ msgid "False (Built-in object)"
 msgstr ""
 
 #: ../../library/stdtypes.rst:64
-#: ../../library/stdtypes.rst:64
 #: ../../library/stdtypes.rst:98
-#: ../../library/stdtypes.rst:98
-#: ../../library/stdtypes.rst:98
-#: ../../library/stdtypes.rst:123
-#: ../../library/stdtypes.rst:123
-#: ../../library/stdtypes.rst:123
-#: ../../library/stdtypes.rst:123
-#: ../../library/stdtypes.rst:123
-#: ../../library/stdtypes.rst:123
-#: ../../library/stdtypes.rst:123
-#: ../../library/stdtypes.rst:123
 #: ../../library/stdtypes.rst:123
 #: ../../library/stdtypes.rst:195
-#: ../../library/stdtypes.rst:195
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
 #: ../../library/stdtypes.rst:246
 #: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:393
-#: ../../library/stdtypes.rst:950
 #: ../../library/stdtypes.rst:950
 msgid "operator"
 msgstr ""
@@ -4547,13 +4520,8 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:163
 #: ../../library/stdtypes.rst:208
-#: ../../library/stdtypes.rst:208
-#: ../../library/stdtypes.rst:208
-#: ../../library/stdtypes.rst:208
-#: ../../library/stdtypes.rst:208
 #: ../../library/stdtypes.rst:934
 #: ../../library/stdtypes.rst:1117
-#: ../../library/stdtypes.rst:1139
 #: ../../library/stdtypes.rst:1139
 #: ../../library/stdtypes.rst:1259
 #: ../../library/stdtypes.rst:1338
@@ -4561,12 +4529,9 @@ msgstr ""
 #: ../../library/stdtypes.rst:1504
 #: ../../library/stdtypes.rst:1540
 #: ../../library/stdtypes.rst:2514
-#: ../../library/stdtypes.rst:2514
-#: ../../library/stdtypes.rst:2514
 #: ../../library/stdtypes.rst:2533
 #: ../../library/stdtypes.rst:2640
 #: ../../library/stdtypes.rst:4220
-#: ../../library/stdtypes.rst:4422
 #: ../../library/stdtypes.rst:4422
 #: ../../library/stdtypes.rst:4900
 #: ../../library/stdtypes.rst:5155
@@ -4650,12 +4615,6 @@ msgid "language"
 msgstr ""
 
 #: ../../library/stdtypes.rst:229
-#: ../../library/stdtypes.rst:229
-#: ../../library/stdtypes.rst:229
-#: ../../library/stdtypes.rst:229
-#: ../../library/stdtypes.rst:229
-#: ../../library/stdtypes.rst:229
-#: ../../library/stdtypes.rst:229
 msgid "literals"
 msgstr ""
 
@@ -4676,15 +4635,10 @@ msgid "arithmetic"
 msgstr ""
 
 #: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:950
-#: ../../library/stdtypes.rst:950
 #: ../../library/stdtypes.rst:950
 #: ../../library/stdtypes.rst:1117
 #: ../../library/stdtypes.rst:4422
 #: ../../library/stdtypes.rst:5376
-#: ../../library/stdtypes.rst:5390
 #: ../../library/stdtypes.rst:5390
 #: ../../library/stdtypes.rst:5405
 msgid "built-in function"
@@ -4703,25 +4657,19 @@ msgid "complex"
 msgstr ""
 
 #: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
 #: ../../library/stdtypes.rst:2390
 #: ../../library/stdtypes.rst:3608
 msgid "+ (plus)"
 msgstr ""
 
 #: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
 msgid "unary operator"
 msgstr ""
 
 #: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
 msgid "binary operator"
 msgstr ""
 
-#: ../../library/stdtypes.rst:246
-#: ../../library/stdtypes.rst:246
 #: ../../library/stdtypes.rst:246
 #: ../../library/stdtypes.rst:2390
 #: ../../library/stdtypes.rst:3608
@@ -4756,8 +4704,6 @@ msgstr ""
 #: ../../library/stdtypes.rst:393
 #: ../../library/stdtypes.rst:950
 #: ../../library/stdtypes.rst:1154
-#: ../../library/stdtypes.rst:1154
-#: ../../library/stdtypes.rst:4422
 #: ../../library/stdtypes.rst:4422
 msgid "operations on"
 msgstr ""
@@ -4885,9 +4831,6 @@ msgid "concatenation"
 msgstr ""
 
 #: ../../library/stdtypes.rst:950
-#: ../../library/stdtypes.rst:950
-#: ../../library/stdtypes.rst:950
-#: ../../library/stdtypes.rst:950
 msgid "operation"
 msgstr ""
 
@@ -4957,7 +4900,6 @@ msgstr ""
 #: ../../library/stdtypes.rst:2640
 #: ../../library/stdtypes.rst:2712
 #: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
 msgid "bytearray"
 msgstr ""
 
@@ -4968,7 +4910,6 @@ msgstr ""
 msgid "type"
 msgstr ""
 
-#: ../../library/stdtypes.rst:1154
 #: ../../library/stdtypes.rst:1154
 msgid "assignment"
 msgstr ""
@@ -5015,10 +4956,8 @@ msgid "range"
 msgstr ""
 
 #: ../../library/stdtypes.rst:1504
-#: ../../library/stdtypes.rst:1504
 #: ../../library/stdtypes.rst:1553
 #: ../../library/stdtypes.rst:1598
-#: ../../library/stdtypes.rst:2317
 #: ../../library/stdtypes.rst:2317
 msgid "string"
 msgstr ""
@@ -5029,7 +4968,6 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:1504
 #: ../../library/stdtypes.rst:1553
-#: ../../library/stdtypes.rst:1571
 #: ../../library/stdtypes.rst:1571
 msgid "str (built-in class)"
 msgstr ""
@@ -5052,12 +4990,10 @@ msgstr ""
 #: ../../library/stdtypes.rst:2533
 #: ../../library/stdtypes.rst:2712
 #: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
 msgid "bytes"
 msgstr ""
 
 #: ../../library/stdtypes.rst:1598
-#: ../../library/stdtypes.rst:2712
 #: ../../library/stdtypes.rst:2712
 msgid "methods"
 msgstr ""
@@ -5067,7 +5003,6 @@ msgid "re"
 msgstr ""
 
 #: ../../library/stdtypes.rst:2125
-#: ../../library/stdtypes.rst:3387
 #: ../../library/stdtypes.rst:3387
 msgid "universal newlines"
 msgstr ""
@@ -5093,8 +5028,6 @@ msgid "interpolation, printf"
 msgstr ""
 
 #: ../../library/stdtypes.rst:2317
-#: ../../library/stdtypes.rst:2317
-#: ../../library/stdtypes.rst:3533
 #: ../../library/stdtypes.rst:3533
 msgid "printf-style formatting"
 msgstr ""
@@ -5110,18 +5043,8 @@ msgid "() (parentheses)"
 msgstr ""
 
 #: ../../library/stdtypes.rst:2347
-#: ../../library/stdtypes.rst:2347
-#: ../../library/stdtypes.rst:2347
-#: ../../library/stdtypes.rst:2390
-#: ../../library/stdtypes.rst:2390
-#: ../../library/stdtypes.rst:2390
 #: ../../library/stdtypes.rst:2390
 #: ../../library/stdtypes.rst:3565
-#: ../../library/stdtypes.rst:3565
-#: ../../library/stdtypes.rst:3565
-#: ../../library/stdtypes.rst:3608
-#: ../../library/stdtypes.rst:3608
-#: ../../library/stdtypes.rst:3608
 #: ../../library/stdtypes.rst:3608
 msgid "in printf-style formatting"
 msgstr ""
@@ -5162,25 +5085,17 @@ msgid "bytearray.splitlines method"
 msgstr ""
 
 #: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
 msgid "formatting"
 msgstr ""
 
-#: ../../library/stdtypes.rst:3533
 #: ../../library/stdtypes.rst:3533
 msgid "bytes (%)"
 msgstr ""
 
 #: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
 msgid "bytearray (%)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
-#: ../../library/stdtypes.rst:3533
 #: ../../library/stdtypes.rst:3533
 msgid "interpolation"
 msgstr ""
@@ -5190,11 +5105,9 @@ msgid "set"
 msgstr ""
 
 #: ../../library/stdtypes.rst:4422
-#: ../../library/stdtypes.rst:4422
 msgid "mapping"
 msgstr ""
 
-#: ../../library/stdtypes.rst:4422
 #: ../../library/stdtypes.rst:4422
 msgid "dictionary"
 msgstr ""

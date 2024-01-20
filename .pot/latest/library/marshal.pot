@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,6 @@ msgstr ""
 msgid "The name of this module stems from a bit of terminology used by the designers of Modula-3 (amongst others), who use the term \"marshalling\" for shipping of data around in a self-contained form. Strictly speaking, \"to marshal\" means to convert some data from internal to external form (in an RPC buffer for instance) and \"unmarshalling\" for the reverse process."
 msgstr ""
 
-#: ../../library/marshal.rst:17
 #: ../../library/marshal.rst:17
 msgid "module"
 msgstr ""

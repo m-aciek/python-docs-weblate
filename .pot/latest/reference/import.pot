@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -780,7 +780,6 @@ msgstr ""
 #: ../../reference/import.rst:64
 #: ../../reference/import.rst:95
 #: ../../reference/import.rst:129
-#: ../../reference/import.rst:129
 msgid "package"
 msgstr ""
 
@@ -825,8 +824,6 @@ msgstr ""
 msgid "path hooks"
 msgstr ""
 
-#: ../../reference/import.rst:249
-#: ../../reference/import.rst:249
 #: ../../reference/import.rst:249
 msgid "hooks"
 msgstr ""

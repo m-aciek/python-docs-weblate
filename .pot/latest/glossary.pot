@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:18+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -540,8 +540,8 @@ msgstr ""
 msgid "The process of freeing memory when it is not used anymore.  Python performs garbage collection via reference counting and a cyclic garbage collector that is able to detect and break reference cycles.  The garbage collector can be controlled using the :mod:`gc` module."
 msgstr ""
 
-#: ../../glossary.rst:493
 #: ../../glossary.rst:492
+#: ../../glossary.rst:493
 msgid "generator"
 msgstr ""
 
@@ -565,8 +565,8 @@ msgstr ""
 msgid "Each :keyword:`yield` temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements).  When the *generator iterator* resumes, it picks up where it left off (in contrast to functions which start fresh on every invocation)."
 msgstr ""
 
-#: ../../glossary.rst:514
 #: ../../glossary.rst:513
+#: ../../glossary.rst:514
 msgid "generator expression"
 msgstr ""
 
@@ -875,8 +875,8 @@ msgstr ""
 msgid "More information can be found in :ref:`metaclasses`."
 msgstr ""
 
-#: ../../glossary.rst:793
 #: ../../glossary.rst:761
+#: ../../glossary.rst:793
 #: ../../glossary.rst:1128
 msgid "method"
 msgstr ""

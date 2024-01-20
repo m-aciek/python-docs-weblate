@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -653,8 +653,6 @@ msgstr ""
 
 #: ../../library/mailbox.rst:840
 #: ../../library/mailbox.rst:999
-#: ../../library/mailbox.rst:999
-#: ../../library/mailbox.rst:1370
 #: ../../library/mailbox.rst:1370
 msgid "Read"
 msgstr ""
@@ -765,29 +763,22 @@ msgstr ""
 #: ../../library/mailbox.rst:1089
 #: ../../library/mailbox.rst:1104
 #: ../../library/mailbox.rst:1120
-#: ../../library/mailbox.rst:1120
 #: ../../library/mailbox.rst:1444
 #: ../../library/mailbox.rst:1461
 #: ../../library/mailbox.rst:1476
-#: ../../library/mailbox.rst:1492
 #: ../../library/mailbox.rst:1492
 msgid "O flag"
 msgstr ""
 
 #: ../../library/mailbox.rst:933
-#: ../../library/mailbox.rst:933
 #: ../../library/mailbox.rst:952
 #: ../../library/mailbox.rst:1076
-#: ../../library/mailbox.rst:1076
 #: ../../library/mailbox.rst:1091
-#: ../../library/mailbox.rst:1124
 #: ../../library/mailbox.rst:1124
 #: ../../library/mailbox.rst:1189
 #: ../../library/mailbox.rst:1205
 #: ../../library/mailbox.rst:1448
-#: ../../library/mailbox.rst:1448
 #: ../../library/mailbox.rst:1463
-#: ../../library/mailbox.rst:1496
 #: ../../library/mailbox.rst:1496
 msgid "F flag"
 msgstr ""
@@ -799,12 +790,10 @@ msgstr ""
 #: ../../library/mailbox.rst:1070
 #: ../../library/mailbox.rst:1078
 #: ../../library/mailbox.rst:1118
-#: ../../library/mailbox.rst:1118
 #: ../../library/mailbox.rst:1187
 #: ../../library/mailbox.rst:1315
 #: ../../library/mailbox.rst:1442
 #: ../../library/mailbox.rst:1450
-#: ../../library/mailbox.rst:1490
 #: ../../library/mailbox.rst:1490
 msgid "R flag"
 msgstr ""
@@ -814,13 +803,11 @@ msgstr ""
 #: ../../library/mailbox.rst:1093
 #: ../../library/mailbox.rst:1108
 #: ../../library/mailbox.rst:1126
-#: ../../library/mailbox.rst:1126
 #: ../../library/mailbox.rst:1203
 #: ../../library/mailbox.rst:1333
 #: ../../library/mailbox.rst:1450
 #: ../../library/mailbox.rst:1465
 #: ../../library/mailbox.rst:1480
-#: ../../library/mailbox.rst:1498
 #: ../../library/mailbox.rst:1498
 msgid "A flag"
 msgstr ""
@@ -843,11 +830,9 @@ msgstr ""
 #: ../../library/mailbox.rst:1074
 #: ../../library/mailbox.rst:1106
 #: ../../library/mailbox.rst:1122
-#: ../../library/mailbox.rst:1122
 #: ../../library/mailbox.rst:1331
 #: ../../library/mailbox.rst:1446
 #: ../../library/mailbox.rst:1478
-#: ../../library/mailbox.rst:1494
 #: ../../library/mailbox.rst:1494
 msgid "D flag"
 msgstr ""

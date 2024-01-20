@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,7 +184,6 @@ msgstr ""
 msgid "If the locking flags :const:`~os.O_SHLOCK` and :const:`~os.O_EXLOCK` are present in the :mod:`os` module (on BSD only), the :func:`os.open` function provides an alternative to the :func:`lockf` and :func:`flock` functions."
 msgstr ""
 
-#: ../../library/fcntl.rst:10
 #: ../../library/fcntl.rst:10
 msgid "UNIX"
 msgstr ""

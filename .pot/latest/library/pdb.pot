@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -473,7 +473,6 @@ msgid "Pdb (class in pdb)"
 msgstr ""
 
 #: ../../library/pdb.rst:21
-#: ../../library/pdb.rst:21
 msgid "module"
 msgstr ""
 
@@ -489,7 +488,6 @@ msgstr ""
 msgid ".pdbrc"
 msgstr ""
 
-#: ../../library/pdb.rst:281
 #: ../../library/pdb.rst:281
 msgid "file"
 msgstr ""

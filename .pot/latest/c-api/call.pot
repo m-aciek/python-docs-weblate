@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,14 +217,12 @@ msgid ":c:func:`PyObject_CallNoArgs`"
 msgstr ""
 
 #: ../../c-api/call.rst:204
-#: ../../c-api/call.rst:204
 #: ../../c-api/call.rst:206
 #: ../../c-api/call.rst:208
 #: ../../c-api/call.rst:210
 #: ../../c-api/call.rst:212
 #: ../../c-api/call.rst:214
 #: ../../c-api/call.rst:216
-#: ../../c-api/call.rst:218
 #: ../../c-api/call.rst:218
 #: ../../c-api/call.rst:220
 msgid "---"
@@ -296,9 +294,7 @@ msgid ":c:func:`PyObject_Vectorcall`"
 msgstr ""
 
 #: ../../c-api/call.rst:222
-#: ../../c-api/call.rst:222
 #: ../../c-api/call.rst:224
-#: ../../c-api/call.rst:226
 #: ../../c-api/call.rst:226
 msgid "vectorcall"
 msgstr ""

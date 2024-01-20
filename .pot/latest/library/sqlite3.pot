@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,20 +190,6 @@ msgid "Open a connection to an SQLite database."
 msgstr ""
 
 #: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
 msgid "Parameters"
 msgstr ""
 
@@ -243,11 +229,6 @@ msgstr ""
 msgid "Control :pep:`249` transaction handling behaviour. See :attr:`Connection.autocommit` and :ref:`sqlite3-transaction-control-autocommit` for more information. *autocommit* currently defaults to :const:`~sqlite3.LEGACY_TRANSACTION_CONTROL`. The default will change to ``False`` in a future Python release."
 msgstr ""
 
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
 #: ../../library/sqlite3.rst:0
 msgid "Return type"
 msgstr ""
@@ -413,7 +394,6 @@ msgid "single-thread"
 msgstr ""
 
 #: ../../library/sqlite3.rst:541
-#: ../../library/sqlite3.rst:541
 msgid "0"
 msgstr ""
 
@@ -527,13 +507,6 @@ msgstr ""
 msgid "The name of the database where the blob is located. Defaults to ``\"main\"``."
 msgstr ""
 
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0
 #: ../../library/sqlite3.rst:0
 msgid "Raises"
 msgstr ""

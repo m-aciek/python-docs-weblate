@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 11:39+0000\n"
+"POT-Creation-Date: 2024-01-20 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1387,10 +1387,6 @@ msgstr ""
 #: ../../library/re.rst:130
 #: ../../library/re.rst:137
 #: ../../library/re.rst:143
-#: ../../library/re.rst:143
-#: ../../library/re.rst:143
-#: ../../library/re.rst:157
-#: ../../library/re.rst:157
 #: ../../library/re.rst:157
 #: ../../library/re.rst:181
 #: ../../library/re.rst:220
@@ -1421,17 +1417,6 @@ msgstr ""
 #: ../../library/re.rst:622
 #: ../../library/re.rst:639
 #: ../../library/re.rst:653
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
-#: ../../library/re.rst:658
 #: ../../library/re.rst:658
 #: ../../library/re.rst:849
 #: ../../library/re.rst:1056
