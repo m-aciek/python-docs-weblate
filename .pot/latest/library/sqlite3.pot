@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-01-21 20:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,7 +242,7 @@ msgid "Raises an :ref:`auditing event <auditing>` ``sqlite3.connect/handle`` wit
 msgstr ""
 
 #: ../../library/sqlite3.rst:346
-msgid "The *uri* parameter."
+msgid "Added the *uri* parameter."
 msgstr ""
 
 #: ../../library/sqlite3.rst:349
@@ -250,11 +250,11 @@ msgid "*database* can now also be a :term:`path-like object`, not only a string.
 msgstr ""
 
 #: ../../library/sqlite3.rst:352
-msgid "The ``sqlite3.connect/handle`` auditing event."
+msgid "Added the ``sqlite3.connect/handle`` auditing event."
 msgstr ""
 
 #: ../../library/sqlite3.rst:355
-msgid "The *autocommit* parameter."
+msgid "Added the *autocommit* parameter."
 msgstr ""
 
 #: ../../library/sqlite3.rst:360
@@ -568,7 +568,7 @@ msgid "If *deterministic* is used with SQLite versions older than 3.8.3."
 msgstr ""
 
 #: ../../library/sqlite3.rst:741
-msgid "The *deterministic* parameter."
+msgid "Added the *deterministic* parameter."
 msgstr ""
 
 #: ../../library/sqlite3.rst:744
@@ -778,7 +778,7 @@ msgid "Added the ``sqlite3.load_extension`` auditing event."
 msgstr ""
 
 #: ../../library/sqlite3.rst:1104
-msgid "The *entrypoint* parameter."
+msgid "Added the *entrypoint* parameter."
 msgstr ""
 
 #: ../../library/sqlite3.rst:1111
