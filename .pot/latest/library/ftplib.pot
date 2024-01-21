@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-21 11:37+0000\n"
+"POT-Creation-Date: 2024-01-21 18:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,7 +169,7 @@ msgid "Retrieve a file in binary transfer mode.  *cmd* should be an appropriate 
 msgstr ""
 
 #: ../../library/ftplib.rst:216
-msgid "Retrieve a file or directory listing in the encoding specified by the *encoding* parameter at initialization. *cmd* should be an appropriate ``RETR`` command (see :meth:`retrbinary`) or a command such as ``LIST`` or ``NLST`` (usually just the string ``'LIST'``). ``LIST`` retrieves a list of files and information about those files. ``NLST`` retrieves a list of file names. The *callback* function is called for each line with a string argument containing the line with the trailing CRLF stripped.  The default *callback* prints the line to ``sys.stdout``."
+msgid "Retrieve a file or directory listing in the encoding specified by the *encoding* parameter at initialization. *cmd* should be an appropriate ``RETR`` command (see :meth:`retrbinary`) or a command such as ``LIST`` or ``NLST`` (usually just the string ``'LIST'``). ``LIST`` retrieves a list of files and information about those files. ``NLST`` retrieves a list of file names. The *callback* function is called for each line with a string argument containing the line with the trailing CRLF stripped.  The default *callback* prints the line to :data:`sys.stdout`."
 msgstr ""
 
 #: ../../library/ftplib.rst:229
@@ -214,7 +214,7 @@ msgid "If your server supports the command, :meth:`mlsd` offers a better API."
 msgstr ""
 
 #: ../../library/ftplib.rst:309
-msgid "Produce a directory listing as returned by the ``LIST`` command, printing it to standard output.  The optional *argument* is a directory to list (default is the current server directory).  Multiple arguments can be used to pass non-standard options to the ``LIST`` command.  If the last argument is a function, it is used as a *callback* function as for :meth:`retrlines`; the default prints to ``sys.stdout``.  This method returns ``None``."
+msgid "Produce a directory listing as returned by the ``LIST`` command, printing it to standard output.  The optional *argument* is a directory to list (default is the current server directory).  Multiple arguments can be used to pass non-standard options to the ``LIST`` command.  If the last argument is a function, it is used as a *callback* function as for :meth:`retrlines`; the default prints to :data:`sys.stdout`.  This method returns ``None``."
 msgstr ""
 
 #: ../../library/ftplib.rst:321
