@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -483,15 +483,15 @@ msgid "A dictionary with default values to use in custom fields. For example, ``
 msgstr ""
 
 #: ../../library/logging.rst:618
-msgid "The *style* parameter."
+msgid "Added the *style* parameter."
 msgstr ""
 
 #: ../../library/logging.rst:621
-msgid "The *validate* parameter."
+msgid "Added the *validate* parameter."
 msgstr ""
 
 #: ../../library/logging.rst:624
-msgid "The *defaults* parameter."
+msgid "Added the *defaults* parameter."
 msgstr ""
 
 #: ../../library/logging.rst:630

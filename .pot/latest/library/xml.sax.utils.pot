@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid "This class implements the :class:`~xml.sax.handler.ContentHandler` interf
 msgstr ""
 
 #: ../../library/xml.sax.utils.rst:74
-msgid "The *short_empty_elements* parameter."
+msgid "Added the *short_empty_elements* parameter."
 msgstr ""
 
 #: ../../library/xml.sax.utils.rst:80

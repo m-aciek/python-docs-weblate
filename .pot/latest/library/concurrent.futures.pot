@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-17 02:11+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,7 @@ msgid "If *max_workers* is ``None`` or not given, it will default to the number 
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:174
-msgid "The *thread_name_prefix* argument was added to allow users to control the :class:`threading.Thread` names for worker threads created by the pool for easier debugging."
+msgid "Added the *thread_name_prefix* parameter to allow users to control the :class:`threading.Thread` names for worker threads created by the pool for easier debugging."
 msgstr ""
 
 #: ../../library/concurrent.futures.rst:179

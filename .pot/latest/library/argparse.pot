@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1114,7 +1114,7 @@ msgid "FileType objects understand the pseudo-argument ``'-'`` and automatically
 msgstr ""
 
 #: ../../library/argparse.rst:1939
-msgid "The *encodings* and *errors* keyword arguments."
+msgid "Added the *encodings* and *errors* parameters."
 msgstr ""
 
 #: ../../library/argparse.rst:1944

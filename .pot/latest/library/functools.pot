@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 13:17+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,7 @@ msgid "Note, type specificity applies only to the function's immediate arguments
 msgstr ""
 
 #: ../../library/functools.rst:197
-msgid "The wrapped function is instrumented with a :func:`cache_parameters` function that returns a new :class:`dict` showing the values for *maxsize* and *typed*.  This is for information purposes only.  Mutating the values has no effect."
+msgid "The wrapped function is instrumented with a :func:`!cache_parameters` function that returns a new :class:`dict` showing the values for *maxsize* and *typed*.  This is for information purposes only.  Mutating the values has no effect."
 msgstr ""
 
 #: ../../library/functools.rst:202
@@ -186,7 +186,7 @@ msgid "Added the *user_function* option."
 msgstr ""
 
 #: ../../library/functools.rst:278
-msgid "Added the function :func:`cache_parameters`"
+msgid "Added the function :func:`!cache_parameters`"
 msgstr ""
 
 #: ../../library/functools.rst:283

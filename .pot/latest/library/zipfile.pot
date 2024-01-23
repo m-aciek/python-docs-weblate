@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,8 +187,7 @@ msgid "Add the *compresslevel* parameter."
 msgstr ""
 
 #: ../../library/zipfile.rst:239
-#: ../../library/zipfile.rst:746
-msgid "The *strict_timestamps* keyword-only argument"
+msgid "The *strict_timestamps* keyword-only parameter."
 msgstr ""
 
 #: ../../library/zipfile.rst:242
@@ -478,7 +477,7 @@ msgid "The :class:`PyZipFile` constructor takes the same parameters as the :clas
 msgstr ""
 
 #: ../../library/zipfile.rst:645
-msgid "The *optimize* parameter."
+msgid "Added the *optimize* parameter."
 msgstr ""
 
 #: ../../library/zipfile.rst:651
@@ -514,7 +513,7 @@ msgid "The :meth:`writepy` method makes archives with file names like this::"
 msgstr ""
 
 #: ../../library/zipfile.rst:701
-msgid "The *filterfunc* parameter."
+msgid "Added the *filterfunc* parameter."
 msgstr ""
 
 #: ../../library/zipfile.rst:704
@@ -551,6 +550,10 @@ msgstr ""
 
 #: ../../library/zipfile.rst:743
 msgid "The *filename* parameter accepts a :term:`path-like object`."
+msgstr ""
+
+#: ../../library/zipfile.rst:746
+msgid "Added the *strict_timestamps* keyword-only parameter."
 msgstr ""
 
 #: ../../library/zipfile.rst:750

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,7 +229,9 @@ msgid "If text mode is not used, *stdin*, *stdout* and *stderr* will be opened a
 msgstr ""
 
 #: ../../library/subprocess.rst:311
-msgid "Added *encoding* and *errors* parameters."
+#: ../../library/subprocess.rst:1541
+#: ../../library/subprocess.rst:1559
+msgid "Added the *encoding* and *errors* parameters."
 msgstr ""
 
 #: ../../library/subprocess.rst:314
@@ -544,7 +546,7 @@ msgid "*pipesize* can be used to change the size of the pipe when :data:`PIPE` i
 msgstr ""
 
 #: ../../library/subprocess.rst:687
-msgid "The ``pipesize`` parameter was added."
+msgid "Added the *pipesize* parameter."
 msgstr ""
 
 #: ../../library/subprocess.rst:690
@@ -1104,11 +1106,6 @@ msgstr ""
 
 #: ../../library/subprocess.rst:1537
 msgid "The function now returns (exitcode, output) instead of (status, output) as it did in Python 3.3.3 and earlier.  exitcode has the same value as :attr:`~Popen.returncode`."
-msgstr ""
-
-#: ../../library/subprocess.rst:1541
-#: ../../library/subprocess.rst:1559
-msgid "Added *encoding* and *errors* arguments."
 msgstr ""
 
 #: ../../library/subprocess.rst:1546

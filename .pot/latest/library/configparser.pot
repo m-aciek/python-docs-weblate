@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-01-23 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -507,7 +507,7 @@ msgid "If none of the named files exist, the :class:`ConfigParser` instance will
 msgstr ""
 
 #: ../../library/configparser.rst:1048
-msgid "The *encoding* parameter.  Previously, all files were read using the default encoding for :func:`open`."
+msgid "Added the *encoding* parameter. Previously, all files were read using the default encoding for :func:`open`."
 msgstr ""
 
 #: ../../library/configparser.rst:1052
@@ -667,7 +667,7 @@ msgid "Exception raised if :meth:`~ConfigParser.add_section` is called with the 
 msgstr ""
 
 #: ../../library/configparser.rst:1294
-msgid "Optional ``source`` and ``lineno`` attributes and arguments to :meth:`!__init__` were added."
+msgid "Added the optional *source* and *lineno* attributes and parameters to :meth:`!__init__`."
 msgstr ""
 
 #: ../../library/configparser.rst:1301
