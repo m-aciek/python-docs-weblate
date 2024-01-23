@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-21 18:18+0000\n"
+"POT-Creation-Date: 2024-01-23 14:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,12 +98,12 @@ msgstr ""
 
 #: ../../library/ftplib.rst:113
 #: ../../library/ftplib.rst:157
-#: ../../library/ftplib.rst:394
+#: ../../library/ftplib.rst:424
 msgid "*source_address* parameter was added."
 msgstr ""
 
 #: ../../library/ftplib.rst:116
-#: ../../library/ftplib.rst:402
+#: ../../library/ftplib.rst:432
 msgid "If the *timeout* parameter is set to be zero, it will raise a :class:`ValueError` to prevent the creation of a non-blocking socket. The *encoding* parameter was added, and the default was changed from Latin-1 to UTF-8 to follow :rfc:`2640`."
 msgstr ""
 
@@ -165,171 +165,201 @@ msgid "Send a simple command string to the server and handle the response.  Retu
 msgstr ""
 
 #: ../../library/ftplib.rst:204
-msgid "Retrieve a file in binary transfer mode.  *cmd* should be an appropriate ``RETR`` command: ``'RETR filename'``. The *callback* function is called for each block of data received, with a single bytes argument giving the data block. The optional *blocksize* argument specifies the maximum chunk size to read on the low-level socket object created to do the actual transfer (which will also be the largest size of the data blocks passed to *callback*).  A reasonable default is chosen. *rest* means the same thing as in the :meth:`transfercmd` method."
+msgid "Retrieve a file in binary transfer mode."
 msgstr ""
 
-#: ../../library/ftplib.rst:216
-msgid "Retrieve a file or directory listing in the encoding specified by the *encoding* parameter at initialization. *cmd* should be an appropriate ``RETR`` command (see :meth:`retrbinary`) or a command such as ``LIST`` or ``NLST`` (usually just the string ``'LIST'``). ``LIST`` retrieves a list of files and information about those files. ``NLST`` retrieves a list of file names. The *callback* function is called for each line with a string argument containing the line with the trailing CRLF stripped.  The default *callback* prints the line to :data:`sys.stdout`."
+#: ../../library/ftplib.rst:206
+#: ../../library/ftplib.rst:250
+msgid "An appropriate ``STOR`` command: :samp:`\"STOR {filename}\"`."
+msgstr ""
+
+#: ../../library/ftplib.rst:209
+msgid "A single parameter callable that is called for each block of data received, with its single argument being the data as :class:`bytes`."
+msgstr ""
+
+#: ../../library/ftplib.rst:215
+msgid "The maximum chunk size to read on the low-level :class:`~socket.socket` object created to do the actual transfer. This also corresponds to the largest size of data that will be passed to *callback*. Defaults to ``8192``."
+msgstr ""
+
+#: ../../library/ftplib.rst:222
+#: ../../library/ftplib.rst:269
+msgid "A ``REST`` command to be sent to the server. See the documentation for the *rest* parameter of the :meth:`transfercmd` method."
 msgstr ""
 
 #: ../../library/ftplib.rst:229
+msgid "Retrieve a file or directory listing in the encoding specified by the *encoding* parameter at initialization. *cmd* should be an appropriate ``RETR`` command (see :meth:`retrbinary`) or a command such as ``LIST`` or ``NLST`` (usually just the string ``'LIST'``). ``LIST`` retrieves a list of files and information about those files. ``NLST`` retrieves a list of file names. The *callback* function is called for each line with a string argument containing the line with the trailing CRLF stripped.  The default *callback* prints the line to :data:`sys.stdout`."
+msgstr ""
+
+#: ../../library/ftplib.rst:242
 msgid "Enable \"passive\" mode if *val* is true, otherwise disable passive mode. Passive mode is on by default."
 msgstr ""
 
-#: ../../library/ftplib.rst:235
-msgid "Store a file in binary transfer mode.  *cmd* should be an appropriate ``STOR`` command: ``\"STOR filename\"``. *fp* is a :term:`file object` (opened in binary mode) which is read until EOF using its :meth:`~io.IOBase.read` method in blocks of size *blocksize* to provide the data to be stored. The *blocksize* argument defaults to 8192.  *callback* is an optional single parameter callable that is called on each block of data after it is sent. *rest* means the same thing as in the :meth:`transfercmd` method."
+#: ../../library/ftplib.rst:248
+msgid "Store a file in binary transfer mode."
 msgstr ""
 
-#: ../../library/ftplib.rst:243
-msgid "*rest* parameter added."
+#: ../../library/ftplib.rst:253
+msgid "A file object (opened in binary mode) which is read until EOF, using its :meth:`~io.RawIOBase.read` method in blocks of size *blocksize* to provide the data to be stored."
 msgstr ""
 
-#: ../../library/ftplib.rst:249
+#: ../../library/ftplib.rst:259
+msgid "The read block size. Defaults to ``8192``."
+msgstr ""
+
+#: ../../library/ftplib.rst:263
+msgid "A single parameter callable that is called for each block of data sent, with its single argument being the data as :class:`bytes`."
+msgstr ""
+
+#: ../../library/ftplib.rst:273
+msgid "The *rest* parameter was added."
+msgstr ""
+
+#: ../../library/ftplib.rst:279
 msgid "Store a file in line mode.  *cmd* should be an appropriate ``STOR`` command (see :meth:`storbinary`).  Lines are read until EOF from the :term:`file object` *fp* (opened in binary mode) using its :meth:`~io.IOBase.readline` method to provide the data to be stored.  *callback* is an optional single parameter callable that is called on each line after it is sent."
 msgstr ""
 
-#: ../../library/ftplib.rst:258
+#: ../../library/ftplib.rst:288
 msgid "Initiate a transfer over the data connection.  If the transfer is active, send an ``EPRT`` or  ``PORT`` command and the transfer command specified by *cmd*, and accept the connection.  If the server is passive, send an ``EPSV`` or ``PASV`` command, connect to it, and start the transfer command.  Either way, return the socket for the connection."
 msgstr ""
 
-#: ../../library/ftplib.rst:264
+#: ../../library/ftplib.rst:294
 msgid "If optional *rest* is given, a ``REST`` command is sent to the server, passing *rest* as an argument.  *rest* is usually a byte offset into the requested file, telling the server to restart sending the file's bytes at the requested offset, skipping over the initial bytes.  Note however that the :meth:`transfercmd` method converts *rest* to a string with the *encoding* parameter specified at initialization, but no check is performed on the string's contents.  If the server does not recognize the ``REST`` command, an :exc:`error_reply` exception will be raised.  If this happens, simply call :meth:`transfercmd` without a *rest* argument."
 msgstr ""
 
-#: ../../library/ftplib.rst:277
+#: ../../library/ftplib.rst:307
 msgid "Like :meth:`transfercmd`, but returns a tuple of the data connection and the expected size of the data.  If the expected size could not be computed, ``None`` will be returned as the expected size.  *cmd* and *rest* means the same thing as in :meth:`transfercmd`."
 msgstr ""
 
-#: ../../library/ftplib.rst:285
+#: ../../library/ftplib.rst:315
 msgid "List a directory in a standardized format by using ``MLSD`` command (:rfc:`3659`).  If *path* is omitted the current directory is assumed. *facts* is a list of strings representing the type of information desired (e.g. ``[\"type\", \"size\", \"perm\"]``).  Return a generator object yielding a tuple of two elements for every file found in path.  First element is the file name, the second one is a dictionary containing facts about the file name.  Content of this dictionary might be limited by the *facts* argument but server is not guaranteed to return all requested facts."
 msgstr ""
 
-#: ../../library/ftplib.rst:299
+#: ../../library/ftplib.rst:329
 msgid "Return a list of file names as returned by the ``NLST`` command.  The optional *argument* is a directory to list (default is the current server directory).  Multiple arguments can be used to pass non-standard options to the ``NLST`` command."
 msgstr ""
 
-#: ../../library/ftplib.rst:304
-#: ../../library/ftplib.rst:316
+#: ../../library/ftplib.rst:334
+#: ../../library/ftplib.rst:346
 msgid "If your server supports the command, :meth:`mlsd` offers a better API."
 msgstr ""
 
-#: ../../library/ftplib.rst:309
+#: ../../library/ftplib.rst:339
 msgid "Produce a directory listing as returned by the ``LIST`` command, printing it to standard output.  The optional *argument* is a directory to list (default is the current server directory).  Multiple arguments can be used to pass non-standard options to the ``LIST`` command.  If the last argument is a function, it is used as a *callback* function as for :meth:`retrlines`; the default prints to :data:`sys.stdout`.  This method returns ``None``."
 msgstr ""
 
-#: ../../library/ftplib.rst:321
+#: ../../library/ftplib.rst:351
 msgid "Rename file *fromname* on the server to *toname*."
 msgstr ""
 
-#: ../../library/ftplib.rst:326
+#: ../../library/ftplib.rst:356
 msgid "Remove the file named *filename* from the server.  If successful, returns the text of the response, otherwise raises :exc:`error_perm` on permission errors or :exc:`error_reply` on other errors."
 msgstr ""
 
-#: ../../library/ftplib.rst:333
+#: ../../library/ftplib.rst:363
 msgid "Set the current directory on the server."
 msgstr ""
 
-#: ../../library/ftplib.rst:338
+#: ../../library/ftplib.rst:368
 msgid "Create a new directory on the server."
 msgstr ""
 
-#: ../../library/ftplib.rst:343
+#: ../../library/ftplib.rst:373
 msgid "Return the pathname of the current directory on the server."
 msgstr ""
 
-#: ../../library/ftplib.rst:348
+#: ../../library/ftplib.rst:378
 msgid "Remove the directory named *dirname* on the server."
 msgstr ""
 
-#: ../../library/ftplib.rst:353
+#: ../../library/ftplib.rst:383
 msgid "Request the size of the file named *filename* on the server.  On success, the size of the file is returned as an integer, otherwise ``None`` is returned. Note that the ``SIZE`` command is not  standardized, but is supported by many common server implementations."
 msgstr ""
 
-#: ../../library/ftplib.rst:361
+#: ../../library/ftplib.rst:391
 msgid "Send a ``QUIT`` command to the server and close the connection. This is the \"polite\" way to close a connection, but it may raise an exception if the server responds with an error to the ``QUIT`` command.  This implies a call to the :meth:`close` method which renders the :class:`FTP` instance useless for subsequent calls (see below)."
 msgstr ""
 
-#: ../../library/ftplib.rst:370
+#: ../../library/ftplib.rst:400
 msgid "Close the connection unilaterally.  This should not be applied to an already closed connection such as after a successful call to :meth:`~FTP.quit`. After this call the :class:`FTP` instance should not be used any more (after a call to :meth:`close` or :meth:`~FTP.quit` you cannot reopen the connection by issuing another :meth:`login` method)."
 msgstr ""
 
-#: ../../library/ftplib.rst:378
+#: ../../library/ftplib.rst:408
 msgid "FTP_TLS objects"
 msgstr ""
 
-#: ../../library/ftplib.rst:383
+#: ../../library/ftplib.rst:413
 msgid "A :class:`FTP` subclass which adds TLS support to FTP as described in :rfc:`4217`. Connect as usual to port 21 implicitly securing the FTP control connection before authenticating. Securing the data connection requires the user to explicitly ask for it by calling the :meth:`prot_p` method.  *context* is a :class:`ssl.SSLContext` object which allows bundling SSL configuration options, certificates and private keys into a single (potentially long-lived) structure.  Please read :ref:`ssl-security` for best practices."
 msgstr ""
 
-#: ../../library/ftplib.rst:397
+#: ../../library/ftplib.rst:427
 msgid "The class now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
-#: ../../library/ftplib.rst:408
+#: ../../library/ftplib.rst:438
 msgid "The deprecated *keyfile* and *certfile* parameters have been removed."
 msgstr ""
 
-#: ../../library/ftplib.rst:411
+#: ../../library/ftplib.rst:441
 msgid "Here's a sample session using the :class:`FTP_TLS` class::"
 msgstr ""
 
-#: ../../library/ftplib.rst:421
+#: ../../library/ftplib.rst:451
 msgid ":class:`!FTP_TLS` class inherits from :class:`FTP`, defining these additional methods and attributes:"
 msgstr ""
 
-#: ../../library/ftplib.rst:426
+#: ../../library/ftplib.rst:456
 msgid "The SSL version to use (defaults to :data:`ssl.PROTOCOL_SSLv23`)."
 msgstr ""
 
-#: ../../library/ftplib.rst:430
+#: ../../library/ftplib.rst:460
 msgid "Set up a secure control connection by using TLS or SSL, depending on what is specified in the :attr:`ssl_version` attribute."
 msgstr ""
 
-#: ../../library/ftplib.rst:433
+#: ../../library/ftplib.rst:463
 msgid "The method now supports hostname check with :attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see :const:`ssl.HAS_SNI`)."
 msgstr ""
 
-#: ../../library/ftplib.rst:440
+#: ../../library/ftplib.rst:470
 msgid "Revert control channel back to plaintext.  This can be useful to take advantage of firewalls that know how to handle NAT with non-secure FTP without opening fixed ports."
 msgstr ""
 
-#: ../../library/ftplib.rst:448
+#: ../../library/ftplib.rst:478
 msgid "Set up secure data connection."
 msgstr ""
 
-#: ../../library/ftplib.rst:452
+#: ../../library/ftplib.rst:482
 msgid "Set up clear text data connection."
 msgstr ""
 
-#: ../../library/ftplib.rst:456
+#: ../../library/ftplib.rst:486
 msgid "Module variables"
 msgstr ""
 
-#: ../../library/ftplib.rst:460
+#: ../../library/ftplib.rst:490
 msgid "Exception raised when an unexpected reply is received from the server."
 msgstr ""
 
-#: ../../library/ftplib.rst:465
+#: ../../library/ftplib.rst:495
 msgid "Exception raised when an error code signifying a temporary error (response codes in the range 400--499) is received."
 msgstr ""
 
-#: ../../library/ftplib.rst:471
+#: ../../library/ftplib.rst:501
 msgid "Exception raised when an error code signifying a permanent error (response codes in the range 500--599) is received."
 msgstr ""
 
-#: ../../library/ftplib.rst:477
+#: ../../library/ftplib.rst:507
 msgid "Exception raised when a reply is received from the server that does not fit the response specifications of the File Transfer Protocol, i.e. begin with a digit in the range 1--5."
 msgstr ""
 
-#: ../../library/ftplib.rst:484
+#: ../../library/ftplib.rst:514
 msgid "The set of all exceptions (as a tuple) that methods of :class:`FTP` instances may raise as a result of problems with the FTP connection (as opposed to programming errors made by the caller).  This set includes the four exceptions listed above as well as :exc:`OSError` and :exc:`EOFError`."
 msgstr ""
 
-#: ../../library/ftplib.rst:494
+#: ../../library/ftplib.rst:524
 msgid "Module :mod:`netrc`"
 msgstr ""
 
-#: ../../library/ftplib.rst:493
+#: ../../library/ftplib.rst:523
 msgid "Parser for the :file:`.netrc` file format.  The file :file:`.netrc` is typically used by FTP clients to load user authentication information before prompting the user."
 msgstr ""
 
