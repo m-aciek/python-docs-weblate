@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 02:13+0000\n"
+"POT-Creation-Date: 2024-01-23 02:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -632,7 +632,7 @@ msgid "If *exist_ok* is false (the default), :exc:`FileExistsError` is raised if
 msgstr ""
 
 #: ../../library/pathlib.rst:1187
-msgid "If *exist_ok* is true, :exc:`FileExistsError` exceptions will be ignored (same behavior as the POSIX ``mkdir -p`` command), but only if the last path component is not an existing non-directory file."
+msgid "If *exist_ok* is true, :exc:`FileExistsError` will not be raised unless the given path already exists in the file system and is not a directory (same behavior as the POSIX ``mkdir -p`` command)."
 msgstr ""
 
 #: ../../library/pathlib.rst:1191
