@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-26 13:16+0000\n"
+"POT-Creation-Date: 2024-01-26 15:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,93 +57,75 @@ msgid "*filename* accepts a :term:`path-like object`."
 msgstr ""
 
 #: ../../library/dbm.rst:61
-msgid "Open the database file *file* and return a corresponding object."
+msgid "Open a database and return the corresponding database object."
+msgstr ""
+
+#: ../../library/dbm.rst:0
+msgid "Parameters"
 msgstr ""
 
 #: ../../library/dbm.rst:63
-msgid "If the database file already exists, the :func:`whichdb` function is used to determine its type and the appropriate module is used; if it does not exist, the first module listed above that can be imported is used."
+msgid "The database file to open.  If the database file already exists, the :func:`whichdb` function is used to determine its type and the appropriate module is used; if it does not exist, the first submodule listed above that can be imported is used."
 msgstr ""
 
-#: ../../library/dbm.rst:67
-#: ../../library/dbm.rst:177
-#: ../../library/dbm.rst:363
-msgid "The optional *flag* argument can be:"
+#: ../../library/dbm.rst:64
+msgid "The database file to open."
 msgstr ""
 
-#: ../../library/dbm.rst:1
-#: ../../library/dbm.rst:191
-msgid "Value"
+#: ../../library/dbm.rst:66
+msgid "If the database file already exists, the :func:`whichdb` function is used to determine its type and the appropriate module is used; if it does not exist, the first submodule listed above that can be imported is used."
 msgstr ""
 
-#: ../../library/dbm.rst:1
-#: ../../library/dbm.rst:191
-msgid "Meaning"
+#: ../../library/dbm.rst:71
+msgid "* ``'r'`` (default), |flag_r| * ``'w'``, |flag_w| * ``'c'``, |flag_c| * ``'n'``, |flag_n|"
 msgstr ""
 
-#: ../../library/dbm.rst:1
-msgid "``'r'`` (default)"
+#: ../../library/dbm.rst:72
+msgid "``'r'`` (default), |flag_r|"
 msgstr ""
 
-#: ../../library/dbm.rst:1
-msgid "|flag_r|"
+#: ../../library/dbm.rst:73
+msgid "``'w'``, |flag_w|"
 msgstr ""
 
-#: ../../library/dbm.rst:1
-msgid "``'w'``"
+#: ../../library/dbm.rst:74
+msgid "``'c'``, |flag_c|"
 msgstr ""
 
-#: ../../library/dbm.rst:1
-msgid "|flag_w|"
-msgstr ""
-
-#: ../../library/dbm.rst:1
-msgid "``'c'``"
-msgstr ""
-
-#: ../../library/dbm.rst:1
-msgid "|flag_c|"
-msgstr ""
-
-#: ../../library/dbm.rst:1
-msgid "``'n'``"
-msgstr ""
-
-#: ../../library/dbm.rst:1
-msgid "|flag_n|"
+#: ../../library/dbm.rst:75
+msgid "``'n'``, |flag_n|"
 msgstr ""
 
 #: ../../library/dbm.rst:77
-#: ../../library/dbm.rst:308
-#: ../../library/dbm.rst:373
-msgid "The optional *mode* argument is the Unix mode of the file, used only when the database has to be created.  It defaults to octal ``0o666`` (and will be modified by the prevailing umask)."
+msgid "The Unix file access mode of the file (default: octal ``0o666``), used only when the database has to be created."
 msgstr ""
 
 #: ../../library/dbm.rst:81
 msgid "*file* accepts a :term:`path-like object`."
 msgstr ""
 
-#: ../../library/dbm.rst:85
-msgid "The object returned by :func:`open` supports the same basic functionality as a :class:`dict`; keys and their corresponding values can be stored, retrieved, and deleted, and the :keyword:`in` operator and the :meth:`!keys` method are available, as well as :meth:`!get` and :meth:`!setdefault`."
+#: ../../library/dbm.rst:84
+msgid "The object returned by :func:`~dbm.open` supports the same basic functionality as a :class:`dict`; keys and their corresponding values can be stored, retrieved, and deleted, and the :keyword:`in` operator and the :meth:`!keys` method are available, as well as :meth:`!get` and :meth:`!setdefault` methods."
 msgstr ""
 
-#: ../../library/dbm.rst:90
-msgid ":meth:`!get` and :meth:`!setdefault` are now available in all database modules."
-msgstr ""
-
-#: ../../library/dbm.rst:93
-msgid "Deleting a key from a read-only database raises database module specific error instead of :exc:`KeyError`."
-msgstr ""
-
-#: ../../library/dbm.rst:97
+#: ../../library/dbm.rst:89
 msgid "Key and values are always stored as :class:`bytes`. This means that when strings are used they are implicitly converted to the default encoding before being stored."
 msgstr ""
 
-#: ../../library/dbm.rst:101
+#: ../../library/dbm.rst:93
 msgid "These objects also support being used in a :keyword:`with` statement, which will automatically close them when done."
 msgstr ""
 
+#: ../../library/dbm.rst:96
+msgid ":meth:`!get` and :meth:`!setdefault` methods are now available for all :mod:`dbm` backends."
+msgstr ""
+
+#: ../../library/dbm.rst:100
+msgid "Added native support for the context management protocol to the objects returned by :func:`~dbm.open`."
+msgstr ""
+
 #: ../../library/dbm.rst:104
-msgid "Added native support for the context management protocol to the objects returned by :func:`.open`."
+msgid "Deleting a key from a read-only database raises a database module specific exception instead of :exc:`KeyError`."
 msgstr ""
 
 #: ../../library/dbm.rst:108
@@ -189,6 +171,53 @@ msgstr ""
 
 #: ../../library/dbm.rst:174
 msgid "Open a GDBM database and return a :class:`!gdbm` object.  The *filename* argument is the name of the database file."
+msgstr ""
+
+#: ../../library/dbm.rst:177
+#: ../../library/dbm.rst:363
+msgid "The optional *flag* argument can be:"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+#: ../../library/dbm.rst:191
+msgid "Value"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+#: ../../library/dbm.rst:191
+msgid "Meaning"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "``'r'`` (default)"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "|flag_r|"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "``'w'``"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "|flag_w|"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "``'c'``"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "|flag_c|"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "``'n'``"
+msgstr ""
+
+#: ../../library/dbm.rst:1
+msgid "|flag_n|"
 msgstr ""
 
 #: ../../library/dbm.rst:187
@@ -291,6 +320,11 @@ msgstr ""
 
 #: ../../library/dbm.rst:298
 msgid "The optional *flag* argument must be one of these values:"
+msgstr ""
+
+#: ../../library/dbm.rst:308
+#: ../../library/dbm.rst:373
+msgid "The optional *mode* argument is the Unix mode of the file, used only when the database has to be created.  It defaults to octal ``0o666`` (and will be modified by the prevailing umask)."
 msgstr ""
 
 #: ../../library/dbm.rst:312
