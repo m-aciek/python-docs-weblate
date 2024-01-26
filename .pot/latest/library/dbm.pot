@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-26 10:37+0000\n"
+"POT-Creation-Date: 2024-01-26 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,10 +53,7 @@ msgid "a string containing the required module name, such as ``'dbm.ndbm'`` or `
 msgstr ""
 
 #: ../../library/dbm.rst:37
-#: ../../library/dbm.rst:211
-#: ../../library/dbm.rst:309
-#: ../../library/dbm.rst:385
-msgid "Accepts :term:`path-like object` for filename."
+msgid "*filename* accepts a :term:`path-like object`."
 msgstr ""
 
 #: ../../library/dbm.rst:57
@@ -121,20 +118,20 @@ msgstr ""
 msgid "The optional *mode* argument is the Unix mode of the file, used only when the database has to be created.  It defaults to octal ``0o666`` (and will be modified by the prevailing umask)."
 msgstr ""
 
-#: ../../library/dbm.rst:78
+#: ../../library/dbm.rst:77
+msgid "*file* accepts a :term:`path-like object`."
+msgstr ""
+
+#: ../../library/dbm.rst:81
 msgid "The object returned by :func:`open` supports the same basic functionality as a :class:`dict`; keys and their corresponding values can be stored, retrieved, and deleted, and the :keyword:`in` operator and the :meth:`!keys` method are available, as well as :meth:`!get` and :meth:`!setdefault`."
 msgstr ""
 
-#: ../../library/dbm.rst:83
+#: ../../library/dbm.rst:86
 msgid ":meth:`!get` and :meth:`!setdefault` are now available in all database modules."
 msgstr ""
 
-#: ../../library/dbm.rst:86
+#: ../../library/dbm.rst:89
 msgid "Deleting a key from a read-only database raises database module specific error instead of :exc:`KeyError`."
-msgstr ""
-
-#: ../../library/dbm.rst:90
-msgid "Accepts :term:`path-like object` for file."
 msgstr ""
 
 #: ../../library/dbm.rst:93
@@ -231,6 +228,12 @@ msgstr ""
 
 #: ../../library/dbm.rst:208
 msgid "In addition to the dictionary-like methods, :class:`gdbm` objects have the following methods:"
+msgstr ""
+
+#: ../../library/dbm.rst:211
+#: ../../library/dbm.rst:309
+#: ../../library/dbm.rst:385
+msgid "Accepts :term:`path-like object` for filename."
 msgstr ""
 
 #: ../../library/dbm.rst:216
