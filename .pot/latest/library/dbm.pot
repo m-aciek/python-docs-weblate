@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-26 15:38+0000\n"
+"POT-Creation-Date: 2024-01-26 18:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,7 @@ msgid "a string containing the required module name, such as ``'dbm.ndbm'`` or `
 msgstr ""
 
 #: ../../library/dbm.rst:37
+#: ../../library/dbm.rst:397
 msgid "*filename* accepts a :term:`path-like object`."
 msgstr ""
 
@@ -174,7 +175,6 @@ msgid "Open a GDBM database and return a :class:`!gdbm` object.  The *filename* 
 msgstr ""
 
 #: ../../library/dbm.rst:177
-#: ../../library/dbm.rst:363
 msgid "The optional *flag* argument can be:"
 msgstr ""
 
@@ -262,7 +262,6 @@ msgstr ""
 
 #: ../../library/dbm.rst:213
 #: ../../library/dbm.rst:315
-#: ../../library/dbm.rst:391
 msgid "Accepts :term:`path-like object` for filename."
 msgstr ""
 
@@ -323,7 +322,6 @@ msgid "The optional *flag* argument must be one of these values:"
 msgstr ""
 
 #: ../../library/dbm.rst:308
-#: ../../library/dbm.rst:373
 msgid "The optional *mode* argument is the Unix mode of the file, used only when the database has to be created.  It defaults to octal ``0o666`` (and will be modified by the prevailing umask)."
 msgstr ""
 
@@ -348,19 +346,39 @@ msgid "The :mod:`dbm.dumb` module is intended as a last resort fallback for the 
 msgstr ""
 
 #: ../../library/dbm.rst:342
-msgid "The :mod:`dbm.dumb` module provides a persistent dictionary-like interface which is written entirely in Python.  Unlike other modules such as :mod:`dbm.gnu` no external library is required.  As with other persistent mappings, the keys and values are always stored as bytes."
+msgid "The :mod:`dbm.dumb` module provides a persistent :class:`dict`-like interface which is written entirely in Python. Unlike other :mod:`dbm` backends, such as :mod:`dbm.gnu`, no external library is required. As with other :mod:`dbm` backends, the keys and values are always stored as :class:`bytes`."
 msgstr ""
 
-#: ../../library/dbm.rst:347
-msgid "The module defines the following:"
+#: ../../library/dbm.rst:349
+msgid "The :mod:`!dbm.dumb` module defines the following:"
 msgstr ""
 
-#: ../../library/dbm.rst:352
+#: ../../library/dbm.rst:353
 msgid "Raised on :mod:`dbm.dumb`-specific errors, such as I/O errors.  :exc:`KeyError` is raised for general mapping errors like specifying an incorrect key."
 msgstr ""
 
-#: ../../library/dbm.rst:358
-msgid "Open a ``dumbdbm`` database and return a dumbdbm object.  The *filename* argument is the basename of the database file (without any specific extensions).  When a dumbdbm database is created, files with :file:`.dat` and :file:`.dir` extensions are created."
+#: ../../library/dbm.rst:359
+msgid "Open a :mod:`!dbm.dumb` database. The returned database object behaves similar to a :term:`mapping`, in addition to providing :meth:`~dumbdbm.sync` and :meth:`~dumbdbm.close` methods."
+msgstr ""
+
+#: ../../library/dbm.rst:364
+msgid "The basename of the database file (without extensions). A new database creates the following files:  - :file:`{filename}.dat` - :file:`{filename}.dir`"
+msgstr ""
+
+#: ../../library/dbm.rst:365
+msgid "The basename of the database file (without extensions). A new database creates the following files:"
+msgstr ""
+
+#: ../../library/dbm.rst:368
+msgid ":file:`{filename}.dat`"
+msgstr ""
+
+#: ../../library/dbm.rst:369
+msgid ":file:`{filename}.dir`"
+msgstr ""
+
+#: ../../library/dbm.rst:372
+msgid ".. csv-table::    :header: \"Value\", \"Meaning\"     ``'r'``, |flag_r|    ``'w'``, |flag_w|    ``'c'`` (default), |flag_c|    ``'n'``, |flag_n|"
 msgstr ""
 
 #: ../../library/dbm.rst:1
@@ -371,28 +389,32 @@ msgstr ""
 msgid "``'c'`` (default)"
 msgstr ""
 
-#: ../../library/dbm.rst:378
-msgid "It is possible to crash the Python interpreter when loading a database with a sufficiently large/complex entry due to stack depth limitations in Python's AST compiler."
-msgstr ""
-
-#: ../../library/dbm.rst:382
-msgid ":func:`.open` always creates a new database when the flag has the value ``'n'``."
+#: ../../library/dbm.rst:381
+msgid "The Unix file access mode of the file (default: ``0o666``), used only when the database has to be created."
 msgstr ""
 
 #: ../../library/dbm.rst:386
-msgid "A database opened with flags ``'r'`` is now read-only.  Opening with flags ``'r'`` and ``'w'`` no longer creates a database if it does not exist."
+msgid "It is possible to crash the Python interpreter when loading a database with a sufficiently large/complex entry due to stack depth limitations in Python's AST compiler."
 msgstr ""
 
-#: ../../library/dbm.rst:394
-msgid "In addition to the methods provided by the :class:`collections.abc.MutableMapping` class, :class:`dumbdbm` objects provide the following methods:"
+#: ../../library/dbm.rst:390
+msgid ":func:`open` always creates a new database when *flag* is ``'n'``."
+msgstr ""
+
+#: ../../library/dbm.rst:393
+msgid "A database opened read-only if *flag* is ``'r'``. A database is not created if it does not exist if *flag* is ``'r'`` or ``'w'``."
 msgstr ""
 
 #: ../../library/dbm.rst:400
+msgid "In addition to the methods provided by the :class:`collections.abc.MutableMapping` class, the following methods are provided:"
+msgstr ""
+
+#: ../../library/dbm.rst:406
 msgid "Synchronize the on-disk directory and data files.  This method is called by the :meth:`Shelve.sync` method."
 msgstr ""
 
-#: ../../library/dbm.rst:405
-msgid "Close the ``dumbdbm`` database."
+#: ../../library/dbm.rst:411
+msgid "Close the database."
 msgstr ""
 
 #: ../../library/dbm.rst:331
