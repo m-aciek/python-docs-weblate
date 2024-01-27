@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 14:13+0000\n"
+"POT-Creation-Date: 2024-01-27 15:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1372,7 +1372,7 @@ msgid "Heap-allocated type objects will now increase their reference count in :c
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1626
-msgid "The new function :c:func:`PyCode_NewWithPosOnlyArgs` allows to create code objects like :c:func:`PyCode_New`, but with an extra *posonlyargcount* parameter for indicating the number of positional-only arguments. (Contributed by Pablo Galindo in :issue:`37221`.)"
+msgid "The new function :c:func:`!PyCode_NewWithPosOnlyArgs` allows to create code objects like :c:func:`!PyCode_New`, but with an extra *posonlyargcount* parameter for indicating the number of positional-only arguments. (Contributed by Pablo Galindo in :issue:`37221`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1631

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 14:13+0000\n"
+"POT-Creation-Date: 2024-01-27 15:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -494,7 +494,7 @@ msgid "Added :class:`~enum.ReprEnum`, which only modifies the :meth:`~object.__r
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:673
-msgid "Changed :meth:`Enum.__format__() <enum.Enum.__format__>` (the default for :func:`format`, :meth:`str.format` and :term:`f-string`\\s) to always produce the same result as :meth:`Enum.__str__()`:  for enums inheriting from :class:`~enum.ReprEnum` it will be the member's value; for all other enums it will be the enum and member name (e.g. ``Color.RED``)."
+msgid "Changed :meth:`Enum.__format__() <enum.Enum.__format__>` (the default for :func:`format`, :meth:`str.format` and :term:`f-string`\\s) to always produce the same result as :meth:`Enum.__str__() <enum.Enum.__str__>`:  for enums inheriting from :class:`~enum.ReprEnum` it will be the member's value; for all other enums it will be the enum and member name (e.g. ``Color.RED``)."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:679
@@ -1421,7 +1421,7 @@ msgid "New opcodes"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1607
-msgid ":opcode:`ASYNC_GEN_WRAP`, :opcode:`RETURN_GENERATOR` and :opcode:`SEND`, used in generators and co-routines."
+msgid ":opcode:`!ASYNC_GEN_WRAP`, :opcode:`RETURN_GENERATOR` and :opcode:`SEND`, used in generators and co-routines."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1610
@@ -1437,7 +1437,7 @@ msgid ":opcode:`MAKE_CELL`, to create :ref:`cell-objects`."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1618
-msgid ":opcode:`CHECK_EG_MATCH`  and  :opcode:`PREP_RERAISE_STAR`, to handle the :ref:`new exception groups and except* <whatsnew311-pep654>` added in :pep:`654`."
+msgid ":opcode:`CHECK_EG_MATCH`  and  :opcode:`!PREP_RERAISE_STAR`, to handle the :ref:`new exception groups and except* <whatsnew311-pep654>` added in :pep:`654`."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1622
@@ -1497,11 +1497,11 @@ msgid ":opcode:`CALL`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:0
-msgid ":opcode:`KW_NAMES`"
+msgid ":opcode:`!KW_NAMES`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:0
-msgid ":opcode:`PRECALL`"
+msgid ":opcode:`!PRECALL`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:0
@@ -1577,11 +1577,11 @@ msgid ":opcode:`JUMP_BACKWARD`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:0
-msgid ":opcode:`POP_JUMP_BACKWARD_IF_* <POP_JUMP_BACKWARD_IF_TRUE>`"
+msgid ":opcode:`!POP_JUMP_BACKWARD_IF_*`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:0
-msgid ":opcode:`POP_JUMP_FORWARD_IF_* <POP_JUMP_FORWARD_IF_TRUE>`"
+msgid ":opcode:`!POP_JUMP_FORWARD_IF_*`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1653
@@ -1605,7 +1605,7 @@ msgid ":keyword:`with` block setup"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1663
-msgid "All jump opcodes are now relative, including the existing :opcode:`JUMP_IF_TRUE_OR_POP` and :opcode:`JUMP_IF_FALSE_OR_POP`. The argument is now an offset from the current instruction rather than an absolute location."
+msgid "All jump opcodes are now relative, including the existing :opcode:`!JUMP_IF_TRUE_OR_POP` and :opcode:`!JUMP_IF_FALSE_OR_POP`. The argument is now an offset from the current instruction rather than an absolute location."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1674
@@ -2217,7 +2217,7 @@ msgid "(Contributed by Victor Stinner in :issue:`45085`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1970
-msgid "Removed the :mod:`distutils` ``bdist_msi`` command deprecated in Python 3.9. Use ``bdist_wheel`` (wheel packages) instead. (Contributed by Hugo van Kemenade in :issue:`45124`.)"
+msgid "Removed the :mod:`!distutils` ``bdist_msi`` command deprecated in Python 3.9. Use ``bdist_wheel`` (wheel packages) instead. (Contributed by Hugo van Kemenade in :issue:`45124`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:1974
@@ -2506,7 +2506,7 @@ msgid ":c:func:`_PyFrameEvalFunction` now takes ``_PyInterpreterFrame*`` as its 
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2298
-msgid ":c:func:`PyCode_New` and :c:func:`PyCode_NewWithPosOnlyArgs` now take an additional ``exception_table`` argument. Using these functions should be avoided, if at all possible. To get a custom code object: create a code object using the compiler, then get a modified version with the ``replace`` method."
+msgid ":c:func:`!PyCode_New` and :c:func:`!PyCode_NewWithPosOnlyArgs` now take an additional ``exception_table`` argument. Using these functions should be avoided, if at all possible. To get a custom code object: create a code object using the compiler, then get a modified version with the ``replace`` method."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2304
@@ -2563,7 +2563,7 @@ msgid "The non-limited API files ``cellobject.h``, ``classobject.h``, ``code.h``
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2405
-msgid "The :c:func:`PyUnicode_CHECK_INTERNED` macro has been excluded from the limited C API. It was never usable there, because it used internal structures which are not available in the limited C API. (Contributed by Victor Stinner in :issue:`46007`.)"
+msgid "The :c:func:`!PyUnicode_CHECK_INTERNED` macro has been excluded from the limited C API. It was never usable there, because it used internal structures which are not available in the limited C API. (Contributed by Victor Stinner in :issue:`46007`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2410
@@ -2695,7 +2695,7 @@ msgid "The Python frame object is now created lazily. A side effect is that the 
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2466
-msgid "Debuggers that accessed the :attr:`~frame.f_locals` directly *must* call :c:func:`PyFrame_GetLocals` instead. They no longer need to call :c:func:`PyFrame_FastToLocalsWithError` or :c:func:`PyFrame_LocalsToFast`, in fact they should not call those functions. The necessary updating of the frame is now managed by the virtual machine."
+msgid "Debuggers that accessed the :attr:`~frame.f_locals` directly *must* call :c:func:`PyFrame_GetLocals` instead. They no longer need to call :c:func:`!PyFrame_FastToLocalsWithError` or :c:func:`!PyFrame_LocalsToFast`, in fact they should not call those functions. The necessary updating of the frame is now managed by the virtual machine."
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2472
@@ -2851,11 +2851,11 @@ msgid ":c:func:`!PyUnicode_GetSize`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2607
-msgid ":c:func:`PyUnicode_IS_COMPACT`"
+msgid ":c:func:`!PyUnicode_IS_COMPACT`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2608
-msgid ":c:func:`PyUnicode_IS_READY`"
+msgid ":c:func:`!PyUnicode_IS_READY`"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2609
@@ -2959,7 +2959,7 @@ msgid "(Contributed by Victor Stinner in :issue:`45474`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2662
-msgid "Exclude :c:func:`PyWeakref_GET_OBJECT` from the limited C API. It never worked since the :c:type:`PyWeakReference` structure is opaque in the limited C API. (Contributed by Victor Stinner in :issue:`35134`.)"
+msgid "Exclude :c:func:`PyWeakref_GET_OBJECT` from the limited C API. It never worked since the :c:type:`!PyWeakReference` structure is opaque in the limited C API. (Contributed by Victor Stinner in :issue:`35134`.)"
 msgstr ""
 
 #: ../../whatsnew/3.11.rst:2667
