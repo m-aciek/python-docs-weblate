@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-27 15:16+0000\n"
+"POT-Creation-Date: 2024-01-28 20:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3032,4 +3032,28 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:2699
 msgid "See :pep:`624` for details and :pep:`migration guidance <624#alternative-apis>`. (Contributed by Inada Naoki in :issue:`44029`.)"
+msgstr ""
+
+#: ../../whatsnew/3.11.rst:2705
+msgid "Notable changes in 3.11.4"
+msgstr ""
+
+#: ../../whatsnew/3.11.rst:2708
+msgid "tarfile"
+msgstr ""
+
+#: ../../whatsnew/3.11.rst:2710
+msgid "The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`, have a new a *filter* argument that allows limiting tar features than may be surprising or dangerous, such as creating files outside the destination directory. See :ref:`tarfile-extraction-filter` for details. In Python 3.12, use without the *filter* argument will show a :exc:`DeprecationWarning`. In Python 3.14, the default will switch to ``'data'``. (Contributed by Petr Viktorin in :pep:`706`.)"
+msgstr ""
+
+#: ../../whatsnew/3.11.rst:2722
+msgid "Notable changes in 3.11.5"
+msgstr ""
+
+#: ../../whatsnew/3.11.rst:2725
+msgid "OpenSSL"
+msgstr ""
+
+#: ../../whatsnew/3.11.rst:2727
+msgid "Windows builds and macOS installers from python.org now use OpenSSL 3.0."
 msgstr ""
