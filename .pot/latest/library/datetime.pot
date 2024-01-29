@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-01-29 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "**Source code:** :source:`Lib/datetime.py`"
 msgstr ""
 
 #: ../../library/datetime.rst:17
-msgid "The :mod:`datetime` module supplies classes for manipulating dates and times."
+msgid "The :mod:`!datetime` module supplies classes for manipulating dates and times."
 msgstr ""
 
 #: ../../library/datetime.rst:19
@@ -97,7 +97,7 @@ msgid "For applications requiring aware objects, :class:`.datetime` and :class:`
 msgstr ""
 
 #: ../../library/datetime.rst:72
-msgid "Only one concrete :class:`tzinfo` class, the :class:`timezone` class, is supplied by the :mod:`datetime` module. The :class:`timezone` class can represent simple timezones with fixed offsets from UTC, such as UTC itself or North American EST and EDT timezones. Supporting timezones at deeper levels of detail is up to the application. The rules for time adjustment across the world are more political than rational, change frequently, and there is no standard suitable for every application aside from UTC."
+msgid "Only one concrete :class:`tzinfo` class, the :class:`timezone` class, is supplied by the :mod:`!datetime` module. The :class:`timezone` class can represent simple timezones with fixed offsets from UTC, such as UTC itself or North American EST and EDT timezones. Supporting timezones at deeper levels of detail is up to the application. The rules for time adjustment across the world are more political than rational, change frequently, and there is no standard suitable for every application aside from UTC."
 msgstr ""
 
 #: ../../library/datetime.rst:81
@@ -105,7 +105,7 @@ msgid "Constants"
 msgstr ""
 
 #: ../../library/datetime.rst:83
-msgid "The :mod:`datetime` module exports the following constants:"
+msgid "The :mod:`!datetime` module exports the following constants:"
 msgstr ""
 
 #: ../../library/datetime.rst:87
@@ -714,7 +714,7 @@ msgid "This is exact, and cannot overflow. timedelta.seconds and timedelta.micro
 msgstr ""
 
 #: ../../library/datetime.rst:630
-msgid "In other words, ``date1 < date2`` if and only if ``date1.toordinal() < date2.toordinal()``. Date comparison raises :exc:`TypeError` if the other comparand isn't also a :class:`date` object. However, ``NotImplemented`` is returned instead if the other comparand has a :meth:`timetuple` attribute. This hook gives other kinds of date objects a chance at implementing mixed-type comparison. If not, when a :class:`date` object is compared to an object of a different type, :exc:`TypeError` is raised unless the comparison is ``==`` or ``!=``. The latter cases return :const:`False` or :const:`True`, respectively."
+msgid "In other words, ``date1 < date2`` if and only if ``date1.toordinal() < date2.toordinal()``. Date comparison raises :exc:`TypeError` if the other comparand isn't also a :class:`date` object. However, ``NotImplemented`` is returned instead if the other comparand has a :attr:`~date.timetuple` attribute. This hook gives other kinds of date objects a chance at implementing mixed-type comparison. If not, when a :class:`date` object is compared to an object of a different type, :exc:`TypeError` is raised unless the comparison is ``==`` or ``!=``. The latter cases return :const:`False` or :const:`True`, respectively."
 msgstr ""
 
 #: ../../library/datetime.rst:640
@@ -1159,7 +1159,7 @@ msgid "Equality comparisons between aware and naive :class:`.datetime` instances
 msgstr ""
 
 #: ../../library/datetime.rst:1211
-msgid "In order to stop comparison from falling back to the default scheme of comparing object addresses, datetime comparison normally raises :exc:`TypeError` if the other comparand isn't also a :class:`.datetime` object. However, ``NotImplemented`` is returned instead if the other comparand has a :meth:`timetuple` attribute. This hook gives other kinds of date objects a chance at implementing mixed-type comparison. If not, when a :class:`.datetime` object is compared to an object of a different type, :exc:`TypeError` is raised unless the comparison is ``==`` or ``!=``. The latter cases return :const:`False` or :const:`True`, respectively."
+msgid "In order to stop comparison from falling back to the default scheme of comparing object addresses, datetime comparison normally raises :exc:`TypeError` if the other comparand isn't also a :class:`.datetime` object. However, ``NotImplemented`` is returned instead if the other comparand has a :attr:`~.datetime.timetuple` attribute. This hook gives other kinds of date objects a chance at implementing mixed-type comparison. If not, when a :class:`.datetime` object is compared to an object of a different type, :exc:`TypeError` is raised unless the comparison is ``==`` or ``!=``. The latter cases return :const:`False` or :const:`True`, respectively."
 msgstr ""
 
 #: ../../library/datetime.rst:1225
@@ -1243,15 +1243,15 @@ msgid "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns ``self.tzi
 msgstr ""
 
 #: ../../library/datetime.rst:1342
-msgid "where ``yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1`` is the day number within the current year starting with ``1`` for January 1st. The :attr:`tm_isdst` flag of the result is set according to the :meth:`dst` method: :attr:`.tzinfo` is ``None`` or :meth:`dst` returns ``None``, :attr:`tm_isdst` is set to ``-1``; else if :meth:`dst` returns a non-zero value, :attr:`tm_isdst` is set to ``1``; else :attr:`tm_isdst` is set to ``0``."
+msgid "where ``yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1`` is the day number within the current year starting with ``1`` for January 1st. The :attr:`~time.struct_time.tm_isdst` flag of the result is set according to the :meth:`dst` method: :attr:`.tzinfo` is ``None`` or :meth:`dst` returns ``None``, :attr:`!tm_isdst` is set to ``-1``; else if :meth:`dst` returns a non-zero value, :attr:`!tm_isdst` is set to ``1``; else :attr:`!tm_isdst` is set to ``0``."
 msgstr ""
 
 #: ../../library/datetime.rst:1353
-msgid "If :class:`.datetime` instance *d* is naive, this is the same as ``d.timetuple()`` except that :attr:`tm_isdst` is forced to 0 regardless of what ``d.dst()`` returns. DST is never in effect for a UTC time."
+msgid "If :class:`.datetime` instance *d* is naive, this is the same as ``d.timetuple()`` except that :attr:`~.time.struct_time.tm_isdst` is forced to 0 regardless of what ``d.dst()`` returns. DST is never in effect for a UTC time."
 msgstr ""
 
 #: ../../library/datetime.rst:1357
-msgid "If *d* is aware, *d* is normalized to UTC time, by subtracting ``d.utcoffset()``, and a :class:`time.struct_time` for the normalized time is returned. :attr:`tm_isdst` is forced to 0. Note that an :exc:`OverflowError` may be raised if *d*.year was ``MINYEAR`` or ``MAXYEAR`` and UTC adjustment spills over a year boundary."
+msgid "If *d* is aware, *d* is normalized to UTC time, by subtracting ``d.utcoffset()``, and a :class:`time.struct_time` for the normalized time is returned. :attr:`!tm_isdst` is forced to 0. Note that an :exc:`OverflowError` may be raised if *d*.year was ``MINYEAR`` or ``MAXYEAR`` and UTC adjustment spills over a year boundary."
 msgstr ""
 
 #: ../../library/datetime.rst:1366
@@ -1404,7 +1404,7 @@ msgid "Examples of Usage: :class:`.datetime`"
 msgstr ""
 
 #: ../../library/datetime.rst:1547
-msgid "Examples of working with :class:`~datetime.datetime` objects:"
+msgid "Examples of working with :class:`.datetime` objects:"
 msgstr ""
 
 #: ../../library/datetime.rst:1600
@@ -1452,11 +1452,11 @@ msgid ":class:`.time` objects support comparison of :class:`.time` to :class:`.t
 msgstr ""
 
 #: ../../library/datetime.rst:1757
-msgid "If both comparands are aware, and have the same :attr:`~time.tzinfo` attribute, the common :attr:`~time.tzinfo` attribute is ignored and the base times are compared. If both comparands are aware and have different :attr:`~time.tzinfo` attributes, the comparands are first adjusted by subtracting their UTC offsets (obtained from ``self.utcoffset()``). In order to stop mixed-type comparisons from falling back to the default comparison by object address, when a :class:`.time` object is compared to an object of a different type, :exc:`TypeError` is raised unless the comparison is ``==`` or ``!=``. The latter cases return :const:`False` or :const:`True`, respectively."
+msgid "If both comparands are aware, and have the same :attr:`~.time.tzinfo` attribute, the common :attr:`!tzinfo` attribute is ignored and the base times are compared. If both comparands are aware and have different :attr:`!tzinfo` attributes, the comparands are first adjusted by subtracting their UTC offsets (obtained from ``self.utcoffset()``). In order to stop mixed-type comparisons from falling back to the default comparison by object address, when a :class:`.time` object is compared to an object of a different type, :exc:`TypeError` is raised unless the comparison is ``==`` or ``!=``. The latter cases return :const:`False` or :const:`True`, respectively."
 msgstr ""
 
 #: ../../library/datetime.rst:1767
-msgid "Equality comparisons between aware and naive :class:`~datetime.time` instances don't raise :exc:`TypeError`."
+msgid "Equality comparisons between aware and naive :class:`.time` instances don't raise :exc:`TypeError`."
 msgstr ""
 
 #: ../../library/datetime.rst:1771
@@ -1560,7 +1560,7 @@ msgid "An instance of (a concrete subclass of) :class:`tzinfo` can be passed to 
 msgstr ""
 
 #: ../../library/datetime.rst:1973
-msgid "You need to derive a concrete subclass, and (at least) supply implementations of the standard :class:`tzinfo` methods needed by the :class:`.datetime` methods you use. The :mod:`datetime` module provides :class:`timezone`, a simple concrete subclass of :class:`tzinfo` which can represent timezones with fixed offset from UTC such as UTC itself or North American EST and EDT."
+msgid "You need to derive a concrete subclass, and (at least) supply implementations of the standard :class:`tzinfo` methods needed by the :class:`.datetime` methods you use. The :mod:`!datetime` module provides :class:`timezone`, a simple concrete subclass of :class:`tzinfo` which can represent timezones with fixed offset from UTC such as UTC itself or North American EST and EDT."
 msgstr ""
 
 #: ../../library/datetime.rst:1980
@@ -1568,7 +1568,7 @@ msgid "Special requirement for pickling:  A :class:`tzinfo` subclass must have a
 msgstr ""
 
 #: ../../library/datetime.rst:1986
-msgid "A concrete subclass of :class:`tzinfo` may need to implement the following methods. Exactly which methods are needed depends on the uses made of aware :mod:`datetime` objects. If in doubt, simply implement all of them."
+msgid "A concrete subclass of :class:`tzinfo` may need to implement the following methods. Exactly which methods are needed depends on the uses made of aware :mod:`!datetime` objects. If in doubt, simply implement all of them."
 msgstr ""
 
 #: ../../library/datetime.rst:1993
@@ -1592,7 +1592,7 @@ msgid "Return the daylight saving time (DST) adjustment, as a :class:`timedelta`
 msgstr ""
 
 #: ../../library/datetime.rst:2023
-msgid "Return ``timedelta(0)`` if DST is not in effect. If DST is in effect, return the offset as a :class:`timedelta` object (see :meth:`utcoffset` for details). Note that DST offset, if applicable, has already been added to the UTC offset returned by :meth:`utcoffset`, so there's no need to consult :meth:`dst` unless you're interested in obtaining DST info separately. For example, :meth:`datetime.timetuple` calls its :attr:`~.datetime.tzinfo` attribute's :meth:`dst` method to determine how the :attr:`tm_isdst` flag should be set, and :meth:`tzinfo.fromutc` calls :meth:`dst` to account for DST changes when crossing time zones."
+msgid "Return ``timedelta(0)`` if DST is not in effect. If DST is in effect, return the offset as a :class:`timedelta` object (see :meth:`utcoffset` for details). Note that DST offset, if applicable, has already been added to the UTC offset returned by :meth:`utcoffset`, so there's no need to consult :meth:`dst` unless you're interested in obtaining DST info separately. For example, :meth:`datetime.timetuple` calls its :attr:`~.datetime.tzinfo` attribute's :meth:`dst` method to determine how the :attr:`~time.struct_time.tm_isdst` flag should be set, and :meth:`tzinfo.fromutc` calls :meth:`dst` to account for DST changes when crossing time zones."
 msgstr ""
 
 #: ../../library/datetime.rst:2033
@@ -1604,7 +1604,7 @@ msgid "``tz.utcoffset(dt) - tz.dst(dt)``"
 msgstr ""
 
 #: ../../library/datetime.rst:2038
-msgid "must return the same result for every :class:`.datetime` *dt* with ``dt.tzinfo == tz``  For sane :class:`tzinfo` subclasses, this expression yields the time zone's \"standard offset\", which should not depend on the date or the time, but only on geographic location. The implementation of :meth:`datetime.astimezone` relies on this, but cannot detect violations; it's the programmer's responsibility to ensure it. If a :class:`tzinfo` subclass cannot guarantee this, it may be able to override the default implementation of :meth:`tzinfo.fromutc` to work correctly with :meth:`astimezone` regardless."
+msgid "must return the same result for every :class:`.datetime` *dt* with ``dt.tzinfo == tz``  For sane :class:`tzinfo` subclasses, this expression yields the time zone's \"standard offset\", which should not depend on the date or the time, but only on geographic location. The implementation of :meth:`datetime.astimezone` relies on this, but cannot detect violations; it's the programmer's responsibility to ensure it. If a :class:`tzinfo` subclass cannot guarantee this, it may be able to override the default implementation of :meth:`tzinfo.fromutc` to work correctly with :meth:`~.datetime.astimezone` regardless."
 msgstr ""
 
 #: ../../library/datetime.rst:2047
@@ -1620,7 +1620,7 @@ msgid "The default implementation of :meth:`dst` raises :exc:`NotImplementedErro
 msgstr ""
 
 #: ../../library/datetime.rst:2073
-msgid "Return the time zone name corresponding to the :class:`.datetime` object *dt*, as a string. Nothing about string names is defined by the :mod:`datetime` module, and there's no requirement that it mean anything in particular. For example, \"GMT\", \"UTC\", \"-500\", \"-5:00\", \"EDT\", \"US/Eastern\", \"America/New York\" are all valid replies. Return ``None`` if a string name isn't known. Note that this is a method rather than a fixed string primarily because some :class:`tzinfo` subclasses will wish to return different names depending on the specific value of *dt* passed, especially if the :class:`tzinfo` class is accounting for daylight time."
+msgid "Return the time zone name corresponding to the :class:`.datetime` object *dt*, as a string. Nothing about string names is defined by the :mod:`!datetime` module, and there's no requirement that it mean anything in particular. For example, \"GMT\", \"UTC\", \"-500\", \"-5:00\", \"EDT\", \"US/Eastern\", \"America/New York\" are all valid replies. Return ``None`` if a string name isn't known. Note that this is a method rather than a fixed string primarily because some :class:`tzinfo` subclasses will wish to return different names depending on the specific value of *dt* passed, especially if the :class:`tzinfo` class is accounting for daylight time."
 msgstr ""
 
 #: ../../library/datetime.rst:2083
@@ -1648,7 +1648,7 @@ msgid "This is called from the default :class:`datetime.astimezone()` implementa
 msgstr ""
 
 #: ../../library/datetime.rst:2115
-msgid "Most :class:`tzinfo` subclasses should be able to inherit the default :meth:`fromutc` implementation without problems. It's strong enough to handle fixed-offset time zones, and time zones accounting for both standard and daylight time, and the latter even if the DST transition times differ in different years. An example of a time zone the default :meth:`fromutc` implementation may not handle correctly in all cases is one where the standard offset (from UTC) depends on the specific date and time passed, which can happen for political reasons. The default implementations of :meth:`astimezone` and :meth:`fromutc` may not produce the result you want if the result is one of the hours straddling the moment the standard offset changes."
+msgid "Most :class:`tzinfo` subclasses should be able to inherit the default :meth:`fromutc` implementation without problems. It's strong enough to handle fixed-offset time zones, and time zones accounting for both standard and daylight time, and the latter even if the DST transition times differ in different years. An example of a time zone the default :meth:`fromutc` implementation may not handle correctly in all cases is one where the standard offset (from UTC) depends on the specific date and time passed, which can happen for political reasons. The default implementations of :meth:`~.datetime.astimezone` and :meth:`fromutc` may not produce the result you want if the result is one of the hours straddling the moment the standard offset changes."
 msgstr ""
 
 #: ../../library/datetime.rst:2126
@@ -1668,15 +1668,15 @@ msgid "When DST starts (the \"start\" line), the local wall clock leaps from 1:5
 msgstr ""
 
 #: ../../library/datetime.rst:2183
-msgid "When DST ends (the \"end\" line), there's a potentially worse problem: there's an hour that can't be spelled unambiguously in local wall time: the last hour of daylight time. In Eastern, that's times of the form 5:MM UTC on the day daylight time ends. The local wall clock leaps from 1:59 (daylight time) back to 1:00 (standard time) again. Local times of the form 1:MM are ambiguous. :meth:`astimezone` mimics the local clock's behavior by mapping two adjacent UTC hours into the same local hour then. In the Eastern example, UTC times of the form 5:MM and 6:MM both map to 1:MM when converted to Eastern, but earlier times have the :attr:`~datetime.fold` attribute set to 0 and the later times have it set to 1. For example, at the Fall back transition of 2016, we get::"
+msgid "When DST ends (the \"end\" line), there's a potentially worse problem: there's an hour that can't be spelled unambiguously in local wall time: the last hour of daylight time. In Eastern, that's times of the form 5:MM UTC on the day daylight time ends. The local wall clock leaps from 1:59 (daylight time) back to 1:00 (standard time) again. Local times of the form 1:MM are ambiguous. :meth:`~.datetime.astimezone` mimics the local clock's behavior by mapping two adjacent UTC hours into the same local hour then. In the Eastern example, UTC times of the form 5:MM and 6:MM both map to 1:MM when converted to Eastern, but earlier times have the :attr:`~.datetime.fold` attribute set to 0 and the later times have it set to 1. For example, at the Fall back transition of 2016, we get::"
 msgstr ""
 
 #: ../../library/datetime.rst:2205
-msgid "Note that the :class:`.datetime` instances that differ only by the value of the :attr:`~datetime.fold` attribute are considered equal in comparisons."
+msgid "Note that the :class:`.datetime` instances that differ only by the value of the :attr:`~.datetime.fold` attribute are considered equal in comparisons."
 msgstr ""
 
 #: ../../library/datetime.rst:2208
-msgid "Applications that can't bear wall-time ambiguities should explicitly check the value of the :attr:`~datetime.fold` attribute or avoid using hybrid :class:`tzinfo` subclasses; there are no ambiguities when using :class:`timezone`, or any other fixed-offset :class:`tzinfo` subclass (such as a class representing only EST (fixed offset -5 hours), or only EDT (fixed offset -4 hours))."
+msgid "Applications that can't bear wall-time ambiguities should explicitly check the value of the :attr:`~.datetime.fold` attribute or avoid using hybrid :class:`tzinfo` subclasses; there are no ambiguities when using :class:`timezone`, or any other fixed-offset :class:`tzinfo` subclass (such as a class representing only EST (fixed offset -5 hours), or only EDT (fixed offset -4 hours))."
 msgstr ""
 
 #: ../../library/datetime.rst:2222
@@ -1684,7 +1684,7 @@ msgid ":mod:`zoneinfo`"
 msgstr ""
 
 #: ../../library/datetime.rst:2217
-msgid "The :mod:`datetime` module has a basic :class:`timezone` class (for handling arbitrary fixed offsets from UTC) and its :attr:`timezone.utc` attribute (a UTC timezone instance)."
+msgid "The :mod:`!datetime` module has a basic :class:`timezone` class (for handling arbitrary fixed offsets from UTC) and its :attr:`timezone.utc` attribute (a UTC timezone instance)."
 msgstr ""
 
 #: ../../library/datetime.rst:2221
@@ -1749,7 +1749,7 @@ msgid "The UTC timezone, ``timezone(timedelta(0))``."
 msgstr ""
 
 #: ../../library/datetime.rst:2311
-msgid ":meth:`strftime` and :meth:`strptime` Behavior"
+msgid ":meth:`~.datetime.strftime` and :meth:`~.datetime.strptime` Behavior"
 msgstr ""
 
 #: ../../library/datetime.rst:2313
@@ -1761,7 +1761,7 @@ msgid "Conversely, the :meth:`datetime.strptime` class method creates a :class:`
 msgstr ""
 
 #: ../../library/datetime.rst:2321
-msgid "The table below provides a high-level comparison of :meth:`strftime` versus :meth:`strptime`:"
+msgid "The table below provides a high-level comparison of :meth:`~.datetime.strftime` versus :meth:`~.datetime.strptime`:"
 msgstr ""
 
 #: ../../library/datetime.rst:2325
@@ -1821,7 +1821,7 @@ msgid "``strptime(date_string, format)``"
 msgstr ""
 
 #: ../../library/datetime.rst:2340
-msgid ":meth:`strftime` and :meth:`strptime` Format Codes"
+msgid ":meth:`~.datetime.strftime` and :meth:`~.datetime.strptime` Format Codes"
 msgstr ""
 
 #: ../../library/datetime.rst:2342
@@ -2261,11 +2261,11 @@ msgid "(empty), +00:00, -04:00, +10:30, +06:34:15, -03:07:12.345216"
 msgstr ""
 
 #: ../../library/datetime.rst:2479
-msgid "These may not be available on all platforms when used with the :meth:`strftime` method. The ISO 8601 year and ISO 8601 week directives are not interchangeable with the year and week number directives above. Calling :meth:`strptime` with incomplete or ambiguous ISO 8601 directives will raise a :exc:`ValueError`."
+msgid "These may not be available on all platforms when used with the :meth:`~.datetime.strftime` method. The ISO 8601 year and ISO 8601 week directives are not interchangeable with the year and week number directives above. Calling :meth:`~.datetime.strptime` with incomplete or ambiguous ISO 8601 directives will raise a :exc:`ValueError`."
 msgstr ""
 
 #: ../../library/datetime.rst:2484
-msgid "The full set of format codes supported varies across platforms, because Python calls the platform C library's :func:`strftime` function, and platform variations are common. To see the full set of format codes supported on your platform, consult the :manpage:`strftime(3)` documentation. There are also differences between platforms in handling of unsupported format specifiers."
+msgid "The full set of format codes supported varies across platforms, because Python calls the platform C library's :c:func:`strftime` function, and platform variations are common. To see the full set of format codes supported on your platform, consult the :manpage:`strftime(3)` documentation. There are also differences between platforms in handling of unsupported format specifiers."
 msgstr ""
 
 #: ../../library/datetime.rst:2490
@@ -2281,11 +2281,11 @@ msgid "Technical Detail"
 msgstr ""
 
 #: ../../library/datetime.rst:2499
-msgid "Broadly speaking, ``d.strftime(fmt)`` acts like the :mod:`time` module's ``time.strftime(fmt, d.timetuple())`` although not all objects support a :meth:`timetuple` method."
+msgid "Broadly speaking, ``d.strftime(fmt)`` acts like the :mod:`time` module's ``time.strftime(fmt, d.timetuple())`` although not all objects support a :meth:`~date.timetuple` method."
 msgstr ""
 
 #: ../../library/datetime.rst:2503
-msgid "For the :meth:`datetime.strptime` class method, the default value is ``1900-01-01T00:00:00.000``: any components not specified in the format string will be pulled from the default value. [#]_"
+msgid "For the :meth:`.datetime.strptime` class method, the default value is ``1900-01-01T00:00:00.000``: any components not specified in the format string will be pulled from the default value. [#]_"
 msgstr ""
 
 #: ../../library/datetime.rst:2507
@@ -2313,27 +2313,27 @@ msgid "Because the format depends on the current locale, care should be taken wh
 msgstr ""
 
 #: ../../library/datetime.rst:2538
-msgid "The :meth:`strptime` method can parse years in the full [1, 9999] range, but years < 1000 must be zero-filled to 4-digit width."
+msgid "The :meth:`~.datetime.strptime` method can parse years in the full [1, 9999] range, but years < 1000 must be zero-filled to 4-digit width."
 msgstr ""
 
 #: ../../library/datetime.rst:2541
-msgid "In previous versions, :meth:`strftime` method was restricted to years >= 1900."
+msgid "In previous versions, :meth:`~.datetime.strftime` method was restricted to years >= 1900."
 msgstr ""
 
 #: ../../library/datetime.rst:2545
-msgid "In version 3.2, :meth:`strftime` method was restricted to years >= 1000."
+msgid "In version 3.2, :meth:`~.datetime.strftime` method was restricted to years >= 1000."
 msgstr ""
 
 #: ../../library/datetime.rst:2550
-msgid "When used with the :meth:`strptime` method, the ``%p`` directive only affects the output hour field if the ``%I`` directive is used to parse the hour."
+msgid "When used with the :meth:`~.datetime.strptime` method, the ``%p`` directive only affects the output hour field if the ``%I`` directive is used to parse the hour."
 msgstr ""
 
 #: ../../library/datetime.rst:2554
-msgid "Unlike the :mod:`time` module, the :mod:`datetime` module does not support leap seconds."
+msgid "Unlike the :mod:`time` module, the :mod:`!datetime` module does not support leap seconds."
 msgstr ""
 
 #: ../../library/datetime.rst:2558
-msgid "When used with the :meth:`strptime` method, the ``%f`` directive accepts from one to six digits and zero pads on the right. ``%f`` is an extension to the set of format characters in the C standard (but implemented separately in datetime objects, and therefore always available)."
+msgid "When used with the :meth:`~.datetime.strptime` method, the ``%f`` directive accepts from one to six digits and zero pads on the right. ``%f`` is an extension to the set of format characters in the C standard (but implemented separately in datetime objects, and therefore always available)."
 msgstr ""
 
 #: ../../library/datetime.rst:2565
@@ -2345,11 +2345,11 @@ msgid "For an aware object:"
 msgstr ""
 
 #: ../../library/datetime.rst:2571
-msgid ":meth:`utcoffset` is transformed into a string of the form ``±HHMM[SS[.ffffff]]``, where ``HH`` is a 2-digit string giving the number of UTC offset hours, ``MM`` is a 2-digit string giving the number of UTC offset minutes, ``SS`` is a 2-digit string giving the number of UTC offset seconds and ``ffffff`` is a 6-digit string giving the number of UTC offset microseconds. The ``ffffff`` part is omitted when the offset is a whole number of seconds and both the ``ffffff`` and the ``SS`` part is omitted when the offset is a whole number of minutes. For example, if :meth:`utcoffset` returns ``timedelta(hours=-3, minutes=-30)``, ``%z`` is replaced with the string ``'-0330'``."
+msgid ":meth:`~.datetime.utcoffset` is transformed into a string of the form ``±HHMM[SS[.ffffff]]``, where ``HH`` is a 2-digit string giving the number of UTC offset hours, ``MM`` is a 2-digit string giving the number of UTC offset minutes, ``SS`` is a 2-digit string giving the number of UTC offset seconds and ``ffffff`` is a 6-digit string giving the number of UTC offset microseconds. The ``ffffff`` part is omitted when the offset is a whole number of seconds and both the ``ffffff`` and the ``SS`` part is omitted when the offset is a whole number of minutes. For example, if :meth:`~.datetime.utcoffset` returns ``timedelta(hours=-3, minutes=-30)``, ``%z`` is replaced with the string ``'-0330'``."
 msgstr ""
 
 #: ../../library/datetime.rst:2585
-msgid "When the ``%z`` directive is provided to the  :meth:`strptime` method, the UTC offsets can have a colon as a separator between hours, minutes and seconds. For example, ``'+01:00:00'`` will be parsed as an offset of one hour. In addition, providing ``'Z'`` is identical to ``'+00:00'``."
+msgid "When the ``%z`` directive is provided to the  :meth:`~.datetime.strptime` method, the UTC offsets can have a colon as a separator between hours, minutes and seconds. For example, ``'+01:00:00'`` will be parsed as an offset of one hour. In addition, providing ``'Z'`` is identical to ``'+00:00'``."
 msgstr ""
 
 #: ../../library/datetime.rst:2593
@@ -2357,11 +2357,11 @@ msgid "Behaves exactly as ``%z``, but has a colon separator added between hours,
 msgstr ""
 
 #: ../../library/datetime.rst:2597
-msgid "In :meth:`strftime`, ``%Z`` is replaced by an empty string if :meth:`tzname` returns ``None``; otherwise ``%Z`` is replaced by the returned value, which must be a string."
+msgid "In :meth:`~.datetime.strftime`, ``%Z`` is replaced by an empty string if :meth:`~.datetime.tzname` returns ``None``; otherwise ``%Z`` is replaced by the returned value, which must be a string."
 msgstr ""
 
 #: ../../library/datetime.rst:2601
-msgid ":meth:`strptime` only accepts certain values for ``%Z``:"
+msgid ":meth:`~.datetime.strptime` only accepts certain values for ``%Z``:"
 msgstr ""
 
 #: ../../library/datetime.rst:2603
@@ -2377,19 +2377,19 @@ msgid "So someone living in Japan may have ``JST``, ``UTC``, and ``GMT`` as vali
 msgstr ""
 
 #: ../../library/datetime.rst:2610
-msgid "When the ``%z`` directive is provided to the :meth:`strptime` method, an aware :class:`.datetime` object will be produced. The ``tzinfo`` of the result will be set to a :class:`timezone` instance."
+msgid "When the ``%z`` directive is provided to the :meth:`~.datetime.strptime` method, an aware :class:`.datetime` object will be produced. The ``tzinfo`` of the result will be set to a :class:`timezone` instance."
 msgstr ""
 
 #: ../../library/datetime.rst:2616
-msgid "When used with the :meth:`strptime` method, ``%U`` and ``%W`` are only used in calculations when the day of the week and the calendar year (``%Y``) are specified."
+msgid "When used with the :meth:`~.datetime.strptime` method, ``%U`` and ``%W`` are only used in calculations when the day of the week and the calendar year (``%Y``) are specified."
 msgstr ""
 
 #: ../../library/datetime.rst:2621
-msgid "Similar to ``%U`` and ``%W``, ``%V`` is only used in calculations when the day of the week and the ISO year (``%G``) are specified in a :meth:`strptime` format string. Also note that ``%G`` and ``%Y`` are not interchangeable."
+msgid "Similar to ``%U`` and ``%W``, ``%V`` is only used in calculations when the day of the week and the ISO year (``%G``) are specified in a :meth:`~.datetime.strptime` format string. Also note that ``%G`` and ``%Y`` are not interchangeable."
 msgstr ""
 
 #: ../../library/datetime.rst:2627
-msgid "When used with the :meth:`strptime` method, the leading zero is optional for  formats ``%d``, ``%m``, ``%H``, ``%I``, ``%M``, ``%S``, ``%j``, ``%U``, ``%W``, and ``%V``. Format ``%y`` does require a leading zero."
+msgid "When used with the :meth:`~.datetime.strptime` method, the leading zero is optional for  formats ``%d``, ``%m``, ``%H``, ``%I``, ``%M``, ``%S``, ``%j``, ``%U``, ``%W``, and ``%V``. Format ``%y`` does require a leading zero."
 msgstr ""
 
 #: ../../library/datetime.rst:2632
