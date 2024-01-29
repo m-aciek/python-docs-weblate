@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-01-29 17:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1003,7 +1003,7 @@ msgstr ""
 
 #: ../../library/mailbox.rst:1026
 #: ../../library/mailbox.rst:1398
-msgid "Set the \"From \" line to *from_*, which should be specified without a leading \"From \" or trailing newline. For convenience, *time_* may be specified and will be formatted appropriately and appended to *from_*. If *time_* is specified, it should be a :class:`time.struct_time` instance, a tuple suitable for passing to :meth:`time.strftime`, or ``True`` (to use :meth:`time.gmtime`)."
+msgid "Set the \"From \" line to *from_*, which should be specified without a leading \"From \" or trailing newline. For convenience, *time_* may be specified and will be formatted appropriately and appended to *from_*. If *time_* is specified, it should be a :class:`time.struct_time` instance, a tuple suitable for passing to :func:`time.strftime`, or ``True`` (to use :func:`time.gmtime`)."
 msgstr ""
 
 #: ../../library/mailbox.rst:1036

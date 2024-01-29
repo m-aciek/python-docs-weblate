@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-27 15:16+0000\n"
+"POT-Creation-Date: 2024-01-29 17:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -654,7 +654,7 @@ msgid "datetime"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:756
-msgid "Added new alternate constructors :meth:`datetime.date.fromisocalendar` and :meth:`datetime.datetime.fromisocalendar`, which construct :class:`date` and :class:`datetime` objects respectively from ISO year, week number, and weekday; these are the inverse of each class's ``isocalendar`` method. (Contributed by Paul Ganssle in :issue:`36004`.)"
+msgid "Added new alternate constructors :meth:`datetime.date.fromisocalendar` and :meth:`datetime.datetime.fromisocalendar`, which construct :class:`~datetime.date` and :class:`~datetime.datetime` objects respectively from ISO year, week number, and weekday; these are the inverse of each class's ``isocalendar`` method. (Contributed by Paul Ganssle in :issue:`36004`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:764
