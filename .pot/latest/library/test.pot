@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-01-31 10:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgid "Try to maximize code reuse. On occasion, tests will vary by something as 
 msgstr ""
 
 #: ../../library/test.rst:145
-msgid "When using this pattern, remember that all classes that inherit from :class:`unittest.TestCase` are run as tests.  The :class:`Mixin` class in the example above does not have any data and so can't be run by itself, thus it does not inherit from :class:`unittest.TestCase`."
+msgid "When using this pattern, remember that all classes that inherit from :class:`unittest.TestCase` are run as tests.  The :class:`!TestFuncAcceptsSequencesMixin` class in the example above does not have any data and so can't be run by itself, thus it does not inherit from :class:`unittest.TestCase`."
 msgstr ""
 
 #: ../../library/test.rst:153
