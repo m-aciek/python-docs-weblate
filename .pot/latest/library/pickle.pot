@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-02-01 18:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,11 +242,11 @@ msgid "The :mod:`pickle` module defines three exceptions:"
 msgstr ""
 
 #: ../../library/pickle.rst:275
-msgid "Common base class for the other pickling exceptions.  It inherits :exc:`Exception`."
+msgid "Common base class for the other pickling exceptions.  It inherits from :exc:`Exception`."
 msgstr ""
 
 #: ../../library/pickle.rst:280
-msgid "Error raised when an unpicklable object is encountered by :class:`Pickler`. It inherits :exc:`PickleError`."
+msgid "Error raised when an unpicklable object is encountered by :class:`Pickler`. It inherits from :exc:`PickleError`."
 msgstr ""
 
 #: ../../library/pickle.rst:283
@@ -254,7 +254,7 @@ msgid "Refer to :ref:`pickle-picklable` to learn what kinds of objects can be pi
 msgstr ""
 
 #: ../../library/pickle.rst:288
-msgid "Error raised when there is a problem unpickling an object, such as a data corruption or a security violation.  It inherits :exc:`PickleError`."
+msgid "Error raised when there is a problem unpickling an object, such as a data corruption or a security violation.  It inherits from :exc:`PickleError`."
 msgstr ""
 
 #: ../../library/pickle.rst:291
