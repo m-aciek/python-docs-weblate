@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-02-01 10:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -489,7 +489,7 @@ msgid "PI element factory.  This factory function creates a special element that
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:666
-msgid "Note that :class:`XMLParser` skips over processing instructions in the input instead of creating comment objects for them. An :class:`ElementTree` will only contain processing instruction nodes if they have been inserted into to the tree using one of the :class:`Element` methods."
+msgid "Note that :class:`XMLParser` skips over processing instructions in the input instead of creating PI objects for them. An :class:`ElementTree` will only contain processing instruction nodes if they have been inserted into to the tree using one of the :class:`Element` methods."
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:674
@@ -836,7 +836,7 @@ msgid "Creates a comment with the given *text*.  If ``insert_comments`` is true,
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:1305
-msgid "Creates a comment with the given *target* name and *text*.  If ``insert_pis`` is true, this will also add it to the tree."
+msgid "Creates a process instruction with the given *target* name and *text*. If ``insert_pis`` is true, this will also add it to the tree."
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:1311
