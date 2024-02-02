@@ -1,32 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
 # Krzysztof Wierzbicki <krzwierz79@gmail.com>, 2021
 # Maciej Olko <maciej.olko@gmail.com>, 2021
 # Transifex Bot <>, 2023
+# WaldiS <sto@tutanota.de>, 2024.
 #
-#, fuzzy
+# Translators:
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-19 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:51+0000\n"
-"Last-Translator: Transifex Bot <>, 2023\n"
-"Language-Team: Polish (https://app.transifex.com/python-doc/teams/5390/pl/)\n"
+"PO-Revision-Date: 2024-02-03 18:01+0000\n"
+"Last-Translator: WaldiS <sto@tutanota.de>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/python-docs/"
+"latest/latestdistutilsindex/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
-"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && ("
+"n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 msgid "Distributing Python Modules (Legacy version)"
-msgstr ""
+msgstr "Dystrybucja modułów Python (wersja starsza)"
 
 msgid "Authors"
 msgstr "Autorzy"
@@ -70,6 +71,12 @@ msgid ""
 "recommendations section <https://packaging.python.org/guides/tool-"
 "recommendations/>`__ in the Python Packaging User Guide for more information."
 msgstr ""
+"Ten przewodnik obejmuje tylko podstawowe narzędzia do tworzenia i "
+"dystrybucji rozszerzeń, które są dostarczane jako część tej wersji Pythona. "
+"Narzędzia innych firm oferują łatwiejsze w użyciu i bezpieczniejsze "
+"alternatywy. Więcej informacji można znaleźć w sekcji `szybkie rekomendacje "
+"<https://packaging.python.org/guides/tool-recommendations/>`__ w Podręczniku "
+"użytkownika Python Packaging."
 
 msgid ""
 "This document describes the Python Distribution Utilities (\"Distutils\") "
@@ -77,3 +84,7 @@ msgid ""
 "capabilities that ``setuptools`` builds on to allow Python developers to "
 "make Python modules and extensions readily available to a wider audience."
 msgstr ""
+"Ten dokument opisuje narzędzia dystrybucji Pythona (\"Distutils\") z punktu "
+"widzenia twórcy modułów, opisując podstawowe możliwości, na których opiera "
+"się ``setuptools``, aby umożliwić twórcom Pythona łatwe udostępnianie "
+"modułów i rozszerzeń Pythona szerszej publiczności."
