@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-02 19:13+0000\n"
+"POT-Creation-Date: 2024-02-02 22:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,7 @@ msgid "A combination of a date and a time. Attributes: :attr:`year`, :attr:`mont
 msgstr ""
 
 #: ../../library/datetime.rst:133
-msgid "A duration expressing the difference between two :class:`date`, :class:`.time`, or :class:`.datetime` instances to microsecond resolution."
+msgid "A duration expressing the difference between two :class:`.datetime` or :class:`date` instances to microsecond resolution."
 msgstr ""
 
 #: ../../library/datetime.rst:140
@@ -226,7 +226,7 @@ msgid ":class:`timedelta` Objects"
 msgstr ""
 
 #: ../../library/datetime.rst:205
-msgid "A :class:`timedelta` object represents a duration, the difference between two dates or times."
+msgid "A :class:`timedelta` object represents a duration, the difference between two :class:`.datetime` or :class:`date` instances."
 msgstr ""
 
 #: ../../library/datetime.rst:210
