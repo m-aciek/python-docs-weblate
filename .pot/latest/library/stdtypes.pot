@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-02-02 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1497,7 +1497,7 @@ msgid "String literals that are part of a single expression and have only whites
 msgstr ""
 
 #: ../../library/stdtypes.rst:1530
-msgid "See :ref:`strings` for more about the various forms of string literal, including supported escape sequences, and the ``r`` (\"raw\") prefix that disables most escape sequence processing."
+msgid "See :ref:`strings` for more about the various forms of string literal, including supported :ref:`escape sequences <escape-sequences>`, and the ``r`` (\"raw\") prefix that disables most escape sequence processing."
 msgstr ""
 
 #: ../../library/stdtypes.rst:1534
