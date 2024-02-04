@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 14:13+0000\n"
+"POT-Creation-Date: 2024-02-04 12:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,7 +221,7 @@ msgid ":pep:`3131`: Non-ASCII letters are now allowed in identifiers. (However, 
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:340
-msgid "The :mod:`StringIO` and :mod:`cStringIO` modules are gone.  Instead, import the :mod:`io` module and use :class:`io.StringIO` or :class:`io.BytesIO` for text and data respectively."
+msgid "The :mod:`!StringIO` and :mod:`!cStringIO` modules are gone.  Instead, import the :mod:`io` module and use :class:`io.StringIO` or :class:`io.BytesIO` for text and data respectively."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:344
@@ -441,7 +441,7 @@ msgid "Many old modules were removed.  Some, like :mod:`!gopherlib` (no longer u
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:566
-msgid "The :mod:`bsddb3` package was removed because its presence in the core standard library has proved over time to be a particular burden for the core developers due to testing instability and Berkeley DB's release schedule.  However, the package is alive and well, externally maintained at https://www.jcea.es/programacion/pybsddb.htm."
+msgid "The :mod:`!bsddb3` package was removed because its presence in the core standard library has proved over time to be a particular burden for the core developers due to testing instability and Berkeley DB's release schedule.  However, the package is alive and well, externally maintained at https://www.jcea.es/programacion/pybsddb.htm."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:572
@@ -521,7 +521,7 @@ msgid "test.support"
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:588
-msgid "A common pattern in Python 2.x is to have one version of a module implemented in pure Python, with an optional accelerated version implemented as a C extension; for example, :mod:`pickle` and :mod:`cPickle`.  This places the burden of importing the accelerated version and falling back on the pure Python version on each user of these modules.  In Python 3.0, the accelerated versions are considered implementation details of the pure Python versions. Users should always import the standard version, which attempts to import the accelerated version and falls back to the pure Python version.  The :mod:`pickle` / :mod:`cPickle` pair received this treatment.  The :mod:`profile` module is on the list for 3.1.  The :mod:`StringIO` module has been turned into a class in the :mod:`io` module."
+msgid "A common pattern in Python 2.x is to have one version of a module implemented in pure Python, with an optional accelerated version implemented as a C extension; for example, :mod:`pickle` and :mod:`!cPickle`.  This places the burden of importing the accelerated version and falling back on the pure Python version on each user of these modules.  In Python 3.0, the accelerated versions are considered implementation details of the pure Python versions. Users should always import the standard version, which attempts to import the accelerated version and falls back to the pure Python version.  The :mod:`pickle` / :mod:`!cPickle` pair received this treatment.  The :mod:`profile` module is on the list for 3.1.  The :mod:`!StringIO` module has been turned into a class in the :mod:`io` module."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:602
@@ -529,15 +529,15 @@ msgid "Some related modules have been grouped into packages, and usually the sub
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:606
-msgid ":mod:`dbm` (:mod:`anydbm`, :mod:`dbhash`, :mod:`dbm`, :mod:`dumbdbm`, :mod:`gdbm`, :mod:`whichdb`)."
+msgid ":mod:`dbm` (:mod:`!anydbm`, :mod:`!dbhash`, :mod:`!dbm`, :mod:`!dumbdbm`, :mod:`!gdbm`, :mod:`!whichdb`)."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:609
-msgid ":mod:`html` (:mod:`HTMLParser`, :mod:`htmlentitydefs`)."
+msgid ":mod:`html` (:mod:`!HTMLParser`, :mod:`!htmlentitydefs`)."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:611
-msgid ":mod:`http` (:mod:`httplib`, :mod:`BaseHTTPServer`, :mod:`CGIHTTPServer`, :mod:`SimpleHTTPServer`, :mod:`Cookie`, :mod:`cookielib`)."
+msgid ":mod:`http` (:mod:`!httplib`, :mod:`!BaseHTTPServer`, :mod:`!CGIHTTPServer`, :mod:`!SimpleHTTPServer`, :mod:`!Cookie`, :mod:`!cookielib`)."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:615
@@ -545,11 +545,11 @@ msgid ":mod:`tkinter` (all :mod:`Tkinter`-related modules except :mod:`turtle`).
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:620
-msgid ":mod:`urllib` (:mod:`urllib`, :mod:`urllib2`, :mod:`urlparse`, :mod:`robotparse`)."
+msgid ":mod:`urllib` (:mod:`!urllib`, :mod:`!urllib2`, :mod:`!urlparse`, :mod:`!robotparse`)."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:623
-msgid ":mod:`xmlrpc` (:mod:`xmlrpclib`, :mod:`DocXMLRPCServer`, :mod:`SimpleXMLRPCServer`)."
+msgid ":mod:`xmlrpc` (:mod:`!xmlrpclib`, :mod:`!DocXMLRPCServer`, :mod:`!SimpleXMLRPCServer`)."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:626
@@ -573,7 +573,7 @@ msgid "Cleanup of the :mod:`operator` module: removed :func:`sequenceIncludes` a
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:645
-msgid "Cleanup of the :mod:`thread` module: :func:`acquire_lock` and :func:`release_lock` are gone; use :func:`acquire` and :func:`release` instead."
+msgid "Cleanup of the :mod:`!thread` module: :func:`!acquire_lock` and :func:`!release_lock` are gone; use :meth:`~threading.Lock.acquire` and :meth:`~threading.Lock.release` instead."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:649

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-09 10:16+0000\n"
+"POT-Creation-Date: 2024-02-04 12:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -781,7 +781,7 @@ msgid "There are two concrete implementations.  :class:`TextIOWrapper` wraps a b
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1083
-msgid "(In Python 2.6, :class:`io.StringIO` is implemented in pure Python, so it's pretty slow.   You should therefore stick with the existing :mod:`StringIO` module or :mod:`cStringIO` for now.  At some point Python 3.0's :mod:`io` module will be rewritten into C for speed, and perhaps the C implementation will be  backported to the 2.x releases.)"
+msgid "(In Python 2.6, :class:`io.StringIO` is implemented in pure Python, so it's pretty slow.   You should therefore stick with the existing :mod:`!StringIO` module or :mod:`!cStringIO` for now.  At some point Python 3.0's :mod:`io` module will be rewritten into C for speed, and perhaps the C implementation will be  backported to the 2.x releases.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1089
@@ -1227,7 +1227,7 @@ msgid "The :mod:`cgi` module will now read variables from the query string of an
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1809
-msgid "The :func:`parse_qs` and :func:`parse_qsl` functions have been relocated from the :mod:`cgi` module to the :mod:`urlparse` module. The versions still available in the :mod:`cgi` module will trigger :exc:`PendingDeprecationWarning` messages in 2.6 (:issue:`600362`)."
+msgid "The :func:`parse_qs` and :func:`parse_qsl` functions have been relocated from the :mod:`cgi` module to the :mod:`urlparse <urllib.parse>` module. The versions still available in the :mod:`!cgi` module will trigger :exc:`PendingDeprecationWarning` messages in 2.6 (:issue:`600362`)."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1815
@@ -1279,7 +1279,7 @@ msgid "Another change to the :mod:`collections` module is that the :class:`deque
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1898
-msgid "The :mod:`Cookie` module's :class:`Morsel` objects now support an :attr:`httponly` attribute.  In some browsers. cookies with this attribute set cannot be accessed or manipulated by JavaScript code. (Contributed by Arvin Schnell; :issue:`1638033`.)"
+msgid "The :mod:`Cookie <http.cookies>` module's :class:`~http.cookies.Morsel` objects now support an :attr:`~http.cookies.Morsel.httponly` attribute.  In some browsers. cookies with this attribute set cannot be accessed or manipulated by JavaScript code. (Contributed by Arvin Schnell; :issue:`1638033`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1903
@@ -1339,7 +1339,7 @@ msgid ":mod:`heapq` is now implemented to only use less-than comparison, instead
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1989
-msgid "An optional ``timeout`` parameter, specifying a timeout measured in seconds, was added to the :class:`httplib.HTTPConnection` and :class:`HTTPSConnection` class constructors.  (Added by Facundo Batista.)"
+msgid "An optional ``timeout`` parameter, specifying a timeout measured in seconds, was added to the :class:`httplib.HTTPConnection <http.client.HTTPConnection>` and :class:`HTTPSConnection <http.client.HTTPSConnection>` class constructors.  (Added by Facundo Batista.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1994
@@ -1599,7 +1599,7 @@ msgid "A new function, :func:`create_connection`, takes an address and connects 
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2374
-msgid "The base classes in the :mod:`SocketServer` module now support calling a :meth:`handle_timeout` method after a span of inactivity specified by the server's :attr:`timeout` attribute.  (Contributed by Michael Pomraning.)  The :meth:`serve_forever` method now takes an optional poll interval measured in seconds, controlling how often the server will check for a shutdown request. (Contributed by Pedro Werneck and Jeffrey Yasskin; :issue:`742598`, :issue:`1193577`.)"
+msgid "The base classes in the :mod:`SocketServer <socketserver>` module now support calling a :meth:`~socketserver.BaseServer.handle_timeout` method after a span of inactivity specified by the server's :attr:`~socketserver.BaseServer.timeout` attribute.  (Contributed by Michael Pomraning.)  The :meth:`~socketserver.BaseServer.serve_forever` method now takes an optional poll interval measured in seconds, controlling how often the server will check for a shutdown request. (Contributed by Pedro Werneck and Jeffrey Yasskin; :issue:`742598`, :issue:`1193577`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2383
@@ -1667,7 +1667,7 @@ msgid "The :class:`NamedTemporaryFile` and :class:`SpooledTemporaryFile` classes
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2481
-msgid "The :mod:`test.test_support` module gained a number of context managers useful for writing tests. :func:`EnvironmentVarGuard` is a context manager that temporarily changes environment variables and automatically restores them to their old values."
+msgid "The :mod:`test.test_support <test.support>` module gained a number of context managers useful for writing tests. :func:`~test.support.os_helper.EnvironmentVarGuard` is a context manager that temporarily changes environment variables and automatically restores them to their old values."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2487
@@ -1743,7 +1743,7 @@ msgid "(:issue:`1513695`)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2579
-msgid "An optional ``timeout`` parameter was added to the :func:`urllib.urlopen` function and the :class:`urllib.ftpwrapper` class constructor, as well as the :func:`urllib2.urlopen` function.  The parameter specifies a timeout measured in seconds.   For example::"
+msgid "An optional ``timeout`` parameter was added to the :func:`urllib.urlopen <urllib.request.urlopen>` function and the :class:`urllib.ftpwrapper` class constructor, as well as the :func:`urllib2.urlopen <urllib.request.urlopen>` function.  The parameter specifies a timeout measured in seconds.   For example::"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2592
@@ -1763,7 +1763,7 @@ msgid "A new function, :func:`catch_warnings`, is a context manager intended for
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2607
-msgid "The XML-RPC :class:`SimpleXMLRPCServer` and :class:`DocXMLRPCServer` classes can now be prevented from immediately opening and binding to their socket by passing ``False`` as the *bind_and_activate* constructor parameter.  This can be used to modify the instance's :attr:`allow_reuse_address` attribute before calling the :meth:`server_bind` and :meth:`server_activate` methods to open the socket and begin listening for connections. (Contributed by Peter Parente; :issue:`1599845`.)"
+msgid "The XML-RPC :class:`SimpleXMLRPCServer <xmlrpc.server>` and :class:`DocXMLRPCServer <xmlrpc.server>` classes can now be prevented from immediately opening and binding to their socket by passing ``False`` as the *bind_and_activate* constructor parameter.  This can be used to modify the instance's :attr:`allow_reuse_address` attribute before calling the :meth:`server_bind` and :meth:`server_activate` methods to open the socket and begin listening for connections. (Contributed by Peter Parente; :issue:`1599845`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2616
@@ -1771,7 +1771,7 @@ msgid ":class:`SimpleXMLRPCServer` also has a :attr:`_send_traceback_header` att
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2624
-msgid "The :mod:`xmlrpclib` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`xmlrpclib` should convert :class:`date` and :class:`~datetime.time` instances. (:issue:`1330538`)  The code can also handle dates before 1900 (contributed by Ralf Schmitt; :issue:`2014`) and 64-bit integers represented by using ``<i8>`` in XML-RPC responses (contributed by Riku Lindblad; :issue:`2985`)."
+msgid "The :mod:`xmlrpclib <xmlrpc.client>` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime <xmlrpc.client.DateTime>` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`!xmlrpclib` should convert :class:`date` and :class:`~datetime.time` instances. (:issue:`1330538`)  The code can also handle dates before 1900 (contributed by Ralf Schmitt; :issue:`2014`) and 64-bit integers represented by using ``<i8>`` in XML-RPC responses (contributed by Riku Lindblad; :issue:`2985`)."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2634
@@ -2152,7 +2152,7 @@ msgid "The :mod:`socket` module exception :exc:`socket.error` now inherits from 
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3277
-msgid "The :mod:`xmlrpclib` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`xmlrpclib` should convert :class:`date` and :class:`~datetime.time` instances. (:issue:`1330538`)"
+msgid "The :mod:`xmlrpclib <xmlrpc.client>` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime <xmlrpc.client.DateTime>` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`!xmlrpclib` should convert :class:`date` and :class:`~datetime.time` instances. (:issue:`1330538`)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3284

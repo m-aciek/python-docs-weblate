@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 14:13+0000\n"
+"POT-Creation-Date: 2024-02-04 12:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2064,7 +2064,7 @@ msgid "The ``__name__`` attribute of generators is now set from the function nam
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2420
-msgid "The deprecated \"strict\" mode and argument of :class:`~html.parser.HTMLParser`, :meth:`HTMLParser.error`, and the :exc:`HTMLParserError` exception have been removed.  (Contributed by Ezio Melotti in :issue:`15114`.) The *convert_charrefs* argument of :class:`~html.parser.HTMLParser` is now ``True`` by default.  (Contributed by Berker Peksag in :issue:`21047`.)"
+msgid "The deprecated \"strict\" mode and argument of :class:`~html.parser.HTMLParser`, :meth:`!HTMLParser.error`, and the :exc:`!HTMLParserError` exception have been removed.  (Contributed by Ezio Melotti in :issue:`15114`.) The *convert_charrefs* argument of :class:`~html.parser.HTMLParser` is now ``True`` by default.  (Contributed by Berker Peksag in :issue:`21047`.)"
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2426

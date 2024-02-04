@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-29 13:38+0000\n"
+"POT-Creation-Date: 2024-02-04 12:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgid "The largest and most far-reaching changes in Python 2.2 are to Python's m
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:52
-msgid "A long time ago I wrote a web page listing flaws in Python's design.  One of the most significant flaws was that it's impossible to subclass Python types implemented in C.  In particular, it's not possible to subclass built-in types, so you can't just subclass, say, lists in order to add a single useful method to them. The :mod:`!UserList` module provides a class that supports all of the methods of lists and that can be subclassed further, but there's lots of C code that expects a regular Python list and won't accept a :class:`!UserList` instance."
+msgid "A long time ago I wrote a web page listing flaws in Python's design.  One of the most significant flaws was that it's impossible to subclass Python types implemented in C.  In particular, it's not possible to subclass built-in types, so you can't just subclass, say, lists in order to add a single useful method to them. The :mod:`!UserList` module provides a class that supports all of the methods of lists and that can be subclassed further, but there's lots of C code that expects a regular Python list and won't accept a :class:`~collections.UserList` instance."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:61
@@ -69,7 +69,7 @@ msgid "It's now possible to define static and class methods, in addition to the 
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:70
-msgid "It's also possible to automatically call methods on accessing or setting an instance attribute by using a new mechanism called :dfn:`properties`.  Many uses of :meth:`!__getattr__` can be rewritten to use properties instead, making the resulting code simpler and faster.  As a small side benefit, attributes can now have docstrings, too."
+msgid "It's also possible to automatically call methods on accessing or setting an instance attribute by using a new mechanism called :dfn:`properties`.  Many uses of :meth:`~object.__getattr__` can be rewritten to use properties instead, making the resulting code simpler and faster.  As a small side benefit, attributes can now have docstrings, too."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:76
@@ -549,11 +549,11 @@ msgid "New and Improved Modules"
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:936
-msgid "The :mod:`!xmlrpclib` module was contributed to the standard library by Fredrik Lundh, providing support for writing XML-RPC clients.  XML-RPC is a simple remote procedure call protocol built on top of HTTP and XML. For example, the following snippet retrieves a list of RSS channels from the O'Reilly Network, and then  lists the recent headlines for one channel::"
+msgid "The :mod:`xmlrpclib <xmlrpc.client>` module was contributed to the standard library by Fredrik Lundh, providing support for writing XML-RPC clients.  XML-RPC is a simple remote procedure call protocol built on top of HTTP and XML. For example, the following snippet retrieves a list of RSS channels from the O'Reilly Network, and then  lists the recent headlines for one channel::"
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:959
-msgid "The :mod:`!SimpleXMLRPCServer` module makes it easy to create straightforward XML-RPC servers.  See http://xmlrpc.scripting.com/ for more information about XML-RPC."
+msgid "The :mod:`SimpleXMLRPCServer <xmlrpc.server>` module makes it easy to create straightforward XML-RPC servers.  See http://xmlrpc.scripting.com/ for more information about XML-RPC."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:962
@@ -561,7 +561,7 @@ msgid "The new :mod:`hmac` module implements the HMAC algorithm described by :rf
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:965
-msgid "Several functions that originally returned lengthy tuples now return pseudo-sequences that still behave like tuples but also have mnemonic attributes such as :attr:`!memberst_mtime` or :attr:`!tm_year`. The enhanced functions include :func:`~os.stat`, :func:`~os.fstat`, :func:`~os.statvfs`, and :func:`~os.fstatvfs` in the :mod:`os` module, and :func:`~time.localtime`, :func:`~time.gmtime`, and :func:`~time.strptime` in the :mod:`time` module."
+msgid "Several functions that originally returned lengthy tuples now return pseudo-sequences that still behave like tuples but also have mnemonic attributes such as :attr:`!memberst_mtime` or :attr:`~time.struct_time.tm_year`. The enhanced functions include :func:`~os.stat`, :func:`~os.fstat`, :func:`~os.statvfs`, and :func:`~os.fstatvfs` in the :mod:`os` module, and :func:`~time.localtime`, :func:`~time.gmtime`, and :func:`~time.strptime` in the :mod:`time` module."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:972
