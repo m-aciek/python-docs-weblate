@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-21 04:19+0000\n"
+"POT-Creation-Date: 2024-02-10 09:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1364,7 +1364,7 @@ msgid "For certain sensitive attribute deletions, raises an :ref:`auditing event
 msgstr ""
 
 #: ../../reference/datamodel.rst:1986
-msgid "Called when :func:`dir` is called on the object. A sequence must be returned. :func:`dir` converts the returned sequence to a list and sorts it."
+msgid "Called when :func:`dir` is called on the object. An iterable must be returned. :func:`dir` converts the returned iterable to a list and sorts it."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1991
@@ -1376,7 +1376,7 @@ msgid "Special names ``__getattr__`` and ``__dir__`` can be also used to customi
 msgstr ""
 
 #: ../../reference/datamodel.rst:2007
-msgid "The ``__dir__`` function should accept no arguments, and return a sequence of strings that represents the names accessible on module. If present, this function overrides the standard :func:`dir` search on a module."
+msgid "The ``__dir__`` function should accept no arguments, and return an iterable of strings that represents the names accessible on module. If present, this function overrides the standard :func:`dir` search on a module."
 msgstr ""
 
 #: ../../reference/datamodel.rst:2011
