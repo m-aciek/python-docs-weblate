@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-11 10:50+0000\n"
+"POT-Creation-Date: 2024-02-11 19:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,7 +234,7 @@ msgid "Function similar to :c:func:`PyErr_WarnEx`, but use :c:func:`PyUnicode_Fr
 msgstr ""
 
 #: ../../c-api/exceptions.rst:385
-msgid "Function similar to :c:func:`PyErr_WarnFormat`, but *category* is :exc:`ResourceWarning` and it passes *source* to :func:`warnings.WarningMessage`."
+msgid "Function similar to :c:func:`PyErr_WarnFormat`, but *category* is :exc:`ResourceWarning` and it passes *source* to :class:`!warnings.WarningMessage`."
 msgstr ""
 
 #: ../../c-api/exceptions.rst:392
@@ -432,7 +432,7 @@ msgid "This utility function creates and returns a new exception class. The *nam
 msgstr ""
 
 #: ../../c-api/exceptions.rst:722
-msgid "The :attr:`__module__` attribute of the new class is set to the first part (up to the last dot) of the *name* argument, and the class name is set to the last part (after the last dot).  The *base* argument can be used to specify alternate base classes; it can either be only one class or a tuple of classes. The *dict* argument can be used to specify a dictionary of class variables and methods."
+msgid "The :attr:`!__module__` attribute of the new class is set to the first part (up to the last dot) of the *name* argument, and the class name is set to the last part (after the last dot).  The *base* argument can be used to specify alternate base classes; it can either be only one class or a tuple of classes. The *dict* argument can be used to specify a dictionary of class variables and methods."
 msgstr ""
 
 #: ../../c-api/exceptions.rst:731
@@ -540,7 +540,7 @@ msgid "Marks a point where a recursive C-level call is about to be performed."
 msgstr ""
 
 #: ../../c-api/exceptions.rst:894
-msgid "If :c:macro:`USE_STACKCHECK` is defined, this function checks if the OS stack overflowed using :c:func:`PyOS_CheckStack`.  In this is the case, it sets a :exc:`MemoryError` and returns a nonzero value."
+msgid "If :c:macro:`!USE_STACKCHECK` is defined, this function checks if the OS stack overflowed using :c:func:`PyOS_CheckStack`.  If this is the case, it sets a :exc:`MemoryError` and returns a nonzero value."
 msgstr ""
 
 #: ../../c-api/exceptions.rst:898
@@ -1058,15 +1058,15 @@ msgid "These are compatibility aliases to :c:data:`PyExc_OSError`:"
 msgstr ""
 
 #: ../../c-api/exceptions.rst:1148
-msgid ":c:data:`PyExc_EnvironmentError`"
+msgid ":c:data:`!PyExc_EnvironmentError`"
 msgstr ""
 
 #: ../../c-api/exceptions.rst:1150
-msgid ":c:data:`PyExc_IOError`"
+msgid ":c:data:`!PyExc_IOError`"
 msgstr ""
 
 #: ../../c-api/exceptions.rst:1152
-msgid ":c:data:`PyExc_WindowsError`"
+msgid ":c:data:`!PyExc_WindowsError`"
 msgstr ""
 
 #: ../../c-api/exceptions.rst:1152
