@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-02-11 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -309,16 +309,16 @@ msgid "Register a cleanup function to be called by :c:func:`Py_FinalizeEx`.  The
 msgstr ""
 
 #: ../../c-api/sys.rst:412
-msgid "abort()"
+msgid "abort (C function)"
 msgstr ""
 
 #: ../../c-api/sys.rst:431
 #: ../../c-api/sys.rst:445
-msgid "Py_FinalizeEx()"
+msgid "Py_FinalizeEx (C function)"
 msgstr ""
 
 #: ../../c-api/sys.rst:431
-msgid "exit()"
+msgid "exit (C function)"
 msgstr ""
 
 #: ../../c-api/sys.rst:445

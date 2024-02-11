@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 14:36+0000\n"
+"POT-Creation-Date: 2024-02-11 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,21 +225,21 @@ msgid "code object"
 msgstr ""
 
 #: ../../c-api/code.rst:52
-msgid "PyCode_New"
+msgid "PyCode_New (C function)"
 msgstr ""
 
 #: ../../c-api/code.rst:65
-msgid "PyCode_NewWithPosOnlyArgs"
+msgid "PyCode_NewWithPosOnlyArgs (C function)"
 msgstr ""
 
 #: ../../c-api/code.rst:224
-msgid "_PyEval_RequestCodeExtraIndex"
+msgid "_PyEval_RequestCodeExtraIndex (C function)"
 msgstr ""
 
 #: ../../c-api/code.rst:242
-msgid "_PyCode_GetExtra"
+msgid "_PyCode_GetExtra (C function)"
 msgstr ""
 
 #: ../../c-api/code.rst:257
-msgid "_PyCode_SetExtra"
+msgid "_PyCode_SetExtra (C function)"
 msgstr ""

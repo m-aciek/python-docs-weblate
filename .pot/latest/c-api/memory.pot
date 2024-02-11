@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-21 10:16+0000\n"
+"POT-Creation-Date: 2024-02-11 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -783,17 +783,17 @@ msgid "These will be explained in the next chapter on defining and implementing 
 msgstr ""
 
 #: ../../c-api/memory.rst:43
-msgid "malloc()"
+msgid "malloc (C function)"
 msgstr ""
 
 #: ../../c-api/memory.rst:43
-msgid "calloc()"
+msgid "calloc (C function)"
 msgstr ""
 
 #: ../../c-api/memory.rst:43
-msgid "realloc()"
+msgid "realloc (C function)"
 msgstr ""
 
 #: ../../c-api/memory.rst:43
-msgid "free()"
+msgid "free (C function)"
 msgstr ""
