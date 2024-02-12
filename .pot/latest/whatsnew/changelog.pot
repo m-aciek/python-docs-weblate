@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-12 18:38+0000\n"
+"POT-Creation-Date: 2024-02-12 19:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,7 +225,7 @@ msgid "Library"
 msgstr ""
 
 #: ../../../build/NEWS:22
-msgid ":gh:`115165`: Most exceptions are now ignored when attempting to set the ``__orig_class__`` attribute on objects returned when calling :mod:`typing` generic aliases (including generic aliases created using :data:`typing.Annotated`). Previously only :exc:`AttributeError`` was ignored. Patch by Dave Shawley."
+msgid ":gh:`115165`: Most exceptions are now ignored when attempting to set the ``__orig_class__`` attribute on objects returned when calling :mod:`typing` generic aliases (including generic aliases created using :data:`typing.Annotated`). Previously only :exc:`AttributeError` was ignored. Patch by Dave Shawley."
 msgstr ""
 
 #: ../../../build/NEWS:28
