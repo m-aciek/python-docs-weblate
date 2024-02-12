@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 14:13+0000\n"
+"POT-Creation-Date: 2024-02-12 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -510,11 +510,11 @@ msgid "Two methods have been deprecated:"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:746
-msgid ":meth:`xml.etree.ElementTree.getchildren` use ``list(elem)`` instead."
+msgid ":meth:`!xml.etree.ElementTree.getchildren` use ``list(elem)`` instead."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:747
-msgid ":meth:`xml.etree.ElementTree.getiterator` use ``Element.iter`` instead."
+msgid ":meth:`!xml.etree.ElementTree.getiterator` use ``Element.iter`` instead."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:749
@@ -2035,7 +2035,7 @@ msgid "(Contributed by Georg Brandl; :issue:`5675`.)"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2685
-msgid "The previously deprecated :func:`contextlib.nested` function has been removed in favor of a plain :keyword:`with` statement which can accept multiple context managers.  The latter technique is faster (because it is built-in), and it does a better job finalizing multiple context managers when one of them raises an exception::"
+msgid "The previously deprecated :func:`!contextlib.nested` function has been removed in favor of a plain :keyword:`with` statement which can accept multiple context managers.  The latter technique is faster (because it is built-in), and it does a better job finalizing multiple context managers when one of them raises an exception::"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2696

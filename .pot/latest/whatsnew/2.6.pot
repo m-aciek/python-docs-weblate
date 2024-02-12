@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-04 12:24+0000\n"
+"POT-Creation-Date: 2024-02-12 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1611,7 +1611,7 @@ msgid "The :mod:`struct` module now supports the C99 :c:expr:`_Bool` type, using
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2391
-msgid "The :class:`Popen` objects provided by the :mod:`subprocess` module now have :meth:`terminate`, :meth:`kill`, and :meth:`send_signal` methods. On Windows, :meth:`send_signal` only supports the :const:`SIGTERM` signal, and all these methods are aliases for the Win32 API function :c:func:`TerminateProcess`. (Contributed by Christian Heimes.)"
+msgid "The :class:`~subprocess.Popen` objects provided by the :mod:`subprocess` module now have :meth:`~subprocess.Popen.terminate`, :meth:`~subprocess.Popen.kill`, and :meth:`~subprocess.Popen.send_signal` methods. On Windows, :meth:`!send_signal` only supports the :py:const:`~signal.SIGTERM` signal, and all these methods are aliases for the Win32 API function :c:func:`!TerminateProcess`. (Contributed by Christian Heimes.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2398

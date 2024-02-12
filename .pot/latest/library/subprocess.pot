@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-02 23:39+0000\n"
+"POT-Creation-Date: 2024-02-12 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -690,7 +690,7 @@ msgid "On Windows, SIGTERM is an alias for :meth:`terminate`. CTRL_C_EVENT and C
 msgstr ""
 
 #: ../../library/subprocess.rst:860
-msgid "Stop the child. On POSIX OSs the method sends SIGTERM to the child. On Windows the Win32 API function :c:func:`TerminateProcess` is called to stop the child."
+msgid "Stop the child. On POSIX OSs the method sends :py:const:`~signal.SIGTERM` to the child. On Windows the Win32 API function :c:func:`!TerminateProcess` is called to stop the child."
 msgstr ""
 
 #: ../../library/subprocess.rst:867

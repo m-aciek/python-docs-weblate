@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-02-12 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgid "The syntax of the :keyword:`with` statement now allows multiple context m
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:172
-msgid "With the new syntax, the :func:`contextlib.nested` function is no longer needed and is now deprecated."
+msgid "With the new syntax, the :func:`!contextlib.nested` function is no longer needed and is now deprecated."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:175
