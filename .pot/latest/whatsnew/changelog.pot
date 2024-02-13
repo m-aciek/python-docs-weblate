@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-13 10:15+0000\n"
+"POT-Creation-Date: 2024-02-13 21:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3922,7 +3922,7 @@ msgid ":gh:`103091`: Add a new C-API function to eagerly assign a version tag to
 msgstr ""
 
 #: ../../../build/NEWS:3203
-msgid ":gh:`101408`: :c:func:`PyObject_GC_Resize` should calculate preheader size if needed. Patch by Donghee Na."
+msgid ":gh:`101408`: :c:macro:`PyObject_GC_Resize` should calculate preheader size if needed. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:3206
