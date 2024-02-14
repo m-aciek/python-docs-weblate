@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-02 22:15+0000\n"
+"POT-Creation-Date: 2024-02-14 14:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -643,7 +643,6 @@ msgstr ""
 #: ../../library/datetime.rst:524
 #: ../../library/datetime.rst:1011
 #: ../../library/datetime.rst:1446
-#: ../../library/datetime.rst:1788
 msgid "Examples::"
 msgstr ""
 
@@ -1543,6 +1542,10 @@ msgstr ""
 
 #: ../../library/datetime.rst:1784
 msgid "Fractional seconds may have any number of digits (anything beyond 6 will be truncated)."
+msgstr ""
+
+#: ../../library/datetime.rst:1788
+msgid "Examples:"
 msgstr ""
 
 #: ../../library/datetime.rst:1812
