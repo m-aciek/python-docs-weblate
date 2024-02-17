@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-15 16:20+0000\n"
+"POT-Creation-Date: 2024-02-17 10:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "PEP written by Armin Ronacher and Raymond Hettinger.  Implementation writ
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:83
-msgid "Since an ordered dictionary remembers its insertion order, it can be used in conjuction with sorting to make a sorted dictionary::"
+msgid "Since an ordered dictionary remembers its insertion order, it can be used in conjunction with sorting to make a sorted dictionary::"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:101
@@ -121,7 +121,7 @@ msgid "(Contributed by Eric Smith; :issue:`5237`.)"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:177
-msgid "The :func:`string.maketrans` function is deprecated and is replaced by new static methods, :meth:`bytes.maketrans` and :meth:`bytearray.maketrans`. This change solves the confusion around which types were supported by the :mod:`string` module. Now, :class:`str`, :class:`bytes`, and :class:`bytearray` each have their own **maketrans** and **translate** methods with intermediate translation tables of the appropriate type."
+msgid "The :func:`!string.maketrans` function is deprecated and is replaced by new static methods, :meth:`bytes.maketrans` and :meth:`bytearray.maketrans`. This change solves the confusion around which types were supported by the :mod:`string` module. Now, :class:`str`, :class:`bytes`, and :class:`bytearray` each have their own **maketrans** and **translate** methods with intermediate translation tables of the appropriate type."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:184
@@ -289,185 +289,185 @@ msgid "Also, tests for exceptions have been builtout to work with context manage
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:383
-msgid "In addition, several new assertion methods were added including :func:`assertSetEqual`, :func:`assertDictEqual`, :func:`assertDictContainsSubset`, :func:`assertListEqual`, :func:`assertTupleEqual`, :func:`assertSequenceEqual`, :func:`assertRaisesRegexp`, :func:`assertIsNone`, and :func:`assertIsNotNone`."
+msgid "In addition, several new assertion methods were added including :meth:`~unittest.TestCase.assertSetEqual`, :meth:`~unittest.TestCase.assertDictEqual`, :meth:`!assertDictContainsSubset`, :meth:`~unittest.TestCase.assertListEqual`, :meth:`~unittest.TestCase.assertTupleEqual`, :meth:`~unittest.TestCase.assertSequenceEqual`, :meth:`assertRaisesRegexp() <unittest.TestCase.assertRaisesRegex>`, :meth:`~unittest.TestCase.assertIsNone`, and :meth:`~unittest.TestCase.assertIsNotNone`."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:390
+#: ../../whatsnew/3.1.rst:394
 msgid "(Contributed by Benjamin Peterson and Antoine Pitrou.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:392
-msgid "The :mod:`io` module has three new constants for the :meth:`seek` method :data:`SEEK_SET`, :data:`SEEK_CUR`, and :data:`SEEK_END`."
+#: ../../whatsnew/3.1.rst:396
+msgid "The :mod:`io` module has three new constants for the :meth:`~io.IOBase.seek` method: :data:`~os.SEEK_SET`, :data:`~os.SEEK_CUR`, and :data:`~os.SEEK_END`."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:395
+#: ../../whatsnew/3.1.rst:399
 msgid "The :data:`sys.version_info` tuple is now a named tuple::"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:400
+#: ../../whatsnew/3.1.rst:404
 msgid "(Contributed by Ross Light; :issue:`4285`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:402
+#: ../../whatsnew/3.1.rst:406
 msgid "The :mod:`nntplib` and :mod:`imaplib` modules now support IPv6."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:404
+#: ../../whatsnew/3.1.rst:408
 msgid "(Contributed by Derek Morr; :issue:`1655` and :issue:`1664`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:406
+#: ../../whatsnew/3.1.rst:410
 msgid "The :mod:`pickle` module has been adapted for better interoperability with Python 2.x when used with protocol 2 or lower.  The reorganization of the standard library changed the formal reference for many objects.  For example, ``__builtin__.set`` in Python 2 is called ``builtins.set`` in Python 3. This change confounded efforts to share data between different versions of Python.  But now when protocol 2 or lower is selected, the pickler will automatically use the old Python 2 names for both loading and dumping. This remapping is turned-on by default but can be disabled with the *fix_imports* option::"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:422
+#: ../../whatsnew/3.1.rst:426
 msgid "An unfortunate but unavoidable side-effect of this change is that protocol 2 pickles produced by Python 3.1 won't be readable with Python 3.0. The latest pickle protocol, protocol 3, should be used when migrating data between Python 3.x implementations, as it doesn't attempt to remain compatible with Python 2.x."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:428
+#: ../../whatsnew/3.1.rst:432
 msgid "(Contributed by Alexandre Vassalotti and Antoine Pitrou, :issue:`6137`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:430
+#: ../../whatsnew/3.1.rst:434
 msgid "A new module, :mod:`importlib` was added.  It provides a complete, portable, pure Python reference implementation of the :keyword:`import` statement and its counterpart, the :func:`__import__` function.  It represents a substantial step forward in documenting and defining the actions that take place during imports."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:436
+#: ../../whatsnew/3.1.rst:440
 msgid "(Contributed by Brett Cannon.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:439
+#: ../../whatsnew/3.1.rst:443
 msgid "Optimizations"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:441
+#: ../../whatsnew/3.1.rst:445
 msgid "Major performance enhancements have been added:"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:443
+#: ../../whatsnew/3.1.rst:447
 msgid "The new I/O library (as defined in :pep:`3116`) was mostly written in Python and quickly proved to be a problematic bottleneck in Python 3.0. In Python 3.1, the I/O library has been entirely rewritten in C and is 2 to 20 times faster depending on the task at hand. The pure Python version is still available for experimentation purposes through the ``_pyio`` module."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:450
+#: ../../whatsnew/3.1.rst:454
 msgid "(Contributed by Amaury Forgeot d'Arc and Antoine Pitrou.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:452
+#: ../../whatsnew/3.1.rst:456
 msgid "Added a heuristic so that tuples and dicts containing only untrackable objects are not tracked by the garbage collector. This can reduce the size of collections and therefore the garbage collection overhead on long-running programs, depending on their particular use of datatypes."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:457
+#: ../../whatsnew/3.1.rst:461
 msgid "(Contributed by Antoine Pitrou, :issue:`4688`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:459
+#: ../../whatsnew/3.1.rst:463
 msgid "Enabling a configure option named ``--with-computed-gotos`` on compilers that support it (notably: gcc, SunPro, icc), the bytecode evaluation loop is compiled with a new dispatch mechanism which gives speedups of up to 20%, depending on the system, the compiler, and the benchmark."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:465
+#: ../../whatsnew/3.1.rst:469
 msgid "(Contributed by Antoine Pitrou along with a number of other participants, :issue:`4753`)."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:468
+#: ../../whatsnew/3.1.rst:472
 msgid "The decoding of UTF-8, UTF-16 and LATIN-1 is now two to four times faster."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:471
+#: ../../whatsnew/3.1.rst:475
 msgid "(Contributed by Antoine Pitrou and Amaury Forgeot d'Arc, :issue:`4868`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:473
+#: ../../whatsnew/3.1.rst:477
 msgid "The :mod:`json` module now has a C extension to substantially improve its performance.  In addition, the API was modified so that json works only with :class:`str`, not with :class:`bytes`.  That change makes the module closely match the `JSON specification <https://json.org/>`_ which is defined in terms of Unicode."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:479
+#: ../../whatsnew/3.1.rst:483
 msgid "(Contributed by Bob Ippolito and converted to Py3.1 by Antoine Pitrou and Benjamin Peterson; :issue:`4136`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:482
+#: ../../whatsnew/3.1.rst:486
 msgid "Unpickling now interns the attribute names of pickled objects.  This saves memory and allows pickles to be smaller."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:485
+#: ../../whatsnew/3.1.rst:489
 msgid "(Contributed by Jake McGuire and Antoine Pitrou; :issue:`5084`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:488
+#: ../../whatsnew/3.1.rst:492
 msgid "IDLE"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:490
+#: ../../whatsnew/3.1.rst:494
 msgid "IDLE's format menu now provides an option to strip trailing whitespace from a source file."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:493
+#: ../../whatsnew/3.1.rst:497
 msgid "(Contributed by Roger D. Serwy; :issue:`5150`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:496
+#: ../../whatsnew/3.1.rst:500
 msgid "Build and C API Changes"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:498
+#: ../../whatsnew/3.1.rst:502
 msgid "Changes to Python's build process and to the C API include:"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:500
+#: ../../whatsnew/3.1.rst:504
 msgid "Integers are now stored internally either in base ``2**15`` or in base ``2**30``, the base being determined at build time.  Previously, they were always stored in base ``2**15``.  Using base ``2**30`` gives significant performance improvements on 64-bit machines, but benchmark results on 32-bit machines have been mixed.  Therefore, the default is to use base ``2**30`` on 64-bit machines and base ``2**15`` on 32-bit machines; on Unix, there's a new configure option ``--enable-big-digits`` that can be used to override this default."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:509
+#: ../../whatsnew/3.1.rst:513
 msgid "Apart from the performance improvements this change should be invisible to end users, with one exception: for testing and debugging purposes there's a new :data:`sys.int_info` that provides information about the internal format, giving the number of bits per digit and the size in bytes of the C type used to store each digit::"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:519
+#: ../../whatsnew/3.1.rst:523
 msgid "(Contributed by Mark Dickinson; :issue:`4258`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:521
+#: ../../whatsnew/3.1.rst:525
 msgid "The :c:func:`PyLong_AsUnsignedLongLong()` function now handles a negative *pylong* by raising :exc:`OverflowError` instead of :exc:`TypeError`."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:524
+#: ../../whatsnew/3.1.rst:528
 msgid "(Contributed by Mark Dickinson and Lisandro Dalcrin; :issue:`5175`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:526
+#: ../../whatsnew/3.1.rst:530
 msgid "Deprecated :c:func:`!PyNumber_Int`.  Use :c:func:`PyNumber_Long` instead."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:528
+#: ../../whatsnew/3.1.rst:532
 msgid "(Contributed by Mark Dickinson; :issue:`4910`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:530
+#: ../../whatsnew/3.1.rst:534
 msgid "Added a new :c:func:`PyOS_string_to_double` function to replace the deprecated functions :c:func:`!PyOS_ascii_strtod` and :c:func:`!PyOS_ascii_atof`."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:533
+#: ../../whatsnew/3.1.rst:537
 msgid "(Contributed by Mark Dickinson; :issue:`5914`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:535
+#: ../../whatsnew/3.1.rst:539
 msgid "Added :c:type:`PyCapsule` as a replacement for the :c:type:`!PyCObject` API. The principal difference is that the new type has a well defined interface for passing typing safety information and a less complicated signature for calling a destructor.  The old type had a problematic API and is now deprecated."
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:541
+#: ../../whatsnew/3.1.rst:545
 msgid "(Contributed by Larry Hastings; :issue:`5630`.)"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:544
+#: ../../whatsnew/3.1.rst:548
 msgid "Porting to Python 3.1"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:546
+#: ../../whatsnew/3.1.rst:550
 msgid "This section lists previously described changes and other bugfixes that may require changes to your code:"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:549
+#: ../../whatsnew/3.1.rst:553
 msgid "The new floating point string representations can break existing doctests. For example::"
 msgstr ""
 
-#: ../../whatsnew/3.1.rst:572
+#: ../../whatsnew/3.1.rst:576
 msgid "The automatic name remapping in the pickle module for protocol 2 or lower can make Python 3.1 pickles unreadable in Python 3.0.  One solution is to use protocol 3.  Another solution is to set the *fix_imports* option to ``False``. See the discussion above for more details."
 msgstr ""
