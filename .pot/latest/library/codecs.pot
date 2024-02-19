@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-02-19 18:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2133,11 +2133,11 @@ msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
 #: ../../library/codecs.rst:1545
-msgid "Support any error handler."
+msgid "Before 3.2, the *errors* argument was ignored; ``'replace'`` was always used to encode, and ``'ignore'`` to decode."
 msgstr ""
 
-#: ../../library/codecs.rst:1548
-msgid "Before 3.2, the *errors* argument was ignored; ``'replace'`` was always used to encode, and ``'ignore'`` to decode."
+#: ../../library/codecs.rst:1549
+msgid "Support any error handler."
 msgstr ""
 
 #: ../../library/codecs.rst:1554

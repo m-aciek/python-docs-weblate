@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-16 22:16+0000\n"
+"POT-Creation-Date: 2024-02-19 18:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,11 +213,11 @@ msgid "Raises an :ref:`auditing event <auditing>` ``shutil.copytree`` with argum
 msgstr ""
 
 #: ../../library/shutil.rst:277
-msgid "Copy metadata when *symlinks* is false. Now returns *dst*."
+msgid "Added the *copy_function* argument to be able to provide a custom copy function. Added the *ignore_dangling_symlinks* argument to silence dangling symlinks errors when *symlinks* is false."
 msgstr ""
 
-#: ../../library/shutil.rst:281
-msgid "Added the *copy_function* argument to be able to provide a custom copy function. Added the *ignore_dangling_symlinks* argument to silence dangling symlinks errors when *symlinks* is false."
+#: ../../library/shutil.rst:283
+msgid "Copy metadata when *symlinks* is false. Now returns *dst*."
 msgstr ""
 
 #: ../../library/shutil.rst:292
