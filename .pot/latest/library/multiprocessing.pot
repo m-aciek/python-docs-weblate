@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-19 18:44+0000\n"
+"POT-Creation-Date: 2024-02-19 18:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2102,7 +2102,7 @@ msgid "The *spawn* and *forkserver* start methods"
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2971
-msgid "There are a few extra restriction which don't apply to the *fork* start method."
+msgid "There are a few extra restrictions which don't apply to the *fork* start method."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2974
