@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-12 15:17+0000\n"
+"POT-Creation-Date: 2024-02-19 15:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -745,7 +745,7 @@ msgstr ""
 msgid "The return value can be ``'fork'``, ``'spawn'``, ``'forkserver'`` or ``None``.  See :ref:`multiprocessing-start-methods`."
 msgstr ""
 
-#: ../../library/multiprocessing.rst:1082
+#: ../../library/multiprocessing.rst:1084
 msgid "On macOS, the *spawn* start method is now the default.  The *fork* start method should be considered unsafe as it can lead to crashes of the subprocess. See :issue:`33725`."
 msgstr ""
 
