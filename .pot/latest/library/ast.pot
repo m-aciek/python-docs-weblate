@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-02-29 23:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -703,7 +703,7 @@ msgid "Also, setting ``feature_version`` to a tuple ``(major, minor)`` will atte
 msgstr ""
 
 #: ../../library/ast.rst:2188
-msgid "If source contains a null character ('\\0'), :exc:`ValueError` is raised."
+msgid "If source contains a null character (``\\0``), :exc:`ValueError` is raised."
 msgstr ""
 
 #: ../../library/ast.rst:2191
