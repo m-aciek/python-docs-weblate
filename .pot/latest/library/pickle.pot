@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 13:19+0000\n"
+"POT-Creation-Date: 2024-02-29 21:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -323,7 +323,7 @@ msgid "See :ref:`pickle-dispatch` for usage examples."
 msgstr ""
 
 #: ../../library/pickle.rst:373
-msgid "Special reducer that can be defined in :class:`Pickler` subclasses. This method has priority over any reducer in the :attr:`dispatch_table`.  It should conform to the same interface as a :meth:`~object.__reduce__` method, and can optionally return ``NotImplemented`` to fallback on :attr:`dispatch_table`-registered reducers to pickle ``obj``."
+msgid "Special reducer that can be defined in :class:`Pickler` subclasses. This method has priority over any reducer in the :attr:`dispatch_table`.  It should conform to the same interface as a :meth:`~object.__reduce__` method, and can optionally return :data:`NotImplemented` to fallback on :attr:`dispatch_table`-registered reducers to pickle ``obj``."
 msgstr ""
 
 #: ../../library/pickle.rst:379
@@ -415,7 +415,7 @@ msgid "The following types can be pickled:"
 msgstr ""
 
 #: ../../library/pickle.rst:497
-msgid "built-in constants (``None``, ``True``, ``False``, ``Ellipsis``, and ``NotImplemented``);"
+msgid "built-in constants (``None``, ``True``, ``False``, ``Ellipsis``, and :data:`NotImplemented`);"
 msgstr ""
 
 #: ../../library/pickle.rst:500
@@ -667,7 +667,7 @@ msgid "Sometimes, :attr:`~Pickler.dispatch_table` may not be flexible enough. In
 msgstr ""
 
 #: ../../library/pickle.rst:897
-msgid "For those cases, it is possible to subclass from the :class:`Pickler` class and implement a :meth:`~Pickler.reducer_override` method. This method can return an arbitrary reduction tuple (see :meth:`~object.__reduce__`). It can alternatively return ``NotImplemented`` to fallback to the traditional behavior."
+msgid "For those cases, it is possible to subclass from the :class:`Pickler` class and implement a :meth:`~Pickler.reducer_override` method. This method can return an arbitrary reduction tuple (see :meth:`~object.__reduce__`). It can alternatively return :data:`NotImplemented` to fallback to the traditional behavior."
 msgstr ""
 
 #: ../../library/pickle.rst:902

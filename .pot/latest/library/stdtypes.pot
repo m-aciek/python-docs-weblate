@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-02 14:13+0000\n"
+"POT-Creation-Date: 2024-02-29 21:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4138,11 +4138,11 @@ msgid "The NotImplemented Object"
 msgstr ""
 
 #: ../../library/stdtypes.rst:5448
-msgid "This object is returned from comparisons and binary operations when they are asked to operate on types they don't support. See :ref:`comparisons` for more information.  There is exactly one ``NotImplemented`` object. ``type(NotImplemented)()`` produces the singleton instance."
+msgid "This object is returned from comparisons and binary operations when they are asked to operate on types they don't support. See :ref:`comparisons` for more information.  There is exactly one :data:`NotImplemented` object. :code:`type(NotImplemented)()` produces the singleton instance."
 msgstr ""
 
 #: ../../library/stdtypes.rst:5453
-msgid "It is written as ``NotImplemented``."
+msgid "It is written as :code:`NotImplemented`."
 msgstr ""
 
 #: ../../library/stdtypes.rst:5459

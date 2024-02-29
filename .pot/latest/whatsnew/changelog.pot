@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-29 12:46+0000\n"
+"POT-Creation-Date: 2024-02-29 21:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13131,7 +13131,7 @@ msgid ":issue:`44676`: Add ability to serialise ``types.Union`` objects. Patch p
 msgstr ""
 
 #: ../../../build/NEWS:11626
-msgid ":issue:`44633`: Parameter substitution of the union type with wrong types now raises ``TypeError`` instead of returning ``NotImplemented``."
+msgid ":issue:`44633`: Parameter substitution of the union type with wrong types now raises ``TypeError`` instead of returning :data:`NotImplemented`."
 msgstr ""
 
 #: ../../../build/NEWS:11629
@@ -16371,7 +16371,7 @@ msgid ":issue:`40692`: In the :class:`concurrent.futures.ProcessPoolExecutor`, v
 msgstr ""
 
 #: ../../../build/NEWS:14475
-msgid ":issue:`38302`: If :func:`object.__ipow__` returns :const:`NotImplemented`, the operator will correctly fall back to :func:`object.__pow__` and :func:`object.__rpow__` as expected."
+msgid ":issue:`38302`: If :func:`object.__ipow__` returns :data:`NotImplemented`, the operator will correctly fall back to :func:`object.__pow__` and :func:`object.__rpow__` as expected."
 msgstr ""
 
 #: ../../../build/NEWS:14482

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-30 19:14+0000\n"
+"POT-Creation-Date: 2024-02-29 21:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -888,7 +888,7 @@ msgid "The not-a-number values ``float('NaN')`` and ``decimal.Decimal('NaN')`` a
 msgstr ""
 
 #: ../../reference/expressions.rst:1535
-msgid "``None`` and ``NotImplemented`` are singletons.  :PEP:`8` advises that comparisons for singletons should always be done with ``is`` or ``is not``, never the equality operators."
+msgid "``None`` and :data:`NotImplemented` are singletons.  :PEP:`8` advises that comparisons for singletons should always be done with ``is`` or ``is not``, never the equality operators."
 msgstr ""
 
 #: ../../reference/expressions.rst:1539
