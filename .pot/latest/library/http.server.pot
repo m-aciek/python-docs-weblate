@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-03-04 12:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -388,19 +388,23 @@ msgstr ""
 msgid ":class:`CGIHTTPRequestHandler` can be enabled in the command line by passing the ``--cgi`` option::"
 msgstr ""
 
-#: ../../library/http.server.rst:513
+#: ../../library/http.server.rst:512
+msgid ":class:`CGIHTTPRequestHandler` and the ``--cgi`` command line option are not intended for use by untrusted clients and may be vulnerable to exploitation. Always use within a secure environment."
+msgstr ""
+
+#: ../../library/http.server.rst:519
 msgid "Security Considerations"
 msgstr ""
 
-#: ../../library/http.server.rst:517
+#: ../../library/http.server.rst:523
 msgid ":class:`SimpleHTTPRequestHandler` will follow symbolic links when handling requests, this makes it possible for files outside of the specified directory to be served."
 msgstr ""
 
-#: ../../library/http.server.rst:521
+#: ../../library/http.server.rst:527
 msgid "Earlier versions of Python did not scrub control characters from the log messages emitted to stderr from ``python -m http.server`` or the default :class:`BaseHTTPRequestHandler` ``.log_message`` implementation. This could allow remote clients connecting to your server to send nefarious control codes to your terminal."
 msgstr ""
 
-#: ../../library/http.server.rst:527
+#: ../../library/http.server.rst:533
 msgid "Control characters are scrubbed in stderr logs."
 msgstr ""
 
@@ -428,10 +432,10 @@ msgstr ""
 msgid "httpd"
 msgstr ""
 
-#: ../../library/http.server.rst:515
+#: ../../library/http.server.rst:521
 msgid "http.server"
 msgstr ""
 
-#: ../../library/http.server.rst:515
+#: ../../library/http.server.rst:521
 msgid "security"
 msgstr ""
