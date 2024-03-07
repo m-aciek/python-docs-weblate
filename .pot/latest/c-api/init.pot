@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-11 10:50+0000\n"
+"POT-Creation-Date: 2024-03-07 08:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1272,7 +1272,7 @@ msgstr ""
 msgid "This is a low-level function, only useful for very special cases. There is no guarantee that *func* will be called as quick as possible.  If the main thread is busy executing a system call, *func* won't be called before the system call returns.  This function is generally **not** suitable for calling Python code from arbitrary C threads.  Instead, use the :ref:`PyGILState API<gilstate>`."
 msgstr ""
 
-#: ../../c-api/init.rst:1825
+#: ../../c-api/init.rst:1827
 msgid "If this function is called in a subinterpreter, the function *func* is now scheduled to be called from the subinterpreter, rather than being called from the main interpreter. Each subinterpreter now has its own list of scheduled calls."
 msgstr ""
 

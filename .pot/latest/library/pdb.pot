@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-03-07 08:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,11 +225,11 @@ msgid "If a file :file:`.pdbrc` exists in the user's home directory or in the cu
 msgstr ""
 
 #: ../../library/pdb.rst:291
-msgid ":file:`.pdbrc` is now read with ``'utf-8'`` encoding. Previously, it was read with the system locale encoding."
+msgid ":file:`.pdbrc` can now contain commands that continue debugging, such as :pdbcmd:`continue` or :pdbcmd:`next`.  Previously, these commands had no effect."
 msgstr ""
 
-#: ../../library/pdb.rst:295
-msgid ":file:`.pdbrc` can now contain commands that continue debugging, such as :pdbcmd:`continue` or :pdbcmd:`next`.  Previously, these commands had no effect."
+#: ../../library/pdb.rst:296
+msgid ":file:`.pdbrc` is now read with ``'utf-8'`` encoding. Previously, it was read with the system locale encoding."
 msgstr ""
 
 #: ../../library/pdb.rst:303
