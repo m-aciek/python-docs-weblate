@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-19 18:42+0000\n"
+"POT-Creation-Date: 2024-03-13 05:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -463,7 +463,7 @@ msgid "Return the `error function <https://en.wikipedia.org/wiki/Error_function>
 msgstr ""
 
 #: ../../library/math.rst:593
-msgid "The :func:`erf` function can be used to compute traditional statistical functions such as the `cumulative standard normal distribution <https://en.wikipedia.org/wiki/Normal_distribution#Cumulative_distribution_functions>`_::"
+msgid "The :func:`erf` function can be used to compute traditional statistical functions such as the `cumulative standard normal distribution <https://en.wikipedia.org/wiki/Cumulative_distribution_function>`_::"
 msgstr ""
 
 #: ../../library/math.rst:606
