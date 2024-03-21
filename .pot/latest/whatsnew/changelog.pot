@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-20 20:15+0000\n"
+"POT-Creation-Date: 2024-03-21 12:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3543,7 +3543,7 @@ msgid ":gh:`98003`: Complex function calls are now faster and consume no C stack
 msgstr ""
 
 #: ../../../build/NEWS:2824
-msgid ":issue:`39610`: ``len()`` for 0-dimensional :class:`memoryview`` objects (such as ``memoryview(ctypes.c_uint8(42))``) now raises a :exc:`TypeError`. Previously this returned ``1``, which was not consistent with ``mem_0d[0]`` raising an :exc:`IndexError``."
+msgid ":issue:`39610`: ``len()`` for 0-dimensional :class:`memoryview` objects (such as ``memoryview(ctypes.c_uint8(42))``) now raises a :exc:`TypeError`. Previously this returned ``1``, which was not consistent with ``mem_0d[0]`` raising an :exc:`IndexError`."
 msgstr ""
 
 #: ../../../build/NEWS:2829
@@ -7527,7 +7527,7 @@ msgid ":gh:`95166`: Fix :meth:`concurrent.futures.Executor.map` to cancel the cu
 msgstr ""
 
 #: ../../../build/NEWS:6608
-msgid ":gh:`95132`: Fix a :mod:`sqlite3` regression where ``*args`` and ``**kwds`` were incorrectly relayed from :py:func:`~sqlite3.connect` to the :class:`~sqlite3.Connection` factory. The regression was introduced in 3.11a1 with PR 24421 (:gh:`85128`). Patch by Erlend E. Aasland.`"
+msgid ":gh:`95132`: Fix a :mod:`sqlite3` regression where ``*args`` and ``**kwds`` were incorrectly relayed from :py:func:`~sqlite3.connect` to the :class:`~sqlite3.Connection` factory. The regression was introduced in 3.11a1 with PR 24421 (:gh:`85128`). Patch by Erlend E. Aasland."
 msgstr ""
 
 #: ../../../build/NEWS:6613
@@ -7631,7 +7631,7 @@ msgid ":gh:`94382`: Port static types of ``_multiprocessing`` module to heap typ
 msgstr ""
 
 #: ../../../build/NEWS:6700
-msgid ":gh:`78724`: Fix crash in :class:`struct.Struct` when it was not completely initialized by initializing it in :meth:`~object.__new__``. Patch by Kumar Aditya."
+msgid ":gh:`78724`: Fix crash in :class:`struct.Struct` when it was not completely initialized by initializing it in :meth:`~object.__new__`. Patch by Kumar Aditya."
 msgstr ""
 
 #: ../../../build/NEWS:6704
