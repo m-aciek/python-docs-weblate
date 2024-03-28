@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 20:15+0000\n"
+"POT-Creation-Date: 2024-03-28 22:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -752,7 +752,7 @@ msgid "With respect to its argument, it works similarly to :opcode:`LOAD_ATTR`, 
 msgstr ""
 
 #: ../../library/dis.rst:1118
-msgid "The low bit of ``namei`` signals to attempt a method load, as with :opcode:`LOAD_ATTR`, which results in pushing ``None`` and the loaded method. When it is unset a single value is pushed to the stack."
+msgid "The low bit of ``namei`` signals to attempt a method load, as with :opcode:`LOAD_ATTR`, which results in pushing ``NULL`` and the loaded method. When it is unset a single value is pushed to the stack."
 msgstr ""
 
 #: ../../library/dis.rst:1122
