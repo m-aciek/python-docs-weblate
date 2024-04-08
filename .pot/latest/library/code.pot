@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-08 09:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Closely emulate the behavior of the interactive Python interpreter. This 
 msgstr ""
 
 #: ../../library/code.rst:35
-msgid "Convenience function to run a read-eval-print loop.  This creates a new instance of :class:`InteractiveConsole` and sets *readfunc* to be used as the :meth:`InteractiveConsole.raw_input` method, if provided.  If *local* is provided, it is passed to the :class:`InteractiveConsole` constructor for use as the default namespace for the interpreter loop.  The :meth:`interact` method of the instance is then run with *banner* and *exitmsg* passed as the banner and exit message to use, if provided.  The console object is discarded after use."
+msgid "Convenience function to run a read-eval-print loop.  This creates a new instance of :class:`InteractiveConsole` and sets *readfunc* to be used as the :meth:`InteractiveConsole.raw_input` method, if provided.  If *local* is provided, it is passed to the :class:`InteractiveConsole` constructor for use as the default namespace for the interpreter loop.  The :meth:`~InteractiveConsole.interact` method of the instance is then run with *banner* and *exitmsg* passed as the banner and exit message to use, if provided.  The console object is discarded after use."
 msgstr ""
 
 #: ../../library/code.rst:44
