@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-11 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,7 +189,7 @@ msgid "Get additional version information from the Windows Registry and return a
 msgstr ""
 
 #: ../../library/platform.rst:212
-msgid "As a hint: *ptype* is ``'Uniprocessor Free'`` on single processor NT machines and ``'Multiprocessor Free'`` on multi processor machines. The *'Free'* refers to the OS version being free of debugging code. It could also state *'Checked'* which means the OS version uses debugging code, i.e. code that checks arguments, ranges, etc."
+msgid "As a hint: *ptype* is ``'Uniprocessor Free'`` on single processor NT machines and ``'Multiprocessor Free'`` on multi processor machines. The ``'Free'`` refers to the OS version being free of debugging code. It could also state ``'Checked'`` which means the OS version uses debugging code, i.e. code that checks arguments, ranges, etc."
 msgstr ""
 
 #: ../../library/platform.rst:220
