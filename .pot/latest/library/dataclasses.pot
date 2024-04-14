@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-14 10:46+0000\n"
+"POT-Creation-Date: 2024-04-14 22:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,7 +286,7 @@ msgid "Is equivalent to::"
 msgstr ""
 
 #: ../../library/dataclasses.rst:431
-msgid "Creates a new object of the same type as ``obj``, replacing fields with values from ``changes``.  If ``obj`` is not a Data Class, raises :exc:`TypeError`.  If values in ``changes`` do not specify fields, raises :exc:`TypeError`."
+msgid "Creates a new object of the same type as ``obj``, replacing fields with values from ``changes``.  If ``obj`` is not a Data Class, raises :exc:`TypeError`.  If keys in ``changes`` are not field names of the given dataclass, raises :exc:`TypeError`."
 msgstr ""
 
 #: ../../library/dataclasses.rst:436
