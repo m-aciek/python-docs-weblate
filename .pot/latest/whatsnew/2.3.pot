@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:18+0000\n"
+"POT-Creation-Date: 2024-04-15 11:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -662,7 +662,7 @@ msgid "The :meth:`!xreadlines` method of file objects, introduced in Python 2.1,
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1080
-msgid "The method resolution order used by new-style classes has changed, though you'll only notice the difference if you have a really complicated inheritance hierarchy.  Classic classes are unaffected by this change.  Python 2.2 originally used a topological sort of a class's ancestors, but 2.3 now uses the C3 algorithm as described in the paper `\"A Monotonic Superclass Linearization for Dylan\" <https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.3910>`_. To understand the motivation for this change,  read Michele Simionato's article `\"Python 2.3 Method Resolution Order\" <http://www.phyast.pitt.edu/~micheles/mro.html>`_, or read the thread on python-dev starting with the message at https://mail.python.org/pipermail/python-dev/2002-October/029035.html. Samuele Pedroni first pointed out the problem and also implemented the fix by coding the C3 algorithm."
+msgid "The method resolution order used by new-style classes has changed, though you'll only notice the difference if you have a really complicated inheritance hierarchy.  Classic classes are unaffected by this change.  Python 2.2 originally used a topological sort of a class's ancestors, but 2.3 now uses the C3 algorithm as described in the paper `\"A Monotonic Superclass Linearization for Dylan\" <https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.3910>`_. To understand the motivation for this change,  read Michele Simionato's article :ref:`python_2.3_mro`, or read the thread on python-dev starting with the message at https://mail.python.org/pipermail/python-dev/2002-October/029035.html. Samuele Pedroni first pointed out the problem and also implemented the fix by coding the C3 algorithm."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1093
