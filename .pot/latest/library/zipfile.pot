@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -465,7 +465,7 @@ msgid "Prior to 3.10, ``joinpath`` was undocumented and accepted exactly one par
 msgstr ""
 
 #: ../../library/zipfile.rst:629
-msgid "The `zipp <https://pypi.org/project/zipp>`_ project provides backports of the latest path object functionality to older Pythons. Use ``zipp.Path`` in place of ``zipfile.Path`` for early access to changes."
+msgid "The :pypi:`zipp` project provides backports of the latest path object functionality to older Pythons. Use ``zipp.Path`` in place of ``zipfile.Path`` for early access to changes."
 msgstr ""
 
 #: ../../library/zipfile.rst:637

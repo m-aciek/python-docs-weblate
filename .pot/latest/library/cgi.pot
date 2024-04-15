@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "The :mod:`cgi` module is deprecated (see :pep:`PEP 594 <594#cgi>` for det
 msgstr ""
 
 #: ../../library/cgi.rst:22
-msgid "The :class:`FieldStorage` class can typically be replaced with :func:`urllib.parse.parse_qsl` for ``GET`` and ``HEAD`` requests, and the :mod:`email.message` module or `multipart <https://pypi.org/project/multipart/>`_ for ``POST`` and ``PUT``. Most :ref:`utility functions <functions-in-cgi-module>` have replacements."
+msgid "The :class:`FieldStorage` class can typically be replaced with :func:`urllib.parse.parse_qsl` for ``GET`` and ``HEAD`` requests, and the :mod:`email.message` module or :pypi:`multipart` for ``POST`` and ``PUT``. Most :ref:`utility functions <functions-in-cgi-module>` have replacements."
 msgstr ""
 
 #: ../../library/cgi.rst:30
@@ -233,7 +233,7 @@ msgid "Added the *separator* parameter."
 msgstr ""
 
 #: ../../library/cgi.rst:337
-msgid "This function, like the rest of the :mod:`cgi` module, is deprecated. It can be replaced with the functionality in the :mod:`email` package (e.g. :class:`email.message.EmailMessage`/:class:`email.message.Message`) which implements the same MIME RFCs, or with the `multipart <https://pypi.org/project/multipart/>`__ PyPI project."
+msgid "This function, like the rest of the :mod:`cgi` module, is deprecated. It can be replaced with the functionality in the :mod:`email` package (e.g. :class:`email.message.EmailMessage`/:class:`email.message.Message`) which implements the same MIME RFCs, or with the :pypi:`multipart` PyPI project."
 msgstr ""
 
 #: ../../library/cgi.rst:342

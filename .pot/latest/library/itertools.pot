@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 01:06+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -687,7 +687,7 @@ msgid "A secondary purpose of the recipes is to serve as an incubator.  The ``ac
 msgstr ""
 
 #: ../../library/itertools.rst:785
-msgid "Substantially all of these recipes and many, many others can be installed from the `more-itertools project <https://pypi.org/project/more-itertools/>`_ found on the Python Package Index::"
+msgid "Substantially all of these recipes and many, many others can be installed from the :pypi:`more-itertools` project found on the Python Package Index::"
 msgstr ""
 
 #: ../../library/itertools.rst:791

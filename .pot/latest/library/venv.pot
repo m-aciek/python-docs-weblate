@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 05:15+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "The :mod:`!venv` module supports creating lightweight \"virtual environme
 msgstr ""
 
 #: ../../library/venv.rst:29
-msgid "When used from within a virtual environment, common installation tools such as `pip`_ will install Python packages into a virtual environment without needing to be told to do so explicitly."
+msgid "When used from within a virtual environment, common installation tools such as :pypi:`pip` will install Python packages into a virtual environment without needing to be told to do so explicitly."
 msgstr ""
 
 #: ../../library/venv.rst:33

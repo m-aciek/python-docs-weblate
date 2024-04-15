@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,5 +25,5 @@ msgid "The \"What's New in Python\" series of essays takes tours through the mos
 msgstr ""
 
 #: ../../whatsnew/index.rst:36
-msgid "The \"Changelog\" is an HTML version of the `file built <https://pypi.org/project/blurb>`_ from the contents of the :source:`Misc/NEWS.d` directory tree, which contains *all* nontrivial changes to Python for the current version."
+msgid "The \"Changelog\" is an HTML version of the :pypi:`file built<blurb>` from the contents of the :source:`Misc/NEWS.d` directory tree, which contains *all* nontrivial changes to Python for the current version."
 msgstr ""

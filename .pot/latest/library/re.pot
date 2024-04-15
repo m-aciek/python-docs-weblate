@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 13:29+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "It is important to note that most regular expression operations are avail
 msgstr ""
 
 #: ../../library/re.rst:51
-msgid "The third-party `regex <https://pypi.org/project/regex/>`_ module, which has an API compatible with the standard library :mod:`re` module, but offers additional functionality and a more thorough Unicode support."
+msgid "The third-party :pypi:`regex` module, which has an API compatible with the standard library :mod:`re` module, but offers additional functionality and a more thorough Unicode support."
 msgstr ""
 
 #: ../../library/re.rst:59

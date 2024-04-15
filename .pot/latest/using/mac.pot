@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-20 16:19+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgid "There are several options for building GUI applications on the Mac with P
 msgstr ""
 
 #: ../../using/mac.rst:146
-msgid "*PyObjC* is a Python binding to Apple's Objective-C/Cocoa framework, which is the foundation of most modern Mac development. Information on PyObjC is available from https://pypi.org/project/pyobjc/."
+msgid "*PyObjC* is a Python binding to Apple's Objective-C/Cocoa framework, which is the foundation of most modern Mac development. Information on PyObjC is available from :pypi:`pyobjc`."
 msgstr ""
 
 #: ../../using/mac.rst:150
@@ -181,7 +181,7 @@ msgid "A range of tools exist for converting your Python code into a standalone 
 msgstr ""
 
 #: ../../using/mac.rst:180
-msgid "`py2app <https://pypi.org/project/py2app/>`__: Supports creating macOS ``.app`` bundles from a Python project."
+msgid ":pypi:`py2app`: Supports creating macOS ``.app`` bundles from a Python project."
 msgstr ""
 
 #: ../../using/mac.rst:183

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-02 09:37+0000\n"
+"POT-Creation-Date: 2024-04-15 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "While type hints can be simple classes like :class:`float` or :class:`str
 msgstr ""
 
 #: ../../library/typing.rst:41
-msgid "New features are frequently added to the ``typing`` module. The `typing_extensions <https://pypi.org/project/typing-extensions/>`_ package provides backports of these new features to older versions of Python."
+msgid "New features are frequently added to the ``typing`` module. The :pypi:`typing_extensions` package provides backports of these new features to older versions of Python."
 msgstr ""
 
 #: ../../library/typing.rst:48
