@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 15:17+0000\n"
+"POT-Creation-Date: 2024-04-16 23:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,7 +194,7 @@ msgid "Return ``True`` if pathname *path* is a :dfn:`mount point`: a point in a 
 msgstr ""
 
 #: ../../library/os.path.rst:298
-msgid "Support for detecting non-root mount points on Windows."
+msgid "Added support for detecting non-root mount points on Windows."
 msgstr ""
 
 #: ../../library/os.path.rst:307
