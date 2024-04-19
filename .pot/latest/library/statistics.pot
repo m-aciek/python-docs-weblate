@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-26 01:02+0000\n"
+"POT-Creation-Date: 2024-04-19 06:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -414,7 +414,7 @@ msgid "Return the population variance of *data*, a non-empty sequence or iterabl
 msgstr ""
 
 #: ../../library/statistics.rst:452
-msgid "If the optional second argument *mu* is given, it is typically the mean of the *data*.  It can also be used to compute the second moment around a point that is not the mean.  If it is missing or ``None`` (the default), the arithmetic mean is automatically calculated."
+msgid "If the optional second argument *mu* is given, it should be the *population* mean of the *data*.  It can also be used to compute the second moment around a point that is not the mean.  If it is missing or ``None`` (the default), the arithmetic mean is automatically calculated."
 msgstr ""
 
 #: ../../library/statistics.rst:457
@@ -456,7 +456,7 @@ msgid "Return the sample variance of *data*, an iterable of at least two real-va
 msgstr ""
 
 #: ../../library/statistics.rst:524
-msgid "If the optional second argument *xbar* is given, it should be the mean of *data*.  If it is missing or ``None`` (the default), the mean is automatically calculated."
+msgid "If the optional second argument *xbar* is given, it should be the *sample* mean of *data*.  If it is missing or ``None`` (the default), the mean is automatically calculated."
 msgstr ""
 
 #: ../../library/statistics.rst:528
@@ -468,7 +468,7 @@ msgid "Raises :exc:`StatisticsError` if *data* has fewer than two values."
 msgstr ""
 
 #: ../../library/statistics.rst:541
-msgid "If you have already calculated the mean of your data, you can pass it as the optional second argument *xbar* to avoid recalculation:"
+msgid "If you have already calculated the sample mean of your data, you can pass it as the optional second argument *xbar* to avoid recalculation:"
 msgstr ""
 
 #: ../../library/statistics.rst:550
