@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-19 03:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -602,7 +602,7 @@ msgid "inspect"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:727
-msgid "Add :func:`inspect.markcoroutinefunction` to mark sync functions that return a :term:`coroutine` for use with :func:`inspect.iscoroutinefunction`. (Contributed Carlton Gibson in :gh:`99247`.)"
+msgid "Add :func:`inspect.markcoroutinefunction` to mark sync functions that return a :term:`coroutine` for use with :func:`inspect.iscoroutinefunction`. (Contributed by Carlton Gibson in :gh:`99247`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:731
@@ -630,7 +630,7 @@ msgid "Add :func:`math.sumprod` for computing a sum of products. (Contributed by
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:753
-msgid "Extend :func:`math.nextafter` to include a *steps* argument for moving up or down multiple steps at a time. (By Matthias Goergens, Mark Dickinson, and Raymond Hettinger in :gh:`94906`.)"
+msgid "Extend :func:`math.nextafter` to include a *steps* argument for moving up or down multiple steps at a time. (Contributed by Matthias Goergens, Mark Dickinson, and Raymond Hettinger in :gh:`94906`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:758
