@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-23 17:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "The *quiet* parameter was added."
 msgstr ""
 
 #: ../../library/py_compile.rst:99
-msgid "A enumeration of possible methods the interpreter can use to determine whether a bytecode file is up to date with a source file. The ``.pyc`` file indicates the desired invalidation mode in its header. See :ref:`pyc-invalidation` for more information on how Python invalidates ``.pyc`` files at runtime."
+msgid "An enumeration of possible methods the interpreter can use to determine whether a bytecode file is up to date with a source file. The ``.pyc`` file indicates the desired invalidation mode in its header. See :ref:`pyc-invalidation` for more information on how Python invalidates ``.pyc`` files at runtime."
 msgstr ""
 
 #: ../../library/py_compile.rst:109
