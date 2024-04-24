@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-19 03:39+0000\n"
+"POT-Creation-Date: 2024-04-24 12:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2906,4 +2906,16 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:2458
 msgid "Remove the ``PyUnicode_InternImmortal()`` function macro. (Contributed by Victor Stinner in :gh:`85858`.)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:2462
+msgid "Notable changes in 3.12.4"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:2465
+msgid "ipaddress"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:2467
+msgid "Fixed ``is_global`` and ``is_private`` behavior in ``IPv4Address``, ``IPv6Address``, ``IPv4Network`` and ``IPv6Network``."
 msgstr ""
