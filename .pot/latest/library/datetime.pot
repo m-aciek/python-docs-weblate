@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-24 20:16+0000\n"
+"POT-Creation-Date: 2024-04-24 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgid "The smallest year number allowed in a :class:`date` or :class:`.datetime`
 msgstr ""
 
 #: ../../library/datetime.rst:93
-msgid "The largest year number allowed in a :class:`date` or :class:`.datetime` object. :const:`MAXYEAR` is ``9999``."
+msgid "The largest year number allowed in a :class:`date` or :class:`.datetime` object. :const:`MAXYEAR` is 9999."
 msgstr ""
 
 #: ../../library/datetime.rst:98
@@ -2362,7 +2362,7 @@ msgid "except when the format includes sub-second components or timezone offset 
 msgstr ""
 
 #: ../../library/datetime.rst:2515
-msgid "For :class:`.time` objects, the format codes for year, month, and day should not be used, as :class:`!time` objects have no such values. If they're used anyway, ``1900`` is substituted for the year, and 1 for the month and day."
+msgid "For :class:`.time` objects, the format codes for year, month, and day should not be used, as :class:`!time` objects have no such values. If they're used anyway, 1900 is substituted for the year, and 1 for the month and day."
 msgstr ""
 
 #: ../../library/datetime.rst:2519
@@ -2474,7 +2474,7 @@ msgid "See R. H. van Gent's `guide to the mathematics of the ISO 8601 calendar <
 msgstr ""
 
 #: ../../library/datetime.rst:2645
-msgid "Passing ``datetime.strptime('Feb 29', '%b %d')`` will fail since ``1900`` is not a leap year."
+msgid "Passing ``datetime.strptime('Feb 29', '%b %d')`` will fail since 1900 is not a leap year."
 msgstr ""
 
 #: ../../library/datetime.rst:2305
