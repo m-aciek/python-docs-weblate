@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-09 01:03+0000\n"
+"POT-Creation-Date: 2024-04-26 23:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,7 +375,7 @@ msgstr ""
 
 #: ../../library/enum.rst:272
 #: ../../library/enum.rst:292
-msgid "Value of the member, can be set in :meth:`~object.__new__`."
+msgid "Value of the member, can be set in :meth:`~Enum.__new__`."
 msgstr ""
 
 #: ../../library/enum.rst:274
@@ -467,11 +467,7 @@ msgid "results in the call ``int('1a', 16)`` and a value of ``17`` for the membe
 msgstr ""
 
 #: ../../library/enum.rst:400
-msgid "..note:: When writing a custom ``__new__``, do not use ``super().__new__`` --"
-msgstr ""
-
-#: ../../library/enum.rst:401
-msgid "call the appropriate ``__new__`` instead."
+msgid "When writing a custom ``__new__``, do not use ``super().__new__`` -- call the appropriate ``__new__`` instead."
 msgstr ""
 
 #: ../../library/enum.rst:405
@@ -671,7 +667,7 @@ msgid ":attr:`~EnumType.__members__` is a read-only ordered mapping of ``member_
 msgstr ""
 
 #: ../../library/enum.rst:820
-msgid ":meth:`~object.__new__`, if specified, must create and return the enum members; it is also a very good idea to set the member's :attr:`!_value_` appropriately.  Once all the members are created it is no longer used."
+msgid ":meth:`~Enum.__new__`, if specified, must create and return the enum members; it is also a very good idea to set the member's :attr:`!_value_` appropriately.  Once all the members are created it is no longer used."
 msgstr ""
 
 #: ../../library/enum.rst:826
