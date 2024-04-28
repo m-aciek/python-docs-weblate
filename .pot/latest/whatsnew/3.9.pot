@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-28 18:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,11 +97,11 @@ msgid "garbage collection does not block on resurrected objects;"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:84
-msgid "a number of Python modules (:mod:`_abc`, :mod:`audioop`, :mod:`_bz2`, :mod:`_codecs`, :mod:`_contextvars`, :mod:`_crypt`, :mod:`_functools`, :mod:`_json`, :mod:`_locale`, :mod:`math`, :mod:`operator`, :mod:`resource`, :mod:`time`, :mod:`_weakref`) now use multiphase initialization as defined by PEP 489;"
+msgid "a number of Python modules (:mod:`!_abc`, :mod:`audioop`, :mod:`!_bz2`, :mod:`!_codecs`, :mod:`!_contextvars`, :mod:`!_crypt`, :mod:`!_functools`, :mod:`!_json`, :mod:`!_locale`, :mod:`math`, :mod:`operator`, :mod:`resource`, :mod:`time`, :mod:`!_weakref`) now use multiphase initialization as defined by PEP 489;"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:89
-msgid "a number of standard library modules (:mod:`audioop`, :mod:`ast`, :mod:`grp`, :mod:`_hashlib`, :mod:`pwd`, :mod:`_posixsubprocess`, :mod:`random`, :mod:`select`, :mod:`struct`, :mod:`termios`, :mod:`zlib`) are now using the stable ABI defined by PEP 384."
+msgid "a number of standard library modules (:mod:`audioop`, :mod:`ast`, :mod:`grp`, :mod:`!_hashlib`, :mod:`pwd`, :mod:`!_posixsubprocess`, :mod:`random`, :mod:`select`, :mod:`struct`, :mod:`termios`, :mod:`zlib`) are now using the stable ABI defined by PEP 384."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:94
@@ -212,7 +212,7 @@ msgid "The :mod:`ast` module uses the new parser and produces the same AST as th
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:205
-msgid "In Python 3.10, the old parser will be deleted and so will all functionality that depends on it (primarily the :mod:`parser` module, which has long been deprecated).  In Python 3.9 *only*, you can switch back to the LL(1) parser using a command line switch (``-X oldparser``) or an environment variable (``PYTHONOLDPARSER=1``)."
+msgid "In Python 3.10, the old parser will be deleted and so will all functionality that depends on it (primarily the :mod:`!parser` module, which has long been deprecated).  In Python 3.9 *only*, you can switch back to the LL(1) parser using a command line switch (``-X oldparser``) or an environment variable (``PYTHONOLDPARSER=1``)."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:211
@@ -340,7 +340,7 @@ msgid "When cancelling the task due to a timeout, :meth:`asyncio.wait_for` will 
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:369
-msgid ":mod:`asyncio` now raises :exc:`TyperError` when calling incompatible methods with an :class:`ssl.SSLSocket` socket. (Contributed by Ido Michael in :issue:`37404`.)"
+msgid ":mod:`asyncio` now raises :exc:`TypeError` when calling incompatible methods with an :class:`ssl.SSLSocket` socket. (Contributed by Ido Michael in :issue:`37404`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:374
@@ -576,7 +576,7 @@ msgid "os"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:592
-msgid "Added :const:`~os.CLD_KILLED` and :const:`~os.CLD_STOPPED` for :attr:`si_code`. (Contributed by Donghee Na in :issue:`38493`.)"
+msgid "Added :const:`~os.CLD_KILLED` and :const:`~os.CLD_STOPPED` for :attr:`!si_code`. (Contributed by Donghee Na in :issue:`38493`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:595
@@ -817,7 +817,7 @@ msgid "Currently :func:`math.factorial` accepts :class:`float` instances with no
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:864
-msgid "The :mod:`parser` and :mod:`symbol` modules are deprecated and will be removed in future versions of Python. For the majority of use cases, users can leverage the Abstract Syntax Tree (AST) generation and compilation stage, using the :mod:`ast` module."
+msgid "The :mod:`!parser` and :mod:`!symbol` modules are deprecated and will be removed in future versions of Python. For the majority of use cases, users can leverage the Abstract Syntax Tree (AST) generation and compilation stage, using the :mod:`ast` module."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:869
@@ -837,7 +837,7 @@ msgid "Opening the :class:`~gzip.GzipFile` file for writing without specifying t
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:892
-msgid "Deprecated the ``split()`` method of :class:`_tkinter.TkappType` in favour of the ``splitlist()`` method which has more consistent and predicable behavior. (Contributed by Serhiy Storchaka in :issue:`38371`.)"
+msgid "Deprecated the ``split()`` method of :class:`!_tkinter.TkappType` in favour of the ``splitlist()`` method which has more consistent and predicable behavior. (Contributed by Serhiy Storchaka in :issue:`38371`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:897
@@ -845,15 +845,15 @@ msgid "The explicit passing of coroutine objects to :func:`asyncio.wait` has bee
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:901
-msgid "binhex4 and hexbin4 standards are now deprecated. The :mod:`binhex` module and the following :mod:`binascii` functions are now deprecated:"
+msgid "binhex4 and hexbin4 standards are now deprecated. The :mod:`!binhex` module and the following :mod:`binascii` functions are now deprecated:"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:904
-msgid ":func:`~binascii.b2a_hqx`, :func:`~binascii.a2b_hqx`"
+msgid ":func:`!b2a_hqx`, :func:`!a2b_hqx`"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:905
-msgid ":func:`~binascii.rlecode_hqx`, :func:`~binascii.rledecode_hqx`"
+msgid ":func:`!rlecode_hqx`, :func:`!rledecode_hqx`"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:907
@@ -894,7 +894,7 @@ msgid "Removed"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:953
-msgid "The erroneous version at :data:`unittest.mock.__version__` has been removed."
+msgid "The erroneous version at :data:`!unittest.mock.__version__` has been removed."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:955
@@ -926,7 +926,7 @@ msgid "``aifc.openfp()`` alias to ``aifc.open()``, ``sunau.openfp()`` alias to `
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:990
-msgid "The :meth:`~threading.Thread.isAlive()` method of :class:`threading.Thread` has been removed. It was deprecated since Python 3.8. Use :meth:`~threading.Thread.is_alive()` instead. (Contributed by Donghee Na in :issue:`37804`.)"
+msgid "The :meth:`!isAlive()` method of :class:`threading.Thread` has been removed. It was deprecated since Python 3.8. Use :meth:`~threading.Thread.is_alive()` instead. (Contributed by Donghee Na in :issue:`37804`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:995
@@ -962,7 +962,7 @@ msgid "``with (await asyncio.lock):`` and ``with (yield from asyncio.lock):`` st
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1038
-msgid "The :func:`sys.getcounts` function, the ``-X showalloccount`` command line option and the ``show_alloc_count`` field of the C structure :c:type:`PyConfig` have been removed. They required a special Python build by defining ``COUNT_ALLOCS`` macro. (Contributed by Victor Stinner in :issue:`39489`.)"
+msgid "The :func:`!sys.getcounts` function, the ``-X showalloccount`` command line option and the ``show_alloc_count`` field of the C structure :c:type:`PyConfig` have been removed. They required a special Python build by defining ``COUNT_ALLOCS`` macro. (Contributed by Victor Stinner in :issue:`39489`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1044
@@ -970,11 +970,11 @@ msgid "The ``_field_types`` attribute of the :class:`typing.NamedTuple` class ha
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1049
-msgid "The :meth:`symtable.SymbolTable.has_exec` method has been removed. It was deprecated since 2006, and only returning ``False`` when it's called. (Contributed by Batuhan Taskaya in :issue:`40208`)"
+msgid "The :meth:`!symtable.SymbolTable.has_exec` method has been removed. It was deprecated since 2006, and only returning ``False`` when it's called. (Contributed by Batuhan Taskaya in :issue:`40208`)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1053
-msgid "The :meth:`asyncio.Task.current_task` and :meth:`asyncio.Task.all_tasks` have been removed. They were deprecated since Python 3.7 and you can use :func:`asyncio.current_task` and :func:`asyncio.all_tasks` instead. (Contributed by Rémi Lapeyre in :issue:`40967`)"
+msgid "The :meth:`!asyncio.Task.current_task` and :meth:`!asyncio.Task.all_tasks` have been removed. They were deprecated since Python 3.7 and you can use :func:`asyncio.current_task` and :func:`asyncio.all_tasks` instead. (Contributed by Rémi Lapeyre in :issue:`40967`)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1058
@@ -1123,7 +1123,7 @@ msgid "The ``COUNT_ALLOCS`` special build macro has been removed. (Contributed b
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1233
-msgid "On non-Windows platforms, the :c:func:`setenv` and :c:func:`unsetenv` functions are now required to build Python. (Contributed by Victor Stinner in :issue:`39395`.)"
+msgid "On non-Windows platforms, the :c:func:`!setenv` and :c:func:`!unsetenv` functions are now required to build Python. (Contributed by Victor Stinner in :issue:`39395`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1237
@@ -1193,7 +1193,7 @@ msgid "Added the functions :c:func:`PyObject_GC_IsTracked` and :c:func:`PyObject
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1322
-msgid "Added :c:func:`_PyObject_FunctionStr` to get a user-friendly string representation of a function-like object. (Patch by Jeroen Demeyer in :issue:`37645`.)"
+msgid "Added :c:func:`!_PyObject_FunctionStr` to get a user-friendly string representation of a function-like object. (Patch by Jeroen Demeyer in :issue:`37645`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1326
@@ -1225,7 +1225,7 @@ msgid "The global variable :c:data:`PyStructSequence_UnnamedField` is now a cons
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1364
-msgid "The :c:type:`PyGC_Head` structure is now opaque. It is only defined in the internal C API (``pycore_gc.h``). (Contributed by Victor Stinner in :issue:`40241`.)"
+msgid "The :c:type:`!PyGC_Head` structure is now opaque. It is only defined in the internal C API (``pycore_gc.h``). (Contributed by Victor Stinner in :issue:`40241`.)"
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1368
@@ -1249,11 +1249,11 @@ msgid ":c:func:`PyObject_IS_GC` macro was converted to a function."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1387
-msgid "The :c:func:`PyObject_NEW` macro becomes an alias to the :c:macro:`PyObject_New` macro, and the :c:func:`PyObject_NEW_VAR` macro becomes an alias to the :c:macro:`PyObject_NewVar` macro. They no longer access directly the :c:member:`PyTypeObject.tp_basicsize` member."
+msgid "The :c:func:`!PyObject_NEW` macro becomes an alias to the :c:macro:`PyObject_New` macro, and the :c:func:`!PyObject_NEW_VAR` macro becomes an alias to the :c:macro:`PyObject_NewVar` macro. They no longer access directly the :c:member:`PyTypeObject.tp_basicsize` member."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1392
-msgid ":c:func:`PyObject_GET_WEAKREFS_LISTPTR` macro was converted to a function: the macro accessed directly the :c:member:`PyTypeObject.tp_weaklistoffset` member."
+msgid ":c:func:`!PyObject_GET_WEAKREFS_LISTPTR` macro was converted to a function: the macro accessed directly the :c:member:`PyTypeObject.tp_weaklistoffset` member."
 msgstr ""
 
 #: ../../whatsnew/3.9.rst:1396

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-28 18:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -650,7 +650,7 @@ msgid "The new :meth:`loop.sock_recv_into() <asyncio.loop.sock_recv_into>` metho
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:669
-msgid "The new :func:`asyncio.current_task` function returns the currently running :class:`~asyncio.Task` instance, and the new :func:`asyncio.all_tasks` function returns a set of all existing ``Task`` instances in a given loop. The :meth:`Task.current_task() <asyncio.Task.current_task>` and :meth:`Task.all_tasks() <asyncio.Task.all_tasks>` methods have been deprecated. (Contributed by Andrew Svetlov in :issue:`32250`.)"
+msgid "The new :func:`asyncio.current_task` function returns the currently running :class:`~asyncio.Task` instance, and the new :func:`asyncio.all_tasks` function returns a set of all existing ``Task`` instances in a given loop. The :meth:`!Task.current_task` and :meth:`!Task.all_tasks` methods have been deprecated. (Contributed by Andrew Svetlov in :issue:`32250`.)"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:676
@@ -1806,7 +1806,7 @@ msgid "Support for directly ``await``-ing instances of :class:`asyncio.Lock` and
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:1972
-msgid "The :meth:`asyncio.Task.current_task` and :meth:`asyncio.Task.all_tasks` methods have been deprecated. (Contributed by Andrew Svetlov in :issue:`32250`.)"
+msgid "The :meth:`!asyncio.Task.current_task` and :meth:`!asyncio.Task.all_tasks` methods have been deprecated. (Contributed by Andrew Svetlov in :issue:`32250`.)"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:1980

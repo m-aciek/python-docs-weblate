@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-26 14:38+0000\n"
+"POT-Creation-Date: 2024-04-28 18:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11593,7 +11593,7 @@ msgid "*Release date: 2022-01-13*"
 msgstr ""
 
 #: ../../../build/NEWS:10290
-msgid ":issue:`46070`: :c:func:`Py_EndInterpreter` now explicitly untracks all objects currently tracked by the GC. Previously, if an object was used later by another interpreter, calling :c:func:`PyObject_GC_UnTrack` on the object crashed if the previous or the next object of the :c:type:`PyGC_Head` structure became a dangling pointer. Patch by Victor Stinner."
+msgid ":issue:`46070`: :c:func:`Py_EndInterpreter` now explicitly untracks all objects currently tracked by the GC. Previously, if an object was used later by another interpreter, calling :c:func:`PyObject_GC_UnTrack` on the object crashed if the previous or the next object of the :c:type:`!PyGC_Head` structure became a dangling pointer. Patch by Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:10296
@@ -19399,7 +19399,7 @@ msgid ":issue:`40448`: :mod:`ensurepip` now disables the use of ``pip`` cache wh
 msgstr ""
 
 #: ../../../build/NEWS:17159
-msgid ":issue:`40967`: Removed :meth:`asyncio.Task.current_task` and :meth:`asyncio.Task.all_tasks`. Patch contributed by Rémi Lapeyre."
+msgid ":issue:`40967`: Removed :meth:`!asyncio.Task.current_task` and :meth:`!asyncio.Task.all_tasks`. Patch contributed by Rémi Lapeyre."
 msgstr ""
 
 #: ../../../build/NEWS:17162
@@ -20709,7 +20709,7 @@ msgid ":issue:`40149`: Implement traverse and clear slots in _abc._abc_data type
 msgstr ""
 
 #: ../../../build/NEWS:18268
-msgid ":issue:`40208`: Remove deprecated :meth:`symtable.SymbolTable.has_exec`."
+msgid ":issue:`40208`: Remove deprecated :meth:`!symtable.SymbolTable.has_exec`."
 msgstr ""
 
 #: ../../../build/NEWS:18270
@@ -20929,7 +20929,7 @@ msgid ":issue:`40094`: Fix ``which.py`` script exit code: it now uses :func:`os.
 msgstr ""
 
 #: ../../../build/NEWS:18477
-msgid ":issue:`40241`: Move the :c:type:`PyGC_Head` structure to the internal C API."
+msgid ":issue:`40241`: Move the :c:type:`!PyGC_Head` structure to the internal C API."
 msgstr ""
 
 #: ../../../build/NEWS:18479
@@ -20941,7 +20941,7 @@ msgid ":issue:`40241`: Add the functions :c:func:`PyObject_GC_IsTracked` and :c:
 msgstr ""
 
 #: ../../../build/NEWS:18487
-msgid ":issue:`40170`: The :c:func:`PyObject_NEW` macro becomes an alias to the :c:func:`PyObject_New` macro, and the :c:func:`PyObject_NEW_VAR` macro becomes an alias to the :c:func:`PyObject_NewVar` macro, to hide implementation details. They no longer access directly the :c:member:`PyTypeObject.tp_basicsize` member."
+msgid ":issue:`40170`: The :c:func:`!PyObject_NEW` macro becomes an alias to the :c:func:`PyObject_New` macro, and the :c:func:`!PyObject_NEW_VAR` macro becomes an alias to the :c:func:`PyObject_NewVar` macro, to hide implementation details. They no longer access directly the :c:member:`PyTypeObject.tp_basicsize` member."
 msgstr ""
 
 #: ../../../build/NEWS:18493
@@ -20949,7 +20949,7 @@ msgid ":issue:`40170`: :c:func:`PyType_HasFeature` now always calls :c:func:`PyT
 msgstr ""
 
 #: ../../../build/NEWS:18498
-msgid ":issue:`40170`: Convert the :c:func:`PyObject_GET_WEAKREFS_LISTPTR` macro to a function to hide implementation details: the macro accessed directly to the :c:member:`PyTypeObject.tp_weaklistoffset` member."
+msgid ":issue:`40170`: Convert the :c:func:`!PyObject_GET_WEAKREFS_LISTPTR` macro to a function to hide implementation details: the macro accessed directly to the :c:member:`PyTypeObject.tp_weaklistoffset` member."
 msgstr ""
 
 #: ../../../build/NEWS:18502
@@ -22609,7 +22609,7 @@ msgid ":issue:`37957`: test.regrtest now can receive a list of test patterns to 
 msgstr ""
 
 #: ../../../build/NEWS:20056
-msgid ":issue:`37404`: :mod:`asyncio` now raises :exc:`TyperError` when calling incompatible methods with an :class:`ssl.SSLSocket` socket.  Patch by Ido Michael."
+msgid ":issue:`37404`: :mod:`asyncio` now raises :exc:`TypeError` when calling incompatible methods with an :class:`ssl.SSLSocket` socket.  Patch by Ido Michael."
 msgstr ""
 
 #: ../../../build/NEWS:20060
@@ -24909,7 +24909,7 @@ msgid ":issue:`37879`: Fix subtype_dealloc to suppress the type decref when the 
 msgstr ""
 
 #: ../../../build/NEWS:22003
-msgid ":issue:`37645`: Add :c:func:`_PyObject_FunctionStr` to get a user-friendly string representation of a function-like object. Patch by Jeroen Demeyer."
+msgid ":issue:`37645`: Add :c:func:`!_PyObject_FunctionStr` to get a user-friendly string representation of a function-like object. Patch by Jeroen Demeyer."
 msgstr ""
 
 #: ../../../build/NEWS:22006
