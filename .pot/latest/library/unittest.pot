@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-23 12:51+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "To achieve this, :mod:`unittest` supports some important concepts in an object-oriented way:"
 msgstr ""
 
-#: ../../library/unittest.rst:32
+#: ../../library/unittest.rst:28
 msgid "test fixture"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 msgid "A :dfn:`test fixture` represents the preparation needed to perform one or more tests, and any associated cleanup actions.  This may involve, for example, creating temporary or proxy databases, directories, or starting a server process."
 msgstr ""
 
-#: ../../library/unittest.rst:37
+#: ../../library/unittest.rst:34
 msgid "test case"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "A :dfn:`test case` is the individual unit of testing.  It checks for a specific response to a particular set of inputs.  :mod:`unittest` provides a base class, :class:`TestCase`, which may be used to create new test cases."
 msgstr ""
 
-#: ../../library/unittest.rst:41
+#: ../../library/unittest.rst:39
 msgid "test suite"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "A :dfn:`test suite` is a collection of test cases, test suites, or both.  It is used to aggregate tests that should be executed together."
 msgstr ""
 
-#: ../../library/unittest.rst:48
+#: ../../library/unittest.rst:43
 msgid "test runner"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "A :dfn:`test runner` is a component which orchestrates the execution of tests and provides the outcome to the user.  The runner may use a graphical interface, a textual interface, or return a special value to indicate the results of executing the tests."
 msgstr ""
 
-#: ../../library/unittest.rst:53
+#: ../../library/unittest.rst:52
 msgid "Module :mod:`doctest`"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Another test-support module with a very different flavor."
 msgstr ""
 
-#: ../../library/unittest.rst:57
+#: ../../library/unittest.rst:55
 msgid "`Simple Smalltalk Testing: With Patterns <https://web.archive.org/web/20150315073817/http://www.xprogramming.com/testfram.htm>`_"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Kent Beck's original paper on testing frameworks using the pattern shared by :mod:`unittest`."
 msgstr ""
 
-#: ../../library/unittest.rst:61
+#: ../../library/unittest.rst:59
 msgid "`pytest <https://docs.pytest.org/>`_"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Third-party unittest framework with a lighter-weight syntax for writing tests.  For example, ``assert func(10) == 42``."
 msgstr ""
 
-#: ../../library/unittest.rst:65
+#: ../../library/unittest.rst:63
 msgid "`The Python Testing Tools Taxonomy <https://wiki.python.org/moin/PythonTestingToolsTaxonomy>`_"
 msgstr ""
 
@@ -100,7 +100,7 @@ msgstr ""
 msgid "An extensive list of Python testing tools including functional testing frameworks and mock object libraries."
 msgstr ""
 
-#: ../../library/unittest.rst:69
+#: ../../library/unittest.rst:67
 msgid "`Testing in Python Mailing List <http://lists.idyll.org/listinfo/testing-in-python>`_"
 msgstr ""
 

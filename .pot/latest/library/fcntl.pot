@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-26 02:05+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,7 +180,7 @@ msgstr ""
 msgid "Note that in the first example the return value variable *rv* will hold an integer value; in the second example it will hold a :class:`bytes` object.  The structure lay-out for the *lockdata* variable is system dependent --- therefore using the :func:`flock` call may be better."
 msgstr ""
 
-#: ../../library/fcntl.rst:217
+#: ../../library/fcntl.rst:214
 msgid "Module :mod:`os`"
 msgstr ""
 

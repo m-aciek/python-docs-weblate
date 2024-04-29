@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-29 17:16+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,7 +286,7 @@ msgstr ""
 msgid "Depending upon the host platform, it may not be possible to modify or remove the underlying message while the returned file remains open."
 msgstr ""
 
-#: ../../library/mailbox.rst:447
+#: ../../library/mailbox.rst:445
 msgid "`maildir man page from Courier <https://www.courier-mta.org/maildir.html>`_"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgstr ""
 msgid "A specification of the format. Describes a common extension for supporting folders."
 msgstr ""
 
-#: ../../library/mailbox.rst:450
+#: ../../library/mailbox.rst:449
 msgid "`Using maildir format <https://cr.yp.to/proto/maildir.html>`_"
 msgstr ""
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "Three locking mechanisms are used---dot locking and, if available, the :c:func:`!flock` and :c:func:`!lockf` system calls."
 msgstr ""
 
-#: ../../library/mailbox.rst:502
+#: ../../library/mailbox.rst:501
 msgid "`mbox man page from tin <http://www.tin.org/bin/man.cgi?section=5&topic=mbox>`_"
 msgstr ""
 
@@ -340,7 +340,7 @@ msgstr ""
 msgid "A specification of the format, with details on locking."
 msgstr ""
 
-#: ../../library/mailbox.rst:505
+#: ../../library/mailbox.rst:504
 msgid "`Configuring Netscape Mail on Unix: Why The Content-Length Format is Bad <https://www.jwz.org/doc/content-length.html>`_"
 msgstr ""
 
@@ -424,7 +424,7 @@ msgstr ""
 msgid ":class:`!MH` instances do not keep any open files, so this method is equivalent to :meth:`unlock`."
 msgstr ""
 
-#: ../../library/mailbox.rst:634
+#: ../../library/mailbox.rst:633
 msgid "`nmh - Message Handling System <https://www.nongnu.org/nmh/>`_"
 msgstr ""
 
@@ -432,7 +432,7 @@ msgstr ""
 msgid "Home page of :program:`nmh`, an updated version of the original :program:`mh`."
 msgstr ""
 
-#: ../../library/mailbox.rst:637
+#: ../../library/mailbox.rst:636
 msgid "`MH & nmh: Email for Users & Programmers <https://rand-mh.sourceforge.io/book/>`_"
 msgstr ""
 
@@ -476,7 +476,7 @@ msgstr ""
 msgid "In Babyl mailboxes, the headers of a message are not stored contiguously with the body of the message. To generate a file-like representation, the headers and body are copied together into an :class:`io.BytesIO` instance, which has an API identical to that of a file. As a result, the file-like object is truly independent of the underlying mailbox but does not save memory compared to a string representation."
 msgstr ""
 
-#: ../../library/mailbox.rst:711
+#: ../../library/mailbox.rst:710
 msgid "`Format of Version 5 Babyl Files <https://quimby.gnus.org/notes/BABYL>`_"
 msgstr ""
 
@@ -512,7 +512,7 @@ msgstr ""
 msgid "Using the file after calling :meth:`~Mailbox.flush` or :meth:`~Mailbox.close` on the :class:`!MMDF` instance may yield unpredictable results or raise an exception."
 msgstr ""
 
-#: ../../library/mailbox.rst:762
+#: ../../library/mailbox.rst:761
 msgid "`mmdf man page from tin <http://www.tin.org/bin/man.cgi?section=5&topic=mmdf>`_"
 msgstr ""
 
@@ -520,7 +520,7 @@ msgstr ""
 msgid "A specification of MMDF format from the documentation of tin, a newsreader."
 msgstr ""
 
-#: ../../library/mailbox.rst:765
+#: ../../library/mailbox.rst:764
 msgid "`MMDF <https://en.wikipedia.org/wiki/MMDF>`_"
 msgstr ""
 

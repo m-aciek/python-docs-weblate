@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,7 +118,7 @@ msgid "quadratic blowup"
 msgstr ""
 
 #: ../../library/xml.rst:68
-#: ../../library/xml.rst:109
+#: ../../library/xml.rst:106
 msgid "external entity expansion"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgid "Safe (4)"
 msgstr ""
 
 #: ../../library/xml.rst:69
-#: ../../library/xml.rst:114
+#: ../../library/xml.rst:111
 msgid "`DTD`_ retrieval"
 msgstr ""
 
@@ -150,7 +150,7 @@ msgid "Safe"
 msgstr ""
 
 #: ../../library/xml.rst:70
-#: ../../library/xml.rst:121
+#: ../../library/xml.rst:116
 msgid "decompression bomb"
 msgstr ""
 
@@ -159,7 +159,7 @@ msgid "**Vulnerable**"
 msgstr ""
 
 #: ../../library/xml.rst:71
-#: ../../library/xml.rst:127
+#: ../../library/xml.rst:123
 msgid "large tokens"
 msgstr ""
 
@@ -191,7 +191,7 @@ msgstr ""
 msgid "Expat 2.6.0 and newer is not vulnerable to denial of service through quadratic runtime caused by parsing large tokens. Items still listed as vulnerable due to potential reliance on system-provided libraries. Check :const:`!pyexpat.EXPAT_VERSION`."
 msgstr ""
 
-#: ../../library/xml.rst:97
+#: ../../library/xml.rst:92
 msgid "billion laughs / exponential entity expansion"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgstr ""
 msgid "The `Billion Laughs`_ attack -- also known as exponential entity expansion -- uses multiple levels of nested entities. Each entity refers to another entity several times, and the final entity definition contains a small string. The exponential expansion results in several gigabytes of text and consumes lots of memory and CPU time."
 msgstr ""
 
-#: ../../library/xml.rst:104
+#: ../../library/xml.rst:99
 msgid "quadratic blowup entity expansion"
 msgstr ""
 

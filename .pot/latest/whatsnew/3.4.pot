@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-29 21:18+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,7 +260,7 @@ msgstr ""
 msgid "However, as this migration is currently still incomplete, the legacy versions of those guides remaining available as :ref:`install-index` and :ref:`setuptools-index`."
 msgstr ""
 
-#: ../../whatsnew/3.4.rst:255
+#: ../../whatsnew/3.4.rst:254
 msgid ":pep:`453` -- Explicit bootstrapping of pip in Python installations"
 msgstr ""
 
@@ -458,7 +458,7 @@ msgstr ""
 msgid "The new :mod:`enum` module (defined in :pep:`435`) provides a standard implementation of enumeration types, allowing other modules (such as :mod:`socket`) to provide more informative error messages and better debugging support by replacing opaque integer constants with backwards compatible enumeration values."
 msgstr ""
 
-#: ../../whatsnew/3.4.rst:519
+#: ../../whatsnew/3.4.rst:518
 msgid ":pep:`435` -- Adding an Enum type to the Python standard library"
 msgstr ""
 

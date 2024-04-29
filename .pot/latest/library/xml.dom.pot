@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "The specification provided by the W3C defines the DOM API for Java, ECMAScript, and OMG IDL.  The Python mapping defined here is based in large part on the IDL version of the specification, but strict compliance is not required (though implementations are free to support the strict mapping from IDL).  See section :ref:`dom-conformance` for a detailed discussion of mapping requirements."
 msgstr ""
 
-#: ../../library/xml.dom.rst:71
+#: ../../library/xml.dom.rst:70
 msgid "`Document Object Model (DOM) Level 2 Specification <https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/>`_"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "The W3C recommendation upon which the Python DOM API is based."
 msgstr ""
 
-#: ../../library/xml.dom.rst:74
+#: ../../library/xml.dom.rst:73
 msgid "`Document Object Model (DOM) Level 1 Specification <https://www.w3.org/TR/REC-DOM-Level-1/>`_"
 msgstr ""
 

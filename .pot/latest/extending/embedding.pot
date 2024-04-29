@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "There are several different ways to call the interpreter: you can pass a string containing Python statements to :c:func:`PyRun_SimpleString`, or you can pass a stdio file pointer and a file name (for identification in error messages only) to :c:func:`PyRun_SimpleFile`.  You can also call the lower-level operations described in the previous chapters to construct and use Python objects."
 msgstr ""
 
-#: ../../extending/embedding.rst:42
+#: ../../extending/embedding.rst:41
 msgid ":ref:`c-api-index`"
 msgstr ""
 

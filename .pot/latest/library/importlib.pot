@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-29 21:18+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid ":mod:`importlib.resources` provides routines for accessing non-code \"resources\" from Python packages."
 msgstr ""
 
-#: ../../library/importlib.rst:44
+#: ../../library/importlib.rst:43
 msgid ":ref:`import`"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "The language reference for the :keyword:`import` statement."
 msgstr ""
 
-#: ../../library/importlib.rst:49
+#: ../../library/importlib.rst:46
 msgid "`Packages specification <https://www.python.org/doc/essays/packages/>`__"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Original specification of packages. Some semantics have changed since the writing of this document (e.g. redirecting based on ``None`` in :data:`sys.modules`)."
 msgstr ""
 
-#: ../../library/importlib.rst:52
+#: ../../library/importlib.rst:51
 msgid "The :func:`.__import__` function"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "The :keyword:`import` statement is syntactic sugar for this function."
 msgstr ""
 
-#: ../../library/importlib.rst:55
+#: ../../library/importlib.rst:54
 msgid ":ref:`sys-path-init`"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "The initialization of :data:`sys.path`."
 msgstr ""
 
-#: ../../library/importlib.rst:58
+#: ../../library/importlib.rst:57
 msgid ":pep:`235`"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Import on Case-Insensitive Platforms"
 msgstr ""
 
-#: ../../library/importlib.rst:61
+#: ../../library/importlib.rst:60
 msgid ":pep:`263`"
 msgstr ""
 
@@ -100,7 +100,7 @@ msgstr ""
 msgid "Defining Python Source Code Encodings"
 msgstr ""
 
-#: ../../library/importlib.rst:64
+#: ../../library/importlib.rst:63
 msgid ":pep:`302`"
 msgstr ""
 
@@ -108,7 +108,7 @@ msgstr ""
 msgid "New Import Hooks"
 msgstr ""
 
-#: ../../library/importlib.rst:67
+#: ../../library/importlib.rst:66
 msgid ":pep:`328`"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Imports: Multi-Line and Absolute/Relative"
 msgstr ""
 
-#: ../../library/importlib.rst:70
+#: ../../library/importlib.rst:69
 msgid ":pep:`366`"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Main module explicit relative imports"
 msgstr ""
 
-#: ../../library/importlib.rst:73
+#: ../../library/importlib.rst:72
 msgid ":pep:`420`"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Implicit namespace packages"
 msgstr ""
 
-#: ../../library/importlib.rst:76
+#: ../../library/importlib.rst:75
 msgid ":pep:`451`"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgstr ""
 msgid "A ModuleSpec Type for the Import System"
 msgstr ""
 
-#: ../../library/importlib.rst:79
+#: ../../library/importlib.rst:78
 msgid ":pep:`488`"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Elimination of PYO files"
 msgstr ""
 
-#: ../../library/importlib.rst:82
+#: ../../library/importlib.rst:81
 msgid ":pep:`489`"
 msgstr ""
 
@@ -156,7 +156,7 @@ msgstr ""
 msgid "Multi-phase extension module initialization"
 msgstr ""
 
-#: ../../library/importlib.rst:85
+#: ../../library/importlib.rst:84
 msgid ":pep:`552`"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgstr ""
 msgid "Deterministic pycs"
 msgstr ""
 
-#: ../../library/importlib.rst:88
+#: ../../library/importlib.rst:87
 msgid ":pep:`3120`"
 msgstr ""
 
@@ -353,7 +353,7 @@ msgstr ""
 msgid "The loader should set several attributes on the module (note that some of these attributes can change when a module is reloaded):"
 msgstr ""
 
-#: ../../library/importlib.rst:360
+#: ../../library/importlib.rst:358
 msgid ":attr:`__name__`"
 msgstr ""
 
@@ -361,7 +361,7 @@ msgstr ""
 msgid "The module's fully qualified name. It is ``'__main__'`` for an executed module."
 msgstr ""
 
-#: ../../library/importlib.rst:365
+#: ../../library/importlib.rst:362
 msgid ":attr:`__file__`"
 msgstr ""
 
@@ -369,7 +369,7 @@ msgstr ""
 msgid "The location the :term:`loader` used to load the module. For example, for modules loaded from a .py file this is the filename. It is not set on all modules (e.g. built-in modules)."
 msgstr ""
 
-#: ../../library/importlib.rst:369
+#: ../../library/importlib.rst:367
 msgid ":attr:`__cached__`"
 msgstr ""
 
@@ -377,7 +377,7 @@ msgstr ""
 msgid "The filename of a compiled version of the module's code. It is not set on all modules (e.g. built-in modules)."
 msgstr ""
 
-#: ../../library/importlib.rst:377
+#: ../../library/importlib.rst:371
 msgid ":attr:`__path__`"
 msgstr ""
 
@@ -385,7 +385,7 @@ msgstr ""
 msgid "The list of locations where the package's submodules will be found. Most of the time this is a single directory. The import system passes this attribute to ``__import__()`` and to finders in the same way as :data:`sys.path` but just for the package. It is not set on non-package modules so it can be used as an indicator that the module is a package."
 msgstr ""
 
-#: ../../library/importlib.rst:382
+#: ../../library/importlib.rst:379
 msgid ":attr:`__package__`"
 msgstr ""
 
@@ -393,7 +393,7 @@ msgstr ""
 msgid "The fully qualified name of the package the module is in (or the empty string for a top-level module). If the module is a package then this is the same as :attr:`__name__`."
 msgstr ""
 
-#: ../../library/importlib.rst:385
+#: ../../library/importlib.rst:384
 msgid ":attr:`__loader__`"
 msgstr ""
 
@@ -540,7 +540,7 @@ msgstr ""
 msgid ":meth:`ResourceLoader.get_data`"
 msgstr ""
 
-#: ../../library/importlib.rst:564
+#: ../../library/importlib.rst:562
 msgid ":meth:`ExecutionLoader.get_filename`"
 msgstr ""
 
@@ -1040,7 +1040,7 @@ msgstr ""
 msgid "(Read-only) The fully qualified name of the package the module is in (or the empty string for a top-level module). If the module is a package then this is the same as :attr:`name`."
 msgstr ""
 
-#: ../../library/importlib.rst:1240
+#: ../../library/importlib.rst:1239
 msgid "``True`` if the spec's :attr:`origin` refers to a loadable location,"
 msgstr ""
 

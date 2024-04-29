@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 21:37+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr ""
 msgid "An especially nice :mod:`argparse` feature is the ability to define subparsers, each with their own argument patterns and help displays::"
 msgstr ""
 
-#: ../../whatsnew/3.2.rst:176
+#: ../../whatsnew/3.2.rst:175
 msgid ":pep:`389` - New Command Line Parsing Module"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgstr ""
 msgid "A simple of example of :class:`~concurrent.futures.ThreadPoolExecutor` is a launch of four parallel threads for copying files::"
 msgstr ""
 
-#: ../../whatsnew/3.2.rst:282
+#: ../../whatsnew/3.2.rst:281
 msgid ":pep:`3148` - Futures -- Execute Computations Asynchronously"
 msgstr ""
 

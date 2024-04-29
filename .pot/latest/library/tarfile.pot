@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-29 14:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -447,7 +447,7 @@ msgstr ""
 msgid "The default format for new archives was changed to :const:`PAX_FORMAT` from :const:`GNU_FORMAT`."
 msgstr ""
 
-#: ../../library/tarfile.rst:338
+#: ../../library/tarfile.rst:337
 msgid "Module :mod:`zipfile`"
 msgstr ""
 
@@ -455,7 +455,7 @@ msgstr ""
 msgid "Documentation of the :mod:`zipfile` standard module."
 msgstr ""
 
-#: ../../library/tarfile.rst:342
+#: ../../library/tarfile.rst:340
 msgid ":ref:`archiving-operations`"
 msgstr ""
 

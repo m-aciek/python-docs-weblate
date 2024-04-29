@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Exception raised on any errors from this module (errors from :mod:`socket` module are not caught). The reason for the exception is passed to the constructor as a string."
 msgstr ""
 
-#: ../../library/poplib.rst:102
+#: ../../library/poplib.rst:101
 msgid "Module :mod:`imaplib`"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "The standard Python IMAP module."
 msgstr ""
 
-#: ../../library/poplib.rst:106
+#: ../../library/poplib.rst:104
 msgid "`Frequently Asked Questions About Fetchmail <http://www.catb.org/~esr/fetchmail/fetchmail-FAQ.html>`_"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 10:18+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid ":ref:`sqlite3-explanation` provides in-depth background on transaction control."
 msgstr ""
 
-#: ../../library/sqlite3.rst:49
+#: ../../library/sqlite3.rst:47
 msgid "https://www.sqlite.org"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "The SQLite web page; the documentation describes the syntax and the available data types for the supported SQL dialect."
 msgstr ""
 
-#: ../../library/sqlite3.rst:52
+#: ../../library/sqlite3.rst:51
 msgid "https://www.w3schools.com/sql/"
 msgstr ""
 

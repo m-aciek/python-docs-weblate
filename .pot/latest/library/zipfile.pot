@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,7 +92,7 @@ msgstr ""
 msgid "The ZIP file format specification has included support for bzip2 compression since 2001, and for LZMA compression since 2006. However, some tools (including older Python releases) do not support these compression methods, and may either refuse to process the ZIP file altogether, or fail to extract individual files."
 msgstr ""
 
-#: ../../library/zipfile.rst:129
+#: ../../library/zipfile.rst:127
 msgid "`PKZIP Application Note`_"
 msgstr ""
 
@@ -100,7 +100,7 @@ msgstr ""
 msgid "Documentation on the ZIP file format by Phil Katz, the creator of the format and algorithms used."
 msgstr ""
 
-#: ../../library/zipfile.rst:132
+#: ../../library/zipfile.rst:131
 msgid "`Info-ZIP Home Page <https://infozip.sourceforge.net/>`_"
 msgstr ""
 

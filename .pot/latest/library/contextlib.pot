@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 04:39+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -476,7 +476,7 @@ msgstr ""
 msgid "Note that there is one additional limitation when using context managers as function decorators: there's no way to access the return value of :meth:`~object.__enter__`. If that value is needed, then it is still necessary to use an explicit ``with`` statement."
 msgstr ""
 
-#: ../../library/contextlib.rst:888
+#: ../../library/contextlib.rst:887
 msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 

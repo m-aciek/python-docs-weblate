@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-04 12:24+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "The :mod:`sets` module remains in the standard library, and may be useful if you wish to subclass the :class:`Set` or :class:`ImmutableSet` classes.  There are currently no plans to deprecate the module."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:83
+#: ../../whatsnew/2.4.rst:82
 msgid ":pep:`218` - Adding a Built-In Set Object Type"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgstr ""
 msgid "The problematic expressions are primarily left shifts and lengthy hexadecimal and octal constants.  For example, ``2 << 32`` results in a warning in 2.3, evaluating to 0 on 32-bit platforms.  In Python 2.4, this expression now returns the correct answer, 8589934592."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:108
+#: ../../whatsnew/2.4.rst:107
 msgid ":pep:`237` - Unifying Long Integers and Integers"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Generator expressions differ from list comprehensions in various small ways. Most notably, the loop variable (*obj* in the above example) is not accessible outside of the generator expression.  List comprehensions leave the variable assigned to its last value; future versions of Python will change this, making list comprehensions match generator expressions in this respect."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:165
+#: ../../whatsnew/2.4.rst:164
 msgid ":pep:`289` - Generator Expressions"
 msgstr ""
 
@@ -216,7 +216,7 @@ msgstr ""
 msgid "A small related change makes the :attr:`func_name <function.__name__>` attribute of functions writable.  This attribute is used to display function names in tracebacks, so decorators should change the name of any new function that's constructed and returned."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:339
+#: ../../whatsnew/2.4.rst:336
 msgid ":pep:`318` - Decorators for Functions, Methods and Classes"
 msgstr ""
 
@@ -316,7 +316,7 @@ msgstr ""
 msgid "The PEP takes various examples of shell and Python code and shows how they'd be translated into Python code that uses :mod:`subprocess`.  Reading this section of the PEP is highly recommended."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:466
+#: ../../whatsnew/2.4.rst:465
 msgid ":pep:`324` - subprocess - New process module"
 msgstr ""
 
@@ -452,7 +452,7 @@ msgstr ""
 msgid "For more information, see the documentation for the :mod:`decimal` module, which includes a quick-start tutorial and a reference."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:685
+#: ../../whatsnew/2.4.rst:683
 msgid ":pep:`327` - Decimal Data Type"
 msgstr ""
 
@@ -460,7 +460,7 @@ msgstr ""
 msgid "Written by Facundo Batista and implemented by Facundo Batista, Eric Price, Raymond Hettinger, Aahz, and Tim Peters."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:689
+#: ../../whatsnew/2.4.rst:687
 msgid "http://www.lahey.com/float.htm"
 msgstr ""
 
@@ -468,7 +468,7 @@ msgstr ""
 msgid "The article uses Fortran code to illustrate many of the problems that floating-point inaccuracy can cause."
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:693
+#: ../../whatsnew/2.4.rst:691
 msgid "http://speleotrove.com/decimal/"
 msgstr ""
 
@@ -723,7 +723,7 @@ msgstr ""
 msgid "Chinese (ROC): big5, cp950"
 msgstr ""
 
-#: ../../whatsnew/2.4.rst:1018
+#: ../../whatsnew/2.4.rst:1016
 msgid "Japanese: cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,7 @@ msgstr ""
 msgid "Added support of type tags with prefixes (e.g. ``ex:nil``). Added support of unmarshalling additional types used by Apache XML-RPC implementation for numerics: ``i1``, ``i2``, ``i8``, ``biginteger``, ``float`` and ``bigdecimal``. See https://ws.apache.org/xmlrpc/types.html for a description."
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:166
+#: ../../library/xmlrpc.client.rst:164
 msgid "`XML-RPC HOWTO <https://tldp.org/HOWTO/XML-RPC-HOWTO/index.html>`_"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "A good description of XML-RPC operation and client software in several languages. Contains pretty much everything an XML-RPC client developer needs to know."
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:169
+#: ../../library/xmlrpc.client.rst:168
 msgid "`XML-RPC Introspection <https://xmlrpc-c.sourceforge.net/introspection.html>`_"
 msgstr ""
 

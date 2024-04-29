@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 11:39+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,7 +167,7 @@ msgstr ""
 msgid "There are two types of integers:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:243
+#: ../../reference/datamodel.rst:238
 msgid "Integers (:class:`int`)"
 msgstr ""
 
@@ -175,7 +175,7 @@ msgstr ""
 msgid "These represent numbers in an unlimited range, subject to available (virtual) memory only.  For the purpose of shift and mask operations, a binary representation is assumed, and negative numbers are represented in a variant of 2's complement which gives the illusion of an infinite string of sign bits extending to the left."
 msgstr ""
 
-#: ../../reference/datamodel.rst:256
+#: ../../reference/datamodel.rst:245
 msgid "Booleans (:class:`bool`)"
 msgstr ""
 
@@ -231,7 +231,7 @@ msgstr ""
 msgid "The following types are immutable sequences:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:356
+#: ../../reference/datamodel.rst:338
 msgid "Strings"
 msgstr ""
 
@@ -239,7 +239,7 @@ msgstr ""
 msgid "A string is a sequence of values that represent Unicode code points. All the code points in the range ``U+0000 - U+10FFFF`` can be represented in a string.  Python doesn't have a :c:expr:`char` type; instead, every code point in the string is represented as a string object with length ``1``.  The built-in function :func:`ord` converts a code point from its string form to an integer in the range ``0 - 10FFFF``; :func:`chr` converts an integer in the range ``0 - 10FFFF`` to the corresponding length ``1`` string object. :meth:`str.encode` can be used to convert a :class:`str` to :class:`bytes` using the given text encoding, and :meth:`bytes.decode` can be used to achieve the opposite."
 msgstr ""
 
-#: ../../reference/datamodel.rst:369
+#: ../../reference/datamodel.rst:358
 msgid "Tuples"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "The items of a tuple are arbitrary Python objects. Tuples of two or more items are formed by comma-separated lists of expressions.  A tuple of one item (a 'singleton') can be formed by affixing a comma to an expression (an expression by itself does not create a tuple, since parentheses must be usable for grouping of expressions).  An empty tuple can be formed by an empty pair of parentheses."
 msgstr ""
 
-#: ../../reference/datamodel.rst:379
+#: ../../reference/datamodel.rst:371
 msgid "Bytes"
 msgstr ""
 
@@ -271,7 +271,7 @@ msgstr ""
 msgid "There are currently two intrinsic mutable sequence types:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:409
+#: ../../reference/datamodel.rst:404
 msgid "Lists"
 msgstr ""
 
@@ -279,7 +279,7 @@ msgstr ""
 msgid "The items of a list are arbitrary Python objects.  Lists are formed by placing a comma-separated list of expressions in square brackets. (Note that there are no special cases needed to form lists of length 0 or 1.)"
 msgstr ""
 
-#: ../../reference/datamodel.rst:418
+#: ../../reference/datamodel.rst:411
 msgid "Byte Arrays"
 msgstr ""
 
@@ -303,7 +303,7 @@ msgstr ""
 msgid "There are currently two intrinsic set types:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:448
+#: ../../reference/datamodel.rst:442
 msgid "Sets"
 msgstr ""
 
@@ -311,7 +311,7 @@ msgstr ""
 msgid "These represent a mutable set. They are created by the built-in :func:`set` constructor and can be modified afterwards by several methods, such as :meth:`~set.add`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:457
+#: ../../reference/datamodel.rst:450
 msgid "Frozen sets"
 msgstr ""
 
@@ -613,7 +613,7 @@ msgstr ""
 msgid "Predefined (writable) attributes:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:889
+#: ../../reference/datamodel.rst:888
 msgid ":attr:`__name__`"
 msgstr ""
 
@@ -621,8 +621,8 @@ msgstr ""
 msgid "The module's name."
 msgstr ""
 
-#: ../../reference/datamodel.rst:893
-#: ../../reference/datamodel.rst:990
+#: ../../reference/datamodel.rst:891
+#: ../../reference/datamodel.rst:989
 msgid ":attr:`__doc__`"
 msgstr ""
 
@@ -630,7 +630,7 @@ msgstr ""
 msgid "The module's documentation string, or ``None`` if unavailable."
 msgstr ""
 
-#: ../../reference/datamodel.rst:902
+#: ../../reference/datamodel.rst:895
 msgid ":attr:`__file__`"
 msgstr ""
 
@@ -638,8 +638,8 @@ msgstr ""
 msgid "The pathname of the file from which the module was loaded, if it was loaded from a file. The :attr:`__file__` attribute may be missing for certain types of modules, such as C modules that are statically linked into the interpreter.  For extension modules loaded dynamically from a shared library, it's the pathname of the shared library file."
 msgstr ""
 
-#: ../../reference/datamodel.rst:908
-#: ../../reference/datamodel.rst:997
+#: ../../reference/datamodel.rst:904
+#: ../../reference/datamodel.rst:992
 msgid ":attr:`__annotations__`"
 msgstr ""
 
@@ -679,7 +679,7 @@ msgstr ""
 msgid "Special attributes:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:977
+#: ../../reference/datamodel.rst:976
 msgid ":attr:`~definition.__name__`"
 msgstr ""
 
@@ -687,7 +687,7 @@ msgstr ""
 msgid "The class name."
 msgstr ""
 
-#: ../../reference/datamodel.rst:980
+#: ../../reference/datamodel.rst:979
 msgid ":attr:`__module__`"
 msgstr ""
 
@@ -695,7 +695,7 @@ msgstr ""
 msgid "The name of the module in which the class was defined."
 msgstr ""
 
-#: ../../reference/datamodel.rst:983
+#: ../../reference/datamodel.rst:982
 msgid ":attr:`~object.__dict__`"
 msgstr ""
 
@@ -703,7 +703,7 @@ msgstr ""
 msgid "The dictionary containing the class's namespace."
 msgstr ""
 
-#: ../../reference/datamodel.rst:987
+#: ../../reference/datamodel.rst:985
 msgid ":attr:`~class.__bases__`"
 msgstr ""
 
@@ -719,7 +719,7 @@ msgstr ""
 msgid "A dictionary containing :term:`variable annotations <variable annotation>` collected during class body execution.  For best practices on working with :attr:`__annotations__`, please see :ref:`annotations-howto`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1002
+#: ../../reference/datamodel.rst:999
 msgid ":attr:`__type_params__`"
 msgstr ""
 
@@ -1471,7 +1471,7 @@ msgstr ""
 msgid "The starting point for descriptor invocation is a binding, ``a.x``. How the arguments are assembled depends on ``a``:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2140
+#: ../../reference/datamodel.rst:2138
 msgid "Direct Call"
 msgstr ""
 
@@ -1479,7 +1479,7 @@ msgstr ""
 msgid "The simplest and least common call is when user code directly invokes a descriptor method:    ``x.__get__(a)``."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2144
+#: ../../reference/datamodel.rst:2142
 msgid "Instance Binding"
 msgstr ""
 
@@ -1487,7 +1487,7 @@ msgstr ""
 msgid "If binding to an object instance, ``a.x`` is transformed into the call: ``type(a).__dict__['x'].__get__(a, type(a))``."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2148
+#: ../../reference/datamodel.rst:2146
 msgid "Class Binding"
 msgstr ""
 
@@ -1495,7 +1495,7 @@ msgstr ""
 msgid "If binding to a class, ``A.x`` is transformed into the call: ``A.__dict__['x'].__get__(None, A)``."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2154
+#: ../../reference/datamodel.rst:2150
 msgid "Super Binding"
 msgstr ""
 
@@ -1671,7 +1671,7 @@ msgstr ""
 msgid "If a base that appears in a class definition is not an instance of :class:`type`, then an :meth:`!__mro_entries__` method is searched on the base. If an :meth:`!__mro_entries__` method is found, the base is substituted with the result of a call to :meth:`!__mro_entries__` when creating the class. The method is called with the original bases tuple passed to the *bases* parameter, and must return a tuple of classes that will be used instead of the base. The returned tuple may be empty: in these cases, the original base is ignored."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2427
+#: ../../reference/datamodel.rst:2426
 msgid ":func:`types.resolve_bases`"
 msgstr ""
 
@@ -1679,7 +1679,7 @@ msgstr ""
 msgid "Dynamically resolve bases that are not instances of :class:`type`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2431
+#: ../../reference/datamodel.rst:2429
 msgid ":func:`types.get_original_bases`"
 msgstr ""
 
@@ -1831,7 +1831,7 @@ msgstr ""
 msgid "Note that these methods are looked up on the type (metaclass) of a class.  They cannot be defined as class methods in the actual class.  This is consistent with the lookup of special methods that are called on instances, only in this case the instance is itself a class."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2603
+#: ../../reference/datamodel.rst:2599
 msgid ":pep:`3119` - Introducing Abstract Base Classes"
 msgstr ""
 
@@ -1847,7 +1847,7 @@ msgstr ""
 msgid "When using :term:`type annotations<annotation>`, it is often useful to *parameterize* a :term:`generic type` using Python's square-brackets notation. For example, the annotation ``list[int]`` might be used to signify a :class:`list` in which all the elements are of type :class:`int`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2618
+#: ../../reference/datamodel.rst:2617
 msgid ":pep:`484` - Type Hints"
 msgstr ""
 
@@ -1855,7 +1855,7 @@ msgstr ""
 msgid "Introducing Python's framework for type annotations"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2621
+#: ../../reference/datamodel.rst:2620
 msgid ":ref:`Generic Alias Types<types-genericalias>`"
 msgstr ""
 
@@ -1863,7 +1863,7 @@ msgstr ""
 msgid "Documentation for objects representing parameterized generic classes"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2624
+#: ../../reference/datamodel.rst:2623
 msgid ":ref:`Generics`, :ref:`user-defined generics<user-defined-generics>` and :class:`typing.Generic`"
 msgstr ""
 
@@ -1919,7 +1919,7 @@ msgstr ""
 msgid "However, if a class has a custom metaclass that defines :meth:`~object.__getitem__`, subscribing the class may result in different behaviour. An example of this can be found in the :mod:`enum` module::"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2744
+#: ../../reference/datamodel.rst:2742
 msgid ":pep:`560` - Core Support for typing module and generic types"
 msgstr ""
 
@@ -2107,7 +2107,7 @@ msgstr ""
 msgid "Note that :meth:`~object.__exit__` methods should not reraise the passed-in exception; this is the caller's responsibility."
 msgstr ""
 
-#: ../../reference/datamodel.rst:3159
+#: ../../reference/datamodel.rst:3158
 msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
@@ -2159,7 +2159,7 @@ msgstr ""
 msgid "Called when a buffer is no longer needed. The *buffer* argument is a :class:`memoryview` object that was previously returned by :meth:`~object.__buffer__`. The method must release any resources associated with the buffer. This method should return ``None``. Buffer objects that do not need to perform any cleanup are not required to implement this method."
 msgstr ""
 
-#: ../../reference/datamodel.rst:3231
+#: ../../reference/datamodel.rst:3230
 msgid ":pep:`688` - Making the buffer protocol accessible in Python"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1091,7 +1091,7 @@ msgstr ""
 msgid "Writes a sentinel to the queue to tell the listener to quit. This implementation uses ``put_nowait()``.  You may want to override this method if you want to use timeouts or work with custom queue implementations."
 msgstr ""
 
-#: ../../library/logging.handlers.rst:1196
+#: ../../library/logging.handlers.rst:1195
 msgid "Module :mod:`logging`"
 msgstr ""
 

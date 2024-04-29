@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,7 @@ msgstr ""
 msgid "A new security considerations section was added to :rfc:`4648` (section 12); it's recommended to review the security section for any code deployed to production."
 msgstr ""
 
-#: ../../library/base64.rst:306
+#: ../../library/base64.rst:305
 msgid "Module :mod:`binascii`"
 msgstr ""
 
@@ -234,7 +234,7 @@ msgstr ""
 msgid "Support module containing ASCII-to-binary and binary-to-ASCII conversions."
 msgstr ""
 
-#: ../../library/base64.rst:309
+#: ../../library/base64.rst:308
 msgid ":rfc:`1521` - MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies"
 msgstr ""
 

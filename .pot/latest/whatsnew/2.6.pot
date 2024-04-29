@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr ""
 msgid "Hosting of the Python bug tracker is kindly provided by `Upfront Systems <https://upfrontsoftware.co.za>`__ of Stellenbosch, South Africa.  Martin von Löwis put a lot of effort into importing existing bugs and patches from SourceForge; his scripts for this import operation are at ``https://svn.python.org/view/tracker/importer/`` and may be useful to other projects wishing to move from SourceForge to Roundup."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:183
+#: ../../whatsnew/2.6.rst:182
 msgid "https://bugs.python.org"
 msgstr ""
 
@@ -120,7 +120,7 @@ msgstr ""
 msgid "The Python bug tracker."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:186
+#: ../../whatsnew/2.6.rst:185
 msgid "https://bugs.jython.org:"
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr ""
 msgid "The Jython bug tracker."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:189
+#: ../../whatsnew/2.6.rst:188
 msgid "https://roundup.sourceforge.io/"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgstr ""
 msgid "Sphinx is a standalone package that can be used for writing, and almost two dozen other projects (`listed on the Sphinx web site <https://www.sphinx-doc.org/en/master/examples.html>`__) have adopted Sphinx as their documentation tool."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:234
+#: ../../whatsnew/2.6.rst:233
 msgid "`Documenting Python <https://devguide.python.org/documenting/>`__"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgstr ""
 msgid "Describes how to write for Python's documentation."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:237
+#: ../../whatsnew/2.6.rst:236
 msgid "`Sphinx <https://www.sphinx-doc.org/>`__"
 msgstr ""
 
@@ -328,7 +328,7 @@ msgstr ""
 msgid "Finally, the :func:`closing` function returns its argument so that it can be bound to a variable, and calls the argument's ``.close()`` method at the end of the block. ::"
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:490
+#: ../../whatsnew/2.6.rst:486
 msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
@@ -436,7 +436,7 @@ msgstr ""
 msgid "The documentation for the :mod:`multiprocessing` module."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:707
+#: ../../whatsnew/2.6.rst:706
 msgid ":pep:`371` - Addition of the multiprocessing package"
 msgstr ""
 
@@ -608,7 +608,7 @@ msgstr ""
 msgid "There's also a :func:`format` builtin that will format a single value.  It calls the type's :meth:`__format__` method with the provided specifier::"
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:847
+#: ../../whatsnew/2.6.rst:846
 msgid ":ref:`formatstrings`"
 msgstr ""
 
@@ -788,7 +788,7 @@ msgstr ""
 msgid "In Python 2.6, the underlying implementations haven't been restructured to build on top of the :mod:`io` module's classes.  The module is being provided to make it easier to write code that's forward-compatible with 3.0, and to save developers the effort of writing their own implementations of buffering and text I/O."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:1099
+#: ../../whatsnew/2.6.rst:1097
 msgid ":pep:`3116` - New I/O"
 msgstr ""
 
@@ -832,7 +832,7 @@ msgstr ""
 msgid "Two new argument codes for :c:func:`PyArg_ParseTuple`, ``s*`` and ``z*``, return locked buffer objects for a parameter."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:1149
+#: ../../whatsnew/2.6.rst:1148
 msgid ":pep:`3118` - Revising the buffer protocol"
 msgstr ""
 
@@ -900,7 +900,7 @@ msgstr ""
 msgid "Subclasses must then define a :meth:`readonly` property."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:1297
+#: ../../whatsnew/2.6.rst:1295
 msgid ":pep:`3119` - Introducing Abstract Base Classes"
 msgstr ""
 
@@ -928,7 +928,7 @@ msgstr ""
 msgid "The :func:`int` and :func:`long` builtins will now accept the \"0o\" and \"0b\" prefixes when base-8 or base-2 are requested, or when the *base* argument is zero (signalling that the base used should be determined from the string)::"
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:1349
+#: ../../whatsnew/2.6.rst:1348
 msgid ":pep:`3127` - Integer Literal Support and Syntax"
 msgstr ""
 
@@ -988,7 +988,7 @@ msgstr ""
 msgid "In Python 3.0, the PEP slightly redefines the existing builtins :func:`round`, :func:`math.floor`, :func:`math.ceil`, and adds a new one, :func:`math.trunc`, that's been backported to Python 2.6. :func:`math.trunc` rounds toward zero, returning the closest :class:`Integral` that's between the function's argument and zero."
 msgstr ""
 
-#: ../../whatsnew/2.6.rst:1426
+#: ../../whatsnew/2.6.rst:1425
 msgid ":pep:`3141` - A Type Hierarchy for Numbers"
 msgstr ""
 

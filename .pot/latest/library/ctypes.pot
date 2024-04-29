@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-19 11:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1212,7 +1212,7 @@ msgstr ""
 msgid "The first item is an integer containing a combination of direction flags for the parameter:"
 msgstr ""
 
-#: ../../library/ctypes.rst:1785
+#: ../../library/ctypes.rst:1784
 msgid "1"
 msgstr ""
 
@@ -1220,7 +1220,7 @@ msgstr ""
 msgid "Specifies an input parameter to the function."
 msgstr ""
 
-#: ../../library/ctypes.rst:1788
+#: ../../library/ctypes.rst:1787
 msgid "2"
 msgstr ""
 
@@ -1228,7 +1228,7 @@ msgstr ""
 msgid "Output parameter.  The foreign function fills in a value."
 msgstr ""
 
-#: ../../library/ctypes.rst:1791
+#: ../../library/ctypes.rst:1790
 msgid "4"
 msgstr ""
 

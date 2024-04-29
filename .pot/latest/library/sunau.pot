@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr ""
 msgid "If *file* is a string, open the file by that name, otherwise treat it as a seekable file-like object. *mode* can be any of"
 msgstr ""
 
-#: ../../library/sunau.rst:56
+#: ../../library/sunau.rst:55
 msgid "``'r'``"
 msgstr ""
 
@@ -120,7 +120,7 @@ msgstr ""
 msgid "Read only mode."
 msgstr ""
 
-#: ../../library/sunau.rst:59
+#: ../../library/sunau.rst:58
 msgid "``'w'``"
 msgstr ""
 

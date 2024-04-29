@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "The following options are supported:"
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:33
+#: ../../library/tkinter.messagebox.rst:29
 msgid "*command*"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Specifies the function to invoke when the user closes the dialog. The name of the button clicked by the user to close the dialog is passed as argument. This is only available on macOS."
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:39
+#: ../../library/tkinter.messagebox.rst:35
 msgid "*default*"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Gives the :ref:`symbolic name <messagebox-buttons>` of the default button for this message window (:data:`OK`, :data:`CANCEL`, and so on). If this option is not specified, the first button in the dialog will be made the default."
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:46
+#: ../../library/tkinter.messagebox.rst:41
 msgid "*detail*"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Specifies an auxiliary message to the main message given by the *message* option. The message detail will be presented beneath the main message and, where supported by the OS, in a less emphasized font than the main message."
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:51
+#: ../../library/tkinter.messagebox.rst:48
 msgid "*icon*"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Specifies an :ref:`icon <messagebox-icons>` to display. If this option is not specified, then the :data:`INFO` icon will be displayed."
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:55
+#: ../../library/tkinter.messagebox.rst:53
 msgid "*message*"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Specifies the message to display in this message box. The default value is an empty string."
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:59
+#: ../../library/tkinter.messagebox.rst:57
 msgid "*parent*"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Makes the specified window the logical parent of the message box. The message box is displayed on top of its parent window."
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:64
+#: ../../library/tkinter.messagebox.rst:61
 msgid "*title*"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Specifies a string to display as the title of the message box. This option is ignored on macOS, where platform guidelines forbid the use of a title on this kind of dialog."
 msgstr ""
 
-#: ../../library/tkinter.messagebox.rst:68
+#: ../../library/tkinter.messagebox.rst:66
 msgid "*type*"
 msgstr ""
 

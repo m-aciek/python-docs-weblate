@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 msgid "Previously, ZIP archives with an archive comment were not supported."
 msgstr ""
 
-#: ../../library/zipimport.rst:40
+#: ../../library/zipimport.rst:38
 msgid "`PKZIP Application Note <https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT>`_"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Documentation on the ZIP file format by Phil Katz, the creator of the format and algorithms used."
 msgstr ""
 
-#: ../../library/zipimport.rst:45
+#: ../../library/zipimport.rst:42
 msgid ":pep:`273` - Import Modules from Zip Archives"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Written by James C. Ahlstrom, who also provided an implementation. Python 2.3 follows the specification in :pep:`273`, but uses an implementation written by Just van Rossum that uses the import hooks described in :pep:`302`."
 msgstr ""
 
-#: ../../library/zipimport.rst:48
+#: ../../library/zipimport.rst:47
 msgid ":mod:`importlib` - The implementation of the import machinery"
 msgstr ""
 

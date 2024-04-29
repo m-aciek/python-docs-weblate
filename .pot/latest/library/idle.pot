@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-05 19:11+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 msgid "File menu (Shell and Editor)"
 msgstr ""
 
-#: ../../library/idle.rst:57
+#: ../../library/idle.rst:56
 msgid "New File"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgstr ""
 msgid "Create a new file editing window."
 msgstr ""
 
-#: ../../library/idle.rst:60
+#: ../../library/idle.rst:59
 msgid "Open..."
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "Open an existing file with an Open dialog."
 msgstr ""
 
-#: ../../library/idle.rst:63
+#: ../../library/idle.rst:62
 msgid "Open Module..."
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 msgid "Open an existing module (searches sys.path)."
 msgstr ""
 
-#: ../../library/idle.rst:66
+#: ../../library/idle.rst:65
 msgid "Recent Files"
 msgstr ""
 
@@ -109,7 +109,7 @@ msgstr ""
 msgid "Open a list of recent files.  Click one to open it."
 msgstr ""
 
-#: ../../library/idle.rst:74
+#: ../../library/idle.rst:72
 msgid "Module Browser"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Show functions, classes, and methods in the current Editor file in a tree structure.  In the shell, open a module first."
 msgstr ""
 
-#: ../../library/idle.rst:78
+#: ../../library/idle.rst:76
 msgid "Path Browser"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Show sys.path directories, modules, functions, classes and methods in a tree structure."
 msgstr ""
 
-#: ../../library/idle.rst:84
+#: ../../library/idle.rst:80
 msgid "Save"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Save the current window to the associated file, if there is one.  Windows that have been changed since being opened or last saved have a \\* before and after the window title.  If there is no associated file, do Save As instead."
 msgstr ""
 
-#: ../../library/idle.rst:91
+#: ../../library/idle.rst:86
 msgid "Save As..."
 msgstr ""
 
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Save the current window with a Save As dialog.  The file saved becomes the new associated file for the window. (If your file namager is set to hide extensions, the current extension will be omitted in the file name box. If the new filename has no '.', '.py' and '.txt' will be added for Python and text files, except that on macOS Aqua,'.py' is added for all files.)"
 msgstr ""
 
-#: ../../library/idle.rst:95
+#: ../../library/idle.rst:93
 msgid "Save Copy As..."
 msgstr ""
 
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Save the current window to different file without changing the associated file.  (See Save As note above about filename extensions.)"
 msgstr ""
 
-#: ../../library/idle.rst:98
+#: ../../library/idle.rst:97
 msgid "Print Window"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "Print the current window to the default printer."
 msgstr ""
 
-#: ../../library/idle.rst:103
+#: ../../library/idle.rst:100
 msgid "Close Window"
 msgstr ""
 
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Close the current window (if an unsaved editor, ask to save; if an unsaved Shell, ask to quit execution).  Calling ``exit()`` or ``close()`` in the Shell window also closes Shell.  If this is the only window, also exit IDLE."
 msgstr ""
 
-#: ../../library/idle.rst:106
+#: ../../library/idle.rst:105
 msgid "Exit IDLE"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Edit menu (Shell and Editor)"
 msgstr ""
 
-#: ../../library/idle.rst:113
+#: ../../library/idle.rst:111
 msgid "Undo"
 msgstr ""
 
@@ -185,7 +185,7 @@ msgstr ""
 msgid "Undo the last change to the current window.  A maximum of 1000 changes may be undone."
 msgstr ""
 
-#: ../../library/idle.rst:116
+#: ../../library/idle.rst:115
 msgid "Redo"
 msgstr ""
 
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Redo the last undone change to the current window."
 msgstr ""
 
-#: ../../library/idle.rst:119
+#: ../../library/idle.rst:118
 msgid "Select All"
 msgstr ""
 
@@ -201,9 +201,9 @@ msgstr ""
 msgid "Select the entire contents of the current window."
 msgstr ""
 
-#: ../../library/idle.rst:122
+#: ../../library/idle.rst:121
 #: ../../library/idle.rst:353
-#: ../../library/idle.rst:368
+#: ../../library/idle.rst:367
 msgid "Cut"
 msgstr ""
 
@@ -212,9 +212,9 @@ msgstr ""
 msgid "Copy selection into the system-wide clipboard; then delete the selection."
 msgstr ""
 
-#: ../../library/idle.rst:125
+#: ../../library/idle.rst:124
 #: ../../library/idle.rst:353
-#: ../../library/idle.rst:371
+#: ../../library/idle.rst:370
 msgid "Copy"
 msgstr ""
 
@@ -223,9 +223,9 @@ msgstr ""
 msgid "Copy selection into the system-wide clipboard."
 msgstr ""
 
-#: ../../library/idle.rst:128
+#: ../../library/idle.rst:127
 #: ../../library/idle.rst:353
-#: ../../library/idle.rst:374
+#: ../../library/idle.rst:373
 msgid "Paste"
 msgstr ""
 
@@ -238,7 +238,7 @@ msgstr ""
 msgid "The clipboard functions are also available in context menus."
 msgstr ""
 
-#: ../../library/idle.rst:133
+#: ../../library/idle.rst:132
 msgid "Find..."
 msgstr ""
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "Open a search dialog with many options"
 msgstr ""
 
-#: ../../library/idle.rst:136
+#: ../../library/idle.rst:135
 msgid "Find Again"
 msgstr ""
 
@@ -254,7 +254,7 @@ msgstr ""
 msgid "Repeat the last search, if there is one."
 msgstr ""
 
-#: ../../library/idle.rst:139
+#: ../../library/idle.rst:138
 msgid "Find Selection"
 msgstr ""
 
@@ -262,7 +262,7 @@ msgstr ""
 msgid "Search for the currently selected string, if there is one."
 msgstr ""
 
-#: ../../library/idle.rst:142
+#: ../../library/idle.rst:141
 msgid "Find in Files..."
 msgstr ""
 
@@ -270,7 +270,7 @@ msgstr ""
 msgid "Open a file search dialog.  Put results in a new output window."
 msgstr ""
 
-#: ../../library/idle.rst:145
+#: ../../library/idle.rst:144
 msgid "Replace..."
 msgstr ""
 
@@ -278,7 +278,7 @@ msgstr ""
 msgid "Open a search-and-replace dialog."
 msgstr ""
 
-#: ../../library/idle.rst:150
+#: ../../library/idle.rst:147
 msgid "Go to Line"
 msgstr ""
 
@@ -286,7 +286,7 @@ msgstr ""
 msgid "Move the cursor to the beginning of the line requested and make that line visible.  A request past the end of the file goes to the end. Clear any selection and update the line and column status."
 msgstr ""
 
-#: ../../library/idle.rst:154
+#: ../../library/idle.rst:152
 msgid "Show Completions"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgstr ""
 msgid "Open a scrollable list allowing selection of existing names. See :ref:`Completions <completions>` in the Editing and navigation section below."
 msgstr ""
 
-#: ../../library/idle.rst:158
+#: ../../library/idle.rst:156
 msgid "Expand Word"
 msgstr ""
 
@@ -302,7 +302,7 @@ msgstr ""
 msgid "Expand a prefix you have typed to match a full word in the same window; repeat to get a different expansion."
 msgstr ""
 
-#: ../../library/idle.rst:163
+#: ../../library/idle.rst:160
 msgid "Show Call Tip"
 msgstr ""
 
@@ -310,7 +310,7 @@ msgstr ""
 msgid "After an unclosed parenthesis for a function, open a small window with function parameter hints.  See :ref:`Calltips <calltips>` in the Editing and navigation section below."
 msgstr ""
 
-#: ../../library/idle.rst:166
+#: ../../library/idle.rst:165
 msgid "Show Surrounding Parens"
 msgstr ""
 
@@ -322,7 +322,7 @@ msgstr ""
 msgid "Format menu (Editor window only)"
 msgstr ""
 
-#: ../../library/idle.rst:176
+#: ../../library/idle.rst:173
 msgid "Format Paragraph"
 msgstr ""
 
@@ -330,7 +330,7 @@ msgstr ""
 msgid "Reformat the current blank-line-delimited paragraph in comment block or multiline string or selected line in a string.  All lines in the paragraph will be formatted to less than N columns, where N defaults to 72."
 msgstr ""
 
-#: ../../library/idle.rst:179
+#: ../../library/idle.rst:178
 msgid "Indent Region"
 msgstr ""
 
@@ -338,7 +338,7 @@ msgstr ""
 msgid "Shift selected lines right by the indent width (default 4 spaces)."
 msgstr ""
 
-#: ../../library/idle.rst:182
+#: ../../library/idle.rst:181
 msgid "Dedent Region"
 msgstr ""
 
@@ -346,7 +346,7 @@ msgstr ""
 msgid "Shift selected lines left by the indent width (default 4 spaces)."
 msgstr ""
 
-#: ../../library/idle.rst:185
+#: ../../library/idle.rst:184
 msgid "Comment Out Region"
 msgstr ""
 
@@ -354,7 +354,7 @@ msgstr ""
 msgid "Insert ## in front of selected lines."
 msgstr ""
 
-#: ../../library/idle.rst:188
+#: ../../library/idle.rst:187
 msgid "Uncomment Region"
 msgstr ""
 
@@ -362,7 +362,7 @@ msgstr ""
 msgid "Remove leading # or ## from selected lines."
 msgstr ""
 
-#: ../../library/idle.rst:192
+#: ../../library/idle.rst:190
 msgid "Tabify Region"
 msgstr ""
 
@@ -370,7 +370,7 @@ msgstr ""
 msgid "Turn *leading* stretches of spaces into tabs. (Note: We recommend using 4 space blocks to indent Python code.)"
 msgstr ""
 
-#: ../../library/idle.rst:195
+#: ../../library/idle.rst:194
 msgid "Untabify Region"
 msgstr ""
 
@@ -378,7 +378,7 @@ msgstr ""
 msgid "Turn *all* tabs into the correct number of spaces."
 msgstr ""
 
-#: ../../library/idle.rst:198
+#: ../../library/idle.rst:197
 msgid "Toggle Tabs"
 msgstr ""
 
@@ -386,7 +386,7 @@ msgstr ""
 msgid "Open a dialog to switch between indenting with spaces and tabs."
 msgstr ""
 
-#: ../../library/idle.rst:202
+#: ../../library/idle.rst:200
 msgid "New Indent Width"
 msgstr ""
 
@@ -394,7 +394,7 @@ msgstr ""
 msgid "Open a dialog to change indent width. The accepted default by the Python community is 4 spaces."
 msgstr ""
 
-#: ../../library/idle.rst:208
+#: ../../library/idle.rst:204
 msgid "Strip Trailing Chitespace"
 msgstr ""
 
@@ -406,7 +406,7 @@ msgstr ""
 msgid "Run menu (Editor window only)"
 msgstr ""
 
-#: ../../library/idle.rst:225
+#: ../../library/idle.rst:218
 msgid "Run Module"
 msgstr ""
 
@@ -414,7 +414,7 @@ msgstr ""
 msgid "Do :ref:`Check Module <check-module>`.  If no error, restart the shell to clean the environment, then execute the module.  Output is displayed in the Shell window.  Note that output requires use of ``print`` or ``write``. When execution is complete, the Shell retains focus and displays a prompt. At this point, one may interactively explore the result of execution. This is similar to executing a file with ``python -i file`` at a command line."
 msgstr ""
 
-#: ../../library/idle.rst:232
+#: ../../library/idle.rst:229
 msgid "Run... Customized"
 msgstr ""
 
@@ -422,7 +422,7 @@ msgstr ""
 msgid "Same as :ref:`Run Module <run-module>`, but run the module with customized settings.  *Command Line Arguments* extend :data:`sys.argv` as if passed on a command line. The module can be run in the Shell without restarting."
 msgstr ""
 
-#: ../../library/idle.rst:241
+#: ../../library/idle.rst:236
 msgid "Check Module"
 msgstr ""
 
@@ -430,7 +430,7 @@ msgstr ""
 msgid "Check the syntax of the module currently open in the Editor window. If the module has not been saved IDLE will either prompt the user to save or autosave, as selected in the General tab of the Idle Settings dialog.  If there is a syntax error, the approximate location is indicated in the Editor window."
 msgstr ""
 
-#: ../../library/idle.rst:247
+#: ../../library/idle.rst:245
 msgid "Python Shell"
 msgstr ""
 
@@ -442,7 +442,7 @@ msgstr ""
 msgid "Shell menu (Shell window only)"
 msgstr ""
 
-#: ../../library/idle.rst:253
+#: ../../library/idle.rst:252
 msgid "View Last Restart"
 msgstr ""
 
@@ -450,7 +450,7 @@ msgstr ""
 msgid "Scroll the shell window to the last Shell restart."
 msgstr ""
 
-#: ../../library/idle.rst:256
+#: ../../library/idle.rst:255
 msgid "Restart Shell"
 msgstr ""
 
@@ -458,7 +458,7 @@ msgstr ""
 msgid "Restart the shell to clean the environment and reset display and exception handling."
 msgstr ""
 
-#: ../../library/idle.rst:259
+#: ../../library/idle.rst:258
 msgid "Previous History"
 msgstr ""
 
@@ -466,7 +466,7 @@ msgstr ""
 msgid "Cycle through earlier commands in history which match the current entry."
 msgstr ""
 
-#: ../../library/idle.rst:262
+#: ../../library/idle.rst:261
 msgid "Next History"
 msgstr ""
 
@@ -474,7 +474,7 @@ msgstr ""
 msgid "Cycle through later commands in history which match the current entry."
 msgstr ""
 
-#: ../../library/idle.rst:265
+#: ../../library/idle.rst:264
 msgid "Interrupt Execution"
 msgstr ""
 
@@ -486,7 +486,7 @@ msgstr ""
 msgid "Debug menu (Shell window only)"
 msgstr ""
 
-#: ../../library/idle.rst:275
+#: ../../library/idle.rst:270
 msgid "Go to File/Line"
 msgstr ""
 
@@ -494,7 +494,7 @@ msgstr ""
 msgid "Look on the current line. with the cursor, and the line above for a filename and line number.  If found, open the file if not already open, and show the line.  Use this to view source lines referenced in an exception traceback and lines found by Find in Files. Also available in the context menu of the Shell window and Output windows."
 msgstr ""
 
-#: ../../library/idle.rst:284
+#: ../../library/idle.rst:281
 msgid "Debugger (toggle)"
 msgstr ""
 
@@ -502,7 +502,7 @@ msgstr ""
 msgid "When activated, code entered in the Shell or run from an Editor will run under the debugger.  In the Editor, breakpoints can be set with the context menu.  This feature is still incomplete and somewhat experimental."
 msgstr ""
 
-#: ../../library/idle.rst:288
+#: ../../library/idle.rst:286
 msgid "Stack Viewer"
 msgstr ""
 
@@ -510,7 +510,7 @@ msgstr ""
 msgid "Show the stack traceback of the last exception in a tree widget, with access to locals and globals."
 msgstr ""
 
-#: ../../library/idle.rst:291
+#: ../../library/idle.rst:290
 msgid "Auto-open Stack Viewer"
 msgstr ""
 
@@ -522,7 +522,7 @@ msgstr ""
 msgid "Options menu (Shell and Editor)"
 msgstr ""
 
-#: ../../library/idle.rst:302
+#: ../../library/idle.rst:296
 msgid "Configure IDLE"
 msgstr ""
 
@@ -534,7 +534,7 @@ msgstr ""
 msgid "Most configuration options apply to all windows or all future windows. The option items below only apply to the active window."
 msgstr ""
 
-#: ../../library/idle.rst:311
+#: ../../library/idle.rst:307
 msgid "Show/Hide Code Context (Editor Window only)"
 msgstr ""
 
@@ -542,7 +542,7 @@ msgstr ""
 msgid "Open a pane at the top of the edit window which shows the block context of the code which has scrolled above the top of the window.  See :ref:`Code Context <code-context>` in the Editing and Navigation section below."
 msgstr ""
 
-#: ../../library/idle.rst:316
+#: ../../library/idle.rst:313
 msgid "Show/Hide Line Numbers (Editor Window only)"
 msgstr ""
 
@@ -550,7 +550,7 @@ msgstr ""
 msgid "Open a column to the left of the edit window which shows the number of each line of text.  The default is off, which may be changed in the preferences (see :ref:`Setting preferences <preferences>`)."
 msgstr ""
 
-#: ../../library/idle.rst:324
+#: ../../library/idle.rst:318
 msgid "Zoom/Restore Height"
 msgstr ""
 
@@ -570,7 +570,7 @@ msgstr ""
 msgid "Help menu (Shell and Editor)"
 msgstr ""
 
-#: ../../library/idle.rst:336
+#: ../../library/idle.rst:335
 msgid "About IDLE"
 msgstr ""
 
@@ -578,7 +578,7 @@ msgstr ""
 msgid "Display version, copyright, license, credits, and more."
 msgstr ""
 
-#: ../../library/idle.rst:340
+#: ../../library/idle.rst:338
 msgid "IDLE Help"
 msgstr ""
 
@@ -586,7 +586,7 @@ msgstr ""
 msgid "Display this IDLE document, detailing the menu options, basic editing and navigation, and other tips."
 msgstr ""
 
-#: ../../library/idle.rst:344
+#: ../../library/idle.rst:342
 msgid "Python Docs"
 msgstr ""
 
@@ -594,7 +594,7 @@ msgstr ""
 msgid "Access local Python documentation, if installed, or start a web browser and open docs.python.org showing the latest Python documentation."
 msgstr ""
 
-#: ../../library/idle.rst:347
+#: ../../library/idle.rst:346
 msgid "Turtle Demo"
 msgstr ""
 
@@ -619,7 +619,7 @@ msgid "Editor windows also have breakpoint functions.  Lines with a breakpoint s
 msgstr ""
 
 #: ../../library/idle.rst:353
-#: ../../library/idle.rst:382
+#: ../../library/idle.rst:381
 msgid "Set Breakpoint"
 msgstr ""
 
@@ -628,7 +628,7 @@ msgid "Set a breakpoint on the current line."
 msgstr ""
 
 #: ../../library/idle.rst:353
-#: ../../library/idle.rst:385
+#: ../../library/idle.rst:384
 msgid "Clear Breakpoint"
 msgstr ""
 
@@ -640,7 +640,7 @@ msgstr ""
 msgid "Shell and Output windows also have the following."
 msgstr ""
 
-#: ../../library/idle.rst:390
+#: ../../library/idle.rst:389
 msgid "Go to file/line"
 msgstr ""
 
@@ -652,7 +652,7 @@ msgstr ""
 msgid "The Shell window also has an output squeezing facility explained in the *Python Shell window* subsection below."
 msgstr ""
 
-#: ../../library/idle.rst:398
+#: ../../library/idle.rst:395
 msgid "Squeeze"
 msgstr ""
 

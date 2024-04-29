@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 14:15+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,7 +348,7 @@ msgstr ""
 msgid "Returns an iterator over the :class:`Future` instances (possibly created by different :class:`Executor` instances) given by *fs* that yields futures as they complete (finished or cancelled futures). Any futures given by *fs* that are duplicated will be returned once. Any futures that completed before :func:`as_completed` is called will be yielded first.  The returned iterator raises a :exc:`TimeoutError` if :meth:`~iterator.__next__` is called and the result isn't available after *timeout* seconds from the original call to :func:`as_completed`.  *timeout* can be an int or float. If *timeout* is not specified or ``None``, there is no limit to the wait time."
 msgstr ""
 
-#: ../../library/concurrent.futures.rst:522
+#: ../../library/concurrent.futures.rst:521
 msgid ":pep:`3148` -- futures - execute computations asynchronously"
 msgstr ""
 

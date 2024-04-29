@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-20 15:14+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "The Python interface is a straightforward transliteration of the Unix system call and library interface for sockets to Python's object-oriented style: the :func:`~socket.socket` function returns a :dfn:`socket object` whose methods implement the various socket system calls.  Parameter types are somewhat higher-level than in the C interface: as with :meth:`read` and :meth:`write` operations on Python files, buffer allocation on receive operations is automatic, and buffer length is implicit on send operations."
 msgstr ""
 
-#: ../../library/socket.rst:36
+#: ../../library/socket.rst:35
 msgid "Module :mod:`socketserver`"
 msgstr ""
 

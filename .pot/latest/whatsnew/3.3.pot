@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:18+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Native support for package directories that don't require ``__init__.py`` marker files and can automatically span multiple path segments (inspired by various third party approaches to namespace packages, as described in :pep:`420`)"
 msgstr ""
 
-#: ../../whatsnew/3.3.rst:133
+#: ../../whatsnew/3.3.rst:132
 msgid ":pep:`420` - Implicit Namespace Packages"
 msgstr ""
 
@@ -314,7 +314,7 @@ msgstr ""
 msgid "The net effect is that for most applications, memory usage of string storage should decrease significantly - especially compared to former wide unicode builds - as, in many cases, strings will be pure ASCII even in international contexts (because many strings store non-human language data, such as XML fragments, HTTP headers, JSON-encoded data, etc.).  We also hope that it will, for the same reasons, increase CPU cache efficiency on non-trivial applications. The memory usage of Python 3.3 is two to three times smaller than Python 3.2, and a little bit better than Python 2.7, on a Django benchmark (see the PEP for details)."
 msgstr ""
 
-#: ../../whatsnew/3.3.rst:283
+#: ../../whatsnew/3.3.rst:282
 msgid ":pep:`393` - Flexible String Representation"
 msgstr ""
 
@@ -342,7 +342,7 @@ msgstr ""
 msgid "In addition to the launcher, the Windows installer now includes an option to add the newly installed Python to the system PATH.  (Contributed by Brian Curtin in :issue:`3561`.)"
 msgstr ""
 
-#: ../../whatsnew/3.3.rst:317
+#: ../../whatsnew/3.3.rst:315
 msgid ":pep:`397` - Python Launcher for Windows"
 msgstr ""
 
@@ -478,7 +478,7 @@ msgstr ""
 msgid "The main principle driving this change is to allow even generators that are designed to be used with the ``send`` and ``throw`` methods to be split into multiple subgenerators as easily as a single large function can be split into multiple subfunctions."
 msgstr ""
 
-#: ../../whatsnew/3.3.rst:464
+#: ../../whatsnew/3.3.rst:462
 msgid ":pep:`380` - Syntax for Delegating to a Subgenerator"
 msgstr ""
 
@@ -502,7 +502,7 @@ msgstr ""
 msgid "No debugging capability is lost, as the original exception context remains available if needed (for example, if an intervening library has incorrectly suppressed valuable underlying details)::"
 msgstr ""
 
-#: ../../whatsnew/3.3.rst:528
+#: ../../whatsnew/3.3.rst:527
 msgid ":pep:`409` - Suppressing exception context"
 msgstr ""
 
@@ -582,7 +582,7 @@ msgstr ""
 msgid "A new function :func:`inspect.signature` makes introspection of python callables easy and straightforward.  A broad range of callables is supported: python functions, decorated or not, classes, and :func:`functools.partial` objects.  New classes :class:`inspect.Signature`, :class:`inspect.Parameter` and :class:`inspect.BoundArguments` hold information about the call signatures, such as, annotations, default values, parameters kinds, and bound arguments, which considerably simplifies writing decorators and any code that validates or amends calling signatures or arguments."
 msgstr ""
 
-#: ../../whatsnew/3.3.rst:642
+#: ../../whatsnew/3.3.rst:641
 msgid ":pep:`362`: -  Function Signature Object"
 msgstr ""
 
@@ -1065,7 +1065,7 @@ msgstr ""
 msgid "decimal"
 msgstr ""
 
-#: ../../whatsnew/3.3.rst:1097
+#: ../../whatsnew/3.3.rst:1096
 msgid ":issue:`7652` - integrate fast native decimal arithmetic."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgstr ""
 msgid "The setting of ``__cached__``, ``__loader__``, and ``__package__`` are deprecated."
 msgstr ""
 
-#: ../../library/runpy.rst:179
+#: ../../library/runpy.rst:178
 msgid ":pep:`338` -- Executing modules as scripts"
 msgstr ""
 
@@ -150,11 +150,11 @@ msgstr ""
 msgid "PEP written and implemented by Nick Coghlan."
 msgstr ""
 
-#: ../../library/runpy.rst:182
+#: ../../library/runpy.rst:181
 msgid ":pep:`366` -- Main module explicit relative imports"
 msgstr ""
 
-#: ../../library/runpy.rst:185
+#: ../../library/runpy.rst:184
 msgid ":pep:`451` -- A ModuleSpec Type for the Import System"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "With all these new widgets, you can introduce new interaction techniques into applications, creating more useful and more intuitive user interfaces. You can design your application by choosing the most appropriate widgets to match the special needs of your application and users."
 msgstr ""
 
-#: ../../library/tkinter.tix.rst:38
+#: ../../library/tkinter.tix.rst:36
 msgid "`Tix Homepage <https://tix.sourceforge.net/>`_"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 msgid "The home page for :mod:`Tix`.  This includes links to additional documentation and downloads."
 msgstr ""
 
-#: ../../library/tkinter.tix.rst:41
+#: ../../library/tkinter.tix.rst:40
 msgid "`Tix Man Pages <https://tix.sourceforge.net/dist/current/man/>`_"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "On-line version of the man pages and reference material."
 msgstr ""
 
-#: ../../library/tkinter.tix.rst:44
+#: ../../library/tkinter.tix.rst:43
 msgid "`Tix Programming Guide <https://tix.sourceforge.net/dist/current/docs/tix-book/tix.book.html>`_"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "On-line version of the programmer's reference material."
 msgstr ""
 
-#: ../../library/tkinter.tix.rst:48
+#: ../../library/tkinter.tix.rst:46
 msgid "`Tix Development Applications <https://tix.sourceforge.net/Tixapps/src/Tide.html>`_"
 msgstr ""
 

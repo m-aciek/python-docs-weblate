@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Known implementations include:"
 msgstr ""
 
-#: ../../reference/introduction.rst:51
+#: ../../reference/introduction.rst:49
 msgid "CPython"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 msgid "This is the original and most-maintained implementation of Python, written in C. New language features generally appear here first."
 msgstr ""
 
-#: ../../reference/introduction.rst:57
+#: ../../reference/introduction.rst:53
 msgid "Jython"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Python implemented in Java.  This implementation can be used as a scripting language for Java applications, or can be used to create applications using the Java class libraries.  It is also often used to create tests for Java libraries. More information can be found at `the Jython website <https://www.jython.org/>`_."
 msgstr ""
 
-#: ../../reference/introduction.rst:63
+#: ../../reference/introduction.rst:59
 msgid "Python for .NET"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgstr ""
 msgid "This implementation actually uses the CPython implementation, but is a managed .NET application and makes .NET libraries available.  It was created by Brian Lloyd.  For more information, see the `Python for .NET home page <https://pythonnet.github.io/>`_."
 msgstr ""
 
-#: ../../reference/introduction.rst:69
+#: ../../reference/introduction.rst:65
 msgid "IronPython"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgstr ""
 msgid "An alternate Python for .NET.  Unlike Python.NET, this is a complete Python implementation that generates IL, and compiles Python code directly to .NET assemblies.  It was created by Jim Hugunin, the original creator of Jython.  For more information, see `the IronPython website <https://ironpython.net/>`_."
 msgstr ""
 
-#: ../../reference/introduction.rst:77
+#: ../../reference/introduction.rst:71
 msgid "PyPy"
 msgstr ""
 

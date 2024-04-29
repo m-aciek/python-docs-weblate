@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 16:18+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -300,7 +300,7 @@ msgstr ""
 msgid "Certain classes of identifiers (besides keywords) have special meanings.  These classes are identified by the patterns of leading and trailing underscore characters:"
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:390
+#: ../../reference/lexical_analysis.rst:389
 msgid "``_*``"
 msgstr ""
 
@@ -308,7 +308,7 @@ msgstr ""
 msgid "Not imported by ``from module import *``."
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:411
+#: ../../reference/lexical_analysis.rst:392
 msgid "``_``"
 msgstr ""
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "It is also commonly used for unused variables."
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:419
+#: ../../reference/lexical_analysis.rst:413
 msgid "``__*__``"
 msgstr ""
 
@@ -340,7 +340,7 @@ msgstr ""
 msgid "System-defined names, informally known as \"dunder\" names. These names are defined by the interpreter and its implementation (including the standard library). Current system names are discussed in the :ref:`specialnames` section and elsewhere. More will likely be defined in future versions of Python.  *Any* use of ``__*__`` names, in any context, that does not follow explicitly documented use, is subject to breakage without warning."
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:426
+#: ../../reference/lexical_analysis.rst:421
 msgid "``__*``"
 msgstr ""
 

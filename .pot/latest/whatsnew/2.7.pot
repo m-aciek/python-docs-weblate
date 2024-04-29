@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,7 +228,7 @@ msgstr ""
 msgid "The :mod:`json` module's :class:`~json.JSONDecoder` class constructor was extended with an *object_pairs_hook* parameter to allow :class:`OrderedDict` instances to be built by the decoder. Support was also added for third-party tools like `PyYAML <https://pyyaml.org/>`_."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:307
+#: ../../whatsnew/2.7.rst:306
 msgid ":pep:`372` - Adding an ordered dictionary to collections"
 msgstr ""
 
@@ -300,7 +300,7 @@ msgstr ""
 msgid ":mod:`argparse` has much fancier validation than :mod:`optparse`; you can specify an exact number of arguments as an integer, 0 or more arguments by passing ``'*'``, 1 or more by passing ``'+'``, or an optional argument with ``'?'``.  A top-level parser can contain sub-parsers to define subcommands that have different sets of switches, as in ``svn commit``, ``svn checkout``, etc.  You can specify an argument's type as :class:`~argparse.FileType`, which will automatically open files for you and understands that ``'-'`` means standard input or output."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:438
+#: ../../whatsnew/2.7.rst:437
 msgid ":mod:`argparse` documentation"
 msgstr ""
 
@@ -308,7 +308,7 @@ msgstr ""
 msgid "The documentation page of the argparse module."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:442
+#: ../../whatsnew/2.7.rst:440
 msgid ":ref:`upgrading-optparse-code`"
 msgstr ""
 
@@ -396,7 +396,7 @@ msgstr ""
 msgid "You can use the view methods in Python 2.x code, and the 2to3 converter will change them to the standard :meth:`~dict.keys`, :meth:`~dict.values`, and :meth:`~dict.items` methods."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:606
+#: ../../whatsnew/2.7.rst:605
 msgid ":pep:`3106` - Revamping dict.keys(), .values() and .items()"
 msgstr ""
 
@@ -420,7 +420,7 @@ msgstr ""
 msgid ":class:`memoryview` objects allow modifying the underlying object if it's a mutable object."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:666
+#: ../../whatsnew/2.7.rst:664
 msgid ":pep:`3137` - Immutable Bytes and Mutable Buffer"
 msgstr ""
 
@@ -1287,7 +1287,7 @@ msgstr ""
 msgid "With all these changes, the :file:`unittest.py` was becoming awkwardly large, so the module was turned into a package and the code split into several files (by Benjamin Peterson).  This doesn't affect how the module is imported or used."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2009
+#: ../../whatsnew/2.7.rst:2008
 msgid "https://web.archive.org/web/20210619163128/http://www.voidspace.org.uk/python/articles/unittest2.shtml"
 msgstr ""
 
@@ -1755,7 +1755,7 @@ msgstr ""
 msgid "However, as this migration is currently still incomplete, the legacy versions of those guides remaining available as :ref:`install-index` and :ref:`setuptools-index`."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2709
+#: ../../whatsnew/2.7.rst:2708
 msgid ":pep:`453` -- Explicit bootstrapping of pip in Python installations"
 msgstr ""
 

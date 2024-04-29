@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-19 14:15+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "New features are frequently added to the ``typing`` module. The :pypi:`typing_extensions` package provides backports of these new features to older versions of Python."
 msgstr ""
 
-#: ../../library/typing.rst:48
+#: ../../library/typing.rst:47
 msgid "`\"Typing cheat sheet\" <https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html>`_"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 msgid "A quick overview of type hints (hosted at the mypy docs)"
 msgstr ""
 
-#: ../../library/typing.rst:53
+#: ../../library/typing.rst:50
 msgid "\"Type System Reference\" section of `the mypy docs <https://mypy.readthedocs.io/en/stable/index.html>`_"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgstr ""
 msgid "The Python typing system is standardised via PEPs, so this reference should broadly apply to most Python type checkers. (Some parts may still be specific to mypy.)"
 msgstr ""
 
-#: ../../library/typing.rst:57
+#: ../../library/typing.rst:55
 msgid "`\"Static Typing with Python\" <https://typing.readthedocs.io/en/latest/>`_"
 msgstr ""
 

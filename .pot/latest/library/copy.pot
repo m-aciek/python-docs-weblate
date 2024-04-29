@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgstr ""
 msgid "In order for a class to define its own copy implementation, it can define special methods :meth:`__copy__` and :meth:`__deepcopy__`.  The former is called to implement the shallow copy operation; no additional arguments are passed. The latter is called to implement the deep copy operation; it is passed one argument, the ``memo`` dictionary.  If the :meth:`__deepcopy__` implementation needs to make a deep copy of a component, it should call the :func:`deepcopy` function with the component as first argument and the memo dictionary as second argument. The memo dictionary should be treated as an opaque object."
 msgstr ""
 
-#: ../../library/copy.rst:95
+#: ../../library/copy.rst:94
 msgid "Module :mod:`pickle`"
 msgstr ""
 

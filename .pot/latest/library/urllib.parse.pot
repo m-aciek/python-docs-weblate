@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -649,7 +649,7 @@ msgstr ""
 msgid "Added the *quote_via* parameter."
 msgstr ""
 
-#: ../../library/urllib.parse.rst:740
+#: ../../library/urllib.parse.rst:738
 msgid "`WHATWG`_ -  URL Living standard"
 msgstr ""
 
@@ -657,7 +657,7 @@ msgstr ""
 msgid "Working Group for the URL Standard that defines URLs, domains, IP addresses, the application/x-www-form-urlencoded format, and their API."
 msgstr ""
 
-#: ../../library/urllib.parse.rst:746
+#: ../../library/urllib.parse.rst:742
 msgid ":rfc:`3986` - Uniform Resource Identifiers"
 msgstr ""
 
@@ -665,7 +665,7 @@ msgstr ""
 msgid "This is the current standard (STD66). Any changes to urllib.parse module should conform to this. Certain deviations could be observed, which are mostly for backward compatibility purposes and for certain de-facto parsing requirements as commonly observed in major browsers."
 msgstr ""
 
-#: ../../library/urllib.parse.rst:749
+#: ../../library/urllib.parse.rst:748
 msgid ":rfc:`2732` - Format for Literal IPv6 Addresses in URL's."
 msgstr ""
 
@@ -673,7 +673,7 @@ msgstr ""
 msgid "This specifies the parsing requirements of IPv6 URLs."
 msgstr ""
 
-#: ../../library/urllib.parse.rst:753
+#: ../../library/urllib.parse.rst:751
 msgid ":rfc:`2396` - Uniform Resource Identifiers (URI): Generic Syntax"
 msgstr ""
 
@@ -681,7 +681,7 @@ msgstr ""
 msgid "Document describing the generic syntactic requirements for both Uniform Resource Names (URNs) and Uniform Resource Locators (URLs)."
 msgstr ""
 
-#: ../../library/urllib.parse.rst:756
+#: ../../library/urllib.parse.rst:755
 msgid ":rfc:`2368` - The mailto URL scheme."
 msgstr ""
 
@@ -689,7 +689,7 @@ msgstr ""
 msgid "Parsing requirements for mailto URL schemes."
 msgstr ""
 
-#: ../../library/urllib.parse.rst:761
+#: ../../library/urllib.parse.rst:758
 msgid ":rfc:`1808` - Relative Uniform Resource Locators"
 msgstr ""
 

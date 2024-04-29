@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-04 12:24+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Another reason for including the brackets: a few odd combinations of list comprehensions and lambdas could look like incorrect conditional expressions. See :pep:`308` for some examples.  If you put parentheses around your conditional expressions, you won't run into this case."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:123
+#: ../../whatsnew/2.5.rst:122
 msgid ":pep:`308` - Conditional Expressions"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid ":func:`wraps` is a decorator that can be used inside your own decorators to copy the wrapped function's information.  An alternate  version of the previous example would be::"
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:201
+#: ../../whatsnew/2.5.rst:200
 msgid ":pep:`309` - Partial Function Application"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgstr ""
 msgid "Package uploading was implemented by Martin von Löwis and Richard Jones."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:248
+#: ../../whatsnew/2.5.rst:247
 msgid ":pep:`314` - Metadata for Python Software Packages v1.1"
 msgstr ""
 
@@ -220,7 +220,7 @@ msgstr ""
 msgid "Leading periods cannot be used with the ``import modname``  form of the import statement, only the ``from ... import`` form."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:331
+#: ../../whatsnew/2.5.rst:330
 msgid ":pep:`328` - Imports: Multi-Line and Absolute/Relative"
 msgstr ""
 
@@ -360,7 +360,7 @@ msgstr ""
 msgid "Another even more esoteric effect of this change: previously, the :attr:`gi_frame` attribute of a generator was always a frame object. It's now possible for :attr:`gi_frame` to be ``None`` once the generator has been exhausted."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:549
+#: ../../whatsnew/2.5.rst:544
 msgid ":pep:`342` - Coroutines via Enhanced Generators"
 msgstr ""
 
@@ -372,7 +372,7 @@ msgstr ""
 msgid "Earlier versions of these features were proposed in  :pep:`288` by Raymond Hettinger and :pep:`325` by Samuele Pedroni."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:552
+#: ../../whatsnew/2.5.rst:551
 msgid "https://en.wikipedia.org/wiki/Coroutine"
 msgstr ""
 
@@ -528,7 +528,7 @@ msgstr ""
 msgid "Finally, the ``closing(object)`` function returns *object* so that it can be bound to a variable, and calls ``object.close`` at the end of the block. ::"
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:803
+#: ../../whatsnew/2.5.rst:799
 msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
@@ -1117,7 +1117,7 @@ msgstr ""
 msgid ":mod:`ctypes` has been around for a while, but people still write  and distribution hand-coded extension modules because you can't rely on :mod:`ctypes` being present. Perhaps developers will begin to write  Python wrappers atop a library accessed through :mod:`ctypes` instead of extension modules, now that :mod:`ctypes` is included with core Python."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:1750
+#: ../../whatsnew/2.5.rst:1749
 msgid "https://web.archive.org/web/20180410025338/http://starship.python.net/crew/theller/ctypes/"
 msgstr ""
 
@@ -1361,7 +1361,7 @@ msgstr ""
 msgid "For more information about the SQL dialect supported by SQLite, see https://www.sqlite.org."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:2023
+#: ../../whatsnew/2.5.rst:2022
 msgid "https://www.pysqlite.org"
 msgstr ""
 
@@ -1369,7 +1369,7 @@ msgstr ""
 msgid "The pysqlite web page."
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:2027
+#: ../../whatsnew/2.5.rst:2025
 msgid "https://www.sqlite.org"
 msgstr ""
 
@@ -1401,7 +1401,7 @@ msgstr ""
 msgid "The package includes a basic HTTP server that will run a WSGI application; this server is useful for debugging but isn't intended for  production use.  Setting up a server takes only a few lines of code::"
 msgstr ""
 
-#: ../../whatsnew/2.5.rst:2069
+#: ../../whatsnew/2.5.rst:2068
 msgid "https://web.archive.org/web/20160331090247/http://wsgi.readthedocs.org/en/latest/"
 msgstr ""
 

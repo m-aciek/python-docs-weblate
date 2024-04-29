@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -606,7 +606,7 @@ msgstr ""
 msgid "Due to the use of :func:`eval` as described above, there are potential security risks which result from using the :func:`listen` to send and receive configurations via sockets. The risks are limited to where multiple users with no mutual trust run code on the same machine; see the :func:`listen` documentation for more information."
 msgstr ""
 
-#: ../../library/logging.config.rst:992
+#: ../../library/logging.config.rst:991
 msgid "Module :mod:`logging`"
 msgstr ""
 

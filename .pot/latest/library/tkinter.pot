@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Tcl/Tk 8.5 (2007) introduced a modern set of themed user interface components along with a new API to use them. Both old and new APIs are still available. Most documentation you will find online still uses the old API and can be woefully outdated."
 msgstr ""
 
-#: ../../library/tkinter.rst:43
+#: ../../library/tkinter.rst:41
 msgid "`TkDocs <https://tkdocs.com/>`_"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Extensive tutorial on creating user interfaces with Tkinter.  Explains key concepts, and illustrates recommended approaches using the modern API."
 msgstr ""
 
-#: ../../library/tkinter.rst:46
+#: ../../library/tkinter.rst:45
 msgid "`Tkinter 8.5 reference: a GUI for Python <https://www.tkdocs.com/shipman/>`_"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Tcl/Tk Resources:"
 msgstr ""
 
-#: ../../library/tkinter.rst:51
+#: ../../library/tkinter.rst:50
 msgid "`Tk commands <https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm>`_"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgstr ""
 msgid "Comprehensive reference to each of the underlying Tcl/Tk commands used by Tkinter."
 msgstr ""
 
-#: ../../library/tkinter.rst:54
+#: ../../library/tkinter.rst:53
 msgid "`Tcl/Tk Home Page <https://www.tcl.tk>`_"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Books:"
 msgstr ""
 
-#: ../../library/tkinter.rst:59
+#: ../../library/tkinter.rst:58
 msgid "`Modern Tkinter for Busy Python Developers <https://tkdocs.com/book.html>`_"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "By Mark Roseman. (ISBN 978-1999149567)"
 msgstr ""
 
-#: ../../library/tkinter.rst:62
+#: ../../library/tkinter.rst:61
 msgid "`Python GUI programming with Tkinter <https://www.packtpub.com/product/python-gui-programming-with-tkinter/9781788835886>`_"
 msgstr ""
 
@@ -100,7 +100,7 @@ msgstr ""
 msgid "By Alan D. Moore. (ISBN 978-1788835886)"
 msgstr ""
 
-#: ../../library/tkinter.rst:65
+#: ../../library/tkinter.rst:64
 msgid "`Programming Python <https://learning-python.com/about-pp4e.html>`_"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Tcl/Tk is not a single library but rather consists of a few distinct modules, each with separate functionality and its own official documentation. Python's binary releases also ship an add-on module together with it."
 msgstr ""
 
-#: ../../library/tkinter.rst:90
+#: ../../library/tkinter.rst:79
 msgid "Tcl"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Tcl is a dynamic interpreted programming language, just like Python. Though it can be used on its own as a general-purpose programming language, it is most commonly embedded into C applications as a scripting engine or an interface to the Tk toolkit. The Tcl library has a C interface to create and manage one or more instances of a Tcl interpreter, run Tcl commands and scripts in those instances, and add custom commands implemented in either Tcl or C. Each interpreter has an event queue, and there are facilities to send events to it and process them. Unlike Python, Tcl's execution model is designed around cooperative multitasking, and Tkinter bridges this difference (see `Threading model`_ for details)."
 msgstr ""
 
-#: ../../library/tkinter.rst:97
+#: ../../library/tkinter.rst:92
 #: ../../library/tkinter.rst:911
 msgid "Tk"
 msgstr ""
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Tk is a `Tcl package <https://wiki.tcl-lang.org/37432>`_ implemented in C that adds custom commands to create and manipulate GUI widgets. Each :class:`Tk` object embeds its own Tcl interpreter instance with Tk loaded into it. Tk's widgets are very customizable, though at the cost of a dated appearance. Tk uses Tcl's event queue to generate and process GUI events."
 msgstr ""
 
-#: ../../library/tkinter.rst:103
+#: ../../library/tkinter.rst:99
 msgid "Ttk"
 msgstr ""
 
@@ -173,7 +173,7 @@ msgstr ""
 msgid "The :class:`Tk` class is typically instantiated using all default values. However, the following keyword arguments are currently recognized:"
 msgstr ""
 
-#: ../../library/tkinter.rst:137
+#: ../../library/tkinter.rst:136
 msgid "*screenName*"
 msgstr ""
 
@@ -181,7 +181,7 @@ msgstr ""
 msgid "When given (as a string), sets the :envvar:`DISPLAY` environment variable. (X11 only)"
 msgstr ""
 
-#: ../../library/tkinter.rst:140
+#: ../../library/tkinter.rst:139
 msgid "*baseName*"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Name of the profile file.  By default, *baseName* is derived from the program name (``sys.argv[0]``)."
 msgstr ""
 
-#: ../../library/tkinter.rst:143
+#: ../../library/tkinter.rst:142
 msgid "*className*"
 msgstr ""
 
@@ -197,7 +197,7 @@ msgstr ""
 msgid "Name of the widget class.  Used as a profile file and also as the name with which Tcl is invoked (*argv0* in *interp*)."
 msgstr ""
 
-#: ../../library/tkinter.rst:146
+#: ../../library/tkinter.rst:145
 msgid "*useTk*"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr ""
 msgid "If ``True``, initialize the Tk subsystem.  The :func:`tkinter.Tcl() <Tcl>` function sets this to ``False``."
 msgstr ""
 
-#: ../../library/tkinter.rst:149
+#: ../../library/tkinter.rst:148
 msgid "*sync*"
 msgstr ""
 
@@ -213,7 +213,7 @@ msgstr ""
 msgid "If ``True``, execute all X server commands synchronously, so that errors are reported immediately.  Can be used for debugging. (X11 only)"
 msgstr ""
 
-#: ../../library/tkinter.rst:159
+#: ../../library/tkinter.rst:151
 msgid "*use*"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgstr ""
 msgid "The modules that provide Tk support include:"
 msgstr ""
 
-#: ../../library/tkinter.rst:206
+#: ../../library/tkinter.rst:205
 msgid ":mod:`tkinter`"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Main Tkinter module."
 msgstr ""
 
-#: ../../library/tkinter.rst:209
+#: ../../library/tkinter.rst:208
 msgid ":mod:`tkinter.colorchooser`"
 msgstr ""
 
@@ -265,7 +265,7 @@ msgstr ""
 msgid "Dialog to let the user choose a color."
 msgstr ""
 
-#: ../../library/tkinter.rst:212
+#: ../../library/tkinter.rst:211
 msgid ":mod:`tkinter.commondialog`"
 msgstr ""
 
@@ -273,7 +273,7 @@ msgstr ""
 msgid "Base class for the dialogs defined in the other modules listed here."
 msgstr ""
 
-#: ../../library/tkinter.rst:215
+#: ../../library/tkinter.rst:214
 msgid ":mod:`tkinter.filedialog`"
 msgstr ""
 
@@ -281,7 +281,7 @@ msgstr ""
 msgid "Common dialogs to allow the user to specify a file to open or save."
 msgstr ""
 
-#: ../../library/tkinter.rst:218
+#: ../../library/tkinter.rst:217
 msgid ":mod:`tkinter.font`"
 msgstr ""
 
@@ -289,7 +289,7 @@ msgstr ""
 msgid "Utilities to help work with fonts."
 msgstr ""
 
-#: ../../library/tkinter.rst:221
+#: ../../library/tkinter.rst:220
 msgid ":mod:`tkinter.messagebox`"
 msgstr ""
 
@@ -297,7 +297,7 @@ msgstr ""
 msgid "Access to standard Tk dialog boxes."
 msgstr ""
 
-#: ../../library/tkinter.rst:224
+#: ../../library/tkinter.rst:223
 msgid ":mod:`tkinter.scrolledtext`"
 msgstr ""
 
@@ -305,7 +305,7 @@ msgstr ""
 msgid "Text widget with a vertical scroll bar built in."
 msgstr ""
 
-#: ../../library/tkinter.rst:227
+#: ../../library/tkinter.rst:226
 msgid ":mod:`tkinter.simpledialog`"
 msgstr ""
 
@@ -313,7 +313,7 @@ msgstr ""
 msgid "Basic dialogs and convenience functions."
 msgstr ""
 
-#: ../../library/tkinter.rst:231
+#: ../../library/tkinter.rst:229
 msgid ":mod:`tkinter.ttk`"
 msgstr ""
 
@@ -325,7 +325,7 @@ msgstr ""
 msgid "Additional modules:"
 msgstr ""
 
-#: ../../library/tkinter.rst:243
+#: ../../library/tkinter.rst:238
 msgid ":mod:`_tkinter`"
 msgstr ""
 
@@ -333,7 +333,7 @@ msgstr ""
 msgid "A binary module that contains the low-level interface to Tcl/Tk. It is automatically imported by the main :mod:`tkinter` module, and should never be used directly by application programmers. It is usually a shared library (or DLL), but might in some cases be statically linked with the Python interpreter."
 msgstr ""
 
-#: ../../library/tkinter.rst:247
+#: ../../library/tkinter.rst:245
 msgid ":mod:`idlelib`"
 msgstr ""
 
@@ -341,7 +341,7 @@ msgstr ""
 msgid "Python's Integrated Development and Learning Environment (IDLE). Based on :mod:`tkinter`."
 msgstr ""
 
-#: ../../library/tkinter.rst:252
+#: ../../library/tkinter.rst:249
 msgid ":mod:`tkinter.constants`"
 msgstr ""
 
@@ -349,7 +349,7 @@ msgstr ""
 msgid "Symbolic constants that can be used in place of strings when passing various parameters to Tkinter calls. Automatically imported by the main :mod:`tkinter` module."
 msgstr ""
 
-#: ../../library/tkinter.rst:256
+#: ../../library/tkinter.rst:254
 msgid ":mod:`tkinter.dnd`"
 msgstr ""
 
@@ -357,7 +357,7 @@ msgstr ""
 msgid "(experimental) Drag-and-drop support for :mod:`tkinter`. This will become deprecated when it is replaced with the Tk DND."
 msgstr ""
 
-#: ../../library/tkinter.rst:260
+#: ../../library/tkinter.rst:258
 msgid ":mod:`tkinter.tix`"
 msgstr ""
 
@@ -365,7 +365,7 @@ msgstr ""
 msgid "(deprecated) An older third-party Tcl/Tk package that adds several new widgets. Better alternatives for most can be found in :mod:`tkinter.ttk`."
 msgstr ""
 
-#: ../../library/tkinter.rst:264
+#: ../../library/tkinter.rst:262
 msgid ":mod:`turtle`"
 msgstr ""
 
@@ -421,7 +421,7 @@ msgstr ""
 msgid "Even this simple program illustrates the following key Tk concepts:"
 msgstr ""
 
-#: ../../library/tkinter.rst:329
+#: ../../library/tkinter.rst:326
 msgid "widgets"
 msgstr ""
 
@@ -429,7 +429,7 @@ msgstr ""
 msgid "A Tkinter user interface is made up of individual *widgets*. Each widget is represented as a Python object, instantiated from classes like :class:`ttk.Frame`, :class:`ttk.Label`, and :class:`ttk.Button`."
 msgstr ""
 
-#: ../../library/tkinter.rst:335
+#: ../../library/tkinter.rst:331
 msgid "widget hierarchy"
 msgstr ""
 
@@ -437,7 +437,7 @@ msgstr ""
 msgid "Widgets are arranged in a *hierarchy*. The label and button were contained within a frame, which in turn was contained within the root window. When creating each *child* widget, its *parent* widget is passed as the first argument to the widget constructor."
 msgstr ""
 
-#: ../../library/tkinter.rst:340
+#: ../../library/tkinter.rst:337
 msgid "configuration options"
 msgstr ""
 
@@ -445,7 +445,7 @@ msgstr ""
 msgid "Widgets have *configuration options*, which modify their appearance and behavior, such as the text to display in a label or button. Different classes of widgets will have different sets of options."
 msgstr ""
 
-#: ../../library/tkinter.rst:345
+#: ../../library/tkinter.rst:342
 msgid "geometry management"
 msgstr ""
 
@@ -453,7 +453,7 @@ msgstr ""
 msgid "Widgets aren't automatically added to the user interface when they are created. A *geometry manager* like ``grid`` controls where in the user interface they are placed."
 msgstr ""
 
-#: ../../library/tkinter.rst:351
+#: ../../library/tkinter.rst:347
 msgid "event loop"
 msgstr ""
 
@@ -617,15 +617,15 @@ msgstr ""
 msgid "Options control things like the color and border width of a widget. Options can be set in three ways:"
 msgstr ""
 
-#: ../../library/tkinter.rst:574
+#: ../../library/tkinter.rst:571
 msgid "At object creation time, using keyword arguments"
 msgstr ""
 
-#: ../../library/tkinter.rst:580
+#: ../../library/tkinter.rst:576
 msgid "After object creation, treating the option name like a dictionary index"
 msgstr ""
 
-#: ../../library/tkinter.rst:585
+#: ../../library/tkinter.rst:582
 msgid "Use the config() method to update multiple attrs subsequent to object creation"
 msgstr ""
 
@@ -754,8 +754,8 @@ msgstr ""
 msgid "For more extensive information on the packer and the options that it can take, see the man pages and page 183 of John Ousterhout's book."
 msgstr ""
 
-#: ../../library/tkinter.rst:678
-#: ../../library/tkinter.rst:798
+#: ../../library/tkinter.rst:677
+#: ../../library/tkinter.rst:796
 msgid "anchor"
 msgstr ""
 
@@ -763,7 +763,7 @@ msgstr ""
 msgid "Anchor type.  Denotes where the packer is to place each slave in its parcel."
 msgstr ""
 
-#: ../../library/tkinter.rst:681
+#: ../../library/tkinter.rst:680
 msgid "expand"
 msgstr ""
 
@@ -771,7 +771,7 @@ msgstr ""
 msgid "Boolean, ``0`` or ``1``."
 msgstr ""
 
-#: ../../library/tkinter.rst:684
+#: ../../library/tkinter.rst:683
 msgid "fill"
 msgstr ""
 
@@ -779,7 +779,7 @@ msgstr ""
 msgid "Legal values: ``'x'``, ``'y'``, ``'both'``, ``'none'``."
 msgstr ""
 
-#: ../../library/tkinter.rst:687
+#: ../../library/tkinter.rst:686
 msgid "ipadx and ipady"
 msgstr ""
 
@@ -787,7 +787,7 @@ msgstr ""
 msgid "A distance - designating internal padding on each side of the slave widget."
 msgstr ""
 
-#: ../../library/tkinter.rst:690
+#: ../../library/tkinter.rst:689
 msgid "padx and pady"
 msgstr ""
 
@@ -795,7 +795,7 @@ msgstr ""
 msgid "A distance - designating external padding on each side of the slave widget."
 msgstr ""
 
-#: ../../library/tkinter.rst:694
+#: ../../library/tkinter.rst:692
 msgid "side"
 msgstr ""
 
@@ -849,7 +849,7 @@ msgstr ""
 msgid "Legal values are points of the compass: ``\"n\"``, ``\"ne\"``, ``\"e\"``, ``\"se\"``, ``\"s\"``, ``\"sw\"``, ``\"w\"``, ``\"nw\"``, and also ``\"center\"``."
 msgstr ""
 
-#: ../../library/tkinter.rst:804
+#: ../../library/tkinter.rst:800
 msgid "bitmap"
 msgstr ""
 
@@ -857,7 +857,7 @@ msgstr ""
 msgid "There are eight built-in, named bitmaps: ``'error'``, ``'gray25'``, ``'gray50'``, ``'hourglass'``, ``'info'``, ``'questhead'``, ``'question'``, ``'warning'``.  To specify an X bitmap filename, give the full path to the file, preceded with an ``@``, as in ``\"@/usr/contrib/bitmap/gumby.bit\"``."
 msgstr ""
 
-#: ../../library/tkinter.rst:807
+#: ../../library/tkinter.rst:806
 msgid "boolean"
 msgstr ""
 
@@ -865,7 +865,7 @@ msgstr ""
 msgid "You can pass integers 0 or 1 or the strings ``\"yes\"`` or ``\"no\"``."
 msgstr ""
 
-#: ../../library/tkinter.rst:814
+#: ../../library/tkinter.rst:809
 msgid "callback"
 msgstr ""
 
@@ -873,7 +873,7 @@ msgstr ""
 msgid "This is any Python function that takes no arguments.  For example::"
 msgstr ""
 
-#: ../../library/tkinter.rst:820
+#: ../../library/tkinter.rst:816
 msgid "color"
 msgstr ""
 
@@ -881,7 +881,7 @@ msgstr ""
 msgid "Colors can be given as the names of X colors in the rgb.txt file, or as strings representing RGB values in 4 bit: ``\"#RGB\"``, 8 bit: ``\"#RRGGBB\"``, 12 bit: ``\"#RRRGGGBBB\"``, or 16 bit: ``\"#RRRRGGGGBBBB\"`` ranges, where R,G,B here represent any legal hex digit.  See page 160 of Ousterhout's book for details."
 msgstr ""
 
-#: ../../library/tkinter.rst:826
+#: ../../library/tkinter.rst:822
 msgid "cursor"
 msgstr ""
 
@@ -889,7 +889,7 @@ msgstr ""
 msgid "The standard X cursor names from :file:`cursorfont.h` can be used, without the ``XC_`` prefix.  For example to get a hand cursor (:const:`XC_hand2`), use the string ``\"hand2\"``.  You can also specify a bitmap and mask file of your own. See page 179 of Ousterhout's book."
 msgstr ""
 
-#: ../../library/tkinter.rst:833
+#: ../../library/tkinter.rst:828
 msgid "distance"
 msgstr ""
 
@@ -897,7 +897,7 @@ msgstr ""
 msgid "Screen distances can be specified in either pixels or absolute distances. Pixels are given as numbers and absolute distances as strings, with the trailing character denoting units: ``c`` for centimetres, ``i`` for inches, ``m`` for millimetres, ``p`` for printer's points.  For example, 3.5 inches is expressed as ``\"3.5i\"``."
 msgstr ""
 
-#: ../../library/tkinter.rst:838
+#: ../../library/tkinter.rst:835
 msgid "font"
 msgstr ""
 
@@ -905,7 +905,7 @@ msgstr ""
 msgid "Tk uses a list font name format, such as ``{courier 10 bold}``. Font sizes with positive numbers are measured in points; sizes with negative numbers are measured in pixels."
 msgstr ""
 
-#: ../../library/tkinter.rst:843
+#: ../../library/tkinter.rst:840
 msgid "geometry"
 msgstr ""
 
@@ -913,7 +913,7 @@ msgstr ""
 msgid "This is a string of the form ``widthxheight``, where width and height are measured in pixels for most widgets (in characters for widgets displaying text). For example: ``fred[\"geometry\"] = \"200x100\"``."
 msgstr ""
 
-#: ../../library/tkinter.rst:847
+#: ../../library/tkinter.rst:845
 msgid "justify"
 msgstr ""
 
@@ -921,7 +921,7 @@ msgstr ""
 msgid "Legal values are the strings: ``\"left\"``, ``\"center\"``, ``\"right\"``, and ``\"fill\"``."
 msgstr ""
 
-#: ../../library/tkinter.rst:852
+#: ../../library/tkinter.rst:849
 msgid "region"
 msgstr ""
 
@@ -929,7 +929,7 @@ msgstr ""
 msgid "This is a string with four space-delimited elements, each of which is a legal distance (see above).  For example: ``\"2 3 4 5\"`` and ``\"3i 2i 4.5i 2i\"`` and ``\"3c 2c 4c 10.43c\"``  are all legal regions."
 msgstr ""
 
-#: ../../library/tkinter.rst:856
+#: ../../library/tkinter.rst:854
 msgid "relief"
 msgstr ""
 
@@ -937,7 +937,7 @@ msgstr ""
 msgid "Determines what the border style of a widget will be.  Legal values are: ``\"raised\"``, ``\"sunken\"``, ``\"flat\"``, ``\"groove\"``, and ``\"ridge\"``."
 msgstr ""
 
-#: ../../library/tkinter.rst:860
+#: ../../library/tkinter.rst:858
 msgid "scrollcommand"
 msgstr ""
 
@@ -945,7 +945,7 @@ msgstr ""
 msgid "This is almost always the :meth:`!set` method of some scrollbar widget, but can be any widget method that takes a single argument."
 msgstr ""
 
-#: ../../library/tkinter.rst:863
+#: ../../library/tkinter.rst:862
 msgid "wrap"
 msgstr ""
 
@@ -965,7 +965,7 @@ msgstr ""
 msgid "where:"
 msgstr ""
 
-#: ../../library/tkinter.rst:885
+#: ../../library/tkinter.rst:882
 msgid "sequence"
 msgstr ""
 
@@ -973,7 +973,7 @@ msgstr ""
 msgid "is a string that denotes the target kind of event.  (See the :manpage:`bind(3tk)` man page, and page 201 of John Ousterhout's book, :title-reference:`Tcl and the Tk Toolkit (2nd edition)`, for details)."
 msgstr ""
 
-#: ../../library/tkinter.rst:890
+#: ../../library/tkinter.rst:887
 msgid "func"
 msgstr ""
 
@@ -981,7 +981,7 @@ msgstr ""
 msgid "is a Python function, taking one argument, to be invoked when the event occurs. An Event instance will be passed as the argument. (Functions deployed this way are commonly known as *callbacks*.)"
 msgstr ""
 
-#: ../../library/tkinter.rst:896
+#: ../../library/tkinter.rst:892
 msgid "add"
 msgstr ""
 
@@ -1133,7 +1133,7 @@ msgstr ""
 msgid "A number of widgets require \"index\" parameters to be passed.  These are used to point at a specific place in a Text widget, or to particular characters in an Entry widget, or to particular menu items in a Menu widget."
 msgstr ""
 
-#: ../../library/tkinter.rst:941
+#: ../../library/tkinter.rst:938
 msgid "Entry widget indexes (index, view index, etc.)"
 msgstr ""
 
@@ -1141,7 +1141,7 @@ msgstr ""
 msgid "Entry widgets have options that refer to character positions in the text being displayed.  You can use these :mod:`tkinter` functions to access these special points in text widgets:"
 msgstr ""
 
-#: ../../library/tkinter.rst:945
+#: ../../library/tkinter.rst:943
 msgid "Text widget indexes"
 msgstr ""
 
@@ -1149,7 +1149,7 @@ msgstr ""
 msgid "The index notation for Text widgets is very rich and is best described in the Tk man pages."
 msgstr ""
 
-#: ../../library/tkinter.rst:970
+#: ../../library/tkinter.rst:947
 msgid "Menu indexes (menu.invoke(), menu.entryconfig(), etc.)"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -711,7 +711,7 @@ msgstr ""
 msgid "Besides the standard CPython distribution, there are modified packages including additional functionality.  The following is a list of popular versions and their key features:"
 msgstr ""
 
-#: ../../using/windows.rst:545
+#: ../../using/windows.rst:544
 msgid "`ActivePython <https://www.activestate.com/products/python/>`_"
 msgstr ""
 
@@ -719,7 +719,7 @@ msgstr ""
 msgid "Installer with multi-platform compatibility, documentation, PyWin32"
 msgstr ""
 
-#: ../../using/windows.rst:549
+#: ../../using/windows.rst:547
 msgid "`Anaconda <https://www.anaconda.com/download/>`_"
 msgstr ""
 
@@ -727,7 +727,7 @@ msgstr ""
 msgid "Popular scientific modules (such as numpy, scipy and pandas) and the ``conda`` package manager."
 msgstr ""
 
-#: ../../using/windows.rst:555
+#: ../../using/windows.rst:551
 msgid "`Enthought Deployment Manager <https://www.enthought.com/edm/>`_"
 msgstr ""
 
@@ -739,7 +739,7 @@ msgstr ""
 msgid "Previously Enthought provided Canopy, but it `reached end of life in 2016 <https://support.enthought.com/hc/en-us/articles/360038600051-Canopy-GUI-end-of-life-transition-to-the-Enthought-Deployment-Manager-EDM-and-Visual-Studio-Code>`_."
 msgstr ""
 
-#: ../../using/windows.rst:559
+#: ../../using/windows.rst:557
 msgid "`WinPython <https://winpython.github.io/>`_"
 msgstr ""
 
@@ -791,7 +791,7 @@ msgstr ""
 msgid "The :envvar:`PYTHONPATH` variable is used by all versions of Python, so you should not permanently configure it unless the listed paths only include code that is compatible with all of your installed Python versions."
 msgstr ""
 
-#: ../../using/windows.rst:622
+#: ../../using/windows.rst:621
 msgid "https://docs.microsoft.com/en-us/windows/win32/procthread/environment-variables"
 msgstr ""
 
@@ -799,7 +799,7 @@ msgstr ""
 msgid "Overview of environment variables on Windows"
 msgstr ""
 
-#: ../../using/windows.rst:625
+#: ../../using/windows.rst:624
 msgid "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/set_1"
 msgstr ""
 
@@ -1395,7 +1395,7 @@ msgstr ""
 msgid "`PythonWin <https://web.archive.org/web/20060524042422/ https://www.python.org/windows/pythonwin/>`_ is a sample MFC application shipped with PyWin32.  It is an embeddable IDE with a built-in debugger."
 msgstr ""
 
-#: ../../using/windows.rst:1241
+#: ../../using/windows.rst:1240
 msgid "`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
 msgstr ""
 

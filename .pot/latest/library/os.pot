@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 08:40+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1000,7 +1000,7 @@ msgstr ""
 msgid "Adjust the file position relative to the current file position."
 msgstr ""
 
-#: ../../library/os.rst:1197
+#: ../../library/os.rst:1196
 msgid ":const:`SEEK_END`"
 msgstr ""
 
@@ -1016,7 +1016,7 @@ msgstr ""
 msgid "Parameters to the :func:`lseek` function and the :meth:`~io.IOBase.seek` method on :term:`file-like objects <file object>`, for seeking file data and holes on sparsely allocated files."
 msgstr ""
 
-#: ../../library/os.rst:1211
+#: ../../library/os.rst:1209
 msgid ":data:`!SEEK_DATA`"
 msgstr ""
 
@@ -1024,7 +1024,7 @@ msgstr ""
 msgid "Adjust the file offset to the next location containing data, relative to the seek position."
 msgstr ""
 
-#: ../../library/os.rst:1216
+#: ../../library/os.rst:1213
 msgid ":data:`!SEEK_HOLE`"
 msgstr ""
 

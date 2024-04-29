@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,7 +80,7 @@ msgstr ""
 msgid "The special characters are:"
 msgstr ""
 
-#: ../../library/re.rst:104
+#: ../../library/re.rst:101
 #: ../../library/re.rst:1606
 msgid "``.``"
 msgstr ""
@@ -89,7 +89,7 @@ msgstr ""
 msgid "(Dot.)  In the default mode, this matches any character except a newline.  If the :const:`DOTALL` flag has been specified, this matches any character including a newline."
 msgstr ""
 
-#: ../../library/re.rst:110
+#: ../../library/re.rst:108
 msgid "``^``"
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr ""
 msgid "(Caret.)  Matches the start of the string, and in :const:`MULTILINE` mode also matches immediately after each newline."
 msgstr ""
 
-#: ../../library/re.rst:121
+#: ../../library/re.rst:114
 msgid "``$``"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Matches the end of the string or just before the newline at the end of the string, and in :const:`MULTILINE` mode also matches before a newline.  ``foo`` matches both 'foo' and 'foobar', while the regular expression ``foo$`` matches only 'foo'.  More interestingly, searching for ``foo.$`` in ``'foo1\\nfoo2\\n'`` matches 'foo2' normally, but 'foo1' in :const:`MULTILINE` mode; searching for a single ``$`` in ``'foo\\n'`` will find two (empty) matches: one just before the newline, and one at the end of the string."
 msgstr ""
 
-#: ../../library/re.rst:128
+#: ../../library/re.rst:125
 msgid "``*``"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Causes the resulting RE to match 0 or more repetitions of the preceding RE, as many repetitions as are possible.  ``ab*`` will match 'a', 'ab', or 'a' followed by any number of 'b's."
 msgstr ""
 
-#: ../../library/re.rst:135
+#: ../../library/re.rst:132
 msgid "``+``"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr ""
 msgid "Causes the resulting RE to match 1 or more repetitions of the preceding RE. ``ab+`` will match 'a' followed by any non-zero number of 'b's; it will not match just 'a'."
 msgstr ""
 
-#: ../../library/re.rst:141
+#: ../../library/re.rst:139
 msgid "``?``"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 msgid "Causes the resulting RE to match 0 or 1 repetitions of the preceding RE. ``ab?`` will match either 'a' or 'ab'."
 msgstr ""
 
-#: ../../library/re.rst:155
+#: ../../library/re.rst:148
 msgid "``*?``, ``+?``, ``??``"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "The ``'*'``, ``'+'``, and ``'?'`` quantifiers are all :dfn:`greedy`; they match as much text as possible.  Sometimes this behaviour isn't desired; if the RE ``<.*>`` is matched against ``'<a> b <c>'``, it will match the entire string, and not just ``'<a>'``.  Adding ``?`` after the quantifier makes it perform the match in :dfn:`non-greedy` or :dfn:`minimal` fashion; as *few* characters as possible will be matched.  Using the RE ``<.*?>`` will match only ``'<a>'``."
 msgstr ""
 
-#: ../../library/re.rst:179
+#: ../../library/re.rst:162
 msgid "``*+``, ``++``, ``?+``"
 msgstr ""
 
@@ -145,7 +145,7 @@ msgstr ""
 msgid "Like the ``'*'``, ``'+'``, and ``'?'`` quantifiers, those where ``'+'`` is appended also match as many times as possible. However, unlike the true greedy quantifiers, these do not allow back-tracking when the expression following it fails to match. These are known as :dfn:`possessive` quantifiers. For example, ``a*a`` will match ``'aaaa'`` because the ``a*`` will match all 4 ``'a'``\\ s, but, when the final ``'a'`` is encountered, the expression is backtracked so that in the end the ``a*`` ends up matching 3 ``'a'``\\ s total, and the fourth ``'a'`` is matched by the final ``'a'``. However, when ``a*+a`` is used to match ``'aaaa'``, the ``a*+`` will match all 4 ``'a'``, but when the final ``'a'`` fails to find any more characters to match, the expression cannot be backtracked and will thus fail to match. ``x*+``, ``x++`` and ``x?+`` are equivalent to ``(?>x*)``, ``(?>x+)`` and ``(?>x?)`` correspondingly."
 msgstr ""
 
-#: ../../library/re.rst:187
+#: ../../library/re.rst:184
 msgid "``{m}``"
 msgstr ""
 
@@ -153,7 +153,7 @@ msgstr ""
 msgid "Specifies that exactly *m* copies of the previous RE should be matched; fewer matches cause the entire RE not to match.  For example, ``a{6}`` will match exactly six ``'a'`` characters, but not five."
 msgstr ""
 
-#: ../../library/re.rst:196
+#: ../../library/re.rst:189
 msgid "``{m,n}``"
 msgstr ""
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Causes the resulting RE to match from *m* to *n* repetitions of the preceding RE, attempting to match as many repetitions as possible.  For example, ``a{3,5}`` will match from 3 to 5 ``'a'`` characters.  Omitting *m* specifies a lower bound of zero,  and omitting *n* specifies an infinite upper bound.  As an example, ``a{4,}b`` will match ``'aaaab'`` or a thousand ``'a'`` characters followed by a ``'b'``, but not ``'aaab'``. The comma may not be omitted or the modifier would be confused with the previously described form."
 msgstr ""
 
-#: ../../library/re.rst:203
+#: ../../library/re.rst:198
 msgid "``{m,n}?``"
 msgstr ""
 
@@ -169,7 +169,7 @@ msgstr ""
 msgid "Causes the resulting RE to match from *m* to *n* repetitions of the preceding RE, attempting to match as *few* repetitions as possible.  This is the non-greedy version of the previous quantifier.  For example, on the 6-character string ``'aaaaaa'``, ``a{3,5}`` will match 5 ``'a'`` characters, while ``a{3,5}?`` will only match 3 characters."
 msgstr ""
 
-#: ../../library/re.rst:218
+#: ../../library/re.rst:205
 msgid "``{m,n}+``"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Causes the resulting RE to match from *m* to *n* repetitions of the preceding RE, attempting to match as many repetitions as possible *without* establishing any backtracking points. This is the possessive version of the quantifier above. For example, on the 6-character string ``'aaaaaa'``, ``a{3,5}+aa`` attempt to match 5 ``'a'`` characters, then, requiring 2 more ``'a'``\\ s, will need more characters than available and thus fail, while ``a{3,5}aa`` will match with ``a{3,5}`` capturing 5, then 4 ``'a'``\\ s by backtracking and then the final 2 ``'a'``\\ s are matched by the final ``aa`` in the pattern. ``x{m,n}+`` is equivalent to ``(?>x{m,n})``."
 msgstr ""
 
-#: ../../library/re.rst:233
+#: ../../library/re.rst:222
 msgid "``\\``"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "If you're not using a raw string to express the pattern, remember that Python also uses the backslash as an escape sequence in string literals; if the escape sequence isn't recognized by Python's parser, the backslash and subsequent character are included in the resulting string.  However, if Python would recognize the resulting sequence, the backslash should be repeated twice.  This is complicated and hard to understand, so it's highly recommended that you use raw strings for all but the simplest expressions."
 msgstr ""
 
-#: ../../library/re.rst:293
+#: ../../library/re.rst:238
 msgid "``[]``"
 msgstr ""
 
@@ -229,7 +229,7 @@ msgstr ""
 msgid ":exc:`FutureWarning` is raised if a character set contains constructs that will change semantically in the future."
 msgstr ""
 
-#: ../../library/re.rst:306
+#: ../../library/re.rst:297
 msgid "``|``"
 msgstr ""
 
@@ -237,7 +237,7 @@ msgstr ""
 msgid "``A|B``, where *A* and *B* can be arbitrary REs, creates a regular expression that will match either *A* or *B*.  An arbitrary number of REs can be separated by the ``'|'`` in this way.  This can be used inside groups (see below) as well.  As the target string is scanned, REs separated by ``'|'`` are tried from left to right. When one pattern completely matches, that branch is accepted. This means that once *A* matches, *B* will not be tested further, even if it would produce a longer overall match.  In other words, the ``'|'`` operator is never greedy.  To match a literal ``'|'``, use ``\\|``, or enclose it inside a character class, as in ``[|]``."
 msgstr ""
 
-#: ../../library/re.rst:316
+#: ../../library/re.rst:311
 msgid "``(...)``"
 msgstr ""
 
@@ -245,7 +245,7 @@ msgstr ""
 msgid "Matches whatever regular expression is inside the parentheses, and indicates the start and end of a group; the contents of a group can be retrieved after a match has been performed, and can be matched later in the string with the ``\\number`` special sequence, described below.  To match the literals ``'('`` or ``')'``, use ``\\(`` or ``\\)``, or enclose them inside a character class: ``[(]``, ``[)]``."
 msgstr ""
 
-#: ../../library/re.rst:325
+#: ../../library/re.rst:320
 msgid "``(?...)``"
 msgstr ""
 
@@ -253,7 +253,7 @@ msgstr ""
 msgid "This is an extension notation (a ``'?'`` following a ``'('`` is not meaningful otherwise).  The first character after the ``'?'`` determines what the meaning and further syntax of the construct is. Extensions usually do not create a new group; ``(?P<name>...)`` is the only exception to this rule. Following are the currently supported extensions."
 msgstr ""
 
-#: ../../library/re.rst:348
+#: ../../library/re.rst:327
 msgid "``(?aiLmsux)``"
 msgstr ""
 
@@ -304,7 +304,7 @@ msgstr ""
 msgid "This construction can only be used at the start of the expression."
 msgstr ""
 
-#: ../../library/re.rst:356
+#: ../../library/re.rst:352
 msgid "``(?:...)``"
 msgstr ""
 
@@ -312,7 +312,7 @@ msgstr ""
 msgid "A non-capturing version of regular parentheses.  Matches whatever regular expression is inside the parentheses, but the substring matched by the group *cannot* be retrieved after performing a match or referenced later in the pattern."
 msgstr ""
 
-#: ../../library/re.rst:388
+#: ../../library/re.rst:358
 msgid "``(?aiLmsux-imsx:...)``"
 msgstr ""
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "The letters ``'a'``, ``'L'`` and ``'u'`` also can be used in a group."
 msgstr ""
 
-#: ../../library/re.rst:403
+#: ../../library/re.rst:390
 msgid "``(?>...)``"
 msgstr ""
 
@@ -340,7 +340,7 @@ msgstr ""
 msgid "Attempts to match ``...`` as if it was a separate regular expression, and if successful, continues to match the rest of the pattern following it. If the subsequent pattern fails to match, the stack can only be unwound to a point *before* the ``(?>...)`` because once exited, the expression, known as an :dfn:`atomic group`, has thrown away all stack points within itself. Thus, ``(?>.*).`` would never match anything because first the ``.*`` would match all characters possible, then, having nothing left to match, the final ``.`` would fail to match. Since there are no stack points saved in the Atomic Group, and there is no stack point before it, the entire expression would thus fail to match."
 msgstr ""
 
-#: ../../library/re.rst:435
+#: ../../library/re.rst:407
 msgid "``(?P<name>...)``"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr ""
 msgid "In :class:`bytes` patterns, group *name* can only contain bytes in the ASCII range (``b'\\x00'``-``b'\\x7f'``)."
 msgstr ""
 
-#: ../../library/re.rst:441
+#: ../../library/re.rst:439
 msgid "``(?P=name)``"
 msgstr ""
 
@@ -409,7 +409,7 @@ msgstr ""
 msgid "A backreference to a named group; it matches whatever text was matched by the earlier group named *name*."
 msgstr ""
 
-#: ../../library/re.rst:446
+#: ../../library/re.rst:445
 msgid "``(?#...)``"
 msgstr ""
 
@@ -417,7 +417,7 @@ msgstr ""
 msgid "A comment; the contents of the parentheses are simply ignored."
 msgstr ""
 
-#: ../../library/re.rst:453
+#: ../../library/re.rst:450
 msgid "``(?=...)``"
 msgstr ""
 
@@ -425,7 +425,7 @@ msgstr ""
 msgid "Matches if ``...`` matches next, but doesn't consume any of the string.  This is called a :dfn:`lookahead assertion`.  For example, ``Isaac (?=Asimov)`` will match ``'Isaac '`` only if it's followed by ``'Asimov'``."
 msgstr ""
 
-#: ../../library/re.rst:460
+#: ../../library/re.rst:457
 msgid "``(?!...)``"
 msgstr ""
 
@@ -433,7 +433,7 @@ msgstr ""
 msgid "Matches if ``...`` doesn't match next.  This is a :dfn:`negative lookahead assertion`. For example, ``Isaac (?!Asimov)`` will match ``'Isaac '`` only if it's *not* followed by ``'Asimov'``."
 msgstr ""
 
-#: ../../library/re.rst:487
+#: ../../library/re.rst:464
 msgid "``(?<=...)``"
 msgstr ""
 
@@ -449,7 +449,7 @@ msgstr ""
 msgid "Added support for group references of fixed length."
 msgstr ""
 
-#: ../../library/re.rst:496
+#: ../../library/re.rst:491
 msgid "``(?<!...)``"
 msgstr ""
 
@@ -457,7 +457,7 @@ msgstr ""
 msgid "Matches if the current position in the string is not preceded by a match for ``...``.  This is called a :dfn:`negative lookbehind assertion`.  Similar to positive lookbehind assertions, the contained pattern must only match strings of some fixed length.  Patterns which start with negative lookbehind assertions may match at the beginning of the string being searched."
 msgstr ""
 
-#: ../../library/re.rst:513
+#: ../../library/re.rst:501
 msgid "``(?(id/name)yes-pattern|no-pattern)``"
 msgstr ""
 
@@ -473,7 +473,7 @@ msgstr ""
 msgid "The special sequences consist of ``'\\'`` and a character from the list below. If the ordinary character is not an ASCII digit or an ASCII letter, then the resulting RE will match the second character.  For example, ``\\$`` matches the character ``'$'``."
 msgstr ""
 
-#: ../../library/re.rst:532
+#: ../../library/re.rst:524
 msgid "``\\number``"
 msgstr ""
 
@@ -481,7 +481,7 @@ msgstr ""
 msgid "Matches the contents of the group of the same number.  Groups are numbered starting from 1.  For example, ``(.+) \\1`` matches ``'the the'`` or ``'55 55'``, but not ``'thethe'`` (note the space after the group).  This special sequence can only be used to match one of the first 99 groups.  If the first digit of *number* is 0, or *number* is 3 octal digits long, it will not be interpreted as a group match, but as the character with octal value *number*. Inside the ``'['`` and ``']'`` of a character class, all numeric escapes are treated as characters."
 msgstr ""
 
-#: ../../library/re.rst:537
+#: ../../library/re.rst:536
 msgid "``\\A``"
 msgstr ""
 
@@ -489,7 +489,7 @@ msgstr ""
 msgid "Matches only at the start of the string."
 msgstr ""
 
-#: ../../library/re.rst:559
+#: ../../library/re.rst:541
 msgid "``\\b``"
 msgstr ""
 
@@ -505,7 +505,7 @@ msgstr ""
 msgid "Inside a character range, ``\\b`` represents the backspace character, for compatibility with Python's string literals."
 msgstr ""
 
-#: ../../library/re.rst:573
+#: ../../library/re.rst:563
 msgid "``\\B``"
 msgstr ""
 
@@ -513,13 +513,13 @@ msgstr ""
 msgid "Matches the empty string, but only when it is *not* at the beginning or end of a word. This means that ``r'at\\B'`` matches ``'athens'``, ``'atom'``, ``'attorney'``, but not ``'at'``, ``'at.'``, or ``'at!'``. ``\\B`` is the opposite of ``\\b``, so word characters in Unicode (str) patterns are Unicode alphanumerics or the underscore, although this can be changed by using the :py:const:`~re.ASCII` flag. Word boundaries are determined by the current locale if the :py:const:`~re.LOCALE` flag is used."
 msgstr ""
 
-#: ../../library/re.rst:589
+#: ../../library/re.rst:577
 msgid "``\\d``"
 msgstr ""
 
-#: ../../library/re.rst:585
-#: ../../library/re.rst:608
-#: ../../library/re.rst:631
+#: ../../library/re.rst:578
+#: ../../library/re.rst:602
+#: ../../library/re.rst:625
 msgid "For Unicode (str) patterns:"
 msgstr ""
 
@@ -531,9 +531,9 @@ msgstr ""
 msgid "Matches ``[0-9]`` if the :py:const:`~re.ASCII` flag is used."
 msgstr ""
 
-#: ../../library/re.rst:589
-#: ../../library/re.rst:612
-#: ../../library/re.rst:637
+#: ../../library/re.rst:587
+#: ../../library/re.rst:610
+#: ../../library/re.rst:633
 msgid "For 8-bit (bytes) patterns:"
 msgstr ""
 
@@ -541,7 +541,7 @@ msgstr ""
 msgid "Matches any decimal digit in the ASCII character set; this is equivalent to ``[0-9]``."
 msgstr ""
 
-#: ../../library/re.rst:597
+#: ../../library/re.rst:593
 msgid "``\\D``"
 msgstr ""
 
@@ -553,7 +553,7 @@ msgstr ""
 msgid "Matches ``[^0-9]`` if the :py:const:`~re.ASCII` flag is used."
 msgstr ""
 
-#: ../../library/re.rst:612
+#: ../../library/re.rst:601
 msgid "``\\s``"
 msgstr ""
 
@@ -569,7 +569,7 @@ msgstr ""
 msgid "Matches characters considered whitespace in the ASCII character set; this is equivalent to ``[ \\t\\n\\r\\f\\v]``."
 msgstr ""
 
-#: ../../library/re.rst:620
+#: ../../library/re.rst:616
 msgid "``\\S``"
 msgstr ""
 
@@ -581,7 +581,7 @@ msgstr ""
 msgid "Matches ``[^ \\t\\n\\r\\f\\v]`` if the :py:const:`~re.ASCII` flag is used."
 msgstr ""
 
-#: ../../library/re.rst:637
+#: ../../library/re.rst:624
 msgid "``\\w``"
 msgstr ""
 
@@ -597,7 +597,7 @@ msgstr ""
 msgid "Matches characters considered alphanumeric in the ASCII character set; this is equivalent to ``[a-zA-Z0-9_]``. If the :py:const:`~re.LOCALE` flag is used, matches characters considered alphanumeric in the current locale and the underscore."
 msgstr ""
 
-#: ../../library/re.rst:651
+#: ../../library/re.rst:641
 msgid "``\\W``"
 msgstr ""
 
@@ -613,7 +613,7 @@ msgstr ""
 msgid "If the :py:const:`~re.LOCALE` flag is used, matches characters which are neither alphanumeric in the current locale nor the underscore."
 msgstr ""
 
-#: ../../library/re.rst:656
+#: ../../library/re.rst:655
 msgid "``\\Z``"
 msgstr ""
 

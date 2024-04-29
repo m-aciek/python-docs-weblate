@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "The :mod:`zoneinfo` module provides a concrete time zone implementation to support the IANA time zone database as originally specified in :pep:`615`. By default, :mod:`zoneinfo` uses the system's time zone data if available; if no system time zone data is available, the library will fall back to using the first-party :pypi:`tzdata` package available on PyPI."
 msgstr ""
 
-#: ../../library/zoneinfo.rst:26
+#: ../../library/zoneinfo.rst:24
 msgid "Module: :mod:`datetime`"
 msgstr ""
 
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Provides the :class:`~datetime.time` and :class:`~datetime.datetime` types with which the :class:`ZoneInfo` class is designed to be used."
 msgstr ""
 
-#: ../../library/zoneinfo.rst:29
+#: ../../library/zoneinfo.rst:28
 msgid "Package :pypi:`tzdata`"
 msgstr ""
 

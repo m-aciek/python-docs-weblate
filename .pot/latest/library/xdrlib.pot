@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "``Unpacker`` is the complementary class which unpacks XDR data values from a string buffer.  The input buffer is given as *data*."
 msgstr ""
 
-#: ../../library/xdrlib.rst:45
+#: ../../library/xdrlib.rst:43
 msgid ":rfc:`1014` - XDR: External Data Representation Standard"
 msgstr ""
 

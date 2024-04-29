@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-17 19:36+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "This has the direct benefit of using the new widgets which gives a better look and feel across platforms; however, the replacement widgets are not completely compatible. The main difference is that widget options such as \"fg\", \"bg\" and others related to widget styling are no longer present in Ttk widgets.  Instead, use  the :class:`ttk.Style` class for improved styling effects."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:60
+#: ../../library/tkinter.ttk.rst:59
 msgid "`Converting existing applications to use Tile widgets <https://tktable.sourceforge.net/tile/doc/converting.txt>`_"
 msgstr ""
 
@@ -1216,7 +1216,7 @@ msgstr ""
 msgid "Returns the column name. This is a read-only option."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:992
+#: ../../library/tkinter.ttk.rst:991
 msgid "*anchor*: One of the standard Tk anchor values."
 msgstr ""
 
@@ -1224,7 +1224,7 @@ msgstr ""
 msgid "Specifies how the text in this column should be aligned with respect to the cell."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:996
+#: ../../library/tkinter.ttk.rst:994
 msgid "*minwidth*: width"
 msgstr ""
 
@@ -1232,7 +1232,7 @@ msgstr ""
 msgid "The minimum width of the column in pixels. The treeview widget will not make the column any smaller than specified by this option when the widget is resized or the user drags a column."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:999
+#: ../../library/tkinter.ttk.rst:998
 msgid "*stretch*: ``True``/``False``"
 msgstr ""
 
@@ -1240,7 +1240,7 @@ msgstr ""
 msgid "Specifies whether the column's width should be adjusted when the widget is resized."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1002
+#: ../../library/tkinter.ttk.rst:1001
 msgid "*width*: width"
 msgstr ""
 
@@ -1304,7 +1304,7 @@ msgstr ""
 msgid "Specifies an image to display to the right of the column heading."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1049
+#: ../../library/tkinter.ttk.rst:1048
 msgid "*anchor*: anchor"
 msgstr ""
 
@@ -1312,7 +1312,7 @@ msgstr ""
 msgid "Specifies how the heading text should be aligned. One of the standard Tk anchor values."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1052
+#: ../../library/tkinter.ttk.rst:1051
 msgid "*command*: callback"
 msgstr ""
 
@@ -1592,7 +1592,7 @@ msgstr ""
 msgid "If \"image\" is used, *args* should contain the default image name followed by statespec/value pairs (this is the imagespec), and *kw* may have the following options:"
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1402
+#: ../../library/tkinter.ttk.rst:1400
 msgid "border=padding"
 msgstr ""
 
@@ -1600,7 +1600,7 @@ msgstr ""
 msgid "padding is a list of up to four integers, specifying the left, top, right, and bottom borders, respectively."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1406
+#: ../../library/tkinter.ttk.rst:1404
 msgid "height=height"
 msgstr ""
 
@@ -1608,7 +1608,7 @@ msgstr ""
 msgid "Specifies a minimum height for the element. If less than zero, the base image's height is used as a default."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1410
+#: ../../library/tkinter.ttk.rst:1408
 msgid "padding=padding"
 msgstr ""
 
@@ -1616,7 +1616,7 @@ msgstr ""
 msgid "Specifies the element's interior padding. Defaults to border's value if not specified."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1414
+#: ../../library/tkinter.ttk.rst:1412
 msgid "sticky=spec"
 msgstr ""
 
@@ -1624,7 +1624,7 @@ msgstr ""
 msgid "Specifies how the image is placed within the final parcel. spec contains zero or more characters \"n\", \"s\", \"w\", or \"e\"."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1418
+#: ../../library/tkinter.ttk.rst:1416
 msgid "width=width"
 msgstr ""
 
@@ -1685,7 +1685,7 @@ msgstr ""
 msgid "A layout can be just ``None``, if it takes no options, or a dict of options specifying how to arrange the element. The layout mechanism uses a simplified version of the pack geometry manager: given an initial cavity, each element is allocated a parcel."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1525
+#: ../../library/tkinter.ttk.rst:1522
 msgid "*side*: whichside"
 msgstr ""
 
@@ -1693,7 +1693,7 @@ msgstr ""
 msgid "Specifies which side of the cavity to place the element; one of top, right, bottom or left. If omitted, the element occupies the entire cavity."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1528
+#: ../../library/tkinter.ttk.rst:1527
 msgid "*sticky*: nswe"
 msgstr ""
 
@@ -1701,7 +1701,7 @@ msgstr ""
 msgid "Specifies where the element is placed inside its allocated parcel."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1533
+#: ../../library/tkinter.ttk.rst:1530
 msgid "*unit*: 0 or 1"
 msgstr ""
 
@@ -1709,7 +1709,7 @@ msgstr ""
 msgid "If set to 1, causes the element and all of its descendants to be treated as a single element for the purposes of :meth:`Widget.identify` et al. It's used for things like scrollbar thumbs with grips."
 msgstr ""
 
-#: ../../library/tkinter.ttk.rst:1538
+#: ../../library/tkinter.ttk.rst:1535
 msgid "*children*: [sublayout... ]"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 10:16+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "This library does *not* interpret or write the value-type prefixes used in the Windows Registry extended version of INI syntax."
 msgstr ""
 
-#: ../../library/configparser.rst:38
+#: ../../library/configparser.rst:36
 msgid "Module :mod:`tomllib`"
 msgstr ""
 
@@ -40,7 +40,7 @@ msgstr ""
 msgid "TOML is a well-specified format for application configuration files. It is specifically designed to be an improved version of INI."
 msgstr ""
 
-#: ../../library/configparser.rst:42
+#: ../../library/configparser.rst:40
 msgid "Module :mod:`shlex`"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Support for creating Unix shell-like mini-languages which can also be used for application configuration files."
 msgstr ""
 
-#: ../../library/configparser.rst:45
+#: ../../library/configparser.rst:44
 msgid "Module :mod:`json`"
 msgstr ""
 

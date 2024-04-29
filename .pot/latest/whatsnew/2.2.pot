@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-04 12:24+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -308,7 +308,7 @@ msgstr ""
 msgid "Note that you can only go forward in an iterator; there's no way to get the previous element, reset the iterator, or make a copy of it. An iterator object could provide such additional capabilities, but the iterator protocol only requires a :meth:`next` method."
 msgstr ""
 
-#: ../../whatsnew/2.2.rst:535
+#: ../../whatsnew/2.2.rst:534
 msgid ":pep:`234` - Iterators"
 msgstr ""
 
@@ -372,7 +372,7 @@ msgstr ""
 msgid "Python doesn't go nearly as far as Icon in adopting generators as a central concept.  Generators are considered a new part of the core Python language, but learning or using them isn't compulsory; if they don't solve any problems that you have, feel free to ignore them. One novel feature of Python's interface as compared to Icon's is that a generator's state is represented as a concrete object (the iterator) that can be passed around to other functions or stored in a data structure."
 msgstr ""
 
-#: ../../whatsnew/2.2.rst:662
+#: ../../whatsnew/2.2.rst:661
 msgid ":pep:`255` - Simple Generators"
 msgstr ""
 
@@ -396,7 +396,7 @@ msgstr ""
 msgid "In most cases, integers and long integers will now be treated identically.  You can still distinguish them with the :func:`type` built-in function, but that's rarely needed."
 msgstr ""
 
-#: ../../whatsnew/2.2.rst:702
+#: ../../whatsnew/2.2.rst:701
 msgid ":pep:`237` - Unifying Long Integers and Integers"
 msgstr ""
 
@@ -648,7 +648,7 @@ msgstr ""
 msgid "Rename :c:macro:`!Py_TPFLAGS_GC` to :c:macro:`Py_TPFLAGS_HAVE_GC`."
 msgstr ""
 
-#: ../../whatsnew/2.2.rst:1084
+#: ../../whatsnew/2.2.rst:1083
 msgid "Use :c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar` to allocate"
 msgstr ""
 

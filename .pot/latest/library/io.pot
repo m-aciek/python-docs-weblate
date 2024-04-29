@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-01 18:18+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,7 +119,7 @@ msgstr ""
 msgid "Accordingly, it is highly recommended that you specify the encoding explicitly when opening text files. If you want to use UTF-8, pass ``encoding=\"utf-8\"``. To use the current locale encoding, ``encoding=\"locale\"`` is supported since Python 3.10."
 msgstr ""
 
-#: ../../library/io.rst:135
+#: ../../library/io.rst:133
 msgid ":ref:`utf8-mode`"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgstr ""
 msgid "An exception inheriting :exc:`OSError` and :exc:`ValueError` that is raised when an unsupported operation is called on a stream."
 msgstr ""
 
-#: ../../library/io.rst:244
+#: ../../library/io.rst:243
 msgid ":mod:`sys`"
 msgstr ""
 

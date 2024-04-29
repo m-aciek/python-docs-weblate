@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-11 10:50+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -312,7 +312,7 @@ msgstr ""
 msgid "When you need to verify that an object is a concrete instance of the type you are implementing, use the :c:func:`PyObject_TypeCheck` function.  A sample of its use might be something like the following::"
 msgstr ""
 
-#: ../../extending/newtypes.rst:595
+#: ../../extending/newtypes.rst:594
 msgid "Download CPython source releases."
 msgstr ""
 

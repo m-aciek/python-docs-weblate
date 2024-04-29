@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-26 07:15+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,7 +208,7 @@ msgstr ""
 msgid "There are also corresponding changes of interest to C programmers; there's a new slot ``tp_richcmp`` in type objects and an API for performing a given rich comparison.  I won't cover the C API here, but will refer you to :pep:`207`, or to 2.1's C API documentation, for the full list of related functions."
 msgstr ""
 
-#: ../../whatsnew/2.1.rst:223
+#: ../../whatsnew/2.1.rst:222
 msgid ":pep:`207` - Rich Comparisons"
 msgstr ""
 
@@ -252,7 +252,7 @@ msgstr ""
 msgid "Functions were also added to Python's C API for issuing warnings; refer to PEP 230 or to Python's API documentation for the details."
 msgstr ""
 
-#: ../../whatsnew/2.1.rst:293
+#: ../../whatsnew/2.1.rst:289
 msgid ":pep:`5` - Guidelines for Language Evolution"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr ""
 msgid "Extension types can now set the type flag ``Py_TPFLAGS_CHECKTYPES`` in their ``PyTypeObject`` structure to indicate that they support the new coercion model. In such extension types, the numeric slot functions can no longer assume that they'll be passed two arguments of the same type; instead they may be passed two arguments of differing types, and can then perform their own internal coercion. If the slot function is passed a type it can't handle, it can indicate the failure by returning a reference to the ``Py_NotImplemented`` singleton value. The numeric functions of the other type will then be tried, and perhaps they can handle the operation; if the other type also returns ``Py_NotImplemented``, then a :exc:`TypeError` will be raised.  Numeric methods written in Python can also return ``Py_NotImplemented``, causing the interpreter to act as if the method did not exist (perhaps raising a :exc:`TypeError`, perhaps trying another object's numeric methods)."
 msgstr ""
 
-#: ../../whatsnew/2.1.rst:535
+#: ../../whatsnew/2.1.rst:533
 msgid ":pep:`208` - Reworking the Coercion Model"
 msgstr ""
 
@@ -425,11 +425,11 @@ msgstr ""
 msgid "You can start creating packages containing :file:`PKG-INFO` even if you're not using Python 2.1, since a new release of the Distutils will be made for users of earlier Python versions.  Version 1.0.2 of the Distutils includes the changes described in :pep:`241`, as well as various bugfixes and enhancements.  It will be available from the Distutils SIG at https://www.python.org/community/sigs/current/distutils-sig/."
 msgstr ""
 
-#: ../../whatsnew/2.1.rst:575
+#: ../../whatsnew/2.1.rst:574
 msgid ":pep:`241` - Metadata for Python Software Packages"
 msgstr ""
 
-#: ../../whatsnew/2.1.rst:578
+#: ../../whatsnew/2.1.rst:577
 msgid ":pep:`243` - Module Repository Upload Mechanism"
 msgstr ""
 

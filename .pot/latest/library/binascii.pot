@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Exception raised on incomplete data. These are usually not programming errors, but may be handled by reading a little more data and trying again."
 msgstr ""
 
-#: ../../library/binascii.rst:181
+#: ../../library/binascii.rst:179
 msgid "Module :mod:`base64`"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Support for RFC compliant base64-style encoding in base 16, 32, 64, and 85."
 msgstr ""
 
-#: ../../library/binascii.rst:184
+#: ../../library/binascii.rst:183
 msgid "Module :mod:`uu`"
 msgstr ""
 

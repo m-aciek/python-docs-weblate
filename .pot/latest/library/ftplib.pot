@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-17 13:16+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -395,7 +395,7 @@ msgstr ""
 msgid "The set of all exceptions (as a tuple) that methods of :class:`FTP` instances may raise as a result of problems with the FTP connection (as opposed to programming errors made by the caller).  This set includes the four exceptions listed above as well as :exc:`OSError` and :exc:`EOFError`."
 msgstr ""
 
-#: ../../library/ftplib.rst:597
+#: ../../library/ftplib.rst:595
 msgid "Module :mod:`netrc`"
 msgstr ""
 

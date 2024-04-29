@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 11:39+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 msgid "There are also :meth:`!issubset` and :meth:`!issuperset` methods for checking whether one set is a subset or superset of another::"
 msgstr ""
 
-#: ../../whatsnew/2.3.rst:117
+#: ../../whatsnew/2.3.rst:116
 msgid ":pep:`218` - Adding a Built-In Set Object Type"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Python doesn't go nearly as far as Icon in adopting generators as a central concept.  Generators are considered part of the core Python language, but learning or using them isn't compulsory; if they don't solve any problems that you have, feel free to ignore them. One novel feature of Python's interface as compared to Icon's is that a generator's state is represented as a concrete object (the iterator) that can be passed around to other functions or stored in a data structure."
 msgstr ""
 
-#: ../../whatsnew/2.3.rst:248
+#: ../../whatsnew/2.3.rst:247
 msgid ":pep:`255` - Simple Generators"
 msgstr ""
 
@@ -156,7 +156,7 @@ msgstr ""
 msgid "The encoding declaration only affects Unicode string literals, which will be converted to Unicode using the specified encoding.  Note that Python identifiers are still restricted to ASCII characters, so you can't have variable names that use characters outside of the usual alphanumerics."
 msgstr ""
 
-#: ../../whatsnew/2.3.rst:282
+#: ../../whatsnew/2.3.rst:281
 msgid ":pep:`263` - Defining Python Source Code Encodings"
 msgstr ""
 
@@ -180,7 +180,7 @@ msgstr ""
 msgid "A path within the archive can also be specified to only import from a subdirectory; for example, the path :file:`/tmp/example.zip/lib/` would only import from the :file:`lib/` subdirectory within the archive."
 msgstr ""
 
-#: ../../whatsnew/2.3.rst:331
+#: ../../whatsnew/2.3.rst:328
 msgid ":pep:`273` - Import Modules from Zip Archives"
 msgstr ""
 
@@ -212,7 +212,7 @@ msgstr ""
 msgid "Under MacOS, :func:`os.listdir` may now return Unicode filenames."
 msgstr ""
 
-#: ../../whatsnew/2.3.rst:365
+#: ../../whatsnew/2.3.rst:364
 msgid ":pep:`277` - Unicode file name support for Windows NT"
 msgstr ""
 
@@ -489,7 +489,7 @@ msgstr ""
 msgid "Different dialects of comma-separated files can be defined and registered; currently there are two dialects, both used by Microsoft Excel. A separate :class:`csv.writer` class will generate comma-separated files from a succession of tuples or lists, quoting strings that contain the delimiter."
 msgstr ""
 
-#: ../../whatsnew/2.3.rst:806
+#: ../../whatsnew/2.3.rst:805
 msgid ":pep:`305` - CSV File API"
 msgstr ""
 
@@ -1133,7 +1133,7 @@ msgstr ""
 msgid "To aid extension writers, a header file :file:`Misc/pymemcompat.h` is distributed with the source to Python 2.3 that allows Python extensions to use the 2.3 interfaces to memory allocation while compiling against any version of Python since 1.5.2.  You would copy the file from Python's source distribution and bundle it with the source of your extension."
 msgstr ""
 
-#: ../../whatsnew/2.3.rst:1869
+#: ../../whatsnew/2.3.rst:1867
 msgid "https://hg.python.org/cpython/file/default/Objects/obmalloc.c"
 msgstr ""
 

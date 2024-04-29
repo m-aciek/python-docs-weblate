@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 08:40+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -439,7 +439,7 @@ msgstr ""
 msgid "``%f``"
 msgstr ""
 
-#: ../../library/time.rst:431
+#: ../../library/time.rst:430
 msgid "Microseconds as a decimal number"
 msgstr ""
 
@@ -825,7 +825,7 @@ msgstr ""
 msgid "Where the components are:"
 msgstr ""
 
-#: ../../library/time.rst:735
+#: ../../library/time.rst:733
 msgid "``std`` and ``dst``"
 msgstr ""
 
@@ -833,7 +833,7 @@ msgstr ""
 msgid "Three or more alphanumerics giving the timezone abbreviations. These will be propagated into time.tzname"
 msgstr ""
 
-#: ../../library/time.rst:741
+#: ../../library/time.rst:737
 msgid "``offset``"
 msgstr ""
 
@@ -841,7 +841,7 @@ msgstr ""
 msgid "The offset has the form: ``± hh[:mm[:ss]]``. This indicates the value added the local time to arrive at UTC.  If preceded by a '-', the timezone is east of the Prime Meridian; otherwise, it is west. If no offset follows dst, summer time is assumed to be one hour ahead of standard time."
 msgstr ""
 
-#: ../../library/time.rst:763
+#: ../../library/time.rst:743
 msgid "``start[/time], end[/time]``"
 msgstr ""
 
@@ -849,7 +849,7 @@ msgstr ""
 msgid "Indicates when to change to and back from DST. The format of the start and end dates are one of the following:"
 msgstr ""
 
-#: ../../library/time.rst:749
+#: ../../library/time.rst:747
 msgid ":samp:`J{n}`"
 msgstr ""
 
@@ -857,7 +857,7 @@ msgstr ""
 msgid "The Julian day *n* (1 <= *n* <= 365). Leap days are not counted, so in all years February 28 is day 59 and March 1 is day 60."
 msgstr ""
 
-#: ../../library/time.rst:753
+#: ../../library/time.rst:751
 msgid ":samp:`{n}`"
 msgstr ""
 
@@ -865,7 +865,7 @@ msgstr ""
 msgid "The zero-based Julian day (0 <= *n* <= 365). Leap days are counted, and it is possible to refer to February 29."
 msgstr ""
 
-#: ../../library/time.rst:760
+#: ../../library/time.rst:755
 msgid ":samp:`M{m}.{n}.{d}`"
 msgstr ""
 
@@ -994,7 +994,7 @@ msgstr ""
 msgid "For the above Timezone constants (:data:`altzone`, :data:`daylight`, :data:`timezone`, and :data:`tzname`), the value is determined by the timezone rules in effect at module load time or the last time :func:`tzset` is called and may be incorrect for times in the past.  It is recommended to use the :attr:`~struct_time.tm_gmtoff` and :attr:`~struct_time.tm_zone` results from :func:`localtime` to obtain timezone information."
 msgstr ""
 
-#: ../../library/time.rst:958
+#: ../../library/time.rst:957
 msgid "Module :mod:`datetime`"
 msgstr ""
 
@@ -1002,7 +1002,7 @@ msgstr ""
 msgid "More object-oriented interface to dates and times."
 msgstr ""
 
-#: ../../library/time.rst:962
+#: ../../library/time.rst:960
 msgid "Module :mod:`locale`"
 msgstr ""
 
@@ -1010,7 +1010,7 @@ msgstr ""
 msgid "Internationalization services.  The locale setting affects the interpretation of many format specifiers in :func:`strftime` and :func:`strptime`."
 msgstr ""
 
-#: ../../library/time.rst:965
+#: ../../library/time.rst:964
 msgid "Module :mod:`calendar`"
 msgstr ""
 

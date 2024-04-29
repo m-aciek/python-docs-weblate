@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 10:17+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -339,7 +339,7 @@ msgstr ""
 msgid "The string representation of array objects has the form ``array(typecode, initializer)``. The *initializer* is omitted if the array is empty, otherwise it is a Unicode string if the *typecode* is ``'u'``, otherwise it is a list of numbers. The string representation is guaranteed to be able to be converted back to an array with the same type and value using :func:`eval`, so long as the :class:`~array.array` class has been imported using ``from array import array``. Variables ``inf`` and ``nan`` must also be defined if it contains corresponding floating point values. Examples::"
 msgstr ""
 
-#: ../../library/array.rst:268
+#: ../../library/array.rst:267
 msgid "Module :mod:`struct`"
 msgstr ""
 
@@ -347,7 +347,7 @@ msgstr ""
 msgid "Packing and unpacking of heterogeneous binary data."
 msgstr ""
 
-#: ../../library/array.rst:272
+#: ../../library/array.rst:270
 msgid "Module :mod:`xdrlib`"
 msgstr ""
 

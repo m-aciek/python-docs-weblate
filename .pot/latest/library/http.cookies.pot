@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "This class derives from :class:`BaseCookie` and overrides :meth:`~BaseCookie.value_decode` and :meth:`~BaseCookie.value_encode`. :class:`!SimpleCookie` supports strings as cookie values. When setting the value, :class:`!SimpleCookie` calls the builtin :func:`str` to convert the value to a string. Values received from HTTP are kept as strings."
 msgstr ""
 
-#: ../../library/http.cookies.rst:68
+#: ../../library/http.cookies.rst:66
 msgid "Module :mod:`http.cookiejar`"
 msgstr ""
 

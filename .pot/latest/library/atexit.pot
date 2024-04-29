@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-29 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Remove *func* from the list of functions to be run at interpreter shutdown. :func:`unregister` silently does nothing if *func* was not previously registered.  If *func* has been registered more than once, every occurrence of that function in the :mod:`atexit` call stack will be removed.  Equality comparisons (``==``) are used internally during unregistration, so function references do not need to have matching identities."
 msgstr ""
 
-#: ../../library/atexit.rst:75
+#: ../../library/atexit.rst:74
 msgid "Module :mod:`readline`"
 msgstr ""
 
