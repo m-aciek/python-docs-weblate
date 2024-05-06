@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 08:19+0000\n"
+"POT-Creation-Date: 2024-05-06 17:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -899,7 +899,7 @@ msgid "While the block with ``make_request()`` and ``make_another_request()`` mi
 msgstr ""
 
 #: ../../library/asyncio-task.rst:1323
-msgid "If end-user code is, for some reason, suppresing cancellation by catching :exc:`CancelledError`, it needs to call this method to remove the cancellation state."
+msgid "If end-user code is, for some reason, suppressing cancellation by catching :exc:`CancelledError`, it needs to call this method to remove the cancellation state."
 msgstr ""
 
 #: ../../library/asyncio-task.rst:1329
