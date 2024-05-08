@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-05-08 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -689,7 +689,7 @@ msgid "The IDLE insertion cursor is a thin vertical bar between character positi
 msgstr ""
 
 #: ../../library/idle.rst:428
-msgid "Several non-character keys move the cursor and possibly delete characters.  Deletion does not puts text on the clipboard, but IDLE has an undo list.  Wherever this doc discusses keys, 'C' refers to the :kbd:`Control` key on Windows and Unix and the :kbd:`Command` key on macOS.  (And all such dicussions assume that the keys have not been re-bound to something else.)"
+msgid "Several non-character keys move the cursor and possibly delete characters.  Deletion does not puts text on the clipboard, but IDLE has an undo list.  Wherever this doc discusses keys, 'C' refers to the :kbd:`Control` key on Windows and Unix and the :kbd:`Command` key on macOS.  (And all such discussions assume that the keys have not been re-bound to something else.)"
 msgstr ""
 
 #: ../../library/idle.rst:435

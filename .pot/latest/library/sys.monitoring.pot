@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-05-08 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,7 @@ msgid "These events are attributes of the :mod:`!sys.monitoring.events` namespac
 msgstr ""
 
 #: ../../library/sys.monitoring.rst:166
-msgid "An alias for ``0`` so users can do explict comparisions like::"
+msgid "An alias for ``0`` so users can do explicit comparisons like::"
 msgstr ""
 
 #: ../../library/sys.monitoring.rst:171
