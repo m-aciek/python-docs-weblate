@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -355,7 +355,7 @@ msgid "Compute a version of this path relative to the path represented by *other
 msgstr ""
 
 #: ../../library/pathlib.rst:618
-msgid "When *walk_up* is False (the default), the path must start with *other*. When the argument is True, ``..`` entries may be added to form the relative path. In all other cases, such as the paths referencing different drives, :exc:`ValueError` is raised.::"
+msgid "When *walk_up* is false (the default), the path must start with *other*. When the argument is true, ``..`` entries may be added to form the relative path. In all other cases, such as the paths referencing different drives, :exc:`ValueError` is raised.::"
 msgstr ""
 
 #: ../../library/pathlib.rst:633

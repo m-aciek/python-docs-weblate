@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -756,7 +756,7 @@ msgid "Close all file descriptors from *fd_low* (inclusive) to *fd_high* (exclus
 msgstr ""
 
 #: ../../library/os.rst:919
-msgid "Copy *count* bytes from file descriptor *src*, starting from offset *offset_src*, to file descriptor *dst*, starting from offset *offset_dst*. If *offset_src* is None, then *src* is read from the current position; respectively for *offset_dst*."
+msgid "Copy *count* bytes from file descriptor *src*, starting from offset *offset_src*, to file descriptor *dst*, starting from offset *offset_dst*. If *offset_src* is ``None``, then *src* is read from the current position; respectively for *offset_dst*."
 msgstr ""
 
 #: ../../library/os.rst:924
@@ -1371,7 +1371,7 @@ msgid "See also :func:`get_blocking` and :meth:`socket.socket.setblocking`."
 msgstr ""
 
 #: ../../library/os.rst:1664
-msgid "Transfer *count* bytes from file descriptor *src*, starting from offset *offset_src*, to file descriptor *dst*, starting from offset *offset_dst*. At least one of the file descriptors must refer to a pipe. If *offset_src* is None, then *src* is read from the current position; respectively for *offset_dst*. The offset associated to the file descriptor that refers to a pipe must be ``None``. The files pointed to by *src* and *dst* must reside in the same filesystem, otherwise an :exc:`OSError` is raised with :attr:`~OSError.errno` set to :const:`errno.EXDEV`."
+msgid "Transfer *count* bytes from file descriptor *src*, starting from offset *offset_src*, to file descriptor *dst*, starting from offset *offset_dst*. At least one of the file descriptors must refer to a pipe. If *offset_src* is ``None``, then *src* is read from the current position; respectively for *offset_dst*. The offset associated to the file descriptor that refers to a pipe must be ``None``. The files pointed to by *src* and *dst* must reside in the same filesystem, otherwise an :exc:`OSError` is raised with :attr:`~OSError.errno` set to :const:`errno.EXDEV`."
 msgstr ""
 
 #: ../../library/os.rst:1673

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgid "Line number of the :class:`Breakpoint` within :attr:`file`."
 msgstr ""
 
 #: ../../library/bdb.rst:89
-msgid "True if a :class:`Breakpoint` at (file, line) is temporary."
+msgid "``True`` if a :class:`Breakpoint` at (file, line) is temporary."
 msgstr ""
 
 #: ../../library/bdb.rst:93
@@ -125,7 +125,7 @@ msgid "Function name that defines whether a :class:`Breakpoint` is hit upon ente
 msgstr ""
 
 #: ../../library/bdb.rst:102
-msgid "True if :class:`Breakpoint` is enabled."
+msgid "``True`` if :class:`Breakpoint` is enabled."
 msgstr ""
 
 #: ../../library/bdb.rst:106
@@ -245,15 +245,15 @@ msgid "Normally derived classes don't override the following methods, but they m
 msgstr ""
 
 #: ../../library/bdb.rst:218
-msgid "Return True if *module_name* matches any skip pattern."
+msgid "Return ``True`` if *module_name* matches any skip pattern."
 msgstr ""
 
 #: ../../library/bdb.rst:222
-msgid "Return True if *frame* is below the starting frame in the stack."
+msgid "Return ``True`` if *frame* is below the starting frame in the stack."
 msgstr ""
 
 #: ../../library/bdb.rst:226
-msgid "Return True if there is an effective breakpoint for this line."
+msgid "Return ``True`` if there is an effective breakpoint for this line."
 msgstr ""
 
 #: ../../library/bdb.rst:228
@@ -261,7 +261,7 @@ msgid "Check whether a line or function breakpoint exists and is in effect.  Del
 msgstr ""
 
 #: ../../library/bdb.rst:233
-msgid "Return True if any breakpoint exists for *frame*'s filename."
+msgid "Return ``True`` if any breakpoint exists for *frame*'s filename."
 msgstr ""
 
 #: ../../library/bdb.rst:235
@@ -357,7 +357,7 @@ msgid "Return a breakpoint specified by the given number.  If *arg* is a string,
 msgstr ""
 
 #: ../../library/bdb.rst:347
-msgid "Return True if there is a breakpoint for *lineno* in *filename*."
+msgid "Return ``True`` if there is a breakpoint for *lineno* in *filename*."
 msgstr ""
 
 #: ../../library/bdb.rst:351
@@ -433,7 +433,7 @@ msgid "Finally, the module defines the following functions:"
 msgstr ""
 
 #: ../../library/bdb.rst:411
-msgid "Return True if we should break here, depending on the way the :class:`Breakpoint` *b* was set."
+msgid "Return ``True`` if we should break here, depending on the way the :class:`Breakpoint` *b* was set."
 msgstr ""
 
 #: ../../library/bdb.rst:414
@@ -445,11 +445,11 @@ msgid "Return ``(active breakpoint, delete temporary flag)`` or ``(None, None)``
 msgstr ""
 
 #: ../../library/bdb.rst:426
-msgid "The *active breakpoint* is the first entry in :attr:`bplist <bdb.Breakpoint.bplist>` for the (:attr:`file <bdb.Breakpoint.file>`, :attr:`line <bdb.Breakpoint.line>`) (which must exist) that is :attr:`enabled <bdb.Breakpoint.enabled>`, for which :func:`checkfuncname` is True, and that has neither a False :attr:`condition <bdb.Breakpoint.cond>` nor positive :attr:`ignore <bdb.Breakpoint.ignore>` count.  The *flag*, meaning that a temporary breakpoint should be deleted, is False only when the :attr:`cond <bdb.Breakpoint.cond>` cannot be evaluated (in which case, :attr:`ignore <bdb.Breakpoint.ignore>` count is ignored)."
+msgid "The *active breakpoint* is the first entry in :attr:`bplist <bdb.Breakpoint.bplist>` for the (:attr:`file <bdb.Breakpoint.file>`, :attr:`line <bdb.Breakpoint.line>`) (which must exist) that is :attr:`enabled <bdb.Breakpoint.enabled>`, for which :func:`checkfuncname` is true, and that has neither a false :attr:`condition <bdb.Breakpoint.cond>` nor positive :attr:`ignore <bdb.Breakpoint.ignore>` count.  The *flag*, meaning that a temporary breakpoint should be deleted, is ``False`` only when the :attr:`cond <bdb.Breakpoint.cond>` cannot be evaluated (in which case, :attr:`ignore <bdb.Breakpoint.ignore>` count is ignored)."
 msgstr ""
 
 #: ../../library/bdb.rst:437
-msgid "If no such entry exists, then (None, None) is returned."
+msgid "If no such entry exists, then ``(None, None)`` is returned."
 msgstr ""
 
 #: ../../library/bdb.rst:442

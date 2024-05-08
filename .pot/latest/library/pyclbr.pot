@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,7 +106,7 @@ msgid "The name of the class."
 msgstr ""
 
 #: ../../library/pyclbr.rst:145
-msgid "For top-level classes, None.  For nested classes, the parent."
+msgid "For top-level classes, ``None``.  For nested classes, the parent."
 msgstr ""
 
 #: ../../library/pyclbr.rst:152

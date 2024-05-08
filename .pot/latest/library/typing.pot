@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-03 13:17+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1328,7 +1328,7 @@ msgid "``Point2D.__total__`` gives the value of the ``total`` argument. Example:
 msgstr ""
 
 #: ../../library/typing.rst:2335
-msgid "This attribute reflects *only* the value of the ``total`` argument to the current ``TypedDict`` class, not whether the class is semantically total. For example, a ``TypedDict`` with ``__total__`` set to True may have keys marked with :data:`NotRequired`, or it may inherit from another ``TypedDict`` with ``total=False``. Therefore, it is generally better to use :attr:`__required_keys__` and :attr:`__optional_keys__` for introspection."
+msgid "This attribute reflects *only* the value of the ``total`` argument to the current ``TypedDict`` class, not whether the class is semantically total. For example, a ``TypedDict`` with ``__total__`` set to ``True`` may have keys marked with :data:`NotRequired`, or it may inherit from another ``TypedDict`` with ``total=False``. Therefore, it is generally better to use :attr:`__required_keys__` and :attr:`__optional_keys__` for introspection."
 msgstr ""
 
 #: ../../library/typing.rst:2348

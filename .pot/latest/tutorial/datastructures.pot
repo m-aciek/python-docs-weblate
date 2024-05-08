@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-01 04:18+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid "You might have noticed that methods like ``insert``, ``remove`` or ``sort
 msgstr ""
 
 #: ../../tutorial/datastructures.rst:127
-msgid "Another thing you might notice is that not all data can be sorted or compared.  For instance, ``[None, 'hello', 10]`` doesn't sort because integers can't be compared to strings and *None* can't be compared to other types.  Also, there are some types that don't have a defined ordering relation.  For example, ``3+4j < 5+7j`` isn't a valid comparison."
+msgid "Another thing you might notice is that not all data can be sorted or compared.  For instance, ``[None, 'hello', 10]`` doesn't sort because integers can't be compared to strings and ``None`` can't be compared to other types.  Also, there are some types that don't have a defined ordering relation.  For example, ``3+4j < 5+7j`` isn't a valid comparison."
 msgstr ""
 
 #: ../../tutorial/datastructures.rst:138

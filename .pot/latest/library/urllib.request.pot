@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,7 +197,7 @@ msgid "*headers* should be a dictionary, and will be treated as if :meth:`add_he
 msgstr ""
 
 #: ../../library/urllib.request.rst:230
-msgid "An appropriate ``Content-Type`` header should be included if the *data* argument is present.  If this header has not been provided and *data* is not None, ``Content-Type: application/x-www-form-urlencoded`` will be added as a default."
+msgid "An appropriate ``Content-Type`` header should be included if the *data* argument is present.  If this header has not been provided and *data* is not ``None``, ``Content-Type: application/x-www-form-urlencoded`` will be added as a default."
 msgstr ""
 
 #: ../../library/urllib.request.rst:235

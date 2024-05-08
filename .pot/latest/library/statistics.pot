@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -278,7 +278,7 @@ msgid "No special efforts are made to achieve exact results. (However, this may 
 msgstr ""
 
 #: ../../library/statistics.rst:220
-msgid "Return the harmonic mean of *data*, a sequence or iterable of real-valued numbers.  If *weights* is omitted or *None*, then equal weighting is assumed."
+msgid "Return the harmonic mean of *data*, a sequence or iterable of real-valued numbers.  If *weights* is omitted or ``None``, then equal weighting is assumed."
 msgstr ""
 
 #: ../../library/statistics.rst:224

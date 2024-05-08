@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid "Return the debugging flags currently set."
 msgstr ""
 
 #: ../../library/gc.rst:71
-msgid "Returns a list of all objects tracked by the collector, excluding the list returned. If *generation* is not None, return only the objects tracked by the collector that are in that generation."
+msgid "Returns a list of all objects tracked by the collector, excluding the list returned. If *generation* is not ``None``, return only the objects tracked by the collector that are in that generation."
 msgstr ""
 
 #: ../../library/gc.rst:75
