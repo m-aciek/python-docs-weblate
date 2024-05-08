@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 21:36+0000\n"
+"POT-Creation-Date: 2024-05-08 07:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -349,5 +349,5 @@ msgid "In my case I have to use a proxy to access the internet at work. If you a
 msgstr ""
 
 #: ../../howto/urllib2.rst:596
-msgid "urllib opener for SSL proxy (CONNECT method): `ASPN Cookbook Recipe <https://code.activestate.com/recipes/456195/>`_."
+msgid "urllib opener for SSL proxy (CONNECT method): `ASPN Cookbook Recipe <https://code.activestate.com/recipes/456195-urrlib2-opener-for-ssl-proxy-connect-method/>`_."
 msgstr ""

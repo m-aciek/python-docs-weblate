@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-05-08 07:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -546,7 +546,7 @@ msgid "If the phonelist table gets updated, the outdated contents of the cache c
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:786
-msgid "(Contributed by Raymond Hettinger and incorporating design ideas from Jim Baker, Miki Tebeka, and Nick Coghlan; see `recipe 498245 <https://code.activestate.com/recipes/498245/>`_\\, `recipe 577479 <https://code.activestate.com/recipes/577479/>`_\\, :issue:`10586`, and :issue:`10593`.)"
+msgid "(Contributed by Raymond Hettinger and incorporating design ideas from Jim Baker, Miki Tebeka, and Nick Coghlan; see `recipe 498245 <https://code.activestate.com/recipes/498245-lru-and-lfu-cache-decorators/>`_\\, `recipe 577479 <https://code.activestate.com/recipes/577479-simple-caching-decorator/>`_\\, :issue:`10586`, and :issue:`10593`.)"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:792

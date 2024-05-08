@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-05-08 07:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -469,7 +469,7 @@ msgid "The :func:`get_close_matches` function in this module which shows how sim
 msgstr ""
 
 #: ../../library/difflib.rst:633
-msgid "`Simple version control recipe <https://code.activestate.com/recipes/576729/>`_ for a small application built with :class:`SequenceMatcher`."
+msgid "`Simple version control recipe <https://code.activestate.com/recipes/576729-simple-version-control/>`_ for a small application built with :class:`SequenceMatcher`."
 msgstr ""
 
 #: ../../library/difflib.rst:641

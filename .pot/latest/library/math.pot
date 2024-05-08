@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 05:15+0000\n"
+"POT-Creation-Date: 2024-05-08 07:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgid "The algorithm's accuracy depends on IEEE-754 arithmetic guarantees and th
 msgstr ""
 
 #: ../../library/math.rst:119
-msgid "For further discussion and two alternative approaches, see the `ASPN cookbook recipes for accurate floating point summation <https://code.activestate.com/recipes/393090/>`_\\."
+msgid "For further discussion and two alternative approaches, see the `ASPN cookbook recipes for accurate floating point summation <https://code.activestate.com/recipes/393090-binary-floating-point-summation-accurate-to-full-p/>`_\\."
 msgstr ""
 
 #: ../../library/math.rst:126

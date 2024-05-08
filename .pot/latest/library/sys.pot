@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-05-08 07:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -715,7 +715,7 @@ msgid ":func:`getsizeof` calls the object's ``__sizeof__`` method and adds an ad
 msgstr ""
 
 #: ../../library/sys.rst:867
-msgid "See `recursive sizeof recipe <https://code.activestate.com/recipes/577504/>`_ for an example of using :func:`getsizeof` recursively to find the size of containers and all their contents."
+msgid "See `recursive sizeof recipe <https://code.activestate.com/recipes/577504-compute-memory-footprint-of-an-object-and-its-cont/>`_ for an example of using :func:`getsizeof` recursively to find the size of containers and all their contents."
 msgstr ""
 
 #: ../../library/sys.rst:873
