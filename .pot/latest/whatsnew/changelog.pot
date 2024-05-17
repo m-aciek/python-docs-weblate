@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-14 10:20+0000\n"
+"POT-Creation-Date: 2024-05-17 11:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10581,7 +10581,7 @@ msgid ":issue:`33178`: Added :class:`ctypes.BigEndianUnion` and :class:`ctypes.L
 msgstr ""
 
 #: ../../../build/NEWS:9353
-msgid ":issue:`43352`: Add an Barrier object in synchronization primitives of *asyncio* Lib in order to be consistant with Barrier from *threading* and *multiprocessing* libs*"
+msgid ":issue:`43352`: Add an Barrier object in synchronization primitives of *asyncio* Lib in order to be consistent with Barrier from *threading* and *multiprocessing* libs*"
 msgstr ""
 
 #: ../../../build/NEWS:9357
@@ -10597,7 +10597,7 @@ msgid ":issue:`47126`: Update PEP URLs to :pep:`676`'s new canonical form."
 msgstr ""
 
 #: ../../../build/NEWS:9367
-msgid ":issue:`47040`: Clarified the old Python versions compatiblity note of :func:`binascii.crc32` / :func:`zlib.adler32` / :func:`zlib.crc32` functions."
+msgid ":issue:`47040`: Clarified the old Python versions compatibility note of :func:`binascii.crc32` / :func:`zlib.adler32` / :func:`zlib.crc32` functions."
 msgstr ""
 
 #: ../../../build/NEWS:9371
@@ -11214,7 +11214,7 @@ msgid ":issue:`46608`: Exclude marshalled-frozen data if deep-freezing to save 3
 msgstr ""
 
 #: ../../../build/NEWS:9918
-msgid ":issue:`40280`: Fix wasm32-emscripten test failures and platform issues. - Disable syscalls that are not supported or don't work, e.g.   wait, getrusage, prlimit, mkfifo, mknod, setres[gu]id, setgroups. - Use fd_count to cound open fds. - Add more checks for subprocess and fork. - Add workarounds for missing _multiprocessing and failing socket.accept(). - Enable bzip2. - Disable large file support. - Disable signal.alarm."
+msgid ":issue:`40280`: Fix wasm32-emscripten test failures and platform issues. - Disable syscalls that are not supported or don't work, e.g.   wait, getrusage, prlimit, mkfifo, mknod, setres[gu]id, setgroups. - Use fd_count to count open fds. - Add more checks for subprocess and fork. - Add workarounds for missing _multiprocessing and failing socket.accept(). - Enable bzip2. - Disable large file support. - Disable signal.alarm."
 msgstr ""
 
 #: ../../../build/NEWS:9925
@@ -11242,7 +11242,7 @@ msgid ":issue:`45447`: Apply IDLE syntax highlighting to ``.pyi`` files. Patch b
 msgstr ""
 
 #: ../../../build/NEWS:9954
-msgid ":issue:`46748`: Python's public headers no longer import ``<stdbool.h>``, leaving code that embedd/extends Python free to define ``bool``, ``true`` and ``false``."
+msgid ":issue:`46748`: Python's public headers no longer import ``<stdbool.h>``, leaving code that embeds/extends Python free to define ``bool``, ``true`` and ``false``."
 msgstr ""
 
 #: ../../../build/NEWS:9958
@@ -11250,7 +11250,7 @@ msgid ":issue:`46836`: Move the :c:type:`PyFrameObject` type definition (``struc
 msgstr ""
 
 #: ../../../build/NEWS:9962
-msgid ":issue:`45459`: Rename ``Include/buffer.h`` header file to ``Include/pybuffer.h`` to avoid conflits with projects having an existing ``buffer.h`` header file. Patch by Victor Stinner."
+msgid ":issue:`45459`: Rename ``Include/buffer.h`` header file to ``Include/pybuffer.h`` to avoid conflicts with projects having an existing ``buffer.h`` header file. Patch by Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:9966
@@ -11258,7 +11258,7 @@ msgid ":issue:`45412`: Remove the ``HAVE_PY_SET_53BIT_PRECISION`` macro (moved t
 msgstr ""
 
 #: ../../../build/NEWS:9969
-msgid ":issue:`46613`: Added function :c:func:`PyType_GetModuleByDef`, which allows accesss to module state when a method's defining class is not available."
+msgid ":issue:`46613`: Added function :c:func:`PyType_GetModuleByDef`, which allows access to module state when a method's defining class is not available."
 msgstr ""
 
 #: ../../../build/NEWS:9974
@@ -11562,7 +11562,7 @@ msgid ":issue:`46542`: Fix ``test_json`` tests checking for :exc:`RecursionError
 msgstr ""
 
 #: ../../../build/NEWS:10253
-msgid ":issue:`13886`: Skip test_builtin PTY tests on non-ASCII characters if the readline module is loaded. The readline module changes input() behavior, but test_builtin is not intented to test the readline module. Patch by Victor Stinner."
+msgid ":issue:`13886`: Skip test_builtin PTY tests on non-ASCII characters if the readline module is loaded. The readline module changes input() behavior, but test_builtin is not intended to test the readline module. Patch by Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:10258
@@ -12700,7 +12700,7 @@ msgid ":issue:`45379`: Clarify :exc:`ImportError` message when we try to explici
 msgstr ""
 
 #: ../../../build/NEWS:11289
-msgid ":issue:`44525`: Specialize simple calls to Python functions (no starargs, keyowrd dict, or closure)"
+msgid ":issue:`44525`: Specialize simple calls to Python functions (no starargs, keyword dict, or closure)"
 msgstr ""
 
 #: ../../../build/NEWS:11292
@@ -13728,7 +13728,7 @@ msgid ":issue:`12022`: A :exc:`TypeError` is now raised instead of an :exc:`Attr
 msgstr ""
 
 #: ../../../build/NEWS:12172
-msgid ":issue:`44297`: Make sure that the line number is set when entering a comprehension scope. Ensures that backtraces inclusing generator expressions show the correct line number."
+msgid ":issue:`44297`: Make sure that the line number is set when entering a comprehension scope. This ensures that backtraces including generator expressions show the correct line number."
 msgstr ""
 
 #: ../../../build/NEWS:12176
@@ -17436,7 +17436,7 @@ msgid ":issue:`42639`: :func:`atexit._run_exitfuncs` now logs callback exception
 msgstr ""
 
 #: ../../../build/NEWS:15478
-msgid ":issue:`42644`: ``logging.disable`` will now validate the types and value of its parameter. It also now accepts strings representing the levels (as does ``loging.setLevel``) instead of only the numerical values."
+msgid ":issue:`42644`: ``logging.disable`` will now validate the types and value of its parameter. It also now accepts strings representing the levels (as does ``logging.setLevel``) instead of only the numerical values."
 msgstr ""
 
 #: ../../../build/NEWS:15482
@@ -20810,7 +20810,7 @@ msgid ":issue:`40094`: CGIHTTPRequestHandler of http.server now logs the CGI scr
 msgstr ""
 
 #: ../../../build/NEWS:18363
-msgid ":issue:`40108`: Improve the error message when triying to import a module using :mod:`runpy` and incorrently use the \".py\" extension at the end of the module name. Patch by Pablo Galindo."
+msgid ":issue:`40108`: Improve the error message when triying to import a module using :mod:`runpy` and incorrectly using the \".py\" extension at the end of the module name. Patch by Pablo Galindo."
 msgstr ""
 
 #: ../../../build/NEWS:18367
@@ -23290,7 +23290,7 @@ msgid ":issue:`38332`: Prevent :exc:`KeyError` thrown by :func:`_encoded_words.d
 msgstr ""
 
 #: ../../../build/NEWS:20656
-msgid ":issue:`38371`: Deprecated the ``split()`` method in :class:`_tkinter.TkappType` in favour of the ``splitlist()`` method which has more consistent and predicable behavior."
+msgid ":issue:`38371`: Deprecated the ``split()`` method in :class:`_tkinter.TkappType` in favour of the ``splitlist()`` method which has more consistent and predictable behavior."
 msgstr ""
 
 #: ../../../build/NEWS:20660
@@ -26106,7 +26106,7 @@ msgid ":issue:`36348`: The :meth:`imap.IMAP4.logout` method no longer ignores si
 msgstr ""
 
 #: ../../../build/NEWS:23110
-msgid ":issue:`31904`: Add time module support and fix test_time faiures for VxWorks."
+msgid ":issue:`31904`: Add time module support and fix test_time failures for VxWorks."
 msgstr ""
 
 #: ../../../build/NEWS:23112
@@ -26202,7 +26202,7 @@ msgid ":issue:`36345`: Using the code of the ``Tools/scripts/serve.py`` script a
 msgstr ""
 
 #: ../../../build/NEWS:23194
-msgid ":issue:`36157`: Added Documention for  PyInterpreterState_Main()."
+msgid ":issue:`36157`: Added documentation for PyInterpreterState_Main()."
 msgstr ""
 
 #: ../../../build/NEWS:23196
@@ -29717,7 +29717,7 @@ msgid ":issue:`34913`: Add documentation about the new command line interface of
 msgstr ""
 
 #: ../../../build/NEWS:26114
-msgid ":issue:`32174`: chm document displays non-ASCII charaters properly on some MBCS Windows systems."
+msgid ":issue:`32174`: chm document displays non-ASCII characters properly on some MBCS Windows systems."
 msgstr ""
 
 #: ../../../build/NEWS:26117
