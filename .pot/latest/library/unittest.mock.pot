@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-20 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,11 +225,11 @@ msgid "Added two keyword-only arguments to the reset_mock function."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:411
-msgid "This can be useful where you want to make a series of assertions that reuse the same object. Note that :meth:`reset_mock` *doesn't* clear the return value, :attr:`side_effect` or any child attributes you have set using normal assignment by default. In case you want to reset *return_value* or :attr:`side_effect`, then pass the corresponding parameter as ``True``. Child mocks and the return value mock (if any) are reset as well."
+msgid "This can be useful where you want to make a series of assertions that reuse the same object. Note that :meth:`reset_mock` *doesn't* clear the :attr:`return_value`, :attr:`side_effect` or any child attributes you have set using normal assignment by default. In case you want to reset :attr:`return_value` or :attr:`side_effect`, then pass the corresponding parameter as ``True``. Child mocks and the return value mock (if any) are reset as well."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:419
-msgid "*return_value*, and :attr:`side_effect` are keyword-only arguments."
+msgid "*return_value*, and *side_effect* are keyword-only arguments."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:425
