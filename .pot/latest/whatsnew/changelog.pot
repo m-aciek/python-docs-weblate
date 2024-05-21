@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-21 04:18+0000\n"
+"POT-Creation-Date: 2024-05-21 15:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -332,15 +332,15 @@ msgid ":gh:`118314`: Fix an edge case in :func:`binascii.a2b_base64` strict mode
 msgstr ""
 
 #: ../../../build/NEWS:80
-msgid ":gh:`118042`: Fix an unraisable exception in :meth:`telnetlib.Telnet.__del__` when the ``__init__()`` method was not called."
+msgid ":gh:`118042`: Fix an unraisable exception in :meth:`!telnetlib.Telnet.__del__` when the ``__init__()`` method was not called."
 msgstr ""
 
 #: ../../../build/NEWS:84
-msgid ":gh:`118221`: Fix a bug where :func:`sqlite3.iterdump` could fail if a custom :attr:`row factory <sqlite3.Connection.row_factory>` was used. Patch by Erlend Aasland."
+msgid ":gh:`118221`: Fix a bug where :func:`!sqlite3.iterdump` could fail if a custom :attr:`row factory <sqlite3.Connection.row_factory>` was used. Patch by Erlend Aasland."
 msgstr ""
 
 #: ../../../build/NEWS:88
-msgid ":gh:`118013`: Fix regression introduced in :gh:`103193` that meant that calling :func:`inspect.getattr_static` on an instance would cause a strong reference to that instance's class to persist in an internal cache in the :mod:`inspect` module. This caused unexpected memory consumption if the class was dynamically created, the class held strong references to other objects which took up a significant amount of memory, and the cache contained the sole strong reference to the class. The fix for the regression leads to a slowdown in :func:`getattr_static`, but the function should still be signficantly faster than it was in Python 3.11. Patch by Alex Waygood."
+msgid ":gh:`118013`: Fix regression introduced in :gh:`103193` that meant that calling :func:`inspect.getattr_static` on an instance would cause a strong reference to that instance's class to persist in an internal cache in the :mod:`inspect` module. This caused unexpected memory consumption if the class was dynamically created, the class held strong references to other objects which took up a significant amount of memory, and the cache contained the sole strong reference to the class. The fix for the regression leads to a slowdown in :func:`!getattr_static`, but the function should still be significantly faster than it was in Python 3.11. Patch by Alex Waygood."
 msgstr ""
 
 #: ../../../build/NEWS:99
@@ -368,7 +368,7 @@ msgid ":gh:`117995`: Don't raise :exc:`DeprecationWarning` when a :term:`sequenc
 msgstr ""
 
 #: ../../../build/NEWS:122
-msgid ":gh:`80361`: Fix TypeError in :func:`email.Message.get_payload` when the charset is :rfc:`2231` encoded."
+msgid ":gh:`80361`: Fix TypeError in :func:`email.message.Message.get_payload` when the charset is :rfc:`2231` encoded."
 msgstr ""
 
 #: ../../../build/NEWS:125
@@ -432,7 +432,7 @@ msgid ":gh:`92081`: Fix missing spaces in email headers when the spaces are mixe
 msgstr ""
 
 #: ../../../build/NEWS:170
-msgid ":gh:`87106`: Fixed handling in :meth:`inspect.signature.bind` of keyword arguments having the same name as positional-only arguments when a variadic keyword argument (e.g. ``**kwargs``) is present."
+msgid ":gh:`87106`: Fixed handling in :meth:`inspect.Signature.bind` of keyword arguments having the same name as positional-only arguments when a variadic keyword argument (e.g. ``**kwargs``) is present."
 msgstr ""
 
 #: ../../../build/NEWS:174
