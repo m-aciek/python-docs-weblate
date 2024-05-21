@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-21 15:16+0000\n"
+"POT-Creation-Date: 2024-05-21 22:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4180,7 +4180,7 @@ msgid ":gh:`103092`: Adapt the :mod:`winsound` extension module to :pep:`687`."
 msgstr ""
 
 #: ../../../build/NEWS:3440
-msgid ":gh:`93910`: Remove deprecation of enum ``memmber.member`` access."
+msgid ":gh:`93910`: Remove deprecation of enum ``member.member`` access."
 msgstr ""
 
 #: ../../../build/NEWS:3442
@@ -5060,7 +5060,7 @@ msgid ":gh:`101693`: In :meth:`sqlite3.Cursor.execute`, :exc:`DeprecationWarning
 msgstr ""
 
 #: ../../../build/NEWS:4274
-msgid ":gh:`101446`: Change repr of :class:`collections.OrderedDict` to use regular dictionary formating instead of pairs of keys and values."
+msgid ":gh:`101446`: Change repr of :class:`collections.OrderedDict` to use regular dictionary formatting instead of pairs of keys and values."
 msgstr ""
 
 #: ../../../build/NEWS:4277
@@ -5412,7 +5412,7 @@ msgid ":gh:`101334`: ``test_tarfile`` has been updated to pass when run as a hig
 msgstr ""
 
 #: ../../../build/NEWS:4626
-msgid ":gh:`101282`: Update BOLT configration not to use depreacted usage of ``--split functions``. Patch by Donghee Na."
+msgid ":gh:`101282`: Update BOLT configuration not to use deprecated usage of ``--split functions``. Patch by Donghee Na."
 msgstr ""
 
 #: ../../../build/NEWS:4629
@@ -5808,7 +5808,7 @@ msgid ":gh:`88500`: Reduced the memory usage of :func:`urllib.parse.unquote` and
 msgstr ""
 
 #: ../../../build/NEWS:4991
-msgid ":gh:`96127`: ``inspect.signature`` was raising ``TypeError`` on call with mock objects. Now it correctly returns ``(*args, **kwargs)`` as infered signature."
+msgid ":gh:`96127`: ``inspect.signature`` was raising ``TypeError`` on call with mock objects. Now it correctly returns ``(*args, **kwargs)`` as inferred signature."
 msgstr ""
 
 #: ../../../build/NEWS:4995
@@ -5968,7 +5968,7 @@ msgid ":gh:`99578`: Fix a reference bug in :func:`_imp.create_builtin()` after t
 msgstr ""
 
 #: ../../../build/NEWS:5164
-msgid ":gh:`99581`: Fixed a bug that was causing a buffer overflow if the tokenizer copies a line missing the newline caracter from a file that is as long as the available tokenizer buffer. Patch by Pablo galindo"
+msgid ":gh:`99581`: Fixed a bug that was causing a buffer overflow if the tokenizer copies a line missing the newline character from a file that is as long as the available tokenizer buffer. Patch by Pablo galindo"
 msgstr ""
 
 #: ../../../build/NEWS:5168
@@ -6604,7 +6604,7 @@ msgid ":gh:`97966`: Update uname docs to clarify the special nature of the platf
 msgstr ""
 
 #: ../../../build/NEWS:5789
-msgid ":gh:`98903`: The Python test suite now fails wit exit code 4 if no tests ran. It should help detecting typos in test names and test methods."
+msgid ":gh:`98903`: The Python test suite now fails with exit code 4 if no tests ran. It should help detecting typos in test names and test methods."
 msgstr ""
 
 #: ../../../build/NEWS:5792
@@ -6944,7 +6944,7 @@ msgid ":gh:`96587`: Correctly raise ``SyntaxError`` on exception groups (:pep:`6
 msgstr ""
 
 #: ../../../build/NEWS:6116
-msgid ":gh:`96569`: Remove two cases of undefined behavoir, by adding NULL checks."
+msgid ":gh:`96569`: Remove two cases of undefined behavior, by adding NULL checks."
 msgstr ""
 
 #: ../../../build/NEWS:6119
@@ -7776,7 +7776,7 @@ msgid ":gh:`95609`: Update bundled pip to 22.2.2."
 msgstr ""
 
 #: ../../../build/NEWS:6858
-msgid ":gh:`95289`: Fix :class:`asyncio.TaskGroup` to propagate exception when :exc:`asyncio.CancelledError` was replaced with another exception by a context manger. Patch by Kumar Aditya and Guido van Rossum."
+msgid ":gh:`95289`: Fix :class:`asyncio.TaskGroup` to propagate exception when :exc:`asyncio.CancelledError` was replaced with another exception by a context manager. Patch by Kumar Aditya and Guido van Rossum."
 msgstr ""
 
 #: ../../../build/NEWS:6862
@@ -8523,7 +8523,7 @@ msgid ":gh:`91207`: Fix stylesheet not working in Windows CHM htmlhelp docs and 
 msgstr ""
 
 #: ../../../build/NEWS:7544
-msgid ":gh:`95454`: Replaced incorrectly written true/false values in documentiation. Patch by Robert O'Shea"
+msgid ":gh:`95454`: Replaced incorrectly written true/false values in documentation. Patch by Robert O'Shea"
 msgstr ""
 
 #: ../../../build/NEWS:7547
