@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-26 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1467,7 +1467,7 @@ msgid "Callback example 3: check option order (generalized)"
 msgstr ""
 
 #: ../../library/optparse.rst:1741
-msgid "If you want to re-use this callback for several similar options (set a flag, but blow up if ``-b`` has already been seen), it needs a bit of work: the error message and the flag that it sets must be generalized.  ::"
+msgid "If you want to reuse this callback for several similar options (set a flag, but blow up if ``-b`` has already been seen), it needs a bit of work: the error message and the flag that it sets must be generalized.  ::"
 msgstr ""
 
 #: ../../library/optparse.rst:1758

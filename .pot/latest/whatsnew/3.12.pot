@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-22 10:16+0000\n"
+"POT-Creation-Date: 2024-05-26 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1127,7 +1127,7 @@ msgid "The ``st_ctime`` fields return by :func:`os.stat` and :func:`os.lstat` on
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1261
-msgid "On POSIX platforms, :func:`os.fork` can now raise a :exc:`DeprecationWarning` when it can detect being called from a multithreaded process. There has always been a fundamental incompatibility with the POSIX platform when doing so. Even if such code *appeared* to work. We added the warning to to raise awareness as issues encounted by code doing this are becoming more frequent. See the :func:`os.fork` documentation for more details along with `this discussion on fork being incompatible with threads <https://discuss.python.org/t/33555>`_ for *why* we're now surfacing this longstanding platform compatibility problem to developers."
+msgid "On POSIX platforms, :func:`os.fork` can now raise a :exc:`DeprecationWarning` when it can detect being called from a multithreaded process. There has always been a fundamental incompatibility with the POSIX platform when doing so. Even if such code *appeared* to work. We added the warning to raise awareness as issues encountered by code doing this are becoming more frequent. See the :func:`os.fork` documentation for more details along with `this discussion on fork being incompatible with threads <https://discuss.python.org/t/33555>`_ for *why* we're now surfacing this longstanding platform compatibility problem to developers."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1271

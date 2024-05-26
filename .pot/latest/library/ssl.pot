@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-26 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -537,11 +537,11 @@ msgid "Use the server's cipher ordering preference, rather than the client's. Th
 msgstr ""
 
 #: ../../library/ssl.rst:762
-msgid "Prevents re-use of the same DH key for distinct SSL sessions.  This improves forward secrecy but requires more computational resources. This option only applies to server sockets."
+msgid "Prevents reuse of the same DH key for distinct SSL sessions.  This improves forward secrecy but requires more computational resources. This option only applies to server sockets."
 msgstr ""
 
 #: ../../library/ssl.rst:770
-msgid "Prevents re-use of the same ECDH key for distinct SSL sessions.  This improves forward secrecy but requires more computational resources. This option only applies to server sockets."
+msgid "Prevents reuse of the same ECDH key for distinct SSL sessions.  This improves forward secrecy but requires more computational resources. This option only applies to server sockets."
 msgstr ""
 
 #: ../../library/ssl.rst:778

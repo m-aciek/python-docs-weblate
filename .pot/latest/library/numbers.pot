@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-26 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,11 +82,11 @@ msgid "Subtypes :class:`Rational` and adds a conversion to :class:`int`.  Provid
 msgstr ""
 
 #: ../../library/numbers.rst:88
-msgid "Notes for type implementors"
+msgid "Notes for type implementers"
 msgstr ""
 
 #: ../../library/numbers.rst:90
-msgid "Implementors should be careful to make equal numbers equal and hash them to the same values. This may be subtle if there are two different extensions of the real numbers. For example, :class:`fractions.Fraction` implements :func:`hash` as follows::"
+msgid "Implementers should be careful to make equal numbers equal and hash them to the same values. This may be subtle if there are two different extensions of the real numbers. For example, :class:`fractions.Fraction` implements :func:`hash` as follows::"
 msgstr ""
 
 #: ../../library/numbers.rst:109

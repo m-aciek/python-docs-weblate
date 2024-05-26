@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-26 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,7 +114,7 @@ msgid "is the same as  ::"
 msgstr ""
 
 #: ../../library/textwrap.rst:157
-msgid "You can re-use the same :class:`TextWrapper` object many times, and you can change any of its options through direct assignment to instance attributes between uses."
+msgid "You can reuse the same :class:`TextWrapper` object many times, and you can change any of its options through direct assignment to instance attributes between uses."
 msgstr ""
 
 #: ../../library/textwrap.rst:161

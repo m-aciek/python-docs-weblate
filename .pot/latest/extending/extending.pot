@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-11 10:50+0000\n"
+"POT-Creation-Date: 2024-05-26 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -393,7 +393,7 @@ msgid "In languages like C or C++, the programmer is responsible for dynamic all
 msgstr ""
 
 #: ../../extending/extending.rst:854
-msgid "Every block of memory allocated with :c:func:`malloc` should eventually be returned to the pool of available memory by exactly one call to :c:func:`free`. It is important to call :c:func:`free` at the right time.  If a block's address is forgotten but :c:func:`free` is not called for it, the memory it occupies cannot be reused until the program terminates.  This is called a :dfn:`memory leak`.  On the other hand, if a program calls :c:func:`free` for a block and then continues to use the block, it creates a conflict with re-use of the block through another :c:func:`malloc` call.  This is called :dfn:`using freed memory`. It has the same bad consequences as referencing uninitialized data --- core dumps, wrong results, mysterious crashes."
+msgid "Every block of memory allocated with :c:func:`malloc` should eventually be returned to the pool of available memory by exactly one call to :c:func:`free`. It is important to call :c:func:`free` at the right time.  If a block's address is forgotten but :c:func:`free` is not called for it, the memory it occupies cannot be reused until the program terminates.  This is called a :dfn:`memory leak`.  On the other hand, if a program calls :c:func:`free` for a block and then continues to use the block, it creates a conflict with reuse of the block through another :c:func:`malloc` call.  This is called :dfn:`using freed memory`. It has the same bad consequences as referencing uninitialized data --- core dumps, wrong results, mysterious crashes."
 msgstr ""
 
 #: ../../extending/extending.rst:865
