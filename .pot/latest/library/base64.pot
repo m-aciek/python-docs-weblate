@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-05-28 15:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,7 +155,7 @@ msgid "*foldspaces* is an optional flag that uses the special short sequence 'y'
 msgstr ""
 
 #: ../../library/base64.rst:194
-msgid "*wrapcol* controls whether the output should have newline (``b'\\n'``) characters added to it. If this is non-zero, each output line will be at most this many characters long."
+msgid "*wrapcol* controls whether the output should have newline (``b'\\n'``) characters added to it. If this is non-zero, each output line will be at most this many characters long, excluding the trailing newline."
 msgstr ""
 
 #: ../../library/base64.rst:198
