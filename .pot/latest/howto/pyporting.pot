@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-21 13:16+0000\n"
+"POT-Creation-Date: 2024-05-30 16:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "The archived python-porting_ mailing list may contain some useful guidanc
 msgstr ""
 
 #: ../../howto/pyporting.rst:21
-msgid "Since Python 3.13 the original porting guide was discontinued. You can find the old guide in the `archive <https://docs.python.org/3.12/howto/pyporting.html>`_."
+msgid "Since Python 3.11 the original porting guide was discontinued. You can find the old guide in the `archive <https://docs.python.org/3.10/howto/pyporting.html>`_."
 msgstr ""
 
 #: ../../howto/pyporting.rst:27
