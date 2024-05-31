@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-05-31 17:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -872,7 +872,7 @@ msgid "Returns an iterable over the source code positions of each :term:`bytecod
 msgstr ""
 
 #: ../../reference/datamodel.rst:1232
-msgid "The iterator returns :class:`tuple`\\s containing the ``(start_line, end_line, start_column, end_column)``. The *i-th* tuple corresponds to the position of the source code that compiled to the *i-th* instruction. Column information is 0-indexed utf-8 byte offsets on the given source line."
+msgid "The iterator returns :class:`tuple`\\s containing the ``(start_line, end_line, start_column, end_column)``. The *i-th* tuple corresponds to the position of the source code that compiled to the *i-th* code unit. Column information is 0-indexed utf-8 byte offsets on the given source line."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1238
