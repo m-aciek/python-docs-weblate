@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-05-31 17:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -437,7 +437,7 @@ msgid ":class:`ExitStack` makes it possible to instead register a callback for e
 msgstr ""
 
 #: ../../library/contextlib.rst:799
-msgid "This allows the intended cleanup up behaviour to be made explicit up front, rather than requiring a separate flag variable."
+msgid "This allows the intended cleanup behaviour to be made explicit up front, rather than requiring a separate flag variable."
 msgstr ""
 
 #: ../../library/contextlib.rst:802
