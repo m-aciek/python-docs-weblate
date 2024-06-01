@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-27 19:13+0000\n"
+"POT-Creation-Date: 2024-06-01 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -699,6 +699,6 @@ msgstr ""
 msgid "Many of the recipes offer the same high performance as the underlying toolset. Superior memory performance is kept by processing elements one at a time rather than bringing the whole iterable into memory all at once. Code volume is kept small by linking the tools together in a `functional style <https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf>`_.  High speed is retained by preferring \"vectorized\" building blocks over the use of for-loops and :term:`generators <generator>` which incur interpreter overhead."
 msgstr ""
 
-#: ../../library/itertools.rst:951
+#: ../../library/itertools.rst:956
 msgid "The following recipes have a more mathematical flavor:"
 msgstr ""
