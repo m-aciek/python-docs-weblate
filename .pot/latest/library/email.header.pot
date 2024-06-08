@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-06-08 17:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "Optional *charset* serves two purposes: it has the same meaning as the *c
 msgstr ""
 
 #: ../../library/email.header.rst:77
-msgid "The maximum line length can be specified explicitly via *maxlinelen*.  For splitting the first line to a shorter value (to account for the field header which isn't included in *s*, e.g. :mailheader:`Subject`) pass in the name of the field in *header_name*.  The default *maxlinelen* is 76, and the default value for *header_name* is ``None``, meaning it is not taken into account for the first line of a long, split header."
+msgid "The maximum line length can be specified explicitly via *maxlinelen*.  For splitting the first line to a shorter value (to account for the field header which isn't included in *s*, e.g. :mailheader:`Subject`) pass in the name of the field in *header_name*.  The default *maxlinelen* is 78, and the default value for *header_name* is ``None``, meaning it is not taken into account for the first line of a long, split header."
 msgstr ""
 
 #: ../../library/email.header.rst:84
