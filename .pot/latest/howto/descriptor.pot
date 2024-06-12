@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-20 08:18+0000\n"
+"POT-Creation-Date: 2024-06-12 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -385,7 +385,7 @@ msgid "Invocation from super"
 msgstr ""
 
 #: ../../howto/descriptor.rst:789
-msgid "The logic for super's dotted lookup is in the :meth:`__getattribute__` method for object returned by :class:`super()`."
+msgid "The logic for super's dotted lookup is in the :meth:`__getattribute__` method for object returned by :func:`super`."
 msgstr ""
 
 #: ../../howto/descriptor.rst:792
