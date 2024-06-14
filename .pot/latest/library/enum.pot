@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-06-14 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -519,7 +519,7 @@ msgid ":meth:`~object.__str__` is :meth:`!str.__str__` to better support the *re
 msgstr ""
 
 #: ../../library/enum.rst:518
-msgid "``Flag`` is the same as :class:`Enum`, but its members support the bitwise operators ``&`` (*AND*), ``|`` (*OR*), ``^`` (*XOR*), and ``~`` (*INVERT*); the results of those operators are members of the enumeration."
+msgid "``Flag`` is the same as :class:`Enum`, but its members support the bitwise operators ``&`` (*AND*), ``|`` (*OR*), ``^`` (*XOR*), and ``~`` (*INVERT*); the results of those operations are (aliases of) members of the enumeration."
 msgstr ""
 
 #: ../../library/enum.rst:524
