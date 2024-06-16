@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 15:37+0000\n"
+"POT-Creation-Date: 2024-06-16 07:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -822,7 +822,7 @@ msgid "If the return value is ``True``, the type of its argument is the type ins
 msgstr ""
 
 #: ../../library/typing.rst:1396
-msgid "If ``is_str_list`` is a class or instance method, then the type in ``TypeGuard`` maps to the type of the second parameter after ``cls`` or ``self``."
+msgid "If ``is_str_list`` is a class or instance method, then the type in ``TypeGuard`` maps to the type of the second parameter (after ``cls`` or ``self``)."
 msgstr ""
 
 #: ../../library/typing.rst:1400
