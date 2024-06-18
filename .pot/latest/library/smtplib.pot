@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-06-18 12:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -463,10 +463,10 @@ msgid "SMTP Example"
 msgstr ""
 
 #: ../../library/smtplib.rst:555
-msgid "This example prompts the user for addresses needed in the message envelope ('To' and 'From' addresses), and the message to be delivered.  Note that the headers to be included with the message must be included in the message as entered; this example doesn't do any processing of the :rfc:`822` headers.  In particular, the 'To' and 'From' addresses must be included in the message headers explicitly. ::"
+msgid "This example prompts the user for addresses needed in the message envelope ('To' and 'From' addresses), and the message to be delivered.  Note that the headers to be included with the message must be included in the message as entered; this example doesn't do any processing of the :rfc:`822` headers.  In particular, the 'To' and 'From' addresses must be included in the message headers explicitly::"
 msgstr ""
 
-#: ../../library/smtplib.rst:591
+#: ../../library/smtplib.rst:590
 msgid "In general, you will want to use the :mod:`email` package's features to construct an email message, which you can then send via :meth:`~smtplib.SMTP.send_message`; see :ref:`email-examples`."
 msgstr ""
 
