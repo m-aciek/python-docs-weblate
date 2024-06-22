@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-22 11:38+0000\n"
+"POT-Creation-Date: 2024-06-22 20:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,7 +153,7 @@ msgid ":issue:`24766`: Fix handling of ``doc`` argument to subclasses of ``prope
 msgstr ""
 
 #: ../../../build/NEWS:35
-#: ../../../build/NEWS:176
+#: ../../../build/NEWS:172
 #: ../../../build/NEWS:491
 #: ../../../build/NEWS:897
 #: ../../../build/NEWS:1408
@@ -480,83 +480,83 @@ msgid ":gh:`119821`: Fix execution of :ref:`annotation scopes <annotation-scopes
 msgstr ""
 
 #: ../../../build/NEWS:127
-msgid ":gh:`118263`: Speed up :func:`os.path.normpath` with a direct C call."
-msgstr ""
-
-#: ../../../build/NEWS:129
 msgid ":gh:`119311`: Fix bug where names are unexpectedly mangled in the bases of generic classes."
 msgstr ""
 
-#: ../../../build/NEWS:132
+#: ../../../build/NEWS:130
 msgid ":gh:`119395`: Fix bug where names appearing after a generic class are mangled as if they are in the generic class."
 msgstr ""
 
-#: ../../../build/NEWS:135
-msgid ":gh:`118507`: Fix :func:`os.path.isfile` on Windows for pipes."
-msgstr ""
-
-#: ../../../build/NEWS:137
+#: ../../../build/NEWS:133
 msgid ":gh:`119213`: Non-builtin modules built with argument clinic were crashing if used in a subinterpreter before the main interpreter.  The objects that were causing the problem by leaking between interpreters carelessly have been fixed."
 msgstr ""
 
-#: ../../../build/NEWS:142
+#: ../../../build/NEWS:138
 msgid ":gh:`119011`: Fixes ``type.__type_params__`` to return an empty tuple instead of a descriptor."
 msgstr ""
 
-#: ../../../build/NEWS:145
+#: ../../../build/NEWS:141
 msgid ":gh:`118997`: Fix _Py_ClearImmortal() assertion: use _Py_IsImmortal() to tolerate reference count lower than _Py_IMMORTAL_REFCNT. Fix the assertion for the stable ABI, when a C extension is built with Python 3.11 or lower. Patch by Victor Stinner."
 msgstr ""
 
-#: ../../../build/NEWS:150
+#: ../../../build/NEWS:146
 msgid ":gh:`118513`: Fix incorrect :exc:`UnboundLocalError` when two comprehensions in the same function both reference the same name, and in one comprehension the name is bound while in the other it's an implicit global."
 msgstr ""
 
-#: ../../../build/NEWS:155
+#: ../../../build/NEWS:151
 msgid ":gh:`118164`: Break a loop between the Python implementation of the :mod:`decimal` module and the Python code for integer to string conversion. Also optimize integer to string conversion for values in the range from 9_000 to 135_000 decimal digits."
 msgstr ""
 
-#: ../../../build/NEWS:160
+#: ../../../build/NEWS:156
 msgid ":gh:`118272`: Fix bug where ``generator.close`` does not free the generator frame's locals."
 msgstr ""
 
-#: ../../../build/NEWS:163
+#: ../../../build/NEWS:159
 msgid ":gh:`116767`: Fix crash in compiler on 'async with' that has many context managers."
 msgstr ""
 
-#: ../../../build/NEWS:166
+#: ../../../build/NEWS:162
 msgid ":gh:`117894`: Prevent ``agen.aclose()`` objects being re-used after ``.throw()``."
 msgstr ""
 
-#: ../../../build/NEWS:169
+#: ../../../build/NEWS:165
 msgid ":gh:`117881`: prevent concurrent access to an async generator via athrow().throw() or asend().throw()"
 msgstr ""
 
-#: ../../../build/NEWS:172
+#: ../../../build/NEWS:168
 msgid ":gh:`115874`: Fixed a possible segfault during garbage collection of ``_asyncio.FutureIter`` objects"
 msgstr ""
 
-#: ../../../build/NEWS:178
+#: ../../../build/NEWS:174
 msgid ":gh:`119819`: Fix regression to allow logging configuration with multiprocessing queue types."
 msgstr ""
 
-#: ../../../build/NEWS:181
+#: ../../../build/NEWS:177
 msgid ":gh:`89727`: Fix issue with :func:`shutil.rmtree` where a :exc:`RecursionError` is raised on deep directory trees."
 msgstr ""
 
-#: ../../../build/NEWS:184
+#: ../../../build/NEWS:180
 msgid ":gh:`89727`: Partially fix issue with :func:`shutil.rmtree` where a :exc:`RecursionError` is raised on deep directory trees. A recursion error is no longer raised when :data:`!rmtree.avoids_symlink_attacks` is false."
 msgstr ""
 
-#: ../../../build/NEWS:188
+#: ../../../build/NEWS:184
 msgid ":gh:`119118`: Fix performance regression in the :mod:`tokenize` module by caching the ``line`` token attribute and calculating the column offset more efficiently."
 msgstr ""
 
-#: ../../../build/NEWS:192
+#: ../../../build/NEWS:188
 msgid ":gh:`89727`: Fix issue with :func:`os.fwalk` where a :exc:`RecursionError` was raised on deep directory trees by adjusting the implementation to be iterative instead of recursive."
 msgstr ""
 
-#: ../../../build/NEWS:196
+#: ../../../build/NEWS:192
+msgid ":gh:`118263`: Speed up :func:`os.path.normpath` with a direct C call."
+msgstr ""
+
+#: ../../../build/NEWS:194
 msgid ":gh:`113892`: Now, the method ``sock_connect`` of :class:`asyncio.ProactorEventLoop` raises a :exc:`ValueError` if given socket is not in non-blocking mode, as well as in other loop implementations."
+msgstr ""
+
+#: ../../../build/NEWS:199
+msgid ":gh:`118507`: Fix :func:`os.path.isfile` on Windows for pipes."
 msgstr ""
 
 #: ../../../build/NEWS:201
