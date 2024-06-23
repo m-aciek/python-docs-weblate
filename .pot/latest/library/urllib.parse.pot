@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-06-23 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,7 +281,7 @@ msgid "Added IPv6 URL parsing capabilities."
 msgstr ""
 
 #: ../../library/urllib.parse.rst:175
-msgid "The fragment is now parsed for all URL schemes (unless *allow_fragment* is false), in accordance with :rfc:`3986`.  Previously, an allowlist of schemes that support fragments existed."
+msgid "The fragment is now parsed for all URL schemes (unless *allow_fragments* is false), in accordance with :rfc:`3986`.  Previously, an allowlist of schemes that support fragments existed."
 msgstr ""
 
 #: ../../library/urllib.parse.rst:180
