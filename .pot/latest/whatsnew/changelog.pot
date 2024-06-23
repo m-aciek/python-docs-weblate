@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 17:37+0000\n"
+"POT-Creation-Date: 2024-06-23 22:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,63 +261,63 @@ msgid ":gh:`120811`: Fix possible memory leak in :meth:`contextvars.Context.run`
 msgstr ""
 
 #: ../../../build/NEWS:48
-msgid ":gh:`120732`: Fix ``name`` passing to :class:`unittest.mock.Mock` object when using :func:`unittest.mock.create_autospec`."
+msgid ":gh:`120769`: Make empty line in :mod:`pdb` repeats the last command even when the command is from ``cmdqueue``."
 msgstr ""
 
 #: ../../../build/NEWS:51
-msgid ":gh:`120495`: Fix incorrect exception handling in Tab Nanny. Patch by Wulian233."
+msgid ":gh:`120732`: Fix ``name`` passing to :class:`unittest.mock.Mock` object when using :func:`unittest.mock.create_autospec`."
 msgstr ""
 
 #: ../../../build/NEWS:54
-msgid ":gh:`120343`: Fix column offset reporting for tokens that come after multiline f-strings in the :mod:`tokenize` module."
+msgid ":gh:`120495`: Fix incorrect exception handling in Tab Nanny. Patch by Wulian233."
 msgstr ""
 
 #: ../../../build/NEWS:57
-msgid ":gh:`119600`: Fix :func:`unittest.mock.patch` to not read attributes of the target when ``new_callable`` is set. Patch by Robert Collins."
+msgid ":gh:`120343`: Fix column offset reporting for tokens that come after multiline f-strings in the :mod:`tokenize` module."
 msgstr ""
 
 #: ../../../build/NEWS:60
+msgid ":gh:`119600`: Fix :func:`unittest.mock.patch` to not read attributes of the target when ``new_callable`` is set. Patch by Robert Collins."
+msgstr ""
+
+#: ../../../build/NEWS:63
 msgid ":gh:`114053`: Fix erroneous :exc:`NameError` when calling :func:`inspect.get_annotations` with ``eval_str=True``` on a class that made use of :pep:`695` type parameters in a module that had ``from __future__ import annotations`` at the top of the file. Patch by Alex Waygood."
 msgstr ""
 
-#: ../../../build/NEWS:66
+#: ../../../build/NEWS:69
 msgid ":gh:`120268`: Prohibit passing ``None`` to pure-Python :meth:`datetime.date.fromtimestamp` to achieve consistency with C-extension implementation."
 msgstr ""
 
-#: ../../../build/NEWS:70
+#: ../../../build/NEWS:73
 msgid ":gh:`120244`: Fix memory leak in :func:`re.sub()` when the replacement string contains backreferences."
 msgstr ""
 
-#: ../../../build/NEWS:73
+#: ../../../build/NEWS:76
 msgid ":gh:`120211`: Fix :mod:`tkinter.ttk` with Tcl/Tk 9.0."
 msgstr ""
 
-#: ../../../build/NEWS:75
+#: ../../../build/NEWS:78
 msgid ":gh:`71587`: Fix crash in C version of :meth:`datetime.datetime.strptime` when called again on the restarted interpreter."
 msgstr ""
 
-#: ../../../build/NEWS:79
+#: ../../../build/NEWS:82
 msgid ":gh:`119698`: Fix :meth:`symtable.Class.get_methods` and document its behaviour. Patch by Bénédikt Tran."
 msgstr ""
 
-#: ../../../build/NEWS:82
+#: ../../../build/NEWS:85
 msgid ":gh:`120121`: Add :exc:`concurrent.futures.InvalidStateError` to module's ``__all__``."
 msgstr ""
 
-#: ../../../build/NEWS:85
+#: ../../../build/NEWS:88
 msgid ":gh:`112672`: Support building :mod:`tkinter` with Tcl 9.0."
 msgstr ""
 
-#: ../../../build/NEWS:87
+#: ../../../build/NEWS:90
 msgid ":gh:`65454`: :func:`unittest.mock.Mock.attach_mock` no longer triggers a call to a ``PropertyMock`` being attached."
 msgstr ""
 
-#: ../../../build/NEWS:90
+#: ../../../build/NEWS:93
 msgid ":gh:`81936`: :meth:`!help` and :meth:`!showtopic` methods now respect a configured *output* argument to :class:`!pydoc.Helper` and not use the pager in such cases. Patch by Enrico Tröger."
-msgstr ""
-
-#: ../../../build/NEWS:94
-msgid ":gh:`119824`: Print stack entry in :mod:`pdb` when and only when user input is needed."
 msgstr ""
 
 #: ../../../build/NEWS:97
