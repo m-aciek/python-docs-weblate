@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-19 10:16+0000\n"
+"POT-Creation-Date: 2024-07-03 08:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2046,7 +2046,7 @@ msgid "Do not confuse this field with :c:member:`~PyTypeObject.tp_weaklist`; tha
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1586
-msgid "It is an error to set both the :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` bit and :c:member:`~PyTypeObject.tp_weaklist`."
+msgid "It is an error to set both the :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` bit and :c:member:`~PyTypeObject.tp_weaklistoffset`."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1591
@@ -2054,7 +2054,7 @@ msgid "This field is inherited by subtypes, but see the rules listed below. A su
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1598
-msgid "If the :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` bit is set in the :c:member:`~PyTypeObject.tp_dict` field, then :c:member:`~PyTypeObject.tp_weaklistoffset` will be set to a negative value, to indicate that it is unsafe to use this field."
+msgid "If the :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` bit is set in the :c:member:`~PyTypeObject.tp_flags` field, then :c:member:`~PyTypeObject.tp_weaklistoffset` will be set to a negative value, to indicate that it is unsafe to use this field."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1606
