@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-07 18:20+0000\n"
+"POT-Creation-Date: 2024-07-08 21:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,7 +223,7 @@ msgid ":gh:`121025`: Improve the :meth:`~object.__repr__` of :class:`functools.p
 msgstr ""
 
 #: ../../../build/NEWS:30
-msgid ":gh:`121018`: Fixed issues where :meth:`!argparse.ArgumentParser.parses_args` did not honor ``exit_on_error=False``. Based on patch by Ben Hsing."
+msgid ":gh:`121018`: Fixed issues where :meth:`!argparse.ArgumentParser.parse_args` did not honor ``exit_on_error=False``. Based on patch by Ben Hsing."
 msgstr ""
 
 #: ../../../build/NEWS:33
