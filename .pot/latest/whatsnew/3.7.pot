@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-07-13 13:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1854,7 +1854,7 @@ msgid "threading"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2051
-msgid ":mod:`dummy_threading` and :mod:`_dummy_thread` have been deprecated.  It is no longer possible to build Python with threading disabled. Use :mod:`threading` instead. (Contributed by Antoine Pitrou in :issue:`31370`.)"
+msgid ":mod:`!dummy_threading` and :mod:`!_dummy_thread` have been deprecated.  It is no longer possible to build Python with threading disabled. Use :mod:`threading` instead. (Contributed by Antoine Pitrou in :issue:`31370`.)"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2060
@@ -1970,7 +1970,7 @@ msgid "The ``asyncio.windows_utils.socketpair()`` function has been removed.  Us
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2186
-msgid ":mod:`asyncio` no longer exports the :mod:`selectors` and :mod:`_overlapped` modules as ``asyncio.selectors`` and ``asyncio._overlapped``. Replace ``from asyncio import selectors`` with ``import selectors``."
+msgid ":mod:`asyncio` no longer exports the :mod:`selectors` and :mod:`!_overlapped` modules as ``asyncio.selectors`` and ``asyncio._overlapped``. Replace ``from asyncio import selectors`` with ``import selectors``."
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:2191
