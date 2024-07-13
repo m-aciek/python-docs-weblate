@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-13 14:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,8 +193,7 @@ msgid "Retrieve a file in binary transfer mode."
 msgstr ""
 
 #: ../../library/ftplib.rst:245
-#: ../../library/ftplib.rst:289
-msgid "An appropriate ``STOR`` command: :samp:`\"STOR {filename}\"`."
+msgid "An appropriate ``RETR`` command: :samp:`\"RETR {filename}\"`."
 msgstr ""
 
 #: ../../library/ftplib.rst:248
@@ -220,6 +219,10 @@ msgstr ""
 
 #: ../../library/ftplib.rst:287
 msgid "Store a file in binary transfer mode."
+msgstr ""
+
+#: ../../library/ftplib.rst:289
+msgid "An appropriate ``STOR`` command: :samp:`\"STOR {filename}\"`."
 msgstr ""
 
 #: ../../library/ftplib.rst:292
