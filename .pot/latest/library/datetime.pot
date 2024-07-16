@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-12 15:17+0000\n"
+"POT-Creation-Date: 2024-07-16 08:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid "Aware and Naive Objects"
 msgstr ""
 
 #: ../../library/datetime.rst:50
-msgid "Date and time objects may be categorized as \"aware\" or \"naive\" depending on whether or not they include timezone information."
+msgid "Date and time objects may be categorized as \"aware\" or \"naive\" depending on whether or not they include time zone information."
 msgstr ""
 
 #: ../../library/datetime.rst:53
@@ -89,7 +89,7 @@ msgid "With sufficient knowledge of applicable algorithmic and political time ad
 msgstr ""
 
 #: ../../library/datetime.rst:59
-msgid "A **naive** object does not contain enough information to unambiguously locate itself relative to other date/time objects. Whether a naive object represents Coordinated Universal Time (UTC), local time, or time in some other timezone is purely up to the program, just like it is up to the program whether a particular number represents metres, miles, or mass. Naive objects are easy to understand and to work with, at the cost of ignoring some aspects of reality."
+msgid "A **naive** object does not contain enough information to unambiguously locate itself relative to other date/time objects. Whether a naive object represents Coordinated Universal Time (UTC), local time, or time in some other time zone is purely up to the program, just like it is up to the program whether a particular number represents metres, miles, or mass. Naive objects are easy to understand and to work with, at the cost of ignoring some aspects of reality."
 msgstr ""
 
 #: ../../library/datetime.rst:66
@@ -97,7 +97,7 @@ msgid "For applications requiring aware objects, :class:`.datetime` and :class:`
 msgstr ""
 
 #: ../../library/datetime.rst:72
-msgid "Only one concrete :class:`tzinfo` class, the :class:`timezone` class, is supplied by the :mod:`!datetime` module. The :class:`timezone` class can represent simple timezones with fixed offsets from UTC, such as UTC itself or North American EST and EDT timezones. Supporting timezones at deeper levels of detail is up to the application. The rules for time adjustment across the world are more political than rational, change frequently, and there is no standard suitable for every application aside from UTC."
+msgid "Only one concrete :class:`tzinfo` class, the :class:`timezone` class, is supplied by the :mod:`!datetime` module. The :class:`!timezone` class can represent simple time zones with fixed offsets from UTC, such as UTC itself or North American EST and EDT time zones. Supporting time zones at deeper levels of detail is up to the application. The rules for time adjustment across the world are more political than rational, change frequently, and there is no standard suitable for every application aside from UTC."
 msgstr ""
 
 #: ../../library/datetime.rst:81
@@ -117,7 +117,7 @@ msgid "The largest year number allowed in a :class:`date` or :class:`.datetime` 
 msgstr ""
 
 #: ../../library/datetime.rst:98
-msgid "Alias for the UTC timezone singleton :attr:`datetime.timezone.utc`."
+msgid "Alias for the UTC time zone singleton :attr:`datetime.timezone.utc`."
 msgstr ""
 
 #: ../../library/datetime.rst:103
@@ -928,7 +928,7 @@ msgid "Added the *fold* parameter."
 msgstr ""
 
 #: ../../library/datetime.rst:853
-msgid "Return the current local datetime, with :attr:`.tzinfo` ``None``."
+msgid "Return the current local date and time, with :attr:`.tzinfo` ``None``."
 msgstr ""
 
 #: ../../library/datetime.rst:855
@@ -1074,7 +1074,7 @@ msgid "Return a :class:`.datetime` corresponding to *date_string*, parsed accord
 msgstr ""
 
 #: ../../library/datetime.rst:1054
-msgid "If *format* does not contain microseconds or timezone information, this is equivalent to::"
+msgid "If *format* does not contain microseconds or time zone information, this is equivalent to::"
 msgstr ""
 
 #: ../../library/datetime.rst:1058
@@ -1245,19 +1245,19 @@ msgid "Return a :class:`.datetime` object with new :attr:`.tzinfo` attribute *tz
 msgstr ""
 
 #: ../../library/datetime.rst:1268
-msgid "If provided, *tz* must be an instance of a :class:`tzinfo` subclass, and its :meth:`utcoffset` and :meth:`dst` methods must not return ``None``. If *self* is naive, it is presumed to represent time in the system timezone."
+msgid "If provided, *tz* must be an instance of a :class:`tzinfo` subclass, and its :meth:`utcoffset` and :meth:`dst` methods must not return ``None``. If *self* is naive, it is presumed to represent time in the system time zone."
 msgstr ""
 
 #: ../../library/datetime.rst:1272
-msgid "If called without arguments (or with ``tz=None``) the system local timezone is assumed for the target timezone. The ``.tzinfo`` attribute of the converted datetime instance will be set to an instance of :class:`timezone` with the zone name and offset obtained from the OS."
+msgid "If called without arguments (or with ``tz=None``) the system local time zone is assumed for the target time zone. The ``.tzinfo`` attribute of the converted datetime instance will be set to an instance of :class:`timezone` with the zone name and offset obtained from the OS."
 msgstr ""
 
 #: ../../library/datetime.rst:1277
-msgid "If ``self.tzinfo`` is *tz*, ``self.astimezone(tz)`` is equal to *self*:  no adjustment of date or time data is performed. Else the result is local time in the timezone *tz*, representing the same UTC time as *self*:  after ``astz = dt.astimezone(tz)``, ``astz - astz.utcoffset()`` will have the same date and time data as ``dt - dt.utcoffset()``."
+msgid "If ``self.tzinfo`` is *tz*, ``self.astimezone(tz)`` is equal to *self*:  no adjustment of date or time data is performed. Else the result is local time in the time zone *tz*, representing the same UTC time as *self*:  after ``astz = dt.astimezone(tz)``, ``astz - astz.utcoffset()`` will have the same date and time data as ``dt - dt.utcoffset()``."
 msgstr ""
 
 #: ../../library/datetime.rst:1283
-msgid "If you merely want to attach a time zone object *tz* to a datetime *dt* without adjustment of date and time data, use ``dt.replace(tzinfo=tz)``. If you merely want to remove the time zone object from an aware datetime *dt* without conversion of date and time data, use ``dt.replace(tzinfo=None)``."
+msgid "If you merely want to attach a :class:`timezone` object *tz* to a datetime *dt* without adjustment of date and time data, use ``dt.replace(tzinfo=tz)``. If you merely want to remove the :class:`!timezone` object from an aware datetime *dt* without conversion of date and time data, use ``dt.replace(tzinfo=None)``."
 msgstr ""
 
 #: ../../library/datetime.rst:1288
@@ -1336,7 +1336,7 @@ msgid "The :meth:`timestamp` method uses the :attr:`.fold` attribute to disambig
 msgstr ""
 
 #: ../../library/datetime.rst:1407
-msgid "There is no method to obtain the POSIX timestamp directly from a naive :class:`.datetime` instance representing UTC time. If your application uses this convention and your system timezone is not set to UTC, you can obtain the POSIX timestamp by supplying ``tzinfo=timezone.utc``::"
+msgid "There is no method to obtain the POSIX timestamp directly from a naive :class:`.datetime` instance representing UTC time. If your application uses this convention and your system time zone is not set to UTC, you can obtain the POSIX timestamp by supplying ``tzinfo=timezone.utc``::"
 msgstr ""
 
 #: ../../library/datetime.rst:1415
@@ -1625,7 +1625,7 @@ msgid "An instance of (a concrete subclass of) :class:`tzinfo` can be passed to 
 msgstr ""
 
 #: ../../library/datetime.rst:1973
-msgid "You need to derive a concrete subclass, and (at least) supply implementations of the standard :class:`tzinfo` methods needed by the :class:`.datetime` methods you use. The :mod:`!datetime` module provides :class:`timezone`, a simple concrete subclass of :class:`tzinfo` which can represent timezones with fixed offset from UTC such as UTC itself or North American EST and EDT."
+msgid "You need to derive a concrete subclass, and (at least) supply implementations of the standard :class:`tzinfo` methods needed by the :class:`.datetime` methods you use. The :mod:`!datetime` module provides :class:`timezone`, a simple concrete subclass of :class:`tzinfo` which can represent time zones with fixed offset from UTC such as UTC itself or North American EST and EDT."
 msgstr ""
 
 #: ../../library/datetime.rst:1980
@@ -1701,7 +1701,7 @@ msgid "When ``None`` is passed, it's up to the class designer to decide the best
 msgstr ""
 
 #: ../../library/datetime.rst:2098
-msgid "When a :class:`.datetime` object is passed in response to a :class:`.datetime` method, ``dt.tzinfo`` is the same object as *self*. :class:`tzinfo` methods can rely on this, unless user code calls :class:`tzinfo` methods directly. The intent is that the :class:`tzinfo` methods interpret *dt* as being in local time, and not need worry about objects in other timezones."
+msgid "When a :class:`.datetime` object is passed in response to a :class:`.datetime` method, ``dt.tzinfo`` is the same object as *self*. :class:`tzinfo` methods can rely on this, unless user code calls :class:`tzinfo` methods directly. The intent is that the :class:`tzinfo` methods interpret *dt* as being in local time, and not need worry about objects in other time zones."
 msgstr ""
 
 #: ../../library/datetime.rst:2104
@@ -1749,15 +1749,15 @@ msgid ":mod:`zoneinfo`"
 msgstr ""
 
 #: ../../library/datetime.rst:2217
-msgid "The :mod:`!datetime` module has a basic :class:`timezone` class (for handling arbitrary fixed offsets from UTC) and its :attr:`timezone.utc` attribute (a UTC timezone instance)."
+msgid "The :mod:`!datetime` module has a basic :class:`timezone` class (for handling arbitrary fixed offsets from UTC) and its :attr:`timezone.utc` attribute (a UTC :class:`!timezone` instance)."
 msgstr ""
 
 #: ../../library/datetime.rst:2221
-msgid "``zoneinfo`` brings the *IANA timezone database* (also known as the Olson database) to Python, and its usage is recommended."
+msgid "``zoneinfo`` brings the *IANA time zone database* (also known as the Olson database) to Python, and its usage is recommended."
 msgstr ""
 
 #: ../../library/datetime.rst:2224
-msgid "`IANA timezone database <https://www.iana.org/time-zones>`_"
+msgid "`IANA time zone database <https://www.iana.org/time-zones>`_"
 msgstr ""
 
 #: ../../library/datetime.rst:2225
@@ -1769,11 +1769,11 @@ msgid ":class:`timezone` Objects"
 msgstr ""
 
 #: ../../library/datetime.rst:2237
-msgid "The :class:`timezone` class is a subclass of :class:`tzinfo`, each instance of which represents a timezone defined by a fixed offset from UTC."
+msgid "The :class:`timezone` class is a subclass of :class:`tzinfo`, each instance of which represents a time zone defined by a fixed offset from UTC."
 msgstr ""
 
 #: ../../library/datetime.rst:2241
-msgid "Objects of this class cannot be used to represent timezone information in the locations where different offsets are used in different days of the year or where historical changes have been made to civil time."
+msgid "Objects of this class cannot be used to represent time zone information in the locations where different offsets are used in different days of the year or where historical changes have been made to civil time."
 msgstr ""
 
 #: ../../library/datetime.rst:2248
@@ -1810,7 +1810,7 @@ msgid "Return ``dt + offset``. The *dt* argument must be an aware :class:`.datet
 msgstr ""
 
 #: ../../library/datetime.rst:2302
-msgid "The UTC timezone, ``timezone(timedelta(0))``."
+msgid "The UTC time zone, ``timezone(timedelta(0))``."
 msgstr ""
 
 #: ../../library/datetime.rst:2311
@@ -2358,7 +2358,7 @@ msgid "Using ``datetime.strptime(date_string, format)`` is equivalent to::"
 msgstr ""
 
 #: ../../library/datetime.rst:2511
-msgid "except when the format includes sub-second components or timezone offset information, which are supported in ``datetime.strptime`` but are discarded by ``time.strptime``."
+msgid "except when the format includes sub-second components or time zone offset information, which are supported in ``datetime.strptime`` but are discarded by ``time.strptime``."
 msgstr ""
 
 #: ../../library/datetime.rst:2515
