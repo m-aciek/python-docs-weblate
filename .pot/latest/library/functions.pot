@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-07 10:22+0000\n"
+"POT-Creation-Date: 2024-07-18 10:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1304,7 +1304,7 @@ msgid "See also the file handling modules, such as :mod:`fileinput`, :mod:`io` (
 msgstr ""
 
 #: ../../library/functions.rst:1443
-msgid "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``file``, ``mode``, ``flags``."
+msgid "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``path``, ``mode``, ``flags``."
 msgstr ""
 
 #: ../../library/functions.rst:1445
