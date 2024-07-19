@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 08:39+0000\n"
+"POT-Creation-Date: 2024-07-19 11:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1271,7 +1271,7 @@ msgstr ""
 msgid "Using keyword arguments::"
 msgstr ""
 
-#: ../../library/typing.rst:2211
+#: ../../library/typing.rst:2208
 msgid "The keyword-argument syntax is deprecated in 3.11 and will be removed in 3.13. It may also be unsupported by static type checkers."
 msgstr ""
 
@@ -1973,7 +1973,7 @@ msgstr ""
 msgid "Aliases to other concrete types"
 msgstr ""
 
-#: ../../library/typing.rst:3216
+#: ../../library/typing.rst:3213
 msgid "The ``typing.io`` namespace is deprecated and will be removed. These types should be directly imported from ``typing`` instead."
 msgstr ""
 
@@ -1985,7 +1985,7 @@ msgstr ""
 msgid "These types (and the corresponding functions) are generic over :data:`AnyStr`. ``Pattern`` can be specialised as ``Pattern[str]`` or ``Pattern[bytes]``; ``Match`` can be specialised as ``Match[str]`` or ``Match[bytes]``."
 msgstr ""
 
-#: ../../library/typing.rst:3231
+#: ../../library/typing.rst:3228
 msgid "The ``typing.re`` namespace is deprecated and will be removed. These types should be directly imported from ``typing`` instead."
 msgstr ""
 
@@ -2025,7 +2025,7 @@ msgstr ""
 msgid "This type represents the types :class:`bytes`, :class:`bytearray`, and :class:`memoryview` of byte sequences."
 msgstr ""
 
-#: ../../library/typing.rst:3278
+#: ../../library/typing.rst:3277
 msgid "Prefer :class:`collections.abc.Buffer`, or a union like ``bytes | bytearray | memoryview``."
 msgstr ""
 

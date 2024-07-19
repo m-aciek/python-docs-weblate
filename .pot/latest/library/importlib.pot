@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-07-19 11:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -637,8 +637,8 @@ msgstr ""
 msgid "Loaders that wish to support resource reading are expected to provide a method called ``get_resource_reader(fullname)`` which returns an object implementing this ABC's interface. If the module specified by fullname is not a package, this method should return :const:`None`. An object compatible with this ABC should only be returned when the specified module is a package."
 msgstr ""
 
-#: ../../library/importlib.rst:685
-#: ../../library/importlib.rst:795
+#: ../../library/importlib.rst:683
+#: ../../library/importlib.rst:793
 msgid "Use :class:`importlib.resources.abc.TraversableResources` instead."
 msgstr ""
 
@@ -682,7 +682,7 @@ msgstr ""
 msgid "For a representation of the object on the file-system, use :meth:`importlib.resources.as_file`."
 msgstr ""
 
-#: ../../library/importlib.rst:737
+#: ../../library/importlib.rst:735
 msgid "Use :class:`importlib.resources.abc.Traversable` instead."
 msgstr ""
 
