@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -470,7 +470,7 @@ msgid "Ping also contributed another hook for handling uncaught exceptions. :fun
 msgstr ""
 
 #: ../../whatsnew/2.1.rst:646
-msgid "Various functions in the :mod:`time` module, such as :func:`~time.asctime` and :func:`~time.localtime`, require a floating point argument containing the time in seconds since the epoch.  The most common use of these functions is to work with the current time, so the floating point argument has been made optional; when a value isn't provided, the current time will be used.  For example, log file entries usually need a string containing the current time; in Python 2.1, ``time.asctime()`` can be used, instead of the lengthier ``time.asctime(time.localtime(time.time()))`` that was previously required."
+msgid "Various functions in the :mod:`time` module, such as :func:`~time.asctime` and :func:`~time.localtime`, require a floating-point argument containing the time in seconds since the epoch.  The most common use of these functions is to work with the current time, so the floating-point argument has been made optional; when a value isn't provided, the current time will be used.  For example, log file entries usually need a string containing the current time; in Python 2.1, ``time.asctime()`` can be used, instead of the lengthier ``time.asctime(time.localtime(time.time()))`` that was previously required."
 msgstr ""
 
 #: ../../whatsnew/2.1.rst:655

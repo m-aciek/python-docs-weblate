@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 01:12+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10984,7 +10984,7 @@ msgid ":issue:`46973`: Add ``regen-configure`` make target to regenerate configu
 msgstr ""
 
 #: ../../../build/NEWS:9539
-msgid ":issue:`46917`: Building Python now requires support of IEEE 754 floating point numbers. Patch by Victor Stinner."
+msgid ":issue:`46917`: Building Python now requires support of IEEE 754 floating-point numbers. Patch by Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:9542
@@ -11513,7 +11513,7 @@ msgid ":issue:`46656`: Building Python now requires a C11 compiler. Optional C11
 msgstr ""
 
 #: ../../../build/NEWS:10009
-msgid ":issue:`46656`: Building Python now requires support for floating point Not-a-Number (NaN): remove the ``Py_NO_NAN`` macro. Patch by Victor Stinner."
+msgid ":issue:`46656`: Building Python now requires support for floating-point Not-a-Number (NaN): remove the ``Py_NO_NAN`` macro. Patch by Victor Stinner."
 msgstr ""
 
 #: ../../../build/NEWS:10013
@@ -15451,7 +15451,7 @@ msgid ":issue:`40928`: Notify users running test_decimal regression tests on mac
 msgstr ""
 
 #: ../../../build/NEWS:13469
-msgid ":issue:`44734`: Fixed floating point precision issue in turtle tests."
+msgid ":issue:`44734`: Fixed floating-point precision issue in turtle tests."
 msgstr ""
 
 #: ../../../build/NEWS:13471
@@ -23161,7 +23161,7 @@ msgid ":issue:`38402`: Check the error from the system's underlying ``crypt`` or
 msgstr ""
 
 #: ../../../build/NEWS:20398
-msgid ":issue:`37474`: On FreeBSD, Python no longer calls ``fedisableexcept()`` at startup to control the floating point control mode. The call became useless since FreeBSD 6: it became the default mode."
+msgid ":issue:`37474`: On FreeBSD, Python no longer calls ``fedisableexcept()`` at startup to control the floating-point control mode. The call became useless since FreeBSD 6: it became the default mode."
 msgstr ""
 
 #: ../../../build/NEWS:20402
@@ -27177,7 +27177,7 @@ msgid ":issue:`36018`: Add statistics.NormalDist, a tool for creating and manipu
 msgstr ""
 
 #: ../../../build/NEWS:23937
-msgid ":issue:`35904`: Added statistics.fmean() as a faster, floating point variant of the existing mean() function."
+msgid ":issue:`35904`: Added statistics.fmean() as a faster, floating-point variant of the existing mean() function."
 msgstr ""
 
 #: ../../../build/NEWS:23940
@@ -27415,7 +27415,7 @@ msgid ":issue:`35214`: clang Memory Sanitizer build instrumentation was added to
 msgstr ""
 
 #: ../../../build/NEWS:24158
-msgid ":issue:`35560`: Fix an assertion error in :func:`format` in debug build for floating point formatting with \"n\" format, zero padding and small width. Release build is not impacted. Patch by Karthikeyan Singaravelan."
+msgid ":issue:`35560`: Fix an assertion error in :func:`format` in debug build for floating-point formatting with \"n\" format, zero padding and small width. Release build is not impacted. Patch by Karthikeyan Singaravelan."
 msgstr ""
 
 #: ../../../build/NEWS:24162
@@ -44526,7 +44526,7 @@ msgid ":issue:`18492`: All resources are now allowed when tests are not run by r
 msgstr ""
 
 #: ../../../build/NEWS:42484
-msgid ":issue:`21634`: Fix pystone micro-benchmark: use floor division instead of true division to benchmark integers instead of floating point numbers. Set pystone version to 1.2. Patch written by Lennart Regebro."
+msgid ":issue:`21634`: Fix pystone micro-benchmark: use floor division instead of true division to benchmark integers instead of floating-point numbers. Set pystone version to 1.2. Patch written by Lennart Regebro."
 msgstr ""
 
 #: ../../../build/NEWS:42488

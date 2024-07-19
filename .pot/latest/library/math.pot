@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:17+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,7 +86,7 @@ msgid "Return the mantissa and exponent of *x* as the pair ``(m, e)``.  *m* is a
 msgstr ""
 
 #: ../../library/math.rst:110
-msgid "Return an accurate floating point sum of values in the iterable.  Avoids loss of precision by tracking multiple intermediate partial sums."
+msgid "Return an accurate floating-point sum of values in the iterable.  Avoids loss of precision by tracking multiple intermediate partial sums."
 msgstr ""
 
 #: ../../library/math.rst:113
@@ -94,7 +94,7 @@ msgid "The algorithm's accuracy depends on IEEE-754 arithmetic guarantees and th
 msgstr ""
 
 #: ../../library/math.rst:119
-msgid "For further discussion and two alternative approaches, see the `ASPN cookbook recipes for accurate floating point summation <https://code.activestate.com/recipes/393090-binary-floating-point-summation-accurate-to-full-p/>`_\\."
+msgid "For further discussion and two alternative approaches, see the `ASPN cookbook recipes for accurate floating-point summation <https://code.activestate.com/recipes/393090-binary-floating-point-summation-accurate-to-full-p/>`_\\."
 msgstr ""
 
 #: ../../library/math.rst:126
@@ -230,7 +230,7 @@ msgid "Special cases follow IEEE 754: in particular, ``remainder(x, math.inf)`` 
 msgstr ""
 
 #: ../../library/math.rst:291
-msgid "On platforms using IEEE 754 binary floating-point, the result of this operation is always exactly representable: no rounding error is introduced."
+msgid "On platforms using IEEE 754 binary floating point, the result of this operation is always exactly representable: no rounding error is introduced."
 msgstr ""
 
 #: ../../library/math.rst:299

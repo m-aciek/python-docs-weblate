@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-22 20:37+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -354,7 +354,7 @@ msgid "Wait until the thread terminates. This blocks the calling thread until th
 msgstr ""
 
 #: ../../library/threading.rst:411
-msgid "When the *timeout* argument is present and not ``None``, it should be a floating point number specifying a timeout for the operation in seconds (or fractions thereof). As :meth:`~Thread.join` always returns ``None``, you must call :meth:`~Thread.is_alive` after :meth:`~Thread.join` to decide whether a timeout happened -- if the thread is still alive, the :meth:`~Thread.join` call timed out."
+msgid "When the *timeout* argument is present and not ``None``, it should be a floating-point number specifying a timeout for the operation in seconds (or fractions thereof). As :meth:`~Thread.join` always returns ``None``, you must call :meth:`~Thread.is_alive` after :meth:`~Thread.join` to decide whether a timeout happened -- if the thread is still alive, the :meth:`~Thread.join` call timed out."
 msgstr ""
 
 #: ../../library/threading.rst:418
@@ -647,7 +647,7 @@ msgid "This method releases the underlying lock, and then blocks until it is awa
 msgstr ""
 
 #: ../../library/threading.rst:792
-msgid "When the *timeout* argument is present and not ``None``, it should be a floating point number specifying a timeout for the operation in seconds (or fractions thereof)."
+msgid "When the *timeout* argument is present and not ``None``, it should be a floating-point number specifying a timeout for the operation in seconds (or fractions thereof)."
 msgstr ""
 
 #: ../../library/threading.rst:796
@@ -816,7 +816,7 @@ msgid "Block as long as the internal flag is false and the timeout, if given, ha
 msgstr ""
 
 #: ../../library/threading.rst:1019
-msgid "When the timeout argument is present and not ``None``, it should be a floating point number specifying a timeout for the operation in seconds, or fractions thereof."
+msgid "When the timeout argument is present and not ``None``, it should be a floating-point number specifying a timeout for the operation in seconds, or fractions thereof."
 msgstr ""
 
 #: ../../library/threading.rst:1030

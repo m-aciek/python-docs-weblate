@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 19:36+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1016,7 +1016,7 @@ msgid "statistics"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1195
-msgid "Added :func:`statistics.fmean` as a faster, floating point variant of :func:`statistics.mean()`.  (Contributed by Raymond Hettinger and Steven D'Aprano in :issue:`35904`.)"
+msgid "Added :func:`statistics.fmean` as a faster, floating-point variant of :func:`statistics.mean()`.  (Contributed by Raymond Hettinger and Steven D'Aprano in :issue:`35904`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1199

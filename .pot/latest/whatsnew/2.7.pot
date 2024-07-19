@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-26 08:18+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -742,7 +742,7 @@ msgid "New method: the :class:`~decimal.Decimal` class gained a :meth:`~decimal.
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1196
-msgid "Comparing instances of :class:`~decimal.Decimal` with floating-point numbers now produces sensible results based on the numeric values of the operands.  Previously such comparisons would fall back to Python's default rules for comparing objects, which produced arbitrary results based on their type.  Note that you still cannot combine :class:`!Decimal` and floating-point in other operations such as addition, since you should be explicitly choosing how to convert between float and :class:`!Decimal`.  (Fixed by Mark Dickinson; :issue:`2531`.)"
+msgid "Comparing instances of :class:`~decimal.Decimal` with floating-point numbers now produces sensible results based on the numeric values of the operands.  Previously such comparisons would fall back to Python's default rules for comparing objects, which produced arbitrary results based on their type.  Note that you still cannot combine :class:`!Decimal` and floating point in other operations such as addition, since you should be explicitly choosing how to convert between float and :class:`!Decimal`.  (Fixed by Mark Dickinson; :issue:`2531`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1205

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid "Mathematics"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:140
-msgid "The :mod:`math` module gives access to the underlying C library functions for floating point math::"
+msgid "The :mod:`math` module gives access to the underlying C library functions for floating-point math::"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:149

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2032,7 +2032,7 @@ msgid "Importing modules simultaneously in two different threads no longer deadl
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3052
-msgid "Several functions return information about the platform's floating-point support.  :c:func:`PyFloat_GetMax` returns the maximum representable floating point value, and :c:func:`PyFloat_GetMin` returns the minimum positive value.  :c:func:`PyFloat_GetInfo` returns an object containing more information from the :file:`float.h` file, such as ``\"mant_dig\"`` (number of digits in the mantissa), ``\"epsilon\"`` (smallest difference between 1.0 and the next largest value representable), and several others. (Contributed by Christian Heimes; :issue:`1534`.)"
+msgid "Several functions return information about the platform's floating-point support.  :c:func:`PyFloat_GetMax` returns the maximum representable floating-point value, and :c:func:`PyFloat_GetMin` returns the minimum positive value.  :c:func:`PyFloat_GetInfo` returns an object containing more information from the :file:`float.h` file, such as ``\"mant_dig\"`` (number of digits in the mantissa), ``\"epsilon\"`` (smallest difference between 1.0 and the next largest value representable), and several others. (Contributed by Christian Heimes; :issue:`1534`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3063

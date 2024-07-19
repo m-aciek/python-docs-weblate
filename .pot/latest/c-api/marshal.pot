@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "Numeric values are stored with the least significant byte first."
 msgstr ""
 
 #: ../../c-api/marshal.rst:16
-msgid "The module supports two versions of the data format: version 0 is the historical version, version 1 shares interned strings in the file, and upon unmarshalling.  Version 2 uses a binary format for floating point numbers. ``Py_MARSHAL_VERSION`` indicates the current file format (currently 2)."
+msgid "The module supports two versions of the data format: version 0 is the historical version, version 1 shares interned strings in the file, and upon unmarshalling.  Version 2 uses a binary format for floating-point numbers. ``Py_MARSHAL_VERSION`` indicates the current file format (currently 2)."
 msgstr ""
 
 #: ../../c-api/marshal.rst:24

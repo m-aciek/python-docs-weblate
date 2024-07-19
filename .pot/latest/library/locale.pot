@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -459,7 +459,7 @@ msgid "Transforms a string to one that can be used in locale-aware comparisons. 
 msgstr ""
 
 #: ../../library/locale.rst:436
-msgid "Formats a number *val* according to the current :const:`LC_NUMERIC` setting. The format follows the conventions of the ``%`` operator.  For floating point values, the decimal point is modified if appropriate.  If *grouping* is ``True``, also takes the grouping into account."
+msgid "Formats a number *val* according to the current :const:`LC_NUMERIC` setting. The format follows the conventions of the ``%`` operator.  For floating-point values, the decimal point is modified if appropriate.  If *grouping* is ``True``, also takes the grouping into account."
 msgstr ""
 
 #: ../../library/locale.rst:441
@@ -487,7 +487,7 @@ msgid "This function will not work with the 'C' locale, so you have to set a loc
 msgstr ""
 
 #: ../../library/locale.rst:468
-msgid "Formats a floating point number using the same format as the built-in function ``str(float)``, but takes the decimal point into account."
+msgid "Formats a floating-point number using the same format as the built-in function ``str(float)``, but takes the decimal point into account."
 msgstr ""
 
 #: ../../library/locale.rst:474

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,7 @@ msgid "The *weights* or *cum_weights* can use any numeric type that interoperate
 msgstr ""
 
 #: ../../library/random.rst:195
-msgid "For a given seed, the :func:`choices` function with equal weighting typically produces a different sequence than repeated calls to :func:`choice`.  The algorithm used by :func:`choices` uses floating point arithmetic for internal consistency and speed.  The algorithm used by :func:`choice` defaults to integer arithmetic with repeated selections to avoid small biases from round-off error."
+msgid "For a given seed, the :func:`choices` function with equal weighting typically produces a different sequence than repeated calls to :func:`choice`.  The algorithm used by :func:`choices` uses floating-point arithmetic for internal consistency and speed.  The algorithm used by :func:`choice` defaults to integer arithmetic with repeated selections to avoid small biases from round-off error."
 msgstr ""
 
 #: ../../library/random.rst:204
@@ -265,11 +265,11 @@ msgid "The following functions generate specific real-valued distributions. Func
 msgstr ""
 
 #: ../../library/random.rst:295
-msgid "Return the next random floating point number in the range ``0.0 <= X < 1.0``"
+msgid "Return the next random floating-point number in the range ``0.0 <= X < 1.0``"
 msgstr ""
 
 #: ../../library/random.rst:300
-msgid "Return a random floating point number *N* such that ``a <= N <= b`` for ``a <= b`` and ``b <= N <= a`` for ``b < a``."
+msgid "Return a random floating-point number *N* such that ``a <= N <= b`` for ``a <= b`` and ``b <= N <= a`` for ``b < a``."
 msgstr ""
 
 #: ../../library/random.rst:303
@@ -277,7 +277,7 @@ msgid "The end-point value ``b`` may or may not be included in the range dependi
 msgstr ""
 
 #: ../../library/random.rst:310
-msgid "Return a random floating point number *N* such that ``low <= N <= high`` and with the specified *mode* between those bounds.  The *low* and *high* bounds default to zero and one.  The *mode* argument defaults to the midpoint between the bounds, giving a symmetric distribution."
+msgid "Return a random floating-point number *N* such that ``low <= N <= high`` and with the specified *mode* between those bounds.  The *low* and *high* bounds default to zero and one.  The *mode* argument defaults to the midpoint between the bounds, giving a symmetric distribution."
 msgstr ""
 
 #: ../../library/random.rst:318

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 13:17+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -627,7 +627,7 @@ msgid "``your_time_func`` should return a single number, or a list of numbers wh
 msgstr ""
 
 #: ../../library/profile.rst:674
-msgid "Be warned that you should calibrate the profiler class for the timer function that you choose (see :ref:`profile-calibration`).  For most machines, a timer that returns a lone integer value will provide the best results in terms of low overhead during profiling.  (:func:`os.times` is *pretty* bad, as it returns a tuple of floating point values).  If you want to substitute a better timer in the cleanest fashion, derive a class and hardwire a replacement dispatch method that best handles your timer call, along with the appropriate calibration constant."
+msgid "Be warned that you should calibrate the profiler class for the timer function that you choose (see :ref:`profile-calibration`).  For most machines, a timer that returns a lone integer value will provide the best results in terms of low overhead during profiling.  (:func:`os.times` is *pretty* bad, as it returns a tuple of floating-point values).  If you want to substitute a better timer in the cleanest fashion, derive a class and hardwire a replacement dispatch method that best handles your timer call, along with the appropriate calibration constant."
 msgstr ""
 
 #: ../../library/profile.rst:683

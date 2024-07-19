@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-15 21:38+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "A `C11 <https://en.cppreference.com/w/c/11>`_ compiler. `Optional C11 fea
 msgstr ""
 
 #: ../../using/configure.rst:17
-msgid "Support for `IEEE 754 <https://en.wikipedia.org/wiki/IEEE_754>`_ floating point numbers and `floating point Not-a-Number (NaN) <https://en.wikipedia.org/wiki/NaN#Floating_point>`_."
+msgid "Support for `IEEE 754 <https://en.wikipedia.org/wiki/IEEE_754>`_ floating-point numbers and `floating-point Not-a-Number (NaN) <https://en.wikipedia.org/wiki/NaN#Floating_point>`_."
 msgstr ""
 
 #: ../../using/configure.rst:21

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,7 +246,7 @@ msgid "For backward compatibility, the return value is also accessible as a tupl
 msgstr ""
 
 #: ../../library/resource.rst:307
-msgid "The fields :attr:`ru_utime` and :attr:`ru_stime` of the return value are floating point values representing the amount of time spent executing in user mode and the amount of time spent executing in system mode, respectively. The remaining values are integers. Consult the :manpage:`getrusage(2)` man page for detailed information about these values. A brief summary is presented here:"
+msgid "The fields :attr:`ru_utime` and :attr:`ru_stime` of the return value are floating-point values representing the amount of time spent executing in user mode and the amount of time spent executing in system mode, respectively. The remaining values are integers. Consult the :manpage:`getrusage(2)` man page for detailed information about these values. A brief summary is presented here:"
 msgstr ""
 
 #: ../../library/resource.rst:314

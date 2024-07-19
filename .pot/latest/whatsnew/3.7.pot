@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 13:17+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -343,7 +343,7 @@ msgid "PEP 564: New Time Functions With Nanosecond Resolution"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:341
-msgid "The resolution of clocks in modern systems can exceed the limited precision of a floating point number returned by the :func:`time.time` function and its variants.  To avoid loss of precision, :pep:`564` adds six new \"nanosecond\" variants of the existing timer functions to the :mod:`time` module:"
+msgid "The resolution of clocks in modern systems can exceed the limited precision of a floating-point number returned by the :func:`time.time` function and its variants.  To avoid loss of precision, :pep:`564` adds six new \"nanosecond\" variants of the existing timer functions to the :mod:`time` module:"
 msgstr ""
 
 #: ../../whatsnew/3.7.rst:347

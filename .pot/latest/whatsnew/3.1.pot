@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,15 +149,15 @@ msgid "(Contributed by Mark Dickinson; :issue:`4707`.)"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:208
-msgid "Python now uses David Gay's algorithm for finding the shortest floating point representation that doesn't change its value.  This should help mitigate some of the confusion surrounding binary floating point numbers."
+msgid "Python now uses David Gay's algorithm for finding the shortest floating-point representation that doesn't change its value.  This should help mitigate some of the confusion surrounding binary floating-point numbers."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:213
-msgid "The significance is easily seen with a number like ``1.1`` which does not have an exact equivalent in binary floating point.  Since there is no exact equivalent, an expression like ``float('1.1')`` evaluates to the nearest representable value which is ``0x1.199999999999ap+0`` in hex or ``1.100000000000000088817841970012523233890533447265625`` in decimal. That nearest value was and still is used in subsequent floating point calculations."
+msgid "The significance is easily seen with a number like ``1.1`` which does not have an exact equivalent in binary floating point.  Since there is no exact equivalent, an expression like ``float('1.1')`` evaluates to the nearest representable value which is ``0x1.199999999999ap+0`` in hex or ``1.100000000000000088817841970012523233890533447265625`` in decimal. That nearest value was and still is used in subsequent floating-point calculations."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:221
-msgid "What is new is how the number gets displayed.  Formerly, Python used a simple approach.  The value of ``repr(1.1)`` was computed as ``format(1.1, '.17g')`` which evaluated to ``'1.1000000000000001'``. The advantage of using 17 digits was that it relied on IEEE-754 guarantees to assure that ``eval(repr(1.1))`` would round-trip exactly to its original value.  The disadvantage is that many people found the output to be confusing (mistaking intrinsic limitations of binary floating point representation as being a problem with Python itself)."
+msgid "What is new is how the number gets displayed.  Formerly, Python used a simple approach.  The value of ``repr(1.1)`` was computed as ``format(1.1, '.17g')`` which evaluated to ``'1.1000000000000001'``. The advantage of using 17 digits was that it relied on IEEE-754 guarantees to assure that ``eval(repr(1.1))`` would round-trip exactly to its original value.  The disadvantage is that many people found the output to be confusing (mistaking intrinsic limitations of binary floating-point representation as being a problem with Python itself)."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:230
@@ -169,7 +169,7 @@ msgid "The new algorithm tends to emit cleaner representations when possible, bu
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:239
-msgid "The new algorithm depends on certain features in the underlying floating point implementation.  If the required features are not found, the old algorithm will continue to be used.  Also, the text pickle protocols assure cross-platform portability by using the old algorithm."
+msgid "The new algorithm depends on certain features in the underlying floating-point implementation.  If the required features are not found, the old algorithm will continue to be used.  Also, the text pickle protocols assure cross-platform portability by using the old algorithm."
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:244
@@ -465,7 +465,7 @@ msgid "This section lists previously described changes and other bugfixes that m
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:553
-msgid "The new floating point string representations can break existing doctests. For example::"
+msgid "The new floating-point string representations can break existing doctests. For example::"
 msgstr ""
 
 #: ../../whatsnew/3.1.rst:576

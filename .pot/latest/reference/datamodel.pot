@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 20:19+0000\n"
+"POT-Creation-Date: 2024-07-19 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,7 @@ msgid "A sign is shown only when the number is negative."
 msgstr ""
 
 #: ../../reference/datamodel.rst:218
-msgid "Python distinguishes between integers, floating point numbers, and complex numbers:"
+msgid "Python distinguishes between integers, floating-point numbers, and complex numbers:"
 msgstr ""
 
 #: ../../reference/datamodel.rst:223
@@ -188,7 +188,7 @@ msgid ":class:`numbers.Real` (:class:`float`)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:267
-msgid "These represent machine-level double precision floating point numbers. You are at the mercy of the underlying machine architecture (and C or Java implementation) for the accepted range and handling of overflow. Python does not support single-precision floating point numbers; the savings in processor and memory usage that are usually the reason for using these are dwarfed by the overhead of using objects in Python, so there is no reason to complicate the language with two kinds of floating point numbers."
+msgid "These represent machine-level double precision floating-point numbers. You are at the mercy of the underlying machine architecture (and C or Java implementation) for the accepted range and handling of overflow. Python does not support single-precision floating-point numbers; the savings in processor and memory usage that are usually the reason for using these are dwarfed by the overhead of using objects in Python, so there is no reason to complicate the language with two kinds of floating-point numbers."
 msgstr ""
 
 #: ../../reference/datamodel.rst:277
@@ -196,7 +196,7 @@ msgid ":class:`numbers.Complex` (:class:`complex`)"
 msgstr ""
 
 #: ../../reference/datamodel.rst:283
-msgid "These represent complex numbers as a pair of machine-level double precision floating point numbers.  The same caveats apply as for floating point numbers. The real and imaginary parts of a complex number ``z`` can be retrieved through the read-only attributes ``z.real`` and ``z.imag``."
+msgid "These represent complex numbers as a pair of machine-level double precision floating-point numbers.  The same caveats apply as for floating-point numbers. The real and imaginary parts of a complex number ``z`` can be retrieved through the read-only attributes ``z.real`` and ``z.imag``."
 msgstr ""
 
 #: ../../reference/datamodel.rst:290
@@ -2532,7 +2532,7 @@ msgid "True"
 msgstr ""
 
 #: ../../reference/datamodel.rst:261
-msgid "floating point"
+msgid "floating-point"
 msgstr ""
 
 #: ../../reference/datamodel.rst:261
