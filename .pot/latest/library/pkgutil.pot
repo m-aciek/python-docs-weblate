@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 11:16+0000\n"
+"POT-Creation-Date: 2024-07-19 14:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "For each directory on :data:`sys.path` that has a subdirectory that match
 msgstr ""
 
 #: ../../library/pkgutil.rst:33
-msgid "It also looks for :file:`\\*.pkg` files beginning where ``*`` matches the *name* argument.  This feature is similar to :file:`\\*.pth` files (see the :mod:`site` module for more information), except that it doesn't special-case lines starting with ``import``.  A :file:`\\*.pkg` file is trusted at face value: apart from checking for duplicates, all entries found in a :file:`\\*.pkg` file are added to the path, regardless of whether they exist on the filesystem.  (This is a feature.)"
+msgid "It also looks for :file:`\\*.pkg` files beginning where ``*`` matches the *name* argument.  This feature is similar to :file:`\\*.pth` files (see the :mod:`site` module for more information), except that it doesn't special-case lines starting with ``import``.  A :file:`\\*.pkg` file is trusted at face value: apart from skipping blank lines and ignoring comments, all entries found in a :file:`\\*.pkg` file are added to the path, regardless of whether they exist on the filesystem (this is a feature)."
 msgstr ""
 
 #: ../../library/pkgutil.rst:41
