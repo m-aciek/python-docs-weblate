@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 09:19+0000\n"
+"POT-Creation-Date: 2024-07-22 02:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid "The :class:`Fraction` constructor now accepts :class:`float` and :class:`
 msgstr ""
 
 #: ../../library/fractions.rst:88
-msgid "The :func:`math.gcd` function is now used to normalize the *numerator* and *denominator*. :func:`math.gcd` always return a :class:`int` type. Previously, the GCD type depended on *numerator* and *denominator*."
+msgid "The :func:`math.gcd` function is now used to normalize the *numerator* and *denominator*. :func:`math.gcd` always returns an :class:`int` type. Previously, the GCD type depended on *numerator* and *denominator*."
 msgstr ""
 
 #: ../../library/fractions.rst:93

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-07-22 02:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,7 @@ msgid "If the Future has been *cancelled*, this method raises a :exc:`CancelledE
 msgstr ""
 
 #: ../../library/asyncio-future.rst:122
-msgid "If the Future's result isn't yet available, this method raises a :exc:`InvalidStateError` exception."
+msgid "If the Future's result isn't yet available, this method raises an :exc:`InvalidStateError` exception."
 msgstr ""
 
 #: ../../library/asyncio-future.rst:127
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../library/asyncio-future.rst:129
 #: ../../library/asyncio-future.rst:136
-msgid "Raises a :exc:`InvalidStateError` error if the Future is already *done*."
+msgid "Raises an :exc:`InvalidStateError` error if the Future is already *done*."
 msgstr ""
 
 #: ../../library/asyncio-future.rst:134

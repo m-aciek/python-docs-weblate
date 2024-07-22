@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-09 18:39+0000\n"
+"POT-Creation-Date: 2024-07-22 02:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1266,7 +1266,7 @@ msgid "Return the number of bytes actually written."
 msgstr ""
 
 #: ../../library/os.rst:1500
-msgid "Write the *buffers* contents to file descriptor *fd* at a offset *offset*, leaving the file offset unchanged.  *buffers* must be a sequence of :term:`bytes-like objects <bytes-like object>`. Buffers are processed in array order. Entire contents of the first buffer is written before proceeding to the second, and so on."
+msgid "Write the *buffers* contents to file descriptor *fd* at an offset *offset*, leaving the file offset unchanged.  *buffers* must be a sequence of :term:`bytes-like objects <bytes-like object>`. Buffers are processed in array order. Entire contents of the first buffer is written before proceeding to the second, and so on."
 msgstr ""
 
 #: ../../library/os.rst:1509
@@ -2832,7 +2832,7 @@ msgid "Create and return an event file descriptor. The file descriptors supports
 msgstr ""
 
 #: ../../library/os.rst:3703
-msgid "*initval* is the initial value of the event counter. The initial value must be an 32 bit unsigned integer. Please note that the initial value is limited to a 32 bit unsigned int although the event counter is an unsigned 64 bit integer with a maximum value of 2\\ :sup:`64`\\ -\\ 2."
+msgid "*initval* is the initial value of the event counter. The initial value must be a 32 bit unsigned integer. Please note that the initial value is limited to a 32 bit unsigned int although the event counter is an unsigned 64 bit integer with a maximum value of 2\\ :sup:`64`\\ -\\ 2."
 msgstr ""
 
 #: ../../library/os.rst:3708
@@ -2883,7 +2883,7 @@ msgid "Set :const:`O_NONBLOCK` status flag for new :func:`eventfd` file descript
 msgstr ""
 
 #: ../../library/os.rst:3783
-msgid "Provide semaphore-like semantics for reads from a :func:`eventfd` file descriptor. On read the internal counter is decremented by one."
+msgid "Provide semaphore-like semantics for reads from an :func:`eventfd` file descriptor. On read the internal counter is decremented by one."
 msgstr ""
 
 #: ../../library/os.rst:3786

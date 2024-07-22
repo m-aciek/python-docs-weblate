@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 17:16+0000\n"
+"POT-Creation-Date: 2024-07-22 02:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -364,7 +364,7 @@ msgid "``type_comment`` is an optional string with the type annotation as a comm
 msgstr ""
 
 #: ../../library/ast.rst:881
-msgid "An assignment with a type annotation. ``target`` is a single node and can be a :class:`Name`, a :class:`Attribute` or a :class:`Subscript`. ``annotation`` is the annotation, such as a :class:`Constant` or :class:`Name` node. ``value`` is a single optional node."
+msgid "An assignment with a type annotation. ``target`` is a single node and can be a :class:`Name`, an :class:`Attribute` or a :class:`Subscript`. ``annotation`` is the annotation, such as a :class:`Constant` or :class:`Name` node. ``value`` is a single optional node."
 msgstr ""
 
 #: ../../library/ast.rst:886
@@ -631,7 +631,7 @@ msgid "A ``return`` statement."
 msgstr ""
 
 #: ../../library/ast.rst:2004
-msgid "A ``yield`` or ``yield from`` expression. Because these are expressions, they must be wrapped in a :class:`Expr` node if the value sent back is not used."
+msgid "A ``yield`` or ``yield from`` expression. Because these are expressions, they must be wrapped in an :class:`Expr` node if the value sent back is not used."
 msgstr ""
 
 #: ../../library/ast.rst:2029

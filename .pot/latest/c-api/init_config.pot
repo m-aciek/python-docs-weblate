@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-07-22 02:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -512,7 +512,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:499
 #: ../../c-api/init_config.rst:1000
-msgid "The :c:func:`PyConfig_Read` function only parses :c:member:`PyConfig.argv` arguments once: :c:member:`PyConfig.parse_argv` is set to ``2`` after arguments are parsed. Since Python arguments are strippped from :c:member:`PyConfig.argv`, parsing arguments twice would parse the application options as Python options."
+msgid "The :c:func:`PyConfig_Read` function only parses :c:member:`PyConfig.argv` arguments once: :c:member:`PyConfig.parse_argv` is set to ``2`` after arguments are parsed. Since Python arguments are stripped from :c:member:`PyConfig.argv`, parsing arguments twice would parse the application options as Python options."
 msgstr ""
 
 #: ../../c-api/init_config.rst:507

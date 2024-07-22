@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:17+0000\n"
+"POT-Creation-Date: 2024-07-22 02:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -802,7 +802,7 @@ msgid "Open the file locally, if there is no host name, or the host name is ``'l
 msgstr ""
 
 #: ../../library/urllib.request.rst:1104
-msgid "This method is applicable only for local hostnames.  When a remote hostname is given, an :exc:`~urllib.error.URLError` is raised."
+msgid "This method is applicable only for local hostnames.  When a remote hostname is given, a :exc:`~urllib.error.URLError` is raised."
 msgstr ""
 
 #: ../../library/urllib.request.rst:1112
@@ -810,7 +810,7 @@ msgid "DataHandler Objects"
 msgstr ""
 
 #: ../../library/urllib.request.rst:1116
-msgid "Read a data URL. This kind of URL contains the content encoded in the URL itself. The data URL syntax is specified in :rfc:`2397`. This implementation ignores white spaces in base64 encoded data URLs so the URL may be wrapped in whatever source file it comes from. But even though some browsers don't mind about a missing padding at the end of a base64 encoded data URL, this implementation will raise an :exc:`ValueError` in that case."
+msgid "Read a data URL. This kind of URL contains the content encoded in the URL itself. The data URL syntax is specified in :rfc:`2397`. This implementation ignores white spaces in base64 encoded data URLs so the URL may be wrapped in whatever source file it comes from. But even though some browsers don't mind about a missing padding at the end of a base64 encoded data URL, this implementation will raise a :exc:`ValueError` in that case."
 msgstr ""
 
 #: ../../library/urllib.request.rst:1127
