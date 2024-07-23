@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-23 13:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -533,7 +533,7 @@ msgid "Return a string that identifies the current platform."
 msgstr ""
 
 #: ../../library/sysconfig.rst:377
-msgid "This is used mainly to distinguish platform-specific build directories and platform-specific built distributions.  Typically includes the OS name and version and the architecture (as supplied by 'os.uname()'), although the exact information included depends on the OS; e.g., on Linux, the kernel version isn't particularly important."
+msgid "This is used mainly to distinguish platform-specific build directories and platform-specific built distributions.  Typically includes the OS name and version and the architecture (as supplied by :func:`os.uname`), although the exact information included depends on the OS; e.g., on Linux, the kernel version isn't particularly important."
 msgstr ""
 
 #: ../../library/sysconfig.rst:383
