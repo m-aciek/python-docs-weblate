@@ -1,9 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
 # Tiago Henrique <tiagohrm@gmail.com>, 2021
 # Raphael Mendonça, 2021
 # Welington Carlos <wcarlos3@gmail.com>, 2021
@@ -19,23 +16,26 @@
 # Julia Rizza <contato@juliarizza.com>, 2023
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # Adorilson Bezerra <adorilson@gmail.com>, 2023
+# alefsanderribeiro <alefsander.pvh14@gmail.com>, 2024.
 #
-#, fuzzy
+# Translators:
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:19+0000\n"
-"Last-Translator: Adorilson Bezerra <adorilson@gmail.com>, 2023\n"
-"Language-Team: Portuguese (Brazil) (https://app.transifex.com/python-doc/"
-"teams/5390/pt_BR/)\n"
+"PO-Revision-Date: 2024-07-24 16:09+0000\n"
+"Last-Translator: alefsanderribeiro <alefsander.pvh14@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"python-docs/latest/latestreferencedatamodel/pt_BR/>\n"
+"Language: pt-br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: ../../reference/datamodel.rst:6
 msgid "Data model"
@@ -5117,7 +5117,7 @@ msgstr "reticências literais"
 
 #: ../../reference/datamodel.rst:182 ../../reference/datamodel.rst:906
 msgid "numeric"
-msgstr ""
+msgstr "numérico"
 
 #: ../../reference/datamodel.rst:212 ../../reference/datamodel.rst:238
 #: ../../reference/datamodel.rst:310
