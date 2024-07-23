@@ -1,9 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
 # Marco Rougeth <marco@rougeth.com>, 2021
 # Ricardo Cappellano <rcappellano@gmail.com>, 2021
 # Claudio Rogerio Carvalho Filho <excriptbrasil@gmail.com>, 2021
@@ -12,23 +9,26 @@
 # i17obot <i17obot@rougeth.com>, 2021
 # Adorilson Bezerra <adorilson@gmail.com>, 2022
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# alefsanderribeiro <alefsander.pvh14@gmail.com>, 2024.
 #
-#, fuzzy
+# Translators:
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-26 14:12+0000\n"
-"PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
-"Language-Team: Portuguese (Brazil) (https://app.transifex.com/python-doc/"
-"teams/5390/pt_BR/)\n"
+"PO-Revision-Date: 2024-07-24 16:09+0000\n"
+"Last-Translator: alefsanderribeiro <alefsander.pvh14@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"python-docs/latest/latestlibraryjson/pt_BR/>\n"
+"Language: pt-br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: ../../library/json.rst:2
 msgid ":mod:`json` --- JSON encoder and decoder"
@@ -474,7 +474,7 @@ msgstr "Python"
 
 #: ../../library/json.rst:322 ../../library/json.rst:411
 msgid "object"
-msgstr "object"
+msgstr "objeto"
 
 #: ../../library/json.rst:322 ../../library/json.rst:411
 msgid "dict"
