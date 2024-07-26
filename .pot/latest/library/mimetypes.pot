@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-26 22:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,10 +94,12 @@ msgid "Load the type map given in the file *filename*, if it exists.  The type m
 msgstr ""
 
 #: ../../library/mimetypes.rst:114
+#: ../../library/mimetypes.rst:279
 msgid "Add a mapping from the MIME type *type* to the extension *ext*. When the extension is already known, the new type will replace the old one. When the type is already known the extension will be added to the list of known extensions."
 msgstr ""
 
 #: ../../library/mimetypes.rst:118
+#: ../../library/mimetypes.rst:283
 msgid "When *strict* is ``True`` (the default), the mapping will be added to the official MIME types, otherwise to the non-standard ones."
 msgstr ""
 
