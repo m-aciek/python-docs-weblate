@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgid "The type of user-defined functions and functions created by :keyword:`lam
 msgstr ""
 
 #: ../../library/types.rst:159
-msgid "Raises an :ref:`auditing event <auditing>` ``function.__new__`` with argument ``code``."
+msgid "Raises an auditing event function.__new__ with argument code."
 msgstr ""
 
 #: ../../library/types.rst:161
@@ -165,7 +165,7 @@ msgid "The type of :ref:`code objects <code-objects>` such as returned by :func:
 msgstr ""
 
 #: ../../library/types.rst:193
-msgid "Raises an :ref:`auditing event <auditing>` ``code.__new__`` with arguments ``code``, ``filename``, ``name``, ``argcount``, ``posonlyargcount``, ``kwonlyargcount``, ``nlocals``, ``stacksize``, ``flags``."
+msgid "Raises an auditing event code.__new__ with arguments code, filename, name, argcount, posonlyargcount, kwonlyargcount, nlocals, stacksize, flags."
 msgstr ""
 
 #: ../../library/types.rst:195

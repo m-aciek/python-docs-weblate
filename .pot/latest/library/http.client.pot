@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,8 +291,8 @@ msgstr ""
 msgid "Connect to the server specified when the object was created.  By default, this is called automatically when making a request if the client does not already have a connection."
 msgstr ""
 
-#: ../../library/http.client.rst:415
-msgid "Raises an :ref:`auditing event <auditing>` ``http.client.connect`` with arguments ``self``, ``host``, ``port``."
+#: ../../library/http.client.rst:404
+msgid "Raises an auditing event http.client.connect with arguments self, host, port."
 msgstr ""
 
 #: ../../library/http.client.rst:409
@@ -335,8 +335,8 @@ msgstr ""
 msgid "Send data to the server.  This should be used directly only after the :meth:`endheaders` method has been called and before :meth:`getresponse` is called."
 msgstr ""
 
-#: ../../library/http.client.rst:485
-msgid "Raises an :ref:`auditing event <auditing>` ``http.client.send`` with arguments ``self``, ``data``."
+#: ../../library/http.client.rst:474
+msgid "Raises an auditing event http.client.send with arguments self, data."
 msgstr ""
 
 #: ../../library/http.client.rst:480

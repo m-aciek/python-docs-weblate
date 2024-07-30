@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 02:26+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -557,8 +557,8 @@ msgstr ""
 msgid "Popen objects are supported as context managers via the :keyword:`with` statement: on exit, standard file descriptors are closed, and the process is waited for. ::"
 msgstr ""
 
-#: ../../library/subprocess.rst:712
-msgid "Raises an :ref:`auditing event <auditing>` ``subprocess.Popen`` with arguments ``executable``, ``args``, ``cwd``, ``env``."
+#: ../../library/subprocess.rst:701
+msgid "Popen and the other functions in this module that use it raise an auditing event subprocess.Popen with arguments executable, args, cwd, and env. The value for args may be a single string or a list of strings, depending on platform."
 msgstr ""
 
 #: ../../library/subprocess.rst:703

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:17+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "New *generation* parameter."
 msgstr ""
 
 #: ../../library/gc.rst:78
-msgid "Raises an :ref:`auditing event <auditing>` ``gc.get_objects`` with argument ``generation``."
+msgid "Raises an auditing event gc.get_objects with argument generation."
 msgstr ""
 
 #: ../../library/gc.rst:82
@@ -117,7 +117,7 @@ msgid "Care must be taken when using objects returned by :func:`get_referrers` b
 msgstr ""
 
 #: ../../library/gc.rst:149
-msgid "Raises an :ref:`auditing event <auditing>` ``gc.get_referrers`` with argument ``objs``."
+msgid "Raises an auditing event gc.get_referrers with argument objs."
 msgstr ""
 
 #: ../../library/gc.rst:154
@@ -125,7 +125,7 @@ msgid "Return a list of objects directly referred to by any of the arguments. Th
 msgstr ""
 
 #: ../../library/gc.rst:162
-msgid "Raises an :ref:`auditing event <auditing>` ``gc.get_referents`` with argument ``objs``."
+msgid "Raises an auditing event gc.get_referents with argument objs."
 msgstr ""
 
 #: ../../library/gc.rst:166

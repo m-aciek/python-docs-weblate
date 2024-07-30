@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-18 12:34+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,8 +48,8 @@ msgstr ""
 msgid "The :class:`SMTP` class supports the :keyword:`with` statement.  When used like this, the SMTP ``QUIT`` command is issued automatically when the :keyword:`!with` statement exits.  E.g.::"
 msgstr ""
 
-#: ../../library/smtplib.rst:70
-msgid "Raises an :ref:`auditing event <auditing>` ``smtplib.send`` with arguments ``self``, ``data``."
+#: ../../library/smtplib.rst:59
+msgid "All commands will raise an auditing event smtplib.SMTP.send with arguments self and data, where data is the bytes about to be sent to the remote host."
 msgstr ""
 
 #: ../../library/smtplib.rst:61
@@ -210,8 +210,8 @@ msgstr ""
 msgid "Connect to a host on a given port.  The defaults are to connect to the local host at the standard SMTP port (25). If the hostname ends with a colon (``':'``) followed by a number, that suffix will be stripped off and the number interpreted as the port number to use. This method is automatically invoked by the constructor if a host is specified during instantiation.  Returns a 2-tuple of the response code and message sent by the server in its connection response."
 msgstr ""
 
-#: ../../library/smtplib.rst:264
-msgid "Raises an :ref:`auditing event <auditing>` ``smtplib.connect`` with arguments ``self``, ``host``, ``port``."
+#: ../../library/smtplib.rst:253
+msgid "Raises an auditing event smtplib.connect with arguments self, host, port."
 msgstr ""
 
 #: ../../library/smtplib.rst:258

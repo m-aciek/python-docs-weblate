@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 11:16+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,8 +137,8 @@ msgstr ""
 msgid "Do not try to reopen an already connected instance."
 msgstr ""
 
-#: ../../library/telnetlib.rst:161
-msgid "Raises an :ref:`auditing event <auditing>` ``telnetlib.Telnet.open`` with arguments ``self``, ``host``, ``port``."
+#: ../../library/telnetlib.rst:150
+msgid "Raises an auditing event telnetlib.Telnet.open with arguments self, host, port."
 msgstr ""
 
 #: ../../library/telnetlib.rst:155
@@ -165,8 +165,8 @@ msgstr ""
 msgid "Write a byte string to the socket, doubling any IAC characters. This can block if the connection is blocked.  May raise :exc:`OSError` if the connection is closed."
 msgstr ""
 
-#: ../../library/telnetlib.rst:198
-msgid "Raises an :ref:`auditing event <auditing>` ``telnetlib.Telnet.write`` with arguments ``self``, ``buffer``."
+#: ../../library/telnetlib.rst:187
+msgid "Raises an auditing event telnetlib.Telnet.write with arguments self, buffer."
 msgstr ""
 
 #: ../../library/telnetlib.rst:189

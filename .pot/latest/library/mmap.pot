@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,9 +64,9 @@ msgstr ""
 msgid "*offset* may be specified as a non-negative integer offset. mmap references will be relative to the offset from the beginning of the file. *offset* defaults to 0.  *offset* must be a multiple of the :const:`ALLOCATIONGRANULARITY`."
 msgstr ""
 
-#: ../../library/mmap.rst:83
-#: ../../library/mmap.rst:174
-msgid "Raises an :ref:`auditing event <auditing>` ``mmap.__new__`` with arguments ``fileno``, ``length``, ``access``, ``offset``."
+#: ../../library/mmap.rst:72
+#: ../../library/mmap.rst:163
+msgid "Raises an auditing event mmap.__new__ with arguments fileno, length, access, offset."
 msgstr ""
 
 #: ../../library/mmap.rst:77

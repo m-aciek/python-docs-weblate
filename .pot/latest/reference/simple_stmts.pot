@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-04 14:15+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -505,7 +505,7 @@ msgid ":func:`importlib.import_module` is provided to support applications that 
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:866
-msgid "Raises an :ref:`auditing event <auditing>` ``import`` with arguments ``module``, ``filename``, ``sys.path``, ``sys.meta_path``, ``sys.path_hooks``."
+msgid "Raises an auditing event import with arguments module, filename, sys.path, sys.meta_path, sys.path_hooks."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:871

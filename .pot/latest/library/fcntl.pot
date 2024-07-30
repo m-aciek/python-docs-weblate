@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "If the :c:func:`fcntl` call fails, an :exc:`OSError` is raised."
 msgstr ""
 
 #: ../../library/fcntl.rst:85
-msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments ``fd``, ``cmd``, ``arg``."
+msgid "Raises an auditing event fcntl.fcntl with arguments fd, cmd, arg."
 msgstr ""
 
 #: ../../library/fcntl.rst:90
@@ -109,7 +109,7 @@ msgid "An example::"
 msgstr ""
 
 #: ../../library/fcntl.rst:136
-msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments ``fd``, ``request``, ``arg``."
+msgid "Raises an auditing event fcntl.ioctl with arguments fd, request, arg."
 msgstr ""
 
 #: ../../library/fcntl.rst:141
@@ -121,7 +121,7 @@ msgid "If the :c:func:`flock` call fails, an :exc:`OSError` exception is raised.
 msgstr ""
 
 #: ../../library/fcntl.rst:148
-msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments ``fd``, ``operation``."
+msgid "Raises an auditing event fcntl.flock with arguments fd, operation."
 msgstr ""
 
 #: ../../library/fcntl.rst:153
@@ -169,7 +169,7 @@ msgid "The default for *start* is 0, which means to start at the beginning of th
 msgstr ""
 
 #: ../../library/fcntl.rst:194
-msgid "Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments ``fd``, ``cmd``, ``len``, ``start``, ``whence``."
+msgid "Raises an auditing event fcntl.lockf with arguments fd, cmd, len, start, whence."
 msgstr ""
 
 #: ../../library/fcntl.rst:196

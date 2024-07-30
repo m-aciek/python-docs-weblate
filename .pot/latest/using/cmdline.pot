@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 12:35+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "If this option is given, the first element of :data:`sys.argv` will be ``
 msgstr ""
 
 #: ../../using/cmdline.rst:73
-msgid "Raises an :ref:`auditing event <auditing>` ``cpython.run_command`` with argument ``command``."
+msgid "Raises an auditing event cpython.run_command with argument command."
 msgstr ""
 
 #: ../../using/cmdline.rst:77
@@ -117,7 +117,7 @@ msgid "Many standard library modules contain code that is invoked on their execu
 msgstr ""
 
 #: ../../using/cmdline.rst:115
-msgid "Raises an :ref:`auditing event <auditing>` ``cpython.run_module`` with argument ``module-name``."
+msgid "Raises an auditing event cpython.run_module with argument module-name."
 msgstr ""
 
 #: ../../using/cmdline.rst:118
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../using/cmdline.rst:140
 #: ../../using/cmdline.rst:723
-msgid "Raises an :ref:`auditing event <auditing>` ``cpython.run_stdin`` with no arguments."
+msgid "Raises an auditing event cpython.run_stdin with no arguments."
 msgstr ""
 
 #: ../../using/cmdline.rst:146
@@ -175,7 +175,7 @@ msgid ":option:`-I` option can  be used to run the script in isolated mode where
 msgstr ""
 
 #: ../../using/cmdline.rst:167
-msgid "Raises an :ref:`auditing event <auditing>` ``cpython.run_file`` with argument ``filename``."
+msgid "Raises an auditing event cpython.run_file with argument filename."
 msgstr ""
 
 #: ../../using/cmdline.rst:170
@@ -556,7 +556,7 @@ msgid "If this is the name of a readable file, the Python commands in that file 
 msgstr ""
 
 #: ../../using/cmdline.rst:680
-msgid "Raises an :ref:`auditing event <auditing>` ``cpython.run_startup`` with argument ``filename``."
+msgid "Raises an auditing event cpython.run_startup with the filename as the argument when called on startup."
 msgstr ""
 
 #: ../../using/cmdline.rst:682

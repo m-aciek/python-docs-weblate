@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 09:19+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,7 +236,7 @@ msgid "Array objects support the ordinary sequence operations of indexing, slici
 msgstr ""
 
 #: ../../library/array.rst:96
-msgid "Raises an :ref:`auditing event <auditing>` ``array.__new__`` with arguments ``typecode``, ``initializer``."
+msgid "Raises an auditing event array.__new__ with arguments typecode, initializer."
 msgstr ""
 
 #: ../../library/array.rst:101

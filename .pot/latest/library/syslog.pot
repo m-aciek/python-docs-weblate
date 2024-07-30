@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-07-30 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "If :func:`openlog` has not been called prior to the call to :func:`syslog
 msgstr ""
 
 #: ../../library/syslog.rst:36
-msgid "Raises an :ref:`auditing event <auditing>` ``syslog.syslog`` with arguments ``priority``, ``message``."
+msgid "Raises an auditing event syslog.syslog with arguments priority, message."
 msgstr ""
 
 #: ../../library/syslog.rst:38
@@ -65,7 +65,7 @@ msgid "The optional *ident* keyword argument is a string which is prepended to e
 msgstr ""
 
 #: ../../library/syslog.rst:64
-msgid "Raises an :ref:`auditing event <auditing>` ``syslog.openlog`` with arguments ``ident``, ``logoption``, ``facility``."
+msgid "Raises an auditing event syslog.openlog with arguments ident, logoption, facility."
 msgstr ""
 
 #: ../../library/syslog.rst:66
@@ -86,7 +86,7 @@ msgid "This causes the module to behave as it does when initially imported.  For
 msgstr ""
 
 #: ../../library/syslog.rst:87
-msgid "Raises an :ref:`auditing event <auditing>` ``syslog.closelog`` with no arguments."
+msgid "Raises an auditing event syslog.closelog with no arguments."
 msgstr ""
 
 #: ../../library/syslog.rst:99
@@ -94,7 +94,7 @@ msgid "Set the priority mask to *maskpri* and return the previous mask value.  C
 msgstr ""
 
 #: ../../library/syslog.rst:106
-msgid "Raises an :ref:`auditing event <auditing>` ``syslog.setlogmask`` with argument ``maskpri``."
+msgid "Raises an auditing event syslog.setlogmask with argument maskpri."
 msgstr ""
 
 #: ../../library/syslog.rst:108
