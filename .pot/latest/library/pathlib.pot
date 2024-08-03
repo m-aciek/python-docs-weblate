@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -640,7 +640,7 @@ msgid "Using the \"``**``\" pattern in large directory trees may consume an inor
 msgstr ""
 
 #: ../../library/pathlib.rst:1206
-msgid "Raises an auditing event pathlib.Path.glob with arguments self, pattern."
+msgid "Raises an :ref:`auditing event <auditing>` ``pathlib.Path.glob`` with arguments ``self``, ``pattern``."
 msgstr ""
 
 #: ../../library/pathlib.rst:1208
@@ -653,7 +653,7 @@ msgid "Glob the given relative *pattern* recursively.  This is like calling :fun
 msgstr ""
 
 #: ../../library/pathlib.rst:1234
-msgid "Raises an auditing event pathlib.Path.rglob with arguments self, pattern."
+msgid "Raises an :ref:`auditing event <auditing>` ``pathlib.Path.rglob`` with arguments ``self``, ``pattern``."
 msgstr ""
 
 #: ../../library/pathlib.rst:1246

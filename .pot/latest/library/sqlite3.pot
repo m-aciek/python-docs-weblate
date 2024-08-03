@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,11 +234,11 @@ msgid "Return type"
 msgstr ""
 
 #: ../../library/sqlite3.rst:346
-msgid "Raises an auditing event sqlite3.connect with argument database."
+msgid "Raises an :ref:`auditing event <auditing>` ``sqlite3.connect`` with argument ``database``."
 msgstr ""
 
 #: ../../library/sqlite3.rst:347
-msgid "Raises an auditing event sqlite3.connect/handle with argument connection_handle."
+msgid "Raises an :ref:`auditing event <auditing>` ``sqlite3.connect/handle`` with argument ``connection_handle``."
 msgstr ""
 
 #: ../../library/sqlite3.rst:349
@@ -750,7 +750,7 @@ msgid "The :mod:`!sqlite3` module is not built with loadable extension support b
 msgstr ""
 
 #: ../../library/sqlite3.rst:1020
-msgid "Raises an auditing event sqlite3.enable_load_extension with arguments connection, enabled."
+msgid "Raises an :ref:`auditing event <auditing>` ``sqlite3.enable_load_extension`` with arguments ``connection``, ``enabled``."
 msgstr ""
 
 #: ../../library/sqlite3.rst:1024
@@ -770,7 +770,7 @@ msgid "Entry point name. If ``None`` (the default), SQLite will come up with an 
 msgstr ""
 
 #: ../../library/sqlite3.rst:1073
-msgid "Raises an auditing event sqlite3.load_extension with arguments connection, path."
+msgid "Raises an :ref:`auditing event <auditing>` ``sqlite3.load_extension`` with arguments ``connection``, ``path``."
 msgstr ""
 
 #: ../../library/sqlite3.rst:1077

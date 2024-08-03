@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../library/marshal.rst:69
 #: ../../library/marshal.rst:101
-msgid "Raises an auditing event marshal.dumps with arguments value, version."
+msgid "Raises an :ref:`auditing event <auditing>` ``marshal.dumps`` with arguments ``value``, ``version``."
 msgstr ""
 
 #: ../../library/marshal.rst:74
@@ -66,7 +66,7 @@ msgid "Read one value from the open file and return it.  If no valid value is re
 msgstr ""
 
 #: ../../library/marshal.rst:79
-msgid "Raises an auditing event marshal.load with no arguments."
+msgid "Raises an :ref:`auditing event <auditing>` ``marshal.load`` with no arguments."
 msgstr ""
 
 #: ../../library/marshal.rst:83
@@ -90,7 +90,7 @@ msgid "Convert the :term:`bytes-like object` to a value.  If no valid value is f
 msgstr ""
 
 #: ../../library/marshal.rst:110
-msgid "Raises an auditing event marshal.loads with argument bytes."
+msgid "Raises an :ref:`auditing event <auditing>` ``marshal.loads`` with argument ``bytes``."
 msgstr ""
 
 #: ../../library/marshal.rst:114

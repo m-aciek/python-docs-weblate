@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,7 +153,7 @@ msgid "*verbosity* controls the level of output to :data:`sys.stdout` from the b
 msgstr ""
 
 #: ../../library/ensurepip.rst:125
-msgid "Raises an auditing event ensurepip.bootstrap with argument root."
+msgid "Raises an :ref:`auditing event <auditing>` ``ensurepip.bootstrap`` with argument ``root``."
 msgstr ""
 
 #: ../../library/ensurepip.rst:129

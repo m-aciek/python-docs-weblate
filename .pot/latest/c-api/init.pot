@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -431,7 +431,7 @@ msgid "**Bugs and caveats:** The destruction of modules and objects in modules i
 msgstr ""
 
 #: ../../c-api/init.rst:421
-msgid "Raises an auditing event cpython._PySys_ClearAuditHooks with no arguments."
+msgid "Raises an :ref:`auditing event <auditing>` ``cpython._PySys_ClearAuditHooks`` with no arguments."
 msgstr ""
 
 #: ../../c-api/init.rst:427
@@ -884,7 +884,7 @@ msgid "Create a new interpreter state object.  The global interpreter lock need 
 msgstr ""
 
 #: ../../c-api/init.rst:1227
-msgid "Raises an auditing event cpython.PyInterpreterState_New with no arguments."
+msgid "Raises an :ref:`auditing event <auditing>` ``cpython.PyInterpreterState_New`` with no arguments."
 msgstr ""
 
 #: ../../c-api/init.rst:1232
@@ -892,7 +892,7 @@ msgid "Reset all information in an interpreter state object.  The global interpr
 msgstr ""
 
 #: ../../c-api/init.rst:1235
-msgid "Raises an auditing event cpython.PyInterpreterState_Clear with no arguments."
+msgid "Raises an :ref:`auditing event <auditing>` ``cpython.PyInterpreterState_Clear`` with no arguments."
 msgstr ""
 
 #: ../../c-api/init.rst:1240

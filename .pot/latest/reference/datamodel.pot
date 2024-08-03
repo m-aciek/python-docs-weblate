@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 20:16+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1336,9 +1336,6 @@ msgid "This method may still be bypassed when looking up special methods as the 
 msgstr ""
 
 #: ../../reference/datamodel.rst:1954
-msgid "For certain sensitive attribute accesses, raises an auditing event object.__getattr__ with arguments obj and name."
-msgstr ""
-
 #: ../../reference/datamodel.rst:1956
 msgid "For certain sensitive attribute accesses, raises an :ref:`auditing event <auditing>` ``object.__getattr__`` with arguments ``obj`` and ``name``."
 msgstr ""
@@ -1352,9 +1349,6 @@ msgid "If :meth:`__setattr__` wants to assign to an instance attribute, it shoul
 msgstr ""
 
 #: ../../reference/datamodel.rst:1971
-msgid "For certain sensitive attribute assignments, raises an auditing event object.__setattr__ with arguments obj, name, value."
-msgstr ""
-
 #: ../../reference/datamodel.rst:1973
 msgid "For certain sensitive attribute assignments, raises an :ref:`auditing event <auditing>` ``object.__setattr__`` with arguments ``obj``, ``name``, ``value``."
 msgstr ""
@@ -1364,9 +1358,6 @@ msgid "Like :meth:`__setattr__` but for attribute deletion instead of assignment
 msgstr ""
 
 #: ../../reference/datamodel.rst:1983
-msgid "For certain sensitive attribute deletions, raises an auditing event object.__delattr__ with arguments obj and name."
-msgstr ""
-
 #: ../../reference/datamodel.rst:1985
 msgid "For certain sensitive attribute deletions, raises an :ref:`auditing event <auditing>` ``object.__delattr__`` with arguments ``obj`` and ``name``."
 msgstr ""

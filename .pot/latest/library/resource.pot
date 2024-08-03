@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid "VxWorks only supports setting :data:`RLIMIT_NOFILE`."
 msgstr ""
 
 #: ../../library/resource.rst:83
-msgid "Raises an auditing event resource.setrlimit with arguments resource, limits."
+msgid "Raises an :ref:`auditing event <auditing>` ``resource.setrlimit`` with arguments ``resource``, ``limits``."
 msgstr ""
 
 #: ../../library/resource.rst:88
@@ -97,7 +97,7 @@ msgid "Raises :exc:`ProcessLookupError` when *pid* can't be found and :exc:`Perm
 msgstr ""
 
 #: ../../library/resource.rst:102
-msgid "Raises an auditing event resource.prlimit with arguments pid, resource, limits."
+msgid "Raises an :ref:`auditing event <auditing>` ``resource.prlimit`` with arguments ``pid``, ``resource``, ``limits``."
 msgstr ""
 
 #: ../../library/resource.rst:104

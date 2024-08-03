@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid ":func:`os.waitstatus_to_exitcode` can be used to convert the exit status 
 msgstr ""
 
 #: ../../library/pty.rst:82
-msgid "Raises an auditing event pty.spawn with argument argv."
+msgid "Raises an :ref:`auditing event <auditing>` ``pty.spawn`` with argument ``argv``."
 msgstr ""
 
 #: ../../library/pty.rst:84

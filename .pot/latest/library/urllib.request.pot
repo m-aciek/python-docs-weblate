@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,9 +105,6 @@ msgid "The legacy ``urllib.urlopen`` function from Python 2.6 and earlier has be
 msgstr ""
 
 #: ../../library/urllib.request.rst:99
-msgid "The default opener raises an auditing event urllib.Request with arguments fullurl, data, headers, method taken from the request object."
-msgstr ""
-
 #: ../../library/urllib.request.rst:101
 msgid "The default opener raises an :ref:`auditing event <auditing>` ``urllib.Request`` with arguments ``fullurl``, ``data``, ``headers``, ``method`` taken from the request object."
 msgstr ""

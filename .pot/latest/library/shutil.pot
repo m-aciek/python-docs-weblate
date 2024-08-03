@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 04:21+0000\n"
+"POT-Creation-Date: 2024-08-03 17:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,7 @@ msgstr ""
 #: ../../library/shutil.rst:70
 #: ../../library/shutil.rst:177
 #: ../../library/shutil.rst:208
-msgid "Raises an auditing event shutil.copyfile with arguments src, dst."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.copyfile`` with arguments ``src``, ``dst``."
 msgstr ""
 
 #: ../../library/shutil.rst:72
@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../library/shutil.rst:106
 #: ../../library/shutil.rst:179
-msgid "Raises an auditing event shutil.copymode with arguments src, dst."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.copymode`` with arguments ``src``, ``dst``."
 msgstr ""
 
 #: ../../library/shutil.rst:108
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../../library/shutil.rst:153
 #: ../../library/shutil.rst:210
-msgid "Raises an auditing event shutil.copystat with arguments src, dst."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.copystat`` with arguments ``src``, ``dst``."
 msgstr ""
 
 #: ../../library/shutil.rst:155
@@ -209,7 +209,7 @@ msgid "If *dirs_exist_ok* is false (the default) and *dst* already exists, a :ex
 msgstr ""
 
 #: ../../library/shutil.rst:275
-msgid "Raises an auditing event shutil.copytree with arguments src, dst."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.copytree`` with arguments ``src``, ``dst``."
 msgstr ""
 
 #: ../../library/shutil.rst:277
@@ -249,7 +249,7 @@ msgid "The deprecated *onerror* is similar to *onexc*, except that the third par
 msgstr ""
 
 #: ../../library/shutil.rst:330
-msgid "Raises an auditing event shutil.rmtree with arguments path, dir_fd."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.rmtree`` with arguments ``path``, ``dir_fd``."
 msgstr ""
 
 #: ../../library/shutil.rst:332
@@ -293,7 +293,7 @@ msgid "If *copy_function* is given, it must be a callable that takes two argumen
 msgstr ""
 
 #: ../../library/shutil.rst:380
-msgid "Raises an auditing event shutil.move with arguments src, dst."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.move`` with arguments ``src``, ``dst``."
 msgstr ""
 
 #: ../../library/shutil.rst:382
@@ -337,7 +337,7 @@ msgid "See also :func:`os.chown`, the underlying function."
 msgstr ""
 
 #: ../../library/shutil.rst:427
-msgid "Raises an auditing event shutil.chown with arguments path, user, group."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.chown`` with arguments ``path``, ``user``, ``group``."
 msgstr ""
 
 #: ../../library/shutil.rst:429
@@ -485,7 +485,7 @@ msgid "The *verbose* argument is unused and deprecated."
 msgstr ""
 
 #: ../../library/shutil.rst:616
-msgid "Raises an auditing event shutil.make_archive with arguments base_name, format, root_dir, base_dir."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.make_archive`` with arguments ``base_name``, ``format``, ``root_dir``, ``base_dir``."
 msgstr ""
 
 #: ../../library/shutil.rst:620
@@ -581,7 +581,7 @@ msgid "The keyword-only *filter* argument is passed to the underlying unpacking 
 msgstr ""
 
 #: ../../library/shutil.rst:704
-msgid "Raises an auditing event shutil.unpack_archive with arguments filename, extract_dir, format."
+msgid "Raises an :ref:`auditing event <auditing>` ``shutil.unpack_archive`` with arguments ``filename``, ``extract_dir``, ``format``."
 msgstr ""
 
 #: ../../library/shutil.rst:708
