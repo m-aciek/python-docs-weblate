@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-08-19 07:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -539,7 +539,7 @@ msgid "Added support for the ``'e'`` format."
 msgstr ""
 
 #: ../../library/struct.rst:278
-msgid "The ``'?'`` conversion code corresponds to the :c:expr:`_Bool` type defined by C99. If this type is not available, it is simulated using a :c:expr:`char`. In standard mode, it is always represented by one byte."
+msgid "The ``'?'`` conversion code corresponds to the :c:expr:`_Bool` type defined by C standards since C99.  In standard mode, it is represented by one byte."
 msgstr ""
 
 #: ../../library/struct.rst:283
