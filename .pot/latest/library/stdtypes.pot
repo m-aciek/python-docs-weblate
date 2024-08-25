@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 16:23+0000\n"
+"POT-Creation-Date: 2024-08-25 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -848,7 +848,7 @@ msgid "For logical operations, use the :ref:`boolean operators <boolean>` ``and`
 msgstr ""
 
 #: ../../library/stdtypes.rst:834
-msgid "The use of the bitwise inversion operator ``~`` is deprecated and will raise an error in Python 3.14."
+msgid "The use of the bitwise inversion operator ``~`` is deprecated and will raise an error in Python 3.16."
 msgstr ""
 
 #: ../../library/stdtypes.rst:837

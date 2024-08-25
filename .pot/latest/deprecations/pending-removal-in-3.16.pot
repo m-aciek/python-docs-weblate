@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-27 12:31+0000\n"
+"POT-Creation-Date: 2024-08-25 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,5 +25,9 @@ msgid ":mod:`array`: :class:`array.array` ``'u'`` type (:c:type:`wchar_t`): use 
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.16.rst:8
+msgid ":mod:`builtins`: ``~bool``, bitwise inversion on bool."
+msgstr ""
+
+#: ../../deprecations/pending-removal-in-3.16.rst:11
 msgid ":mod:`symtable`: Deprecate :meth:`symtable.Class.get_methods` due to the lack of interest. (Contributed by Bénédikt Tran in :gh:`119698`.)"
 msgstr ""
