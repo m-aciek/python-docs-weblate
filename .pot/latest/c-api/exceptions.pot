@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 10:39+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "When a function must fail because some function it called failed, it gene
 msgstr ""
 
 #: ../../c-api/exceptions.rst:37
-msgid "The error indicator is **not** the result of :func:`sys.exc_info()`. The former corresponds to an exception that is not yet caught (and is therefore still propagating), while the latter returns an exception after it is caught (and has therefore stopped propagating)."
+msgid "The error indicator is **not** the result of :func:`sys.exc_info`. The former corresponds to an exception that is not yet caught (and is therefore still propagating), while the latter returns an exception after it is caught (and has therefore stopped propagating)."
 msgstr ""
 
 #: ../../c-api/exceptions.rst:44

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-24 17:18+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid ":class:`http.server.CGIHTTPRequestHandler` will be removed along with its
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.15.rst:9
-msgid ":class:`locale`: :func:`locale.getdefaultlocale` was deprecated in Python 3.11 and originally planned for removal in Python 3.13 (:gh:`90817`), but removal has been postponed to Python 3.15. Use :func:`locale.setlocale()`, :func:`locale.getencoding()` and :func:`locale.getlocale()` instead. (Contributed by Hugo van Kemenade in :gh:`111187`.)"
+msgid ":class:`locale`: :func:`locale.getdefaultlocale` was deprecated in Python 3.11 and originally planned for removal in Python 3.13 (:gh:`90817`), but removal has been postponed to Python 3.15. Use :func:`locale.setlocale`, :func:`locale.getencoding` and :func:`locale.getlocale` instead. (Contributed by Hugo van Kemenade in :gh:`111187`.)"
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.15.rst:16

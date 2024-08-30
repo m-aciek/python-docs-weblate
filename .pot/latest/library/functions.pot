@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-03 17:14+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -449,7 +449,7 @@ msgid "The parameter is now positional-only."
 msgstr ""
 
 #: ../../library/functions.rst:161
-msgid "This function drops you into the debugger at the call site.  Specifically, it calls :func:`sys.breakpointhook`, passing ``args`` and ``kws`` straight through.  By default, ``sys.breakpointhook()`` calls :func:`pdb.set_trace()` expecting no arguments.  In this case, it is purely a convenience function so you don't have to explicitly import :mod:`pdb` or type as much code to enter the debugger.  However, :func:`sys.breakpointhook` can be set to some other function and :func:`breakpoint` will automatically call that, allowing you to drop into the debugger of choice. If :func:`sys.breakpointhook` is not accessible, this function will raise :exc:`RuntimeError`."
+msgid "This function drops you into the debugger at the call site.  Specifically, it calls :func:`sys.breakpointhook`, passing ``args`` and ``kws`` straight through.  By default, ``sys.breakpointhook()`` calls :func:`pdb.set_trace` expecting no arguments.  In this case, it is purely a convenience function so you don't have to explicitly import :mod:`pdb` or type as much code to enter the debugger.  However, :func:`sys.breakpointhook` can be set to some other function and :func:`breakpoint` will automatically call that, allowing you to drop into the debugger of choice. If :func:`sys.breakpointhook` is not accessible, this function will raise :exc:`RuntimeError`."
 msgstr ""
 
 #: ../../library/functions.rst:173
@@ -1127,7 +1127,7 @@ msgid "*file* is a :term:`path-like object` giving the pathname (absolute or rel
 msgstr ""
 
 #: ../../library/functions.rst:1263
-msgid "*mode* is an optional string that specifies the mode in which the file is opened.  It defaults to ``'r'`` which means open for reading in text mode. Other common values are ``'w'`` for writing (truncating the file if it already exists), ``'x'`` for exclusive creation, and ``'a'`` for appending (which on *some* Unix systems, means that *all* writes append to the end of the file regardless of the current seek position).  In text mode, if *encoding* is not specified the encoding used is platform-dependent: :func:`locale.getencoding()` is called to get the current locale encoding. (For reading and writing raw bytes use binary mode and leave *encoding* unspecified.)  The available modes are:"
+msgid "*mode* is an optional string that specifies the mode in which the file is opened.  It defaults to ``'r'`` which means open for reading in text mode. Other common values are ``'w'`` for writing (truncating the file if it already exists), ``'x'`` for exclusive creation, and ``'a'`` for appending (which on *some* Unix systems, means that *all* writes append to the end of the file regardless of the current seek position).  In text mode, if *encoding* is not specified the encoding used is platform-dependent: :func:`locale.getencoding` is called to get the current locale encoding. (For reading and writing raw bytes use binary mode and leave *encoding* unspecified.)  The available modes are:"
 msgstr ""
 
 #: ../../library/functions.rst:1280

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-03 17:14+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -361,7 +361,7 @@ msgid "Send the signal *signalnum* to the thread *thread_id*, another thread in 
 msgstr ""
 
 #: ../../library/signal.rst:428
-msgid "Use :func:`threading.get_ident()` or the :attr:`~threading.Thread.ident` attribute of :class:`threading.Thread` objects to get a suitable value for *thread_id*."
+msgid "Use :func:`threading.get_ident` or the :attr:`~threading.Thread.ident` attribute of :class:`threading.Thread` objects to get a suitable value for *thread_id*."
 msgstr ""
 
 #: ../../library/signal.rst:432

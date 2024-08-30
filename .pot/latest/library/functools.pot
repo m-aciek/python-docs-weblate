@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 20:38+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Simple lightweight unbounded function cache.  Sometimes called `\"memoize
 msgstr ""
 
 #: ../../library/functools.rst:34
-msgid "Returns the same as ``lru_cache(maxsize=None)``, creating a thin wrapper around a dictionary lookup for the function arguments.  Because it never needs to evict old values, this is smaller and faster than :func:`lru_cache()` with a size limit."
+msgid "Returns the same as ``lru_cache(maxsize=None)``, creating a thin wrapper around a dictionary lookup for the function arguments.  Because it never needs to evict old values, this is smaller and faster than :func:`lru_cache` with a size limit."
 msgstr ""
 
 #: ../../library/functools.rst:39

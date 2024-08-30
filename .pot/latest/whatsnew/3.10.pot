@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-28 19:11+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -994,7 +994,7 @@ msgid "itertools"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1236
-msgid "Add :func:`itertools.pairwise()`. (Contributed by Raymond Hettinger in :issue:`38200`.)"
+msgid "Add :func:`itertools.pairwise`. (Contributed by Raymond Hettinger in :issue:`38200`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1240
@@ -1006,7 +1006,7 @@ msgid "os"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1248
-msgid "Add :func:`os.cpu_count()` support for VxWorks RTOS. (Contributed by Peixing Xin in :issue:`41440`.)"
+msgid "Add :func:`os.cpu_count` support for VxWorks RTOS. (Contributed by Peixing Xin in :issue:`41440`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1251
@@ -1014,7 +1014,7 @@ msgid "Add a new function :func:`os.eventfd` and related helpers to wrap the ``e
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1255
-msgid "Add :func:`os.splice()` that allows to move data between two file descriptors without copying between kernel address space and user address space, where one of the file descriptors must refer to a pipe. (Contributed by Pablo Galindo in :issue:`41625`.)"
+msgid "Add :func:`os.splice` that allows to move data between two file descriptors without copying between kernel address space and user address space, where one of the file descriptors must refer to a pipe. (Contributed by Pablo Galindo in :issue:`41625`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1260
@@ -1054,7 +1054,7 @@ msgid "platform"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1295
-msgid "Add :func:`platform.freedesktop_os_release()` to retrieve operation system identification from `freedesktop.org os-release <https://www.freedesktop.org/software/systemd/man/os-release.html>`_ standard file. (Contributed by Christian Heimes in :issue:`28468`.)"
+msgid "Add :func:`platform.freedesktop_os_release` to retrieve operation system identification from `freedesktop.org os-release <https://www.freedesktop.org/software/systemd/man/os-release.html>`_ standard file. (Contributed by Christian Heimes in :issue:`28468`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1301

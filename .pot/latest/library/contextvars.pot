@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "This module provides APIs to manage, store, and access context-local stat
 msgstr ""
 
 #: ../../library/contextvars.rst:17
-msgid "Context managers that have state should use Context Variables instead of :func:`threading.local()` to prevent their state from bleeding to other code unexpectedly, when used in concurrent code."
+msgid "Context managers that have state should use Context Variables instead of :func:`threading.local` to prevent their state from bleeding to other code unexpectedly, when used in concurrent code."
 msgstr ""
 
 #: ../../library/contextvars.rst:21
@@ -137,7 +137,7 @@ msgid "``Context()`` creates an empty context with no values in it. To get a cop
 msgstr ""
 
 #: ../../library/contextvars.rst:147
-msgid "Every thread will have a different top-level :class:`~contextvars.Context` object. This means that a :class:`ContextVar` object behaves in a similar fashion to :func:`threading.local()` when values are assigned in different threads."
+msgid "Every thread will have a different top-level :class:`~contextvars.Context` object. This means that a :class:`ContextVar` object behaves in a similar fashion to :func:`threading.local` when values are assigned in different threads."
 msgstr ""
 
 #: ../../library/contextvars.rst:152

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-03 17:14+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -453,15 +453,15 @@ msgid "*process_group* was added."
 msgstr ""
 
 #: ../../library/subprocess.rst:609
-msgid "If *group* is not ``None``, the setregid() system call will be made in the child process prior to the execution of the subprocess. If the provided value is a string, it will be looked up via :func:`grp.getgrnam()` and the value in ``gr_gid`` will be used. If the value is an integer, it will be passed verbatim. (POSIX only)"
+msgid "If *group* is not ``None``, the setregid() system call will be made in the child process prior to the execution of the subprocess. If the provided value is a string, it will be looked up via :func:`grp.getgrnam` and the value in ``gr_gid`` will be used. If the value is an integer, it will be passed verbatim. (POSIX only)"
 msgstr ""
 
 #: ../../library/subprocess.rst:618
-msgid "If *extra_groups* is not ``None``, the setgroups() system call will be made in the child process prior to the execution of the subprocess. Strings provided in *extra_groups* will be looked up via :func:`grp.getgrnam()` and the values in ``gr_gid`` will be used. Integer values will be passed verbatim. (POSIX only)"
+msgid "If *extra_groups* is not ``None``, the setgroups() system call will be made in the child process prior to the execution of the subprocess. Strings provided in *extra_groups* will be looked up via :func:`grp.getgrnam` and the values in ``gr_gid`` will be used. Integer values will be passed verbatim. (POSIX only)"
 msgstr ""
 
 #: ../../library/subprocess.rst:627
-msgid "If *user* is not ``None``, the setreuid() system call will be made in the child process prior to the execution of the subprocess. If the provided value is a string, it will be looked up via :func:`pwd.getpwnam()` and the value in ``pw_uid`` will be used. If the value is an integer, it will be passed verbatim. (POSIX only)"
+msgid "If *user* is not ``None``, the setreuid() system call will be made in the child process prior to the execution of the subprocess. If the provided value is a string, it will be looked up via :func:`pwd.getpwnam` and the value in ``pw_uid`` will be used. If the value is an integer, it will be passed verbatim. (POSIX only)"
 msgstr ""
 
 #: ../../library/subprocess.rst:636

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgid "*loop_factory* could be used for overriding the loop creation. It is the 
 msgstr ""
 
 #: ../../library/asyncio-runner.rst:92
-msgid "Basically, :func:`asyncio.run()` example can be rewritten with the runner usage::"
+msgid "Basically, :func:`asyncio.run` example can be rewritten with the runner usage::"
 msgstr ""
 
 #: ../../library/asyncio-runner.rst:105

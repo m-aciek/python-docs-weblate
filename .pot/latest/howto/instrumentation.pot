@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 12:26+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,7 +199,7 @@ msgid "The arguments are the same as for :c:func:`!function__entry`."
 msgstr ""
 
 #: ../../howto/instrumentation.rst:309
-msgid "Fires when the Python interpreter starts a garbage collection cycle. ``arg0`` is the generation to scan, like :func:`gc.collect()`."
+msgid "Fires when the Python interpreter starts a garbage collection cycle. ``arg0`` is the generation to scan, like :func:`gc.collect`."
 msgstr ""
 
 #: ../../howto/instrumentation.rst:314

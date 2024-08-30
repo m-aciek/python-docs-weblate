@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 09:19+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,7 +146,7 @@ msgid "Another helpful tool is the :func:`sum` function which helps mitigate los
 msgstr ""
 
 #: ../../tutorial/floatingpoint.rst:233
-msgid "The :func:`math.fsum()` goes further and tracks all of the \"lost digits\" as values are added onto a running total so that the result has only a single rounding.  This is slower than :func:`sum` but will be more accurate in uncommon cases where large magnitude inputs mostly cancel each other out leaving a final sum near zero:"
+msgid "The :func:`math.fsum` goes further and tracks all of the \"lost digits\" as values are added onto a running total so that the result has only a single rounding.  This is slower than :func:`sum` but will be more accurate in uncommon cases where large magnitude inputs mostly cancel each other out leaving a final sum near zero:"
 msgstr ""
 
 #: ../../tutorial/floatingpoint.rst:260

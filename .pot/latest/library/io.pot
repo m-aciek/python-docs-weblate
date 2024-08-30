@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-03 17:14+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -864,7 +864,7 @@ msgid "A buffered text stream providing higher-level access to a :class:`Buffere
 msgstr ""
 
 #: ../../library/io.rst:952
-msgid "*encoding* gives the name of the encoding that the stream will be decoded or encoded with.  It defaults to :func:`locale.getencoding()`. ``encoding=\"locale\"`` can be used to specify the current locale's encoding explicitly. See :ref:`io-text-encoding` for more information."
+msgid "*encoding* gives the name of the encoding that the stream will be decoded or encoded with.  It defaults to :func:`locale.getencoding`. ``encoding=\"locale\"`` can be used to specify the current locale's encoding explicitly. See :ref:`io-text-encoding` for more information."
 msgstr ""
 
 #: ../../library/io.rst:957
@@ -1048,7 +1048,7 @@ msgid "Binary buffered objects (instances of :class:`BufferedReader`, :class:`Bu
 msgstr ""
 
 #: ../../library/io.rst:1185
-msgid "The above implicitly extends to text files, since the :func:`open()` function will wrap a buffered object inside a :class:`TextIOWrapper`.  This includes standard streams and therefore affects the built-in :func:`print()` function as well."
+msgid "The above implicitly extends to text files, since the :func:`open` function will wrap a buffered object inside a :class:`TextIOWrapper`.  This includes standard streams and therefore affects the built-in :func:`print` function as well."
 msgstr ""
 
 #: ../../library/io.rst:24

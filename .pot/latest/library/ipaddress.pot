@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-15 12:31+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -619,7 +619,7 @@ msgid "Return a key suitable for sorting between networks and addresses.  Addres
 msgstr ""
 
 #: ../../library/ipaddress.rst:1004
-msgid "doesn't make sense.  There are some times however, where you may wish to have :mod:`ipaddress` sort these anyway.  If you need to do this, you can use this function as the *key* argument to :func:`sorted()`."
+msgid "doesn't make sense.  There are some times however, where you may wish to have :mod:`ipaddress` sort these anyway.  If you need to do this, you can use this function as the *key* argument to :func:`sorted`."
 msgstr ""
 
 #: ../../library/ipaddress.rst:1008

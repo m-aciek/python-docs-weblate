@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:17+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "Control the maximum recursion level for subdirectories. If this is given,
 msgstr ""
 
 #: ../../library/compileall.rst:92
-msgid "Use *N* workers to compile the files within the given directory. If ``0`` is used, then the result of :func:`os.cpu_count()` will be used."
+msgid "Use *N* workers to compile the files within the given directory. If ``0`` is used, then the result of :func:`os.cpu_count` will be used."
 msgstr ""
 
 #: ../../library/compileall.rst:98

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-25 20:20+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1369,7 +1369,7 @@ msgid "``read_text()``"
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.13.rst:51
-msgid "Use :func:`importlib.resources.files()` instead.  Refer to `importlib-resources: Migrating from Legacy <https://importlib-resources.readthedocs.io/en/latest/using.html#migrating-from-legacy>`_ (:gh:`106531`)"
+msgid "Use :func:`importlib.resources.files` instead.  Refer to `importlib-resources: Migrating from Legacy <https://importlib-resources.readthedocs.io/en/latest/using.html#migrating-from-legacy>`_ (:gh:`106531`)"
 msgstr ""
 
 #: ../../deprecations/c-api-pending-removal-in-3.14.rst:2
@@ -1463,7 +1463,7 @@ msgid ":class:`http.server.CGIHTTPRequestHandler` will be removed along with its
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.15.rst:9
-msgid ":class:`locale`: :func:`locale.getdefaultlocale` was deprecated in Python 3.11 and originally planned for removal in Python 3.13 (:gh:`90817`), but removal has been postponed to Python 3.15. Use :func:`locale.setlocale()`, :func:`locale.getencoding()` and :func:`locale.getlocale()` instead. (Contributed by Hugo van Kemenade in :gh:`111187`.)"
+msgid ":class:`locale`: :func:`locale.getdefaultlocale` was deprecated in Python 3.11 and originally planned for removal in Python 3.13 (:gh:`90817`), but removal has been postponed to Python 3.15. Use :func:`locale.setlocale`, :func:`locale.getencoding` and :func:`locale.getlocale` instead. (Contributed by Hugo van Kemenade in :gh:`111187`.)"
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.15.rst:16
@@ -1881,7 +1881,7 @@ msgid "hashlib"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1435
-msgid "Remove the pure Python implementation of :mod:`hashlib`'s :func:`hashlib.pbkdf2_hmac()`, deprecated in Python 3.10. Python 3.10 and newer requires OpenSSL 1.1.1 (:pep:`644`): this OpenSSL version provides a C implementation of :func:`~hashlib.pbkdf2_hmac()` which is faster. (Contributed by Victor Stinner in :gh:`94199`.)"
+msgid "Remove the pure Python implementation of :mod:`hashlib`'s :func:`hashlib.pbkdf2_hmac`, deprecated in Python 3.10. Python 3.10 and newer requires OpenSSL 1.1.1 (:pep:`644`): this OpenSSL version provides a C implementation of :func:`~hashlib.pbkdf2_hmac` which is faster. (Contributed by Victor Stinner in :gh:`94199`.)"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1442

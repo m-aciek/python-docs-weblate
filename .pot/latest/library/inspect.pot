@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 02:26+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1161,7 +1161,7 @@ msgid "This function handles several details for you:"
 msgstr ""
 
 #: ../../library/inspect.rst:1206
-msgid "If ``eval_str`` is true, values of type ``str`` will be un-stringized using :func:`eval()`.  This is intended for use with stringized annotations (``from __future__ import annotations``)."
+msgid "If ``eval_str`` is true, values of type ``str`` will be un-stringized using :func:`eval`.  This is intended for use with stringized annotations (``from __future__ import annotations``)."
 msgstr ""
 
 #: ../../library/inspect.rst:1210
@@ -1181,11 +1181,11 @@ msgid "Always, always, always returns a freshly created dict."
 msgstr ""
 
 #: ../../library/inspect.rst:1220
-msgid "``eval_str`` controls whether or not values of type ``str`` are replaced with the result of calling :func:`eval()` on those values:"
+msgid "``eval_str`` controls whether or not values of type ``str`` are replaced with the result of calling :func:`eval` on those values:"
 msgstr ""
 
 #: ../../library/inspect.rst:1223
-msgid "If eval_str is true, :func:`eval()` is called on values of type ``str``. (Note that ``get_annotations`` doesn't catch exceptions; if :func:`eval()` raises an exception, it will unwind the stack past the ``get_annotations`` call.)"
+msgid "If eval_str is true, :func:`eval` is called on values of type ``str``. (Note that ``get_annotations`` doesn't catch exceptions; if :func:`eval` raises an exception, it will unwind the stack past the ``get_annotations`` call.)"
 msgstr ""
 
 #: ../../library/inspect.rst:1227
@@ -1193,7 +1193,7 @@ msgid "If eval_str is false (the default), values of type ``str`` are unchanged.
 msgstr ""
 
 #: ../../library/inspect.rst:1229
-msgid "``globals`` and ``locals`` are passed in to :func:`eval()`; see the documentation for :func:`eval()` for more information.  If ``globals`` or ``locals`` is ``None``, this function may replace that value with a context-specific default, contingent on ``type(obj)``:"
+msgid "``globals`` and ``locals`` are passed in to :func:`eval`; see the documentation for :func:`eval` for more information.  If ``globals`` or ``locals`` is ``None``, this function may replace that value with a context-specific default, contingent on ``type(obj)``:"
 msgstr ""
 
 #: ../../library/inspect.rst:1234

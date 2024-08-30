@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 13:17+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1608,7 +1608,7 @@ msgid "A new ``make`` target `coverage-report <https://devguide.python.org/cover
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1968
-msgid "The ``-R`` option to the :ref:`python regression test suite <regrtest>` now also checks for memory allocation leaks, using :func:`sys.getallocatedblocks()`.  (Contributed by Antoine Pitrou in :issue:`13390`.)"
+msgid "The ``-R`` option to the :ref:`python regression test suite <regrtest>` now also checks for memory allocation leaks, using :func:`sys.getallocatedblocks`.  (Contributed by Antoine Pitrou in :issue:`13390`.)"
 msgstr ""
 
 #: ../../whatsnew/3.4.rst:1973

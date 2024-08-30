@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 09:19+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -397,11 +397,11 @@ msgid "Representing filesystem paths is best performed with str (Unicode) rather
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:511
-msgid "Prior to Python 3.6, data loss could result when using bytes paths on Windows. With this change, using bytes to represent paths is now supported on Windows, provided those bytes are encoded with the encoding returned by :func:`sys.getfilesystemencoding()`, which now defaults to ``'utf-8'``."
+msgid "Prior to Python 3.6, data loss could result when using bytes paths on Windows. With this change, using bytes to represent paths is now supported on Windows, provided those bytes are encoded with the encoding returned by :func:`sys.getfilesystemencoding`, which now defaults to ``'utf-8'``."
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:516
-msgid "Applications that do not use str to represent paths should use :func:`os.fsencode()` and :func:`os.fsdecode()` to ensure their bytes are correctly encoded. To revert to the previous behaviour, set :envvar:`PYTHONLEGACYWINDOWSFSENCODING` or call :func:`sys._enablelegacywindowsfsencoding`."
+msgid "Applications that do not use str to represent paths should use :func:`os.fsencode` and :func:`os.fsdecode` to ensure their bytes are correctly encoded. To revert to the previous behaviour, set :envvar:`PYTHONLEGACYWINDOWSFSENCODING` or call :func:`sys._enablelegacywindowsfsencoding`."
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:522
@@ -638,7 +638,7 @@ msgid "The main purpose of the new :mod:`secrets` module is to provide an obviou
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:781
-msgid "Note that the pseudo-random generators in the :mod:`random` module should *NOT* be used for security purposes.  Use :mod:`secrets` on Python 3.6+ and :func:`os.urandom()` on Python 3.5 and earlier."
+msgid "Note that the pseudo-random generators in the :mod:`random` module should *NOT* be used for security purposes.  Use :mod:`secrets` on Python 3.6+ and :func:`os.urandom` on Python 3.5 and earlier."
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:787
@@ -1130,7 +1130,7 @@ msgid "pickletools"
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:1319
-msgid ":func:`pickletools.dis()` now outputs the implicit memo index for the ``MEMOIZE`` opcode. (Contributed by Serhiy Storchaka in :issue:`25382`.)"
+msgid ":func:`pickletools.dis` now outputs the implicit memo index for the ``MEMOIZE`` opcode. (Contributed by Serhiy Storchaka in :issue:`25382`.)"
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:1325

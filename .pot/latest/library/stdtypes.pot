@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-25 20:20+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2825,7 +2825,7 @@ msgid "Return a copy of the sequence with all the lowercase ASCII characters con
 msgstr ""
 
 #: ../../library/stdtypes.rst:3435
-msgid "Unlike :func:`str.swapcase()`, it is always the case that ``bin.swapcase().swapcase() == bin`` for the binary versions. Case conversions are symmetrical in ASCII, even though that is not generally true for arbitrary Unicode code points."
+msgid "Unlike :func:`str.swapcase`, it is always the case that ``bin.swapcase().swapcase() == bin`` for the binary versions. Case conversions are symmetrical in ASCII, even though that is not generally true for arbitrary Unicode code points."
 msgstr ""
 
 #: ../../library/stdtypes.rst:3449

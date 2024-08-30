@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-18 13:36+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1974,7 +1974,7 @@ msgid "Signal Handling"
 msgstr ""
 
 #: ../../library/unittest.rst:2523
-msgid "The :option:`-c/--catch <unittest -c>` command-line option to unittest, along with the ``catchbreak`` parameter to :func:`unittest.main()`, provide more friendly handling of control-C during a test run. With catch break behavior enabled control-C will allow the currently running test to complete, and the test run will then end and report all the results so far. A second control-c will raise a :exc:`KeyboardInterrupt` in the usual way."
+msgid "The :option:`-c/--catch <unittest -c>` command-line option to unittest, along with the ``catchbreak`` parameter to :func:`unittest.main`, provide more friendly handling of control-C during a test run. With catch break behavior enabled control-C will allow the currently running test to complete, and the test run will then end and report all the results so far. A second control-c will raise a :exc:`KeyboardInterrupt` in the usual way."
 msgstr ""
 
 #: ../../library/unittest.rst:2530

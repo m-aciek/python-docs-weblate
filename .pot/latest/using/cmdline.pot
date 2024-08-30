@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-03 17:14+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -733,7 +733,7 @@ msgid "If set to a non-empty string, the default :term:`filesystem encoding and 
 msgstr ""
 
 #: ../../using/cmdline.rst:952
-msgid "This may also be enabled at runtime with :func:`sys._enablelegacywindowsfsencoding()`."
+msgid "This may also be enabled at runtime with :func:`sys._enablelegacywindowsfsencoding`."
 msgstr ""
 
 #: ../../using/cmdline.rst:955

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-08-30 17:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,5 +61,5 @@ msgid "This function checks the environment variables :envvar:`LOGNAME`, :envvar
 msgstr ""
 
 #: ../../library/getpass.rst:52
-msgid "In general, this function should be preferred over :func:`os.getlogin()`."
+msgid "In general, this function should be preferred over :func:`os.getlogin`."
 msgstr ""
