@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-03 17:14+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -337,6 +337,13 @@ msgstr ""
 
 #: ../../library/array.rst:247
 msgid "The string representation of array objects has the form ``array(typecode, initializer)``. The *initializer* is omitted if the array is empty, otherwise it is a Unicode string if the *typecode* is ``'u'``, otherwise it is a list of numbers. The string representation is guaranteed to be able to be converted back to an array with the same type and value using :func:`eval`, so long as the :class:`~array.array` class has been imported using ``from array import array``. Variables ``inf`` and ``nan`` must also be defined if it contains corresponding floating-point values. Examples::"
+msgstr ""
+
+#: ../../library/array.rst:259
+msgid "array('l')\n"
+"array('u', 'hello \\u2641')\n"
+"array('l', [1, 2, 3, 4, 5])\n"
+"array('d', [1.0, 2.0, 3.14, -inf, nan])"
 msgstr ""
 
 #: ../../library/array.rst:267

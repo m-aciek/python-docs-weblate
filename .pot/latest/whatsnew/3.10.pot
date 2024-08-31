@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-30 17:19+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,8 +129,42 @@ msgstr ""
 msgid "Using enclosing parentheses for continuation across multiple lines in context managers is now supported. This allows formatting a long collection of context managers in multiple lines in a similar way as it was previously possible with import statements. For instance, all these examples are now valid:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:105
+msgid "with (CtxManager() as example):\n"
+"    ...\n"
+"\n"
+"with (\n"
+"    CtxManager1(),\n"
+"    CtxManager2()\n"
+"):\n"
+"    ...\n"
+"\n"
+"with (CtxManager1() as example,\n"
+"      CtxManager2()):\n"
+"    ...\n"
+"\n"
+"with (CtxManager1(),\n"
+"      CtxManager2() as example):\n"
+"    ...\n"
+"\n"
+"with (\n"
+"    CtxManager1() as example1,\n"
+"    CtxManager2() as example2\n"
+"):\n"
+"    ..."
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:130
 msgid "it is also possible to use a trailing comma at the end of the enclosed group:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:133
+msgid "with (\n"
+"    CtxManager1() as example1,\n"
+"    CtxManager2() as example2,\n"
+"    CtxManager3() as example3,\n"
+"):\n"
+"    ..."
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:142
@@ -153,12 +187,32 @@ msgstr ""
 msgid "When parsing code that contains unclosed parentheses or brackets the interpreter now includes the location of the unclosed bracket of parentheses instead of displaying *SyntaxError: unexpected EOF while parsing* or pointing to some incorrect location. For instance, consider the following code (notice the unclosed '{'):"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:160
+msgid "expected = {9: 1, 18: 2, 19: 2, 27: 3, 28: 3, 29: 3, 36: 4, 37: 4,\n"
+"            38: 4, 39: 4, 45: 5, 46: 5, 47: 5, 48: 5, 49: 5, 54: 6,\n"
+"some_other_code = foo()"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:166
 msgid "Previous versions of the interpreter reported confusing places as the location of the syntax error:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:169
+msgid "File \"example.py\", line 3\n"
+"    some_other_code = foo()\n"
+"                    ^\n"
+"SyntaxError: invalid syntax"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:176
 msgid "but in Python 3.10 a more informative error is emitted:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:178
+msgid "File \"example.py\", line 1\n"
+"    expected = {9: 1, 18: 2, 19: 2, 27: 3, 28: 3, 29: 3, 36: 4, 37: 4,\n"
+"               ^\n"
+"SyntaxError: '{' was never closed"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:186
@@ -177,8 +231,24 @@ msgstr ""
 msgid ":exc:`SyntaxError` exceptions raised by the interpreter will now highlight the full error range of the expression that constitutes the syntax error itself, instead of just where the problem is detected. In this way, instead of displaying (before Python 3.10):"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:199
+msgid ">>> foo(x, z for z in range(10), t, w)\n"
+"  File \"<stdin>\", line 1\n"
+"    foo(x, z for z in range(10), t, w)\n"
+"           ^\n"
+"SyntaxError: Generator expression must be parenthesized"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:207
 msgid "now Python 3.10 will display the exception as:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:209
+msgid ">>> foo(x, z for z in range(10), t, w)\n"
+"  File \"<stdin>\", line 1\n"
+"    foo(x, z for z in range(10), t, w)\n"
+"           ^^^^^^^^^^^^^^^^^^^^\n"
+"SyntaxError: Generator expression must be parenthesized"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:217
@@ -193,12 +263,28 @@ msgstr ""
 msgid "Missing ``:`` before blocks:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:224
+msgid ">>> if rocket.position > event_horizon\n"
+"  File \"<stdin>\", line 1\n"
+"    if rocket.position > event_horizon\n"
+"                                      ^\n"
+"SyntaxError: expected ':'"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:232
 msgid "(Contributed by Pablo Galindo in :issue:`42997`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:234
 msgid "Unparenthesised tuples in comprehensions targets:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:236
+msgid ">>> {x,y for x,y in zip('abcd', '1234')}\n"
+"  File \"<stdin>\", line 1\n"
+"    {x,y for x,y in zip('abcd', '1234')}\n"
+"     ^\n"
+"SyntaxError: did you forget parentheses around the comprehension target?"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:244
@@ -209,12 +295,33 @@ msgstr ""
 msgid "Missing commas in collection literals and between expressions:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:248
+msgid ">>> items = {\n"
+"... x: 1,\n"
+"... y: 2\n"
+"... z: 3,\n"
+"  File \"<stdin>\", line 3\n"
+"    y: 2\n"
+"       ^\n"
+"SyntaxError: invalid syntax. Perhaps you forgot a comma?"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:259
 msgid "(Contributed by Pablo Galindo in :issue:`43822`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:261
 msgid "Multiple Exception types without parentheses:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:263
+msgid ">>> try:\n"
+"...     build_dyson_sphere()\n"
+"... except NotEnoughScienceError, NotEnoughResourcesError:\n"
+"  File \"<stdin>\", line 3\n"
+"    except NotEnoughScienceError, NotEnoughResourcesError:\n"
+"           ^\n"
+"SyntaxError: multiple exception types must be parenthesized"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:273
@@ -225,12 +332,40 @@ msgstr ""
 msgid "Missing ``:`` and values in dictionary literals:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:277
+msgid ">>> values = {\n"
+"... x: 1,\n"
+"... y: 2,\n"
+"... z:\n"
+"... }\n"
+"  File \"<stdin>\", line 4\n"
+"    z:\n"
+"     ^\n"
+"SyntaxError: expression expected after dictionary key and ':'\n"
+"\n"
+">>> values = {x:1, y:2, z w:3}\n"
+"  File \"<stdin>\", line 1\n"
+"    values = {x:1, y:2, z w:3}\n"
+"                        ^\n"
+"SyntaxError: ':' expected after dictionary key"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:295
 msgid "(Contributed by Pablo Galindo in :issue:`43823`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:297
 msgid "``try`` blocks without ``except`` or ``finally`` blocks:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:299
+msgid ">>> try:\n"
+"...     x = 2\n"
+"... something = 3\n"
+"  File \"<stdin>\", line 3\n"
+"    something  = 3\n"
+"    ^^^^^^^^^\n"
+"SyntaxError: expected 'except' or 'finally' block"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:309
@@ -241,12 +376,28 @@ msgstr ""
 msgid "Usage of ``=`` instead of ``==`` in comparisons:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:313
+msgid ">>> if rocket.position = event_horizon:\n"
+"  File \"<stdin>\", line 1\n"
+"    if rocket.position = event_horizon:\n"
+"                       ^\n"
+"SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:321
 msgid "(Contributed by Pablo Galindo in :issue:`43797`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:323
 msgid "Usage of ``*`` in f-strings:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:325
+msgid ">>> f\"Black holes {*all_black_holes} and revelations\"\n"
+"  File \"<stdin>\", line 1\n"
+"    (*all_black_holes)\n"
+"     ^\n"
+"SyntaxError: f-string: cannot use starred expression here"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:333
@@ -261,12 +412,29 @@ msgstr ""
 msgid "Many :exc:`IndentationError` exceptions now have more context regarding what kind of block was expecting an indentation, including the location of the statement:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:341
+msgid ">>> def foo():\n"
+"...    if lel:\n"
+"...    x = 2\n"
+"  File \"<stdin>\", line 3\n"
+"    x = 2\n"
+"    ^\n"
+"IndentationError: expected an indented block after 'if' statement in line 2"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:353
 msgid "AttributeErrors"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:355
 msgid "When printing :exc:`AttributeError`, :c:func:`!PyErr_Display` will offer suggestions of similar attribute names in the object that the exception was raised from:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:359
+msgid ">>> collections.namedtoplo\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"AttributeError: module 'collections' has no attribute 'namedtoplo'. Did you mean: namedtuple?"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:366
@@ -284,6 +452,14 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:376
 msgid "When printing :exc:`NameError` raised by the interpreter, :c:func:`!PyErr_Display` will offer suggestions of similar variable names in the function that the exception was raised from:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:380
+msgid ">>> schwarzschild_black_hole = None\n"
+">>> schwarschild_black_hole\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"NameError: name 'schwarschild_black_hole' is not defined. Did you mean: schwarzschild_black_hole?"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:391
@@ -320,6 +496,18 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:424
 msgid "The generic syntax of pattern matching is::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:426
+msgid "match subject:\n"
+"    case <pattern_1>:\n"
+"        <action_1>\n"
+"    case <pattern_2>:\n"
+"        <action_2>\n"
+"    case <pattern_3>:\n"
+"        <action_3>\n"
+"    case _:\n"
+"        <action_wildcard>"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:436
@@ -370,6 +558,19 @@ msgstr ""
 msgid "Let's look at this example as pattern matching in its simplest form: a value, the subject, being matched to several literals, the patterns. In the example below, ``status`` is the subject of the match statement. The patterns are each of the case statements, where literals represent request status codes. The associated action to the case is executed after a match::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:481
+msgid "def http_error(status):\n"
+"    match status:\n"
+"        case 400:\n"
+"            return \"Bad request\"\n"
+"        case 404:\n"
+"            return \"Not found\"\n"
+"        case 418:\n"
+"            return \"I'm a teapot\"\n"
+"        case _:\n"
+"            return \"Something's wrong with the internet\""
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:492
 msgid "If the above function is passed a ``status`` of 418, \"I'm a teapot\" is returned. If the above function is passed a ``status`` of 500, the case statement with ``_`` will match as a wildcard, and \"Something's wrong with the internet\" is returned. Note the last block: the variable name, ``_``, acts as a *wildcard* and insures the subject will always match. The use of ``_`` is optional."
 msgstr ""
@@ -378,12 +579,28 @@ msgstr ""
 msgid "You can combine several literals in a single pattern using ``|`` (\"or\")::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:501
+msgid "case 401 | 403 | 404:\n"
+"    return \"Not allowed\""
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:505
 msgid "Behavior without the wildcard"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:507
 msgid "If we modify the above example by removing the last case block, the example becomes::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:510
+msgid "def http_error(status):\n"
+"    match status:\n"
+"        case 400:\n"
+"            return \"Bad request\"\n"
+"        case 404:\n"
+"            return \"Not found\"\n"
+"        case 418:\n"
+"            return \"I'm a teapot\""
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:519
@@ -398,6 +615,21 @@ msgstr ""
 msgid "Patterns can look like unpacking assignments, and a pattern may be used to bind variables. In this example, a data point can be unpacked to its x-coordinate and y-coordinate::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:530
+msgid "# point is an (x, y) tuple\n"
+"match point:\n"
+"    case (0, 0):\n"
+"        print(\"Origin\")\n"
+"    case (0, y):\n"
+"        print(f\"Y={y}\")\n"
+"    case (x, 0):\n"
+"        print(f\"X={x}\")\n"
+"    case (x, y):\n"
+"        print(f\"X={x}, Y={y}\")\n"
+"    case _:\n"
+"        raise ValueError(\"Not a point\")"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:543
 msgid "The first pattern has two literals, ``(0, 0)``, and may be thought of as an extension of the literal pattern shown above. The next two patterns combine a literal and a variable, and the variable *binds* a value from the subject (``point``).  The fourth pattern captures two values, which makes it conceptually similar to the unpacking assignment ``(x, y) = point``."
 msgstr ""
@@ -410,12 +642,38 @@ msgstr ""
 msgid "If you are using classes to structure your data, you can use as a pattern the class name followed by an argument list resembling a constructor. This pattern has the ability to capture class attributes into variables::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:556
+msgid "class Point:\n"
+"    x: int\n"
+"    y: int\n"
+"\n"
+"def location(point):\n"
+"    match point:\n"
+"        case Point(x=0, y=0):\n"
+"            print(\"Origin is the point's location.\")\n"
+"        case Point(x=0, y=y):\n"
+"            print(f\"Y={y} and the point is on the y-axis.\")\n"
+"        case Point(x=x, y=0):\n"
+"            print(f\"X={x} and the point is on the x-axis.\")\n"
+"        case Point():\n"
+"            print(\"The point is located somewhere else on the plane.\")\n"
+"        case _:\n"
+"            print(\"Not a point\")"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:574
 msgid "Patterns with positional parameters"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:576
 msgid "You can use positional parameters with some builtin classes that provide an ordering for their attributes (e.g. dataclasses). You can also define a specific position for attributes in patterns by setting the ``__match_args__`` special attribute in your classes. If it's set to (\"x\", \"y\"), the following patterns are all equivalent (and all bind the ``y`` attribute to the ``var`` variable)::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:582
+msgid "Point(1, var)\n"
+"Point(1, y=var)\n"
+"Point(x=1, y=var)\n"
+"Point(y=var, x=1)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:588
@@ -426,12 +684,34 @@ msgstr ""
 msgid "Patterns can be arbitrarily nested.  For example, if our data is a short list of points, it could be matched like this::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:593
+msgid "match points:\n"
+"    case []:\n"
+"        print(\"No points in the list.\")\n"
+"    case [Point(0, 0)]:\n"
+"        print(\"The origin is the only point in the list.\")\n"
+"    case [Point(x, y)]:\n"
+"        print(f\"A single point {x}, {y} is in the list.\")\n"
+"    case [Point(0, y1), Point(0, y2)]:\n"
+"        print(f\"Two points on the Y axis at {y1}, {y2} are in the list.\")\n"
+"    case _:\n"
+"        print(\"Something else is found in the list.\")"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:606
 msgid "Complex patterns and the wildcard"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:608
 msgid "To this point, the examples have used ``_`` alone in the last case statement. A wildcard can be used in more complex patterns, such as ``('error', code, _)``. For example::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:612
+msgid "match test_variable:\n"
+"    case ('warning', code, 40):\n"
+"        print(\"A warning has been received.\")\n"
+"    case ('error', code, _):\n"
+"        print(f\"An error {code} occurred.\")"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:618
@@ -444,6 +724,14 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:624
 msgid "We can add an ``if`` clause to a pattern, known as a \"guard\".  If the guard is false, ``match`` goes on to try the next case block.  Note that value capture happens before the guard is evaluated::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:628
+msgid "match point:\n"
+"    case Point(x, y) if x == y:\n"
+"        print(f\"The point is located on the diagonal Y=X at {x}.\")\n"
+"    case Point(x, y):\n"
+"        print(f\"Point is not on the diagonal.\")"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:635
@@ -470,6 +758,10 @@ msgstr ""
 msgid "Subpatterns may be captured using the ``as`` keyword::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:657
+msgid "case (Point(x1, y1), Point(x2, y2) as p2): ..."
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:659
 msgid "This binds x1, y1, x2, y2 like you would expect without the ``as`` clause, and p2 to the entire second item of the subject."
 msgstr ""
@@ -482,6 +774,23 @@ msgstr ""
 msgid "Named constants may be used in patterns.  These named constants must be dotted names to prevent the constant from being interpreted as a capture variable::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:669
+msgid "from enum import Enum\n"
+"class Color(Enum):\n"
+"    RED = 0\n"
+"    GREEN = 1\n"
+"    BLUE = 2\n"
+"\n"
+"color = Color.GREEN\n"
+"match color:\n"
+"    case Color.RED:\n"
+"        print(\"I see red!\")\n"
+"    case Color.GREEN:\n"
+"        print(\"Grass is green\")\n"
+"    case Color.BLUE:\n"
+"        print(\"I'm feeling the blues :(\")"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:684
 msgid "For the full specification see :pep:`634`.  Motivation and rationale are in :pep:`635`, and a longer tutorial is in :pep:`636`."
 msgstr ""
@@ -492,6 +801,12 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:693
 msgid "The default encoding of :class:`~io.TextIOWrapper` and :func:`open` is platform and locale dependent. Since UTF-8 is used on most Unix platforms, omitting ``encoding`` option when opening UTF-8 files (e.g. JSON, YAML, TOML, Markdown) is a very common bug. For example::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:698
+msgid "# BUG: \"rb\" mode or encoding=\"utf-8\" should be used.\n"
+"with open(\"data.json\") as f:\n"
+"    data = json.load(f)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:702
@@ -526,12 +841,27 @@ msgstr ""
 msgid "In previous versions of Python, to apply a type hint for functions accepting arguments of multiple types, :data:`typing.Union` was used::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:730
+msgid "def square(number: Union[int, float]) -> Union[int, float]:\n"
+"    return number ** 2"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:734
 msgid "Type hints can now be written in a more succinct manner::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:736
+msgid "def square(number: int | float) -> int | float:\n"
+"    return number ** 2"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:740
 msgid "This new syntax is also accepted as the second argument to :func:`isinstance` and :func:`issubclass`::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:743
+msgid ">>> isinstance(1, int | str)\n"
+"True"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:746
@@ -574,8 +904,18 @@ msgstr ""
 msgid ":pep:`484` introduced the concept of type aliases, only requiring them to be top-level unannotated assignments. This simplicity sometimes made it difficult for type checkers to distinguish between type aliases and ordinary assignments, especially when forward references or invalid types were involved. Compare::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:785
+msgid "StrCache = 'Cache[str]'  # a type alias\n"
+"LOG_PREFIX = 'LOG[DEBUG]'  # a module constant"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:788
 msgid "Now the :mod:`typing` module has a special value :data:`~typing.TypeAlias` which lets you declare type aliases more explicitly::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:791
+msgid "StrCache: TypeAlias = 'Cache[str]'  # a type alias\n"
+"LOG_PREFIX = 'LOG[DEBUG]'  # a module constant"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:794
@@ -802,6 +1142,15 @@ msgstr ""
 msgid "You can say that every field is keyword-only:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:1010
+msgid "from dataclasses import dataclass\n"
+"\n"
+"@dataclass(kw_only=True)\n"
+"class Birthday:\n"
+"    name: str\n"
+"    birthday: datetime.date"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:1019
 msgid "Both ``name`` and ``birthday`` are keyword-only parameters to the generated __init__ method."
 msgstr ""
@@ -810,12 +1159,33 @@ msgstr ""
 msgid "You can specify keyword-only on a per-field basis:"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:1024
+msgid "from dataclasses import dataclass, field\n"
+"\n"
+"@dataclass\n"
+"class Birthday:\n"
+"    name: str\n"
+"    birthday: datetime.date = field(kw_only=True)"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:1033
 msgid "Here only ``birthday`` is keyword-only.  If you set ``kw_only`` on individual fields, be aware that there are rules about re-ordering fields due to keyword-only fields needing to follow non-keyword-only fields.  See the full dataclasses documentation for details."
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1038
 msgid "You can also specify that all fields following a KW_ONLY marker are keyword-only.  This will probably be the most common usage:"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:1041
+msgid "from dataclasses import dataclass, KW_ONLY\n"
+"\n"
+"@dataclass\n"
+"class Point:\n"
+"    x: float\n"
+"    y: float\n"
+"    _: KW_ONLY\n"
+"    z: float = 0.0\n"
+"    t: float = 0.0"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1053
@@ -1241,6 +1611,15 @@ msgstr ""
 msgid "``Literal`` objects will now raise a :exc:`TypeError` exception during equality comparisons if any of their parameters are not :term:`hashable`. Note that declaring ``Literal`` with unhashable parameters will not throw an error::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:1472
+msgid ">>> from typing import Literal\n"
+">>> Literal[{0}]\n"
+">>> Literal[{0}] == Literal[{False}]\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: unhashable type: 'set'"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:1479
 msgid "(Contributed by Yurii Karabas in :issue:`42345`.)"
 msgstr ""
@@ -1601,8 +1980,18 @@ msgstr ""
 msgid "A coroutine that currently looks like this::"
 msgstr ""
 
+#: ../../whatsnew/3.10.rst:1915
+msgid "async def foo(loop):\n"
+"    await asyncio.sleep(1, loop=loop)"
+msgstr ""
+
 #: ../../whatsnew/3.10.rst:1918
 msgid "Should be replaced with this::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:1920
+msgid "async def foo():\n"
+"    await asyncio.sleep(1)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1923
@@ -1639,6 +2028,15 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1960
 msgid "To compile a file given a ``char *`` filename, explicitly open the file, read it and compile the result. One way to do this is using the :py:mod:`io` module with :c:func:`PyImport_ImportModule`, :c:func:`PyObject_CallMethod`, :c:func:`PyBytes_AsString` and :c:func:`Py_CompileString`, as sketched below. (Declarations and error handling are omitted.) ::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:1966
+msgid "io_module = Import_ImportModule(\"io\");\n"
+"fileobject = PyObject_CallMethod(io_module, \"open\", \"ss\", filename, \"rb\");\n"
+"source_bytes_object = PyObject_CallMethod(fileobject, \"read\", \"\");\n"
+"result = PyObject_CallMethod(fileobject, \"close\", \"\");\n"
+"source_buf = PyBytes_AsString(source_bytes_object);\n"
+"code = Py_CompileString(source_buf, filename, Py_file_input);"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:1973
@@ -1803,6 +2201,12 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:2155
 msgid "Since :c:func:`Py_REFCNT()` is changed to the inline static function, ``Py_REFCNT(obj) = new_refcnt`` must be replaced with ``Py_SET_REFCNT(obj, new_refcnt)``: see :c:func:`Py_SET_REFCNT()` (available since Python 3.9). For backward compatibility, this macro can be used::"
+msgstr ""
+
+#: ../../whatsnew/3.10.rst:2160
+msgid "#if PY_VERSION_HEX < 0x030900A4\n"
+"#  define Py_SET_REFCNT(obj, refcnt) ((Py_REFCNT(obj) = (refcnt)), (void)0)\n"
+"#endif"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:2164

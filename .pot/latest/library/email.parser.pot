@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,6 +187,11 @@ msgstr ""
 
 #: ../../library/email.parser.rst:283
 msgid "Here's an example of how you might use :func:`message_from_bytes` at an interactive Python prompt::"
+msgstr ""
+
+#: ../../library/email.parser.rst:286
+msgid ">>> import email\n"
+">>> msg = email.message_from_bytes(myBytes)  "
 msgstr ""
 
 #: ../../library/email.parser.rst:291

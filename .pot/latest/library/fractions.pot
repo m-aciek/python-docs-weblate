@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 02:26+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,39 @@ msgstr ""
 msgid "The first version requires that *numerator* and *denominator* are instances of :class:`numbers.Rational` and returns a new :class:`Fraction` instance with value ``numerator/denominator``. If *denominator* is ``0``, it raises a :exc:`ZeroDivisionError`. The second version requires that *other_fraction* is an instance of :class:`numbers.Rational` and returns a :class:`Fraction` instance with the same value.  The next two versions accept either a :class:`float` or a :class:`decimal.Decimal` instance, and return a :class:`Fraction` instance with exactly the same value.  Note that due to the usual issues with binary floating point (see :ref:`tut-fp-issues`), the argument to ``Fraction(1.1)`` is not exactly equal to 11/10, and so ``Fraction(1.1)`` does *not* return ``Fraction(11, 10)`` as one might expect. (But see the documentation for the :meth:`limit_denominator` method below.) The last version of the constructor expects a string or unicode instance. The usual form for this instance is::"
 msgstr ""
 
+#: ../../library/fractions.rst:41
+msgid "[sign] numerator ['/' denominator]"
+msgstr ""
+
 #: ../../library/fractions.rst:43
 msgid "where the optional ``sign`` may be either '+' or '-' and ``numerator`` and ``denominator`` (if present) are strings of decimal digits (underscores may be used to delimit digits as with integral literals in code).  In addition, any string that represents a finite value and is accepted by the :class:`float` constructor is also accepted by the :class:`Fraction` constructor.  In either form the input string may also have leading and/or trailing whitespace. Here are some examples::"
+msgstr ""
+
+#: ../../library/fractions.rst:52
+msgid ">>> from fractions import Fraction\n"
+">>> Fraction(16, -10)\n"
+"Fraction(-8, 5)\n"
+">>> Fraction(123)\n"
+"Fraction(123, 1)\n"
+">>> Fraction()\n"
+"Fraction(0, 1)\n"
+">>> Fraction('3/7')\n"
+"Fraction(3, 7)\n"
+">>> Fraction(' -3/7 ')\n"
+"Fraction(-3, 7)\n"
+">>> Fraction('1.414213 \\t\\n')\n"
+"Fraction(1414213, 1000000)\n"
+">>> Fraction('-.125')\n"
+"Fraction(-1, 8)\n"
+">>> Fraction('7e-6')\n"
+"Fraction(7, 1000000)\n"
+">>> Fraction(2.25)\n"
+"Fraction(9, 4)\n"
+">>> Fraction(1.1)\n"
+"Fraction(2476979795053773, 2251799813685248)\n"
+">>> from decimal import Decimal\n"
+">>> Fraction(Decimal('1.1'))\n"
+"Fraction(11, 10)"
 msgstr ""
 
 #: ../../library/fractions.rst:78
@@ -126,6 +157,19 @@ msgstr ""
 
 #: ../../library/fractions.rst:212
 msgid "Here are some examples::"
+msgstr ""
+
+#: ../../library/fractions.rst:214
+msgid ">>> from fractions import Fraction\n"
+">>> format(Fraction(1, 7), '.40g')\n"
+"'0.1428571428571428571428571428571428571429'\n"
+">>> format(Fraction('1234567.855'), '_.2f')\n"
+"'1_234_567.86'\n"
+">>> f\"{Fraction(355, 113):*>20.6e}\"\n"
+"'********3.141593e+00'\n"
+">>> old_price, new_price = 499, 672\n"
+">>> \"{:.2%} price increase\".format(Fraction(new_price, old_price) - 1)\n"
+"'34.67% price increase'"
 msgstr ""
 
 #: ../../library/fractions.rst:228

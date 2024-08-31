@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 09:19+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,12 +60,34 @@ msgstr ""
 msgid "To profile a function that takes a single argument, you can do::"
 msgstr ""
 
+#: ../../library/profile.rst:59
+msgid "import cProfile\n"
+"import re\n"
+"cProfile.run('re.compile(\"foo|bar\")')"
+msgstr ""
+
 #: ../../library/profile.rst:63
 msgid "(Use :mod:`profile` instead of :mod:`cProfile` if the latter is not available on your system.)"
 msgstr ""
 
 #: ../../library/profile.rst:66
 msgid "The above action would run :func:`re.compile` and print profile results like the following::"
+msgstr ""
+
+#: ../../library/profile.rst:69
+msgid "      214 function calls (207 primitive calls) in 0.002 seconds\n"
+"\n"
+"Ordered by: cumulative time\n"
+"\n"
+"ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n"
+"     1    0.000    0.000    0.002    0.002 {built-in method builtins.exec}\n"
+"     1    0.000    0.000    0.001    0.001 <string>:1(<module>)\n"
+"     1    0.000    0.000    0.001    0.001 __init__.py:250(compile)\n"
+"     1    0.000    0.000    0.001    0.001 __init__.py:289(_compile)\n"
+"     1    0.000    0.000    0.000    0.000 _compiler.py:759(compile)\n"
+"     1    0.000    0.000    0.000    0.000 _parser.py:937(parse)\n"
+"     1    0.000    0.000    0.000    0.000 _compiler.py:598(_code)\n"
+"     1    0.000    0.000    0.000    0.000 _parser.py:435(_parse_sub)"
 msgstr ""
 
 #: ../../library/profile.rst:83
@@ -125,12 +147,22 @@ msgstr ""
 msgid "Instead of printing the output at the end of the profile run, you can save the results to a file by specifying a filename to the :func:`run` function::"
 msgstr ""
 
+#: ../../library/profile.rst:117
+msgid "import cProfile\n"
+"import re\n"
+"cProfile.run('re.compile(\"foo|bar\")', 'restats')"
+msgstr ""
+
 #: ../../library/profile.rst:121
 msgid "The :class:`pstats.Stats` class reads profile results from a file and formats them in various ways."
 msgstr ""
 
 #: ../../library/profile.rst:126
 msgid "The files :mod:`cProfile` and :mod:`profile` can also be invoked as a script to profile another script.  For example::"
+msgstr ""
+
+#: ../../library/profile.rst:129
+msgid "python -m cProfile [-o output_file] [-s sort_order] (-m module | myscript.py)"
 msgstr ""
 
 #: ../../library/profile.rst:131
@@ -157,12 +189,28 @@ msgstr ""
 msgid "The :mod:`pstats` module's :class:`~pstats.Stats` class has a variety of methods for manipulating and printing the data saved into a profile results file::"
 msgstr ""
 
+#: ../../library/profile.rst:147
+msgid "import pstats\n"
+"from pstats import SortKey\n"
+"p = pstats.Stats('restats')\n"
+"p.strip_dirs().sort_stats(-1).print_stats()"
+msgstr ""
+
 #: ../../library/profile.rst:152
 msgid "The :meth:`~pstats.Stats.strip_dirs` method removed the extraneous path from all the module names. The :meth:`~pstats.Stats.sort_stats` method sorted all the entries according to the standard module/line/name string that is printed. The :meth:`~pstats.Stats.print_stats` method printed out all the statistics.  You might try the following sort calls::"
 msgstr ""
 
+#: ../../library/profile.rst:158
+msgid "p.sort_stats(SortKey.NAME)\n"
+"p.print_stats()"
+msgstr ""
+
 #: ../../library/profile.rst:161
 msgid "The first call will actually sort the list by function name, and the second call will print out the statistics.  The following are some interesting calls to experiment with::"
+msgstr ""
+
+#: ../../library/profile.rst:165
+msgid "p.sort_stats(SortKey.CUMULATIVE).print_stats(10)"
 msgstr ""
 
 #: ../../library/profile.rst:167
@@ -173,6 +221,10 @@ msgstr ""
 msgid "If you were looking to see what functions were looping a lot, and taking a lot of time, you would do::"
 msgstr ""
 
+#: ../../library/profile.rst:174
+msgid "p.sort_stats(SortKey.TIME).print_stats(10)"
+msgstr ""
+
 #: ../../library/profile.rst:176
 msgid "to sort according to time spent within each function, and then print the statistics for the top ten functions."
 msgstr ""
@@ -181,8 +233,16 @@ msgstr ""
 msgid "You might also try::"
 msgstr ""
 
+#: ../../library/profile.rst:181
+msgid "p.sort_stats(SortKey.FILENAME).print_stats('__init__')"
+msgstr ""
+
 #: ../../library/profile.rst:183
 msgid "This will sort all the statistics by file name, and then print out statistics for only the class init methods (since they are spelled with ``__init__`` in them).  As one final example, you could try::"
+msgstr ""
+
+#: ../../library/profile.rst:187
+msgid "p.sort_stats(SortKey.TIME, SortKey.CUMULATIVE).print_stats(.5, 'init')"
 msgstr ""
 
 #: ../../library/profile.rst:189
@@ -193,12 +253,21 @@ msgstr ""
 msgid "If you wondered what functions called the above functions, you could now (``p`` is still sorted according to the last criteria) do::"
 msgstr ""
 
+#: ../../library/profile.rst:197
+msgid "p.print_callers(.5, 'init')"
+msgstr ""
+
 #: ../../library/profile.rst:199
 msgid "and you would get a list of callers for each of the listed functions."
 msgstr ""
 
 #: ../../library/profile.rst:201
 msgid "If you want more functionality, you're going to have to read the manual, or guess what the following functions do::"
+msgstr ""
+
+#: ../../library/profile.rst:204
+msgid "p.print_callees()\n"
+"p.add('restats')"
 msgstr ""
 
 #: ../../library/profile.rst:207
@@ -217,12 +286,20 @@ msgstr ""
 msgid "This function takes a single argument that can be passed to the :func:`exec` function, and an optional file name.  In all cases this routine executes::"
 msgstr ""
 
+#: ../../library/profile.rst:226
+msgid "exec(command, __main__.__dict__, __main__.__dict__)"
+msgstr ""
+
 #: ../../library/profile.rst:228
 msgid "and gathers profiling statistics from the execution. If no file name is present, then this function automatically creates a :class:`~pstats.Stats` instance and prints a simple profiling report. If the sort value is specified, it is passed to this :class:`~pstats.Stats` instance to control how the results are sorted."
 msgstr ""
 
 #: ../../library/profile.rst:236
 msgid "This function is similar to :func:`run`, with added arguments to supply the globals and locals dictionaries for the *command* string. This routine executes::"
+msgstr ""
+
+#: ../../library/profile.rst:240
+msgid "exec(command, globals, locals)"
 msgstr ""
 
 #: ../../library/profile.rst:242
@@ -241,8 +318,31 @@ msgstr ""
 msgid "Directly using the :class:`Profile` class allows formatting profile results without writing the profile data to a file::"
 msgstr ""
 
+#: ../../library/profile.rst:259
+msgid "import cProfile, pstats, io\n"
+"from pstats import SortKey\n"
+"pr = cProfile.Profile()\n"
+"pr.enable()\n"
+"# ... do something ...\n"
+"pr.disable()\n"
+"s = io.StringIO()\n"
+"sortby = SortKey.CUMULATIVE\n"
+"ps = pstats.Stats(pr, stream=s).sort_stats(sortby)\n"
+"ps.print_stats()\n"
+"print(s.getvalue())"
+msgstr ""
+
 #: ../../library/profile.rst:271
 msgid "The :class:`Profile` class can also be used as a context manager (supported only in :mod:`cProfile` module. see :ref:`typecontextmanager`)::"
+msgstr ""
+
+#: ../../library/profile.rst:274
+msgid "import cProfile\n"
+"\n"
+"with cProfile.Profile() as pr:\n"
+"    # ... do something ...\n"
+"\n"
+"    pr.print_stats()"
 msgstr ""
 
 #: ../../library/profile.rst:281
@@ -518,8 +618,16 @@ msgstr ""
 msgid "The arguments provided (if any) can be used to limit the list down to the significant entries.  Initially, the list is taken to be the complete set of profiled functions.  Each restriction is either an integer (to select a count of lines), or a decimal fraction between 0.0 and 1.0 inclusive (to select a percentage of lines), or a string that will interpreted as a regular expression (to pattern match the standard name that is printed). If several restrictions are provided, then they are applied sequentially. For example::"
 msgstr ""
 
+#: ../../library/profile.rst:491
+msgid "print_stats(.1, 'foo:')"
+msgstr ""
+
 #: ../../library/profile.rst:493
 msgid "would first limit the printing to first 10% of list, and then only print functions that were part of filename :file:`.\\*foo:`.  In contrast, the command::"
+msgstr ""
+
+#: ../../library/profile.rst:497
+msgid "print_stats('foo:', .1)"
 msgstr ""
 
 #: ../../library/profile.rst:499
@@ -590,6 +698,13 @@ msgstr ""
 msgid "The profiler of the :mod:`profile` module subtracts a constant from each event handling time to compensate for the overhead of calling the time function, and socking away the results.  By default, the constant is 0. The following procedure can be used to obtain a better constant for a given platform (see :ref:`profile-limitations`). ::"
 msgstr ""
 
+#: ../../library/profile.rst:620
+msgid "import profile\n"
+"pr = profile.Profile()\n"
+"for i in range(5):\n"
+"    print(pr.calibrate(10000))"
+msgstr ""
+
 #: ../../library/profile.rst:625
 msgid "The method executes the number of Python calls given by the argument, directly and again under the profiler, measuring the time for both. It then computes the hidden overhead per profiler event, and returns that as a float.  For example, on a 1.8Ghz Intel Core i5 running macOS, and using Python's time.process_time() as the timer, the magical number is about 4.04e-6."
 msgstr ""
@@ -602,6 +717,20 @@ msgstr ""
 msgid "When you have a consistent answer, there are three ways you can use it::"
 msgstr ""
 
+#: ../../library/profile.rst:637
+msgid "import profile\n"
+"\n"
+"# 1. Apply computed bias to all Profile instances created hereafter.\n"
+"profile.Profile.bias = your_computed_bias\n"
+"\n"
+"# 2. Apply computed bias to a specific Profile instance.\n"
+"pr = profile.Profile()\n"
+"pr.bias = your_computed_bias\n"
+"\n"
+"# 3. Specify computed bias in instance constructor.\n"
+"pr = profile.Profile(bias=your_computed_bias)"
+msgstr ""
+
 #: ../../library/profile.rst:649
 msgid "If you have a choice, you are better off choosing a smaller constant, and then your results will \"less often\" show up as negative in profile statistics."
 msgstr ""
@@ -612,6 +741,10 @@ msgstr ""
 
 #: ../../library/profile.rst:657
 msgid "If you want to change how current time is determined (for example, to force use of wall-clock time or elapsed process time), pass the timing function you want to the :class:`Profile` class constructor::"
+msgstr ""
+
+#: ../../library/profile.rst:661
+msgid "pr = profile.Profile(your_time_func)"
 msgstr ""
 
 #: ../../library/profile.rst:663
@@ -636,6 +769,10 @@ msgstr ""
 
 #: ../../library/profile.rst:684
 msgid "``your_time_func`` should return a single number.  If it returns integers, you can also invoke the class constructor with a second argument specifying the real duration of one unit of time.  For example, if ``your_integer_time_func`` returns times measured in thousands of seconds, you would construct the :class:`Profile` instance as follows::"
+msgstr ""
+
+#: ../../library/profile.rst:690
+msgid "pr = cProfile.Profile(your_integer_time_func, 0.001)"
 msgstr ""
 
 #: ../../library/profile.rst:692

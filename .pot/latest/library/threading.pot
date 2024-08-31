@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-02 12:36+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,6 +225,11 @@ msgstr ""
 msgid "Thread-local data is data whose values are thread specific.  To manage thread-local data, just create an instance of :class:`local` (or a subclass) and store attributes on it::"
 msgstr ""
 
+#: ../../library/threading.rst:264
+msgid "mydata = threading.local()\n"
+"mydata.x = 1"
+msgstr ""
+
 #: ../../library/threading.rst:267
 msgid "The instance's values will be different for separate threads."
 msgstr ""
@@ -347,6 +352,16 @@ msgstr ""
 
 #: ../../library/threading.rst:392
 msgid "Example::"
+msgstr ""
+
+#: ../../library/threading.rst:394
+msgid ">>> from threading import Thread\n"
+">>> t = Thread(target=print, args=[1])\n"
+">>> t.run()\n"
+"1\n"
+">>> t = Thread(target=print, args=(1,))\n"
+">>> t.run()\n"
+"1"
 msgstr ""
 
 #: ../../library/threading.rst:406
@@ -606,8 +621,28 @@ msgstr ""
 msgid "The typical programming style using condition variables uses the lock to synchronize access to some shared state; threads that are interested in a particular change of state call :meth:`~Condition.wait` repeatedly until they see the desired state, while threads that modify the state call :meth:`~Condition.notify` or :meth:`~Condition.notify_all` when they change the state in such a way that it could possibly be a desired state for one of the waiters.  For example, the following code is a generic producer-consumer situation with unlimited buffer capacity::"
 msgstr ""
 
+#: ../../library/threading.rst:730
+msgid "# Consume one item\n"
+"with cv:\n"
+"    while not an_item_is_available():\n"
+"        cv.wait()\n"
+"    get_an_available_item()\n"
+"\n"
+"# Produce one item\n"
+"with cv:\n"
+"    make_an_item_available()\n"
+"    cv.notify()"
+msgstr ""
+
 #: ../../library/threading.rst:741
 msgid "The ``while`` loop checking for the application's condition is necessary because :meth:`~Condition.wait` can return after an arbitrary long time, and the condition which prompted the :meth:`~Condition.notify` call may no longer hold true.  This is inherent to multi-threaded programming.  The :meth:`~Condition.wait_for` method can be used to automate the condition checking, and eases the computation of timeouts::"
+msgstr ""
+
+#: ../../library/threading.rst:748
+msgid "# Consume an item\n"
+"with cv:\n"
+"    cv.wait_for(an_item_is_available)\n"
+"    get_an_available_item()"
 msgstr ""
 
 #: ../../library/threading.rst:753
@@ -673,6 +708,11 @@ msgstr ""
 
 #: ../../library/threading.rst:821
 msgid "Ignoring the timeout feature, calling this method is roughly equivalent to writing::"
+msgstr ""
+
+#: ../../library/threading.rst:824
+msgid "while not predicate():\n"
+"    cv.wait()"
 msgstr ""
 
 #: ../../library/threading.rst:827
@@ -771,8 +811,23 @@ msgstr ""
 msgid "Semaphores are often used to guard resources with limited capacity, for example, a database server.  In any situation where the size of the resource is fixed, you should use a bounded semaphore.  Before spawning any worker threads, your main thread would initialize the semaphore::"
 msgstr ""
 
+#: ../../library/threading.rst:952
+msgid "maxconnections = 5\n"
+"# ...\n"
+"pool_sema = BoundedSemaphore(value=maxconnections)"
+msgstr ""
+
 #: ../../library/threading.rst:956
 msgid "Once spawned, worker threads call the semaphore's acquire and release methods when they need to connect to the server::"
+msgstr ""
+
+#: ../../library/threading.rst:959
+msgid "with pool_sema:\n"
+"    conn = connectdb()\n"
+"    try:\n"
+"        # ... use connection ...\n"
+"    finally:\n"
+"        conn.close()"
 msgstr ""
 
 #: ../../library/threading.rst:966
@@ -835,6 +890,14 @@ msgstr ""
 msgid "For example::"
 msgstr ""
 
+#: ../../library/threading.rst:1044
+msgid "def hello():\n"
+"    print(\"hello, world\")\n"
+"\n"
+"t = Timer(30.0, hello)\n"
+"t.start()  # after 30 seconds, \"hello, world\" will be printed"
+msgstr ""
+
 #: ../../library/threading.rst:1053
 msgid "Create a timer that will run *function* with arguments *args* and  keyword arguments *kwargs*, after *interval* seconds have passed. If *args* is ``None`` (the default) then an empty list will be used. If *kwargs* is ``None`` (the default) then an empty dict will be used."
 msgstr ""
@@ -859,6 +922,23 @@ msgstr ""
 msgid "As an example, here is a simple way to synchronize a client and server thread::"
 msgstr ""
 
+#: ../../library/threading.rst:1082
+msgid "b = Barrier(2, timeout=5)\n"
+"\n"
+"def server():\n"
+"    start_server()\n"
+"    b.wait()\n"
+"    while True:\n"
+"        connection = accept_connection()\n"
+"        process_server_connection(connection)\n"
+"\n"
+"def client():\n"
+"    b.wait()\n"
+"    while True:\n"
+"        connection = make_connection()\n"
+"        process_client_connection(connection)"
+msgstr ""
+
 #: ../../library/threading.rst:1100
 msgid "Create a barrier object for *parties* number of threads.  An *action*, when provided, is a callable to be called by one of the threads when they are released.  *timeout* is the default timeout value if none is specified for the :meth:`wait` method."
 msgstr ""
@@ -869,6 +949,13 @@ msgstr ""
 
 #: ../../library/threading.rst:1112
 msgid "The return value is an integer in the range 0 to *parties* -- 1, different for each thread.  This can be used to select a thread to do some special housekeeping, e.g.::"
+msgstr ""
+
+#: ../../library/threading.rst:1116
+msgid "i = barrier.wait()\n"
+"if i == 0:\n"
+"    # Only one thread needs to print this\n"
+"    print(\"passed the barrier\")"
 msgstr ""
 
 #: ../../library/threading.rst:1121
@@ -923,8 +1010,21 @@ msgstr ""
 msgid "All of the objects provided by this module that have ``acquire`` and ``release`` methods can be used as context managers for a :keyword:`with` statement.  The ``acquire`` method will be called when the block is entered, and ``release`` will be called when the block is exited.  Hence, the following snippet::"
 msgstr ""
 
+#: ../../library/threading.rst:1180
+msgid "with some_lock:\n"
+"    # do something..."
+msgstr ""
+
 #: ../../library/threading.rst:1183
 msgid "is equivalent to::"
+msgstr ""
+
+#: ../../library/threading.rst:1185
+msgid "some_lock.acquire()\n"
+"try:\n"
+"    # do something...\n"
+"finally:\n"
+"    some_lock.release()"
 msgstr ""
 
 #: ../../library/threading.rst:1191

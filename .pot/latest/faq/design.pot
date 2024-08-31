@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 09:19+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,13 @@ msgstr ""
 
 #: ../../faq/design.rst:17
 msgid "Since there are no begin/end brackets there cannot be a disagreement between grouping perceived by the parser and the human reader.  Occasionally C programmers will encounter a fragment of code like this::"
+msgstr ""
+
+#: ../../faq/design.rst:21
+msgid "if (x <= y)\n"
+"        x++;\n"
+"        y--;\n"
+"z++;"
 msgstr ""
 
 #: ../../faq/design.rst:26
@@ -64,6 +71,11 @@ msgstr ""
 msgid "Users are often surprised by results like this::"
 msgstr ""
 
+#: ../../faq/design.rst:58
+msgid ">>> 1.2 - 1.0\n"
+"0.19999999999999996"
+msgstr ""
+
 #: ../../faq/design.rst:61
 msgid "and think it is a bug in Python.  It's not.  This has little to do with Python, and much more to do with how the underlying platform handles floating-point numbers."
 msgstr ""
@@ -76,12 +88,24 @@ msgstr ""
 msgid "Many numbers that can be written easily in decimal notation cannot be expressed exactly in binary floating point.  For example, after::"
 msgstr ""
 
+#: ../../faq/design.rst:75
+msgid ">>> x = 1.2"
+msgstr ""
+
 #: ../../faq/design.rst:77
 msgid "the value stored for ``x`` is a (very good) approximation to the decimal value ``1.2``, but is not exactly equal to it.  On a typical machine, the actual stored value is::"
 msgstr ""
 
+#: ../../faq/design.rst:81
+msgid "1.0011001100110011001100110011001100110011001100110011 (binary)"
+msgstr ""
+
 #: ../../faq/design.rst:83
 msgid "which is exactly::"
+msgstr ""
+
+#: ../../faq/design.rst:85
+msgid "1.1999999999999999555910790149937383830547332763671875 (decimal)"
 msgstr ""
 
 #: ../../faq/design.rst:87
@@ -140,6 +164,11 @@ msgstr ""
 msgid "Assignment expressions using the walrus operator ``:=`` assign a variable in an expression::"
 msgstr ""
 
+#: ../../faq/design.rst:161
+msgid "while chunk := fp.read(200):\n"
+"   print(chunk)"
+msgstr ""
+
 #: ../../faq/design.rst:164
 msgid "See :pep:`572` for more information."
 msgstr ""
@@ -172,8 +201,16 @@ msgstr ""
 msgid "Strings became much more like other standard types starting in Python 1.6, when methods were added which give the same functionality that has always been available using the functions of the string module.  Most of these new methods have been widely accepted, but the one which appears to make some programmers feel uncomfortable is::"
 msgstr ""
 
+#: ../../faq/design.rst:201
+msgid "\", \".join(['1', '2', '4', '8', '16'])"
+msgstr ""
+
 #: ../../faq/design.rst:203
 msgid "which gives the result::"
+msgstr ""
+
+#: ../../faq/design.rst:205
+msgid "\"1, 2, 4, 8, 16\""
 msgstr ""
 
 #: ../../faq/design.rst:207
@@ -186,6 +223,10 @@ msgstr ""
 
 #: ../../faq/design.rst:215
 msgid "The second objection is typically cast as: \"I am really telling a sequence to join its members together with a string constant\".  Sadly, you aren't.  For some reason there seems to be much less difficulty with having :meth:`~str.split` as a string method, since in that case it is easy to see that ::"
+msgstr ""
+
+#: ../../faq/design.rst:220
+msgid "\"1, 2, 4, 8, 16\".split(\", \")"
 msgstr ""
 
 #: ../../faq/design.rst:222
@@ -204,8 +245,23 @@ msgstr ""
 msgid "A :keyword:`try`/:keyword:`except` block is extremely efficient if no exceptions are raised.  Actually catching an exception is expensive.  In versions of Python prior to 2.0 it was common to use this idiom::"
 msgstr ""
 
+#: ../../faq/design.rst:240
+msgid "try:\n"
+"    value = mydict[key]\n"
+"except KeyError:\n"
+"    mydict[key] = getvalue(key)\n"
+"    value = mydict[key]"
+msgstr ""
+
 #: ../../faq/design.rst:246
 msgid "This only made sense when you expected the dict to have the key almost all the time.  If that wasn't the case, you coded it like this::"
+msgstr ""
+
+#: ../../faq/design.rst:249
+msgid "if key in mydict:\n"
+"    value = mydict[key]\n"
+"else:\n"
+"    value = mydict[key] = getvalue(key)"
 msgstr ""
 
 #: ../../faq/design.rst:254
@@ -224,8 +280,28 @@ msgstr ""
 msgid "For cases where you need to choose from a very large number of possibilities, you can create a dictionary mapping case values to functions to call.  For example::"
 msgstr ""
 
+#: ../../faq/design.rst:272
+msgid "functions = {'a': function_1,\n"
+"             'b': function_2,\n"
+"             'c': self.method_1}\n"
+"\n"
+"func = functions[value]\n"
+"func()"
+msgstr ""
+
 #: ../../faq/design.rst:279
 msgid "For calling methods on objects, you can simplify yet further by using the :func:`getattr` built-in to retrieve methods with a particular name::"
+msgstr ""
+
+#: ../../faq/design.rst:282
+msgid "class MyVisitor:\n"
+"    def visit_a(self):\n"
+"        ...\n"
+"\n"
+"    def dispatch(self, value):\n"
+"        method_name = 'visit_' + str(value)\n"
+"        method = getattr(self, method_name)\n"
+"        method()"
 msgstr ""
 
 #: ../../faq/design.rst:291
@@ -284,12 +360,24 @@ msgstr ""
 msgid "In some Python implementations, the following code (which is fine in CPython) will probably run out of file descriptors::"
 msgstr ""
 
+#: ../../faq/design.rst:356
+msgid "for file in very_long_list_of_files:\n"
+"    f = open(file)\n"
+"    c = f.read(1)"
+msgstr ""
+
 #: ../../faq/design.rst:360
 msgid "Indeed, using CPython's reference counting and destructor scheme, each new assignment to ``f`` closes the previous file.  With a traditional GC, however, those file objects will only get collected (and closed) at varying and possibly long intervals."
 msgstr ""
 
 #: ../../faq/design.rst:365
 msgid "If you want to write code that will work with any Python implementation, you should explicitly close the file or use the :keyword:`with` statement; this will work regardless of memory management scheme::"
+msgstr ""
+
+#: ../../faq/design.rst:369
+msgid "for file in very_long_list_of_files:\n"
+"    with open(file) as f:\n"
+"        c = f.read(1)"
 msgstr ""
 
 #: ../../faq/design.rst:375
@@ -380,6 +468,11 @@ msgstr ""
 msgid "Hash lists by their address (object ID).  This doesn't work because if you construct a new list with the same value it won't be found; e.g.::"
 msgstr ""
 
+#: ../../faq/design.rst:483
+msgid "mydict = {[1, 2]: '12'}\n"
+"print(mydict[[1, 2]])"
+msgstr ""
+
 #: ../../faq/design.rst:486
 msgid "would raise a :exc:`KeyError` exception because the id of the ``[1, 2]`` used in the second line differs from that in the first line.  In other words, dictionary keys should be compared using ``==``, not using :keyword:`is`."
 msgstr ""
@@ -398,6 +491,25 @@ msgstr ""
 
 #: ../../faq/design.rst:505
 msgid "There is a trick to get around this if you need to, but use it at your own risk: You can wrap a mutable structure inside a class instance which has both a :meth:`~object.__eq__` and a :meth:`~object.__hash__` method. You must then make sure that the hash value for all such wrapper objects that reside in a dictionary (or other hash based structure), remain fixed while the object is in the dictionary (or other structure). ::"
+msgstr ""
+
+#: ../../faq/design.rst:513
+msgid "class ListWrapper:\n"
+"    def __init__(self, the_list):\n"
+"        self.the_list = the_list\n"
+"\n"
+"    def __eq__(self, other):\n"
+"        return self.the_list == other.the_list\n"
+"\n"
+"    def __hash__(self):\n"
+"        l = self.the_list\n"
+"        result = 98767 - len(l)*555\n"
+"        for i, el in enumerate(l):\n"
+"            try:\n"
+"                result = result + (hash(el) % 9999999) * 1001 + i\n"
+"            except Exception:\n"
+"                result = (result % 7777777) + i * 333\n"
+"        return result"
 msgstr ""
 
 #: ../../faq/design.rst:530
@@ -422,6 +534,11 @@ msgstr ""
 
 #: ../../faq/design.rst:554
 msgid "If you want to return a new list, use the built-in :func:`sorted` function instead.  This function creates a new list from a provided iterable, sorts it and returns it.  For example, here's how to iterate over the keys of a dictionary in sorted order::"
+msgstr ""
+
+#: ../../faq/design.rst:559
+msgid "for key in sorted(mydict):\n"
+"    ...  # do whatever with mydict[key]..."
 msgstr ""
 
 #: ../../faq/design.rst:564
@@ -464,6 +581,18 @@ msgstr ""
 msgid "One can also use exceptions to provide a \"structured goto\" that works even across function calls.  Many feel that exceptions can conveniently emulate all reasonable uses of the ``go`` or ``goto`` constructs of C, Fortran, and other languages.  For example::"
 msgstr ""
 
+#: ../../faq/design.rst:620
+msgid "class label(Exception): pass  # declare a label\n"
+"\n"
+"try:\n"
+"    ...\n"
+"    if condition: raise label()  # goto label\n"
+"    ...\n"
+"except label:  # where to goto\n"
+"    pass\n"
+"..."
+msgstr ""
+
 #: ../../faq/design.rst:630
 msgid "This doesn't allow you to jump into the middle of a loop, but that's usually considered an abuse of ``goto`` anyway.  Use sparingly."
 msgstr ""
@@ -484,8 +613,18 @@ msgstr ""
 msgid "If you're trying to build Windows pathnames, note that all Windows system calls accept forward slashes too::"
 msgstr ""
 
+#: ../../faq/design.rst:651
+msgid "f = open(\"/mydir/file.txt\")  # works fine!"
+msgstr ""
+
 #: ../../faq/design.rst:653
 msgid "If you're trying to build a pathname for a DOS command, try e.g. one of ::"
+msgstr ""
+
+#: ../../faq/design.rst:655
+msgid "dir = r\"\\this\\is\\my\\dos\\dir\" \"\\\\\"\n"
+"dir = r\"\\this\\is\\my\\dos\\dir\\ \"[:-1]\n"
+"dir = \"\\\\this\\\\is\\\\my\\\\dos\\\\dir\\\\\""
 msgstr ""
 
 #: ../../faq/design.rst:661
@@ -494,6 +633,12 @@ msgstr ""
 
 #: ../../faq/design.rst:663
 msgid "Python has a :keyword:`with` statement that wraps the execution of a block, calling code on the entrance and exit from the block.  Some languages have a construct that looks like this::"
+msgstr ""
+
+#: ../../faq/design.rst:667
+msgid "with obj:\n"
+"    a = 1               # equivalent to obj.a = 1\n"
+"    total = total + 1   # obj.total = obj.total + 1"
 msgstr ""
 
 #: ../../faq/design.rst:671
@@ -512,6 +657,12 @@ msgstr ""
 msgid "For instance, take the following incomplete snippet::"
 msgstr ""
 
+#: ../../faq/design.rst:686
+msgid "def foo(a):\n"
+"    with a:\n"
+"        print(x)"
+msgstr ""
+
 #: ../../faq/design.rst:690
 msgid "The snippet assumes that ``a`` must have a member attribute called ``x``. However, there is nothing in Python that tells the interpreter this. What should happen if ``a`` is, let us say, an integer?  If there is a global variable named ``x``, will it be used inside the :keyword:`with` block?  As you see, the dynamic nature of Python makes such choices much harder."
 msgstr ""
@@ -520,8 +671,21 @@ msgstr ""
 msgid "The primary benefit of :keyword:`with` and similar language features (reduction of code volume) can, however, easily be achieved in Python by assignment.  Instead of::"
 msgstr ""
 
+#: ../../faq/design.rst:699
+msgid "function(args).mydict[index][index].a = 21\n"
+"function(args).mydict[index][index].b = 42\n"
+"function(args).mydict[index][index].c = 63"
+msgstr ""
+
 #: ../../faq/design.rst:703
 msgid "write this::"
+msgstr ""
+
+#: ../../faq/design.rst:705
+msgid "ref = function(args).mydict[index][index]\n"
+"ref.a = 21\n"
+"ref.b = 42\n"
+"ref.c = 63"
 msgstr ""
 
 #: ../../faq/design.rst:710
@@ -548,8 +712,18 @@ msgstr ""
 msgid "The colon is required primarily to enhance readability (one of the results of the experimental ABC language).  Consider this::"
 msgstr ""
 
+#: ../../faq/design.rst:735
+msgid "if a == b\n"
+"    print(a)"
+msgstr ""
+
 #: ../../faq/design.rst:738
 msgid "versus ::"
+msgstr ""
+
+#: ../../faq/design.rst:740
+msgid "if a == b:\n"
+"    print(a)"
 msgstr ""
 
 #: ../../faq/design.rst:743
@@ -568,6 +742,15 @@ msgstr ""
 msgid "Python lets you add a trailing comma at the end of lists, tuples, and dictionaries::"
 msgstr ""
 
+#: ../../faq/design.rst:757
+msgid "[1, 2, 3,]\n"
+"('a', 'b', 'c',)\n"
+"d = {\n"
+"    \"A\": [1, 5],\n"
+"    \"B\": [6, 7],  # last trailing comma is optional but good style\n"
+"}"
+msgstr ""
+
 #: ../../faq/design.rst:765
 msgid "There are several reasons to allow this."
 msgstr ""
@@ -578,6 +761,15 @@ msgstr ""
 
 #: ../../faq/design.rst:772
 msgid "Accidentally omitting the comma can lead to errors that are hard to diagnose. For example::"
+msgstr ""
+
+#: ../../faq/design.rst:775
+msgid "x = [\n"
+"  \"fee\",\n"
+"  \"fie\"\n"
+"  \"foo\",\n"
+"  \"fum\"\n"
+"]"
 msgstr ""
 
 #: ../../faq/design.rst:782

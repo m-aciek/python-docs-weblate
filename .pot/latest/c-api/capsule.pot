@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,10 @@ msgstr ""
 
 #: ../../c-api/capsule.rst:27
 msgid "The type of a destructor callback for a capsule.  Defined as::"
+msgstr ""
+
+#: ../../c-api/capsule.rst:29
+msgid "typedef void (*PyCapsule_Destructor)(PyObject *);"
 msgstr ""
 
 #: ../../c-api/capsule.rst:31

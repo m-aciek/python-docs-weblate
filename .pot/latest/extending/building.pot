@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,15 @@ msgstr ""
 
 #: ../../extending/building.rst:25
 msgid "For modules with ASCII-only names, the function must be named ``PyInit_<modulename>``, with ``<modulename>`` replaced by the name of the module. When using :ref:`multi-phase-initialization`, non-ASCII module names are allowed. In this case, the initialization function name is ``PyInitU_<modulename>``, with ``<modulename>`` encoded using Python's *punycode* encoding with hyphens replaced by underscores. In Python::"
+msgstr ""
+
+#: ../../extending/building.rst:32
+msgid "def initfunc_name(name):\n"
+"    try:\n"
+"        suffix = b'_' + name.encode('ascii')\n"
+"    except UnicodeEncodeError:\n"
+"        suffix = b'U_' + name.encode('punycode').replace(b'-', b'_')\n"
+"    return b'PyInit' + suffix"
 msgstr ""
 
 #: ../../extending/building.rst:39

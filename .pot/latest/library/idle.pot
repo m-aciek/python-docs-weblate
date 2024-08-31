@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 19:36+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -888,6 +888,20 @@ msgstr ""
 msgid "Command line usage"
 msgstr ""
 
+#: ../../library/idle.rst:660
+msgid "idle.py [-c command] [-d] [-e] [-h] [-i] [-r file] [-s] [-t title] [-] [arg] ...\n"
+"\n"
+"-c command  run command in the shell window\n"
+"-d          enable debugger and open shell window\n"
+"-e          open editor window\n"
+"-h          print help message with legal combinations and exit\n"
+"-i          open shell window\n"
+"-r file     run file in shell window\n"
+"-s          run $IDLESTARTUP or $PYTHONSTARTUP first, in shell window\n"
+"-t title    set title of shell window\n"
+"-           run stdin in shell (- must be last option before args)"
+msgstr ""
+
 #: ../../library/idle.rst:674
 msgid "If there are arguments:"
 msgstr ""
@@ -990,6 +1004,16 @@ msgstr ""
 
 #: ../../library/idle.rst:813
 msgid "A Tk Text widget, and hence IDLE's Shell, displays characters (codepoints) in the BMP (Basic Multilingual Plane) subset of Unicode.  Which characters are displayed with a proper glyph and which with a replacement box depends on the operating system and installed fonts.  Tab characters cause the following text to begin after the next tab stop. (They occur every 8 'characters').  Newline characters cause following text to appear on a new line.  Other control characters are ignored or displayed as a space, box, or something else, depending on the operating system and font.  (Moving the text cursor through such output with arrow keys may exhibit some surprising spacing behavior.) ::"
+msgstr ""
+
+#: ../../library/idle.rst:823
+msgid ">>> s = 'a\\tb\\a<\\x02><\\r>\\bc\\nd'  # Enter 22 chars.\n"
+">>> len(s)\n"
+"14\n"
+">>> s  # Display repr(s)\n"
+"'a\\tb\\x07<\\x02><\\r>\\x08c\\nd'\n"
+">>> print(s, end='')  # Display s as is.\n"
+"# Result varies by OS and font.  Try it."
 msgstr ""
 
 #: ../../library/idle.rst:831

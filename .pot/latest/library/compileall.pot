@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-30 17:19+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -257,6 +257,20 @@ msgstr ""
 
 #: ../../library/compileall.rst:323
 msgid "To force a recompile of all the :file:`.py` files in the :file:`Lib/` subdirectory and all its subdirectories::"
+msgstr ""
+
+#: ../../library/compileall.rst:326
+msgid "import compileall\n"
+"\n"
+"compileall.compile_dir('Lib/', force=True)\n"
+"\n"
+"# Perform same compilation, excluding files in .svn directories.\n"
+"import re\n"
+"compileall.compile_dir('Lib/', rx=re.compile(r'[/\\\\][.]svn'), force=True)\n"
+"\n"
+"# pathlib.Path objects can also be used.\n"
+"import pathlib\n"
+"compileall.compile_dir(pathlib.Path('Lib/'), force=True)"
 msgstr ""
 
 #: ../../library/compileall.rst:340

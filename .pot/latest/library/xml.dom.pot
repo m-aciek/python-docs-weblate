@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -937,6 +937,11 @@ msgstr ""
 
 #: ../../library/xml.dom.rst:1001
 msgid "The mapping from OMG IDL to Python defines accessor functions for IDL ``attribute`` declarations in much the way the Java mapping does. Mapping the IDL declarations ::"
+msgstr ""
+
+#: ../../library/xml.dom.rst:1005
+msgid "readonly attribute string someValue;\n"
+"         attribute string anotherValue;"
 msgstr ""
 
 #: ../../library/xml.dom.rst:1008

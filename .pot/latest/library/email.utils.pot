@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 11:16+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,6 +76,16 @@ msgstr ""
 msgid "This method returns a list of 2-tuples of the form returned by ``parseaddr()``. *fieldvalues* is a sequence of header field values as might be returned by :meth:`Message.get_all <email.message.Message.get_all>`.  Here's a simple example that gets all the recipients of a message::"
 msgstr ""
 
+#: ../../library/email.utils.rst:92
+msgid "from email.utils import getaddresses\n"
+"\n"
+"tos = msg.get_all('to', [])\n"
+"ccs = msg.get_all('cc', [])\n"
+"resent_tos = msg.get_all('resent-to', [])\n"
+"resent_ccs = msg.get_all('resent-cc', [])\n"
+"all_recipients = getaddresses(tos + ccs + resent_tos + resent_ccs)"
+msgstr ""
+
 #: ../../library/email.utils.rst:103
 msgid "Attempts to parse a date according to the rules in :rfc:`2822`. however, some mailers don't follow that format as specified, so :func:`parsedate` tries to guess correctly in such cases.  *date* is a string containing an :rfc:`2822` date, such as  ``\"Mon, 20 Nov 1995 19:12:08 -0500\"``.  If it succeeds in parsing the date, :func:`parsedate` returns a 9-tuple that can be passed directly to :func:`time.mktime`; otherwise ``None`` will be returned.  Note that indexes 6, 7, and 8 of the result tuple are not usable."
 msgstr ""
@@ -94,6 +104,10 @@ msgstr ""
 
 #: ../../library/email.utils.rst:147
 msgid "Returns a date string as per :rfc:`2822`, e.g.::"
+msgstr ""
+
+#: ../../library/email.utils.rst:149
+msgid "Fri, 09 Nov 2001 01:08:47 -0000"
 msgstr ""
 
 #: ../../library/email.utils.rst:151

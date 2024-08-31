@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-30 03:36+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,8 +32,29 @@ msgstr ""
 msgid "The member variables to use in these generated methods are defined using :pep:`526` type annotations.  For example, this code::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:22
+msgid "from dataclasses import dataclass\n"
+"\n"
+"@dataclass\n"
+"class InventoryItem:\n"
+"    \"\"\"Class for keeping track of an item in inventory.\"\"\"\n"
+"    name: str\n"
+"    unit_price: float\n"
+"    quantity_on_hand: int = 0\n"
+"\n"
+"    def total_cost(self) -> float:\n"
+"        return self.unit_price * self.quantity_on_hand"
+msgstr ""
+
 #: ../../library/dataclasses.rst:34
 msgid "will add, among other things, a :meth:`!__init__` that looks like::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:36
+msgid "def __init__(self, name: str, unit_price: float, quantity_on_hand: int = 0):\n"
+"    self.name = name\n"
+"    self.unit_price = unit_price\n"
+"    self.quantity_on_hand = quantity_on_hand"
 msgstr ""
 
 #: ../../library/dataclasses.rst:41
@@ -62,6 +83,21 @@ msgstr ""
 
 #: ../../library/dataclasses.rst:69
 msgid "If ``@dataclass`` is used just as a simple decorator with no parameters, it acts as if it has the default values documented in this signature.  That is, these three uses of ``@dataclass`` are equivalent::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:74
+msgid "@dataclass\n"
+"class C:\n"
+"    ...\n"
+"\n"
+"@dataclass()\n"
+"class C:\n"
+"    ...\n"
+"\n"
+"@dataclass(init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False,\n"
+"           match_args=True, kw_only=False, slots=False, weakref_slot=False)\n"
+"class C:\n"
+"    ..."
 msgstr ""
 
 #: ../../library/dataclasses.rst:87
@@ -152,8 +188,19 @@ msgstr ""
 msgid "``field``\\s may optionally specify a default value, using normal Python syntax::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:215
+msgid "@dataclass\n"
+"class C:\n"
+"    a: int       # 'a' has no default value\n"
+"    b: int = 0   # assign a default value for 'b'"
+msgstr ""
+
 #: ../../library/dataclasses.rst:220
 msgid "In this example, both :attr:`!a` and :attr:`!b` will be included in the added :meth:`~object.__init__` method, which will be defined as::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:223
+msgid "def __init__(self, a: int, b: int = 0):"
 msgstr ""
 
 #: ../../library/dataclasses.rst:225
@@ -162,6 +209,15 @@ msgstr ""
 
 #: ../../library/dataclasses.rst:231
 msgid "For common and simple use cases, no other functionality is required.  There are, however, some dataclass features that require additional per-field information.  To satisfy this need for additional information, you can replace the default field value with a call to the provided :func:`!field` function.  For example::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:237
+msgid "@dataclass\n"
+"class C:\n"
+"    mylist: list[int] = field(default_factory=list)\n"
+"\n"
+"c = C()\n"
+"c.mylist += [1, 2, 3]"
 msgstr ""
 
 #: ../../library/dataclasses.rst:244
@@ -212,6 +268,15 @@ msgstr ""
 msgid "If the default value of a field is specified by a call to :func:`!field`, then the class attribute for this field will be replaced by the specified *default* value.  If *default* is not provided, then the class attribute will be deleted.  The intent is that after the :func:`@dataclass <dataclass>` decorator runs, the class attributes will all contain the default values for the fields, just as if the default value itself were specified.  For example, after::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:307
+msgid "@dataclass\n"
+"class C:\n"
+"    x: int\n"
+"    y: int = field(repr=False)\n"
+"    z: int = field(repr=False, default=10)\n"
+"    t: int = 20"
+msgstr ""
+
 #: ../../library/dataclasses.rst:314
 msgid "The class attribute :attr:`!C.z` will be ``10``, the class attribute :attr:`!C.t` will be ``20``, and the class attributes :attr:`!C.x` and :attr:`!C.y` will not be set."
 msgstr ""
@@ -248,9 +313,30 @@ msgstr ""
 msgid "Example of using :func:`!asdict` on nested dataclasses::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:351
+msgid "@dataclass\n"
+"class Point:\n"
+"     x: int\n"
+"     y: int\n"
+"\n"
+"@dataclass\n"
+"class C:\n"
+"     mylist: list[Point]\n"
+"\n"
+"p = Point(10, 20)\n"
+"assert asdict(p) == {'x': 10, 'y': 20}\n"
+"\n"
+"c = C([Point(0, 0), Point(10, 4)])\n"
+"assert asdict(c) == {'mylist': [{'x': 0, 'y': 0}, {'x': 10, 'y': 4}]}"
+msgstr ""
+
 #: ../../library/dataclasses.rst:366
 #: ../../library/dataclasses.rst:386
 msgid "To create a shallow copy, the following workaround may be used::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:368
+msgid "{field.name: getattr(obj, field.name) for field in fields(obj)}"
 msgstr ""
 
 #: ../../library/dataclasses.rst:370
@@ -263,6 +349,15 @@ msgstr ""
 
 #: ../../library/dataclasses.rst:381
 msgid "Continuing from the previous example::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:383
+msgid "assert astuple(p) == (10, 20)\n"
+"assert astuple(c) == ([(0, 0), (10, 4)],)"
+msgstr ""
+
+#: ../../library/dataclasses.rst:388
+msgid "tuple(getattr(obj, field.name) for field in dataclasses.fields(obj))"
 msgstr ""
 
 #: ../../library/dataclasses.rst:390
@@ -281,8 +376,27 @@ msgstr ""
 msgid "This function is not strictly required, because any Python mechanism for creating a new class with :attr:`!__annotations__` can then apply the :func:`@dataclass <dataclass>` function to convert that class to a dataclass.  This function is provided as a convenience.  For example::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:415
+msgid "C = make_dataclass('C',\n"
+"                   [('x', int),\n"
+"                     'y',\n"
+"                    ('z', int, field(default=5))],\n"
+"                   namespace={'add_one': lambda self: self.x + 1})"
+msgstr ""
+
 #: ../../library/dataclasses.rst:421
 msgid "Is equivalent to::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:423
+msgid "@dataclass\n"
+"class C:\n"
+"    x: int\n"
+"    y: 'typing.Any'\n"
+"    z: int = 5\n"
+"\n"
+"    def add_one(self):\n"
+"        return self.x + 1"
 msgstr ""
 
 #: ../../library/dataclasses.rst:434
@@ -313,6 +427,11 @@ msgstr ""
 msgid "If you need to know if a class is an instance of a dataclass (and not a dataclass itself), then add a further check for ``not isinstance(obj, type)``::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:469
+msgid "def is_dataclass_instance(obj):\n"
+"    return is_dataclass(obj) and not isinstance(obj, type)"
+msgstr ""
+
 #: ../../library/dataclasses.rst:474
 msgid "A sentinel value signifying a missing default or default_factory."
 msgstr ""
@@ -323,6 +442,17 @@ msgstr ""
 
 #: ../../library/dataclasses.rst:487
 msgid "In this example, the fields ``y`` and ``z`` will be marked as keyword-only fields::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:489
+msgid "@dataclass\n"
+"class Point:\n"
+"    x: float\n"
+"    _: KW_ONLY\n"
+"    y: float\n"
+"    z: float\n"
+"\n"
+"p = Point(0, y=1.5, z=2.0)"
 msgstr ""
 
 #: ../../library/dataclasses.rst:498
@@ -345,8 +475,33 @@ msgstr ""
 msgid "Among other uses, this allows for initializing field values that depend on one or more other fields.  For example::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:526
+msgid "@dataclass\n"
+"class C:\n"
+"    a: float\n"
+"    b: float\n"
+"    c: float = field(init=False)\n"
+"\n"
+"    def __post_init__(self):\n"
+"        self.c = self.a + self.b"
+msgstr ""
+
 #: ../../library/dataclasses.rst:535
 msgid "The :meth:`~object.__init__` method generated by :func:`@dataclass <dataclass>` does not call base class :meth:`!__init__` methods. If the base class has an :meth:`!__init__` method that has to be called, it is common to call this method in a :meth:`__post_init__` method::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:540
+msgid "class Rectangle:\n"
+"    def __init__(self, height, width):\n"
+"      self.height = height\n"
+"      self.width = width\n"
+"\n"
+"@dataclass\n"
+"class Square(Rectangle):\n"
+"    side: float\n"
+"\n"
+"    def __post_init__(self):\n"
+"        super().__init__(self.side, self.side)"
 msgstr ""
 
 #: ../../library/dataclasses.rst:552
@@ -377,6 +532,20 @@ msgstr ""
 msgid "For example, suppose a field will be initialized from a database, if a value is not provided when creating the class::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:591
+msgid "@dataclass\n"
+"class C:\n"
+"    i: int\n"
+"    j: int | None = None\n"
+"    database: InitVar[DatabaseType | None] = None\n"
+"\n"
+"    def __post_init__(self, database):\n"
+"        if self.j is None and database is not None:\n"
+"            self.j = database.lookup('j')\n"
+"\n"
+"c = C(10, database=my_database)"
+msgstr ""
+
 #: ../../library/dataclasses.rst:603
 msgid "In this case, :func:`fields` will return :class:`Field` objects for :attr:`!i` and :attr:`!j`, but not for :attr:`!database`."
 msgstr ""
@@ -401,12 +570,28 @@ msgstr ""
 msgid "When the dataclass is being created by the :func:`@dataclass <dataclass>` decorator, it looks through all of the class's base classes in reverse MRO (that is, starting at :class:`object`) and, for each dataclass that it finds, adds the fields from that base class to an ordered mapping of fields. After all of the base class fields are added, it adds its own fields to the ordered mapping.  All of the generated methods will use this combined, calculated ordered mapping of fields.  Because the fields are in insertion order, derived classes override base classes.  An example::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:638
+msgid "@dataclass\n"
+"class Base:\n"
+"    x: Any = 15.0\n"
+"    y: int = 0\n"
+"\n"
+"@dataclass\n"
+"class C(Base):\n"
+"    z: int = 10\n"
+"    x: int = 15"
+msgstr ""
+
 #: ../../library/dataclasses.rst:648
 msgid "The final list of fields is, in order, :attr:`!x`, :attr:`!y`, :attr:`!z`.  The final type of :attr:`!x` is :class:`int`, as specified in class :class:`!C`."
 msgstr ""
 
 #: ../../library/dataclasses.rst:651
 msgid "The generated :meth:`~object.__init__` method for :class:`!C` will look like::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:653
+msgid "def __init__(self, x: int = 15, y: int = 0, z: int = 10):"
 msgstr ""
 
 #: ../../library/dataclasses.rst:656
@@ -421,8 +606,26 @@ msgstr ""
 msgid "In this example, :attr:`!Base.y`, :attr:`!Base.w`, and :attr:`!D.t` are keyword-only fields, and :attr:`!Base.x` and :attr:`!D.z` are regular fields::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:667
+msgid "@dataclass\n"
+"class Base:\n"
+"    x: Any = 15.0\n"
+"    _: KW_ONLY\n"
+"    y: int = 0\n"
+"    w: int = 1\n"
+"\n"
+"@dataclass\n"
+"class D(Base):\n"
+"    z: int = 10\n"
+"    t: int = field(kw_only=True, default=0)"
+msgstr ""
+
 #: ../../library/dataclasses.rst:679
 msgid "The generated :meth:`!__init__` method for :class:`!D` will look like::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:681
+msgid "def __init__(self, x: Any = 15.0, z: int = 10, *, y: int = 0, w: int = 1, t: int = 0):"
 msgstr ""
 
 #: ../../library/dataclasses.rst:683
@@ -441,6 +644,10 @@ msgstr ""
 msgid "If a :func:`field` specifies a *default_factory*, it is called with zero arguments when a default value for the field is needed.  For example, to create a new instance of a list, use::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:698
+msgid "mylist: list = field(default_factory=list)"
+msgstr ""
+
 #: ../../library/dataclasses.rst:700
 msgid "If a field is excluded from :meth:`~object.__init__` (using ``init=False``) and the field also specifies *default_factory*, then the default factory function will always be called from the generated :meth:`!__init__` function.  This happens because there is no other way to give the field an initial value."
 msgstr ""
@@ -453,6 +660,20 @@ msgstr ""
 msgid "Python stores default member variable values in class attributes. Consider this example, not using dataclasses::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:712
+msgid "class C:\n"
+"    x = []\n"
+"    def add(self, element):\n"
+"        self.x.append(element)\n"
+"\n"
+"o1 = C()\n"
+"o2 = C()\n"
+"o1.add(1)\n"
+"o2.add(2)\n"
+"assert o1.x == [1, 2]\n"
+"assert o1.x is o2.x"
+msgstr ""
+
 #: ../../library/dataclasses.rst:724
 msgid "Note that the two instances of class :class:`!C` share the same class variable :attr:`!x`, as expected."
 msgstr ""
@@ -461,8 +682,27 @@ msgstr ""
 msgid "Using dataclasses, *if* this code was valid::"
 msgstr ""
 
+#: ../../library/dataclasses.rst:729
+msgid "@dataclass\n"
+"class D:\n"
+"    x: list = []      # This code raises ValueError\n"
+"    def add(self, element):\n"
+"        self.x.append(element)"
+msgstr ""
+
 #: ../../library/dataclasses.rst:735
 msgid "it would generate code similar to::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:737
+msgid "class D:\n"
+"    x = []\n"
+"    def __init__(self, x=x):\n"
+"        self.x = x\n"
+"    def add(self, element):\n"
+"        self.x.append(element)\n"
+"\n"
+"assert D().x is D().x"
 msgstr ""
 
 #: ../../library/dataclasses.rst:746
@@ -471,6 +711,14 @@ msgstr ""
 
 #: ../../library/dataclasses.rst:757
 msgid "Using default factory functions is a way to create new instances of mutable types as default values for fields::"
+msgstr ""
+
+#: ../../library/dataclasses.rst:760
+msgid "@dataclass\n"
+"class D:\n"
+"    x: list = field(default_factory=list)\n"
+"\n"
+"assert D().x is not D().x"
 msgstr ""
 
 #: ../../library/dataclasses.rst:766
@@ -495,6 +743,33 @@ msgstr ""
 
 #: ../../library/dataclasses.rst:786
 msgid "To determine whether a field contains a default value, :func:`@dataclass <dataclass>` will call the descriptor's :meth:`!__get__` method using its class access form: ``descriptor.__get__(obj=None, type=cls)``.  If the descriptor returns a value in this case, it will be used as the field's default. On the other hand, if the descriptor raises :exc:`AttributeError` in this situation, no default value will be provided for the field."
+msgstr ""
+
+#: ../../library/dataclasses.rst:796
+msgid "class IntConversionDescriptor:\n"
+"    def __init__(self, *, default):\n"
+"        self._default = default\n"
+"\n"
+"    def __set_name__(self, owner, name):\n"
+"        self._name = \"_\" + name\n"
+"\n"
+"    def __get__(self, obj, type):\n"
+"        if obj is None:\n"
+"            return self._default\n"
+"\n"
+"        return getattr(obj, self._name, self._default)\n"
+"\n"
+"    def __set__(self, obj, value):\n"
+"        setattr(obj, self._name, int(value))\n"
+"\n"
+"@dataclass\n"
+"class InventoryItem:\n"
+"    quantity_on_hand: IntConversionDescriptor = IntConversionDescriptor(default=100)\n"
+"\n"
+"i = InventoryItem()\n"
+"print(i.quantity_on_hand)   # 100\n"
+"i.quantity_on_hand = 2.5    # calls __set__ with 2.5\n"
+"print(i.quantity_on_hand)   # 2"
 msgstr ""
 
 #: ../../library/dataclasses.rst:821

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 11:16+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -310,8 +310,18 @@ msgstr ""
 msgid "For example,  ::"
 msgstr ""
 
+#: ../../library/ossaudiodev.rst:313
+msgid "(fmt, channels, rate) = dsp.setparameters(fmt, channels, rate)"
+msgstr ""
+
 #: ../../library/ossaudiodev.rst:315
 msgid "is equivalent to  ::"
+msgstr ""
+
+#: ../../library/ossaudiodev.rst:317
+msgid "fmt = dsp.setfmt(fmt)\n"
+"channels = dsp.channels(channels)\n"
+"rate = dsp.rate(rate)"
 msgstr ""
 
 #: ../../library/ossaudiodev.rst:324
@@ -370,6 +380,13 @@ msgstr ""
 msgid "This method returns a bitmask specifying the available mixer controls (\"Control\" being a specific mixable \"channel\", such as :const:`SOUND_MIXER_PCM` or :const:`SOUND_MIXER_SYNTH`).  This bitmask indicates a subset of all available mixer controls---the :const:`SOUND_MIXER_\\*` constants defined at module level. To determine if, for example, the current mixer object supports a PCM mixer, use the following Python code::"
 msgstr ""
 
+#: ../../library/ossaudiodev.rst:389
+msgid "mixer=ossaudiodev.openmixer()\n"
+"if mixer.controls() & (1 << ossaudiodev.SOUND_MIXER_PCM):\n"
+"    # PCM is supported\n"
+"    ... code ..."
+msgstr ""
+
 #: ../../library/ossaudiodev.rst:394
 msgid "For most purposes, the :const:`SOUND_MIXER_VOLUME` (master volume) and :const:`SOUND_MIXER_PCM` controls should suffice---but code that uses the mixer should be flexible when it comes to choosing mixer controls.  On the Gravis Ultrasound, for example, :const:`SOUND_MIXER_VOLUME` does not exist."
 msgstr ""
@@ -408,4 +425,8 @@ msgstr ""
 
 #: ../../library/ossaudiodev.rst:448
 msgid "Call this function to specify a recording source.  Returns a bitmask indicating the new recording source (or sources) if successful; raises :exc:`OSError` if an invalid source was specified.  To set the current recording source to the microphone input::"
+msgstr ""
+
+#: ../../library/ossaudiodev.rst:453
+msgid "mixer.setrecsrc (1 << ossaudiodev.SOUND_MIXER_MIC)"
 msgstr ""

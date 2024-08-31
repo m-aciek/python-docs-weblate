@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-10 11:17+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,8 +65,21 @@ msgstr ""
 msgid "This function is considered not safe for resizable sequences. Its invocation should be replaced by a combination of :c:func:`PySlice_Unpack` and :c:func:`PySlice_AdjustIndices` where ::"
 msgstr ""
 
+#: ../../c-api/slice.rst:64
+msgid "if (PySlice_GetIndicesEx(slice, length, &start, &stop, &step, &slicelength) < 0) {\n"
+"    // return error\n"
+"}"
+msgstr ""
+
 #: ../../c-api/slice.rst:68
 msgid "is replaced by ::"
+msgstr ""
+
+#: ../../c-api/slice.rst:70
+msgid "if (PySlice_Unpack(slice, &start, &stop, &step) < 0) {\n"
+"    // return error\n"
+"}\n"
+"slicelength = PySlice_AdjustIndices(length, &start, &stop, step);"
 msgstr ""
 
 #: ../../c-api/slice.rst:79

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-04 12:24+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,12 +56,37 @@ msgstr ""
 msgid "The ``print`` statement has been replaced with a :func:`print` function, with keyword arguments to replace most of the special syntax of the old ``print`` statement (:pep:`3105`).  Examples::"
 msgstr ""
 
+#: ../../whatsnew/3.0.rst:101
+msgid "Old: print \"The answer is\", 2*2\n"
+"New: print(\"The answer is\", 2*2)\n"
+"\n"
+"Old: print x,           # Trailing comma suppresses newline\n"
+"New: print(x, end=\" \")  # Appends a space instead of a newline\n"
+"\n"
+"Old: print              # Prints a newline\n"
+"New: print()            # You must call the function!\n"
+"\n"
+"Old: print >>sys.stderr, \"fatal error\"\n"
+"New: print(\"fatal error\", file=sys.stderr)\n"
+"\n"
+"Old: print (x, y)       # prints repr((x, y))\n"
+"New: print((x, y))      # Not the same as print(x, y)!"
+msgstr ""
+
 #: ../../whatsnew/3.0.rst:116
 msgid "You can also customize the separator between items, e.g.::"
 msgstr ""
 
+#: ../../whatsnew/3.0.rst:118
+msgid "print(\"There are <\", 2**32, \"> possibilities!\", sep=\"\")"
+msgstr ""
+
 #: ../../whatsnew/3.0.rst:120
 msgid "which produces:"
+msgstr ""
+
+#: ../../whatsnew/3.0.rst:122
+msgid "There are <4294967296> possibilities!"
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:126
@@ -260,6 +285,10 @@ msgstr ""
 msgid ":pep:`3132`: Extended Iterable Unpacking.  You can now write things like ``a, b, *rest = some_sequence``.  And even ``*rest, a = stuff``.  The ``rest`` object is always a (possibly empty) list; the right-hand side may be any iterable.  Example::"
 msgstr ""
 
+#: ../../whatsnew/3.0.rst:383
+msgid "(a, *rest, b) = range(5)"
+msgstr ""
+
 #: ../../whatsnew/3.0.rst:385
 msgid "This sets *a* to ``0``, *b* to ``4``, and *rest* to ``[1, 2, 3]``."
 msgstr ""
@@ -308,8 +337,19 @@ msgstr ""
 msgid ":pep:`3115`: New Metaclass Syntax.  Instead of::"
 msgstr ""
 
+#: ../../whatsnew/3.0.rst:422
+msgid "class C:\n"
+"    __metaclass__ = M\n"
+"    ..."
+msgstr ""
+
 #: ../../whatsnew/3.0.rst:426
 msgid "you must now use::"
+msgstr ""
+
+#: ../../whatsnew/3.0.rst:428
+msgid "class C(metaclass=M):\n"
+"    ..."
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:431
@@ -642,6 +682,10 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:722
 msgid ":pep:`3134`: Exception chaining.  There are two cases: implicit chaining and explicit chaining.  Implicit chaining happens when an exception is raised in an :keyword:`except` or :keyword:`finally` handler block.  This usually happens due to a bug in the handler block; we call this a *secondary* exception.  In this case, the original exception (that was being handled) is saved as the :attr:`~BaseException.__context__` attribute of the secondary exception. Explicit chaining is invoked with this syntax::"
+msgstr ""
+
+#: ../../whatsnew/3.0.rst:731
+msgid "raise SecondaryException() from primary_exception"
 msgstr ""
 
 #: ../../whatsnew/3.0.rst:733

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-26 08:18+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,12 +44,22 @@ msgstr ""
 msgid "Let's create an extension module called ``spam`` (the favorite food of Monty Python fans...) and let's say we want to create a Python interface to the C library function :c:func:`system` [#]_. This function takes a null-terminated character string as argument and returns an integer.  We want this function to be callable from Python as follows:"
 msgstr ""
 
+#: ../../extending/extending.rst:48
+msgid ">>> import spam\n"
+">>> status = spam.system(\"ls -l\")"
+msgstr ""
+
 #: ../../extending/extending.rst:53
 msgid "Begin by creating a file :file:`spammodule.c`.  (Historically, if a module is called ``spam``, the C file containing its implementation is called :file:`spammodule.c`; if the module name is very long, like ``spammify``, the module name can be just :file:`spammify.c`.)"
 msgstr ""
 
 #: ../../extending/extending.rst:58
 msgid "The first two lines of our file can be::"
+msgstr ""
+
+#: ../../extending/extending.rst:60
+msgid "#define PY_SSIZE_T_CLEAN\n"
+"#include <Python.h>"
 msgstr ""
 
 #: ../../extending/extending.rst:63
@@ -70,6 +80,20 @@ msgstr ""
 
 #: ../../extending/extending.rst:83
 msgid "The next thing we add to our module file is the C function that will be called when the Python expression ``spam.system(string)`` is evaluated (we'll see shortly how it ends up being called)::"
+msgstr ""
+
+#: ../../extending/extending.rst:87
+msgid "static PyObject *\n"
+"spam_system(PyObject *self, PyObject *args)\n"
+"{\n"
+"    const char *command;\n"
+"    int sts;\n"
+"\n"
+"    if (!PyArg_ParseTuple(args, \"s\", &command))\n"
+"        return NULL;\n"
+"    sts = system(command);\n"
+"    return PyLong_FromLong(sts);\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:99
@@ -144,8 +168,35 @@ msgstr ""
 msgid "You can also define a new exception that is unique to your module. For this, you usually declare a static object variable at the beginning of your file::"
 msgstr ""
 
+#: ../../extending/extending.rst:207
+msgid "static PyObject *SpamError;"
+msgstr ""
+
 #: ../../extending/extending.rst:209
 msgid "and initialize it in your module's initialization function (:c:func:`!PyInit_spam`) with an exception object::"
+msgstr ""
+
+#: ../../extending/extending.rst:212
+msgid "PyMODINIT_FUNC\n"
+"PyInit_spam(void)\n"
+"{\n"
+"    PyObject *m;\n"
+"\n"
+"    m = PyModule_Create(&spammodule);\n"
+"    if (m == NULL)\n"
+"        return NULL;\n"
+"\n"
+"    SpamError = PyErr_NewException(\"spam.error\", NULL, NULL);\n"
+"    Py_XINCREF(SpamError);\n"
+"    if (PyModule_AddObject(m, \"error\", SpamError) < 0) {\n"
+"        Py_XDECREF(SpamError);\n"
+"        Py_CLEAR(SpamError);\n"
+"        Py_DECREF(m);\n"
+"        return NULL;\n"
+"    }\n"
+"\n"
+"    return m;\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:233
@@ -164,12 +215,35 @@ msgstr ""
 msgid "The :exc:`!spam.error` exception can be raised in your extension module using a call to :c:func:`PyErr_SetString` as shown below::"
 msgstr ""
 
+#: ../../extending/extending.rst:251
+msgid "static PyObject *\n"
+"spam_system(PyObject *self, PyObject *args)\n"
+"{\n"
+"    const char *command;\n"
+"    int sts;\n"
+"\n"
+"    if (!PyArg_ParseTuple(args, \"s\", &command))\n"
+"        return NULL;\n"
+"    sts = system(command);\n"
+"    if (sts < 0) {\n"
+"        PyErr_SetString(SpamError, \"System command failed\");\n"
+"        return NULL;\n"
+"    }\n"
+"    return PyLong_FromLong(sts);\n"
+"}"
+msgstr ""
+
 #: ../../extending/extending.rst:271
 msgid "Back to the Example"
 msgstr ""
 
 #: ../../extending/extending.rst:273
 msgid "Going back to our example function, you should now be able to understand this statement::"
+msgstr ""
+
+#: ../../extending/extending.rst:276
+msgid "if (!PyArg_ParseTuple(args, \"s\", &command))\n"
+"    return NULL;"
 msgstr ""
 
 #: ../../extending/extending.rst:279
@@ -180,8 +254,16 @@ msgstr ""
 msgid "The next statement is a call to the Unix function :c:func:`system`, passing it the string we just got from :c:func:`PyArg_ParseTuple`::"
 msgstr ""
 
+#: ../../extending/extending.rst:290
+msgid "sts = system(command);"
+msgstr ""
+
 #: ../../extending/extending.rst:292
 msgid "Our :func:`!spam.system` function must return the value of :c:data:`!sts` as a Python object.  This is done using the function :c:func:`PyLong_FromLong`. ::"
+msgstr ""
+
+#: ../../extending/extending.rst:295
+msgid "return PyLong_FromLong(sts);"
 msgstr ""
 
 #: ../../extending/extending.rst:297
@@ -190,6 +272,11 @@ msgstr ""
 
 #: ../../extending/extending.rst:300
 msgid "If you have a C function that returns no useful argument (a function returning :c:expr:`void`), the corresponding Python function must return ``None``.   You need this idiom to do so (which is implemented by the :c:macro:`Py_RETURN_NONE` macro)::"
+msgstr ""
+
+#: ../../extending/extending.rst:305
+msgid "Py_INCREF(Py_None);\n"
+"return Py_None;"
 msgstr ""
 
 #: ../../extending/extending.rst:308
@@ -202,6 +289,16 @@ msgstr ""
 
 #: ../../extending/extending.rst:318
 msgid "I promised to show how :c:func:`!spam_system` is called from Python programs. First, we need to list its name and address in a \"method table\"::"
+msgstr ""
+
+#: ../../extending/extending.rst:321
+msgid "static PyMethodDef SpamMethods[] = {\n"
+"    ...\n"
+"    {\"system\",  spam_system, METH_VARARGS,\n"
+"     \"Execute a shell command.\"},\n"
+"    ...\n"
+"    {NULL, NULL, 0, NULL}        /* Sentinel */\n"
+"};"
 msgstr ""
 
 #: ../../extending/extending.rst:329
@@ -220,8 +317,27 @@ msgstr ""
 msgid "The method table must be referenced in the module definition structure::"
 msgstr ""
 
+#: ../../extending/extending.rst:346
+msgid "static struct PyModuleDef spammodule = {\n"
+"    PyModuleDef_HEAD_INIT,\n"
+"    \"spam\",   /* name of module */\n"
+"    spam_doc, /* module documentation, may be NULL */\n"
+"    -1,       /* size of per-interpreter state of the module,\n"
+"                 or -1 if the module keeps state in global variables. */\n"
+"    SpamMethods\n"
+"};"
+msgstr ""
+
 #: ../../extending/extending.rst:355
 msgid "This structure, in turn, must be passed to the interpreter in the module's initialization function.  The initialization function must be named :c:func:`!PyInit_name`, where *name* is the name of the module, and should be the only non-\\ ``static`` item defined in the module file::"
+msgstr ""
+
+#: ../../extending/extending.rst:360
+msgid "PyMODINIT_FUNC\n"
+"PyInit_spam(void)\n"
+"{\n"
+"    return PyModule_Create(&spammodule);\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:366
@@ -234,6 +350,45 @@ msgstr ""
 
 #: ../../extending/extending.rst:381
 msgid "When embedding Python, the :c:func:`!PyInit_spam` function is not called automatically unless there's an entry in the :c:data:`PyImport_Inittab` table. To add the module to the initialization table, use :c:func:`PyImport_AppendInittab`, optionally followed by an import of the module::"
+msgstr ""
+
+#: ../../extending/extending.rst:386
+msgid "int\n"
+"main(int argc, char *argv[])\n"
+"{\n"
+"    wchar_t *program = Py_DecodeLocale(argv[0], NULL);\n"
+"    if (program == NULL) {\n"
+"        fprintf(stderr, \"Fatal error: cannot decode argv[0]\\n\");\n"
+"        exit(1);\n"
+"    }\n"
+"\n"
+"    /* Add a built-in module, before Py_Initialize */\n"
+"    if (PyImport_AppendInittab(\"spam\", PyInit_spam) == -1) {\n"
+"        fprintf(stderr, \"Error: could not extend in-built modules table\\n\");\n"
+"        exit(1);\n"
+"    }\n"
+"\n"
+"    /* Pass argv[0] to the Python interpreter */\n"
+"    Py_SetProgramName(program);\n"
+"\n"
+"    /* Initialize the Python interpreter.  Required.\n"
+"       If this step fails, it will be a fatal error. */\n"
+"    Py_Initialize();\n"
+"\n"
+"    /* Optionally import the module; alternatively,\n"
+"       import can be deferred until the embedded script\n"
+"       imports it. */\n"
+"    PyObject *pmodule = PyImport_ImportModule(\"spam\");\n"
+"    if (!pmodule) {\n"
+"        PyErr_Print();\n"
+"        fprintf(stderr, \"Error: could not import module 'spam'\\n\");\n"
+"    }\n"
+"\n"
+"    ...\n"
+"\n"
+"    PyMem_RawFree(program);\n"
+"    return 0;\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:425
@@ -260,12 +415,20 @@ msgstr ""
 msgid "If you can't use dynamic loading, or if you want to make your module a permanent part of the Python interpreter, you will have to change the configuration setup and rebuild the interpreter.  Luckily, this is very simple on Unix: just place your file (:file:`spammodule.c` for example) in the :file:`Modules/` directory of an unpacked source distribution, add a line to the file :file:`Modules/Setup.local` describing your file:"
 msgstr ""
 
+#: ../../extending/extending.rst:462
+msgid "spam spammodule.o"
+msgstr ""
+
 #: ../../extending/extending.rst:466
 msgid "and rebuild the interpreter by running :program:`make` in the toplevel directory.  You can also run :program:`make` in the :file:`Modules/` subdirectory, but then you must first rebuild :file:`Makefile` there by running ':program:`make` Makefile'.  (This is necessary each time you change the :file:`Setup` file.)"
 msgstr ""
 
 #: ../../extending/extending.rst:472
 msgid "If your module requires additional libraries to link with, these can be listed on the line in the configuration file as well, for instance:"
+msgstr ""
+
+#: ../../extending/extending.rst:475
+msgid "spam spammodule.o -lX11"
 msgstr ""
 
 #: ../../extending/extending.rst:483
@@ -284,6 +447,31 @@ msgstr ""
 msgid "Calling a Python function is easy.  First, the Python program must somehow pass you the Python function object.  You should provide a function (or some other interface) to do this.  When this function is called, save a pointer to the Python function object (be careful to :c:func:`Py_INCREF` it!) in a global variable --- or wherever you see fit. For example, the following function might be part of a module definition::"
 msgstr ""
 
+#: ../../extending/extending.rst:506
+msgid "static PyObject *my_callback = NULL;\n"
+"\n"
+"static PyObject *\n"
+"my_set_callback(PyObject *dummy, PyObject *args)\n"
+"{\n"
+"    PyObject *result = NULL;\n"
+"    PyObject *temp;\n"
+"\n"
+"    if (PyArg_ParseTuple(args, \"O:set_callback\", &temp)) {\n"
+"        if (!PyCallable_Check(temp)) {\n"
+"            PyErr_SetString(PyExc_TypeError, \"parameter must be callable\");\n"
+"            return NULL;\n"
+"        }\n"
+"        Py_XINCREF(temp);         /* Add a reference to new callback */\n"
+"        Py_XDECREF(my_callback);  /* Dispose of previous callback */\n"
+"        my_callback = temp;       /* Remember new callback */\n"
+"        /* Boilerplate to return \"None\" */\n"
+"        Py_INCREF(Py_None);\n"
+"        result = Py_None;\n"
+"    }\n"
+"    return result;\n"
+"}"
+msgstr ""
+
 #: ../../extending/extending.rst:529
 msgid "This function must be registered with the interpreter using the :c:macro:`METH_VARARGS` flag; this is described in section :ref:`methodtable`.  The :c:func:`PyArg_ParseTuple` function and its arguments are documented in section :ref:`parsetuple`."
 msgstr ""
@@ -294,6 +482,19 @@ msgstr ""
 
 #: ../../extending/extending.rst:541
 msgid "Later, when it is time to call the function, you call the C function :c:func:`PyObject_CallObject`.  This function has two arguments, both pointers to arbitrary Python objects: the Python function, and the argument list.  The argument list must always be a tuple object, whose length is the number of arguments.  To call the Python function with no arguments, pass in ``NULL``, or an empty tuple; to call it with one argument, pass a singleton tuple. :c:func:`Py_BuildValue` returns a tuple when its format string consists of zero or more format codes between parentheses.  For example::"
+msgstr ""
+
+#: ../../extending/extending.rst:550
+msgid "int arg;\n"
+"PyObject *arglist;\n"
+"PyObject *result;\n"
+"...\n"
+"arg = 123;\n"
+"...\n"
+"/* Time to call the callback */\n"
+"arglist = Py_BuildValue(\"(i)\", arg);\n"
+"result = PyObject_CallObject(my_callback, arglist);\n"
+"Py_DECREF(arglist);"
 msgstr ""
 
 #: ../../extending/extending.rst:561
@@ -308,8 +509,27 @@ msgstr ""
 msgid "Before you do this, however, it is important to check that the return value isn't ``NULL``.  If it is, the Python function terminated by raising an exception. If the C code that called :c:func:`PyObject_CallObject` is called from Python, it should now return an error indication to its Python caller, so the interpreter can print a stack trace, or the calling Python code can handle the exception. If this is not possible or desirable, the exception should be cleared by calling :c:func:`PyErr_Clear`.  For example::"
 msgstr ""
 
+#: ../../extending/extending.rst:582
+msgid "if (result == NULL)\n"
+"    return NULL; /* Pass error back */\n"
+"...use result...\n"
+"Py_DECREF(result);"
+msgstr ""
+
 #: ../../extending/extending.rst:587
 msgid "Depending on the desired interface to the Python callback function, you may also have to provide an argument list to :c:func:`PyObject_CallObject`.  In some cases the argument list is also provided by the Python program, through the same interface that specified the callback function.  It can then be saved and used in the same manner as the function object.  In other cases, you may have to construct a new tuple to pass as the argument list.  The simplest way to do this is to call :c:func:`Py_BuildValue`.  For example, if you want to pass an integral event code, you might use the following code::"
+msgstr ""
+
+#: ../../extending/extending.rst:596
+msgid "PyObject *arglist;\n"
+"...\n"
+"arglist = Py_BuildValue(\"(l)\", eventcode);\n"
+"result = PyObject_CallObject(my_callback, arglist);\n"
+"Py_DECREF(arglist);\n"
+"if (result == NULL)\n"
+"    return NULL; /* Pass error back */\n"
+"/* Here maybe use the result */\n"
+"Py_DECREF(result);"
 msgstr ""
 
 #: ../../extending/extending.rst:606
@@ -320,12 +540,28 @@ msgstr ""
 msgid "You may also call a function with keyword arguments by using :c:func:`PyObject_Call`, which supports arguments and keyword arguments.  As in the above example, we use :c:func:`Py_BuildValue` to construct the dictionary. ::"
 msgstr ""
 
+#: ../../extending/extending.rst:614
+msgid "PyObject *dict;\n"
+"...\n"
+"dict = Py_BuildValue(\"{s:i}\", \"name\", val);\n"
+"result = PyObject_Call(my_callback, NULL, dict);\n"
+"Py_DECREF(dict);\n"
+"if (result == NULL)\n"
+"    return NULL; /* Pass error back */\n"
+"/* Here maybe use the result */\n"
+"Py_DECREF(result);"
+msgstr ""
+
 #: ../../extending/extending.rst:628
 msgid "Extracting Parameters in Extension Functions"
 msgstr ""
 
 #: ../../extending/extending.rst:632
 msgid "The :c:func:`PyArg_ParseTuple` function is declared as follows::"
+msgstr ""
+
+#: ../../extending/extending.rst:634
+msgid "int PyArg_ParseTuple(PyObject *arg, const char *format, ...);"
 msgstr ""
 
 #: ../../extending/extending.rst:636
@@ -344,12 +580,83 @@ msgstr ""
 msgid "Some example calls::"
 msgstr ""
 
+#: ../../extending/extending.rst:652
+msgid "#define PY_SSIZE_T_CLEAN  /* Make \"s#\" use Py_ssize_t rather than int. */\n"
+"#include <Python.h>"
+msgstr ""
+
+#: ../../extending/extending.rst:657
+msgid "int ok;\n"
+"int i, j;\n"
+"long k, l;\n"
+"const char *s;\n"
+"Py_ssize_t size;\n"
+"\n"
+"ok = PyArg_ParseTuple(args, \"\"); /* No arguments */\n"
+"    /* Python call: f() */"
+msgstr ""
+
+#: ../../extending/extending.rst:668
+msgid "ok = PyArg_ParseTuple(args, \"s\", &s); /* A string */\n"
+"    /* Possible Python call: f('whoops!') */"
+msgstr ""
+
+#: ../../extending/extending.rst:673
+msgid "ok = PyArg_ParseTuple(args, \"lls\", &k, &l, &s); /* Two longs and a string */\n"
+"    /* Possible Python call: f(1, 2, 'three') */"
+msgstr ""
+
+#: ../../extending/extending.rst:678
+msgid "ok = PyArg_ParseTuple(args, \"(ii)s#\", &i, &j, &s, &size);\n"
+"    /* A pair of ints and a string, whose size is also returned */\n"
+"    /* Possible Python call: f((1, 2), 'three') */"
+msgstr ""
+
+#: ../../extending/extending.rst:684
+msgid "{\n"
+"    const char *file;\n"
+"    const char *mode = \"r\";\n"
+"    int bufsize = 0;\n"
+"    ok = PyArg_ParseTuple(args, \"s|si\", &file, &mode, &bufsize);\n"
+"    /* A string, and optionally another string and an integer */\n"
+"    /* Possible Python calls:\n"
+"       f('spam')\n"
+"       f('spam', 'w')\n"
+"       f('spam', 'wb', 100000) */\n"
+"}"
+msgstr ""
+
+#: ../../extending/extending.rst:698
+msgid "{\n"
+"    int left, top, right, bottom, h, v;\n"
+"    ok = PyArg_ParseTuple(args, \"((ii)(ii))(ii)\",\n"
+"             &left, &top, &right, &bottom, &h, &v);\n"
+"    /* A rectangle and a point */\n"
+"    /* Possible Python call:\n"
+"       f(((0, 0), (400, 300)), (10, 10)) */\n"
+"}"
+msgstr ""
+
+#: ../../extending/extending.rst:709
+msgid "{\n"
+"    Py_complex c;\n"
+"    ok = PyArg_ParseTuple(args, \"D:myfunction\", &c);\n"
+"    /* a complex, also providing a function name for errors */\n"
+"    /* Possible Python call: myfunction(1+2j) */\n"
+"}"
+msgstr ""
+
 #: ../../extending/extending.rst:720
 msgid "Keyword Parameters for Extension Functions"
 msgstr ""
 
 #: ../../extending/extending.rst:724
 msgid "The :c:func:`PyArg_ParseTupleAndKeywords` function is declared as follows::"
+msgstr ""
+
+#: ../../extending/extending.rst:726
+msgid "int PyArg_ParseTupleAndKeywords(PyObject *arg, PyObject *kwdict,\n"
+"                                const char *format, char *kwlist[], ...);"
 msgstr ""
 
 #: ../../extending/extending.rst:729
@@ -364,12 +671,66 @@ msgstr ""
 msgid "Here is an example module which uses keywords, based on an example by Geoff Philbrick (philbrick@hks.com)::"
 msgstr ""
 
+#: ../../extending/extending.rst:748
+msgid "#define PY_SSIZE_T_CLEAN  /* Make \"s#\" use Py_ssize_t rather than int. */\n"
+"#include <Python.h>\n"
+"\n"
+"static PyObject *\n"
+"keywdarg_parrot(PyObject *self, PyObject *args, PyObject *keywds)\n"
+"{\n"
+"    int voltage;\n"
+"    const char *state = \"a stiff\";\n"
+"    const char *action = \"voom\";\n"
+"    const char *type = \"Norwegian Blue\";\n"
+"\n"
+"    static char *kwlist[] = {\"voltage\", \"state\", \"action\", \"type\", NULL};\n"
+"\n"
+"    if (!PyArg_ParseTupleAndKeywords(args, keywds, \"i|sss\", kwlist,\n"
+"                                     &voltage, &state, &action, &type))\n"
+"        return NULL;\n"
+"\n"
+"    printf(\"-- This parrot wouldn't %s if you put %i Volts through it.\\n\",\n"
+"           action, voltage);\n"
+"    printf(\"-- Lovely plumage, the %s -- It's %s!\\n\", type, state);\n"
+"\n"
+"    Py_RETURN_NONE;\n"
+"}\n"
+"\n"
+"static PyMethodDef keywdarg_methods[] = {\n"
+"    /* The cast of the function is necessary since PyCFunction values\n"
+"     * only take two PyObject* parameters, and keywdarg_parrot() takes\n"
+"     * three.\n"
+"     */\n"
+"    {\"parrot\", (PyCFunction)(void(*)(void))keywdarg_parrot, METH_VARARGS | METH_KEYWORDS,\n"
+"     \"Print a lovely skit to standard output.\"},\n"
+"    {NULL, NULL, 0, NULL}   /* sentinel */\n"
+"};\n"
+"\n"
+"static struct PyModuleDef keywdargmodule = {\n"
+"    PyModuleDef_HEAD_INIT,\n"
+"    \"keywdarg\",\n"
+"    NULL,\n"
+"    -1,\n"
+"    keywdarg_methods\n"
+"};\n"
+"\n"
+"PyMODINIT_FUNC\n"
+"PyInit_keywdarg(void)\n"
+"{\n"
+"    return PyModule_Create(&keywdargmodule);\n"
+"}"
+msgstr ""
+
 #: ../../extending/extending.rst:800
 msgid "Building Arbitrary Values"
 msgstr ""
 
 #: ../../extending/extending.rst:802
 msgid "This function is the counterpart to :c:func:`PyArg_ParseTuple`.  It is declared as follows::"
+msgstr ""
+
+#: ../../extending/extending.rst:805
+msgid "PyObject *Py_BuildValue(const char *format, ...);"
 msgstr ""
 
 #: ../../extending/extending.rst:807
@@ -382,6 +743,26 @@ msgstr ""
 
 #: ../../extending/extending.rst:820
 msgid "Examples (to the left the call, to the right the resulting Python value):"
+msgstr ""
+
+#: ../../extending/extending.rst:822
+msgid "Py_BuildValue(\"\")                        None\n"
+"Py_BuildValue(\"i\", 123)                  123\n"
+"Py_BuildValue(\"iii\", 123, 456, 789)      (123, 456, 789)\n"
+"Py_BuildValue(\"s\", \"hello\")              'hello'\n"
+"Py_BuildValue(\"y\", \"hello\")              b'hello'\n"
+"Py_BuildValue(\"ss\", \"hello\", \"world\")    ('hello', 'world')\n"
+"Py_BuildValue(\"s#\", \"hello\", 4)          'hell'\n"
+"Py_BuildValue(\"y#\", \"hello\", 4)          b'hell'\n"
+"Py_BuildValue(\"()\")                      ()\n"
+"Py_BuildValue(\"(i)\", 123)                (123,)\n"
+"Py_BuildValue(\"(ii)\", 123, 456)          (123, 456)\n"
+"Py_BuildValue(\"(i,i)\", 123, 456)         (123, 456)\n"
+"Py_BuildValue(\"[i,i]\", 123, 456)         [123, 456]\n"
+"Py_BuildValue(\"{s:i,s:i}\",\n"
+"              \"abc\", 123, \"def\", 456)    {'abc': 123, 'def': 456}\n"
+"Py_BuildValue(\"((ii)(ii)) (ii)\",\n"
+"              1, 2, 3, 4, 5, 6)          (((1, 2), (3, 4)), (5, 6))"
 msgstr ""
 
 #: ../../extending/extending.rst:846
@@ -484,6 +865,17 @@ msgstr ""
 msgid "The first and most important case to know about is using :c:func:`Py_DECREF` on an unrelated object while borrowing a reference to a list item.  For instance::"
 msgstr ""
 
+#: ../../extending/extending.rst:1016
+msgid "void\n"
+"bug(PyObject *list)\n"
+"{\n"
+"    PyObject *item = PyList_GetItem(list, 0);\n"
+"\n"
+"    PyList_SetItem(list, 1, PyLong_FromLong(0L));\n"
+"    PyObject_Print(item, stdout, 0); /* BUG! */\n"
+"}"
+msgstr ""
+
 #: ../../extending/extending.rst:1025
 msgid "This function first borrows a reference to ``list[0]``, then replaces ``list[1]`` with the value ``0``, and finally prints the borrowed reference. Looks harmless, right?  But it's not!"
 msgstr ""
@@ -500,12 +892,37 @@ msgstr ""
 msgid "The solution, once you know the source of the problem, is easy: temporarily increment the reference count.  The correct version of the function reads::"
 msgstr ""
 
+#: ../../extending/extending.rst:1047
+msgid "void\n"
+"no_bug(PyObject *list)\n"
+"{\n"
+"    PyObject *item = PyList_GetItem(list, 0);\n"
+"\n"
+"    Py_INCREF(item);\n"
+"    PyList_SetItem(list, 1, PyLong_FromLong(0L));\n"
+"    PyObject_Print(item, stdout, 0);\n"
+"    Py_DECREF(item);\n"
+"}"
+msgstr ""
+
 #: ../../extending/extending.rst:1058
 msgid "This is a true story.  An older version of Python contained variants of this bug and someone spent a considerable amount of time in a C debugger to figure out why his :meth:`!__del__` methods would fail..."
 msgstr ""
 
 #: ../../extending/extending.rst:1062
 msgid "The second case of problems with a borrowed reference is a variant involving threads.  Normally, multiple threads in the Python interpreter can't get in each other's way, because there is a global lock protecting Python's entire object space.  However, it is possible to temporarily release this lock using the macro :c:macro:`Py_BEGIN_ALLOW_THREADS`, and to re-acquire it using :c:macro:`Py_END_ALLOW_THREADS`.  This is common around blocking I/O calls, to let other threads use the processor while waiting for the I/O to complete. Obviously, the following function has the same problem as the previous one::"
+msgstr ""
+
+#: ../../extending/extending.rst:1071
+msgid "void\n"
+"bug(PyObject *list)\n"
+"{\n"
+"    PyObject *item = PyList_GetItem(list, 0);\n"
+"    Py_BEGIN_ALLOW_THREADS\n"
+"    ...some blocking I/O call...\n"
+"    Py_END_ALLOW_THREADS\n"
+"    PyObject_Print(item, stdout, 0); /* BUG! */\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:1085
@@ -576,6 +993,10 @@ msgstr ""
 msgid "In particular, Capsules used to expose C APIs should be given a name following this convention::"
 msgstr ""
 
+#: ../../extending/extending.rst:1196
+msgid "modulename.attributename"
+msgstr ""
+
 #: ../../extending/extending.rst:1198
 msgid "The convenience function :c:func:`PyCapsule_Import` makes it easy to load a C API provided via a Capsule, but only if the Capsule's name matches this convention.  This behavior gives C API users a high degree of certainty that the Capsule they load contains the correct C API."
 msgstr ""
@@ -592,20 +1013,79 @@ msgstr ""
 msgid "The function :c:func:`!PySpam_System` is a plain C function, declared ``static`` like everything else::"
 msgstr ""
 
+#: ../../extending/extending.rst:1221
+msgid "static int\n"
+"PySpam_System(const char *command)\n"
+"{\n"
+"    return system(command);\n"
+"}"
+msgstr ""
+
 #: ../../extending/extending.rst:1227
 msgid "The function :c:func:`!spam_system` is modified in a trivial way::"
+msgstr ""
+
+#: ../../extending/extending.rst:1229
+msgid "static PyObject *\n"
+"spam_system(PyObject *self, PyObject *args)\n"
+"{\n"
+"    const char *command;\n"
+"    int sts;\n"
+"\n"
+"    if (!PyArg_ParseTuple(args, \"s\", &command))\n"
+"        return NULL;\n"
+"    sts = PySpam_System(command);\n"
+"    return PyLong_FromLong(sts);\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:1241
 msgid "In the beginning of the module, right after the line ::"
 msgstr ""
 
+#: ../../extending/extending.rst:1243
+msgid "#include <Python.h>"
+msgstr ""
+
 #: ../../extending/extending.rst:1245
 msgid "two more lines must be added::"
 msgstr ""
 
+#: ../../extending/extending.rst:1247
+msgid "#define SPAM_MODULE\n"
+"#include \"spammodule.h\""
+msgstr ""
+
 #: ../../extending/extending.rst:1250
 msgid "The ``#define`` is used to tell the header file that it is being included in the exporting module, not a client module. Finally, the module's initialization function must take care of initializing the C API pointer array::"
+msgstr ""
+
+#: ../../extending/extending.rst:1254
+msgid "PyMODINIT_FUNC\n"
+"PyInit_spam(void)\n"
+"{\n"
+"    PyObject *m;\n"
+"    static void *PySpam_API[PySpam_API_pointers];\n"
+"    PyObject *c_api_object;\n"
+"\n"
+"    m = PyModule_Create(&spammodule);\n"
+"    if (m == NULL)\n"
+"        return NULL;\n"
+"\n"
+"    /* Initialize the C API pointer array */\n"
+"    PySpam_API[PySpam_System_NUM] = (void *)PySpam_System;\n"
+"\n"
+"    /* Create a Capsule containing the API pointer array's address */\n"
+"    c_api_object = PyCapsule_New((void *)PySpam_API, \"spam._C_API\", NULL);\n"
+"\n"
+"    if (PyModule_AddObject(m, \"_C_API\", c_api_object) < 0) {\n"
+"        Py_XDECREF(c_api_object);\n"
+"        Py_DECREF(m);\n"
+"        return NULL;\n"
+"    }\n"
+"\n"
+"    return m;\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:1280
@@ -616,8 +1096,74 @@ msgstr ""
 msgid "The bulk of the work is in the header file :file:`spammodule.h`, which looks like this::"
 msgstr ""
 
+#: ../../extending/extending.rst:1286
+msgid "#ifndef Py_SPAMMODULE_H\n"
+"#define Py_SPAMMODULE_H\n"
+"#ifdef __cplusplus\n"
+"extern \"C\" {\n"
+"#endif\n"
+"\n"
+"/* Header file for spammodule */\n"
+"\n"
+"/* C API functions */\n"
+"#define PySpam_System_NUM 0\n"
+"#define PySpam_System_RETURN int\n"
+"#define PySpam_System_PROTO (const char *command)\n"
+"\n"
+"/* Total number of C API pointers */\n"
+"#define PySpam_API_pointers 1\n"
+"\n"
+"\n"
+"#ifdef SPAM_MODULE\n"
+"/* This section is used when compiling spammodule.c */\n"
+"\n"
+"static PySpam_System_RETURN PySpam_System PySpam_System_PROTO;\n"
+"\n"
+"#else\n"
+"/* This section is used in modules that use spammodule's API */\n"
+"\n"
+"static void **PySpam_API;\n"
+"\n"
+"#define PySpam_System \\\n"
+" (*(PySpam_System_RETURN (*)PySpam_System_PROTO) PySpam_API[PySpam_System_NUM])\n"
+"\n"
+"/* Return -1 on error, 0 on success.\n"
+" * PyCapsule_Import will set an exception if there's an error.\n"
+" */\n"
+"static int\n"
+"import_spam(void)\n"
+"{\n"
+"    PySpam_API = (void **)PyCapsule_Import(\"spam._C_API\", 0);\n"
+"    return (PySpam_API != NULL) ? 0 : -1;\n"
+"}\n"
+"\n"
+"#endif\n"
+"\n"
+"#ifdef __cplusplus\n"
+"}\n"
+"#endif\n"
+"\n"
+"#endif /* !defined(Py_SPAMMODULE_H) */"
+msgstr ""
+
 #: ../../extending/extending.rst:1334
 msgid "All that a client module must do in order to have access to the function :c:func:`!PySpam_System` is to call the function (or rather macro) :c:func:`!import_spam` in its initialization function::"
+msgstr ""
+
+#: ../../extending/extending.rst:1338
+msgid "PyMODINIT_FUNC\n"
+"PyInit_client(void)\n"
+"{\n"
+"    PyObject *m;\n"
+"\n"
+"    m = PyModule_Create(&clientmodule);\n"
+"    if (m == NULL)\n"
+"        return NULL;\n"
+"    if (import_spam() < 0)\n"
+"        return NULL;\n"
+"    /* additional initialization can happen here */\n"
+"    return m;\n"
+"}"
 msgstr ""
 
 #: ../../extending/extending.rst:1352

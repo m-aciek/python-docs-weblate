@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -292,6 +292,20 @@ msgstr ""
 msgid "The :class:`shlex` class provides compatibility with the parsing performed by common Unix shells like ``bash``, ``dash``, and ``sh``.  To take advantage of this compatibility, specify the ``punctuation_chars`` argument in the constructor.  This defaults to ``False``, which preserves pre-3.6 behaviour. However, if it is set to ``True``, then parsing of the characters ``();<>|&`` is changed: any run of these characters is returned as a single token.  While this is short of a full parser for shells (which would be out of scope for the standard library, given the multiplicity of shells out there), it does allow you to perform processing of command lines more easily than you could otherwise.  To illustrate, you can see the difference in the following snippet:"
 msgstr ""
 
+#: ../../library/shlex.rst:412
+msgid ">>> import shlex\n"
+">>> text = \"a && b; c && d || e; f >'abc'; (def \\\"ghi\\\")\"\n"
+">>> s = shlex.shlex(text, posix=True)\n"
+">>> s.whitespace_split = True\n"
+">>> list(s)\n"
+"['a', '&&', 'b;', 'c', '&&', 'd', '||', 'e;', 'f', '>abc;', '(def', 'ghi)']\n"
+">>> s = shlex.shlex(text, posix=True, punctuation_chars=True)\n"
+">>> s.whitespace_split = True\n"
+">>> list(s)\n"
+"['a', '&&', 'b', ';', 'c', '&&', 'd', '||', 'e', ';', 'f', '>', 'abc', ';',\n"
+"'(', 'def', 'ghi', ')']"
+msgstr ""
+
 #: ../../library/shlex.rst:427
 msgid "Of course, tokens will be returned which are not valid for shells, and you'll need to implement your own error checks on the returned tokens."
 msgstr ""
@@ -300,8 +314,23 @@ msgstr ""
 msgid "Instead of passing ``True`` as the value for the punctuation_chars parameter, you can pass a string with specific characters, which will be used to determine which characters constitute punctuation. For example::"
 msgstr ""
 
+#: ../../library/shlex.rst:434
+msgid ">>> import shlex\n"
+">>> s = shlex.shlex(\"a && b || c\", punctuation_chars=\"|\")\n"
+">>> list(s)\n"
+"['a', '&', '&', 'b', '||', 'c']"
+msgstr ""
+
 #: ../../library/shlex.rst:439
 msgid "When ``punctuation_chars`` is specified, the :attr:`~shlex.wordchars` attribute is augmented with the characters ``~-./*?=``.  That is because these characters can appear in file names (including wildcards) and command-line arguments (e.g. ``--color=auto``). Hence::"
+msgstr ""
+
+#: ../../library/shlex.rst:444
+msgid ">>> import shlex\n"
+">>> s = shlex.shlex('~/a && b-c --color=auto || d *.py?',\n"
+"...                 punctuation_chars=True)\n"
+">>> list(s)\n"
+"['~/a', '&&', 'b-c', '--color=auto', '||', 'd', '*.py?']"
 msgstr ""
 
 #: ../../library/shlex.rst:450

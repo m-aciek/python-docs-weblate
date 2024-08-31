@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:15+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,16 +60,61 @@ msgstr ""
 msgid ":class:`ZoneInfo` is a concrete implementation of the :class:`datetime.tzinfo` abstract base class, and is intended to be attached to ``tzinfo``, either via the constructor, the :meth:`datetime.replace <datetime.datetime.replace>` method or :meth:`datetime.astimezone <datetime.datetime.astimezone>`::"
 msgstr ""
 
+#: ../../library/zoneinfo.rst:42
+msgid ">>> from zoneinfo import ZoneInfo\n"
+">>> from datetime import datetime, timedelta\n"
+"\n"
+">>> dt = datetime(2020, 10, 31, 12, tzinfo=ZoneInfo(\"America/Los_Angeles\"))\n"
+">>> print(dt)\n"
+"2020-10-31 12:00:00-07:00\n"
+"\n"
+">>> dt.tzname()\n"
+"'PDT'"
+msgstr ""
+
 #: ../../library/zoneinfo.rst:52
 msgid "Datetimes constructed in this way are compatible with datetime arithmetic and handle daylight saving time transitions with no further intervention::"
+msgstr ""
+
+#: ../../library/zoneinfo.rst:55
+msgid ">>> dt_add = dt + timedelta(days=1)\n"
+"\n"
+">>> print(dt_add)\n"
+"2020-11-01 12:00:00-08:00\n"
+"\n"
+">>> dt_add.tzname()\n"
+"'PST'"
 msgstr ""
 
 #: ../../library/zoneinfo.rst:63
 msgid "These time zones also support the :attr:`~datetime.datetime.fold` attribute introduced in :pep:`495`.  During offset transitions which induce ambiguous times (such as a daylight saving time to standard time transition), the offset from *before* the transition is used when ``fold=0``, and the offset *after* the transition is used when ``fold=1``, for example::"
 msgstr ""
 
+#: ../../library/zoneinfo.rst:69
+msgid ">>> dt = datetime(2020, 11, 1, 1, tzinfo=ZoneInfo(\"America/Los_Angeles\"))\n"
+">>> print(dt)\n"
+"2020-11-01 01:00:00-07:00\n"
+"\n"
+">>> print(dt.replace(fold=1))\n"
+"2020-11-01 01:00:00-08:00"
+msgstr ""
+
 #: ../../library/zoneinfo.rst:76
 msgid "When converting from another time zone, the fold will be set to the correct value::"
+msgstr ""
+
+#: ../../library/zoneinfo.rst:79
+msgid ">>> from datetime import timezone\n"
+">>> LOS_ANGELES = ZoneInfo(\"America/Los_Angeles\")\n"
+">>> dt_utc = datetime(2020, 11, 1, 8, tzinfo=timezone.utc)\n"
+"\n"
+">>> # Before the PDT -> PST transition\n"
+">>> print(dt_utc.astimezone(LOS_ANGELES))\n"
+"2020-11-01 01:00:00-07:00\n"
+"\n"
+">>> # After the PDT -> PST transition\n"
+">>> print((dt_utc + timedelta(hours=1)).astimezone(LOS_ANGELES))\n"
+"2020-11-01 01:00:00-08:00"
 msgstr ""
 
 #: ../../library/zoneinfo.rst:92
@@ -142,6 +187,12 @@ msgstr ""
 
 #: ../../library/zoneinfo.rst:176
 msgid "A concrete :class:`datetime.tzinfo` subclass that represents an IANA time zone specified by the string ``key``. Calls to the primary constructor will always return objects that compare identically; put another way, barring cache invalidation via :meth:`ZoneInfo.clear_cache`, for all values of ``key``, the following assertion will always be true:"
+msgstr ""
+
+#: ../../library/zoneinfo.rst:182
+msgid "a = ZoneInfo(key)\n"
+"b = ZoneInfo(key)\n"
+"assert a is b"
 msgstr ""
 
 #: ../../library/zoneinfo.rst:188
@@ -220,6 +271,16 @@ msgstr ""
 msgid "The string representation returned when calling :py:class:`str` on a :class:`ZoneInfo` object defaults to using the :attr:`ZoneInfo.key` attribute (see the note on usage in the attribute documentation)::"
 msgstr ""
 
+#: ../../library/zoneinfo.rst:275
+msgid ">>> zone = ZoneInfo(\"Pacific/Kwajalein\")\n"
+">>> str(zone)\n"
+"'Pacific/Kwajalein'\n"
+"\n"
+">>> dt = datetime(2020, 4, 1, 3, 15, tzinfo=zone)\n"
+">>> f\"{dt.isoformat()} [{dt.tzinfo}]\"\n"
+"'2020-04-01T03:15:00+12:00 [Pacific/Kwajalein]'"
+msgstr ""
+
 #: ../../library/zoneinfo.rst:283
 msgid "For objects constructed from a file without specifying a ``key`` parameter, ``str`` falls back to calling :func:`repr`. ``ZoneInfo``'s ``repr`` is implementation-defined and not necessarily stable between versions, but it is guaranteed not to be a valid ``ZoneInfo`` key."
 msgstr ""
@@ -240,8 +301,22 @@ msgstr ""
 msgid "``ZoneInfo(key)``: When constructed with the primary constructor, a ``ZoneInfo`` object is serialized by key, and when deserialized, the deserializing process uses the primary and thus it is expected that these are expected to be the same object as other references to the same time zone.  For example, if ``europe_berlin_pkl`` is a string containing a pickle constructed from ``ZoneInfo(\"Europe/Berlin\")``, one would expect the following behavior:"
 msgstr ""
 
+#: ../../library/zoneinfo.rst:307
+msgid ">>> a = ZoneInfo(\"Europe/Berlin\")\n"
+">>> b = pickle.loads(europe_berlin_pkl)\n"
+">>> a is b\n"
+"True"
+msgstr ""
+
 #: ../../library/zoneinfo.rst:314
 msgid "``ZoneInfo.no_cache(key)``: When constructed from the cache-bypassing constructor, the ``ZoneInfo`` object is also serialized by key, but when deserialized, the deserializing process uses the cache bypassing constructor. If ``europe_berlin_pkl_nc`` is a string containing a pickle constructed from ``ZoneInfo.no_cache(\"Europe/Berlin\")``, one would expect the following behavior:"
+msgstr ""
+
+#: ../../library/zoneinfo.rst:321
+msgid ">>> a = ZoneInfo(\"Europe/Berlin\")\n"
+">>> b = pickle.loads(europe_berlin_pkl_nc)\n"
+">>> a is b\n"
+"False"
 msgstr ""
 
 #: ../../library/zoneinfo.rst:328

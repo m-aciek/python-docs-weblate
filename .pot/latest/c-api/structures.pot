@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,12 +44,20 @@ msgstr ""
 msgid "This is a macro used when declaring new types which represent objects without a varying length.  The PyObject_HEAD macro expands to::"
 msgstr ""
 
+#: ../../c-api/structures.rst:50
+msgid "PyObject ob_base;"
+msgstr ""
+
 #: ../../c-api/structures.rst:52
 msgid "See documentation of :c:type:`PyObject` above."
 msgstr ""
 
 #: ../../c-api/structures.rst:57
 msgid "This is a macro used when declaring new types which represent objects with a length that varies from instance to instance. The PyObject_VAR_HEAD macro expands to::"
+msgstr ""
+
+#: ../../c-api/structures.rst:61
+msgid "PyVarObject ob_base;"
 msgstr ""
 
 #: ../../c-api/structures.rst:63
@@ -116,8 +124,18 @@ msgstr ""
 msgid "This is a macro which expands to initialization values for a new :c:type:`PyObject` type.  This macro expands to::"
 msgstr ""
 
+#: ../../c-api/structures.rst:148
+msgid "_PyObject_EXTRA_INIT\n"
+"1, type,"
+msgstr ""
+
 #: ../../c-api/structures.rst:154
 msgid "This is a macro which expands to initialization values for a new :c:type:`PyVarObject` type, including the :c:member:`~PyVarObject.ob_size` field. This macro expands to::"
+msgstr ""
+
+#: ../../c-api/structures.rst:158
+msgid "_PyObject_EXTRA_INIT\n"
+"1, type, size,"
 msgstr ""
 
 #: ../../c-api/structures.rst:163
@@ -132,20 +150,52 @@ msgstr ""
 msgid "The function signature is::"
 msgstr ""
 
+#: ../../c-api/structures.rst:176
+msgid "PyObject *PyCFunction(PyObject *self,\n"
+"                      PyObject *args);"
+msgstr ""
+
 #: ../../c-api/structures.rst:181
 msgid "Type of the functions used to implement Python callables in C with signature :ref:`METH_VARARGS | METH_KEYWORDS <METH_VARARGS-METH_KEYWORDS>`. The function signature is::"
+msgstr ""
+
+#: ../../c-api/structures.rst:185
+msgid "PyObject *PyCFunctionWithKeywords(PyObject *self,\n"
+"                                  PyObject *args,\n"
+"                                  PyObject *kwargs);"
 msgstr ""
 
 #: ../../c-api/structures.rst:192
 msgid "Type of the functions used to implement Python callables in C with signature :c:macro:`METH_FASTCALL`. The function signature is::"
 msgstr ""
 
+#: ../../c-api/structures.rst:196
+msgid "PyObject *_PyCFunctionFast(PyObject *self,\n"
+"                           PyObject *const *args,\n"
+"                           Py_ssize_t nargs);"
+msgstr ""
+
 #: ../../c-api/structures.rst:202
 msgid "Type of the functions used to implement Python callables in C with signature :ref:`METH_FASTCALL | METH_KEYWORDS <METH_FASTCALL-METH_KEYWORDS>`. The function signature is::"
 msgstr ""
 
+#: ../../c-api/structures.rst:206
+msgid "PyObject *_PyCFunctionFastWithKeywords(PyObject *self,\n"
+"                                       PyObject *const *args,\n"
+"                                       Py_ssize_t nargs,\n"
+"                                       PyObject *kwnames);"
+msgstr ""
+
 #: ../../c-api/structures.rst:213
 msgid "Type of the functions used to implement Python callables in C with signature :ref:`METH_METHOD | METH_FASTCALL | METH_KEYWORDS <METH_METHOD-METH_FASTCALL-METH_KEYWORDS>`. The function signature is::"
+msgstr ""
+
+#: ../../c-api/structures.rst:217
+msgid "PyObject *PyCMethod(PyObject *self,\n"
+"                    PyTypeObject *defining_class,\n"
+"                    PyObject *const *args,\n"
+"                    Py_ssize_t nargs,\n"
+"                    PyObject *kwnames)"
 msgstr ""
 
 #: ../../c-api/structures.rst:228
@@ -330,6 +380,14 @@ msgstr ""
 
 #: ../../c-api/structures.rst:484
 msgid "For heap-allocated types (created using :c:func:`PyType_FromSpec` or similar), ``PyMemberDef`` may contain a definition for the special member ``\"__vectorcalloffset__\"``, corresponding to :c:member:`~PyTypeObject.tp_vectorcall_offset` in type objects. These must be defined with ``Py_T_PYSSIZET`` and ``Py_READONLY``, for example::"
+msgstr ""
+
+#: ../../c-api/structures.rst:490
+msgid "static PyMemberDef spam_type_members[] = {\n"
+"    {\"__vectorcalloffset__\", Py_T_PYSSIZET,\n"
+"     offsetof(Spam_object, vectorcall), Py_READONLY},\n"
+"    {NULL}  /* Sentinel */\n"
+"};"
 msgstr ""
 
 #: ../../c-api/structures.rst:496

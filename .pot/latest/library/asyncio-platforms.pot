@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,4 +114,13 @@ msgstr ""
 
 #: ../../library/asyncio-platforms.rst:93
 msgid "On macOS 10.6, 10.7 and 10.8, the default event loop uses :class:`selectors.KqueueSelector`, which does not support character devices on these versions.  The :class:`SelectorEventLoop` can be manually configured to use :class:`~selectors.SelectSelector` or :class:`~selectors.PollSelector` to support character devices on these older versions of macOS.  Example::"
+msgstr ""
+
+#: ../../library/asyncio-platforms.rst:100
+msgid "import asyncio\n"
+"import selectors\n"
+"\n"
+"selector = selectors.SelectSelector()\n"
+"loop = asyncio.SelectorEventLoop(selector)\n"
+"asyncio.set_event_loop(loop)"
 msgstr ""

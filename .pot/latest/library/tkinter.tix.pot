@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 18:19+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,8 +80,20 @@ msgstr ""
 msgid "Classes in the :mod:`tkinter.tix` module subclasses the classes in the :mod:`tkinter`. The former imports the latter, so to use :mod:`tkinter.tix` with Tkinter, all you need to do is to import one module. In general, you can just import :mod:`tkinter.tix`, and replace the toplevel call to :class:`tkinter.Tk` with :class:`tix.Tk`::"
 msgstr ""
 
+#: ../../library/tkinter.tix.rst:67
+msgid "from tkinter import tix\n"
+"from tkinter.constants import *\n"
+"root = tix.Tk()"
+msgstr ""
+
 #: ../../library/tkinter.tix.rst:71
 msgid "To use :mod:`tkinter.tix`, you must have the Tix widgets installed, usually alongside your installation of the Tk widgets. To test your installation, try the following::"
+msgstr ""
+
+#: ../../library/tkinter.tix.rst:75
+msgid "from tkinter import tix\n"
+"root = tix.Tk()\n"
+"root.tk.eval('package require Tix')"
 msgstr ""
 
 #: ../../library/tkinter.tix.rst:81
@@ -258,6 +270,12 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:497
 msgid "To view the current settings, the common usage is::"
+msgstr ""
+
+#: ../../library/tkinter.tix.rst:499
+msgid "from tkinter import tix\n"
+"root = tix.Tk()\n"
+"print(root.tix_configure())"
 msgstr ""
 
 #: ../../library/tkinter.tix.rst:506

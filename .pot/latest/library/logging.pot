@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-28 14:16+0000\n"
+"POT-Creation-Date: 2024-08-31 06:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,8 +52,39 @@ msgstr ""
 msgid "Here's a simple example of idiomatic usage: ::"
 msgstr ""
 
+#: ../../library/logging.rst:35
+msgid "# myapp.py\n"
+"import logging\n"
+"import mylib\n"
+"logger = logging.getLogger(__name__)\n"
+"\n"
+"def main():\n"
+"    logging.basicConfig(filename='myapp.log', level=logging.INFO)\n"
+"    logger.info('Started')\n"
+"    mylib.do_something()\n"
+"    logger.info('Finished')\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    main()"
+msgstr ""
+
+#: ../../library/logging.rst:51
+msgid "# mylib.py\n"
+"import logging\n"
+"logger = logging.getLogger(__name__)\n"
+"\n"
+"def do_something():\n"
+"    logger.info('Doing something')"
+msgstr ""
+
 #: ../../library/logging.rst:58
 msgid "If you run *myapp.py*, you should see this in *myapp.log*:"
+msgstr ""
+
+#: ../../library/logging.rst:60
+msgid "INFO:__main__:Started\n"
+"INFO:mylib:Doing something\n"
+"INFO:__main__:Finished"
 msgstr ""
 
 #: ../../library/logging.rst:66
@@ -222,6 +253,10 @@ msgstr ""
 msgid "You can specify *stack_info* independently of *exc_info*, e.g. to just show how you got to a certain point in your code, even when no exceptions were raised. The stack frames are printed following a header line which says:"
 msgstr ""
 
+#: ../../library/logging.rst:291
+msgid "Stack (most recent call last):"
+msgstr ""
+
 #: ../../library/logging.rst:295
 msgid "This mimics the ``Traceback (most recent call last):`` which is used when displaying exception frames."
 msgstr ""
@@ -234,8 +269,20 @@ msgstr ""
 msgid "The fourth keyword argument is *extra* which can be used to pass a dictionary which is used to populate the __dict__ of the :class:`LogRecord` created for the logging event with user-defined attributes. These custom attributes can then be used as you like. For example, they could be incorporated into logged messages. For example::"
 msgstr ""
 
+#: ../../library/logging.rst:312
+msgid "FORMAT = '%(asctime)s %(clientip)-15s %(user)-8s %(message)s'\n"
+"logging.basicConfig(format=FORMAT)\n"
+"d = {'clientip': '192.168.0.1', 'user': 'fbloggs'}\n"
+"logger = logging.getLogger('tcpserver')\n"
+"logger.warning('Protocol problem: %s', 'connection reset', extra=d)"
+msgstr ""
+
 #: ../../library/logging.rst:318
 msgid "would print something like"
+msgstr ""
+
+#: ../../library/logging.rst:320
+msgid "2006-02-08 22:20:02,165 192.168.0.1 fbloggs  Protocol problem: connection reset"
 msgstr ""
 
 #: ../../library/logging.rst:324
@@ -686,6 +733,17 @@ msgstr ""
 msgid "This functionality can be used to inject your own values into a :class:`LogRecord` at creation time. You can use the following pattern::"
 msgstr ""
 
+#: ../../library/logging.rst:951
+msgid "old_factory = logging.getLogRecordFactory()\n"
+"\n"
+"def record_factory(*args, **kwargs):\n"
+"    record = old_factory(*args, **kwargs)\n"
+"    record.custom_attribute = 0xdecafbad\n"
+"    return record\n"
+"\n"
+"logging.setLogRecordFactory(record_factory)"
+msgstr ""
+
 #: ../../library/logging.rst:960
 msgid "With this pattern, multiple factories could be chained, and as long as they don't overwrite each other's attributes or unintentionally overwrite the standard attributes listed above, there should be no surprises."
 msgstr ""
@@ -1053,6 +1111,11 @@ msgstr ""
 
 #: ../../library/logging.rst:1161
 msgid "Return either the standard :class:`Logger` class, or the last class passed to :func:`setLoggerClass`. This function may be called from within a new class definition, to ensure that installing a customized :class:`Logger` class will not undo customizations already applied by other code. For example::"
+msgstr ""
+
+#: ../../library/logging.rst:1166
+msgid "class MyLogger(logging.getLoggerClass()):\n"
+"    # ... override behaviour here"
 msgstr ""
 
 #: ../../library/logging.rst:1172
