@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1123,7 +1123,7 @@ msgid "Not as such."
 msgstr ""
 
 #: ../../faq/programming.rst:1013
-msgid "For simple input parsing, the easiest approach is usually to split the line into whitespace-delimited words using the :meth:`~str.split` method of string objects and then convert decimal strings to numeric values using :func:`int` or :func:`float`.  :meth:`!split()` supports an optional \"sep\" parameter which is useful if the line uses something other than whitespace as a separator."
+msgid "For simple input parsing, the easiest approach is usually to split the line into whitespace-delimited words using the :meth:`~str.split` method of string objects and then convert decimal strings to numeric values using :func:`int` or :func:`float`.  :meth:`!split` supports an optional \"sep\" parameter which is useful if the line uses something other than whitespace as a separator."
 msgstr ""
 
 #: ../../faq/programming.rst:1019

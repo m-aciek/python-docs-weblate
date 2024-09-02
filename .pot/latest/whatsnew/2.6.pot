@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1471,7 +1471,7 @@ msgid ">>> from fractions import Fraction\n"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1455
-msgid "For converting floating-point numbers to rationals, the float type now has an :meth:`as_integer_ratio()` method that returns the numerator and denominator for a fraction that evaluates to the same floating-point value::"
+msgid "For converting floating-point numbers to rationals, the float type now has an :meth:`as_integer_ratio` method that returns the numerator and denominator for a fraction that evaluates to the same floating-point value::"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1460
@@ -2199,7 +2199,7 @@ msgid "The regular expression module is implemented by compiling bytecodes for a
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2276
-msgid "The :mod:`rlcompleter` module's :meth:`Completer.complete()` method will now ignore exceptions triggered while evaluating a name. (Fixed by Lorenz Quack; :issue:`2250`.)"
+msgid "The :mod:`rlcompleter` module's :meth:`Completer.complete` method will now ignore exceptions triggered while evaluating a name. (Fixed by Lorenz Quack; :issue:`2250`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2280
@@ -2428,7 +2428,7 @@ msgid "The ability to set new shapes for the turtle, and to define a new coordin
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2569
-msgid "Turtles now have an :meth:`undo()` method that can roll back actions."
+msgid "Turtles now have an :meth:`undo` method that can roll back actions."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2570

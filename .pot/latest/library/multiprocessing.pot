@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -533,7 +533,7 @@ msgid "Process objects represent activity that is run in a separate process. The
 msgstr ""
 
 #: ../../library/multiprocessing.rst:505
-msgid "The constructor should always be called with keyword arguments. *group* should always be ``None``; it exists solely for compatibility with :class:`threading.Thread`.  *target* is the callable object to be invoked by the :meth:`run()` method.  It defaults to ``None``, meaning nothing is called. *name* is the process name (see :attr:`name` for more details). *args* is the argument tuple for the target invocation.  *kwargs* is a dictionary of keyword arguments for the target invocation.  If provided, the keyword-only *daemon* argument sets the process :attr:`daemon` flag to ``True`` or ``False``.  If ``None`` (the default), this flag will be inherited from the creating process."
+msgid "The constructor should always be called with keyword arguments. *group* should always be ``None``; it exists solely for compatibility with :class:`threading.Thread`.  *target* is the callable object to be invoked by the :meth:`run` method.  It defaults to ``None``, meaning nothing is called. *name* is the process name (see :attr:`name` for more details). *args* is the argument tuple for the target invocation.  *kwargs* is a dictionary of keyword arguments for the target invocation.  If provided, the keyword-only *daemon* argument sets the process :attr:`daemon` flag to ``True`` or ``False``.  If ``None`` (the default), this flag will be inherited from the creating process."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:516
@@ -667,7 +667,7 @@ msgid "A numeric handle of a system object which will become \"ready\" when the 
 msgstr ""
 
 #: ../../library/multiprocessing.rst:643
-msgid "You can use this value if you want to wait on several events at once using :func:`multiprocessing.connection.wait`.  Otherwise calling :meth:`join()` is simpler."
+msgid "You can use this value if you want to wait on several events at once using :func:`multiprocessing.connection.wait`.  Otherwise calling :meth:`join` is simpler."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:647
@@ -687,7 +687,7 @@ msgid "If this method is used when the associated process is using a pipe or que
 msgstr ""
 
 #: ../../library/multiprocessing.rst:672
-msgid "Same as :meth:`terminate()` but using the ``SIGKILL`` signal on POSIX."
+msgid "Same as :meth:`terminate` but using the ``SIGKILL`` signal on POSIX."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:678
@@ -724,7 +724,7 @@ msgid "The base class of all :mod:`multiprocessing` exceptions."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:715
-msgid "Exception raised by :meth:`Connection.recv_bytes_into()` when the supplied buffer object is too small for the message read."
+msgid "Exception raised by :meth:`Connection.recv_bytes_into` when the supplied buffer object is too small for the message read."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:718
@@ -2774,7 +2774,7 @@ msgid "sys.stdin.close()\n"
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2950
-msgid "Which solves the fundamental issue of processes colliding with each other resulting in a bad file descriptor error, but introduces a potential danger to applications which replace :func:`sys.stdin` with a \"file-like object\" with output buffering.  This danger is that if multiple processes call :meth:`~io.IOBase.close()` on this file-like object, it could result in the same data being flushed to the object multiple times, resulting in corruption."
+msgid "Which solves the fundamental issue of processes colliding with each other resulting in a bad file descriptor error, but introduces a potential danger to applications which replace :func:`sys.stdin` with a \"file-like object\" with output buffering.  This danger is that if multiple processes call :meth:`~io.IOBase.close` on this file-like object, it could result in the same data being flushed to the object multiple times, resulting in corruption."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2957

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgid "Text I/O expects and produces :class:`str` objects.  This means that when
 msgstr ""
 
 #: ../../library/io.rst:58
-msgid "The easiest way to create a text stream is with :meth:`open()`, optionally specifying an encoding::"
+msgid "The easiest way to create a text stream is with :meth:`open`, optionally specifying an encoding::"
 msgstr ""
 
 #: ../../library/io.rst:61
@@ -84,7 +84,7 @@ msgid "Binary I/O (also called *buffered I/O*) expects :term:`bytes-like objects
 msgstr ""
 
 #: ../../library/io.rst:80
-msgid "The easiest way to create a binary stream is with :meth:`open()` with ``'b'`` in the mode string::"
+msgid "The easiest way to create a binary stream is with :meth:`open` with ``'b'`` in the mode string::"
 msgstr ""
 
 #: ../../library/io.rst:83

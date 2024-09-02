@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -352,11 +352,11 @@ msgid "Send an ``ARTICLE`` command, where *message_spec* has the same meaning as
 msgstr ""
 
 #: ../../library/nntplib.rst:487
-msgid "Same as :meth:`article()`, but sends a ``HEAD`` command.  The *lines* returned (or written to *file*) will only contain the message headers, not the body."
+msgid "Same as :meth:`article`, but sends a ``HEAD`` command.  The *lines* returned (or written to *file*) will only contain the message headers, not the body."
 msgstr ""
 
 #: ../../library/nntplib.rst:494
-msgid "Same as :meth:`article()`, but sends a ``BODY`` command.  The *lines* returned (or written to *file*) will only contain the message body, not the headers."
+msgid "Same as :meth:`article`, but sends a ``BODY`` command.  The *lines* returned (or written to *file*) will only contain the message body, not the headers."
 msgstr ""
 
 #: ../../library/nntplib.rst:501
@@ -368,7 +368,7 @@ msgid "If the method succeeds, the server's response is returned.  If the server
 msgstr ""
 
 #: ../../library/nntplib.rst:514
-msgid "Send an ``IHAVE`` command. *message_id* is the id of the message to send to the server (enclosed in  ``'<'`` and ``'>'``).  The *data* parameter and the return value are the same as for :meth:`post()`."
+msgid "Send an ``IHAVE`` command. *message_id* is the id of the message to send to the server (enclosed in  ``'<'`` and ``'>'``).  The *data* parameter and the return value are the same as for :meth:`post`."
 msgstr ""
 
 #: ../../library/nntplib.rst:521
@@ -392,7 +392,7 @@ msgid "Send an ``XHDR`` command.  The *hdr* argument is a header keyword, e.g. `
 msgstr ""
 
 #: ../../library/nntplib.rst:561
-msgid "Send an ``XOVER`` command.  *start* and *end* are article numbers delimiting the range of articles to select.  The return value is the same of for :meth:`over()`.  It is recommended to use :meth:`over()` instead, since it will automatically use the newer ``OVER`` command if available."
+msgid "Send an ``XOVER`` command.  *start* and *end* are article numbers delimiting the range of articles to select.  The return value is the same of for :meth:`over`.  It is recommended to use :meth:`over` instead, since it will automatically use the newer ``OVER`` command if available."
 msgstr ""
 
 #: ../../library/nntplib.rst:569

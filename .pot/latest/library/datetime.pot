@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1273,7 +1273,7 @@ msgid ">>> from datetime import datetime\n"
 msgstr ""
 
 #: ../../library/datetime.rst:1035
-msgid "Previously, this method only supported formats that could be emitted by :meth:`date.isoformat()` or :meth:`datetime.isoformat()`."
+msgid "Previously, this method only supported formats that could be emitted by :meth:`date.isoformat` or :meth:`datetime.isoformat`."
 msgstr ""
 
 #: ../../library/datetime.rst:1042
@@ -1968,7 +1968,7 @@ msgid ">>> from datetime import time\n"
 msgstr ""
 
 #: ../../library/datetime.rst:1818
-msgid "Previously, this method only supported formats that could be emitted by :meth:`time.isoformat()`."
+msgid "Previously, this method only supported formats that could be emitted by :meth:`time.isoformat`."
 msgstr ""
 
 #: ../../library/datetime.rst:1828

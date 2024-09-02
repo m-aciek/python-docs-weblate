@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,7 +149,7 @@ msgid "Run the event loop until :meth:`stop` is called."
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:129
-msgid "If :meth:`stop` is called before :meth:`run_forever()` is called, the loop will poll the I/O selector once with a timeout of zero, run all callbacks scheduled in response to I/O events (and those that were already scheduled), and then exit."
+msgid "If :meth:`stop` is called before :meth:`run_forever` is called, the loop will poll the I/O selector once with a timeout of zero, run all callbacks scheduled in response to I/O events (and those that were already scheduled), and then exit."
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:134
@@ -185,7 +185,7 @@ msgid "This method is idempotent and irreversible.  No other methods should be c
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:167
-msgid "Schedule all currently open :term:`asynchronous generator` objects to close with an :meth:`~agen.aclose()` call.  After calling this method, the event loop will issue a warning if a new asynchronous generator is iterated. This should be used to reliably finalize all scheduled asynchronous generators."
+msgid "Schedule all currently open :term:`asynchronous generator` objects to close with an :meth:`~agen.aclose` call.  After calling this method, the event loop will issue a warning if a new asynchronous generator is iterated. This should be used to reliably finalize all scheduled asynchronous generators."
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:173
@@ -1256,7 +1256,7 @@ msgid "the exception."
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1387
-msgid "This method should not be overloaded in subclassed event loops.  For custom exception handling, use the :meth:`set_exception_handler()` method."
+msgid "This method should not be overloaded in subclassed event loops.  For custom exception handling, use the :meth:`set_exception_handler` method."
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1392
@@ -1346,7 +1346,7 @@ msgid "a file-like object"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1472
-msgid "an existing file descriptor (a positive integer), for example those created with :meth:`os.pipe()`"
+msgid "an existing file descriptor (a positive integer), for example those created with :meth:`os.pipe`"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1473

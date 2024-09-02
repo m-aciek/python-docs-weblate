@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1195,11 +1195,11 @@ msgid "pathlib"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1079
-msgid ":mod:`pathlib.Path` methods that return a boolean result like :meth:`~pathlib.Path.exists()`, :meth:`~pathlib.Path.is_dir()`, :meth:`~pathlib.Path.is_file()`, :meth:`~pathlib.Path.is_mount()`, :meth:`~pathlib.Path.is_symlink()`, :meth:`~pathlib.Path.is_block_device()`, :meth:`~pathlib.Path.is_char_device()`, :meth:`~pathlib.Path.is_fifo()`, :meth:`~pathlib.Path.is_socket()` now return ``False`` instead of raising :exc:`ValueError` or its subclass :exc:`UnicodeEncodeError` for paths that contain characters unrepresentable at the OS level. (Contributed by Serhiy Storchaka in :issue:`33721`.)"
+msgid ":mod:`pathlib.Path` methods that return a boolean result like :meth:`~pathlib.Path.exists`, :meth:`~pathlib.Path.is_dir`, :meth:`~pathlib.Path.is_file`, :meth:`~pathlib.Path.is_mount`, :meth:`~pathlib.Path.is_symlink`, :meth:`~pathlib.Path.is_block_device`, :meth:`~pathlib.Path.is_char_device`, :meth:`~pathlib.Path.is_fifo`, :meth:`~pathlib.Path.is_socket` now return ``False`` instead of raising :exc:`ValueError` or its subclass :exc:`UnicodeEncodeError` for paths that contain characters unrepresentable at the OS level. (Contributed by Serhiy Storchaka in :issue:`33721`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1089
-msgid "Added :meth:`!pathlib.Path.link_to()` which creates a hard link pointing to a path. (Contributed by Joannah Nanjekye in :issue:`26978`) Note that ``link_to`` was deprecated in 3.10 and removed in 3.12 in favor of a ``hardlink_to`` method added in 3.10 which matches the semantics of the existing ``symlink_to`` method."
+msgid "Added :meth:`!pathlib.Path.link_to` which creates a hard link pointing to a path. (Contributed by Joannah Nanjekye in :issue:`26978`) Note that ``link_to`` was deprecated in 3.10 and removed in 3.12 in favor of a ``hardlink_to`` method added in 3.10 which matches the semantics of the existing ``symlink_to`` method."
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1098
@@ -1284,7 +1284,7 @@ msgid "socket"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1173
-msgid "Added :meth:`~socket.create_server()` and :meth:`~socket.has_dualstack_ipv6()` convenience functions to automate the necessary tasks usually involved when creating a server socket, including accepting both IPv4 and IPv6 connections on the same socket.  (Contributed by Giampaolo Rodolà in :issue:`17561`.)"
+msgid "Added :meth:`~socket.create_server` and :meth:`~socket.has_dualstack_ipv6` convenience functions to automate the necessary tasks usually involved when creating a server socket, including accepting both IPv4 and IPv6 connections on the same socket.  (Contributed by Giampaolo Rodolà in :issue:`17561`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1178
@@ -1477,7 +1477,7 @@ msgid "Added :class:`~unittest.mock.AsyncMock` to support an asynchronous versio
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1370
-msgid "Added :func:`~unittest.addModuleCleanup` and :meth:`~unittest.TestCase.addClassCleanup()` to unittest to support cleanups for :func:`~unittest.setUpModule` and :meth:`~unittest.TestCase.setUpClass()`. (Contributed by Lisa Roach in :issue:`24412`.)"
+msgid "Added :func:`~unittest.addModuleCleanup` and :meth:`~unittest.TestCase.addClassCleanup` to unittest to support cleanups for :func:`~unittest.setUpModule` and :meth:`~unittest.TestCase.setUpClass`. (Contributed by Lisa Roach in :issue:`24412`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1376
@@ -1786,7 +1786,7 @@ msgid "Function :func:`~gettext.bind_textdomain_codeset`, methods :meth:`~gettex
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1715
-msgid "The :meth:`~threading.Thread.isAlive()` method of :class:`threading.Thread` has been deprecated. (Contributed by Donghee Na in :issue:`35283`.)"
+msgid "The :meth:`~threading.Thread.isAlive` method of :class:`threading.Thread` has been deprecated. (Contributed by Donghee Na in :issue:`35283`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1719

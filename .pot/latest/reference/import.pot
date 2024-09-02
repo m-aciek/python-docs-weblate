@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,7 +200,7 @@ msgid "The meta path"
 msgstr ""
 
 #: ../../reference/import.rst:280
-msgid "When the named module is not found in :data:`sys.modules`, Python next searches :data:`sys.meta_path`, which contains a list of meta path finder objects.  These finders are queried in order to see if they know how to handle the named module.  Meta path finders must implement a method called :meth:`~importlib.abc.MetaPathFinder.find_spec()` which takes three arguments: a name, an import path, and (optionally) a target module.  The meta path finder can use any strategy it wants to determine whether it can handle the named module or not."
+msgid "When the named module is not found in :data:`sys.modules`, Python next searches :data:`sys.meta_path`, which contains a list of meta path finder objects.  These finders are queried in order to see if they know how to handle the named module.  Meta path finders must implement a method called :meth:`~importlib.abc.MetaPathFinder.find_spec` which takes three arguments: a name, an import path, and (optionally) a target module.  The meta path finder can use any strategy it wants to determine whether it can handle the named module or not."
 msgstr ""
 
 #: ../../reference/import.rst:289
@@ -208,7 +208,7 @@ msgid "If the meta path finder knows how to handle the named module, it returns 
 msgstr ""
 
 #: ../../reference/import.rst:295
-msgid "The :meth:`~importlib.abc.MetaPathFinder.find_spec()` method of meta path finders is called with two or three arguments.  The first is the fully qualified name of the module being imported, for example ``foo.bar.baz``. The second argument is the path entries to use for the module search.  For top-level modules, the second argument is ``None``, but for submodules or subpackages, the second argument is the value of the parent package's ``__path__`` attribute. If the appropriate ``__path__`` attribute cannot be accessed, a :exc:`ModuleNotFoundError` is raised.  The third argument is an existing module object that will be the target of loading later. The import system passes in a target module only during reload."
+msgid "The :meth:`~importlib.abc.MetaPathFinder.find_spec` method of meta path finders is called with two or three arguments.  The first is the fully qualified name of the module being imported, for example ``foo.bar.baz``. The second argument is the path entries to use for the module search.  For top-level modules, the second argument is ``None``, but for submodules or subpackages, the second argument is the value of the parent package's ``__path__`` attribute. If the appropriate ``__path__`` attribute cannot be accessed, a :exc:`ModuleNotFoundError` is raised.  The third argument is an existing module object that will be the target of loading later. The import system passes in a target module only during reload."
 msgstr ""
 
 #: ../../reference/import.rst:306

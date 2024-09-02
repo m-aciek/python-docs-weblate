@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -638,7 +638,7 @@ msgid "Create a new socket using the given address family, socket type and proto
 msgstr ""
 
 #: ../../library/socket.rst:727
-msgid "If *fileno* is specified, the values for *family*, *type*, and *proto* are auto-detected from the specified file descriptor.  Auto-detection can be overruled by calling the function with explicit *family*, *type*, or *proto* arguments.  This only affects how Python represents e.g. the return value of :meth:`socket.getpeername` but not the actual OS resource.  Unlike :func:`socket.fromfd`, *fileno* will return the same socket and not a duplicate. This may help close a detached socket using :meth:`socket.close()`."
+msgid "If *fileno* is specified, the values for *family*, *type*, and *proto* are auto-detected from the specified file descriptor.  Auto-detection can be overruled by calling the function with explicit *family*, *type*, or *proto* arguments.  This only affects how Python represents e.g. the return value of :meth:`socket.getpeername` but not the actual OS resource.  Unlike :func:`socket.fromfd`, *fileno* will return the same socket and not a duplicate. This may help close a detached socket using :meth:`socket.close`."
 msgstr ""
 
 #: ../../library/socket.rst:736
@@ -1140,7 +1140,7 @@ msgid "Raises an :ref:`auditing event <auditing>` ``socket.bind`` with arguments
 msgstr ""
 
 #: ../../library/socket.rst:1412
-msgid "Mark the socket closed.  The underlying system resource (e.g. a file descriptor) is also closed when all file objects from :meth:`makefile()` are closed.  Once that happens, all future operations on the socket object will fail. The remote end will receive no more data (after queued data is flushed)."
+msgid "Mark the socket closed.  The underlying system resource (e.g. a file descriptor) is also closed when all file objects from :meth:`makefile` are closed.  Once that happens, all future operations on the socket object will fail. The remote end will receive no more data (after queued data is flushed)."
 msgstr ""
 
 #: ../../library/socket.rst:1418
@@ -1152,7 +1152,7 @@ msgid ":exc:`OSError` is now raised if an error occurs when the underlying :c:fu
 msgstr ""
 
 #: ../../library/socket.rst:1428
-msgid ":meth:`close()` releases the resource associated with a connection but does not necessarily close the connection immediately.  If you want to close the connection in a timely fashion, call :meth:`shutdown()` before :meth:`close()`."
+msgid ":meth:`close` releases the resource associated with a connection but does not necessarily close the connection immediately.  If you want to close the connection in a timely fashion, call :meth:`shutdown` before :meth:`close`."
 msgstr ""
 
 #: ../../library/socket.rst:1436
@@ -1491,7 +1491,7 @@ msgid "In *timeout mode*, operations fail if they cannot be completed within the
 msgstr ""
 
 #: ../../library/socket.rst:2036
-msgid "At the operating system level, sockets in *timeout mode* are internally set in non-blocking mode.  Also, the blocking and timeout modes are shared between file descriptors and socket objects that refer to the same network endpoint. This implementation detail can have visible consequences if e.g. you decide to use the :meth:`~socket.fileno()` of a socket."
+msgid "At the operating system level, sockets in *timeout mode* are internally set in non-blocking mode.  Also, the blocking and timeout modes are shared between file descriptors and socket objects that refer to the same network endpoint. This implementation detail can have visible consequences if e.g. you decide to use the :meth:`~socket.fileno` of a socket."
 msgstr ""
 
 #: ../../library/socket.rst:2043

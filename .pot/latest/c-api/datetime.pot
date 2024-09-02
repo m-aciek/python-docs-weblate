@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 01:10+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,9 +223,9 @@ msgid "Macros for the convenience of modules implementing the DB API:"
 msgstr ""
 
 #: ../../c-api/datetime.rst:320
-msgid "Create and return a new :class:`datetime.datetime` object given an argument tuple suitable for passing to :meth:`datetime.datetime.fromtimestamp()`."
+msgid "Create and return a new :class:`datetime.datetime` object given an argument tuple suitable for passing to :meth:`datetime.datetime.fromtimestamp`."
 msgstr ""
 
 #: ../../c-api/datetime.rst:326
-msgid "Create and return a new :class:`datetime.date` object given an argument tuple suitable for passing to :meth:`datetime.date.fromtimestamp()`."
+msgid "Create and return a new :class:`datetime.date` object given an argument tuple suitable for passing to :meth:`datetime.date.fromtimestamp`."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,7 +86,7 @@ msgid "Note that this method is provided as a convenience and may not be the mos
 msgstr ""
 
 #: ../../library/email.message.rst:127
-msgid "Equivalent to :meth:`.as_bytes()`.  Allows ``bytes(msg)`` to produce a bytes object containing the serialized message."
+msgid "Equivalent to :meth:`.as_bytes`.  Allows ``bytes(msg)`` to produce a bytes object containing the serialized message."
 msgstr ""
 
 #: ../../library/email.message.rst:133

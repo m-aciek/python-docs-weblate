@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -679,7 +679,7 @@ msgid "A disadvantage of this approach is that it doesn't provide a way to restr
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:452
-msgid "We define a single method, :meth:`!Custom.name()`, that outputs the objects name as the concatenation of the first and last names. ::"
+msgid "We define a single method, :meth:`!Custom.name`, that outputs the objects name as the concatenation of the first and last names. ::"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:455

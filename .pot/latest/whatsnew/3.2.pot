@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-02 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -491,7 +491,7 @@ msgid "(Proposed and implemented by Mark Dickinson; :issue:`9337`.)"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:534
-msgid ":class:`memoryview` objects now have a :meth:`~memoryview.release()` method and they also now support the context management protocol.  This allows timely release of any resources that were acquired when requesting a buffer from the original object."
+msgid ":class:`memoryview` objects now have a :meth:`~memoryview.release` method and they also now support the context management protocol.  This allows timely release of any resources that were acquired when requesting a buffer from the original object."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:543
@@ -1261,7 +1261,7 @@ msgid "Mixed type comparisons are now fully supported so that :class:`~decimal.D
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1327
-msgid "Similar changes were made to :class:`fractions.Fraction` so that the :meth:`~fractions.Fraction.from_float()` and :meth:`~fractions.Fraction.from_decimal` methods are no longer needed (:issue:`8294`):"
+msgid "Similar changes were made to :class:`fractions.Fraction` so that the :meth:`~fractions.Fraction.from_float` and :meth:`~fractions.Fraction.from_decimal` methods are no longer needed (:issue:`8294`):"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1338
@@ -1560,7 +1560,7 @@ msgid "The :mod:`socket` module has two new improvements."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1625
-msgid "Socket objects now have a :meth:`~socket.socket.detach()` method which puts the socket into closed state without actually closing the underlying file descriptor.  The latter can then be reused for other purposes. (Added by Antoine Pitrou; :issue:`8524`.)"
+msgid "Socket objects now have a :meth:`~socket.socket.detach` method which puts the socket into closed state without actually closing the underlying file descriptor.  The latter can then be reused for other purposes. (Added by Antoine Pitrou; :issue:`8524`.)"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1630
@@ -1832,7 +1832,7 @@ msgid "asyncore"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1861
-msgid ":class:`!asyncore.dispatcher` now provides a :meth:`!handle_accepted()` method returning a ``(sock, addr)`` pair which is called when a connection has actually been established with a new remote endpoint. This is supposed to be used as a replacement for old :meth:`!handle_accept()` and avoids the user  to call :meth:`!accept()` directly."
+msgid ":class:`!asyncore.dispatcher` now provides a :meth:`!handle_accepted` method returning a ``(sock, addr)`` pair which is called when a connection has actually been established with a new remote endpoint. This is supposed to be used as a replacement for old :meth:`!handle_accept` and avoids the user  to call :meth:`!accept` directly."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1868
