@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-03 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,7 +344,7 @@ msgid "Dictionaries preserve insertion order, meaning that keys will be produced
 msgstr ""
 
 #: ../../reference/datamodel.rst:499
-msgid "Dictionaries are mutable; they can be created by the ``{...}`` notation (see section :ref:`dict`)."
+msgid "Dictionaries are mutable; they can be created by the ``{}`` notation (see section :ref:`dict`)."
 msgstr ""
 
 #: ../../reference/datamodel.rst:506
