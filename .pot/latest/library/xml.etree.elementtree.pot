@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-06 09:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -955,7 +955,7 @@ msgid "Adds the element *subelement* to the end of this element's internal list 
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:969
-msgid "Appends *subelements* from a sequence object with zero or more elements. Raises :exc:`TypeError` if a subelement is not an :class:`Element`."
+msgid "Appends *subelements* from an iterable of elements. Raises :exc:`TypeError` if a subelement is not an :class:`Element`."
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:977
