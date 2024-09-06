@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-06 14:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1777,7 +1777,7 @@ msgid "For example, if :attr:`~class.__mro__` of *object_or_type* is ``D -> B ->
 msgstr ""
 
 #: ../../library/functions.rst:1888
-msgid "The :attr:`~class.__mro__` attribute of the *object_or_type* lists the method resolution search order used by both :func:`getattr` and :func:`super`.  The attribute is dynamic and can change whenever the inheritance hierarchy is updated."
+msgid "The :attr:`~class.__mro__` attribute of the class corresponding to *object_or_type* lists the method resolution search order used by both :func:`getattr` and :func:`super`.  The attribute is dynamic and can change whenever the inheritance hierarchy is updated."
 msgstr ""
 
 #: ../../library/functions.rst:1893
