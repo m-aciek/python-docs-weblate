@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 14:16+0000\n"
+"POT-Creation-Date: 2024-09-06 11:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3460,6 +3460,7 @@ msgid "Notable changes in 3.12.5"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:2269
+#: ../../whatsnew/3.12.rst:2286
 msgid "email"
 msgstr ""
 
@@ -3469,4 +3470,12 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:2274
 msgid "The :mod:`~email.generator` will now refuse to serialize (write) headers that are improperly folded or delimited, such that they would be parsed as multiple headers or joined with adjacent data. If you need to turn this safety feature off, set :attr:`~email.policy.Policy.verify_generated_headers`. (Contributed by Bas Bloemsaat and Petr Viktorin in :gh:`121650`.)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:2283
+msgid "Notable changes in 3.12.6"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:2288
+msgid ":func:`email.utils.getaddresses` and :func:`email.utils.parseaddr` now return ``('', '')`` 2-tuples in more situations where invalid email addresses are encountered, instead of potentially inaccurate values. An optional *strict* parameter was added to these two functions: use ``strict=False`` to get the old behavior, accepting malformed inputs. ``getattr(email.utils, 'supports_strict_parsing', False)`` can be used to check if the *strict* paramater is available. (Contributed by Thomas Dwyer and Victor Stinner for :gh:`102988` to improve the CVE-2023-27043 fix.)"
 msgstr ""
