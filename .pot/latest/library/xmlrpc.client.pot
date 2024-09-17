@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-17 04:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,7 @@ msgid "A good description of XML-RPC operation and client software in several la
 msgstr ""
 
 #: ../../library/xmlrpc.client.rst:168
-msgid "`XML-RPC Introspection <https://xmlrpc-c.sourceforge.net/introspection.html>`_"
+msgid "`XML-RPC Introspection <https://xmlrpc-c.sourceforge.io/introspection.html>`_"
 msgstr ""
 
 #: ../../library/xmlrpc.client.rst:169

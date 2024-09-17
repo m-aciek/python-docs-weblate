@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 14:16+0000\n"
+"POT-Creation-Date: 2024-09-17 04:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1340,7 +1340,7 @@ msgid "The :mod:`ssl` module's :class:`~ssl.SSLSocket` objects now support the b
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1547
-msgid "The :func:`~ssl.SSLContext.wrap_socket` constructor function now takes a *ciphers* argument that's a string listing the encryption algorithms to be allowed; the format of the string is described `in the OpenSSL documentation <https://www.openssl.org/docs/man1.0.2/man1/ciphers.html>`__. (Added by Antoine Pitrou; :issue:`8322`.)"
+msgid "The :func:`~ssl.SSLContext.wrap_socket` constructor function now takes a *ciphers* argument that's a string listing the encryption algorithms to be allowed; the format of the string is described `in the OpenSSL documentation <https://docs.openssl.org/1.0.2/man1/ciphers/>`__. (Added by Antoine Pitrou; :issue:`8322`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1554

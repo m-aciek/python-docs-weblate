@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 14:16+0000\n"
+"POT-Creation-Date: 2024-09-17 04:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1261,7 +1261,7 @@ msgid "The *cafile* string, if present, is the path to a file of concatenated CA
 msgstr ""
 
 #: ../../library/ssl.rst:1522
-msgid "The *capath* string, if present, is the path to a directory containing several CA certificates in PEM format, following an `OpenSSL specific layout <https://www.openssl.org/docs/manmaster/man3/SSL_CTX_load_verify_locations.html>`_."
+msgid "The *capath* string, if present, is the path to a directory containing several CA certificates in PEM format, following an `OpenSSL specific layout <https://docs.openssl.org/master/man3/SSL_CTX_load_verify_locations/>`_."
 msgstr ""
 
 #: ../../library/ssl.rst:1527
@@ -1319,7 +1319,7 @@ msgid "Load a set of default \"certification authority\" (CA) certificates from 
 msgstr ""
 
 #: ../../library/ssl.rst:1598
-msgid "Set the available ciphers for sockets created with this context. It should be a string in the `OpenSSL cipher list format <https://www.openssl.org/docs/manmaster/man1/ciphers.html>`_. If no cipher can be selected (because compile-time options or other configuration forbids use of all the specified ciphers), an :class:`SSLError` will be raised."
+msgid "Set the available ciphers for sockets created with this context. It should be a string in the `OpenSSL cipher list format <https://docs.openssl.org/master/man1/ciphers/>`_. If no cipher can be selected (because compile-time options or other configuration forbids use of all the specified ciphers), an :class:`SSLError` will be raised."
 msgstr ""
 
 #: ../../library/ssl.rst:1606
@@ -1480,7 +1480,7 @@ msgid "The return type of :meth:`SSLContext.wrap_bio`, defaults to :class:`SSLOb
 msgstr ""
 
 #: ../../library/ssl.rst:1831
-msgid "Get statistics about the SSL sessions created or managed by this context. A dictionary is returned which maps the names of each `piece of information <https://www.openssl.org/docs/man1.1.1/man3/SSL_CTX_sess_number.html>`_ to their numeric values.  For example, here is the total number of hits and misses in the session cache since the context was created::"
+msgid "Get statistics about the SSL sessions created or managed by this context. A dictionary is returned which maps the names of each `piece of information <https://docs.openssl.org/1.1.1/man3/SSL_CTX_sess_number/>`_ to their numeric values.  For example, here is the total number of hits and misses in the session cache since the context was created::"
 msgstr ""
 
 #: ../../library/ssl.rst:1836
@@ -1567,7 +1567,7 @@ msgid "The flag had no effect with OpenSSL before version 1.1.1l. Python 3.8.9, 
 msgstr ""
 
 #: ../../library/ssl.rst:1974
-msgid "An integer representing the `security level <https://www.openssl.org/docs/manmaster/man3/SSL_CTX_get_security_level.html>`_ for the context. This attribute is read-only."
+msgid "An integer representing the `security level <https://docs.openssl.org/master/man3/SSL_CTX_get_security_level/>`_ for the context. This attribute is read-only."
 msgstr ""
 
 #: ../../library/ssl.rst:1982
