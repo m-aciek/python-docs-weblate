@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 04:24+0000\n"
+"POT-Creation-Date: 2024-09-17 15:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -805,7 +805,7 @@ msgid "``PyOS_ascii_formatd(buffer, buf_len, format, d)`` converts a :c:expr:`do
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:759
-msgid "The code for these functions came from the GLib library (https://developer-old.gnome.org/glib/2.26/), whose developers kindly relicensed the relevant functions and donated them to the Python Software Foundation.  The :mod:`locale` module  can now change the numeric locale, letting extensions such as GTK+  produce the correct results."
+msgid "The code for these functions came from the GLib library (`https://developer-old.gnome.org/glib/2.26/ <http://web.archive.org/web/20210306104320/https://developer.gnome.org/glib/2.26/>`__), whose developers kindly relicensed the relevant functions and donated them to the Python Software Foundation.  The :mod:`locale` module  can now change the numeric locale, letting extensions such as GTK+  produce the correct results."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:768
