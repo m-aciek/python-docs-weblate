@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 14:16+0000\n"
+"POT-Creation-Date: 2024-09-18 01:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1834,7 +1834,7 @@ msgid "The following features and APIs have been removed from Python 3.8:"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1755
-msgid "Starting with Python 3.3, importing ABCs from :mod:`collections` was deprecated, and importing should be done from :mod:`collections.abc`. Being able to import from collections was marked for removal in 3.8, but has been delayed to 3.9. (See :issue:`36952`.)"
+msgid "Starting with Python 3.3, importing ABCs from :mod:`collections` was deprecated, and importing should be done from :mod:`collections.abc`. Being able to import from collections was marked for removal in 3.8, but has been delayed to 3.9. (See :gh:`81134`.)"
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:1760
