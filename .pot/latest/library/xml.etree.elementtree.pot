@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-06 09:18+0000\n"
+"POT-Creation-Date: 2024-09-20 11:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1209,7 +1209,7 @@ msgid "This class is the low-level building block of the module.  It uses :mod:`
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:1371
-msgid "Parameters are now :ref:`keyword-only <keyword-only_parameter>`. The *html* argument no longer supported."
+msgid "Parameters are now :ref:`keyword-only <keyword-only_parameter>`. The *html* argument is no longer supported."
 msgstr ""
 
 #: ../../library/xml.etree.elementtree.rst:1378
