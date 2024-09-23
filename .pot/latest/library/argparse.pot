@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-23 19:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2367,7 +2367,7 @@ msgid "Exiting methods"
 msgstr ""
 
 #: ../../library/argparse.rst:2192
-msgid "This method terminates the program, exiting with the specified *status* and, if given, it prints a *message* before that. The user can override this method to handle these steps differently::"
+msgid "This method terminates the program, exiting with the specified *status* and, if given, it prints a *message* to :data:`sys.stderr` before that. The user can override this method to handle these steps differently::"
 msgstr ""
 
 #: ../../library/argparse.rst:2196
@@ -2379,7 +2379,7 @@ msgid "class ErrorCatchingArgumentParser(argparse.ArgumentParser):\n"
 msgstr ""
 
 #: ../../library/argparse.rst:2204
-msgid "This method prints a usage message including the *message* to the standard error and terminates the program with a status code of 2."
+msgid "This method prints a usage message, including the *message*, to :data:`sys.stderr` and terminates the program with a status code of 2."
 msgstr ""
 
 #: ../../library/argparse.rst:2209
