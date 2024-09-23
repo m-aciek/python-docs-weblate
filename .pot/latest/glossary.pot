@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-06 14:21+0000\n"
+"POT-Creation-Date: 2024-09-23 16:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1305,7 +1305,7 @@ msgid "sequence"
 msgstr ""
 
 #: ../../glossary.rst:1102
-msgid "An :term:`iterable` which supports efficient element access using integer indices via the :meth:`~object.__getitem__` special method and defines a :meth:`~object.__len__` method that returns the length of the sequence. Some built-in sequence types are :class:`list`, :class:`str`, :class:`tuple`, and :class:`bytes`. Note that :class:`dict` also supports :meth:`~object.__getitem__` and :meth:`!__len__`, but is considered a mapping rather than a sequence because the lookups use arbitrary :term:`immutable` keys rather than integers."
+msgid "An :term:`iterable` which supports efficient element access using integer indices via the :meth:`~object.__getitem__` special method and defines a :meth:`~object.__len__` method that returns the length of the sequence. Some built-in sequence types are :class:`list`, :class:`str`, :class:`tuple`, and :class:`bytes`. Note that :class:`dict` also supports :meth:`~object.__getitem__` and :meth:`!__len__`, but is considered a mapping rather than a sequence because the lookups use arbitrary :term:`hashable` keys rather than integers."
 msgstr ""
 
 #: ../../glossary.rst:1111
