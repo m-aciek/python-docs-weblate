@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,7 +144,7 @@ msgid "*spec*: This can be either a list of strings or an existing object (a cla
 msgstr ""
 
 #: ../../library/unittest.mock.rst:239
-msgid "If *spec* is an object (rather than a list of strings) then :attr:`~instance.__class__` returns the class of the spec object. This allows mocks to pass :func:`isinstance` tests."
+msgid "If *spec* is an object (rather than a list of strings) then :attr:`~object.__class__` returns the class of the spec object. This allows mocks to pass :func:`isinstance` tests."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:243

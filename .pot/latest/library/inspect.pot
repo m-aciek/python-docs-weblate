@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-12 12:34+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -742,7 +742,7 @@ msgid "Return ``True`` if the object is a method descriptor, but not if :func:`i
 msgstr ""
 
 #: ../../library/inspect.rst:509
-msgid "This, for example, is true of ``int.__add__``.  An object passing this test has a :meth:`~object.__get__` method but not a :meth:`~object.__set__` method, but beyond that the set of attributes varies.  A :attr:`~definition.__name__` attribute is usually sensible, and :attr:`!__doc__` often is."
+msgid "This, for example, is true of ``int.__add__``.  An object passing this test has a :meth:`~object.__get__` method but not a :meth:`~object.__set__` method, but beyond that the set of attributes varies.  A :attr:`~definition.__name__` attribute is usually sensible, and :attr:`~definition.__doc__` often is."
 msgstr ""
 
 #: ../../library/inspect.rst:515

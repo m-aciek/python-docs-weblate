@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-23 16:46+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -409,7 +409,7 @@ msgid "docstring"
 msgstr ""
 
 #: ../../glossary.rst:351
-msgid "A string literal which appears as the first expression in a class, function or module.  While ignored when the suite is executed, it is recognized by the compiler and put into the :attr:`!__doc__` attribute of the enclosing class, function or module.  Since it is available via introspection, it is the canonical place for documentation of the object."
+msgid "A string literal which appears as the first expression in a class, function or module.  While ignored when the suite is executed, it is recognized by the compiler and put into the :attr:`~definition.__doc__` attribute of the enclosing class, function or module.  Since it is available via introspection, it is the canonical place for documentation of the object."
 msgstr ""
 
 #: ../../glossary.rst:357
@@ -1417,7 +1417,7 @@ msgid "type"
 msgstr ""
 
 #: ../../glossary.rst:1202
-msgid "The type of a Python object determines what kind of object it is; every object has a type.  An object's type is accessible as its :attr:`~instance.__class__` attribute or can be retrieved with ``type(obj)``."
+msgid "The type of a Python object determines what kind of object it is; every object has a type.  An object's type is accessible as its :attr:`~object.__class__` attribute or can be retrieved with ``type(obj)``."
 msgstr ""
 
 #: ../../glossary.rst:1206

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 14:16+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2508,7 +2508,7 @@ msgid "Removed non-documented macro :c:macro:`!PyObject_REPR()` which leaked ref
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2529
-msgid "Because the lack of the :attr:`__module__` attribute breaks pickling and introspection, a deprecation warning is now raised for builtin types without the :attr:`__module__` attribute.  This would be an AttributeError in the future. (Contributed by Serhiy Storchaka in :issue:`20204`.)"
+msgid "Because the lack of the :attr:`~type.__module__` attribute breaks pickling and introspection, a deprecation warning is now raised for builtin types without the :attr:`~type.__module__` attribute.  This will be an :exc:`AttributeError` in the future. (Contributed by Serhiy Storchaka in :issue:`20204`.)"
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2535

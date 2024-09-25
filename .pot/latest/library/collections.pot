@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -802,7 +802,7 @@ msgid "*defaults* can be ``None`` or an :term:`iterable` of default values. Sinc
 msgstr ""
 
 #: ../../library/collections.rst:877
-msgid "If *module* is defined, the ``__module__`` attribute of the named tuple is set to that value."
+msgid "If *module* is defined, the :attr:`~type.__module__` attribute of the named tuple is set to that value."
 msgstr ""
 
 #: ../../library/collections.rst:880

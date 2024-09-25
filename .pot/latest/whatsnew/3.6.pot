@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -544,7 +544,7 @@ msgid "PEP 520: Preserving Class Attribute Definition Order"
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:550
-msgid "Attributes in a class definition body have a natural ordering: the same order in which the names appear in the source.  This order is now preserved in the new class's :attr:`~object.__dict__` attribute."
+msgid "Attributes in a class definition body have a natural ordering: the same order in which the names appear in the source.  This order is now preserved in the new class's :attr:`~type.__dict__` attribute."
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:554
@@ -937,7 +937,7 @@ msgid "The new :class:`~collections.abc.AsyncGenerator` abstract base class repr
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:935
-msgid "The :func:`~collections.namedtuple` function now accepts an optional keyword argument *module*, which, when specified, is used for the ``__module__`` attribute of the returned named tuple class. (Contributed by Raymond Hettinger in :issue:`17941`.)"
+msgid "The :func:`~collections.namedtuple` function now accepts an optional keyword argument *module*, which, when specified, is used for the :attr:`~type.__module__` attribute of the returned named tuple class. (Contributed by Raymond Hettinger in :issue:`17941`.)"
 msgstr ""
 
 #: ../../whatsnew/3.6.rst:940

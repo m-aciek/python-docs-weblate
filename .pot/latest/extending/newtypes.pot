@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,7 +375,7 @@ msgid "For each entry in the table, a :term:`descriptor` will be constructed and
 msgstr ""
 
 #: ../../extending/newtypes.rst:295
-msgid "An interesting advantage of using the :c:member:`~PyTypeObject.tp_members` table to build descriptors that are used at runtime is that any attribute defined this way can have an associated doc string simply by providing the text in the table.  An application can use the introspection API to retrieve the descriptor from the class object, and get the doc string using its :attr:`!__doc__` attribute."
+msgid "An interesting advantage of using the :c:member:`~PyTypeObject.tp_members` table to build descriptors that are used at runtime is that any attribute defined this way can have an associated doc string simply by providing the text in the table.  An application can use the introspection API to retrieve the descriptor from the class object, and get the doc string using its :attr:`~type.__doc__` attribute."
 msgstr ""
 
 #: ../../extending/newtypes.rst:301

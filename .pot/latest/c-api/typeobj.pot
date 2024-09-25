@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1496,11 +1496,11 @@ msgid "For :ref:`dynamically allocated type objects <heap-types>`, this should j
 msgstr ""
 
 #: ../../c-api/typeobj.rst:590
-msgid "For :ref:`statically allocated type objects <static-types>`, the *tp_name* field should contain a dot. Everything before the last dot is made accessible as the :attr:`__module__` attribute, and everything after the last dot is made accessible as the :attr:`~definition.__name__` attribute."
+msgid "For :ref:`statically allocated type objects <static-types>`, the *tp_name* field should contain a dot. Everything before the last dot is made accessible as the :attr:`~type.__module__` attribute, and everything after the last dot is made accessible as the :attr:`~type.__name__` attribute."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:596
-msgid "If no dot is present, the entire :c:member:`~PyTypeObject.tp_name` field is made accessible as the :attr:`~definition.__name__` attribute, and the :attr:`__module__` attribute is undefined (unless explicitly set in the dictionary, as explained above).  This means your type will be impossible to pickle.  Additionally, it will not be listed in module documentations created with pydoc."
+msgid "If no dot is present, the entire :c:member:`~PyTypeObject.tp_name` field is made accessible as the :attr:`~type.__name__` attribute, and the :attr:`~type.__module__` attribute is undefined (unless explicitly set in the dictionary, as explained above).  This means your type will be impossible to pickle.  Additionally, it will not be listed in module documentations created with pydoc."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:602
@@ -1909,7 +1909,7 @@ msgid "This flag is never inherited by types without the :c:macro:`Py_TPFLAGS_IM
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1152
-msgid "This bit indicates that instances of the class have a ``__dict__`` attribute, and that the space for the dictionary is managed by the VM."
+msgid "This bit indicates that instances of the class have a `~object.__dict__` attribute, and that the space for the dictionary is managed by the VM."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1155
@@ -2039,7 +2039,7 @@ msgid "This flag is present in header files, but is an internal feature and shou
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1352
-msgid "An optional pointer to a NUL-terminated C string giving the docstring for this type object.  This is exposed as the :attr:`__doc__` attribute on the type and instances of the type."
+msgid "An optional pointer to a NUL-terminated C string giving the docstring for this type object.  This is exposed as the :attr:`~type.__doc__` attribute on the type and instances of the type."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1358
@@ -2592,7 +2592,7 @@ msgid "A collection of subclasses.  Internal use only.  May be an invalid pointe
 msgstr ""
 
 #: ../../c-api/typeobj.rst:2030
-msgid "To get a list of subclasses, call the Python method :py:meth:`~class.__subclasses__`."
+msgid "To get a list of subclasses, call the Python method :py:meth:`~type.__subclasses__`."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:2035

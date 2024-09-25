@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -714,7 +714,7 @@ msgid "If ``module`` is not supplied, and Enum cannot determine what it is, the 
 msgstr ""
 
 #: ../../howto/enum.rst:591
-msgid "The new pickle protocol 4 also, in some circumstances, relies on :attr:`~definition.__qualname__` being set to the location where pickle will be able to find the class.  For example, if the class was made available in class SomeData in the global scope::"
+msgid "The new pickle protocol 4 also, in some circumstances, relies on :attr:`~type.__qualname__` being set to the location where pickle will be able to find the class.  For example, if the class was made available in class SomeData in the global scope::"
 msgstr ""
 
 #: ../../howto/enum.rst:596

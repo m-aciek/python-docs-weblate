@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-23 19:38+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2707,7 +2707,7 @@ msgid "The :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` flag is now removed from a clas
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1899
-msgid "The :c:macro:`Py_TPFLAGS_MANAGED_DICT` and :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` flags have been added. This allows extensions classes to support object ``__dict__`` and weakrefs with less bookkeeping, using less memory and with faster access."
+msgid "The :c:macro:`Py_TPFLAGS_MANAGED_DICT` and :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` flags have been added. This allows extensions classes to support object :attr:`~object.__dict__` and weakrefs with less bookkeeping, using less memory and with faster access."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1904
@@ -2847,7 +2847,7 @@ msgid "This internal-only :c:member:`PyTypeObject.tp_subclasses` may now not be 
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:2019
-msgid "To get a list of subclasses, call the Python method :py:meth:`~class.__subclasses__` (using :c:func:`PyObject_CallMethod`, for example)."
+msgid "To get a list of subclasses, call the Python method :py:meth:`~type.__subclasses__` (using :c:func:`PyObject_CallMethod`, for example)."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:2023
@@ -2863,7 +2863,7 @@ msgid "Fix wrong sign placement in :c:func:`PyUnicode_FromFormat` and :c:func:`P
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:2039
-msgid "Extension classes wanting to add a ``__dict__`` or weak reference slot should use :c:macro:`Py_TPFLAGS_MANAGED_DICT` and :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` instead of ``tp_dictoffset`` and ``tp_weaklistoffset``, respectively. The use of ``tp_dictoffset`` and ``tp_weaklistoffset`` is still supported, but does not fully support multiple inheritance (:gh:`95589`), and performance may be worse. Classes declaring :c:macro:`Py_TPFLAGS_MANAGED_DICT` should call :c:func:`!_PyObject_VisitManagedDict` and :c:func:`!_PyObject_ClearManagedDict` to traverse and clear their instance's dictionaries. To clear weakrefs, call :c:func:`PyObject_ClearWeakRefs`, as before."
+msgid "Extension classes wanting to add a :attr:`~object.__dict__` or weak reference slot should use :c:macro:`Py_TPFLAGS_MANAGED_DICT` and :c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` instead of ``tp_dictoffset`` and ``tp_weaklistoffset``, respectively. The use of ``tp_dictoffset`` and ``tp_weaklistoffset`` is still supported, but does not fully support multiple inheritance (:gh:`95589`), and performance may be worse. Classes declaring :c:macro:`Py_TPFLAGS_MANAGED_DICT` should call :c:func:`!_PyObject_VisitManagedDict` and :c:func:`!_PyObject_ClearManagedDict` to traverse and clear their instance's dictionaries. To clear weakrefs, call :c:func:`PyObject_ClearWeakRefs`, as before."
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:2051

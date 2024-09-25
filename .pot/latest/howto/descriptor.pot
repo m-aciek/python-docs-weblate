@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 14:16+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -598,7 +598,7 @@ msgid "But it is more common for a descriptor to be invoked automatically from a
 msgstr ""
 
 #: ../../howto/descriptor.rst:560
-msgid "The expression ``obj.x`` looks up the attribute ``x`` in the chain of namespaces for ``obj``.  If the search finds a descriptor outside of the instance ``__dict__``, its :meth:`__get__` method is invoked according to the precedence rules listed below."
+msgid "The expression ``obj.x`` looks up the attribute ``x`` in the chain of namespaces for ``obj``.  If the search finds a descriptor outside of the instance :attr:`~object.__dict__`, its :meth:`~object.__get__` method is invoked according to the precedence rules listed below."
 msgstr ""
 
 #: ../../howto/descriptor.rst:565

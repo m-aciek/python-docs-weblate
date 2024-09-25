@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,7 +235,7 @@ msgid "class MyClass:\n"
 msgstr ""
 
 #: ../../tutorial/classes.rst:276
-msgid "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of ``MyClass.i`` by assignment. :attr:`!__doc__` is also a valid attribute, returning the docstring belonging to the class: ``\"A simple example class\"``."
+msgid "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of ``MyClass.i`` by assignment. :attr:`~type.__doc__` is also a valid attribute, returning the docstring belonging to the class: ``\"A simple example class\"``."
 msgstr ""
 
 #: ../../tutorial/classes.rst:282
@@ -822,7 +822,7 @@ msgid "Footnotes"
 msgstr ""
 
 #: ../../tutorial/classes.rst:933
-msgid "Except for one thing.  Module objects have a secret read-only attribute called :attr:`~object.__dict__` which returns the dictionary used to implement the module's namespace; the name :attr:`~object.__dict__` is an attribute but not a global name. Obviously, using this violates the abstraction of namespace implementation, and should be restricted to things like post-mortem debuggers."
+msgid "Except for one thing.  Module objects have a secret read-only attribute called :attr:`~object.__dict__` which returns the dictionary used to implement the module's namespace; the name ``__dict__`` is an attribute but not a global name. Obviously, using this violates the abstraction of namespace implementation, and should be restricted to things like post-mortem debuggers."
 msgstr ""
 
 #: ../../tutorial/classes.rst:343

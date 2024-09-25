@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-09-25 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,7 +228,7 @@ msgid "Valid values are ``7bit``, ``8bit``, ``base64``, and ``quoted-printable``
 msgstr ""
 
 #: ../../library/email.headerregistry.rst:312
-msgid "This is the factory used by :class:`~email.policy.EmailPolicy` by default. ``HeaderRegistry`` builds the class used to create a header instance dynamically, using *base_class* and a specialized class retrieved from a registry that it holds.  When a given header name does not appear in the registry, the class specified by *default_class* is used as the specialized class.  When *use_default_map* is ``True`` (the default), the standard mapping of header names to classes is copied in to the registry during initialization.  *base_class* is always the last class in the generated class's ``__bases__`` list."
+msgid "This is the factory used by :class:`~email.policy.EmailPolicy` by default. ``HeaderRegistry`` builds the class used to create a header instance dynamically, using *base_class* and a specialized class retrieved from a registry that it holds.  When a given header name does not appear in the registry, the class specified by *default_class* is used as the specialized class.  When *use_default_map* is ``True`` (the default), the standard mapping of header names to classes is copied in to the registry during initialization.  *base_class* is always the last class in the generated class's :class:`~type.__bases__` list."
 msgstr ""
 
 #: ../../library/email.headerregistry.rst:322
