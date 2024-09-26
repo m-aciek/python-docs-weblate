@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-25 19:37+0000\n"
+"POT-Creation-Date: 2024-09-26 16:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid "Download"
 msgstr ""
 
 #: ../../tools/templates/download.html:16
-msgid "Download Python %(release)s Documentation"
+msgid "Download Python %(dl_version)s Documentation"
 msgstr ""
 
 #: ../../tools/templates/download.html:18
