@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-25 23:17+0000\n"
+"POT-Creation-Date: 2024-09-27 21:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -443,22 +443,39 @@ msgid ">>> @fun.register(complex)\n"
 "..."
 msgstr ""
 
-#: ../../library/functools.rst:494
+#: ../../library/functools.rst:493
+msgid "For code that dispatches on a collections type (e.g., ``list``), but wants to typehint the items of the collection (e.g., ``list[int]``), the dispatch type should be passed explicitly to the decorator itself with the typehint going into the function definition::"
+msgstr ""
+
+#: ../../library/functools.rst:498
+msgid ">>> @fun.register(list)\n"
+"... def _(arg: list[int], verbose=False):\n"
+"...     if verbose:\n"
+"...         print(\"Enumerate this:\")\n"
+"...     for i, elem in enumerate(arg):\n"
+"...         print(i, elem)"
+msgstr ""
+
+#: ../../library/functools.rst:507
+msgid "At runtime the function will dispatch on an instance of a list regardless of the type contained within the list i.e. ``[1,2,3]`` will be dispatched the same as ``[\"foo\", \"bar\", \"baz\"]``. The annotation provided in this example is for static type checkers only and has no runtime impact."
+msgstr ""
+
+#: ../../library/functools.rst:513
 msgid "To enable registering :term:`lambdas<lambda>` and pre-existing functions, the :func:`register` attribute can also be used in a functional form::"
 msgstr ""
 
-#: ../../library/functools.rst:497
+#: ../../library/functools.rst:516
 msgid ">>> def nothing(arg, verbose=False):\n"
 "...     print(\"Nothing.\")\n"
 "...\n"
 ">>> fun.register(type(None), nothing)"
 msgstr ""
 
-#: ../../library/functools.rst:502
+#: ../../library/functools.rst:521
 msgid "The :func:`register` attribute returns the undecorated function. This enables decorator stacking, :mod:`pickling<pickle>`, and the creation of unit tests for each variant independently::"
 msgstr ""
 
-#: ../../library/functools.rst:506
+#: ../../library/functools.rst:525
 msgid ">>> @fun.register(float)\n"
 "... @fun.register(Decimal)\n"
 "... def fun_num(arg, verbose=False):\n"
@@ -470,11 +487,11 @@ msgid ">>> @fun.register(float)\n"
 "False"
 msgstr ""
 
-#: ../../library/functools.rst:516
+#: ../../library/functools.rst:535
 msgid "When called, the generic function dispatches on the type of the first argument::"
 msgstr ""
 
-#: ../../library/functools.rst:519
+#: ../../library/functools.rst:538
 msgid ">>> fun(\"Hello, world.\")\n"
 "Hello, world.\n"
 ">>> fun(\"test.\", verbose=True)\n"
@@ -493,15 +510,15 @@ msgid ">>> fun(\"Hello, world.\")\n"
 "0.615"
 msgstr ""
 
-#: ../../library/functools.rst:536
+#: ../../library/functools.rst:555
 msgid "Where there is no registered implementation for a specific type, its method resolution order is used to find a more generic implementation. The original function decorated with ``@singledispatch`` is registered for the base :class:`object` type, which means it is used if no better implementation is found."
 msgstr ""
 
-#: ../../library/functools.rst:542
+#: ../../library/functools.rst:561
 msgid "If an implementation is registered to an :term:`abstract base class`, virtual subclasses of the base class will be dispatched to that implementation::"
 msgstr ""
 
-#: ../../library/functools.rst:546
+#: ../../library/functools.rst:565
 msgid ">>> from collections.abc import Mapping\n"
 ">>> @fun.register\n"
 "... def _(arg: Mapping, verbose=False):\n"
@@ -514,22 +531,22 @@ msgid ">>> from collections.abc import Mapping\n"
 "a => b"
 msgstr ""
 
-#: ../../library/functools.rst:557
+#: ../../library/functools.rst:576
 msgid "To check which implementation the generic function will choose for a given type, use the ``dispatch()`` attribute::"
 msgstr ""
 
-#: ../../library/functools.rst:560
+#: ../../library/functools.rst:579
 msgid ">>> fun.dispatch(float)\n"
 "<function fun_num at 0x1035a2840>\n"
 ">>> fun.dispatch(dict)    # note: default implementation\n"
 "<function fun at 0x103fe0000>"
 msgstr ""
 
-#: ../../library/functools.rst:565
+#: ../../library/functools.rst:584
 msgid "To access all registered implementations, use the read-only ``registry`` attribute::"
 msgstr ""
 
-#: ../../library/functools.rst:568
+#: ../../library/functools.rst:587
 msgid ">>> fun.registry.keys()\n"
 "dict_keys([<class 'NoneType'>, <class 'int'>, <class 'object'>,\n"
 "          <class 'decimal.Decimal'>, <class 'list'>,\n"
@@ -540,23 +557,23 @@ msgid ">>> fun.registry.keys()\n"
 "<function fun at 0x103fe0000>"
 msgstr ""
 
-#: ../../library/functools.rst:579
+#: ../../library/functools.rst:598
 msgid "The :func:`register` attribute now supports using type annotations."
 msgstr ""
 
-#: ../../library/functools.rst:582
+#: ../../library/functools.rst:601
 msgid "The :func:`register` attribute now supports :data:`types.UnionType` and :data:`typing.Union` as type annotations."
 msgstr ""
 
-#: ../../library/functools.rst:589
+#: ../../library/functools.rst:608
 msgid "Transform a method into a :term:`single-dispatch <single dispatch>` :term:`generic function`."
 msgstr ""
 
-#: ../../library/functools.rst:592
+#: ../../library/functools.rst:611
 msgid "To define a generic method, decorate it with the ``@singledispatchmethod`` decorator. When defining a function using ``@singledispatchmethod``, note that the dispatch happens on the type of the first non-*self* or non-*cls* argument::"
 msgstr ""
 
-#: ../../library/functools.rst:597
+#: ../../library/functools.rst:616
 msgid "class Negator:\n"
 "    @singledispatchmethod\n"
 "    def neg(self, arg):\n"
@@ -571,11 +588,11 @@ msgid "class Negator:\n"
 "        return not arg"
 msgstr ""
 
-#: ../../library/functools.rst:610
+#: ../../library/functools.rst:629
 msgid "``@singledispatchmethod`` supports nesting with other decorators such as :func:`@classmethod<classmethod>`. Note that to allow for ``dispatcher.register``, ``singledispatchmethod`` must be the *outer most* decorator. Here is the ``Negator`` class with the ``neg`` methods bound to the class, rather than an instance of the class::"
 msgstr ""
 
-#: ../../library/functools.rst:616
+#: ../../library/functools.rst:635
 msgid "class Negator:\n"
 "    @singledispatchmethod\n"
 "    @classmethod\n"
@@ -593,43 +610,43 @@ msgid "class Negator:\n"
 "        return not arg"
 msgstr ""
 
-#: ../../library/functools.rst:632
+#: ../../library/functools.rst:651
 msgid "The same pattern can be used for other similar decorators: :func:`@staticmethod<staticmethod>`, :func:`@abstractmethod<abc.abstractmethod>`, and others."
 msgstr ""
 
-#: ../../library/functools.rst:641
+#: ../../library/functools.rst:660
 msgid "Update a *wrapper* function to look like the *wrapped* function. The optional arguments are tuples to specify which attributes of the original function are assigned directly to the matching attributes on the wrapper function and which attributes of the wrapper function are updated with the corresponding attributes from the original function. The default values for these arguments are the module level constants ``WRAPPER_ASSIGNMENTS`` (which assigns to the wrapper function's :attr:`~function.__module__`, :attr:`~function.__name__`, :attr:`~function.__qualname__`, :attr:`~function.__annotations__`, :attr:`~function.__type_params__`, and :attr:`~function.__doc__`, the documentation string) and ``WRAPPER_UPDATES`` (which updates the wrapper function's :attr:`~function.__dict__`, i.e. the instance dictionary)."
 msgstr ""
 
-#: ../../library/functools.rst:653
+#: ../../library/functools.rst:672
 msgid "To allow access to the original function for introspection and other purposes (e.g. bypassing a caching decorator such as :func:`lru_cache`), this function automatically adds a ``__wrapped__`` attribute to the wrapper that refers to the function being wrapped."
 msgstr ""
 
-#: ../../library/functools.rst:658
+#: ../../library/functools.rst:677
 msgid "The main intended use for this function is in :term:`decorator` functions which wrap the decorated function and return the wrapper. If the wrapper function is not updated, the metadata of the returned function will reflect the wrapper definition rather than the original function definition, which is typically less than helpful."
 msgstr ""
 
-#: ../../library/functools.rst:664
+#: ../../library/functools.rst:683
 msgid ":func:`update_wrapper` may be used with callables other than functions. Any attributes named in *assigned* or *updated* that are missing from the object being wrapped are ignored (i.e. this function will not attempt to set them on the wrapper function). :exc:`AttributeError` is still raised if the wrapper function itself is missing any attributes named in *updated*."
 msgstr ""
 
-#: ../../library/functools.rst:670
+#: ../../library/functools.rst:689
 msgid "The ``__wrapped__`` attribute is now automatically added. The :attr:`~function.__annotations__` attribute is now copied by default. Missing attributes no longer trigger an :exc:`AttributeError`."
 msgstr ""
 
-#: ../../library/functools.rst:675
+#: ../../library/functools.rst:694
 msgid "The ``__wrapped__`` attribute now always refers to the wrapped function, even if that function defined a ``__wrapped__`` attribute. (see :issue:`17482`)"
 msgstr ""
 
-#: ../../library/functools.rst:680
+#: ../../library/functools.rst:699
 msgid "The :attr:`~function.__type_params__` attribute is now copied by default."
 msgstr ""
 
-#: ../../library/functools.rst:686
+#: ../../library/functools.rst:705
 msgid "This is a convenience function for invoking :func:`update_wrapper` as a function decorator when defining a wrapper function.  It is equivalent to ``partial(update_wrapper, wrapped=wrapped, assigned=assigned, updated=updated)``. For example::"
 msgstr ""
 
-#: ../../library/functools.rst:691
+#: ../../library/functools.rst:710
 msgid ">>> from functools import wraps\n"
 ">>> def my_decorator(f):\n"
 "...     @wraps(f)\n"
@@ -652,30 +669,30 @@ msgid ">>> from functools import wraps\n"
 "'Docstring'"
 msgstr ""
 
-#: ../../library/functools.rst:712
+#: ../../library/functools.rst:731
 msgid "Without the use of this decorator factory, the name of the example function would have been ``'wrapper'``, and the docstring of the original :func:`example` would have been lost."
 msgstr ""
 
-#: ../../library/functools.rst:720
+#: ../../library/functools.rst:739
 msgid ":class:`partial` Objects"
 msgstr ""
 
-#: ../../library/functools.rst:722
+#: ../../library/functools.rst:741
 msgid ":class:`partial` objects are callable objects created by :func:`partial`. They have three read-only attributes:"
 msgstr ""
 
-#: ../../library/functools.rst:728
+#: ../../library/functools.rst:747
 msgid "A callable object or function.  Calls to the :class:`partial` object will be forwarded to :attr:`func` with new arguments and keywords."
 msgstr ""
 
-#: ../../library/functools.rst:734
+#: ../../library/functools.rst:753
 msgid "The leftmost positional arguments that will be prepended to the positional arguments provided to a :class:`partial` object call."
 msgstr ""
 
-#: ../../library/functools.rst:740
+#: ../../library/functools.rst:759
 msgid "The keyword arguments that will be supplied when the :class:`partial` object is called."
 msgstr ""
 
-#: ../../library/functools.rst:743
+#: ../../library/functools.rst:762
 msgid ":class:`partial` objects are like :ref:`function objects <user-defined-funcs>` in that they are callable, weak referenceable, and can have attributes. There are some important differences.  For instance, the :attr:`~function.__name__` and :attr:`function.__doc__` attributes are not created automatically.  Also, :class:`partial` objects defined in classes behave like static methods and do not transform into bound methods during instance attribute look-up."
 msgstr ""
