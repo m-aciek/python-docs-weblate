@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 13:25+0000\n"
+"POT-Creation-Date: 2024-09-27 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -293,11 +293,11 @@ msgid "A Python module, as with :ref:`file input <file-input>`. Node type genera
 msgstr ""
 
 #: ../../library/ast.rst:160
-msgid "*body* is a :class:`list` of the module's :ref:`ast-statements`."
+msgid "``body`` is a :class:`list` of the module's :ref:`ast-statements`."
 msgstr ""
 
 #: ../../library/ast.rst:162
-msgid "*type_ignores* is a :class:`list` of the module's type ignore comments; see :func:`ast.parse` for more details."
+msgid "``type_ignores`` is a :class:`list` of the module's type ignore comments; see :func:`ast.parse` for more details."
 msgstr ""
 
 #: ../../library/ast.rst:165
@@ -316,7 +316,7 @@ msgid "A single Python :ref:`expression input <expression-input>`. Node type gen
 msgstr ""
 
 #: ../../library/ast.rst:182
-msgid "*body* is a single node, one of the :ref:`expression types <ast-expressions>`."
+msgid "``body`` is a single node, one of the :ref:`expression types <ast-expressions>`."
 msgstr ""
 
 #: ../../library/ast.rst:185
@@ -331,7 +331,7 @@ msgid "A single :ref:`interactive input <interactive>`, like in :ref:`tut-intera
 msgstr ""
 
 #: ../../library/ast.rst:197
-msgid "*body* is a :class:`list` of :ref:`statement nodes <ast-statements>`."
+msgid "``body`` is a :class:`list` of :ref:`statement nodes <ast-statements>`."
 msgstr ""
 
 #: ../../library/ast.rst:199
@@ -363,11 +363,11 @@ msgid "def sum_two_number(a, b):\n"
 msgstr ""
 
 #: ../../library/ast.rst:226
-msgid "*argtypes* is a :class:`list` of :ref:`expression nodes <ast-expressions>`."
+msgid "``argtypes`` is a :class:`list` of :ref:`expression nodes <ast-expressions>`."
 msgstr ""
 
 #: ../../library/ast.rst:228
-msgid "*returns* is a single :ref:`expression node <ast-expressions>`."
+msgid "``returns`` is a single :ref:`expression node <ast-expressions>`."
 msgstr ""
 
 #: ../../library/ast.rst:230
