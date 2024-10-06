@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-10-06 23:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,23 +178,19 @@ msgid "**Caveats:**"
 msgstr ""
 
 #: ../../library/_thread.rst:213
-msgid "Threads interact strangely with interrupts: the :exc:`KeyboardInterrupt` exception will be received by an arbitrary thread.  (When the :mod:`signal` module is available, interrupts always go to the main thread.)"
+msgid "Interrupts always go to the main thread (the :exc:`KeyboardInterrupt` exception will be received by that thread.)"
 msgstr ""
 
-#: ../../library/_thread.rst:217
+#: ../../library/_thread.rst:216
 msgid "Calling :func:`sys.exit` or raising the :exc:`SystemExit` exception is equivalent to calling :func:`_thread.exit`."
 msgstr ""
 
-#: ../../library/_thread.rst:220
+#: ../../library/_thread.rst:219
 msgid "It is not possible to interrupt the :meth:`~threading.Lock.acquire` method on a lock --- the :exc:`KeyboardInterrupt` exception will happen after the lock has been acquired."
 msgstr ""
 
-#: ../../library/_thread.rst:224
+#: ../../library/_thread.rst:223
 msgid "When the main thread exits, it is system defined whether the other threads survive.  On most systems, they are killed without executing :keyword:`try` ... :keyword:`finally` clauses or executing object destructors."
-msgstr ""
-
-#: ../../library/_thread.rst:229
-msgid "When the main thread exits, it does not do any of its usual cleanup (except that :keyword:`try` ... :keyword:`finally` clauses are honored), and the standard I/O files are not flushed."
 msgstr ""
 
 #: ../../library/_thread.rst:7
