@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-07 14:41+0000\n"
+"POT-Creation-Date: 2024-10-07 17:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,7 +111,7 @@ msgid "Entry points"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:123
-msgid "Returns a :class:`EntryPoints` instance describing entry points for the current environment. Any given keyword parameters are passed to the :meth:`!~EntryPoints.select` method for comparison to the attributes of the individual entry point definitions."
+msgid "Returns a :class:`EntryPoints` instance describing entry points for the current environment. Any given keyword parameters are passed to the :meth:`!select` method for comparison to the attributes of the individual entry point definitions."
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:128
@@ -152,7 +152,7 @@ msgid ">>> sorted(eps.groups)  \n"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:161
-msgid ":class:`!EntryPoints` has a :meth:`!~EntryPoints.select` method to select entry points matching specific properties. Select entry points in the ``console_scripts`` group::"
+msgid ":class:`!EntryPoints` has a :meth:`!select` method to select entry points matching specific properties. Select entry points in the ``console_scripts`` group::"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:165
@@ -241,7 +241,7 @@ msgid "`PackageMetadata protocol <https://importlib-metadata.readthedocs.io/en/l
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:232
-msgid "In addition to providing the defined protocol methods and attributes, subscripting the instance is equivalent to calling the :meth:`!~PackageMetadata.get` method."
+msgid "In addition to providing the defined protocol methods and attributes, subscripting the instance is equivalent to calling the :meth:`!get` method."
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:235
@@ -262,7 +262,7 @@ msgid ">>> wheel_metadata['Requires-Python']  \n"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:246
-msgid ":class:`PackageMetadata` also presents a :attr:`!~PackageMetadata.json` attribute that returns all the metadata in a JSON-compatible form per :PEP:`566`::"
+msgid ":class:`PackageMetadata` also presents a :attr:`!json` attribute that returns all the metadata in a JSON-compatible form per :PEP:`566`::"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:249
@@ -348,7 +348,7 @@ msgid ">>> print(util.read_text())  \n"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:332
-msgid "You can also use the :meth:`!~PackagePath.locate` method to get the absolute path to the file::"
+msgid "You can also use the :meth:`!locate` method to get the absolute path to the file::"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:335
