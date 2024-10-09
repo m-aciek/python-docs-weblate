@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-08 20:38+0000\n"
+"POT-Creation-Date: 2024-10-09 19:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9193,7 +9193,7 @@ msgid ":issue:`46364`: Restrict use of sockets instead of pipes for stdin of sub
 msgstr ""
 
 #: ../../../build/NEWS:8033
-msgid ":issue:`28249`: Set :attr:`doctest.DocTest.lineno` to ``None`` when object does not have :attr:`__doc__`."
+msgid ":issue:`28249`: Set :attr:`doctest.DocTest.lineno` to ``None`` when an object does not have :attr:`~definition.__doc__`."
 msgstr ""
 
 #: ../../../build/NEWS:8036
@@ -12241,7 +12241,7 @@ msgid ":issue:`46422`: Use ``dis.Positions`` in ``dis.Instruction`` instead of a
 msgstr ""
 
 #: ../../../build/NEWS:10710
-msgid ":issue:`46434`: :mod:`pdb` now gracefully handles ``help`` when :attr:`__doc__` is missing, for example when run with pregenerated optimized ``.pyc`` files."
+msgid ":issue:`46434`: :mod:`pdb` now gracefully handles ``help`` when :attr:`~module.__doc__` is missing, for example when run with pregenerated optimized ``.pyc`` files."
 msgstr ""
 
 #: ../../../build/NEWS:10714
@@ -19219,7 +19219,7 @@ msgid ":issue:`41435`: Add ``sys._current_exceptions()`` function to retrieve a 
 msgstr ""
 
 #: ../../../build/NEWS:16908
-msgid ":issue:`38605`: Enable ``from __future__ import annotations`` (:pep:`563`) by default. The values found in :attr:`__annotations__` dicts are now strings, e.g. ``{\"x\": \"int\"}`` instead of ``{\"x\": int}``."
+msgid ":issue:`38605`: Enable ``from __future__ import annotations`` (:pep:`563`) by default. The values found in :attr:`~object.__annotations__` dicts are now strings, for example ``{\"x\": \"int\"}`` instead of ``{\"x\": int}``."
 msgstr ""
 
 #: ../../../build/NEWS:16915
