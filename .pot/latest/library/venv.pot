@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-30 21:39+0000\n"
+"POT-Creation-Date: 2024-10-09 17:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -240,8 +240,7 @@ msgid ":samp:`$ source {<venv>}/bin/activate.csh`"
 msgstr ""
 
 #: ../../library/venv.rst:208
-#: ../../library/venv.rst:212
-msgid "PowerShell"
+msgid "pwsh"
 msgstr ""
 
 #: ../../library/venv.rst:208
@@ -258,6 +257,10 @@ msgstr ""
 
 #: ../../library/venv.rst:210
 msgid ":samp:`C:\\\\> {<venv>}\\\\Scripts\\\\activate.bat`"
+msgstr ""
+
+#: ../../library/venv.rst:212
+msgid "PowerShell"
 msgstr ""
 
 #: ../../library/venv.rst:212
