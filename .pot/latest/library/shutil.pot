@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-26 08:23+0000\n"
+"POT-Creation-Date: 2024-10-10 09:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,7 +321,8 @@ msgid "On Windows, *path* can now be a file or directory."
 msgstr ""
 
 #: ../../library/shutil.rst:416
-msgid ":ref:`Availability <availability>`: Unix, Windows."
+#: ../../library/shutil.rst:429
+msgid "Availability"
 msgstr ""
 
 #: ../../library/shutil.rst:420
@@ -338,10 +339,6 @@ msgstr ""
 
 #: ../../library/shutil.rst:427
 msgid "Raises an :ref:`auditing event <auditing>` ``shutil.chown`` with arguments ``path``, ``user``, ``group``."
-msgstr ""
-
-#: ../../library/shutil.rst:429
-msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
 #: ../../library/shutil.rst:436

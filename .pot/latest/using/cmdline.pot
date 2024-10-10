@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-10-10 09:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -784,7 +784,8 @@ msgstr ""
 
 #: ../../using/cmdline.rst:955
 #: ../../using/cmdline.rst:969
-msgid ":ref:`Availability <availability>`: Windows."
+#: ../../using/cmdline.rst:1020
+msgid "Availability"
 msgstr ""
 
 #: ../../using/cmdline.rst:957
@@ -833,10 +834,6 @@ msgstr ""
 
 #: ../../using/cmdline.rst:1014
 msgid "Also note that even when locale coercion is disabled, or when it fails to find a suitable target locale, :envvar:`PYTHONUTF8` will still activate by default in legacy ASCII-based locales. Both features must be disabled in order to force the interpreter to use ``ASCII`` instead of ``UTF-8`` for system interfaces."
-msgstr ""
-
-#: ../../using/cmdline.rst:1020
-msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
 #: ../../using/cmdline.rst:1022

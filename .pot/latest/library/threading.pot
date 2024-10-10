@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-31 06:43+0000\n"
+"POT-Creation-Date: 2024-10-10 09:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,8 +52,11 @@ msgstr ""
 msgid "In CPython, due to the :term:`Global Interpreter Lock <global interpreter lock>`, only one thread can execute Python code at once (even though certain performance-oriented libraries might overcome this limitation). If you want your application to make better use of the computational resources of multi-core machines, you are advised to use :mod:`multiprocessing` or :class:`concurrent.futures.ProcessPoolExecutor`. However, threading is still an appropriate model if you want to run multiple I/O-bound tasks simultaneously."
 msgstr ""
 
+#: ../../library/threading.rst:130
+#: ../../library/threading.rst:226
+#: ../../library/threading.rst:465
 #: ../../includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: ../../includes/wasm-notavail.rst:5
@@ -140,11 +143,6 @@ msgstr ""
 msgid "Return the native integral Thread ID of the current thread assigned by the kernel. This is a non-negative integer. Its value may be used to uniquely identify this particular thread system-wide (until the thread terminates, after which the value may be recycled by the OS)."
 msgstr ""
 
-#: ../../library/threading.rst:130
-#: ../../library/threading.rst:465
-msgid ":ref:`Availability <availability>`: Windows, FreeBSD, Linux, macOS, OpenBSD, NetBSD, AIX, DragonFlyBSD."
-msgstr ""
-
 #: ../../library/threading.rst:137
 msgid "Return a list of all :class:`Thread` objects currently active.  The list includes daemonic threads and dummy thread objects created by :func:`current_thread`.  It excludes terminated threads and threads that have not yet been started.  However, the main thread is always part of the result, even when terminated."
 msgstr ""
@@ -187,10 +185,6 @@ msgstr ""
 
 #: ../../library/threading.rst:211
 msgid "Return the thread stack size used when creating new threads.  The optional *size* argument specifies the stack size to be used for subsequently created threads, and must be 0 (use platform or configured default) or a positive integer value of at least 32,768 (32 KiB). If *size* is not specified, 0 is used.  If changing the thread stack size is unsupported, a :exc:`RuntimeError` is raised.  If the specified stack size is invalid, a :exc:`ValueError` is raised and the stack size is unmodified.  32 KiB is currently the minimum supported stack size value to guarantee sufficient stack space for the interpreter itself.  Note that some platforms may have particular restrictions on values for the stack size, such as requiring a minimum stack size > 32 KiB or requiring allocation in multiples of the system memory page size - platform documentation should be referred to for more information (4 KiB pages are common; using multiples of 4096 for the stack size is the suggested approach in the absence of more specific information)."
-msgstr ""
-
-#: ../../library/threading.rst:226
-msgid ":ref:`Availability <availability>`: Windows, pthreads."
 msgstr ""
 
 #: ../../library/threading.rst:228

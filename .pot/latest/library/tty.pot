@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:17+0000\n"
+"POT-Creation-Date: 2024-10-10 09:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "The :mod:`tty` module defines functions for putting the tty into cbreak a
 msgstr ""
 
 #: ../../library/tty.rst:18
-msgid ":ref:`Availability <availability>`: Unix."
+msgid "Availability"
 msgstr ""
 
 #: ../../library/tty.rst:20

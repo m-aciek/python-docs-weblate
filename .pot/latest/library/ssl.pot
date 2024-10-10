@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 15:39+0000\n"
+"POT-Creation-Date: 2024-10-10 09:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,10 @@ msgstr ""
 msgid "Don't use this module without reading the :ref:`ssl-security`.  Doing so may lead to a false sense of security, as the default settings of the ssl module are not necessarily appropriate for your application."
 msgstr ""
 
+#: ../../library/ssl.rst:432
+#: ../../library/ssl.rst:447
 #: ../../includes/wasm-notavail.rst:3
-msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
+msgid "Availability"
 msgstr ""
 
 #: ../../includes/wasm-notavail.rst:5
@@ -380,11 +382,6 @@ msgstr ""
 msgid ">>> ssl.enum_certificates(\"CA\")\n"
 "[(b'data...', 'x509_asn', {'1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2'}),\n"
 " (b'data...', 'x509_asn', True)]"
-msgstr ""
-
-#: ../../library/ssl.rst:432
-#: ../../library/ssl.rst:447
-msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
 #: ../../library/ssl.rst:438
