@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-30 21:37+0000\n"
+"POT-Creation-Date: 2024-10-12 01:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -898,7 +898,7 @@ msgid ">>> pos_only_arg(1)\n"
 msgstr ""
 
 #: ../../tutorial/controlflow.rst:835
-msgid "The third function ``kwd_only_args`` only allows keyword arguments as indicated by a ``*`` in the function definition::"
+msgid "The third function ``kwd_only_arg`` only allows keyword arguments as indicated by a ``*`` in the function definition::"
 msgstr ""
 
 #: ../../tutorial/controlflow.rst:838
