@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-05 18:23+0000\n"
+"POT-Creation-Date: 2024-10-13 18:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,11 +260,11 @@ msgstr ""
 msgid "Exactly what values are considered compact is an implementation detail and is subject to change."
 msgstr ""
 
-#: ../../c-api/long.rst:355
+#: ../../c-api/long.rst:358
 msgid "If *op* is compact, as determined by :c:func:`PyUnstable_Long_IsCompact`, return its value."
 msgstr ""
 
-#: ../../c-api/long.rst:358
+#: ../../c-api/long.rst:361
 msgid "Otherwise, the return value is undefined."
 msgstr ""
 
