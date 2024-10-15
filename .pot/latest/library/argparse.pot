@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-12 13:22+0000\n"
+"POT-Creation-Date: 2024-10-15 16:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1824,11 +1824,11 @@ msgstr ""
 msgid "Argument groups"
 msgstr ""
 
-#: ../../library/argparse.rst:1745
+#: ../../library/argparse.rst:1746
 msgid "By default, :class:`ArgumentParser` groups command-line arguments into \"positional arguments\" and \"options\" when displaying help messages. When there is a better conceptual grouping of arguments than this default one, appropriate groups can be created using the :meth:`add_argument_group` method::"
 msgstr ""
 
-#: ../../library/argparse.rst:1751
+#: ../../library/argparse.rst:1752
 msgid ">>> parser = argparse.ArgumentParser(prog='PROG', add_help=False)\n"
 ">>> group = parser.add_argument_group('group')\n"
 ">>> group.add_argument('--foo', help='foo help')\n"
@@ -1841,11 +1841,11 @@ msgid ">>> parser = argparse.ArgumentParser(prog='PROG', add_help=False)\n"
 "  --foo FOO  foo help"
 msgstr ""
 
-#: ../../library/argparse.rst:1762
+#: ../../library/argparse.rst:1763
 msgid "The :meth:`add_argument_group` method returns an argument group object which has an :meth:`~ArgumentParser.add_argument` method just like a regular :class:`ArgumentParser`.  When an argument is added to the group, the parser treats it just like a normal argument, but displays the argument in a separate group for help messages.  The :meth:`add_argument_group` method accepts *title* and *description* arguments which can be used to customize this display::"
 msgstr ""
 
-#: ../../library/argparse.rst:1770
+#: ../../library/argparse.rst:1771
 msgid ">>> parser = argparse.ArgumentParser(prog='PROG', add_help=False)\n"
 ">>> group1 = parser.add_argument_group('group1', 'group1 description')\n"
 ">>> group1.add_argument('foo', help='foo help')\n"
@@ -1865,23 +1865,27 @@ msgid ">>> parser = argparse.ArgumentParser(prog='PROG', add_help=False)\n"
 "  --bar BAR  bar help"
 msgstr ""
 
-#: ../../library/argparse.rst:1788
+#: ../../library/argparse.rst:1789
+msgid "The optional, keyword-only parameters argument_default_ and conflict_handler_ allow for finer-grained control of the behavior of the argument group. These parameters have the same meaning as in the :class:`ArgumentParser` constructor, but apply specifically to the argument group rather than the entire parser."
+msgstr ""
+
+#: ../../library/argparse.rst:1794
 msgid "Note that any arguments not in your user-defined groups will end up back in the usual \"positional arguments\" and \"optional arguments\" sections."
 msgstr ""
 
-#: ../../library/argparse.rst:1791
+#: ../../library/argparse.rst:1797
 msgid "Calling :meth:`add_argument_group` on an argument group is deprecated. This feature was never supported and does not always work correctly. The function exists on the API by accident through inheritance and will be removed in the future."
 msgstr ""
 
-#: ../../library/argparse.rst:1799
+#: ../../library/argparse.rst:1805
 msgid "Mutual exclusion"
 msgstr ""
 
-#: ../../library/argparse.rst:1803
+#: ../../library/argparse.rst:1809
 msgid "Create a mutually exclusive group. :mod:`argparse` will make sure that only one of the arguments in the mutually exclusive group was present on the command line::"
 msgstr ""
 
-#: ../../library/argparse.rst:1807
+#: ../../library/argparse.rst:1813
 msgid ">>> parser = argparse.ArgumentParser(prog='PROG')\n"
 ">>> group = parser.add_mutually_exclusive_group()\n"
 ">>> group.add_argument('--foo', action='store_true')\n"
@@ -1895,11 +1899,11 @@ msgid ">>> parser = argparse.ArgumentParser(prog='PROG')\n"
 "PROG: error: argument --bar: not allowed with argument --foo"
 msgstr ""
 
-#: ../../library/argparse.rst:1819
+#: ../../library/argparse.rst:1825
 msgid "The :meth:`add_mutually_exclusive_group` method also accepts a *required* argument, to indicate that at least one of the mutually exclusive arguments is required::"
 msgstr ""
 
-#: ../../library/argparse.rst:1823
+#: ../../library/argparse.rst:1829
 msgid ">>> parser = argparse.ArgumentParser(prog='PROG')\n"
 ">>> group = parser.add_mutually_exclusive_group(required=True)\n"
 ">>> group.add_argument('--foo', action='store_true')\n"
@@ -1909,11 +1913,11 @@ msgid ">>> parser = argparse.ArgumentParser(prog='PROG')\n"
 "PROG: error: one of the arguments --foo --bar is required"
 msgstr ""
 
-#: ../../library/argparse.rst:1831
+#: ../../library/argparse.rst:1837
 msgid "Note that currently mutually exclusive argument groups do not support the *title* and *description* arguments of :meth:`~ArgumentParser.add_argument_group`. However, a mutually exclusive group can be added to an argument group that has a title and description. For example::"
 msgstr ""
 
-#: ../../library/argparse.rst:1837
+#: ../../library/argparse.rst:1843
 msgid ">>> parser = argparse.ArgumentParser(prog='PROG')\n"
 ">>> group = parser.add_argument_group('Group title', 'Group description')\n"
 ">>> exclusive_group = group.add_mutually_exclusive_group(required=True)\n"
@@ -1932,19 +1936,19 @@ msgid ">>> parser = argparse.ArgumentParser(prog='PROG')\n"
 "  --bar BAR   bar help"
 msgstr ""
 
-#: ../../library/argparse.rst:1854
+#: ../../library/argparse.rst:1860
 msgid "Calling :meth:`add_argument_group` or :meth:`add_mutually_exclusive_group` on a mutually exclusive group is deprecated. These features were never supported and do not always work correctly. The functions exist on the API by accident through inheritance and will be removed in the future."
 msgstr ""
 
-#: ../../library/argparse.rst:1862
+#: ../../library/argparse.rst:1868
 msgid "Parser defaults"
 msgstr ""
 
-#: ../../library/argparse.rst:1866
+#: ../../library/argparse.rst:1872
 msgid "Most of the time, the attributes of the object returned by :meth:`parse_args` will be fully determined by inspecting the command-line arguments and the argument actions.  :meth:`set_defaults` allows some additional attributes that are determined without any inspection of the command line to be added::"
 msgstr ""
 
-#: ../../library/argparse.rst:1872
+#: ../../library/argparse.rst:1878
 msgid ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('foo', type=int)\n"
 ">>> parser.set_defaults(bar=42, baz='badger')\n"
@@ -1952,11 +1956,11 @@ msgid ">>> parser = argparse.ArgumentParser()\n"
 "Namespace(bar=42, baz='badger', foo=736)"
 msgstr ""
 
-#: ../../library/argparse.rst:1878
+#: ../../library/argparse.rst:1884
 msgid "Note that parser-level defaults always override argument-level defaults::"
 msgstr ""
 
-#: ../../library/argparse.rst:1880
+#: ../../library/argparse.rst:1886
 msgid ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo', default='bar')\n"
 ">>> parser.set_defaults(foo='spam')\n"
@@ -1964,58 +1968,58 @@ msgid ">>> parser = argparse.ArgumentParser()\n"
 "Namespace(foo='spam')"
 msgstr ""
 
-#: ../../library/argparse.rst:1886
+#: ../../library/argparse.rst:1892
 msgid "Parser-level defaults can be particularly useful when working with multiple parsers.  See the :meth:`~ArgumentParser.add_subparsers` method for an example of this type."
 msgstr ""
 
-#: ../../library/argparse.rst:1892
+#: ../../library/argparse.rst:1898
 msgid "Get the default value for a namespace attribute, as set by either :meth:`~ArgumentParser.add_argument` or by :meth:`~ArgumentParser.set_defaults`::"
 msgstr ""
 
-#: ../../library/argparse.rst:1896
+#: ../../library/argparse.rst:1902
 msgid ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo', default='badger')\n"
 ">>> parser.get_default('foo')\n"
 "'badger'"
 msgstr ""
 
-#: ../../library/argparse.rst:1903
+#: ../../library/argparse.rst:1909
 msgid "Printing help"
 msgstr ""
 
-#: ../../library/argparse.rst:1905
+#: ../../library/argparse.rst:1911
 msgid "In most typical applications, :meth:`~ArgumentParser.parse_args` will take care of formatting and printing any usage or error messages.  However, several formatting methods are available:"
 msgstr ""
 
-#: ../../library/argparse.rst:1911
+#: ../../library/argparse.rst:1917
 msgid "Print a brief description of how the :class:`ArgumentParser` should be invoked on the command line.  If *file* is ``None``, :data:`sys.stdout` is assumed."
 msgstr ""
 
-#: ../../library/argparse.rst:1917
+#: ../../library/argparse.rst:1923
 msgid "Print a help message, including the program usage and information about the arguments registered with the :class:`ArgumentParser`.  If *file* is ``None``, :data:`sys.stdout` is assumed."
 msgstr ""
 
-#: ../../library/argparse.rst:1921
+#: ../../library/argparse.rst:1927
 msgid "There are also variants of these methods that simply return a string instead of printing it:"
 msgstr ""
 
-#: ../../library/argparse.rst:1926
+#: ../../library/argparse.rst:1932
 msgid "Return a string containing a brief description of how the :class:`ArgumentParser` should be invoked on the command line."
 msgstr ""
 
-#: ../../library/argparse.rst:1931
+#: ../../library/argparse.rst:1937
 msgid "Return a string containing a help message, including the program usage and information about the arguments registered with the :class:`ArgumentParser`."
 msgstr ""
 
-#: ../../library/argparse.rst:1936
+#: ../../library/argparse.rst:1942
 msgid "Partial parsing"
 msgstr ""
 
-#: ../../library/argparse.rst:1940
+#: ../../library/argparse.rst:1946
 msgid "Sometimes a script may only parse a few of the command-line arguments, passing the remaining arguments on to another script or program. In these cases, the :meth:`~ArgumentParser.parse_known_args` method can be useful.  It works much like :meth:`~ArgumentParser.parse_args` except that it does not produce an error when extra arguments are present.  Instead, it returns a two item tuple containing the populated namespace and the list of remaining argument strings."
 msgstr ""
 
-#: ../../library/argparse.rst:1949
+#: ../../library/argparse.rst:1955
 msgid ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo', action='store_true')\n"
 ">>> parser.add_argument('bar')\n"
@@ -2023,41 +2027,41 @@ msgid ">>> parser = argparse.ArgumentParser()\n"
 "(Namespace(bar='BAR', foo=True), ['--badger', 'spam'])"
 msgstr ""
 
-#: ../../library/argparse.rst:1956
+#: ../../library/argparse.rst:1962
 msgid ":ref:`Prefix matching <prefix-matching>` rules apply to :meth:`~ArgumentParser.parse_known_args`. The parser may consume an option even if it's just a prefix of one of its known options, instead of leaving it in the remaining arguments list."
 msgstr ""
 
-#: ../../library/argparse.rst:1963
+#: ../../library/argparse.rst:1969
 msgid "Customizing file parsing"
 msgstr ""
 
-#: ../../library/argparse.rst:1967
+#: ../../library/argparse.rst:1973
 msgid "Arguments that are read from a file (see the *fromfile_prefix_chars* keyword argument to the :class:`ArgumentParser` constructor) are read one argument per line. :meth:`convert_arg_line_to_args` can be overridden for fancier reading."
 msgstr ""
 
-#: ../../library/argparse.rst:1972
+#: ../../library/argparse.rst:1978
 msgid "This method takes a single argument *arg_line* which is a string read from the argument file.  It returns a list of arguments parsed from this string. The method is called once per line read from the argument file, in order."
 msgstr ""
 
-#: ../../library/argparse.rst:1976
+#: ../../library/argparse.rst:1982
 msgid "A useful override of this method is one that treats each space-separated word as an argument.  The following example demonstrates how to do this::"
 msgstr ""
 
-#: ../../library/argparse.rst:1979
+#: ../../library/argparse.rst:1985
 msgid "class MyArgumentParser(argparse.ArgumentParser):\n"
 "    def convert_arg_line_to_args(self, arg_line):\n"
 "        return arg_line.split()"
 msgstr ""
 
-#: ../../library/argparse.rst:1985
+#: ../../library/argparse.rst:1991
 msgid "Exiting methods"
 msgstr ""
 
-#: ../../library/argparse.rst:1989
+#: ../../library/argparse.rst:1995
 msgid "This method terminates the program, exiting with the specified *status* and, if given, it prints a *message* to :data:`sys.stderr` before that. The user can override this method to handle these steps differently::"
 msgstr ""
 
-#: ../../library/argparse.rst:1993
+#: ../../library/argparse.rst:1999
 msgid "class ErrorCatchingArgumentParser(argparse.ArgumentParser):\n"
 "    def exit(self, status=0, message=None):\n"
 "        if status:\n"
@@ -2065,27 +2069,27 @@ msgid "class ErrorCatchingArgumentParser(argparse.ArgumentParser):\n"
 "        exit(status)"
 msgstr ""
 
-#: ../../library/argparse.rst:2001
+#: ../../library/argparse.rst:2007
 msgid "This method prints a usage message, including the *message*, to :data:`sys.stderr` and terminates the program with a status code of 2."
 msgstr ""
 
-#: ../../library/argparse.rst:2006
+#: ../../library/argparse.rst:2012
 msgid "Intermixed parsing"
 msgstr ""
 
-#: ../../library/argparse.rst:2011
+#: ../../library/argparse.rst:2017
 msgid "A number of Unix commands allow the user to intermix optional arguments with positional arguments.  The :meth:`~ArgumentParser.parse_intermixed_args` and :meth:`~ArgumentParser.parse_known_intermixed_args` methods support this parsing style."
 msgstr ""
 
-#: ../../library/argparse.rst:2016
+#: ../../library/argparse.rst:2022
 msgid "These parsers do not support all the argparse features, and will raise exceptions if unsupported features are used.  In particular, subparsers, and mutually exclusive groups that include both optionals and positionals are not supported."
 msgstr ""
 
-#: ../../library/argparse.rst:2021
+#: ../../library/argparse.rst:2027
 msgid "The following example shows the difference between :meth:`~ArgumentParser.parse_known_args` and :meth:`~ArgumentParser.parse_intermixed_args`: the former returns ``['2', '3']`` as unparsed arguments, while the latter collects all the positionals into ``rest``.  ::"
 msgstr ""
 
-#: ../../library/argparse.rst:2027
+#: ../../library/argparse.rst:2033
 msgid ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo')\n"
 ">>> parser.add_argument('cmd')\n"
@@ -2096,27 +2100,27 @@ msgid ">>> parser = argparse.ArgumentParser()\n"
 "Namespace(cmd='doit', foo='bar', rest=[1, 2, 3])"
 msgstr ""
 
-#: ../../library/argparse.rst:2036
+#: ../../library/argparse.rst:2042
 msgid ":meth:`~ArgumentParser.parse_known_intermixed_args` returns a two item tuple containing the populated namespace and the list of remaining argument strings. :meth:`~ArgumentParser.parse_intermixed_args` raises an error if there are any remaining unparsed argument strings."
 msgstr ""
 
-#: ../../library/argparse.rst:2045
+#: ../../library/argparse.rst:2051
 msgid "Exceptions"
 msgstr ""
 
-#: ../../library/argparse.rst:2049
+#: ../../library/argparse.rst:2055
 msgid "An error from creating or using an argument (optional or positional)."
 msgstr ""
 
-#: ../../library/argparse.rst:2051
+#: ../../library/argparse.rst:2057
 msgid "The string value of this exception is the message, augmented with information about the argument that caused it."
 msgstr ""
 
-#: ../../library/argparse.rst:2056
+#: ../../library/argparse.rst:2062
 msgid "Raised when something goes wrong converting a command line string to a type."
 msgstr ""
 
-#: ../../library/argparse.rst:2060
+#: ../../library/argparse.rst:2066
 msgid "Guides and Tutorials"
 msgstr ""
 
