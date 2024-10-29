@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 23:37+0000\n"
+"POT-Creation-Date: 2024-10-29 23:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4256,7 +4256,7 @@ msgid "Update the dictionary with the key/value pairs from *other*, overwriting 
 msgstr ""
 
 #: ../../library/stdtypes.rst:4627
-msgid ":meth:`update` accepts either another object with a ``keys()`` method (in which case :meth:`~object.__getitem__` is called with every key returned from the method). or an iterable of key/value pairs (as tuples or other iterables of length two). If keyword arguments are specified, the dictionary is then updated with those key/value pairs: ``d.update(red=1, blue=2)``."
+msgid ":meth:`update` accepts either another object with a ``keys()`` method (in which case :meth:`~object.__getitem__` is called with every key returned from the method) or an iterable of key/value pairs (as tuples or other iterables of length two). If keyword arguments are specified, the dictionary is then updated with those key/value pairs: ``d.update(red=1, blue=2)``."
 msgstr ""
 
 #: ../../library/stdtypes.rst:4635
