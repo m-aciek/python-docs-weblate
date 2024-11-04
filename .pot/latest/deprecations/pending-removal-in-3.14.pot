@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-03 21:39+0000\n"
+"POT-Creation-Date: 2024-11-04 18:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,13 +161,9 @@ msgid ":meth:`~sqlite3.Cursor.execute` and :meth:`~sqlite3.Cursor.executemany` i
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.14.rst:109
-msgid ":class:`types.CodeType`: Accessing :attr:`~codeobject.co_lnotab` was deprecated in :pep:`626` since 3.10 and was planned to be removed in 3.12, but it only got a proper :exc:`DeprecationWarning` in 3.12. May be removed in 3.14. (Contributed by Nikita Sobolev in :gh:`101866`.)"
-msgstr ""
-
-#: ../../deprecations/pending-removal-in-3.14.rst:116
 msgid ":mod:`typing`: :class:`~typing.ByteString`, deprecated since Python 3.9, now causes a :exc:`DeprecationWarning` to be emitted when it is used."
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.14.rst:119
+#: ../../deprecations/pending-removal-in-3.14.rst:112
 msgid ":mod:`urllib`: :class:`!urllib.parse.Quoter` is deprecated: it was not intended to be a public API. (Contributed by Gregory P. Smith in :gh:`88168`.)"
 msgstr ""
