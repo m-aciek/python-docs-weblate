@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 15:17+0000\n"
+"POT-Creation-Date: 2024-11-11 07:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -327,7 +327,7 @@ msgid "It could also have a side effect of ``\"\"`` remaining in :data:`sys.path
 msgstr ""
 
 #: ../../../build/NEWS:52
-msgid "Potentially leading to incorrect imports from the wrong location during preload.  We are unaware of that actually happening.  The issue was discovered by someone observing unexpected preload performance gains."
+msgid "The ``sys.path`` differences between phases in the child process could potentially have caused preload to import incorrect things from the wrong location.  We are unaware of that actually having happened in practice."
 msgstr ""
 
 #: ../../../build/NEWS:56
