@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 04:24+0000\n"
+"POT-Creation-Date: 2024-11-11 17:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -642,7 +642,7 @@ msgid "Writing to ``HKLM\\\\Software`` is allowed as long as a corresponding key
 msgstr ""
 
 #: ../../using/windows.rst:394
-msgid "For more detail on the technical basis for these limitations, please consult Microsoft's documentation on packaged full-trust apps, currently available at `docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-behind-the-scenes <https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-behind-the-scenes>`_"
+msgid "For more detail on the technical basis for these limitations, please consult Microsoft's documentation on packaged full-trust apps, currently available at `docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-behind-the-scenes <https://learn.microsoft.com/windows/msix/desktop/desktop-to-uwp-behind-the-scenes>`_"
 msgstr ""
 
 #: ../../using/windows.rst:403
@@ -705,7 +705,7 @@ msgid "When extracted, the embedded distribution is (almost) fully isolated from
 msgstr ""
 
 #: ../../using/windows.rst:477
-msgid "The embedded distribution does not include the `Microsoft C Runtime <https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022>`_ and it is the responsibility of the application installer to provide this. The runtime may have already been installed on a user's system previously or automatically via Windows Update, and can be detected by finding ``ucrtbase.dll`` in the system directory."
+msgid "The embedded distribution does not include the `Microsoft C Runtime <https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022>`_ and it is the responsibility of the application installer to provide this. The runtime may have already been installed on a user's system previously or automatically via Windows Update, and can be detected by finding ``ucrtbase.dll`` in the system directory."
 msgstr ""
 
 #: ../../using/windows.rst:484
@@ -843,7 +843,7 @@ msgid "The :envvar:`PYTHONPATH` variable is used by all versions of Python, so y
 msgstr ""
 
 #: ../../using/windows.rst:621
-msgid "https://docs.microsoft.com/en-us/windows/win32/procthread/environment-variables"
+msgid "https://learn.microsoft.com/windows/win32/procthread/environment-variables"
 msgstr ""
 
 #: ../../using/windows.rst:622
@@ -851,7 +851,7 @@ msgid "Overview of environment variables on Windows"
 msgstr ""
 
 #: ../../using/windows.rst:624
-msgid "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/set_1"
+msgid "https://learn.microsoft.com/windows-server/administration/windows-commands/set_1"
 msgstr ""
 
 #: ../../using/windows.rst:625
@@ -859,7 +859,7 @@ msgid "The ``set`` command, for temporarily modifying environment variables"
 msgstr ""
 
 #: ../../using/windows.rst:627
-msgid "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx"
+msgid "https://learn.microsoft.com/windows-server/administration/windows-commands/setx"
 msgstr ""
 
 #: ../../using/windows.rst:628
@@ -1497,7 +1497,7 @@ msgid "The :pypi:`PyWin32` module by Mark Hammond is a collection of modules for
 msgstr ""
 
 #: ../../using/windows.rst:1224
-msgid "`Component Object Model <https://docs.microsoft.com/en-us/windows/win32/com/component-object-model--com--portal>`_ (COM)"
+msgid "`Component Object Model <https://learn.microsoft.com/windows/win32/com/component-object-model--com--portal>`_ (COM)"
 msgstr ""
 
 #: ../../using/windows.rst:1227
@@ -1513,7 +1513,7 @@ msgid "Event log"
 msgstr ""
 
 #: ../../using/windows.rst:1230
-msgid "`Microsoft Foundation Classes <https://docs.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications>`_ (MFC) user interfaces"
+msgid "`Microsoft Foundation Classes <https://learn.microsoft.com/cpp/mfc/mfc-desktop-applications>`_ (MFC) user interfaces"
 msgstr ""
 
 #: ../../using/windows.rst:1234
