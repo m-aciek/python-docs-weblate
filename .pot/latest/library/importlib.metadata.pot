@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 18:25+0000\n"
+"POT-Creation-Date: 2024-11-25 20:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,7 +123,7 @@ msgid "Details of a collection of installed entry points."
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:136
-msgid "Also provides a ``.groups`` attribute that reports all identifed entry point groups, and a ``.names`` attribute that reports all identified entry point names."
+msgid "Also provides a ``.groups`` attribute that reports all identified entry point groups, and a ``.names`` attribute that reports all identified entry point names."
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:142

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 09:20+0000\n"
+"POT-Creation-Date: 2024-11-25 20:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,7 +296,7 @@ msgid "The two connection objects returned by :func:`Pipe` represent the two end
 msgstr ""
 
 #: ../../library/multiprocessing.rst:285
-msgid "The :meth:`~Connection.send` method serializes the the object and :meth:`~Connection.recv` re-creates the object."
+msgid "The :meth:`~Connection.send` method serializes the object and :meth:`~Connection.recv` re-creates the object."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:289
@@ -812,7 +812,7 @@ msgid "If *duplex* is ``True`` (the default) then the pipe is bidirectional.  If
 msgstr ""
 
 #: ../../library/multiprocessing.rst:822
-msgid "The :meth:`~multiprocessing.Connection.send` method serializes the the object using :mod:`pickle` and the :meth:`~multiprocessing.Connection.recv` re-creates the object."
+msgid "The :meth:`~multiprocessing.Connection.send` method serializes the object using :mod:`pickle` and the :meth:`~multiprocessing.Connection.recv` re-creates the object."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:827
