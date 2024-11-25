@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-11 07:22+0000\n"
+"POT-Creation-Date: 2024-11-25 09:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2161,7 +2161,7 @@ msgid "The interpreter loop  has been simplified by moving the logic of unrollin
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:2155
-msgid "Removed opcodes :opcode:`BREAK_LOOP`, :opcode:`CONTINUE_LOOP`, :opcode:`SETUP_LOOP` and :opcode:`SETUP_EXCEPT`.  Added new opcodes :opcode:`ROT_FOUR`, :opcode:`BEGIN_FINALLY`, :opcode:`CALL_FINALLY` and :opcode:`POP_FINALLY`.  Changed the behavior of :opcode:`END_FINALLY` and :opcode:`WITH_CLEANUP_START`."
+msgid "Removed opcodes :opcode:`!BREAK_LOOP`, :opcode:`!CONTINUE_LOOP`, :opcode:`!SETUP_LOOP` and :opcode:`!SETUP_EXCEPT`.  Added new opcodes :opcode:`!ROT_FOUR`, :opcode:`!BEGIN_FINALLY`, :opcode:`!CALL_FINALLY` and :opcode:`!POP_FINALLY`.  Changed the behavior of :opcode:`!END_FINALLY` and :opcode:`!WITH_CLEANUP_START`."
 msgstr ""
 
 #: ../../whatsnew/3.8.rst:2161
