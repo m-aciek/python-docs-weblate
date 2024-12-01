@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-25 23:17+0000\n"
+"POT-Creation-Date: 2024-12-01 09:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -392,19 +392,19 @@ msgstr ""
 msgid "Setting :c:data:`Py_tp_bases` or :c:data:`Py_tp_base` may be problematic on some platforms. To avoid issues, use the *bases* argument of :c:func:`PyType_FromSpecWithBases` instead."
 msgstr ""
 
-#: ../../c-api/type.rst:502
+#: ../../c-api/type.rst:500
 msgid "Slots in :c:type:`PyBufferProcs` may be set in the unlimited API."
 msgstr ""
 
-#: ../../c-api/type.rst:504
+#: ../../c-api/type.rst:503
 msgid ":c:member:`~PyBufferProcs.bf_getbuffer` and :c:member:`~PyBufferProcs.bf_releasebuffer` are now available under the :ref:`limited API <limited-c-api>`."
 msgstr ""
 
-#: ../../c-api/type.rst:511
+#: ../../c-api/type.rst:510
 msgid "The desired value of the slot. In most cases, this is a pointer to a function."
 msgstr ""
 
-#: ../../c-api/type.rst:514
+#: ../../c-api/type.rst:513
 msgid "Slots other than ``Py_tp_doc`` may not be ``NULL``."
 msgstr ""
 
