@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-27 18:44+0000\n"
+"POT-Creation-Date: 2024-12-02 14:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -754,7 +754,7 @@ msgid "Using :class:`list` as the :attr:`~defaultdict.default_factory`, it is ea
 msgstr ""
 
 #: ../../library/collections.rst:784
-msgid "When each key is encountered for the first time, it is not already in the mapping; so an entry is automatically created using the :attr:`~defaultdict.default_factory` function which returns an empty :class:`list`.  The :meth:`list.append` operation then attaches the value to the new list.  When keys are encountered again, the look-up proceeds normally (returning the list for that key) and the :meth:`list.append` operation adds another value to the list. This technique is simpler and faster than an equivalent technique using :meth:`dict.setdefault`:"
+msgid "When each key is encountered for the first time, it is not already in the mapping; so an entry is automatically created using the :attr:`~defaultdict.default_factory` function which returns an empty :class:`list`.  The :meth:`!list.append` operation then attaches the value to the new list.  When keys are encountered again, the look-up proceeds normally (returning the list for that key) and the :meth:`!list.append` operation adds another value to the list. This technique is simpler and faster than an equivalent technique using :meth:`dict.setdefault`:"
 msgstr ""
 
 #: ../../library/collections.rst:799
