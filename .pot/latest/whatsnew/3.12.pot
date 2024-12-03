@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-14 01:23+0000\n"
+"POT-Creation-Date: 2024-12-03 17:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -851,6 +851,7 @@ msgid "Extend :func:`statistics.correlation` to include as a ``ranked`` method f
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:898
+#: ../../whatsnew/3.12.rst:2310
 msgid "sys"
 msgstr ""
 
@@ -3479,4 +3480,12 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:2295
 msgid ":func:`email.utils.getaddresses` and :func:`email.utils.parseaddr` now return ``('', '')`` 2-tuples in more situations where invalid email addresses are encountered, instead of potentially inaccurate values. An optional *strict* parameter was added to these two functions: use ``strict=False`` to get the old behavior, accepting malformed inputs. ``getattr(email.utils, 'supports_strict_parsing', False)`` can be used to check if the *strict* paramater is available. (Contributed by Thomas Dwyer and Victor Stinner for :gh:`102988` to improve the CVE-2023-27043 fix.)"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:2307
+msgid "Notable changes in 3.12.8"
+msgstr ""
+
+#: ../../whatsnew/3.12.rst:2312
+msgid "The previously undocumented special function :func:`sys.getobjects`, which only exists in specialized builds of Python, may now return objects from other interpreters than the one it's called in."
 msgstr ""
