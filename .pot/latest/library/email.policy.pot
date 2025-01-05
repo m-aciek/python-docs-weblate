@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-01-05 22:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,7 +196,7 @@ msgid "The remaining :class:`Policy` methods are called by the email package cod
 msgstr ""
 
 #: ../../library/email.policy.rst:268
-msgid "Handle a *defect* found on *obj*.  When the email package calls this method, *defect* will always be a subclass of :class:`~email.errors.Defect`."
+msgid "Handle a *defect* found on *obj*.  When the email package calls this method, *defect* will always be a subclass of :class:`~email.errors.MessageDefect`."
 msgstr ""
 
 #: ../../library/email.policy.rst:272
@@ -204,7 +204,7 @@ msgid "The default implementation checks the :attr:`raise_on_defect` flag.  If i
 msgstr ""
 
 #: ../../library/email.policy.rst:279
-msgid "Register a *defect* on *obj*.  In the email package, *defect* will always be a subclass of :class:`~email.errors.Defect`."
+msgid "Register a *defect* on *obj*.  In the email package, *defect* will always be a subclass of :class:`~email.errors.MessageDefect`."
 msgstr ""
 
 #: ../../library/email.policy.rst:282
