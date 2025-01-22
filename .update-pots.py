@@ -72,15 +72,21 @@ def _clone_and_iterate_committing(cpython_commit, version) -> None:
         with chdir(directory):
             _clone_cpython_repo(version, shallow=False)
             commits = _output(f'git -C cpython/ log --pretty=format:"%H" --reverse {cpython_commit}..')
+        commit_message = ""
         for commit in commits.splitlines():
-            with chdir(directory):
-                _call(f'git -C cpython/ checkout {commit}')
-                _call('make -C cpython/Doc/ venv')
-                _build_gettext()
-                commit_message = _output('git -C cpython/ log --pretty=format:"%B" --max-count=1')
+            _call(f'git -C {directory}/cpython/ checkout {commit}')
+            _call(f'make -C {directory}/cpython/Doc/ venv')
+            commit_message += _output(f'git -C {directory}/cpython/ log --pretty=format:"%B" --max-count=1')
+            try:
+                _build_gettext(f'{directory}/cpython/Doc/')
+            except CalledProcessError:
+                commit_message += '\n\n'
+                info('Build failed, iterating to find a commit that produces a successful build')
+                continue
             pot_directory = Path(directory, 'cpython/Doc/locales/pot')
             _replace_tree(pot_directory, Path('.pot', version_directory))
             _commit_changed(commit_message, commit, version_directory)
+            commit_message = ""
 
 
 def _clone_and_commit(version: str):
@@ -90,7 +96,7 @@ def _clone_and_commit(version: str):
         with chdir(directory):
             _clone_cpython_repo(version, shallow=True)
             _call('make -C cpython/Doc/ venv')
-            _build_gettext()
+            _build_gettext('cpython/Doc/')
             cpython_commit = _output('git -C cpython/ rev-parse HEAD')
         pot_directory = Path(directory, 'cpython/Doc/locales/pot')
         _replace_tree(pot_directory, Path('.pot', version_directory))
@@ -104,9 +110,9 @@ def _clone_cpython_repo(version: str, shallow: bool):
     )
 
 
-def _build_gettext():
+def _build_gettext(directory: str) -> None:
     _call(
-        "make -C cpython/Doc/ ALLSPHINXOPTS='-E -b gettext -D gettext_compact=0 -d build/.doctrees . locales/pot' build"
+        f"make -C {directory} ALLSPHINXOPTS='-E -b gettext -D gettext_compact=0 -d build/.doctrees . locales/pot' build"
     )
 
 
