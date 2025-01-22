@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-13 16:46+0000\n"
+"POT-Creation-Date: 2025-01-22 21:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10800,7 +10800,7 @@ msgid ":gh:`92332`: Deprecate :class:`typing.Text` (removal of the class is curr
 msgstr ""
 
 #: ../../../build/NEWS:9473
-msgid "Deprecate nested classes in enum definitions becoming members -- in 3.13 they will be normal classes; add ``member`` and ``nonmember`` functions to allow control over results now."
+msgid ":gh:`78157`: Deprecate nested classes in enum definitions becoming members -- in 3.13 they will be normal classes; add ``member`` and ``nonmember`` functions to allow control over results now."
 msgstr ""
 
 #: ../../../build/NEWS:9477
@@ -11088,7 +11088,7 @@ msgid ":gh:`91217`: Deprecate the chunk module."
 msgstr ""
 
 #: ../../../build/NEWS:9701
-msgid "Add the ``TCP_CONNECTION_INFO`` option (available on macOS) to :mod:`socket`."
+msgid ":gh:`91498`: Add the ``TCP_CONNECTION_INFO`` option (available on macOS) to :mod:`socket`."
 msgstr ""
 
 #: ../../../build/NEWS:9704
@@ -17259,7 +17259,7 @@ msgid ":issue:`43780`: In ``importlib.metadata``, incorporate changes from impor
 msgstr ""
 
 #: ../../../build/NEWS:15150
-msgid "The ``P.args`` and ``P.kwargs`` attributes of :class:`typing.ParamSpec` are now instances of the new classes :class:`typing.ParamSpecArgs` and :class:`typing.ParamSpecKwargs`, which enables a more useful ``repr()``. Patch by Jelle Zijlstra."
+msgid ":gh:`47383`: The ``P.args`` and ``P.kwargs`` attributes of :class:`typing.ParamSpec` are now instances of the new classes :class:`typing.ParamSpecArgs` and :class:`typing.ParamSpecKwargs`, which enables a more useful ``repr()``. Patch by Jelle Zijlstra."
 msgstr ""
 
 #: ../../../build/NEWS:15155
