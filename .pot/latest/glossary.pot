@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-01-22 21:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,7 +151,7 @@ msgid "This is an :term:`asynchronous iterator` which when called using the :met
 msgstr ""
 
 #: ../../glossary.rst:120
-msgid "Each :keyword:`yield` temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements).  When the *asynchronous generator iterator* effectively resumes with another awaitable returned by :meth:`~object.__anext__`, it picks up where it left off.  See :pep:`492` and :pep:`525`."
+msgid "Each :keyword:`yield` temporarily suspends processing, remembering the execution state (including local variables and pending try-statements).  When the *asynchronous generator iterator* effectively resumes with another awaitable returned by :meth:`~object.__anext__`, it picks up where it left off.  See :pep:`492` and :pep:`525`."
 msgstr ""
 
 #: ../../glossary.rst:125
@@ -597,7 +597,7 @@ msgid "An object created by a :term:`generator` function."
 msgstr ""
 
 #: ../../glossary.rst:507
-msgid "Each :keyword:`yield` temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements).  When the *generator iterator* resumes, it picks up where it left off (in contrast to functions which start fresh on every invocation)."
+msgid "Each :keyword:`yield` temporarily suspends processing, remembering the execution state (including local variables and pending try-statements).  When the *generator iterator* resumes, it picks up where it left off (in contrast to functions which start fresh on every invocation)."
 msgstr ""
 
 #: ../../glossary.rst:513
