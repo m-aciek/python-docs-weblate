@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-04 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -322,7 +322,7 @@ msgid "Byte strings still work as file names, and on Windows Python will transpa
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:353
-msgid "Other systems also allow Unicode strings as file names but convert them to byte strings before passing them to the system, which can cause a :exc:`UnicodeError` to be raised. Applications can test whether arbitrary Unicode strings are supported as file names by checking :attr:`os.path.supports_unicode_filenames`, a Boolean value."
+msgid "Other systems also allow Unicode strings as file names but convert them to byte strings before passing them to the system, which can cause a :exc:`UnicodeError` to be raised. Applications can test whether arbitrary Unicode strings are supported as file names by checking :const:`os.path.supports_unicode_filenames`, a Boolean value."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:359

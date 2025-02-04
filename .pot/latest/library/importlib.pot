@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 21:41+0000\n"
+"POT-Creation-Date: 2025-02-04 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -711,7 +711,7 @@ msgid "*mode* may be 'r' or 'rb' to open as text or binary. Return a handle suit
 msgstr ""
 
 #: ../../library/importlib.rst:748
-msgid "When opening as text, accepts encoding parameters such as those accepted by :attr:`io.TextIOWrapper`."
+msgid "When opening as text, accepts encoding parameters such as those accepted by :class:`io.TextIOWrapper`."
 msgstr ""
 
 #: ../../library/importlib.rst:753
@@ -756,7 +756,7 @@ msgstr ""
 
 #: ../../library/importlib.rst:811
 #: ../../library/importlib.rst:821
-msgid "Use :attr:`BYTECODE_SUFFIXES` instead."
+msgid "Use :const:`BYTECODE_SUFFIXES` instead."
 msgstr ""
 
 #: ../../library/importlib.rst:816
@@ -965,7 +965,7 @@ msgid "Initializes the given module object in accordance with :pep:`489`."
 msgstr ""
 
 #: ../../library/importlib.rst:1111
-msgid "Returns ``True`` if the file path points to a package's ``__init__`` module based on :attr:`EXTENSION_SUFFIXES`."
+msgid "Returns ``True`` if the file path points to a package's ``__init__`` module based on :const:`EXTENSION_SUFFIXES`."
 msgstr ""
 
 #: ../../library/importlib.rst:1116

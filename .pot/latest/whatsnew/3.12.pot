@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-04 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2080,7 +2080,7 @@ msgid "``imp.get_magic()``"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1481
-msgid ":attr:`importlib.util.MAGIC_NUMBER`"
+msgid ":const:`importlib.util.MAGIC_NUMBER`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1482
@@ -2088,7 +2088,7 @@ msgid "``imp.get_suffixes()``"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1482
-msgid ":attr:`importlib.machinery.SOURCE_SUFFIXES`, :attr:`importlib.machinery.EXTENSION_SUFFIXES`, and :attr:`importlib.machinery.BYTECODE_SUFFIXES`"
+msgid ":const:`importlib.machinery.SOURCE_SUFFIXES`, :const:`importlib.machinery.EXTENSION_SUFFIXES`, and :const:`importlib.machinery.BYTECODE_SUFFIXES`"
 msgstr ""
 
 #: ../../whatsnew/3.12.rst:1483

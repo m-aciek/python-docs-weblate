@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 14:19+0000\n"
+"POT-Creation-Date: 2025-02-04 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13450,7 +13450,7 @@ msgid ":issue:`46018`: Ensure that :func:`math.expm1` does not raise on underflo
 msgstr ""
 
 #: ../../build/NEWS:11824
-msgid ":issue:`46016`: Adding :attr:`F_DUP2FD` and :attr:`F_DUP2FD_CLOEXEC` constants from FreeBSD into the fcntl module."
+msgid ":issue:`46016`: Adding :const:`!F_DUP2FD` and :const:`!F_DUP2FD_CLOEXEC` constants from FreeBSD into the :mod:`fcntl` module."
 msgstr ""
 
 #: ../../build/NEWS:11827

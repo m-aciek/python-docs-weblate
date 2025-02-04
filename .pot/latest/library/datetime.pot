@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-04 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1149,7 +1149,7 @@ msgid "Because naive ``datetime`` objects are treated by many ``datetime`` metho
 msgstr ""
 
 #: ../../library/datetime.rst:921
-msgid "Use :meth:`datetime.now` with :attr:`UTC` instead."
+msgid "Use :meth:`datetime.now` with :const:`UTC` instead."
 msgstr ""
 
 #: ../../library/datetime.rst:926
@@ -1209,7 +1209,7 @@ msgid "Raise :exc:`OverflowError` instead of :exc:`ValueError` if the timestamp 
 msgstr ""
 
 #: ../../library/datetime.rst:993
-msgid "Use :meth:`datetime.fromtimestamp` with :attr:`UTC` instead."
+msgid "Use :meth:`datetime.fromtimestamp` with :const:`UTC` instead."
 msgstr ""
 
 #: ../../library/datetime.rst:998

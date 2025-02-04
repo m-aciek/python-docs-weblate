@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-04 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -378,7 +378,7 @@ msgid "Mapping import to distribution packages"
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:375
-msgid "Return a mapping from the top level module and import package names found via :attr:`sys.meta_path` to the names of the distribution packages (if any) that provide the corresponding files."
+msgid "Return a mapping from the top level module and import package names found via :data:`sys.meta_path` to the names of the distribution packages (if any) that provide the corresponding files."
 msgstr ""
 
 #: ../../library/importlib.metadata.rst:379

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-04 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,7 +298,7 @@ msgid "While this might be annoying, this feature is intended for use in special
 msgstr ""
 
 #: ../../library/logging.rst:343
-msgid "If no handler is attached to this logger (or any of its ancestors, taking into account the relevant :attr:`Logger.propagate` attributes), the message will be sent to the handler set on :attr:`lastResort`."
+msgid "If no handler is attached to this logger (or any of its ancestors, taking into account the relevant :attr:`Logger.propagate` attributes), the message will be sent to the handler set on :data:`lastResort`."
 msgstr ""
 
 #: ../../library/logging.rst:347
