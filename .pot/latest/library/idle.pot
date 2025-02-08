@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-08 20:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/idle.rst:4
-#: ../../library/idle.rst:10
-msgid "IDLE"
+msgid "IDLE --- Python editor and shell"
 msgstr ""
 
 #: ../../library/idle.rst:8
@@ -1121,7 +1120,7 @@ msgid "IDLE contains an extension facility.  Preferences for extensions can be c
 msgstr ""
 
 #: ../../library/idle.rst:975
-msgid "idlelib"
+msgid "idlelib --- implementation of IDLE application"
 msgstr ""
 
 #: ../../library/idle.rst:980
@@ -1134,6 +1133,10 @@ msgstr ""
 
 #: ../../library/idle.rst:987
 msgid "The files in idlelib are described in idlelib/README.txt.  Access it either in idlelib or click Help => About IDLE on the IDLE menu.  This file also maps IDLE menu items to the code that implements the item. Except for files listed under 'Startup', the idlelib code is 'private' in sense that feature changes can be backported (see :pep:`434`)."
+msgstr ""
+
+#: ../../library/idle.rst:10
+msgid "IDLE"
 msgstr ""
 
 #: ../../library/idle.rst:10
