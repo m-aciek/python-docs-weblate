@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-11 21:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -479,7 +479,10 @@ msgid "This function should be called before :c:func:`Py_Initialize` is called f
 msgstr ""
 
 #: ../../c-api/init.rst:494
-msgid "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:`wchar_t *` string."
+#: ../../c-api/init.rst:760
+#: ../../c-api/init.rst:796
+#: ../../c-api/init.rst:822
+msgid "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:`wchar_t*` string."
 msgstr ""
 
 #: ../../c-api/init.rst:504
@@ -545,9 +548,6 @@ msgid "This also causes :data:`sys.executable` to be set to the program full pat
 msgstr ""
 
 #: ../../c-api/init.rst:645
-#: ../../c-api/init.rst:760
-#: ../../c-api/init.rst:796
-#: ../../c-api/init.rst:822
 msgid "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:`wchar_*` string."
 msgstr ""
 
