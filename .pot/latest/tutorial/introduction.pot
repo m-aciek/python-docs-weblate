@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-19 19:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,7 +210,7 @@ msgid "There is one subtle aspect to raw strings: a raw string may not end in an
 msgstr ""
 
 #: ../../tutorial/introduction.rst:197
-msgid "String literals can span multiple lines.  One way is using triple-quotes: ``\"\"\"...\"\"\"`` or ``'''...'''``.  End of lines are automatically included in the string, but it's possible to prevent this by adding a ``\\`` at the end of the line.  In the following example, the initial newline is not included::"
+msgid "String literals can span multiple lines.  One way is using triple-quotes: ``\"\"\"...\"\"\"`` or ``'''...'''``.  End-of-line characters are automatically included in the string, but it's possible to prevent this by adding a ``\\`` at the end of the line.  In the following example, the initial newline is not included::"
 msgstr ""
 
 #: ../../tutorial/introduction.rst:203
