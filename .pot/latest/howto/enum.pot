@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-19 22:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:108
 msgid ">>> from datetime import date\n"
-">>> Weekday.from_date(date.today())     \n"
+">>> Weekday.from_date(date.today())\n"
 "<Weekday.TUESDAY: 2>"
 msgstr ""
 
@@ -1265,9 +1265,9 @@ msgid "If you give your enum subclass extra methods, like the `Planet`_ class be
 msgstr ""
 
 #: ../../howto/enum.rst:1072
-msgid ">>> dir(Planet)                         \n"
+msgid ">>> dir(Planet)\n"
 "['EARTH', 'JUPITER', 'MARS', 'MERCURY', 'NEPTUNE', 'SATURN', 'URANUS', 'VENUS', '__class__', '__doc__', '__members__', '__module__']\n"
-">>> dir(Planet.EARTH)                   \n"
+">>> dir(Planet.EARTH)\n"
 "['__class__', '__doc__', '__module__', 'mass', 'name', 'radius', 'surface_gravity', 'value']"
 msgstr ""
 
@@ -1570,7 +1570,7 @@ msgid ">>> class Color(Enum):\n"
 "...     GREEN = object()\n"
 "...     BLUE = object()\n"
 "...\n"
-">>> Color.GREEN                         \n"
+">>> Color.GREEN\n"
 "<Color.GREEN: <object object at 0x...>>"
 msgstr ""
 

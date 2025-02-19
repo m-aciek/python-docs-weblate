@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-02-19 22:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -619,7 +619,7 @@ msgstr ""
 
 #: ../../howto/regex.rst:483
 msgid ">>> iterator = p.finditer('12 drummers drumming, 11 ... 10 ...')\n"
-">>> iterator  \n"
+">>> iterator\n"
 "<callable_iterator object at 0x...>\n"
 ">>> for match in iterator:\n"
 "...     print(match.span())\n"
@@ -640,7 +640,7 @@ msgstr ""
 #: ../../howto/regex.rst:504
 msgid ">>> print(re.match(r'From\\s+', 'Fromage amk'))\n"
 "None\n"
-">>> re.match(r'From\\s+', 'From amk Thu May 14 19:12:10 1998')  \n"
+">>> re.match(r'From\\s+', 'From amk Thu May 14 19:12:10 1998')\n"
 "<re.Match object; span=(0, 5), match='From '>"
 msgstr ""
 
@@ -827,7 +827,7 @@ msgid "For example, if you wish to match the word ``From`` only at the beginning
 msgstr ""
 
 #: ../../howto/regex.rst:714
-msgid ">>> print(re.search('^From', 'From Here to Eternity'))  \n"
+msgid ">>> print(re.search('^From', 'From Here to Eternity'))\n"
 "<re.Match object; span=(0, 4), match='From'>\n"
 ">>> print(re.search('^From', 'Reciting From Memory'))\n"
 "None"
@@ -846,11 +846,11 @@ msgid "Matches at the end of a line, which is defined as either the end of the s
 msgstr ""
 
 #: ../../howto/regex.rst:725
-msgid ">>> print(re.search('}$', '{block}'))  \n"
+msgid ">>> print(re.search('}$', '{block}'))\n"
 "<re.Match object; span=(6, 7), match='}'>\n"
 ">>> print(re.search('}$', '{block} '))\n"
 "None\n"
-">>> print(re.search('}$', '{block}\\n'))  \n"
+">>> print(re.search('}$', '{block}\\n'))\n"
 "<re.Match object; span=(6, 7), match='}'>"
 msgstr ""
 
