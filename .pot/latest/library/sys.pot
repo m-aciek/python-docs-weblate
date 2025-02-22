@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 21:44+0000\n"
+"POT-Creation-Date: 2025-02-22 16:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -742,7 +742,7 @@ msgid "See `recursive sizeof recipe <https://code.activestate.com/recipes/577504
 msgstr ""
 
 #: ../../library/sys.rst:873
-msgid "Return the interpreter's \"thread switch interval\"; see :func:`setswitchinterval`."
+msgid "Return the interpreter's \"thread switch interval\" in seconds; see :func:`setswitchinterval`."
 msgstr ""
 
 #: ../../library/sys.rst:881
