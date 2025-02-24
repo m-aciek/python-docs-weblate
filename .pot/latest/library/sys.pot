@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-22 16:20+0000\n"
+"POT-Creation-Date: 2025-02-24 16:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -660,7 +660,7 @@ msgid "Return the build time API version of Android as an integer."
 msgstr ""
 
 #: ../../library/sys.rst:754
-msgid "Return the name of the current default string encoding used by the Unicode implementation."
+msgid "Return ``'utf-8'``. This is the name of the default string encoding, used in methods like :meth:`str.encode`."
 msgstr ""
 
 #: ../../library/sys.rst:760
