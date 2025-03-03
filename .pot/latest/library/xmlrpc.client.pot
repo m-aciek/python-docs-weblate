@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-03-03 14:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,20 +49,20 @@ msgid "A :class:`ServerProxy` instance is an object that manages communication w
 msgstr ""
 
 #: ../../library/xmlrpc.client.rst:49
-msgid "The following parameters govern the use of the returned proxy instance. If *allow_none* is true,  the Python constant ``None`` will be translated into XML; the default behaviour is for ``None`` to raise a :exc:`TypeError`. This is a commonly used extension to the XML-RPC specification, but isn't supported by all clients and servers; see `http://ontosys.com/xml-rpc/extensions.php <https://web.archive.org/web/20130120074804/http://ontosys.com/xml-rpc/extensions.php>`_ for a description. The *use_builtin_types* flag can be used to cause date/time values to be presented as :class:`datetime.datetime` objects and binary data to be presented as :class:`bytes` objects; this flag is false by default. :class:`datetime.datetime`, :class:`bytes` and :class:`bytearray` objects may be passed to calls. The *headers* parameter is an optional sequence of HTTP headers to send with each request, expressed as a sequence of 2-tuples representing the header name and value. (e.g. ``[('Header-Name', 'value')]``). The obsolete *use_datetime* flag is similar to *use_builtin_types* but it applies only to date/time values."
+msgid "The following parameters govern the use of the returned proxy instance. If *allow_none* is true,  the Python constant ``None`` will be translated into XML; the default behaviour is for ``None`` to raise a :exc:`TypeError`. This is a commonly used extension to the XML-RPC specification, but isn't supported by all clients and servers; see `http://ontosys.com/xml-rpc/extensions.php <https://web.archive.org/web/20130120074804/http://ontosys.com/xml-rpc/extensions.php>`_ for a description. The *use_builtin_types* flag can be used to cause date/time values to be presented as :class:`datetime.datetime` objects and binary data to be presented as :class:`bytes` objects; this flag is false by default. :class:`datetime.datetime`, :class:`bytes` and :class:`bytearray` objects may be passed to calls. The *headers* parameter is an optional sequence of HTTP headers to send with each request, expressed as a sequence of 2-tuples representing the header name and value. (e.g. ``[('Header-Name', 'value')]``). If an HTTPS URL is provided, *context* may be :class:`ssl.SSLContext` and configures the SSL settings of the underlying HTTPS connection. The obsolete *use_datetime* flag is similar to *use_builtin_types* but it applies only to date/time values."
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:67
+#: ../../library/xmlrpc.client.rst:69
 #: ../../library/xmlrpc.client.rst:549
 msgid "The *use_builtin_types* flag was added."
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:70
+#: ../../library/xmlrpc.client.rst:72
 msgid "The *headers* parameter was added."
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:73
-msgid "Both the HTTP and HTTPS transports support the URL syntax extension for HTTP Basic Authentication: ``http://user:pass@host:port/path``.  The  ``user:pass`` portion will be base64-encoded as an HTTP 'Authorization' header, and sent to the remote server as part of the connection process when invoking an XML-RPC method.  You only need to use this if the remote server requires a Basic Authentication user and password. If an HTTPS URL is provided, *context* may be :class:`ssl.SSLContext` and configures the SSL settings of the underlying HTTPS connection."
+#: ../../library/xmlrpc.client.rst:75
+msgid "Both the HTTP and HTTPS transports support the URL syntax extension for HTTP Basic Authentication: ``http://user:pass@host:port/path``.  The  ``user:pass`` portion will be base64-encoded as an HTTP 'Authorization' header, and sent to the remote server as part of the connection process when invoking an XML-RPC method.  You only need to use this if the remote server requires a Basic Authentication user and password."
 msgstr ""
 
 #: ../../library/xmlrpc.client.rst:82
