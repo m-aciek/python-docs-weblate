@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 15:43+0000\n"
+"POT-Creation-Date: 2025-03-05 15:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgid "The Python typing system is standardised via PEPs, so this reference shou
 msgstr ""
 
 #: ../../library/typing.rst:56
-msgid "`\"Static Typing with Python\" <https://typing.readthedocs.io/en/latest/>`_"
+msgid "`\"Static Typing with Python\" <https://typing.python.org/en/latest/>`_"
 msgstr ""
 
 #: ../../library/typing.rst:57
@@ -82,7 +82,7 @@ msgid "Specification for the Python Type System"
 msgstr ""
 
 #: ../../library/typing.rst:66
-msgid "The canonical, up-to-date specification of the Python type system can be found at `\"Specification for the Python type system\" <https://typing.readthedocs.io/en/latest/spec/index.html>`_."
+msgid "The canonical, up-to-date specification of the Python type system can be found at `\"Specification for the Python type system\" <https://typing.python.org/en/latest/spec/index.html>`_."
 msgstr ""
 
 #: ../../library/typing.rst:72
@@ -2823,7 +2823,7 @@ msgid "At runtime, this throws an exception when called."
 msgstr ""
 
 #: ../../library/typing.rst:2607
-msgid "`Unreachable Code and Exhaustiveness Checking <https://typing.readthedocs.io/en/latest/guides/unreachable.html>`__ has more information about exhaustiveness checking with static typing."
+msgid "`Unreachable Code and Exhaustiveness Checking <https://typing.python.org/en/latest/guides/unreachable.html>`__ has more information about exhaustiveness checking with static typing."
 msgstr ""
 
 #: ../../library/typing.rst:2615
