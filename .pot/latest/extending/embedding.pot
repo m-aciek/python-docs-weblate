@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 07:37+0000\n"
+"POT-Creation-Date: 2025-03-07 13:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -250,7 +250,7 @@ msgid "Py_Initialize();\n"
 msgstr ""
 
 #: ../../extending/embedding.rst:178
-msgid "After initializing the interpreter, the script is loaded using :c:func:`PyImport_Import`.  This routine needs a Python string as its argument, which is constructed using the :c:func:`PyUnicode_FromString` data conversion routine. ::"
+msgid "After initializing the interpreter, the script is loaded using :c:func:`PyImport_Import`.  This routine needs a Python string as its argument, which is constructed using the :c:func:`PyUnicode_DecodeFSDefault` data conversion routine. ::"
 msgstr ""
 
 #: ../../extending/embedding.rst:183
