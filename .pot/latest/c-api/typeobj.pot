@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-17 15:20+0000\n"
+"POT-Creation-Date: 2025-03-20 13:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1249,7 +1249,7 @@ msgid "PyTypeObject Definition"
 msgstr ""
 
 #: ../../c-api/typeobj.rst:475
-msgid "The structure definition for :c:type:`PyTypeObject` can be found in :file:`Include/object.h`.  For convenience of reference, this repeats the definition found there:"
+msgid "The structure definition for :c:type:`PyTypeObject` can be found in :file:`Include/cpython/object.h`.  For convenience of reference, this repeats the definition found there:"
 msgstr ""
 
 #: ../../c-api/typeobj.rst:481
