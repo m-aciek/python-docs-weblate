@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 05:20+0000\n"
+"POT-Creation-Date: 2025-04-08 08:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -836,7 +836,7 @@ msgid "In Boolean contexts, all :class:`date` objects are considered to be true.
 msgstr ""
 
 #: ../../library/datetime.rst:653
-msgid "Return a date with the same value, except for those parameters given new values by whichever keyword arguments are specified."
+msgid "Return a new :class:`date` object with the same values, but with specified parameters updated."
 msgstr ""
 
 #: ../../library/datetime.rst:656
@@ -1450,7 +1450,7 @@ msgid "Return :class:`.time` object with same hour, minute, second, microsecond,
 msgstr ""
 
 #: ../../library/datetime.rst:1277
-msgid "Return a datetime with the same attributes, except for those attributes given new values by whichever keyword arguments are specified. Note that ``tzinfo=None`` can be specified to create a naive datetime from an aware datetime with no conversion of date and time data."
+msgid "Return a new :class:`datetime` object with the same attributes, but with specified parameters updated. Note that ``tzinfo=None`` can be specified to create a naive datetime from an aware datetime with no conversion of date and time data."
 msgstr ""
 
 #: ../../library/datetime.rst:1288
@@ -1969,7 +1969,7 @@ msgid "Previously, this method only supported formats that could be emitted by :
 msgstr ""
 
 #: ../../library/datetime.rst:1852
-msgid "Return a :class:`.time` with the same value, except for those attributes given new values by whichever keyword arguments are specified. Note that ``tzinfo=None`` can be specified to create a naive :class:`.time` from an aware :class:`.time`, without conversion of the time data."
+msgid "Return a new :class:`.time` with the same values, but with specified parameters updated. Note that ``tzinfo=None`` can be specified to create a naive :class:`.time` from an aware :class:`.time`, without conversion of the time data."
 msgstr ""
 
 #: ../../library/datetime.rst:1863
