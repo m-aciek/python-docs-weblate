@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-08 09:23+0000\n"
+"POT-Creation-Date: 2025-04-08 08:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -501,7 +501,7 @@ msgid "To extend this to recognize other objects, subclass and implement a :meth
 msgstr ""
 
 #: ../../library/json.rst:477
-msgid "If *skipkeys* is false (the default), a :exc:`TypeError` will be raised when trying to encode keys that are not :class:`str`, :class:`int`, :class:`float` or ``None``.  If *skipkeys* is true, such items are simply skipped."
+msgid "If *skipkeys* is false (the default), a :exc:`TypeError` will be raised when trying to encode keys that are not :class:`str`, :class:`int`, :class:`float`, :class:`bool` or ``None``.  If *skipkeys* is true, such items are simply skipped."
 msgstr ""
 
 #: ../../library/json.rst:481
